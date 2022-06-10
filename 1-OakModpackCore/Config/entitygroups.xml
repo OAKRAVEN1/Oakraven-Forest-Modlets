@@ -1,0 +1,157 @@
+<configs>
+
+	<append xpath="/entitygroups">
+	
+	<!-- POWER THINGS -->	
+	
+	<entitygroup name="CrystalRocks">
+		<entity name="animalRockSpawn" prob="0.4"/>
+		<entity name="animalBlueSpawn" prob="0.4"/>
+	</entitygroup>	
+	
+	<!-- HYDROPONIC FARMING -->
+	
+                  <!-- Night Group pine_forest -->
+
+	<entitygroup name="Mushrooms">
+		<entity name="animalWildRedMushroom" prob="0.1"/>
+		<entity name="animalWildPuffBallMushroom" prob="0.1"/>
+		<entity name="animalWildPurpleMushroom" prob="0.1"/>
+		<entity name="animalWildCapMushroom" prob="0.1"/>
+		<entity name="animalWildLionMushroom" prob="0.1"/>
+		<entity name="animalFireFlyStump" prob="0.1"/>
+	</entitygroup>
+	
+	             <!-- Day Group pine_forest -->
+	
+	<entitygroup name="WildPlants">
+		<entity name="animalWildJalapeno" prob="0.1"/>
+		<entity name="animalWildTurnip" prob="0.1"/>
+		<entity name="animalWildEggplant" prob="0.1"/>
+		<entity name="animalWildStrawberry" prob="0.1"/>
+	</entitygroup>
+	
+	             <!-- Day/Night Group Desert -->
+	
+	<entitygroup name="DesertPlants">
+		<entity name="animalWildPepper" prob="0.1"/>
+		<entity name="animalWildPineapple" prob="0.1"/>
+		<entity name="animalWildTomato" prob="0.1"/>
+	</entitygroup>
+
+	<!-- BEE HIVES -->
+	
+		<entitygroup name="BeeLog">
+		<entity name="animalBeeStump" prob="0.1"/>
+		<entity name="animalBeeStump2" prob="0.1"/>
+		<entity name="animalBeeStump3" prob="0.1"/>
+		</entitygroup>
+		
+	</append>		
+		
+	<!-- LAZMAN'S BLOOD MOON VANGUARD REPEATABLE QUEST -->
+
+	<!-- A20 Offerings in entityclass.xml order -->
+	
+	<!-- ***** ZOMBIES : SLIM,  slightly lower HP but faster ***** -->	
+	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieArlene']/@name">BM_zombieArlene</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieArleneFeral']/@name">BM_zombieArleneFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieArleneRadiated']/@name">BM_zombieArleneRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieMarlene']/@name">BM_zombieMarlene</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieMarleneFeral']/@name">BM_zombieMarleneFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieMarleneRadiated']/@name">BM_zombieMarleneRadiated</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombiePartyGirl']/@name">BM_zombiePartyGirl</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombiePartyGirlFeral']/@name">BM_zombiePartyGirlFeral</set>	
+	<!-- No Radidated zombiePartyGirl -->
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieNurse']/@name">BM_zombieNurse</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieNurseFeral']/@name">BM_zombieNurseFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieNurseRadiated']/@name">BM_zombieNurseRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieJoe']/@name">BM_zombieJoe</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieJoeFeral']/@name">BM_zombieJoeFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieJoeRadiated']/@name">BM_zombieJoeRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSteve']/@name">BM_zombieSteve</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSteveFeral']/@name">BM_zombieSteveFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSteveRadiated']/@name">BM_zombieSteveRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieTomClark']/@name">BM_zombieTomClark</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieTomClarkFeral']/@name">BM_zombieTomClarkFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieTomClarkRadiated']/@name">BM_zombieTomClarkRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieBusinessMan']/@name">BM_zombieBusinessMan</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieBusinessManFeral']/@name">BM_zombieBusinessManFeral</set>	
+	<!-- No Radidated zombieBusinessMan -->
+	<!-- No Normal zombieBurnt in vanilla BM hordes & No Feral/Radidated zombieBurnt -->
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSpider']/@name">BM_zombieSpider</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSpiderFeral']/@name">BM_zombieSpiderFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSpiderRadiated']/@name">BM_zombieSpiderRadiated</set>
+
+	<!-- ***** ZOMBIES : NORMAL ***** -->
+
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieBoe']/@name">BM_zombieBoe</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieBoeFeral']/@name">BM_zombieBoeFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieBoeRadiated']/@name">BM_zombieBoeRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieJanitor']/@name">BM_zombieJanitor</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieJanitorFeral']/@name">BM_zombieJanitorFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieJanitorRadiated']/@name">BM_zombieJanitorRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieMoe']/@name">BM_zombieMoe</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieMoeFeral']/@name">BM_zombieMoeFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieMoeRadiated']/@name">BM_zombieMoeRadiated</set>
+	<!-- No Normal zombieLab in vanilla BM hordes & No Feral/Radidated zombieLab -->
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieDarlene']/@name">BM_zombieDarlene</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieDarleneFeral']/@name">BM_zombieDarleneFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieDarleneRadiated']/@name">BM_zombieDarleneRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieYo']/@name">BM_zombieYo</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieYoFeral']/@name">BM_zombieYoFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieYoRadiated']/@name">BM_zombieYoRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieUtilityWorker']/@name">BM_zombieUtilityWorker</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieUtilityWorkerFeral']/@name">BM_zombieUtilityWorkerFeral</set>
+	<!-- No Radidated zombieUtilityWorker -->
+	
+	<!-- ***** ZOMBIES : STRONG,  higher HP but slightly slower ***** -->	
+	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieBiker']/@name">BM_zombieBiker</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieBikerFeral']/@name">BM_zombieBikerFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieBikerRadiated']/@name">BM_zombieBikerRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieLumberjack']/@name">BM_zombieLumberjack</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieLumberjackFeral']/@name">BM_zombieLumberjackFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieLumberjackRadiated']/@name">BM_zombieLumberjackRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieFemaleFat']/@name">BM_zombieFemaleFat</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieFemaleFatFeral']/@name">BM_zombieFemaleFatFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieFemaleFatRadiated']/@name">BM_zombieFemaleFatRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieFatHawaiian']/@name">BM_zombieFatHawaiian</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieFatHawaiianFeral']/@name">BM_zombieFatHawaiianFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieFatHawaiianRadiated']/@name">BM_zombieFatHawaiianRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieMaleHazmat']/@name">BM_zombieMaleHazmat</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieMaleHazmatFeral']/@name">BM_zombieMaleHazmatFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieMaleHazmatRadiated']/@name">BM_zombieMaleHazmatRadiated</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieFatCop']/@name">BM_zombieFatCop</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieFatCopFeral']/@name">BM_zombieFatCopFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieFatCopRadiated']/@name">BM_zombieFatCopRadiated</set>
+
+	<!-- ***** ZOMBIES : FIT,  lower HP than strong zombies but faster than normal ones ***** -->
+	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSkateboarder']/@name">BM_zombieSkateboarder</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSkateboarderFeral']/@name">BM_zombieSkateboarderFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSkateboarderRadiated']/@name">BM_zombieSkateboarderRadiated</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSoldier']/@name">BM_zombieSoldier</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSoldierFeral']/@name">BM_zombieSoldierFeral</set>	
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieSoldierRadiated']/@name">BM_zombieSoldierRadiated</set>
+	<!-- No Normal zombieWight -->
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieWightFeral']/@name">BM_zombieWightFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieWightRadiated']/@name">BM_zombieWightRadiated</set>
+
+	<!-- ***** ZOMBIES : SPECIAL ***** -->
+	
+	<!-- No Normal/Feral zombieScreamer in vanilla BM hordes & No Radidated zombieScreamer -->	
+	<!-- No Normal/Feral zombieMutated in vanilla BM hordes & No Radidated zombieMutated -->
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='zombieDemolition']/@name">BM_zombieDemolition</set>
+	<!-- No Feral/Radidated zombieDemolition -->
+	<!-- No Normal/Feral zombieSteveCrawler in vanilla BM hordes & No Radidated zombieSteveCrawler exists -->	
+
+	<!-- ***** ANGRY BIRDS and HOT DOGS ***** -->
+	<!-- Appear to be hardcoded default as regulars spawn when riding - Maybe one day -->	
+
+	<!--set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='animalZombieDog']/@name">BM_animalZombieDog</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='animalZombieVulture']/@name">BM_animalZombieVulture</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='animalZombieVultureRadiated']/@name">BM_animalZombieVultureRadiated</set-->
+
+</configs>

@@ -1,0 +1,276 @@
+<configs>
+    <!-- In general, these zombies should spawn with equivalent vanilla zombies, but half as often -->
+
+    <!-- zombieBurntKhz spawns with burnt zombies -->
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBurnt' and not(@prob)]">
+        <entity name="zombieBurntKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBurnt' and @prob='0.2']">
+        <entity name="zombieBurntKhz" prob="0.1" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBurnt' and @prob='0.07']">
+        <entity name="zombieBurntKhz" prob="0.04" />
+    </insertAfter>
+
+    <!-- zombieBusinessmanKhz, zombieBusinesswomanKhz, and zombieFemaleOfficeKhz spawn with zombieBusinessMan -->
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and not(@prob)]">
+        <entity name="zombieFemaleOfficeKhz" prob="0.5" />
+        <entity name="zombieBusinessmanKhz" prob="0.5" />
+        <entity name="zombieBusinesswomanKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='1']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.5" />
+        <entity name="zombieBusinessmanKhz" prob="0.5" />
+        <entity name="zombieBusinesswomanKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.85']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.43" />
+        <entity name="zombieBusinessmanKhz" prob="0.43" />
+        <entity name="zombieBusinesswomanKhz" prob="0.43" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.7']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.35" />
+        <entity name="zombieBusinessmanKhz" prob="0.35" />
+        <entity name="zombieBusinesswomanKhz" prob="0.35" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.55']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.27" />
+        <entity name="zombieBusinessmanKhz" prob="0.27" />
+        <entity name="zombieBusinesswomanKhz" prob="0.27" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.4']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.2" />
+        <entity name="zombieBusinessmanKhz" prob="0.2" />
+        <entity name="zombieBusinesswomanKhz" prob="0.2" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.25']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.13" />
+        <entity name="zombieBusinessmanKhz" prob="0.13" />
+        <entity name="zombieBusinesswomanKhz" prob="0.13" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.1']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.05" />
+        <entity name="zombieBusinessmanKhz" prob="0.05" />
+        <entity name="zombieBusinesswomanKhz" prob="0.05" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.09']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.05" />
+        <entity name="zombieBusinessmanKhz" prob="0.05" />
+        <entity name="zombieBusinesswomanKhz" prob="0.05" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.08']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.04" />
+        <entity name="zombieBusinessmanKhz" prob="0.04" />
+        <entity name="zombieBusinesswomanKhz" prob="0.04" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.07']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.04" />
+        <entity name="zombieBusinessmanKhz" prob="0.04" />
+        <entity name="zombieBusinesswomanKhz" prob="0.04" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.06']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.03" />
+        <entity name="zombieBusinessmanKhz" prob="0.03" />
+        <entity name="zombieBusinesswomanKhz" prob="0.03" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieBusinessMan' and @prob='0.05']">
+        <entity name="zombieFemaleOfficeKhz" prob="0.03" />
+        <entity name="zombieBusinessmanKhz" prob="0.03" />
+        <entity name="zombieBusinesswomanKhz" prob="0.03" />
+    </insertAfter>
+
+    <!-- zombieCowgirlKhz spawns with zombieMarlene now that zombieOldTimer left her for a younger Alpha version -->
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieMarlene' and not(@prob)]">
+        <entity name="zombieCowgirlKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieMarlene' and @prob='1']">
+        <entity name="zombieCowgirlKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieMarlene' and @prob='0.85']">
+        <entity name="zombieCowgirlKhz" prob="0.43" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieMarlene' and @prob='0.7']">
+        <entity name="zombieCowgirlKhz" prob="0.35" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieMarlene' and @prob='0.55']">
+        <entity name="zombieCowgirlKhz" prob="0.27" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieMarlene' and @prob='0.4']">
+        <entity name="zombieCowgirlKhz" prob="0.2" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieMarlene' and @prob='0.25']">
+        <entity name="zombieCowgirlKhz" prob="0.13" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieMarlene' and @prob='0.01']">
+        <entity name="zombieCowgirlKhz" prob="0.01" />
+    </insertAfter>
+
+    <!-- zombieFemaleKhz spawns with zombieArlene -->
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieArlene' and not(@prob)]">
+        <entity name="zombieFemaleKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieArlene' and @prob='1']">
+        <entity name="zombieFemaleKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieArlene' and @prob='0.85']">
+        <entity name="zombieFemaleKhz" prob="0.43" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieArlene' and @prob='0.7']">
+        <entity name="zombieFemaleKhz" prob="0.35" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieArlene' and @prob='0.55']">
+        <entity name="zombieFemaleKhz" prob="0.27" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieArlene' and @prob='0.4']">
+        <entity name="zombieFemaleKhz" prob="0.2" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieArlene' and @prob='0.25']">
+        <entity name="zombieFemaleKhz" prob="0.13" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieArlene' and @prob='0.01']">
+        <entity name="zombieFemaleKhz" prob="0.01" />
+    </insertAfter>
+    
+    <!-- zombieFemaleLumberjackKhz spawns with zombieLumberjack -->
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieLumberjack' and @prob='1']">
+        <entity name="zombieFemaleLumberjackKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieLumberjack' and @prob='0.85']">
+        <entity name="zombieFemaleLumberjackKhz" prob="0.43" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieLumberjack' and @prob='0.7']">
+        <entity name="zombieFemaleLumberjackKhz" prob="0.35" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieLumberjack' and @prob='0.55']">
+        <entity name="zombieFemaleLumberjackKhz" prob="0.27" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieLumberjack' and @prob='0.4']">
+        <entity name="zombieFemaleLumberjackKhz" prob="0.2" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieLumberjack' and @prob='0.25']">
+        <entity name="zombieFemaleLumberjackKhz" prob="0.13" />
+    </insertAfter>
+
+    <!-- zombieFemaleStripperKhz spawns with zombiePartyGirl -->
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombiePartyGirl' and not(@prob)]">
+        <entity name="zombieFemaleStripperKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombiePartyGirl' and @prob='4']">
+        <entity name="zombieFemaleStripperKhz" prob="2" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombiePartyGirl' and @prob='1']">
+        <entity name="zombieFemaleStripperKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombiePartyGirl' and @prob='0.95']">
+        <entity name="zombieFemaleStripperKhz" prob="0.47" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombiePartyGirl' and @prob='0.85']">
+        <entity name="zombieFemaleStripperKhz" prob="0.43" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombiePartyGirl' and @prob='0.7']">
+        <entity name="zombieFemaleStripperKhz" prob="0.35" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombiePartyGirl' and @prob='0.55']">
+        <entity name="zombieFemaleStripperKhz" prob="0.27" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombiePartyGirl' and @prob='0.4']">
+        <entity name="zombieFemaleStripperKhz" prob="0.2" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombiePartyGirl' and @prob='0.3']">
+        <entity name="zombieFemaleStripperKhz" prob="0.15" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombiePartyGirl' and @prob='0.25']">
+        <entity name="zombieFemaleStripperKhz" prob="0.13" />
+    </insertAfter>
+
+    <!-- zombieFirefighterKhz spawns with zombieUtilityWorker -->
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieUtilityWorker' and not(@prob)]">
+        <entity name="zombieFirefighterKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieUtilityWorker' and @prob='1']">
+        <entity name="zombieFirefighterKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieUtilityWorker' and @prob='0.85']">
+        <entity name="zombieFirefighterKhz" prob="0.43" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieUtilityWorker' and @prob='0.7']">
+        <entity name="zombieFirefighterKhz" prob="0.35" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieUtilityWorker' and @prob='0.55']">
+        <entity name="zombieFirefighterKhz" prob="0.27" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieUtilityWorker' and @prob='0.4']">
+        <entity name="zombieFirefighterKhz" prob="0.2" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieUtilityWorker' and @prob='0.3']">
+        <entity name="zombieFirefighterKhz" prob="0.15" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieUtilityWorker' and @prob='0.25']">
+        <entity name="zombieFirefighterKhz" prob="0.13" />
+    </insertAfter>
+    <!-- Too many prob values to target -->
+    <insertAfter xpath="/entitygroups/entitygroup[starts-with(@name, 'ZombieBikerBarGroup')]/entity[@name='zombieUtilityWorker']">
+        <entity name="zombieFirefighterKhz" prob="0.15" />
+    </insertAfter>
+
+    <!-- zombieMaleKhz spawns with zombieJoe -->
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieJoe' and not(@prob)]">
+        <entity name="zombieMaleKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieJoe' and @prob='1']">
+        <entity name="zombieMaleKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieJoe' and @prob='0.85']">
+        <entity name="zombieMaleKhz" prob="0.43" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieJoe' and @prob='0.7']">
+        <entity name="zombieMaleKhz" prob="0.35" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieJoe' and @prob='0.55']">
+        <entity name="zombieMaleKhz" prob="0.27" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieJoe' and @prob='0.4']">
+        <entity name="zombieMaleKhz" prob="0.2" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieJoe' and @prob='0.25']">
+        <entity name="zombieMaleKhz" prob="0.13" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieJoe' and @prob='0.01']">
+        <entity name="zombieMaleKhz" prob="0.01" />
+    </insertAfter>
+
+    <!-- zombiePolicewomanKhz spawns with zombieFatCop -->
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and not(@prob)]">
+        <entity name="zombiePolicewomanKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and @prob='1']">
+        <entity name="zombiePolicewomanKhz" prob="0.5" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and @prob='0.85']">
+        <entity name="zombiePolicewomanKhz" prob="0.43" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and @prob='0.8']">
+        <entity name="zombiePolicewomanKhz" prob="0.4" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and @prob='0.7']">
+        <entity name="zombiePolicewomanKhz" prob="0.35" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and @prob='0.55']">
+        <entity name="zombiePolicewomanKhz" prob="0.27" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and @prob='0.4']">
+        <entity name="zombiePolicewomanKhz" prob="0.2" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and @prob='0.25']">
+        <entity name="zombiePolicewomanKhz" prob="0.13" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and @prob='0.15']">
+        <entity name="zombiePolicewomanKhz" prob="0.07" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and @prob='0.08']">
+        <entity name="zombiePolicewomanKhz" prob="0.04" />
+    </insertAfter>
+    <insertAfter xpath="/entitygroups/entitygroup/entity[@name='zombieFatCop' and @prob='0.05']">
+        <entity name="zombiePolicewomanKhz" prob="0.03" />
+    </insertAfter>
+</configs>

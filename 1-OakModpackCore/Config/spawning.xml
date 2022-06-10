@@ -1,0 +1,33 @@
+<configs>
+
+    <!-- POWER THINGS -->
+	
+<append xpath="/spawning/biome[@name='burnt_forest']">
+		<spawn maxcount="1" respawndelay="3" time="Day" entitygroup="CrystalRocks" />
+		<spawn maxcount="5" respawndelay="1" time="Night" entitygroup="CrystalRocks" />
+</append>
+
+<append xpath="/spawning/biome[@name='wasteland']">
+		<spawn maxcount="1" respawndelay="3" time="Day" entitygroup="CrystalRocks" />
+		<spawn maxcount="4" respawndelay="1" time="Night" entitygroup="CrystalRocks" />
+</append>
+
+    <!-- HYDROPONIC FARMING -->
+
+<append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="Mushrooms" />
+		<spawn maxcount="1" respawndelay="3" time="Day" entitygroup="WildPlants" />
+</append>
+
+<append xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="1" respawndelay="3" time="Any" entitygroup="DesertPlants" />
+</append>
+
+    <!-- BEE HIVES -->
+
+<append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="1" respawndelay="3" time="Day" entitygroup="BeeLog" />
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="BeeLog" />
+</append>
+
+</configs>

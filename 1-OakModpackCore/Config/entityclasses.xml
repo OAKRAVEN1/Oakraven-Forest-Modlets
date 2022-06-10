@@ -1,0 +1,450 @@
+<configs>
+
+	<append xpath="/entity_classes">
+	
+    <!-- POWER THINGS -->
+
+<entity_class name="animalRockSpawn" extends="animalSnake">
+	<property name="Tags" value="entity,animal,hostile,perkAT03"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>	
+	<property name="AITask-1" value=""/>
+	<property name="AITarget-1" value=""/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundGiveUp" value=""/>
+	<!-- Gameplay -->
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="1"/> <!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="100"/>
+	<property name="SizeScale" value=".25"/>
+	<property name="HandItem" value="meleeHandAnimalCoyote"/>
+	<property name="MoveSpeedAggro" value="1,1"/>	
+	<property name="CorpseBlock" value="CrystalRock"/><property name="CorpseBlockChance" value="1"/> 
+	<property name="TimeStayAfterDeath" value="2"/>	
+	<property name="Buffs" value="KillMe3"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+	</effect_group>
+</entity_class>
+
+
+<entity_class name="animalBlueSpawn" extends="animalSnake">
+	<property name="Tags" value="entity,animal,hostile,perkAT03"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>	
+	<property name="AITask-1" value=""/>
+	<property name="AITarget-1" value=""/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundGiveUp" value=""/>
+	<!-- Gameplay -->
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="1"/> <!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="100"/>
+	<property name="SizeScale" value=".25"/>
+	<property name="HandItem" value="meleeHandAnimalCoyote"/>
+	<property name="MoveSpeedAggro" value="1,1"/>	
+	<property name="CorpseBlock" value="BlueRock"/><property name="CorpseBlockChance" value="1"/> 
+	<property name="TimeStayAfterDeath" value="2"/>	
+	<property name="Buffs" value="KillMe3"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+	</effect_group>
+</entity_class>	
+	
+    <!-- HYDROPONIC FARMING -->
+	
+<entity_class name="animalWildTemplate" extends="animalTemplateHostile">
+	<property name="Tags" value="entity,animal,hostile,snake,perkAT01,perkAT02,perkAT03"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_snake"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_snake"/>
+	<property name="EntityType" value="Animal"/>
+	<property name="Class" value="EntityAnimalSnake"/>
+	<property name="Prefab" value="/Entities/Animals/Snake/snake_Prefab"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="RagdollOnDeathChance" value="0"/>
+	<property name="Parent" value="Enemies"/>
+	<property name="PhysicsBody" value="snake"/>
+	<property name="Mass" value="30"/>
+	<property name="Weight" value="70"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Buffs" value="KillMe2"/>
+	<property name="Faction" value="undead"/>
+    <property name="TimeStayAfterDeath" value="1"/>
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="Territorial"/>
+	<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,15,EntityNPC,15"/>
+	<property name="AITask-4" value="ApproachSpot"/>
+	<property name="AITask-5" value="Look"/>
+	<property name="AITask-6" value="Wander"/>
+	<property name="AITask-7" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityNPC,EntityPlayer"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
+	<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,12,15,EntityNPC,0,0"/>
+	<property name="AITarget-5" value=""/>
+
+	<property name="WalkType" value="7"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+</entity_class>
+
+<entity_class name="animalWildRedMushroom" extends="animalWildTemplate">	
+	<property name="CorpseBlock" value="WildRedMushroom"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildPurpleMushroom" extends="animalWildTemplate">	
+	<property name="CorpseBlock" value="WildPurpleMushroom"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildPuffBallMushroom" extends="animalWildTemplate">
+	<property name="CorpseBlock" value="WildPuffBallMushroom"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildCapMushroom" extends="animalWildTemplate">	
+	<property name="CorpseBlock" value="WildCapMushroom"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildLionMushroom" extends="animalWildTemplate">	
+	<property name="CorpseBlock" value="WildMossyMushroomStump"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalFireFlyStump" extends="animalWildTemplate">	
+	<property name="CorpseBlock" value="FireFlyStump"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildJalapeno" extends="animalWildTemplate">	
+	<property name="CorpseBlock" value="WildJalapeno"/> 
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildPepper" extends="animalWildTemplate">	
+	<property name="CorpseBlock" value="WildPepper"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildPineapple" extends="animalWildTemplate">	
+	<property name="CorpseBlock" value="WildPineapple"/> 
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildTomato" extends="animalWildTemplate">
+	<property name="CorpseBlock" value="WildTomato"/> 
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildTurnip" extends="animalWildTemplate">
+	<property name="CorpseBlock" value="WildTurnip"/> 
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildEggplant" extends="animalWildTemplate">	
+	<property name="CorpseBlock" value="WildEggplant"/> 
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalWildStrawberry" extends="animalWildTemplate">	
+	<property name="CorpseBlock" value="WildStrawberry"/> 
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+	</effect_group>
+</entity_class>
+	
+	<!-- LIVING BEE LOGS -->	
+	
+	<entity_class name="animalBeeStump" extends="animalSnake">
+		<property name="Tags" value="entity,animal,hostile,perkAT03,spider"/>
+		<property name="AvatarController" value="AvatarAnimalController"/>	
+		<property name="AITask-1" value=""/>
+		<property name="AITarget-1" value=""/>
+		<property name="SoundHurt" value=""/>
+		<property name="SoundDeath" value=""/>
+		<property name="SoundRandom" value=""/>
+		<property name="SoundSense" value=""/>
+		<property name="SoundAlert" value=""/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundGiveUp" value=""/>
+		<property name="PainResistPerHit" value="1"/>
+		<property name="ExperienceGain" value="1"/> 
+		<property name="DeadBodyHitPoints" value="200"/>
+		<property name="MoveSpeedAggro" value="1,1"/>	
+		<property name="CorpseBlock" value="BeeStump"/><property name="CorpseBlockChance" value="1"/> 
+		<property name="TimeStayAfterDeath" value="2"/>	
+		<property name="Buffs" value="KillMe"/>
+		<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+		</effect_group>
+	</entity_class>
+
+	<entity_class name="animalBeeStump2" extends="animalBeeStump">
+		<property name="CorpseBlock" value="BeeStump2"/><property name="CorpseBlockChance" value="1"/> 
+		<property name="Buffs" value="KillMe"/>
+		<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+		</effect_group>
+	</entity_class>
+
+	<entity_class name="animalBeeStump3" extends="animalBeeStump">
+		<property name="CorpseBlock" value="BeeStump3"/><property name="CorpseBlockChance" value="1"/> 
+		<property name="Buffs" value="KillMe"/>
+		<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
+		</effect_group>
+	</entity_class>
+
+	<!-- TRADERS -->
+
+	<entity_class name="TraderTemplateOakCore">
+	  	<property name="Tags" value="entity,npc,human"/>
+	  	<property name="HideInSpawnMenu" value="true"/>
+	  	<property name="EntityType" value="Player"/>
+	  	<property name="Faction" value="trader"/>
+	  	<property name="Mesh" value="Player/Male/player_maleRagdoll"/>
+	  	<property name="AvatarController" value=""/>
+	  	<property name="ModelType" value="Npc"/>
+	  	<property name="HasRagdoll" value="true"/>
+	  	<property name="Prefab" value="NPC"/>
+	  	<property name="Class" value="EntityTrader"/>
+	  	<property name="Parent" value="Players"/>
+	  	<property name="PhysicsBody" value="Player"/>
+	  	<property name="Weight" value="70"/>
+	  	<property name="LookAtAngle" value="60"/>
+	  	<property name="AITask-1" value="ApproachAndAttackTarget" data="class=EntityAlive"/>
+	  	<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityAlive"/>
+	  	<property name="NPCID" value="traderric"/>
+	  	<property name="IsEnemyEntity" value="true"/>
+	  	<property name="WalkType" value="7"/>
+	  	<property name="SurfaceCategory" value="organic"/>
+	  	<property name="ParticleOnDeath" value="blood_death"/>
+	  	<property name="HasDeathAnim" value="true"/>
+	  	<property name="SoundRandomTime" value="200.0"/>
+	  	<property name="Archetype" value="TraderJoel"/>
+	  	<property name="SoundHurt" value="Player_Male/player1painlg"/>
+	  	<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
+	  	<property name="SoundDeath" value="Player_Male/player1death"/>
+	  	<property name="SoundStamina" value="Player_Male/player1stamina"/>
+	  	<property name="SoundDrownPain" value="Player_Male/player1drownpain"/>
+	  	<property name="SoundWaterSurface" value="Player_Male/player1drownsurface"/>
+	  	<property name="SoundDrownDeath" value="Player_Male/player1drowndeath"/>
+	  	<property name="SoundJump" value="Player_Male/player1Jump"/>
+	  	<property name="SoundLandSoft" value="Player_Male/player1LandSoft"/>
+	  	<property name="SoundLandHard" value="Player_Male/player1LandHard"/>
+	  	<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+	  	<property name="MaxViewAngle" value="180"/>
+	  	<property name="LootListAlive" value="62"/>
+	  	<property name="MoveSpeed" value="0.75"/>
+	  	<property name="MoveSpeedAggro" value="1.15, 1.15"/>
+	  	<property name="MoveSpeedPanic" value="1.35"/>
+	  	<property name="CanClimbLadders" value="true"/>
+	  	<property name="ExperienceGain" value="130"/>
+	  	<property name="TimeStayAfterDeath" value="30"/>
+	  	<property name="DeadBodyHitPoints" value="251"/>
+
+	  	<property name="NavObject" value="trader" />
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="100000"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingOne,buffInjuryBleedingTwo,buffInjuryBleeding,buffBurningZombie,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffBurningMolotov,buffIsOnFire,buffBurningWeapon,buffShocked"/>
+		</effect_group>
+	</entity_class>
+
+	<entity_class name="TraderRifleBirdMan" extends="TraderTemplateOakCore">
+	  	<property name="Tags" value="entity,npc,human,trader"/>
+	  	<property name="Mesh" value="#@modfolder:Resources/6RifleBirdMan.unity3d?6RifleBirdMan"/>
+	  	<property name="NPCID" value="RifleBirdMan"/>
+	</entity_class>
+
+	<entity_class name="TraderGuardMan" extends="TraderTemplateOakCore">
+	  	<property name="Tags" value="entity,npc,human,trader"/>
+	  	<property name="Mesh" value="#@modfolder:Resources/10GuardMan.unity3d?10GuardMan"/>
+	  	<property name="NPCID" value="GuardMan"/>
+	</entity_class>
+
+	<entity_class name="TraderMadMan" extends="TraderTemplateOakCore">
+	  	<property name="Tags" value="entity,npc,human,trader"/>
+	  	<property name="Mesh" value="#@modfolder:Resources/19MadMan.unity3d?19MadMan"/>
+	  	<property name="NPCID" value="MadMan"/>
+	</entity_class>
+
+	<entity_class name="TraderRobotMan" extends="TraderTemplateOakCore">
+	  	<property name="Tags" value="entity,npc,human,trader"/>
+	  	<property name="Mesh" value="#@modfolder:Resources/22RobotMan.unity3d?22RobotMan"/>
+	  	<property name="NPCID" value="RobotMan"/>
+	</entity_class>
+
+	<entity_class name="TraderTreeMaster" extends="TraderTemplateOakCore">
+	  	<property name="Tags" value="entity,npc,human,trader"/>
+	  	<property name="Mesh" value="#@modfolder:Resources/26TreeMaster.unity3d?26TreeMaster"/>
+	  	<property name="NPCID" value="TreeMaster"/>
+	</entity_class>
+	
+			<!-- LAZMAN'S BLOOD MOON VANGUARD REPEATABLE QUEST -->	
+	
+			<!-- A20 Offerings in entityclass.xml order -->
+			
+			<!-- ***** ZOMBIES : SLIM,  slightly lower HP but faster ***** -->			
+			
+			<entity_class name="BM_zombieArlene" extends="zombieArlene"></entity_class>
+			<entity_class name="BM_zombieArleneFeral" extends="zombieArleneFeral"></entity_class>	
+			<entity_class name="BM_zombieArleneRadiated" extends="zombieArleneRadiated"></entity_class>
+			<entity_class name="BM_zombieMarlene" extends="zombieMarlene"></entity_class>
+			<entity_class name="BM_zombieMarleneFeral" extends="zombieMarleneFeral"></entity_class>
+			<entity_class name="BM_zombieMarleneRadiated" extends="zombieMarleneRadiated"></entity_class>
+			<entity_class name="BM_zombiePartyGirl" extends="zombiePartyGirl"></entity_class>
+			<entity_class name="BM_zombiePartyGirlFeral" extends="zombiePartyGirlFeral"></entity_class>
+			<!-- No Radidated zombiePartyGirl -->
+			<entity_class name="BM_zombieNurse" extends="zombieNurse"></entity_class>
+			<entity_class name="BM_zombieNurseFeral" extends="zombieNurseFeral"></entity_class>
+			<entity_class name="BM_zombieNurseRadiated" extends="zombieNurseRadiated"></entity_class>
+			<entity_class name="BM_zombieJoe" extends="zombieJoe"></entity_class>
+			<entity_class name="BM_zombieJoeFeral" extends="zombieJoeFeral"></entity_class>
+			<entity_class name="BM_zombieJoeRadiated" extends="zombieJoeRadiated"></entity_class>
+			<entity_class name="BM_zombieSteve" extends="zombieSteve"></entity_class>
+			<entity_class name="BM_zombieSteveFeral" extends="zombieSteveFeral"></entity_class>
+			<entity_class name="BM_zombieSteveRadiated" extends="zombieSteveRadiated"></entity_class>
+			<entity_class name="BM_zombieTomClark" extends="zombieTomClark"></entity_class>
+			<entity_class name="BM_zombieTomClarkFeral" extends="zombieTomClarkFeral"></entity_class>
+			<entity_class name="BM_zombieTomClarkRadiated" extends="zombieTomClarkRadiated"></entity_class>		
+			<entity_class name="BM_zombieBusinessMan" extends="zombieBusinessMan"></entity_class>
+			<entity_class name="BM_zombieBusinessManFeral" extends="zombieBusinessManFeral"></entity_class>
+			<!-- No Radidated zombieBusinessMan -->
+			<!-- No Normal zombieBurnt in vanilla BM hordes & No Feral/Radidated zombieBurnt -->
+			<entity_class name="BM_zombieSpider" extends="zombieSpider"></entity_class>
+			<entity_class name="BM_zombieSpiderFeral" extends="zombieSpiderFeral"></entity_class>
+			<entity_class name="BM_zombieSpiderRadiated" extends="zombieSpiderRadiated"></entity_class>
+			
+			<!-- ***** ZOMBIES : NORMAL ***** -->			
+			
+			<entity_class name="BM_zombieBoe" extends="zombieBoe"></entity_class>
+			<entity_class name="BM_zombieBoeFeral" extends="zombieBoeFeral"></entity_class>
+			<entity_class name="BM_zombieBoeRadiated" extends="zombieBoeRadiated"></entity_class>
+			<entity_class name="BM_zombieJanitor" extends="zombieJanitor"></entity_class>
+			<entity_class name="BM_zombieJanitorFeral" extends="zombieJanitorFeral"></entity_class>
+			<entity_class name="BM_zombieJanitorRadiated" extends="zombieJanitorRadiated"></entity_class>
+			<entity_class name="BM_zombieMoe" extends="zombieMoe"></entity_class>
+			<entity_class name="BM_zombieMoeFeral" extends="zombieMoeFeral"></entity_class>
+			<entity_class name="BM_zombieMoeRadiated" extends="zombieMoeRadiated"></entity_class>			
+			<!-- No Normal zombieLab in vanilla BM hordes & No Feral/Radidated zombieLab -->			
+			<entity_class name="BM_zombieDarlene" extends="zombieDarlene"></entity_class>
+			<entity_class name="BM_zombieDarleneFeral" extends="zombieDarleneFeral"></entity_class>
+			<entity_class name="BM_zombieDarleneRadiated" extends="zombieDarleneRadiated"></entity_class>			
+			<entity_class name="BM_zombieYo" extends="zombieYo"></entity_class>
+			<entity_class name="BM_zombieYoFeral" extends="zombieYoFeral"></entity_class>
+			<entity_class name="BM_zombieYoRadiated" extends="zombieYoRadiated"></entity_class>			
+			<entity_class name="BM_zombieUtilityWorker" extends="zombieUtilityWorker"></entity_class>
+			<entity_class name="BM_zombieUtilityWorkerFeral" extends="zombieUtilityWorkerFeral"></entity_class>
+			<!-- No Radidated zombieUtilityWorker -->
+			
+			<!-- ***** ZOMBIES : STRONG,  higher HP but slightly slower ***** -->			
+			
+			<entity_class name="BM_zombieBiker" extends="zombieBiker"></entity_class>
+			<entity_class name="BM_zombieBikerFeral" extends="zombieBikerFeral"></entity_class>
+			<entity_class name="BM_zombieBikerRadiated" extends="zombieBikerRadiated"></entity_class>			
+			<entity_class name="BM_zombieLumberjack" extends="zombieLumberjack"></entity_class>
+			<entity_class name="BM_zombieLumberjackFeral" extends="zombieLumberjackFeral"></entity_class>
+			<entity_class name="BM_zombieLumberjackRadiated" extends="zombieLumberjackRadiated"></entity_class>
+			<entity_class name="BM_zombieFemaleFat" extends="zombieFemaleFat"></entity_class>
+			<entity_class name="BM_zombieFemaleFatFeral" extends="zombieFemaleFatFeral"></entity_class>
+			<entity_class name="BM_zombieFemaleFatRadiated" extends="zombieFemaleFatRadiated"></entity_class>			
+			<entity_class name="BM_zombieFatHawaiian" extends="zombieFatHawaiian"></entity_class>
+			<entity_class name="BM_zombieFatHawaiianFeral" extends="zombieFatHawaiianFeral"></entity_class>
+			<entity_class name="BM_zombieFatHawaiianRadiated" extends="zombieFatHawaiianRadiated"></entity_class>
+			<entity_class name="BM_zombieMaleHazmat" extends="zombieMaleHazmat"></entity_class>
+			<entity_class name="BM_zombieMaleHazmatFeral" extends="zombieMaleHazmatFeral"></entity_class>
+			<entity_class name="BM_zombieMaleHazmatRadiated" extends="zombieMaleHazmatRadiated"></entity_class>
+			<entity_class name="BM_zombieFatCop" extends="zombieFatCop"></entity_class>
+			<entity_class name="BM_zombieFatCopFeral" extends="zombieFatCopFeral"></entity_class>
+			<entity_class name="BM_zombieFatCopRadiated" extends="zombieFatCopRadiated"></entity_class>
+
+			<!-- ***** ZOMBIES : FIT,  lower HP than strong zombies but faster than normal ones ***** -->
+			
+			<entity_class name="BM_zombieSkateboarder" extends="zombieSkateboarder"></entity_class>
+			<entity_class name="BM_zombieSkateboarderFeral" extends="zombieSkateboarderFeral"></entity_class>
+			<entity_class name="BM_zombieSkateboarderRadiated" extends="zombieSkateboarderRadiated"></entity_class>
+			<entity_class name="BM_zombieSoldier" extends="zombieSoldier"></entity_class>	
+			<entity_class name="BM_zombieSoldierFeral" extends="zombieSoldierFeral"></entity_class>			
+			<entity_class name="BM_zombieSoldierRadiated" extends="zombieSoldierRadiated"></entity_class>
+			<!-- No Normal zombieWight -->			
+			<entity_class name="BM_zombieWightFeral" extends="zombieWightFeral"></entity_class>
+			<entity_class name="BM_zombieWightRadiated" extends="zombieWightRadiated"></entity_class>			
+
+			<!-- ***** ZOMBIES : SPECIAL ***** -->
+
+			<!-- No Normal/Feral zombieScreamer in vanilla BM hordes & No Radidated zombieScreamer -->
+			<!-- No Normal/Feral zombieMutated in vanilla BM hordes & No Radidated zombieMutated -->
+			<entity_class name="BM_zombieDemolition" extends="zombieDemolition"></entity_class>	
+			<!-- No Feral/Radidated zombieDemolition -->			
+			<!-- No Normal/Feral zombieSteveCrawler in vanilla BM hordes & No Radidated zombieSteveCrawler exists -->			
+			
+			<!-- ***** ANGRY BIRDS and HOT DOGS ***** -->
+			<!-- Appear to be hardcoded default as regulars spawn when riding - Maybe one day -->
+			
+			<!--entity_class name="BM_animalZombieDog" extends="animalZombieDog"></entity_class>			
+			<entity_class name="BM_animalZombieVulture" extends="animalZombieVulture"></entity_class>
+			<entity_class name="BM_animalZombieVultureRadiated" extends="animalZombieVultureRadiated"></entity_class-->	
+
+	</append>
+
+</configs>

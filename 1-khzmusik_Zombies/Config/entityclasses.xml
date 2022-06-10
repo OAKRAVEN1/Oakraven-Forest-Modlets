@@ -1,0 +1,141 @@
+<configs>
+	<append xpath="/entity_classes">
+        <entity_class name="zombieBurntKhz" extends="zombieBurnt">
+            <property name="Tags" value="entity,male,zombie,walker" />
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieBurnt_KHz" />
+            <property name="Faction" value="undead" />
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie" />
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombie001" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="120" />
+            <property name="WalkType" value="6" />
+        </entity_class>
+        <entity_class name="zombieBusinessmanKhz" extends="zombieTemplateMale">
+            <property name="Tags" value="entity,male,zombie,walker" />
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieBusinessman_KHz" />
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+            <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+            <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+            <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+            <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+            <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+            <property name="Faction" value="undead" />
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie" />
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombieStrong2" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="230" />
+            <property name="WalkType" value="7" />
+        </entity_class>
+        <entity_class name="zombieBusinesswomanKhz" extends="zombieFemaleFat">
+            <property name="Tags" value="entity,female,zombie,walker" />
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieBusinesswoman_KHz" />
+            <property name="Faction" value="undead" />
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie" />
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombieStrong2" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="230" />
+            <property name="WalkType" value="1" />
+        </entity_class>
+        <entity_class name="zombieCowgirlKhz" extends="zombieArlene">
+            <property name="SizeScale" value="1" />
+            <property name="Tags" value="entity,female,zombie,walker" />
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieCowgirl_KHz" />
+            <property name="Faction" value="undead" />
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie" />
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombie001" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="130" />
+            <property name="WalkType" value="7" />
+        </entity_class>
+        <entity_class name="zombieFemaleKhz" extends="zombieNurse">
+            <property name="Tags" value="entity,female,zombie,walker"/>
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieFemale_KHz"/>
+            <property name="Faction" value="undead"/>
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>                
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombie001" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="130" />
+        </entity_class>
+        <entity_class name="zombieFemaleLumberjackKhz" extends="zombieFemaleFat">
+            <property name="Tags" value="entity,female,zombie,walker" />
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieFemaleLumberjack_KHz" />
+            <property name="Faction" value="undead" />
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie" />
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombieStrong2" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="230" />
+            <property name="WalkType" value="2" />
+        </entity_class>
+        <entity_class name="zombieFemaleOfficeKhz" extends="zombieNurse">
+            <property name="Tags" value="entity,female,zombie,walker" />
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieFemaleOffice_KHz" />
+            <property name="Faction" value="undead" />
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie" />
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombie001" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="130" />
+        </entity_class>
+        <entity_class name="zombieFemaleStripperKhz" extends="zombiePartyGirl">
+            <property name="Tags" value="entity,female,zombie,walker" />
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieFemaleStripper_KHz" />
+            <property name="Faction" value="undead" />
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie" />
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombie001" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="130" />
+            <property name="WalkType" value="7" />
+        </entity_class>
+        <entity_class name="zombieFirefighterKhz" extends="zombieUtilityWorker">
+            <property name="Tags" value="entity,male,zombie,walker" />
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieFirefighter_KHz" />
+            <property name="Faction" value="undead" />
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie" />
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombie001" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="170" />
+            <property name="WalkType" value="1" />
+        </entity_class>
+        <entity_class name="zombieMaleKhz" extends="zombieTemplateMale">
+            <property name="Tags" value="entity,male,zombie,walker" />
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieMale_KHz" />
+            <property name="Faction" value="undead" />
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie" />
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombie001" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="170" />
+            <property name="WalkType" value="5" />
+        </entity_class>
+        <entity_class name="zombiePolicewomanKhz" extends="zombieFemaleFat">
+            <property name="Tags" value="entity,female,zombie,walker" />
+            <property name="Mesh" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombiePolicewoman_KHz" />
+            <property name="Faction" value="undead" />
+            <property name="PhysicsBody" value="mixamoConvertedStandardZombie" />
+            <property name="RootMotion" value="True" />
+            <property name="HandItem" value="meleeHandZombieStrong2" />
+            <property name="HandItemCrawler" value="meleeHandZombie002" />
+            <property name="HasRagdoll" value="true" />
+            <property name="Mass" value="230" />
+            <property name="WalkType" value="1" />
+        </entity_class>
+	</append>
+</configs>

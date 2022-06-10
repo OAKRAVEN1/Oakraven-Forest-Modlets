@@ -1,0 +1,19 @@
+<test name="XUi_Menu/xui.xml">
+	<append xpath="/xui/ruleset[@name='default']">
+		<window_group name="menuBackground20220610024349_1" actionSet="false">
+			<window name="OAKbackground1" />
+		</window_group>
+		<window_group name="menuBackground20220610213949_1" actionSet="false">
+			<window name="OAKbackground2" />
+		</window_group>
+		<window_group name="menuBackground20220611000741_1" actionSet="false">
+			<window name="OAKbackground3" />
+		</window_group>
+		<window_group name="menuBackground20220611010226_1" actionSet="false">
+			<window name="OAKbackground4" />
+		</window_group>
+		<window_group name="menuBackground20220611013645_1" actionSet="false">
+			<window name="OAKbackground5" />
+		</window_group>		
+	</append>
+</test>

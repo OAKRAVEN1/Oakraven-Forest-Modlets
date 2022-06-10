@@ -1,0 +1,218 @@
+<configs>
+	<append xpath="/Sounds">
+	
+    <!-- FISH FARM -->	
+	
+	<SoundDataNode name="FishSounds">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#@modfolder:Resources/FishStuff.unity3d?Deepwater" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="1.111" />
+	</SoundDataNode>	
+	
+    <!-- CHICKEN COOPS -->	
+	
+	<SoundDataNode name="Chicken6Sounds">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#@modfolder:Resources/ChickenCoop.unity3d?Chicken1" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="1.111" />
+	</SoundDataNode>	
+	
+    <!-- BEE HIVES -->
+	
+	<SoundDataNode name="BeeHiveOpen">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#@modfolder:Resources/BeeSounds.unity3d?zBeeSound2" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="1.111" />
+	</SoundDataNode>
+	
+    <!-- ArramusTrader Sounds -->
+
+	<SoundDataNode name="arramuslikegreeting"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?Hello"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?Greetings"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?Ihavemyeyeonyou"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="arramuslikesaleaccepted"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?IsupposeitwillhavetodoThankyou"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?Iamtouchedbyyoursupport"/>	
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="arramuslikesaledeclined"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?Ibebusysoonenough"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="arramuslikequestoffer"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?Adarkpowercallsyouforth"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="arramuslikequestcomplete"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?Keeptheskiesclearforme"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?Amostimpressivedisplay"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="arramuslikequestaccepted"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?My_thanks"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="arramuslikequestdeclined"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?Youarenotlookingwell"/>
+	<AudioClip ClipName="#@modfolder:Resources/ArramusTrederVoice.unity3d?Ienjoythequietwhileitlasts"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>	
+		
+    <!-- WendigoTrader Sounds -->
+	
+	<SoundDataNode name="Wendigolikegreeting"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigobackformore"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigocomecloser"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?WendigoGotSomethingSay"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigohi"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="Wendigolikesaleaccepted"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?WendigoHeyStayoutoftrouble"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?WendigoLikeakingCandy"/>	
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="Wendigolikesaledeclined"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigoidiot"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigoiminnorush"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="Wendigolikequestoffer"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigoiminnorush"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigorewardfitforking"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="Wendigolikequestcomplete"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?WendigoAbouttimesomethinguseful"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigonowthatsmorelikeit"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="Wendigolikequestaccepted"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigoohgoodie"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?WendigoPushOff"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="Wendigolikequestdeclined"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigoyouchicken"/>
+	<AudioClip ClipName="#@modfolder:Resources/wendigoTraderSounds.unity3d?Wendigostayoutofmyway"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<!-- RifleBirdMan Trader Sounds -->
+											 
+	<SoundDataNode name="RifleBirdManlikegreeting"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterAllKnowing"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterGreetings"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterneitherjoyremorsesuchdeath"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="RifleBirdManlikesaleaccepted"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterHowwonderful"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="RifleBirdManlikesaledeclined"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterHowDisappointing"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMastertemporarysetback"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="RifleBirdManlikequestoffer"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterveryonebeginsignorance"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="RifleBirdManlikequestcomplete"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterExcellenceisitsownreward"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterImpressive"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="RifleBirdManlikequestaccepted"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterdefeatimpossibilityinyourmind"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="RifleBirdManlikequestdeclined"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterBaskintheshadowofdoubt"/>
+	<AudioClip ClipName="#@modfolder:Resources/RifleBirdManSounds.unity3d?RifleMasterIknowthedoubtsthatplagueyou"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>	
+	
+	<!-- Guard Trader Sounds -->
+											 
+	<SoundDataNode name="GuardManlikegreeting"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?GuardBackformore"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?GuardCmoncmoncmonIhatewaiting"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="GuardManlikesaleaccepted"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?GuardCheersmate"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?GuardHaveaniceday!"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?Guardthankyouthankyou!"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="GuardManlikesaledeclined"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?GuardHandsoffthemerchandise!"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?Guarddammit"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?Guardyadipstick"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="GuardManlikequestoffer"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?Guardnowwe'recookinwgas"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="GuardManlikequestcomplete"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?Guardicanalwayscountonyoumate"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?GuardIknewtherewasareason"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="GuardManlikequestaccepted"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?Guardbringstearstomeeyes"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+	<SoundDataNode name="GuardManlikequestdeclined"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?GuardBackToTheScrapheap"/>
+	<AudioClip ClipName="#@modfolder:Resources/GuardTraderSounds.unity3d?Guardstayouttathekitchen"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+		
+	</append>
+</configs>	

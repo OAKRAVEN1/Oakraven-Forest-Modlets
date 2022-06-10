@@ -1,0 +1,105 @@
+<compopack>
+
+	<set xpath="/rwgmixer/township[@name='oldwest']/property[@name='spawn_trader']/@value">true</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='mintiles']">3</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='maxtiles']">4</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='mintiles']">4</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='maxtiles']">5</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='mintiles']">5</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='maxtiles']">6</set>
+
+	<set xpath="/rwgmixer/district[@name='rural']/property[@name='district_required_township']">fabbersville</set>	
+	
+	<remove xpath="/rwgmixer/township[@name='countrytown']"/>
+	<remove xpath="/rwgmixer/township[@name='town']"/>
+	<remove xpath="/rwgmixer/township[@name='city']"/>
+	<remove xpath="/rwgmixer/district[@name='commercial']"/>	
+	<remove xpath="/rwgmixer/district[@name='downtown']"/>
+	<remove xpath="/rwgmixer/district[@name='industrial']"/>
+	<remove xpath="/rwgmixer/district[@name='residential']"/>
+	<remove xpath="/rwgmixer/district[@name='countrytown']"/>
+	<remove xpath="/rwgmixer/district[@name='countryresidential']"/>
+
+    <append xpath="/rwgmixer/world[@name='small']">
+<!-- FABBERSVILLE -->
+<!-- COMPOPACK -->
+<!-- SETTLEMENTS -->
+<!-- FABBERSVILLE -->
+      <property class="fabbersville">
+			<property name="few" value="6"/>
+			<property name="default" value="7"/>
+			<property name="many" value="8"/>
+			
+			<property name="mintiles" value="8"/>
+			<property name="maxtiles" value="12"/>
+		</property>	
+<!-- FABBERSVILLE -->
+<!-- SETTLEMENTS -->
+<!-- COMPOPACK -->
+</append>
+	
+	<append xpath="/rwgmixer/world[@name='medium']">
+<!-- COMPOPACK -->
+<!-- SETTLEMENTS -->
+<!-- FABBERSVILLE -->
+      <property class="fabbersville">
+			<property name="few" value="7"/>
+			<property name="default" value="8"/>
+			<property name="many" value="9"/>
+			
+			<property name="mintiles" value="8"/>
+			<property name="maxtiles" value="12"/>
+		</property>	
+<!-- FABBERSVILLE -->
+<!-- SETTLEMENTS -->
+<!-- COMPOPACK -->
+</append>	
+
+	<append xpath="/rwgmixer/world[@name='large']">
+<!-- COMPOPACK -->
+<!-- SETTLEMENTS -->
+<!-- FABBERSVILLE -->
+      <property class="fabbersville">
+			<property name="few" value="8"/>
+			<property name="default" value="9"/>
+			<property name="many" value="10"/>
+			
+			<property name="mintiles" value="8"/>
+			<property name="maxtiles" value="12"/>
+		</property>	
+<!-- FABBERSVILLE -->
+<!-- SETTLEMENTS -->
+<!-- COMPOPACK -->
+</append>
+
+	<append xpath="/rwgmixer">
+<!-- COMPOPACK -->
+<!-- DISTRICTS -->
+<!-- SETTLEMENTS -->
+<!-- FABBERSVILLE -->
+	<!-- FABBERSVILLE TOWN -->
+	<township name="fabbersville">
+		<property name="outskirt_district" value="rural"/>	
+	</township>
+	
+	<district name="fab">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="fabbersville"/>
+		<property name="district_preview_color" value="0,0.5,0"/>
+		
+		<property name="poi_required_tags_all" value="fabber"/>
+	</district>	
+	
+	<!-- FABBERSVILLE TOWN -->
+	<!-- FABBERSVILLE RESIDENTIAL -->
+	<district name="fv">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="fabbersville"/>
+		<property name="district_preview_color" value="0,0.5,0"/>
+		
+		<property name="poi_required_tags_all" value="fabberres"/>
+	</district>	
+	<!-- FABBERSVILLE RESIDENTIAL -->
+<!-- COMPOPACK -->
+</append>
+</compopack>

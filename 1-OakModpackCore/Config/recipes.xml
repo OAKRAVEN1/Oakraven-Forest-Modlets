@@ -1,0 +1,1215 @@
+<configs>
+
+	<append xpath="/recipes">
+	
+	<!-- DRAW BRIDGES -->	
+	
+	<recipe name="WalkWay1x4" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceWood" count="100"/>
+		<ingredient name="resourceSpring" count="20"/>
+		<ingredient name="resourceMechanicalParts" count="30"/>
+	</recipe>
+
+	<recipe name="WalkWay1x4Mesh" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceWood" count="100"/>
+		<ingredient name="resourceSpring" count="20"/>
+		<ingredient name="resourceMechanicalParts" count="30"/>
+	</recipe>
+
+	<recipe name="NoRailWalkWay1x4B" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceWood" count="100"/>
+		<ingredient name="resourceSpring" count="20"/>
+		<ingredient name="resourceMechanicalParts" count="30"/>
+	</recipe>
+
+	<recipe name="NoRailWalkWay1x4A" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceWood" count="100"/>
+		<ingredient name="resourceSpring" count="20"/>
+		<ingredient name="resourceMechanicalParts" count="30"/>
+	</recipe>
+
+	<recipe name="WalkWay1x4Block" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceWood" count="100"/>
+		<ingredient name="resourceSpring" count="20"/>
+		<ingredient name="resourceMechanicalParts" count="30"/>
+	</recipe>
+
+	<recipe name="WalkWay1x4Block2" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceWood" count="100"/>
+		<ingredient name="resourceSpring" count="20"/>
+		<ingredient name="resourceMechanicalParts" count="30"/>
+	</recipe>
+
+	<recipe name="NoRailWalkWay3x4" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="150"/>
+		<ingredient name="resourceWood" count="200"/>
+		<ingredient name="resourceSpring" count="30"/>
+		<ingredient name="resourceMechanicalParts" count="40"/>
+	</recipe>
+
+	<recipe name="NoRailWalkWay3x4Block" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="150"/>
+		<ingredient name="resourceWood" count="200"/>
+		<ingredient name="resourceSpring" count="30"/>
+		<ingredient name="resourceMechanicalParts" count="40"/>
+	</recipe>
+
+	<recipe name="WalkWay3x4" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="150"/>
+		<ingredient name="resourceWood" count="200"/>
+		<ingredient name="resourceSpring" count="30"/>
+		<ingredient name="resourceMechanicalParts" count="40"/>
+	</recipe>
+
+	<recipe name="WalkWay3x4Mesh" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="150"/>
+		<ingredient name="resourceWood" count="200"/>
+		<ingredient name="resourceSpring" count="30"/>
+		<ingredient name="resourceMechanicalParts" count="40"/>
+	</recipe>
+
+	<recipe name="WalkWay3x4Block" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="150"/>
+		<ingredient name="resourceWood" count="200"/>
+		<ingredient name="resourceSpring" count="30"/>
+		<ingredient name="resourceMechanicalParts" count="40"/>
+	</recipe>
+
+	<recipe name="WalkWay3x4Block2" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="150"/>
+		<ingredient name="resourceWood" count="200"/>
+		<ingredient name="resourceSpring" count="30"/>
+		<ingredient name="resourceMechanicalParts" count="40"/>
+	</recipe>
+
+	<recipe name="VonerichWalkWay3X8" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="350"/>
+		<ingredient name="resourceWood" count="400"/>
+		<ingredient name="resourceSpring" count="40"/>
+		<ingredient name="resourceMechanicalParts" count="60"/>
+	</recipe>
+
+	<recipe name="VonerichWalkWay1x8" count="1" craft_area="workbench" >
+		<ingredient name="resourceForgedIron" count="100"/>
+		<ingredient name="resourceWood" count="200"/>
+		<ingredient name="resourceSpring" count="30"/>
+		<ingredient name="resourceMechanicalParts" count="40"/>
+	</recipe>	
+	
+	<!-- COOKING STATIONS -->
+
+			<!-- WORKSTATIONS -->	
+	
+	<recipe name="OaksCooker" count="1" craft_area="workbench" craft_time="180" tags="learnable,workbenchCrafting">
+		<ingredient name="toolBeaker" count="1"/>
+		<ingredient name="resourceForgedIron" count="100"/>
+		<ingredient name="toolCookingPot" count="2"/>
+		<ingredient name="resourceMetalPipe" count="30"/>
+		<ingredient name="resourceAcid" count="5"/>
+	</recipe>
+
+	<recipe name="PotStove" count="1" craft_area="workbench" craft_time="180" tags="learnable,workbenchCrafting">
+		<ingredient name="toolCookingPot" count="1"/>
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="bucketEmpty" count="1"/>
+		<ingredient name="resourceScrapBrass" count="50"/>
+		<ingredient name="resourceBrokenGlass" count="25"/>
+	</recipe>
+	
+	<recipe name="IronStove" count="1" craft_area="workbench" craft_time="180" tags="learnable,workbenchCrafting">
+		<ingredient name="toolCookingPot" count="1"/>
+		<ingredient name="resourceForgedIron" count="40"/>
+		<ingredient name="bucketEmpty" count="1"/>
+		<ingredient name="resourceScrapBrass" count="10"/>
+		<ingredient name="resourceBrokenGlass" count="25"/>
+	</recipe>
+	
+	<recipe name="StoneStove" count="1" craft_area="workbench" craft_time="180" tags="learnable,workbenchCrafting">
+		<ingredient name="toolCookingPot" count="1"/>
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceClayLump" count="100"/>
+		<ingredient name="resourceRockSmall" count="200"/>
+		<ingredient name="resourceScrapIron" count="25"/>
+	</recipe>
+	
+<!-- WORKSTATION FOOD AND DRINK -->
+
+    <recipe name="drinkJarBoiledWater" count="1" craft_area="OaksCooker" craft_time="40" tags="perkMasterChef,perkChefBoiledWater,boiledWater">
+	    <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarPureMineralWater" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="drinkJarRiverWater" count="1"/>
+	    <ingredient name="resourceCoal" count="1"/>
+	    <ingredient name="resourceCropGoldenrodPlant" count="1"/>
+	    <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarCoffee" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="resourceCropCoffeeBeans" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="resourceCropCoffeeBeans" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+	    <ingredient name="resourceGunPowder" count="5"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceGunPowder"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="drinkJarGoldenRodTea" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="resourceCropGoldenrodPlant" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarGrandpasAwesomeSauce" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="casinoCoin" count="50"/>
+	    <ingredient name="foodHoney" count="5"/>
+	    <ingredient name="foodCropMushrooms" count="5"/>
+	    <ingredient name="ammoGasCan" count="10"/>
+	    <ingredient name="foodCropGraceCorn" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="perc_add" value="-.2" tags="casinoCoin,foodHoney,foodCropMushrooms,ammoGasCan"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="drinkJarGrandpasLearningElixir" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCanDogfood" count="2"/>
+	    <ingredient name="drinkJarRedTea" count="2"/>
+	    <ingredient name="resourceAcid" count="1"/>
+	    <ingredient name="drinkJarBeer" count="1"/>
+	    <ingredient name="foodCropGraceCorn" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarGrandpasMoonshine" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCornMeal" count="5"/>
+	    <ingredient name="drinkJarBeer" count="1"/>
+	    <ingredient name="foodCropBlueberries" count="5"/>
+	    <ingredient name="resourceAcid" count="1"/>
+	    <ingredient name="foodCropGraceCorn" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodCornMeal,foodCropBlueberries"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="drinkJarRedTea" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarRiverWater" count="1" craft_area="OaksCooker" tags="perkMasterChef">
+	    <ingredient name="resourceSnowBall" count="1"/>
+	    <ingredient name="drinkJarEmpty" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarYuccaJuice" count="1" craft_area="OaksCooker" tags="perkMasterChef">
+	    <ingredient name="foodCropYuccaFruit" count="2"/>
+	    <ingredient name="drinkJarEmpty" count="1"/>
+    </recipe>
+
+    <recipe name="drugAntibiotics" count="1" craft_area="OaksCooker" craft_tool="toolBeaker" tags="learnable">
+	    <ingredient name="foodShamSandwich" count="4"/>
+	    <ingredient name="resourcePotassiumNitratePowder" count="3"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="drugHerbalAntibiotics" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable">
+	    <ingredient name="foodCropBlueberries" count="5"/>
+	    <ingredient name="foodCropMushrooms" count="3"/>
+	    <ingredient name="resourceCropChrysanthemumPlant" count="3"/>
+	    <ingredient name="resourcePotassiumNitratePowder" count="3"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="foodBaconAndEggs" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodRawMeat" count="5"/>
+	    <ingredient name="foodEgg" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodBakedPotato" count="1" craft_area="OaksCooker" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCropPotato" count="1"/>
+    </recipe>
+
+    <recipe name="foodBlueberryPie" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCropBlueberries" count="5"/>
+	    <ingredient name="foodEgg" count="1"/>
+	    <ingredient name="foodCornMeal" count="1"/>
+	    <ingredient name="resourceAnimalFat" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodCropBlueberries"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodPumpkinPie" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCropPumpkin" count="2"/>
+	    <ingredient name="foodEgg" count="1"/>
+	    <ingredient name="foodCornMeal" count="1"/>
+	    <ingredient name="resourceAnimalFat" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="foodPumpkinCheesecake" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCropPumpkin" count="1"/>
+	    <ingredient name="foodEgg" count="1"/>
+	    <ingredient name="foodCornMeal" count="1"/>
+	    <ingredient name="resourceAnimalFat" count="1"/>
+	    <ingredient name="drinkJarBeer" count="1"/>
+    </recipe>
+
+    <recipe name="foodPumpkinBread" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCropPumpkin" count="1"/>
+	    <ingredient name="foodCornMeal" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="foodBoiledMeat" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodRawMeat" count="5"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodCanSham" count="5" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="drinkCanEmpty" count="5"/>
+	    <ingredient name="foodRottingFlesh" count="5"/>
+	    <ingredient name="resourceBone" count="5"/>
+	    <ingredient name="resourceAnimalFat" count="5"/>
+	    <ingredient name="resourceAcid" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRottingFlesh,resourceBone,resourceAnimalFat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodCharredMeat" count="1" craft_area="OaksCooker" tags="perkMasterChef">
+	    <ingredient name="foodRawMeat" count="5"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodChiliDog" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCanChili" count="1"/>
+	    <ingredient name="foodRawMeat" count="5"/>
+	    <ingredient name="foodCornBread" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodCornBread" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCornMeal" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="foodCornMeal" count="1">
+	    <ingredient name="foodCropCorn" count="1"/>
+    </recipe>
+
+    <recipe name="foodCornOnTheCob" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCropCorn" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="foodEggBoiled" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	    <ingredient name="foodEgg" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="foodFishTacos" count="1" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCanSalmon" count="1"/>
+	    <ingredient name="foodCornMeal" count="2"/>
+    </recipe>
+
+    <recipe name="foodGrilledMeat" count="1" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+	    <ingredient name="foodRawMeat" count="5"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodHoboStew" count="1"  craft_time="65" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodRottingFlesh" count="10"/>
+	    <ingredient name="foodCropPotato" count="2"/>
+	    <ingredient name="foodCropCorn" count="2"/>
+	    <ingredient name="resourceAnimalFat" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="foodRottingFlesh"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodMeatStew" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodRawMeat" count="5"/>
+	    <ingredient name="foodCropPotato" count="2"/>
+	    <ingredient name="foodCropCorn" count="2"/>
+	    <ingredient name="resourceAnimalFat" count="1"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodGumboStew" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCanBeef" count="1"/>
+	    <ingredient name="foodCanPeas" count="1"/>
+	    <ingredient name="foodCanStock" count="1"/>
+	    <ingredient name="resourceAnimalFat" count="3"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceAnimalFat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodShepardsPie" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCanLamb" count="1"/>
+	    <ingredient name="foodCanPeas" count="1"/>
+	    <ingredient name="foodCropCorn" count="1"/>
+	    <ingredient name="resourceAnimalFat" count="3"/>
+	    <ingredient name="foodCropPotato" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceAnimalFat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodSpaghetti" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCanBeef" count="1"/>
+	    <ingredient name="foodCanPasta" count="1"/>
+	    <ingredient name="foodCropMushrooms" count="1"/>
+	    <ingredient name="resourceAnimalFat" count="3"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceAnimalFat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodTunaFishGravyToast" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCanTuna" count="1"/>
+	    <ingredient name="foodCornMeal" count="1"/>
+	    <ingredient name="foodCornBread" count="2"/>
+	    <ingredient name="resourceAnimalFat" count="3"/>
+	    <ingredient name="foodCanPeas" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceAnimalFat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodShamChowder" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCanSham" count="1"/>
+	    <ingredient name="foodCropPotato" count="2"/>
+	    <ingredient name="foodCropCorn" count="2"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <recipe name="foodSteakAndPotato" count="1" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+	    <ingredient name="foodRawMeat" count="5"/>
+	    <ingredient name="foodCropPotato" count="2"/>
+	    <ingredient name="foodCropMushrooms" count="2"/>
+	    <ingredient name="resourceAnimalFat" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="foodVegetableStew" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	    <ingredient name="foodCropPotato" count="2"/>
+	    <ingredient name="foodCropCorn" count="2"/>
+	    <ingredient name="foodCropMushrooms" count="2"/>
+	    <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+	
+<!-- MACHINERY AND TOOLS -->
+	
+	<recipe name="toolMixer" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceForgedIron" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="resourceMetalPipe" count="2"/>
+	</recipe>
+	<recipe name="toolChopperBlade" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceForgedIron" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="resourceMetalPipe" count="2"/>
+	</recipe>
+	<recipe name="toolSmoothieBlade" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceForgedIron" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="resourceMetalPipe" count="2"/>
+	</recipe>		
+	<recipe name="RedMixer" count="1" craft_area="workbench" craft_time="180" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceScrapPolymers" count="12"/>
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="8"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="resourceMetalPipe" count="2"/>
+	</recipe>
+	<recipe name="GreenMixer" count="1" craft_area="workbench" craft_time="180" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceScrapPolymers" count="12"/>
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="8"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="resourceMetalPipe" count="2"/>
+	</recipe>
+	<recipe name="SilverBlender" count="1" craft_area="workbench" craft_time="180" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceScrapPolymers" count="12"/>
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="8"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="drinkJarEmpty" count="1"/>
+	</recipe>
+	<recipe name="GreenBlender" count="1" craft_area="workbench" craft_time="180" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceScrapPolymers" count="12"/>
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="8"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="drinkJarEmpty" count="1"/>
+	</recipe>
+	<recipe name="MeatGrinder" count="1" craft_area="workbench" craft_time="180" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceScrapBrass" count="50"/>
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="8"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="resourceWood" count="1"/>
+	</recipe>
+		
+                   <!-- MACHINERY CONNECTED FOOD AND DRINK -->
+
+	                          <!-- Mixer Recipes -->
+			
+	<recipe name="foodAcornDough" count="1" craft_area="RedMixer" craft_tool="toolMixer" tags="perkMasterChef">
+		<ingredient name="foodAcornMeal" count="1"/>
+		<ingredient name="foodHoney" count="1"/>
+		<ingredient name="foodEgg" count="2"/>
+	</recipe>
+	
+                              <!-- OaksCooker Recipes -->
+	
+	<recipe name="foodAcornBread" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+		<ingredient name="foodAcornDough" count="1"/>
+	</recipe>
+	
+	                         <!-- Blender Recipes --> 
+	
+	<recipe name="drinkBoarberrySmoothie" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="perkMasterChef">
+		<ingredient name="foodMinceMeat" count="1"/>
+		<ingredient name="foodCropBlueberries" count="3"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>			
+	</recipe>
+	<recipe name="foodAcornMeal" count="1" craft_area="SilverBlender" craft_tool="toolChopperBlade" tags="perkMasterChef">
+		<ingredient name="treePlantedOak1m" count="10"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="drinkFleshCan" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="perkMasterChef">
+		<ingredient name="foodMincedFlesh" count="1"/>
+		<ingredient name="foodBoneMeal" count="2"/>
+		<ingredient name="drinkCanEmpty" count="1"/>			
+	</recipe>
+	<recipe name="drinkGreenHell" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="perkMasterChef">
+		<ingredient name="foodMincedFlesh" count="1"/>
+		<ingredient name="foodBoneMeal" count="3"/>
+		<ingredient name="drinkJarYuccaJuice" count="1"/>			
+	</recipe>
+	<recipe name="drinkRedWorm" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="perkMasterChef">
+		<ingredient name="foodMincedFlesh" count="1"/>
+		<ingredient name="foodBoneMeal" count="3"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>			
+	</recipe>
+	<recipe name="drinkRedDreams" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="perkMasterChef">
+		<ingredient name="foodMincedFlesh" count="1"/>
+		<ingredient name="foodBoneMeal" count="3"/>
+		<ingredient name="drinkJarPureMineralWater" count="1"/>			
+	</recipe>
+	<recipe name="drinkJarRedTea" count="1" craft_area="SilverBlender" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+<recipe name="drinkJarYuccaJuice" count="1" craft_area="SilverBlender" tags="perkMasterChef">
+	<ingredient name="foodCropYuccaFruit" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+</recipe>
+
+<recipe name="drinkYuccaJuiceSmoothie" count="1" craft_area="SilverBlender" tags="perkMasterChef,learnable">
+	<ingredient name="foodCropYuccaFruit" count="3"/>
+	<ingredient name="foodCropBlueberries" count="3"/>
+	<ingredient name="resourceSnowBall" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodCropYuccaFruit,foodCropBlueberries"/>
+	</effect_group>
+</recipe>
+	
+                             <!-- MeatGrinder Recipes -->
+
+	<recipe name="foodMinceMeat" count="1" craft_area="MeatGrinder" tags="perkMasterChef">
+		<ingredient name="foodRawMeat" count="5"/>
+	</recipe>
+	<recipe name="foodBoneMeal" count="1" craft_area="MeatGrinder" tags="perkMasterChef">
+		<ingredient name="resourceBone" count="20"/>
+	</recipe>
+	<recipe name="foodMincedFlesh" count="1" craft_area="MeatGrinder" craft_time="15"  tags="perkMasterChef">
+		<ingredient name="foodRottingFlesh" count="5"/>
+	</recipe>	
+	
+    <!-- SIGN CUPBOARDS -->
+
+	<recipe name="OakravenStorageVariantHelper" count="1">
+		<ingredient name="resourceNail" count="10"/>
+		<ingredient name="resourceWood" count="12"/>
+		<ingredient name="resourceForgedIron" count="2"/>	
+	</recipe>	
+	
+    <!-- POWER THINGS -->	
+	
+	<recipe name="Oakbatterybank" count="1" craft_area="WorkbenchPowerCell" tags="learnable">
+		<ingredient name="resourceScrapBrass" count="50"/>
+		<ingredient name="resourceScrapLead" count="50"/>
+		<ingredient name="resourceElectricParts" count="15"/>
+		<ingredient name="resourceDuctTape" count="6"/>
+		<ingredient name="resourceScrapPolymers" count="50"/>
+	</recipe>
+	
+	<recipe name="Oakbatterybank2" count="1" craft_area="WorkbenchPowerCell" tags="learnable">
+		<ingredient name="resourceScrapBrass" count="50"/>
+		<ingredient name="resourceScrapLead" count="50"/>
+		<ingredient name="resourceElectricParts" count="15"/>
+		<ingredient name="resourceDuctTape" count="6"/>
+		<ingredient name="resourceScrapPolymers" count="50"/>
+	</recipe>
+	
+	<recipe name="NavezganeSolarPower" count="1" craft_area="WorkbenchPowerCell" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="80"/>
+		<ingredient name="resourceMechanicalParts" count="40"/>
+		<ingredient name="resourceElectricParts" count="50"/>
+		<ingredient name="resourceBlueRock" count="50"/>
+		<ingredient name="resourceScrapPolymers" count="150"/>
+	</recipe>
+
+	<recipe name="NavezganeTurretPower" count="1" craft_area="WorkbenchPowerCell" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="80"/>
+		<ingredient name="resourceMechanicalParts" count="40"/>
+		<ingredient name="resourceElectricParts" count="50"/>
+		<ingredient name="resourceBlueRock" count="50"/>
+		<ingredient name="resourceScrapPolymers" count="150"/>
+	</recipe>
+
+	<recipe name="OakGenerator" count="1" craft_area="WorkbenchPowerCell" tags="learnable">
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="resourceElectricParts" count="14"/>
+	</recipe>
+
+	<recipe name="OakGenerator2" count="1" craft_area="WorkbenchPowerCell" tags="learnable">
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="resourceElectricParts" count="14"/>
+	</recipe>
+
+	<recipe name="OakBlackBetty" count="1" craft_area="WorkbenchPowerCell" tags="learnable">
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="resourceElectricParts" count="14"/>
+	</recipe>	
+
+	<recipe name="PowerCell" count="1" craft_area="WorkbenchPowerCell" tags="learnable">
+		<ingredient name="drinkJarEmpty" count="1"/>
+		<ingredient name="resourceCrystalRock" count="12"/>
+		<ingredient name="resourceElectricParts" count="3"/>
+		<ingredient name="resourceDuctTape" count="4"/>
+		<ingredient name="resourceScrapPolymers" count="4"/>		
+	</recipe>
+
+	<recipe name="solarCell" count="1" craft_area="WorkbenchPowerCell" tags="learnable">
+		<ingredient name="drinkJarEmpty" count="1"/>
+		<ingredient name="resourceBlueRock" count="12"/>
+		<ingredient name="resourceElectricParts" count="3"/>
+		<ingredient name="resourceDuctTape" count="4"/>
+		<ingredient name="resourceScrapPolymers" count="4"/>
+	</recipe>
+
+	<recipe name="WorkbenchPowerCell" count="1" craft_area="workbench" tags="learnable">
+		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceWood" count="150"/>
+		<ingredient name="resourceElectricParts" count="15"/>
+		<ingredient name="resourceGlue" count="6"/>
+		<ingredient name="resourceBrokenGlass" count="35"/>
+	</recipe>	
+	
+    <!-- HYDROPONIC FARMING -->
+	
+	<recipe name="HydroponicWorkBench" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceMechanicalParts" count="20"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceGlue" count="4"/>
+		<ingredient name="resourceWood" count="50"/>
+	</recipe>
+	
+	<recipe name="HydroponicFarmBlock" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="resourceElectricParts" count="10"/>
+		<ingredient name="Compost" count="3"/>
+		<ingredient name="resourceHeadlight" count="3"/>
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceConcreteMix" count="10"/>
+	</recipe>
+	
+	<recipe name="Compost" count="1" craft_time="45" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="resourceClayLump" count="30"/>
+		<ingredient name="foodRottingFlesh" count="10"/>
+		<ingredient name="drinkJarRiverWater" count="2"/>
+		<ingredient name="resourceYuccaFibers" count="20"/>			
+	</recipe>
+
+	<recipe name="HydroponicFeed" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="drinkJarBeer" count="2"/>
+		<ingredient name="foodCropBlueberries" count="10"/>
+		<ingredient name="drugHerbalAntibiotics" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicYuccaSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedYucca1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicCornSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedCorn1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicPotatoSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedPotato1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicCoffeeSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedCoffee1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicGoldenrodSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedGoldenrod1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicChrysanthemumSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedChrysanthemum1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicHopSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedHop1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicPumpkinSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedPumpkin1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicBlueberrySeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="plantedBlueberry1" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicJalapenoSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Jalapeno" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicPepperSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="RedPepper" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicTomatoSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Tomato" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicTurnipSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Turnip" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicEggplantSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Eggplant" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+
+	<recipe name="HydroponicStrawberrySeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Strawberry" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+	
+	<recipe name="HydroponicPineappleSeedling" count="1" craft_area="HydroponicWorkBench" tags="learnable,perkLivingOffTheLand">
+		<ingredient name="Compost" count="2"/>
+		<ingredient name="Pineapple" count="1"/>
+		<ingredient name="HydroponicFeed" count="1"/>
+	</recipe>
+	
+	<!-- Hydroponic Food Recipes -->
+	
+	<recipe name="foodHydroponicMixedVegetableSoup" count="1" craft_time="55" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="Jalapeno" count="1"/>
+		<ingredient name="RedPepper" count="1"/>
+		<ingredient name="Turnip" count="1"/>
+		<ingredient name="Eggplant" count="1"/>
+		<ingredient name="Tomato" count="3"/>		
+	</recipe>
+
+	<recipe name="foodHydroponicMixedFruitBowl" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="Strawberry" count="6"/>
+		<ingredient name="Pineapple" count="1"/>
+		<ingredient name="foodCropBlueberries" count="10"/>	
+	</recipe>
+
+	<recipe name="foodHydroponicFruitMuffin" count="1" craft_time="40" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="Strawberry" count="2"/>
+		<ingredient name="foodCropBlueberries" count="3"/>
+		<ingredient name="foodEgg" count="1"/>
+		<ingredient name="foodCornMeal" count="1"/>		
+	</recipe>
+
+	<recipe name="foodHydroponicSalmonBake" count="1" craft_time="65" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="Turnip" count="2"/>
+		<ingredient name="foodCanSalmon" count="1"/>
+		<ingredient name="foodEgg" count="2"/>
+		<ingredient name="Tomato" count="1"/>		
+	</recipe>
+
+	<!-- Firefly and Shrooms -->
+	
+	<recipe name="FireFlyJar" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="FireFlyBug" count="1"/>
+		<ingredient name="drinkJarEmpty" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceGlue" count="1"/>
+		<ingredient name="resourceYuccaFibers" count="10"/>
+	</recipe>	
+	
+	<!-- FISH FARM -->	
+	
+	<recipe name="FishOven" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="toolCookingPot" count="2"/>
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceClayLump" count="200"/>
+		<ingredient name="resourceRockSmall" count="300"/>
+		<ingredient name="resourceScrapIron" count="55"/>
+	</recipe>
+	
+	<recipe name="FishFarmEmpty" count="1" craft_area="workbench" craft_time="120" tags="workbenchCrafting">
+		<ingredient name="resourceWood" count="100"/>
+		<ingredient name="resourceNail" count="50"/>
+		<ingredient name="drinkJarRiverWater" count="50"/>
+		<ingredient name="resourceCobblestones" count="60"/>
+		<ingredient name="resourceYuccaFibers" count="20"/>
+	</recipe>	
+	
+	<recipe name="foodFishTacos" count="1" craft_area="FishOven">
+		<ingredient name="foodFishFillet" count="4"/>
+		<ingredient name="foodCornMeal" count="2"/>
+	</recipe>
+
+	<recipe name="foodTunaFishGravyToast" count="1" craft_area="FishOven">
+		<ingredient name="foodFreshTunaFillet" count="4"/>
+		<ingredient name="foodCornMeal" count="1"/>
+		<ingredient name="foodCornBread" count="2"/>
+		<ingredient name="resourceAnimalFat" count="3"/>
+		<ingredient name="foodCanPeas" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceAnimalFat"/>
+	</effect_group>
+	</recipe>
+
+	<recipe name="foodCanSalmon" count="1" craft_area="FishOven">
+		<ingredient name="foodFreshSalmonFillet" count="3"/>
+		<ingredient name="drinkCanEmpty" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+
+	<recipe name="foodCanTuna" count="1" craft_area="FishOven">
+		<ingredient name="foodFreshTunaFillet" count="4"/>
+		<ingredient name="drinkCanEmpty" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+
+	<recipe name="foodPerchPie" count="1" craft_area="FishOven">
+		<ingredient name="foodCanSham" count="1"/>
+		<ingredient name="PerchFish" count="1"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+
+	<recipe name="foodFishSpinePie" count="1" craft_area="FishOven">
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="MutantPiranha" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+
+	<recipe name="foodFishmeringue" count="1" craft_area="FishOven">
+		<ingredient name="foodFishFillet" count="5"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropMushrooms" count="2"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+		<ingredient name="foodEgg" count="1"/>	
+	</recipe>
+
+	<recipe name="foodFishSoup" count="1" craft_area="FishOven">
+		<ingredient name="Salmon" count="1"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="2"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+	</recipe>
+
+	<recipe name="foodFishStew" count="1" craft_area="FishOven">
+		<ingredient name="foodFishFillet" count="5"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="2"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+	</recipe>
+
+	<recipe name="foodFishCurry" count="1" craft_area="FishOven">
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="foodFishFillet" count="4"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+
+	<recipe name="foodPiranhaOnAStick" count="1" craft_area="FishOven">
+		<ingredient name="MutantPiranha" count="1"/>
+		<ingredient name="FishStick" count="1"/>
+	</recipe>
+
+	<recipe name="foodPerchOnAStick" count="1" craft_area="FishOven">
+		<ingredient name="PerchFish" count="1"/>
+		<ingredient name="FishStick" count="1"/>
+	</recipe>
+
+	<recipe name="foodbarramundiOnAStick" count="1" craft_area="FishOven">
+		<ingredient name="Barramundi" count="1"/>
+		<ingredient name="FishStick" count="1"/>
+	</recipe>
+
+	<recipe name="foodShinerFishOnAStick" count="1" craft_area="FishOven">
+		<ingredient name="ShinerFish" count="1"/>
+		<ingredient name="FishStick" count="1"/>
+	</recipe>
+
+	<recipe name="foodtangfishOnAStick" count="1" craft_area="FishOven">
+		<ingredient name="Tangfish" count="1"/>
+		<ingredient name="FishStick" count="1"/>
+	</recipe>
+
+	<recipe name="foodNavezganeOnAStick" count="1" craft_area="FishOven">
+		<ingredient name="NavezganeFish" count="1"/>
+		<ingredient name="FishStick" count="1"/>
+	</recipe>
+
+	<recipe name="foodSearedSalmonFillet" count="2" craft_area="FishOven">
+		<ingredient name="foodFreshSalmonFillet" count="1"/>
+	</recipe>
+
+	<recipe name="FishStick" count="1">
+		<ingredient name="resourceWood" count="1"/>
+	</recipe>
+
+	<recipe name="FishGrowingKit" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="oldCash" count="1000"/>
+	</recipe>	
+	
+	<!-- CHICKEN COOPS -->	
+	
+	<recipe name="ChickenCoopEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="15"/>
+	<ingredient name="resourceRockSmall" count="100"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceWood" count="50"/>
+	</recipe>
+	
+	<recipe name="WoodCoopEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="15"/>
+	<ingredient name="resourceRockSmall" count="100"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceWood" count="50"/>
+	</recipe>
+
+	<recipe name="TinCoopEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="15"/>
+	<ingredient name="resourceRockSmall" count="100"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceWood" count="50"/>
+	</recipe>
+
+	<recipe name="HouseCoopEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="15"/>
+	<ingredient name="resourceRockSmall" count="100"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceWood" count="50"/>
+	</recipe>	
+	
+	<recipe name="foodEggQuiche" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="foodEgg" count="3"/>
+	<ingredient name="foodCornMeal" count="5"/>
+	<ingredient name="foodRawMeat" count="1"/>
+	<ingredient name="foodCropPotato" count="1"/>
+	<ingredient name="foodCropMushrooms" count="1"/>		
+	</recipe>
+	
+	<recipe name="foodEggSandwich" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="foodEggBoiled" count="2"/>
+	<ingredient name="foodPumpkinBread" count="1"/>		
+	</recipe>	
+	
+	<!-- BEE HIVES -->
+
+	<recipe name="SquareHiveEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceWood" count="50"/>
+	</recipe>
+	
+	<recipe name="BeeHiveEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceWood" count="50"/>
+	</recipe>
+	
+	<recipe name="WoodBeeHiveEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceWood" count="50"/>
+	</recipe>	
+	
+	<recipe name="foodHoney" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="foodHoneyComb" count="3"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourcePaper" count="1"/>
+	<ingredient name="resourceGlue" count="1"/>
+	</recipe>
+
+	<recipe name="foodHoneyBread" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="foodHoneyComb" count="4"/>
+	<ingredient name="foodCornMeal" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="resourceGunPowder" count="1"/>
+	</recipe>
+
+	<recipe name="foodHoneyPumpkinPie" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="foodHoneyComb" count="2"/>
+	<ingredient name="foodCropPumpkin" count="2"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="foodCornMeal" count="1"/>
+	<ingredient name="resourceGunPowder" count="1"/>
+	</recipe>
+
+	<recipe name="drinkHoneyBeer" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="resourceCropHopsFlower" count="4"/>
+	<ingredient name="drinkJarRiverWater" count="4"/>
+	<ingredient name="foodCropPotato" count="4"/>
+	<ingredient name="foodHoneyComb" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropHopsFlower"/>
+	</effect_group>
+	</recipe>	
+	
+	<!-- WORKSTATIONS -->	
+	
+	<recipe name="OakChemistryStation" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="toolBeaker" count="2"/>
+		<ingredient name="resourceForgedIron" count="100"/>
+		<ingredient name="toolCookingPot" count="3"/>
+		<ingredient name="resourceMetalPipe" count="30"/>
+		<ingredient name="resourceAcid" count="5"/>
+	</recipe>
+
+	<recipe name="OakForge" count="1" tags="learnable">
+		<ingredient name="resourceClayLump" count="100"/>
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceCobblestones" count="250"/>
+		<ingredient name="resourceMetalPipe" count="30"/>
+		<ingredient name="resourceSpring" count="5"/>
+	</recipe>
+
+	<recipe name="PowderMixer" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceSpring" count="4"/>
+		<ingredient name="smallEngine" count="1"/>
+		<ingredient name="resourceMechanicalParts" count="10"/>
+	</recipe>
+
+	<!-- RESOURCES AND CHEMISTRY -->
+
+	<recipe name="ammoGasCan" count="15" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+		<ingredient name="resourceOilShale" count="1"/>
+	</recipe>
+	<recipe name="ammoGasCanBundle" count="1" craft_time="300" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+		<ingredient name="resourceOilShale" count="600"/>
+	</recipe>
+
+	<recipe name="carBattery" count="1" craft_area="OakChemistryStation" tags="learnable,perkGreaseMonkey,chemStationCrafting">
+		<ingredient name="resourceScrapLead" count="120"/>
+		<ingredient name="resourceAcid" count="3"/>
+		<ingredient name="resourceScrapPolymers" count="4"/>
+	</recipe>
+
+	<recipe name="drinkJarBeer" count="2" craft_area="OakChemistryStation" tags="perkMasterChef,learnable,chemStationCrafting">
+		<ingredient name="resourceCropHopsFlower" count="3"/>
+		<ingredient name="drinkJarRiverWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropHopsFlower"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="drugAntibiotics" count="2" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+		<ingredient name="foodShamSandwich" count="1"/>
+		<ingredient name="resourcePotassiumNitratePowder" count="1"/>
+		<ingredient name="drinkJarRiverWater" count="1"/>
+	</recipe>
+
+	<recipe name="drugFortBites" count="2" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+		<ingredient name="medicalBloodBag" count="5"/>
+		<ingredient name="drinkJarBeer" count="1"/>
+		<ingredient name="foodRottingFlesh" count="20"/>
+		<ingredient name="drugVitamins" count="1"/>
+	</recipe>
+
+    <recipe name="drugHerbalAntibiotics" count="2" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+	    <ingredient name="foodCropBlueberries" count="2"/>
+	    <ingredient name="foodCropMushrooms" count="1"/>
+	    <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+	    <ingredient name="resourcePotassiumNitratePowder" count="1"/>
+	    <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+
+    <recipe name="drugRecog" count="2" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+	    <ingredient name="resourceAcid" count="2"/>
+	    <ingredient name="drinkJarBeer" count="1"/>
+	    <ingredient name="resourceScrapPolymers" count="5"/>
+	    <ingredient name="drugVitamins" count="1"/>
+    </recipe>
+
+    <recipe name="drugSteroids" count="2" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+	    <ingredient name="resourceOil" count="1"/>
+	    <ingredient name="drinkJarBeer" count="1"/>
+	    <ingredient name="resourceTestosteroneExtract" count="1"/>
+    </recipe>
+
+    <recipe name="medicalFirstAidKit" count="2" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting" >
+	    <ingredient name="medicalBloodBag" count="1"/>
+	    <ingredient name="drinkJarBeer" count="1"/>
+	    <ingredient name="medicalBandage" count="1"/>
+	    <ingredient name="resourceSewingKit" count="1"/>
+    </recipe>
+
+    <recipe name="medicalPlasterCast" count="2" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+	    <ingredient name="resourceCloth" count="2"/>
+	    <ingredient name="foodCornMeal" count="4"/>
+	    <ingredient name="resourceCrushedSand" count="2"/>
+	    <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+
+    <recipe name="resourceGlue" count="2" craft_area="OakChemistryStation" tags="perkAdvancedEngineering,chemStationCrafting">
+	    <ingredient name="resourceBone" count="5"/>
+	    <ingredient name="drinkJarRiverWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="1,5" operation="base_add" value="-1" tags="resourceBone"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="resourceGlue" count="2" craft_area="OakChemistryStation" tags="perkAdvancedEngineering,chemStationCrafting">
+	    <ingredient name="foodCropGraceCorn" count="3"/>
+	    <ingredient name="drinkJarRiverWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="1,5" operation="base_add" value="-1" tags="foodCropGraceCorn"/>
+		</effect_group>
+    </recipe>
+
+    <recipe name="resourceGunPowder" count="2" craft_area="OakChemistryStation" tags="chemStationCrafting">
+	    <ingredient name="resourceCoal" count="1"/>
+	    <ingredient name="resourcePotassiumNitratePowder" count="1"/>
+    </recipe>
+    <recipe name="resourceGunPowderBundle" count="4" craft_time="800" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+	    <ingredient name="resourceCoal" count="800"/>
+	    <ingredient name="resourcePotassiumNitratePowder" count="800"/>
+    </recipe>
+
+    <recipe name="resourceMilitaryFiber" count="20" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+	    <ingredient name="resourceYuccaFibers" count="100"/>
+	    <ingredient name="resourceScrapPolymers" count="10"/>
+	    <ingredient name="resourceDuctTape" count="5"/>
+	    <ingredient name="resourceAcid" count="1"/>
+    </recipe>
+
+    <recipe name="resourceOil" count="2" craft_area="OakChemistryStation" tags="perkGreaseMonkey,learnable,chemStationCrafting">
+	    <ingredient name="resourceOilShale" count="24"/>
+	    <ingredient name="drinkCanEmpty" count="1"/>
+    </recipe>
+
+    <recipe name="resourcePaint" count="200" craft_area="OakChemistryStation" tags="chemStationCrafting">
+	    <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+	    <ingredient name="resourceOil" count="1"/>
+    </recipe>
+
+    <recipe name="resourcePaper" count="20" craft_area="OakChemistryStation" tags="chemStationCrafting">
+	    <ingredient name="resourceWood" count="10"/>
+	    <ingredient name="resourceGlue" count="1"/>
+	    <ingredient name="drinkJarRiverWater" count="1"/>
+    </recipe>
+
+    <recipe name="resourceCement" count="4" craft_area="PowderMixer" tags="cementMixerCrafting">
+	    <ingredient name="resourceCrushedSand" count="1"/>
+	    <ingredient name="resourceRockSmall" count="1"/>
+    </recipe>
+
+    <recipe name="resourceCrushedSand" count="2" craft_area="PowderMixer" tags="cementMixerCrafting">
+	    <ingredient name="resourceRockSmall" count="1"/>
+    </recipe>
+
+	</append>
+	
+</configs>

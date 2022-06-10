@@ -1,0 +1,58 @@
+<configs>
+
+	<append xpath="/npc">	
+		
+	<npc_info
+		id="RifleBirdMan"
+		name="Trader RifleBirdMan"
+		name_key="npc_traderJen"
+		faction="whiteriver"
+		portrait="npc_jen"
+		greeting_type="nearby"
+		stance="Like" voice_set="RifleBirdMan"
+		trader_id="7" dialog_id="trader" />			
+		
+	<npc_info
+		id="GuardMan"
+		name="Trader GuardMan"
+		name_key="npc_traderJen"
+		faction="whiteriver"
+		portrait="npc_jen"
+		greeting_type="nearby"
+		stance="Like" voice_set="GuardMan"
+		trader_id="1" dialog_id="trader" />	
+
+	<npc_info
+		id="MadMan"
+		name="Trader MadMan"
+		name_key="npc_traderJen"
+		faction="whiteriver"
+		portrait="npc_jen"
+		greeting_type="nearby"
+		stance="Like" voice_set="Wendigo"
+		trader_id="6" dialog_id="trader" />	
+		
+	<npc_info
+		id="RobotMan"
+		name="Trader RobotMan"
+		name_key="npc_traderJen"
+		faction="whiteriver"
+		portrait="npc_jen"
+		greeting_type="nearby"
+		stance="Like" voice_set="RifleBirdMan"
+		trader_id="8" dialog_id="trader" />
+
+	<npc_info
+		id="TreeMaster"
+		name="Trader TreeMaster"
+		name_key="npc_traderJen"
+		faction="whiteriver"
+		portrait="npc_jen"
+		greeting_type="nearby"
+		stance="Like" voice_set="arramus"
+		trader_id="2" dialog_id="trader" />		
+				
+		
+	</append>
+
+</configs>
