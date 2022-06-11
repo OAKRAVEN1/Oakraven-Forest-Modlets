@@ -170,7 +170,8 @@
 
         <entity_class name="SwatZombieRadiated" extends="SwatZombieFeral">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
-			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>
+			<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>			
 			<property name="Faction" value="undead"/>
             <property name="Mesh" value="#@modfolder:Resources/Zombiez.unity3d?SwatZombieDark"/> 				
 			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".6"/>
@@ -229,7 +230,8 @@
 		
         <entity_class name="SwatCaptainZombieRadiated" extends="SwatCaptainZombieFeral">
 			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
-			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>
+			<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>			
 			<property name="Faction" value="undead"/>
             <property name="Mesh" value="#@modfolder:Resources/Zombiez.unity3d?SwatCaptainZombieDark"/> 				
 			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".6"/>
