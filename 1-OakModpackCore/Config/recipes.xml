@@ -1032,6 +1032,21 @@
 	<recipe name="foodEggSandwich" count="1" craft_area="campfire" craft_tool="toolCookingPot">
 	<ingredient name="foodEggBoiled" count="2"/>
 	<ingredient name="foodPumpkinBread" count="1"/>		
+	</recipe>
+
+	<!-- Giving access to OaksCooker Workstation for inclusion -->	
+	
+	<recipe name="foodEggQuiche" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot">
+	<ingredient name="foodEgg" count="3"/>
+	<ingredient name="foodCornMeal" count="5"/>
+	<ingredient name="foodRawMeat" count="1"/>
+	<ingredient name="foodCropPotato" count="1"/>
+	<ingredient name="foodCropMushrooms" count="1"/>		
+	</recipe>
+	
+	<recipe name="foodEggSandwich" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot">
+	<ingredient name="foodEggBoiled" count="2"/>
+	<ingredient name="foodPumpkinBread" count="1"/>		
 	</recipe>	
 	
 	<!-- BEE HIVES -->
