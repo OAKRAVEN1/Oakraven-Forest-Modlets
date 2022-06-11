@@ -1,0 +1,21 @@
+<configs>
+
+	<!-- TRADERS -->
+
+	<!-- Joel played by Guardsman -->
+	<setattribute xpath="//trader_info[@id='1']" name="open_time">4:05</setattribute>
+
+	<!-- Jen played by by Tree Doctor -->
+	<setattribute xpath="//trader_info[@id='2']" name="open_time">4:05</setattribute>
+
+	<!-- Bob played by Mad Mike -->
+	<setattribute xpath="//trader_info[@id='6']" name="open_time">4:05</setattribute>
+
+	<!-- Hugh played by Bird Man -->
+	<setattribute xpath="//trader_info[@id='7']" name="open_time">4:05</setattribute>
+
+	<!-- Rekt played by Robby the Robot -->
+	<setattribute xpath="//trader_info[@id='8']" name="open_time">4:05</setattribute>
+
+
+</configs>

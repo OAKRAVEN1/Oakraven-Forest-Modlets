@@ -87,7 +87,8 @@ This ensure load order is appropriate.
 
 Addons that are powered by 0-Score and 0-XNPCCore are as follows:
 
-- 1-khzmusik_Zombies (A variety of well crafted entities to enhance regular 7D2D zombie interactions)
+- 1-khzmusik_Zombies (A variety of well crafted entities to enhance regular 7D2D zombie interactions from khzmusik)
+- 1-ZombiezPack (A variety of hostile looking zombies from Darkstardragon)
 
 https://community.7daystodie.com/topic/26974-npcmod-a-community-project/
 
