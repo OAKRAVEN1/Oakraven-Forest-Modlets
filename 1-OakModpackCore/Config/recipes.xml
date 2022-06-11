@@ -504,6 +504,12 @@
 	<recipe name="foodAcornBread" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
 		<ingredient name="foodAcornDough" count="1"/>
 	</recipe>
+
+	<!-- Giving access to campfire Workstation for inclusion -->
+
+	<recipe name="foodAcornBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef"><!-- To Regular Campfire -->
+		<ingredient name="foodAcornDough" count="1"/>
+	</recipe>	
 	
 	                         <!-- Blender Recipes --> 
 	
@@ -808,6 +814,37 @@
 		<ingredient name="foodEgg" count="2"/>
 		<ingredient name="Tomato" count="1"/>		
 	</recipe>
+	
+	<!-- Giving access to OaksCooker Workstation for inclusion -->
+	
+	<recipe name="foodHydroponicMixedVegetableSoup" count="1" craft_time="55" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="Jalapeno" count="1"/>
+		<ingredient name="RedPepper" count="1"/>
+		<ingredient name="Turnip" count="1"/>
+		<ingredient name="Eggplant" count="1"/>
+		<ingredient name="Tomato" count="3"/>		
+	</recipe>
+
+	<recipe name="foodHydroponicMixedFruitBowl" count="1" craft_time="30" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="Strawberry" count="6"/>
+		<ingredient name="Pineapple" count="1"/>
+		<ingredient name="foodCropBlueberries" count="10"/>	
+	</recipe>
+
+	<recipe name="foodHydroponicFruitMuffin" count="1" craft_time="40" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="Strawberry" count="2"/>
+		<ingredient name="foodCropBlueberries" count="3"/>
+		<ingredient name="foodEgg" count="1"/>
+		<ingredient name="foodCornMeal" count="1"/>		
+	</recipe>
+
+	<recipe name="foodHydroponicSalmonBake" count="1" craft_time="65" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="Turnip" count="2"/>
+		<ingredient name="foodCanSalmon" count="1"/>
+		<ingredient name="foodEgg" count="2"/>
+		<ingredient name="Tomato" count="1"/>		
+	</recipe>	
 
 	<!-- Firefly and Shrooms -->
 	
@@ -1031,7 +1068,7 @@
 	<ingredient name="resourceGlue" count="1"/>
 	</recipe>
 
-	<recipe name="foodHoneyBread" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<recipe name="foodHoneyBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
 	<ingredient name="foodHoneyComb" count="4"/>
 	<ingredient name="foodCornMeal" count="2"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
@@ -1039,7 +1076,7 @@
 	<ingredient name="resourceGunPowder" count="1"/>
 	</recipe>
 
-	<recipe name="foodHoneyPumpkinPie" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<recipe name="foodHoneyPumpkinPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
 	<ingredient name="foodHoneyComb" count="2"/>
 	<ingredient name="foodCropPumpkin" count="2"/>
 	<ingredient name="foodEgg" count="1"/>
@@ -1047,7 +1084,35 @@
 	<ingredient name="resourceGunPowder" count="1"/>
 	</recipe>
 
-	<recipe name="drinkHoneyBeer" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<recipe name="drinkHoneyBeer" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+	<ingredient name="resourceCropHopsFlower" count="4"/>
+	<ingredient name="drinkJarRiverWater" count="4"/>
+	<ingredient name="foodCropPotato" count="4"/>
+	<ingredient name="foodHoneyComb" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropHopsFlower"/>
+	</effect_group>
+	</recipe>
+	
+	<!-- Giving access to OaksCooker Workstation for inclusion -->	
+
+	<recipe name="foodHoneyBread" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+	<ingredient name="foodHoneyComb" count="4"/>
+	<ingredient name="foodCornMeal" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="resourceGunPowder" count="1"/>
+	</recipe>
+
+	<recipe name="foodHoneyPumpkinPie" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+	<ingredient name="foodHoneyComb" count="2"/>
+	<ingredient name="foodCropPumpkin" count="2"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="foodCornMeal" count="1"/>
+	<ingredient name="resourceGunPowder" count="1"/>
+	</recipe>
+
+	<recipe name="drinkHoneyBeer" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
 	<ingredient name="resourceCropHopsFlower" count="4"/>
 	<ingredient name="drinkJarRiverWater" count="4"/>
 	<ingredient name="foodCropPotato" count="4"/>
