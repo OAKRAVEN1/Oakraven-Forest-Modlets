@@ -501,13 +501,13 @@
 	
                               <!-- OaksCooker Recipes -->
 	
-	<recipe name="foodAcornBread" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<recipe name="foodAcornBread" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
 		<ingredient name="foodAcornDough" count="1"/>
 	</recipe>
 	
 	                         <!-- Blender Recipes --> 
 	
-	<recipe name="drinkBoarberrySmoothie" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="perkMasterChef">
+	<recipe name="drinkBoarberrySmoothie" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="learnable,perkMasterChef">
 		<ingredient name="foodMinceMeat" count="1"/>
 		<ingredient name="foodCropBlueberries" count="3"/>
 		<ingredient name="drinkJarBoiledWater" count="1"/>			
@@ -516,22 +516,22 @@
 		<ingredient name="treePlantedOak1m" count="10"/>
 		<ingredient name="drinkJarBoiledWater" count="1"/>
 	</recipe>
-	<recipe name="drinkFleshCan" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="perkMasterChef">
+	<recipe name="drinkFleshCan" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="learnable,perkMasterChef">
 		<ingredient name="foodMincedFlesh" count="1"/>
 		<ingredient name="foodBoneMeal" count="2"/>
 		<ingredient name="drinkCanEmpty" count="1"/>			
 	</recipe>
-	<recipe name="drinkGreenHell" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="perkMasterChef">
+	<recipe name="drinkGreenHell" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="learnable,perkMasterChef">
 		<ingredient name="foodMincedFlesh" count="1"/>
 		<ingredient name="foodBoneMeal" count="3"/>
 		<ingredient name="drinkJarYuccaJuice" count="1"/>			
 	</recipe>
-	<recipe name="drinkRedWorm" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="perkMasterChef">
+	<recipe name="drinkRedWorm" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="learnable,perkMasterChef">
 		<ingredient name="foodMincedFlesh" count="1"/>
 		<ingredient name="foodBoneMeal" count="3"/>
 		<ingredient name="drinkJarBoiledWater" count="1"/>			
 	</recipe>
-	<recipe name="drinkRedDreams" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="perkMasterChef">
+	<recipe name="drinkRedDreams" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="learnable,perkMasterChef">
 		<ingredient name="foodMincedFlesh" count="1"/>
 		<ingredient name="foodBoneMeal" count="3"/>
 		<ingredient name="drinkJarPureMineralWater" count="1"/>			
