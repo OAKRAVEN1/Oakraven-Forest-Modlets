@@ -1685,7 +1685,7 @@
 		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
 	</effect_group>
 	<effect_group name="Power Attack">
-		<passive_effect name="EntityDamage" operation="perc_add" value="1.5" tags="secondary"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="18.6" tags="secondary"/>
 	</effect_group>
