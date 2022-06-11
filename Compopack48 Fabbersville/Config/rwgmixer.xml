@@ -1,12 +1,12 @@
 <compopack>
 
 	<set xpath="/rwgmixer/township[@name='oldwest']/property[@name='spawn_trader']/@value">true</set>
-	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='mintiles']">3</set>
-	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='maxtiles']">4</set>
-	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='mintiles']">4</set>
-	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='maxtiles']">5</set>
-	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='mintiles']">5</set>
-	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='maxtiles']">6</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='mintiles']">5</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='maxtiles']">6</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='mintiles']">6</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='maxtiles']">7</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='mintiles']">7</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='maxtiles']">8</set>
 
 	<set xpath="/rwgmixer/district[@name='rural']/property[@name='district_required_township']">fabbersville</set>	
 	
@@ -30,8 +30,8 @@
 			<property name="default" value="7"/>
 			<property name="many" value="8"/>
 			
-			<property name="mintiles" value="8"/>
-			<property name="maxtiles" value="12"/>
+			<property name="mintiles" value="7"/>
+			<property name="maxtiles" value="9"/>
 		</property>	
 <!-- FABBERSVILLE -->
 <!-- SETTLEMENTS -->
@@ -47,8 +47,8 @@
 			<property name="default" value="8"/>
 			<property name="many" value="9"/>
 			
-			<property name="mintiles" value="8"/>
-			<property name="maxtiles" value="12"/>
+			<property name="mintiles" value="7"/>
+			<property name="maxtiles" value="9"/>
 		</property>	
 <!-- FABBERSVILLE -->
 <!-- SETTLEMENTS -->
@@ -64,8 +64,8 @@
 			<property name="default" value="9"/>
 			<property name="many" value="10"/>
 			
-			<property name="mintiles" value="8"/>
-			<property name="maxtiles" value="12"/>
+			<property name="mintiles" value="7"/>
+			<property name="maxtiles" value="9"/>
 		</property>	
 <!-- FABBERSVILLE -->
 <!-- SETTLEMENTS -->
