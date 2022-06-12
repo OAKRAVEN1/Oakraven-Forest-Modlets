@@ -34,13 +34,21 @@ A20 Skyrim Style Lockpicking MiniGame (Makes lockpicking skill based).
 KhaineGB's Inventory Lockable Slots Mod (Allows players to stop essential items being removed form the backpack when bulk moving).
 Quest - Blood Moon Vanguard (Gives players an incentive to stay for Horde Night and pick up a Skill for completing an objective).
 
+In addition, some Addons that are powered by 0-Score and 0-XNPCCore and bundled directly are as follows:
+
+- 1-khzmusik_Zombies (A variety of well crafted entities to enhance regular 7D2D zombie interactions from khzmusik)
+- 1-ZombiezPack (A variety of hostile looking zombies from Darkstardragon)
+- 1-GansSpecialZombies (A variety of fancy dress type zombies from GanTheGrey)
+
 Oakraven Forest Collection Creators and Developers in Alphabtical Order from Z - A:
 
 Xyth and SphereII with Mumpfy for branding - Created the A20 Skyrim Style Lockpicking MiniGame. (The assets are embedded and remain as per original). 
 Oakraven - Created Oakraven Forest Collection assets.
 Laz Man - Created Quest - Blood Moon Vanguard.
-KhaineGB - Inventory Lockable Slots Mod. Much thanks.
-Darkstardragon - An abundance of play testing, bug checking, and coding support through the 'Not Medieval Mod'.
+khzmusik - Created 1-khzmusik_Zombies.
+KhaineGB - Inventory Lockable Slots Mod.
+GanTheGrey - Created 1-GansSpecialZombies.
+Darkstardragon - Created 1-ZombiezPack and performed an abundance of play testing, bug checking, and coding support through the 'Not Medieval Mod'.
 arramus - Supported the Oakraven Forest Collection with compilation and distribution, quality control, and even added the odd icon or two. 
 
 Released Oakraven Forest Collection modlets can be found here.
@@ -83,12 +91,8 @@ This creates some large townships with plenty of looting and quest potential but
 
 The NPCMod is a community made asset that gives life to custom made NPCs, among many other of its features.
 0-Score and 0-XNPCCore power the Addons. This Modpack will follow the 0- (Core files), 1- (Addon files), and 2- (Expansion files) format.
-This ensure load order is appropriate.
-
-Addons that are powered by 0-Score and 0-XNPCCore are as follows:
-
-- 1-khzmusik_Zombies (A variety of well crafted entities to enhance regular 7D2D zombie interactions from khzmusik)
-- 1-ZombiezPack (A variety of hostile looking zombies from Darkstardragon)
+This ensures load order is appropriate. However, the 1- (Addon files) are bundled directly into 1-OakModpackCore.
+This helps to decrease load times due to less Localization files which can be surprisingly slow, and assist with overall efficiency.
 
 https://community.7daystodie.com/topic/26974-npcmod-a-community-project/
 

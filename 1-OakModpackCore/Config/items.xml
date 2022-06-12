@@ -1978,6 +1978,60 @@
 			<property name="Group" value="Resources"/>
 		</item>
 		
+	<!-- 1-khzmusik_Zombies -->		
+		
+        <item name="khzmusikZombiesLoadingHack">
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="missingIcon"/>
+            <property name="CustomIconTint" value="90ff90"/>
+            <property name="HoldType" value="45"/>
+            <property name="HoldingItemHidden" value="true"/>
+            <property name="Meshfile" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieMale_KHz" />
+            <property name="DropMeshfile" value="#@modfolder:Resources/Zombies_KHZ.unity3d?ZombieMale_KHz" />
+            <property name="Material" value="MresourceScrapIron"/>
+            <property name="Weight" value="1"/>
+            <property name="Stacknumber" value="1"/> 
+            <property name="EconomicValue" value="1"/>
+            <property name="EconomicBundleSize" value="1000"/>
+            <property name="Group" value="Resources"/>
+        </item>
+
+	<!-- 1-ZombiezPack from Darkstardragon -->		
+		
+		<item name="ZombiezLoadingHack01">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/><property name="CustomIconTint" value="90ff90"/>
+			<property name="HoldType" value="45"/>
+			<property name="HoldingItemHidden" value="true"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Zombiez.unity3d?SwatZombieDark"/>
+			<property name="DropMeshfile"  value="#@modfolder:Resources/Zombiez.unity3d?SwatZombieDark"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="1000"/>
+			<property name="Group" value="Resources"/>
+		</item>
+
+		<!-- Gans Special Zombies from 1-GansSpecialZombies -->
+
+		<item name="ZombieEntityLoadingHack">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/>
+			<property name="CustomIconTint" value="90ff90"/>
+			<property name="HoldType" value="45"/>
+			<property name="HoldingItemHidden" value="true"/>
+			<property name="Meshfile" value="#@modfolder:Resources/SpecialZombies.unity3d?warZombie_Gan"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/SpecialZombies.unity3d?warZombie_Gan"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1"/>
+			<!-- STK resource -->
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="1000"/>
+			<property name="Group" value="Resources"/>
+		</item>		
+		
 	<!-- LAZMAN'S BLOOD MOON VANGUARD REPEATABLE QUEST -->
 	
 		<!-- Admin item to restart the challenge_bloodmoonvanguard quest if bugged/lost  -->
