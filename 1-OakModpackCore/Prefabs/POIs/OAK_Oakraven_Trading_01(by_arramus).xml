@@ -5,7 +5,7 @@
   <property name="ExcludePOICulling" value="False" />
   <property name="DistantPOIYOffset" value="0" />
   <property name="AllowTopSoilDecorations" value="True" />
-  <property name="Tags" value="wilderness,fabbersville,fabberres" />
+  <property name="Tags" value="wilderness" />
   <property name="TraderArea" value="False" />
   <property name="PrefabSize" value="25, 11, 25" />
   <property name="RotationToFaceNorth" value="0" />
@@ -13,6 +13,14 @@
   <property name="YOffset" value="-2" />
   <property name="DifficultyTier" value="0" />
   <property name="ShowQuestClearCount" value="1" />
+  <property name="POIMarkerSize" value="1, 1, 1" />
+  <property name="POIMarkerStart" value="17, 1, 24" />
+  <property name="POIMarkerGroup" value="Pathway" />
+  <property name="POIMarkerTags" value="wilderness" />
+  <property name="POIMarkerType" value="RoadExit" />
+  <property name="POIMarkerPartToSpawn" value="" />
+  <property name="POIMarkerPartRotations" value="0" />
+  <property name="POIMarkerPartSpawnChance" value="1" />
   <property class="Stats">
     <property name="TotalVertices" value="738461" />
     <property name="TotalTriangles" value="853309" />
