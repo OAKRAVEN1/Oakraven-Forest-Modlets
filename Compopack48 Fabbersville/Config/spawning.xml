@@ -1,0 +1,44 @@
+<compopack>
+
+    <append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="1" respawndelay="2.9" time="Day" entitygroup="ZombiesAll" notags="fabberres,fabber" />
+		<spawn maxcount="1" respawndelay="3.3" time="Night" entitygroup="ZombiesNight" notags="fabberres,fabber" />
+
+		<spawn maxcount="2" respawndelay="0.3" time="Day" entitygroup="ZombiesAll" tags="fabberres" notags="fabber" />
+		<spawn maxcount="3" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="fabberres" notags="fabber" />
+
+		<spawn maxcount="3" respawndelay="0.3" time="Day" entitygroup="ZombiesForestDowntown" tags="fabber" />
+		<spawn maxcount="3" respawndelay="0.1" time="Night" entitygroup="ZombiesForestDowntownNight" tags="fabber" />	
+	</append>
+	
+    <append xpath="/spawning/biome[@name='burnt_forest']">
+		<spawn maxcount="3" respawndelay="0.25" time="Day" entitygroup="ZombiesAll" tags="fabberres" notags="fabber" />
+		<spawn maxcount="4" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="fabberres" notags="fabber" />
+
+		<spawn maxcount="3" respawndelay="0.15" time="Day" entitygroup="ZombiesDowntown" tags="fabber" />
+		<spawn maxcount="4" respawndelay="0.1" time="Night" entitygroup="ZombiesDowntown" tags="fabber" />
+	</append>
+
+    <append xpath="/spawning/biome[@name='snow']">
+		<spawn maxcount="1" respawndelay="2.6" time="Any" entitygroup="SnowZombies" notags="fabber" />
+		<spawn maxcount="1" respawndelay="1.7" time="Night" entitygroup="ZombiesNight" notags="fabberres,fabber" />
+
+		<spawn maxcount="4" respawndelay="0.09" time="Day" entitygroup="ZombiesAll" tags="fabberres" notags="fabber" />
+		<spawn maxcount="4" respawndelay="0.06" time="Night" entitygroup="ZombiesNight" tags="fabberres" notags="fabber" />
+
+		<spawn maxcount="4" respawndelay="0.07" time="Day" entitygroup="ZombiesDowntown" tags="fabber" />
+		<spawn maxcount="4" respawndelay="0.04" time="Night" entitygroup="ZombiesDowntown" tags="fabber" />
+	</append>
+
+    <append xpath="/spawning/biome[@name='wasteland']">
+		<spawn maxcount="1" respawndelay="0.3" time="Day"	entitygroup="ZombiesWasteland" notags="fabberres,fabber" />
+		<spawn maxcount="2" respawndelay="0.001" time="Night" entitygroup="ZombiesWastelandNight" notags="fabberres,fabber" />
+
+		<spawn maxcount="4" respawndelay="0.033" time="Day" entitygroup="ZombiesWasteland" tags="fabberres" notags="fabber" />
+		<spawn maxcount="4" respawndelay="0.002" time="Night" entitygroup="ZombiesWastelandNight" tags="fabberres" notags="fabber" />
+
+		<spawn maxcount="4" respawndelay="0.0167" time="Day" entitygroup="ZombiesWastelandDowntown" tags="fabber" />
+		<spawn maxcount="4" respawndelay="0.002" time="Night" entitygroup="ZombiesWastelandDowntown" tags="fabber" />		
+	</append>	
+	
+</compopack>
