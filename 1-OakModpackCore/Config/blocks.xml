@@ -9,6 +9,311 @@
 
 	<append xpath="/blocks">
 	
+	<!-- TORCHES LIGHTS -->
+
+	<block name="BigStandingBrazier">
+	<property name="Class" value="Campfire"/>
+	<property name="CustomIcon" value="LargeBrazier"/>
+	<property name="DescriptionKey" value="BigStandingBrazierDesc"/>	
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?BigStandingTorch"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?BigStandingTorchFXFire"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="3"/>
+	<property name="HeatMapTime" value="500"/>
+	<property name="HeatMapFrequency" value="100"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+	<block name="Brazier">
+	<property name="Extends" value="BigStandingBrazier"/>
+	<property name="CustomIcon" value="brazier"/>
+	<property name="DescriptionKey" value="BrazierDesc"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?brazier"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?BrazierFXFire"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="ColumnBrazierGold">
+	<property name="Extends" value="BigStandingBrazier"/>
+	<property name="CustomIcon" value="ColumnGold"/>
+	<property name="DescriptionKey" value="ColumnBrazierGoldDesc"/>	
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?ColumnGold"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?ColumnGoldFXFire"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="ColumnBrazierStone">
+	<property name="Extends" value="BigStandingBrazier"/>
+	<property name="CustomIcon" value="LightColumnStone"/>
+	<property name="DescriptionKey" value="ColumnBrazierStoneDesc"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?LightColumnStone"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?LightColumnStoneFXFire"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceRockSmall" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="PoleTorch">
+	<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?StandingTorch"/>
+	<property name="HandleFace" value="Bottom"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<drop event="Harvest" name="resourceScrapIron" count="1,4" tag="allHarvest"/>
+	</block>
+
+	<block name="WallHandTorch">
+    <property name="Extends" value="BigStandingBrazier"/>
+    <property name="CustomIcon" value="WallHandTorch"/>
+	<property name="DescriptionKey" value="WallHandTorchDesc"/>	
+    <property name="Material" value="Mmetal_hard"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?WallHandTorch"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?WallHandTorchFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="WallMedievalTorch">
+    <property name="Extends" value="BigStandingBrazier"/>
+    <property name="CustomIcon" value="MedievalTorch"/>
+	<property name="DescriptionKey" value="WallMedievalTorchDesc"/>	
+    <property name="Material" value="Mmetal_hard"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?MedievalTorch"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?MedievalTorchFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="WallhangerCage">
+    <property name="Extends" value="BigStandingBrazier"/>
+    <property name="CustomIcon" value="WallhangerCage"/>
+	<property name="DescriptionKey" value="WallhangerCageDesc"/>	
+    <property name="Material" value="Mmetal_hard"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?WallhangerCage"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?WallhangerCageFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>
+
+	<block name="WallTorch">
+    <property name="Extends" value="BigStandingBrazier"/>
+    <property name="CustomIcon" value="WallhangerCage"/>
+	<property name="DescriptionKey" value="WallTorchDesc"/>	
+    <property name="Material" value="Mmetal_hard"/>
+	<property name="Model" value="#@modfolder:Resources/Torches.unity3d?Wall_Torch"/>
+	<property name="ParticleName" value="#@modfolder:Resources/Torches.unity3d?Wall_TorchFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property class="Workstation">
+		<property name="Modules" value="fuel"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value=""/>
+	<property name="CloseSound" value=""/>
+	<property name="CraftSound" value=""/>
+	<property name="CraftCompleteSound" value=""/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	</block>	
+	
 	<!-- WATER WELLS -->
 
  <block name="WaterWell">

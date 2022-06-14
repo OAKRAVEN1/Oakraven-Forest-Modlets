@@ -20,6 +20,7 @@ The mix is quite eclectic and gives players further opportunities on top of the 
 
 The content within this Modpack contains:
 
+Torches Lights (A collection of wood burning lights)
 Water Wells (A variety of custom water sources such as wells and stand pipes that can be placed within a player's boundaries)
 Rock Drills (Provides a gentle resource trickle for underground materials while out questing)
 Draw Bridges (A variety of walkways the act like horizontal plane draw bridges).

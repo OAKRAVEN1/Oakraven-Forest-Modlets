@@ -1,5 +1,22 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 
+BigStandingBrazier,blocks,Block,,,Big Standing Brazier,,,,,,,,,,,,,
+BigStandingBrazierDesc,blocks,Block,,,"A Big Standing Brazier that provides atmospheric lighting.",,,,,,,,,,,,,
+Brazier,blocks,Block,,,Standing Brazier,,,,,,,,,,,,,
+BrazierDesc,blocks,Block,,,"A Standing Brazier that provides atmospheric lighting.",,,,,,,,,,,,,
+ColumnBrazierGold,blocks,Block,,,Gold Column Brazier,,,,,,,,,,,,,
+ColumnBrazierGoldDesc,blocks,Block,,,"A Gold Column Brazier that provides atmospheric lighting.",,,,,,,,,,,,,
+ColumnBrazierStone,blocks,Block,,,Stone Column Brazier,,,,,,,,,,,,,
+ColumnBrazierStoneDesc,blocks,Block,,,"A Stone Column Brazier that provides atmospheric lighting.",,,,,,,,,,,,,
+WallHandTorch,blocks,Block,,,Wall Hand Torch,,,,,,,,,,,,,
+WallHandTorchDesc,blocks,Block,,,"A Wall Hand Torch that provides atmospheric lighting.",,,,,,,,,,,,,
+WallMedievalTorch,blocks,Block,,,Wall Medieval Torch,,,,,,,,,,,,,
+WallMedievalTorchDesc,blocks,Block,,,"A Wall Medieval Torch that provides atmospheric lighting.",,,,,,,,,,,,,
+WallhangerCage,blocks,Block,,,Wall Hanger Cage Light,,,,,,,,,,,,,
+WallhangerCageDesc,blocks,Block,,,"A Wall Hanger Cage Light that provides atmospheric lighting.",,,,,,,,,,,,,
+WallTorch,blocks,Block,,,Wall Torch,,,,,,,,,,,,,
+WallTorchDesc,blocks,Block,,,"A Wall Torch that provides atmospheric lighting.",,,,,,,,,,,,,
+
 WaterStandPipe,blocks,Block,,,Water Standpipe,,,,,,,,,,,,,
 WaterStandPipeDesc,blocks,Block,,,"This Water Standpipe allows players to fill up their water vessels.",,,,,,,,,,,,,
 StoneStandPipe,blocks,Block,,,Marble Standpipe,,,,,,,,,,,,,
