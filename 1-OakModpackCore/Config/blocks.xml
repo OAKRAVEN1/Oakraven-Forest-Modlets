@@ -9,6 +9,347 @@
 
 	<append xpath="/blocks">
 	
+	<!-- WATER WELLS -->
+
+ <block name="WaterWell">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="wishingwell" />
+		<property name="DescriptionKey" value="WaterWellDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells.unity3d?WaterWell"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="OldWell">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="wishingwell" />
+		<property name="DescriptionKey" value="OldWellDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells.unity3d?OldWell"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="StoneWell">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="stonewell" />
+		<property name="DescriptionKey" value="StoneWellDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells.unity3d?StoneWell"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="0,0.5,0"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="WoodWell">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="wishingwell" />
+		<property name="DescriptionKey" value="WoodWellDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells.unity3d?WellWell"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="2,2,2"/>
+		<property name="ModelOffset" value="0,0.5,0"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="WaterStandPipe">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="standpipe" />
+		<property name="DescriptionKey" value="WaterStandPipeDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells2.unity3d?3StandPipe"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="StoneStandPipe">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="2standpipe" />
+		<property name="DescriptionKey" value="StoneStandPipeDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells2.unity3d?2Standpipe"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="Stone2StandPipe">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="1standpipe" />
+		<property name="DescriptionKey" value="Stone2StandPipeDesc"/>		
+        <property name="Material" value="Mconcrete"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/WaterWells2.unity3d?1Standpipe"/>       
+        <property name="Collide" value="movement,melee"/>
+		<property name="MultiBlockDim" value="1,2,1"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="800"/>
+		<property name="DisplayInfo" value="Name"/>		
+		<property name="Place" value="TowardsPlacer"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+</block>
+
+<block name="OakMarbleSink">
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="vanity2" />
+	<property name="DescriptionKey" value="OakMarbleSinkDesc"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/Sinks.unity3d?vanity2"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="LootList" value="storageCrate"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="2,4" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapBrass" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,8"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
+	<property name="ImposterExchange" value="imposterBlock" param1="116"/>
+	<property name="FilterTags" value="MC_building,SC_loot,SC_residential,SC_plumbing"/>
+</block>
+
+<block name="OakSlateSink">
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="vanity3" />
+	<property name="DescriptionKey" value="OakSlateSinkDesc"/>	
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/Sinks.unity3d?vanity3"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="LootList" value="storageCrate"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="2,4" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapBrass" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,8"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
+	<property name="ImposterExchange" value="imposterBlock" param1="116"/>
+	<property name="FilterTags" value="MC_building,SC_loot,SC_residential,SC_plumbing"/>
+</block>
+
+<block name="OakTinSink">
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="tinsink" />
+	<property name="DescriptionKey" value="OakTinSinkDesc"/>	
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/Sinks.unity3d?TinSink"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="LootList" value="storageCrate"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="2,4" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapBrass" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="1,5" tag="WasteTreasuresSinkHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,8"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
+	<property name="ImposterExchange" value="imposterBlock" param1="116"/>
+	<property name="FilterTags" value="MC_building,SC_loot,SC_residential,SC_plumbing"/>
+</block>	
+	
+	<!-- ROCK DRILLS -->
+	
+	<block name="RockDrillEmpty">
+	<property name="DescriptionKey" value="RockDrillEmptyDesc"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="CustomIcon" value="rockdrill"/>
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="Material" value="MresourceScrapIron"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/RockDrill.unity3d?RockDrill"/>	
+	<property name="PlantGrowing.FertileLevel" value="1"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="2.0"/> 
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.Next" value="RockDrillEmpty"/>
+	<property class="UpgradeBlock">	
+		<property name="ToBlock" value="RockDrillWorking"/>
+		<property name="Item" value="DrillGasCan"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</block>
+
+	<block name="RockDrillWorking">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="Material" value="MresourceScrapIron"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/RockDrill.unity3d?RockDrillWorking"/>	
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="30.0"/>         <!-- When happy change to 30 -->
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.Next" value="RockDrillFull"/>
+	<property name="Group" value="Food/Cooking"/>
+</block>
+
+
+<block name="RockDrillFull">
+	<property name="Extends" value="cntToolBoxClosed"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="Material" value="MresourceScrapIron"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/RockDrill.unity3d?RockDrillFull"/>
+	<property name="LootList" value="RockDrill"/>
+	<property name="CreativeMode" value="Player"/>
+	<drop event="Destroy" count="0" />
+	<property name="DowngradeBlock" value="RockDrillEmpty"/>
+</block>
+	
 	<!-- DRAWBRIDGES -->
 	
                  <!-- 1X4 WALKWAYS -->

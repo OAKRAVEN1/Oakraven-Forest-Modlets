@@ -2,6 +2,98 @@
 
 	<append xpath="/recipes">
 	
+	<!-- WATER WELLS -->	
+	
+	<recipe name="WaterStandPipe" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="resourceClayLump" count="100"/>
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceWood" count="20"/>
+		<ingredient name="resourceMetalPipe" count="4"/>
+	</recipe>
+
+	<recipe name="WaterWell" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="resourceClayLump" count="200"/>
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceWood" count="60"/>
+		<ingredient name="resourceMetalPipe" count="4"/>
+		<ingredient name="resourceNail" count="10"/>
+	</recipe>
+
+	<recipe name="OldWell" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="resourceClayLump" count="200"/>
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceWood" count="60"/>
+		<ingredient name="resourceMetalPipe" count="4"/>
+		<ingredient name="resourceNail" count="10"/>
+	</recipe>
+
+	<recipe name="StoneWell" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="resourceClayLump" count="400"/>
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceWood" count="60"/>
+		<ingredient name="resourceMetalPipe" count="4"/>
+		<ingredient name="resourceNail" count="10"/>
+	</recipe>
+
+	<recipe name="WoodWell" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="resourceClayLump" count="200"/>
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceWood" count="160"/>
+		<ingredient name="resourceMetalPipe" count="4"/>
+		<ingredient name="resourceNail" count="10"/>
+	</recipe>
+
+	<recipe name="StoneStandPipe" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="resourceClayLump" count="100"/>
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceMetalPipe" count="4"/>
+		<ingredient name="resourceRockSmall" count="200"/>	
+	</recipe>
+
+	<recipe name="Stone2StandPipe" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="resourceClayLump" count="100"/>
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceMetalPipe" count="4"/>
+		<ingredient name="resourceRockSmall" count="200"/>	
+	</recipe>
+
+	<recipe name="OakMarbleSink" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceMetalPipe" count="4"/>
+		<ingredient name="resourceRockSmall" count="200"/>
+		<ingredient name="resourceWood" count="60"/>
+		<ingredient name="resourceNail" count="10"/>	
+	</recipe>
+
+	<recipe name="OakSlateSink" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceMetalPipe" count="4"/>
+		<ingredient name="resourceRockSmall" count="200"/>
+		<ingredient name="resourceWood" count="60"/>
+		<ingredient name="resourceNail" count="10"/>	
+	</recipe>
+
+	<recipe name="OakTinSink" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceMetalPipe" count="6"/>
+		<ingredient name="resourceNail" count="50"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>	
+	</recipe>	
+	
+	<!-- ROCK DRILLS -->	
+	
+	<recipe name="DrillGasCan" count="1" craft_area="chemistryStation">
+		<ingredient name="resourceOilShale" count="120"/>
+	</recipe>
+
+	<recipe name="RockDrillEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="40"/>
+		<ingredient name="resourceSpring" count="6"/>
+		<ingredient name="resourceMechanicalParts" count="12"/>
+		<ingredient name="resourceDuctTape" count="5"/>
+		<ingredient name="resourceMetalPipe" count="20"/>
+	</recipe>	
+	
 	<!-- DRAW BRIDGES -->	
 	
 	<recipe name="WalkWay1x4" count="1" craft_area="workbench" >

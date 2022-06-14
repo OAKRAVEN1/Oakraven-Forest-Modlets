@@ -1,6 +1,114 @@
 <configs>
 
+<remove xpath="/items/item[@name='drinkJarEmpty']"></remove>
+<remove xpath="/items/item[@name='bucketEmpty']"></remove>
+
 	<append xpath="/items">
+	
+	<!-- WATER WELLS -->
+<item name="drinkJarEmpty">
+	<property name="HoldType" value="3"/>
+	<property name="Meshfile" value="#Other/Items?Food/emptyJarPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mglass"/>
+	<property name="Stacknumber" value="125"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="CraftingIngredientTime" value="9"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="drinkJarRiverWater"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="water"/>
+		<property name="Focused_blockname_2" value="waterMoving"/>
+		<property name="Focused_blockname_3" value="waterStaticBucket"/>
+		<property name="Focused_blockname_4" value="waterMovingBucket"/>
+		<property name="Focused_blockname_5" value="terrWaterPOI"/>
+		<property name="Focused_blockname_6" value="WaterWell"/>
+		<property name="Focused_blockname_7" value="WaterStandPipe"/>
+		<property name="Focused_blockname_8" value="OldWell"/>
+		<property name="Focused_blockname_9" value="StoneWell"/>
+		<property name="Focused_blockname_10" value="WoodWell"/>
+		<property name="Focused_blockname_11" value="StoneStandPipe"/>
+		<property name="Focused_blockname_12" value="Stone2StandPipe"/>
+		<property name="Focused_blockname_13" value="OakSlateSink"/>
+		<property name="Focused_blockname_14" value="OakMarbleSink"/>
+		<property name="Focused_blockname_15" value="OakTinSink"/>
+		<property name="Sound_start" value="bucketfill_water"/>
+	</property>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item name="bucketEmpty">
+	<property name="HoldType" value="34"/>
+	<property name="Meshfile" value="#Other/Items?Crafting/Metal/IronBucket.fbx"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="84"/>
+	<property class="Action0">
+		<property name="Class" value="BailLiquid"/>
+		<property name="Delay" value=".35"/>
+		<property name="Sound_start" value="bucketbail_water"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value=".35"/>
+		<property name="Change_item_to" value="bucketRiverWater"/>
+		<property name="Do_block_action" value="deplete3"/>
+		<property name="Focused_blockname_1" value="water"/>
+		<property name="Focused_blockname_2" value="waterMoving"/>
+		<property name="Focused_blockname_3" value="waterStaticBucket"/>
+		<property name="Focused_blockname_4" value="waterMovingBucket"/>
+		<property name="Focused_blockname_5" value="terrWaterPOI"/>
+		<property name="Focused_blockname_6" value="WaterWell"/>
+		<property name="Focused_blockname_7" value="WaterStandPipe"/>
+		<property name="Focused_blockname_8" value="OldWell"/>
+		<property name="Focused_blockname_9" value="StoneWell"/>
+		<property name="Focused_blockname_10" value="WoodWell"/>
+		<property name="Focused_blockname_11" value="StoneStandPipe"/>
+		<property name="Focused_blockname_12" value="Stone2StandPipe"/>
+		<property name="Focused_blockname_13" value="OakSlateSink"/>
+		<property name="Focused_blockname_14" value="OakMarbleSink"/>
+		<property name="Focused_blockname_15" value="OakTinSink"/>
+		<property name="Sound_start" value="bucketfill_water"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+</item>	
+	
+	<!-- ROCK DRILLS -->
+
+	<item name="DrillGasCan">
+		<property name="CustomIcon" value="drillgascan"/>
+		<property name="DescriptionKey" value="DrillGasCanDesc"/>
+		<property name="Meshfile" value="#@modfolder:Resources/RockDrill.unity3d?DrillGasCan"/>
+		<property name="DropMeshfile" value="#@modfolder:Resources/RockDrill.unity3d?DrillGasCan"/>
+		<property name="Material" value="Morganic" />
+		<property name="HoldType" value="74" />
+		<property name="CraftingIngredientTime" value="8" />
+		<property name="Stacknumber" value="100" />
+		<property class="Action1">
+			<property name="Class" value="Repair"/>
+			<property name="Repair_amount" value="50"/>
+			<property name="Upgrade_hit_offset" value="-4"/>
+			<property name="Sound_start" value="repair_block"/>
+			<property name="Delay" value="1.3"/>
+			<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth"/>
+			<property name="Allowed_upgrade_items" value="DrillGasCan"/>
+		</property>
+		<effect_group name="Base Effects" tiered="false">
+			<passive_effect name="MaxRange" operation="base_set" value="3"/>
+			<passive_effect name="BlockRange" operation="base_set" value="3"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="0"/>
+			<passive_effect name="BlockDamage" operation="base_set" value="0"/>
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="100" />
+			<passive_effect name="ModSlots" operation="base_set" value="0" />
+		</effect_group>
+		<property name="Group" value="Resources,Chemicals,CFChemicals,Ammo"/>
+	</item>	
 	
 	<!-- COOKING STATIONS -->
 

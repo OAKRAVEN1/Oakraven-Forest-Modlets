@@ -1,5 +1,21 @@
 <configs>
 
+	<!-- ROCK DRILL -->
+	
+	<append xpath="/lootcontainers">
+		<lootcontainer id="780" name="RockDrill" count="6" size="6,2" destroy_on_close="true" sound_open="UseActions/open_cooler" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+		<item name="resourceRockSmall" count="300,600" prob="1"/>
+		<item name="resourceCrushedSand" count="400,800" prob="1"/>
+		<item name="resourceIronFragment" count="300,500" prob="0.5"/>
+		<item name="resourceOilShale" count="100,300" prob="0.3"/>
+		<item name="resourceScrapLead" count="100,300" prob="0.3"/>
+		<item name="resourceClayLump" count="300,500" prob="0.5"/>
+		<item name="resourceCoal" count="300,500" prob="0.5"/>
+		<item name="resourcePotassiumNitratePowder" count="100,300" prob="0.3"/>
+		<item name="resourceRawDiamond" count="1" prob="0.1"/>
+	</lootcontainer>
+	</append>
+
 	<!-- FISH FARM -->
 	<append xpath="/lootcontainers">
 		<lootcontainer id="779" name="FishReady" count="2" size="6,2" destroy_on_close="true" sound_open="UseActions/FishSounds" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
