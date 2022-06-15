@@ -430,11 +430,11 @@ zombieFirefighterKhz,entityclasses,Entity,,,Zombie Firefighter,,Zombie-Feuerwehr
 zombieMaleKhz,entityclasses,Entity,,,Zombie Man,,Zombie-Mann,Hombre zombie,Zombie,Zombie Man.,ゾンビマン,좀비 맨,Człowiek Zombie.,Homem zumbi.,Zombie Man.,Zombi adam,僵尸人,殭屍人,Hombre zombie
 zombiePolicewomanKhz,entityclasses,Entity,,,Zombie Policewoman,,Zombie-Polizistin.,Zombie policía policía,Zombie Bureau,Poliziotta Zombie.,ゾンビポリクロマン,좀비 경찰,Zombie Policewoman.,Policial zumbi,Зомби полицейская женщина,Zombi polis memuru,僵尸女强人,殭屍女強人,Zombie policía policía
 
-npcAirForceTRifle,,,"Air Force",,,,,,"エアフォース",,,,,,,
-npcTattooGurlTRifle,,,"Tattoo Girl",,,,,,"タトゥーガール",,,,,,,
-npcCosplayerBow,,,"Cosplayer Girl",,,,,,"コスプレイヤー",,,,,,,
-npcWrestlerEmptyHand,,,"Sumo Wrestler",,,,,,"相撲取り",,,,,,,
-npcMrFriendlyM60,,,"Mr Friendly",,,,,,"ミスター・フレンドリー",,,,,,,
+npcAirForceTRifle,entityclasses,Entity,,,"Air Force",,,,,,"エアフォース",,,,,,,
+npcTattooGurlTRifle,entityclasses,Entity,,,"Tattoo Girl",,,,,,"タトゥーガール",,,,,,,
+npcCosplayerBow,entityclasses,Entity,,,"Cosplayer Girl",,,,,,"コスプレイヤー",,,,,,,
+npcWrestlerEmptyHand,entityclasses,Entity,,,"Sumo Wrestler",,,,,,"相撲取り",,,,,,,
+npcMrFriendlyM60,entityclasses,Entity,,,"Mr Friendly",,,,,,"ミスター・フレンドリー",,,,,,,
 
 BloatedParasite,entityclasses,Entity,,,"Bloated Parasite",,,,,,"ブロートパラサイト",,,,,,,
 ExperimentZ,entityclasses,Entity,,,"Experiment Z",,,,,,"実験体Z",,,,,,,
