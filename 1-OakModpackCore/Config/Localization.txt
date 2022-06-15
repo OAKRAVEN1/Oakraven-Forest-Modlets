@@ -430,6 +430,12 @@ zombieFirefighterKhz,entityclasses,Entity,,,Zombie Firefighter,,Zombie-Feuerwehr
 zombieMaleKhz,entityclasses,Entity,,,Zombie Man,,Zombie-Mann,Hombre zombie,Zombie,Zombie Man.,ゾンビマン,좀비 맨,Człowiek Zombie.,Homem zumbi.,Zombie Man.,Zombi adam,僵尸人,殭屍人,Hombre zombie
 zombiePolicewomanKhz,entityclasses,Entity,,,Zombie Policewoman,,Zombie-Polizistin.,Zombie policía policía,Zombie Bureau,Poliziotta Zombie.,ゾンビポリクロマン,좀비 경찰,Zombie Policewoman.,Policial zumbi,Зомби полицейская женщина,Zombi polis memuru,僵尸女强人,殭屍女強人,Zombie policía policía
 
+npcAirForceTRifle,,,"Air Force",,,,,,"エアフォース",,,,,,,
+npcTattooGurlTRifle,,,"Tattoo Girl",,,,,,"タトゥーガール",,,,,,,
+npcCosplayerBow,,,"Cosplayer Girl",,,,,,"コスプレイヤー",,,,,,,
+npcWrestlerEmptyHand,,,"Sumo Wrestler",,,,,,"相撲取り",,,,,,,
+npcMrFriendlyM60,,,"Mr Friendly",,,,,,"ミスター・フレンドリー",,,,,,,
+
 BloatedParasite,entityclasses,Entity,,,"Bloated Parasite",,,,,,"ブロートパラサイト",,,,,,,
 ExperimentZ,entityclasses,Entity,,,"Experiment Z",,,,,,"実験体Z",,,,,,,
 SwatZombie,entityclasses,Entity,,,"Swat Zombie",,,,,,"Swatゾンビ",,,,,,,
@@ -535,6 +541,9 @@ BM_zombieWightRadiated,entityclasses,Entity,,,Radiated Wight,,Verstrahltes Wesen
 BM_zombieYo,entityclasses,Entity,,,Yo,,Yo,Yo,Carcasse pourrie,Yo,ヨー,요,Yo,Yo,Разлагающаяся туша,Yo,幽,幽,Yo
 BM_zombieYoFeral,entityclasses,Entity,,,Feral Yo,,Wilder Yo,Yo salvaje,Carcasse pourrie féroce,Yo feroce,残忍なヨー,흉포한 요,Dziki Yo,Yo Feroz,Дикая туша,Vahşi Yo,凶残的幽,野蠻的幽,Yo salvaje
 BM_zombieYoRadiated,entityclasses,Entity,,,Radiated Yo,,Verstrahlter Yo,Yo irradiado,Carcasse pourrie irradiée,Yo irradiato,被爆したヨー,방사능 요,Napromieniowany Yo,Yo Radioativo,Облученная туша,Radyasyonlu Yo,被辐射的幽,被輻射的幽,Yo irradiado
+
+zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
+zombieFemaleTutorialFeral,entityclasses,Entity,,,Feral Deadly Girl,,,,,,,,,,,,,
 
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,

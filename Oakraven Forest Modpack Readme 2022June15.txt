@@ -40,6 +40,7 @@ Quest - Blood Moon Vanguard (Gives players an incentive to stay for Horde Night 
 
 In addition, some Addons that are powered by 0-Score and 0-XNPCCore and bundled directly are as follows:
 
+- 1-SurvivorzPack (A collection of helpers who can assist you, for a price)
 - 1-khzmusik_Zombies (A variety of well crafted entities to enhance regular 7D2D zombie interactions from khzmusik)
 - 1-ZombiezPack (A variety of hostile looking zombies from Darkstardragon)
 - 1-GansSpecialZombies (A variety of fancy dress type zombies from GanTheGrey)
@@ -52,7 +53,7 @@ Laz Man - Created Quest - Blood Moon Vanguard.
 khzmusik - Created 1-khzmusik_Zombies.
 KhaineGB - Inventory Lockable Slots Mod.
 GanTheGrey - Created 1-GansSpecialZombies.
-Darkstardragon - Created 1-ZombiezPack and performed an abundance of play testing, bug checking, and coding support through the 'Not Medieval Mod'.
+Darkstardragon - Created 1-ZombiezPack, 1-SurvivorzPack and performed an abundance of play testing, bug checking, and coding support through the 'Not Medieval Mod'.
 arramus - Supported the Oakraven Forest Collection with compilation and distribution, quality control, and even added the odd icon or two. 
 
 Released Oakraven Forest Collection modlets can be found here.
