@@ -1,4 +1,9 @@
 <configs>
+
+	<!-- Vanilla Tweaks -->
+    <!-- DRAGON AIR DROP -->
+	<set xpath="/Sounds/SoundDataNode[@name='Supply_Crate_Plane_lp']/AudioClip/@ClipName">#@modfolder:Resources/DragonAirDrop.unity3d?DragonVoice1</set>
+
 	<append xpath="/Sounds">
 	
     <!-- FISH FARM -->	
