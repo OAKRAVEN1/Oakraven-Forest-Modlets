@@ -542,6 +542,64 @@ BM_zombieYo,entityclasses,Entity,,,Yo,,Yo,Yo,Carcasse pourrie,Yo,ヨー,요,Yo,Y
 BM_zombieYoFeral,entityclasses,Entity,,,Feral Yo,,Wilder Yo,Yo salvaje,Carcasse pourrie féroce,Yo feroce,残忍なヨー,흉포한 요,Dziki Yo,Yo Feroz,Дикая туша,Vahşi Yo,凶残的幽,野蠻的幽,Yo salvaje
 BM_zombieYoRadiated,entityclasses,Entity,,,Radiated Yo,,Verstrahlter Yo,Yo irradiado,Carcasse pourrie irradiée,Yo irradiato,被爆したヨー,방사능 요,Napromieniowany Yo,Yo Radioativo,Облученная туша,Radyasyonlu Yo,被辐射的幽,被輻射的幽,Yo irradiado
 
+qc_eliminatehorde,items,Quest - Challenge,,,"Contract: Eliminate Horde",,,,,,,,,,,,,
+qc_eliminatehordeDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement.",,,,,,,,,,,,,
+
+challenge_eliminatehorde01,Quest,Quest Info,,,"Eliminate Horde (Part 1)",,,,,,,,,,,,,
+challenge_eliminatehorde01_offer,Quest,Quest Info,,,"Survivors!\n\nThere's a horde wandering nearby that has been causing all kinds of trouble.  A sizable reward will be awaiting any brave individuals who can take care of it.  Visit the local trader for some supplies and further instructions.\n\nGood Luck, Laz Man.",,,,,,,,,,,,,
+challenge_eliminatehorde01_description,Quest,Quest Info,,,"There's a horde wandering nearby that has been causing all kinds of trouble for the locals. Head over to the local trader for resources and additional information about the contract.",,,,,,,,,,,,,
+challenge_eliminatehorde01_subtitle,Quest,Quest Info,,,Talk to the Trader,,,,,,,,,,,,,
+challenge_eliminatehorde01_completion,Quest,Quest Info,,,"Howdy Survivor,\n\nThanks for taking on this contract. Our scouts have informed me that the horde will be passing through this location on your map. Take these resources and fortify your position before they get there. Good luck!",,,,,,,,,,,,,
+
+challenge_eliminatehorde02,Quest,Quest Info,,,"Eliminate Horde (Part 2)",,,,,,,,,,,,,
+challenge_eliminatehorde02_description,Quest,Quest Info,,,"There's a horde wandering nearby that has been causing trouble for the White River settlement. Head over to the location marked on your map and build defenses before the horde's arrival.",,,,,,,,,,,,,
+challenge_eliminatehorde02_subtitle,Quest,Quest Info,,,Build and Defend,,,,,,,,,,,,,
+challenge_eliminatehorde02_completion,Quest,Quest Info,,,"Well I'll be danged. That horde didn't stand a chance! Take these dukes as your reward. Hell, I'll even throw in an item of your choosing from my stash...While you were out, I received a new contract to dispose of a FERAL horde threatening the area. Take these resources to the location marked on your map and fortify your position before they get there. You have our gratitude...and another reward upon your return. Good Luck!",,,,,,,,,,,,,
+
+challenge_eliminatehorde03,Quest,Challenge Info,,,"Eliminate Horde (Part 3)",,,,,,,,,,,,,
+challenge_eliminatehorde03_description,Quest,Challenge Info,,,"There's a FERAL horde threatening the White River settlement. Head over to the location marked on your map and build defenses before the horde's arrival. FERAL zombies run regardless if it is night or day so you will need to be quick on your feet.",,,,,,,,,,,,,
+challenge_eliminatehorde03_subtitle,Challenge,Challenge Info,,,Build and Defend,,,,,,,,,,,,,
+challenge_eliminatehorde03_completion,Challenge,Challenge Info,,,"Holy...Moly. You sure are full of surprises! Take these dukes as your reward and take your pick of another item from my stash. You deserve it!\n...Please take on this last contract to exterminate a RADIATED horde encrouching on our territory. Take these resources to the location marked on your map and fortify your position before they get there. The settlement will be forever in your debt. Good Luck!",,,,,,,,,,,,,
+
+challenge_eliminatehorde04,Quest,Challenge Info,,,"Eliminate Horde (Part 4)",,,,,,,,,,,,,
+challenge_eliminatehorde04_description,Quest,Challenge Info,,,"There's a RADIATED horde encrouching on the White River settlement's territory. Head over to the location marked on your map and build defenses before the horde's arrival.  RADIATED zombies are known to regenerate their health over time if not put down for good so you will need to make sure to bring enough firepower.",,,,,,,,,,,,,
+challenge_eliminatehorde04_subtitle,Challenge,Challenge Info,,,Build and Defend,,,,,,,,,,,,,
+challenge_eliminatehorde04_completion,Challenge,Challenge Info,,,"Well done Survivor...Well done. Your skill at dispatching hordes is unparalleled! Take this large bag of dukes as well as one item from my secret stash.  We look forward to you taking on more contracts from us in the future...",,,,,,,,,,,,,
+
+tutorialTip_eliminatehorde,Journal,,,,"Tips:\n\n1) Bring all rewarded crafting resources to the Rally Point.  They will required to CRAFT/PLACE/UPGRADE fortifications.\n\n2) You can CRAFT/PLACE/UPGRADE more fortifications than the required minimum.\n\n3) The Horde will approach after all CRAFT/PLACE/UPGRADE objectives are complete.\n\n4) Additional contracts to eliminate hordes can be found randomly in desk and wall safes.",,,,,,,,,,,,,
+tutorialTip_eliminatehorde_title,Journal,,,,"Contract - Eliminate Horde",,,,,,,,,,,,,
+
+QC_zombieArlene,entityclasses,Entity,,,Horde Zombies,,,,,,,,,,,,,
+QC_zombieArleneFeral,entityclasses,Entity,,,Feral Horde Zombies,,,,,,,,,,,,,
+QC_zombieArleneRadiated,entityclasses,Entity,,,Radiated Horde Zombies,,,,,,,,,,,,,
+
+QC_zombieDarlene,entityclasses,Entity,,,Horde Darlene,,,,,,,,,,,,,
+QC_zombieMarlene,entityclasses,Entity,,,Horde Marlene,,,,,,,,,,,,,
+QC_zombieBoe,entityclasses,Entity,,,Horde Boe,,,,,,,,,,,,,
+QC_zombieJoe,entityclasses,Entity,,,Horde Joe,,,,,,,,,,,,,
+QC_zombieMoe,entityclasses,Entity,,,Horde Moe,,,,,,,,,,,,,
+QC_zombieYo,entityclasses,Entity,,,Horde Yo,,,,,,,,,,,,,
+QC_zombieFatHawaiian,entityclasses,Entity,,,Horde Tourist,,,,,,,,,,,,,
+QC_zombieFemaleFat,entityclasses,Entity,,,Horde Big Momma,,,,,,,,,,,,,
+
+QC_zombieDarleneFeral,entityclasses,Entity,,,Feral Horde Darlene,,,,,,,,,,,,,
+QC_zombieMarleneFeral,entityclasses,Entity,,,Feral Horde Marlene,,,,,,,,,,,,,
+QC_zombieBoeFeral,entityclasses,Entity,,,Feral Horde Boe,,,,,,,,,,,,,
+QC_zombieJoeFeral,entityclasses,Entity,,,Feral Horde Joe,,,,,,,,,,,,,
+QC_zombieMoeFeral,entityclasses,Entity,,,Feral Horde Moe,,,,,,,,,,,,,
+QC_zombieYoFeral,entityclasses,Entity,,,Feral Horde Yo,,,,,,,,,,,,,
+QC_zombieSpiderFeral,entityclasses,Entity,,,Feral Horde Spider,,,,,,,,,,,,,
+QC_zombieWightFeral,entityclasses,Entity,,,Feral Horde Wight,,,,,,,,,,,,,
+
+QC_zombieDarleneRadiated,entityclasses,Entity,,,Radiated Horde Darlene,,,,,,,,,,,,,
+QC_zombieMarleneRadiated,entityclasses,Entity,,,Radiated Horde Marlene,,,,,,,,,,,,,
+QC_zombieBoeRadiated,entityclasses,Entity,,,Radiated Horde Boe,,,,,,,,,,,,,
+QC_zombieJoeRadiated,entityclasses,Entity,,,Radiated Horde Joe,,,,,,,,,,,,,
+QC_zombieMoeRadiated,entityclasses,Entity,,,Radiated Horde Moe,,,,,,,,,,,,,
+QC_zombieYoRadiated,entityclasses,Entity,,,Radiated Horde Yo,,,,,,,,,,,,,
+QC_zombieFatCopRadiated,entityclasses,Entity,,,Radiated Horde Cop,,,,,,,,,,,,,
+QC_zombieBikerRadiated,entityclasses,Entity,,,Radiated Horde Biker,,,,,,,,,,,,,
+
 zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
 zombieFemaleTutorialFeral,entityclasses,Entity,,,Feral Deadly Girl,,,,,,,,,,,,,
 

@@ -4433,7 +4433,14 @@
 	  	<property name="IndexName" value="Trader"/>
 	</block>
 	
-    <!-- COMMUNITY ASSETS -->	
-
 	</append>
+	
+    <!-- COMMUNITY ASSETS -->
+	
+	<!-- LAZMAN'S ELIMINATE THE HORDE QUEST -->	
+
+ 	<append xpath="/blocks/block[contains(@name,'flagPoleWhiteRiver')]">
+		<property name="OnlySimpleRotations" value="true"/>
+	</append>	
+
 </configs>

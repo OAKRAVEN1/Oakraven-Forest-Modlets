@@ -37,6 +37,7 @@ Oakraven Traders (5 selected custom traders to give Bob, Hugh, Jen, Joel, and Re
 A20 Skyrim Style Lockpicking MiniGame (Makes lockpicking skill based).
 KhaineGB's Inventory Lockable Slots Mod (Allows players to stop essential items being removed form the backpack when bulk moving).
 Quest - Blood Moon Vanguard (Gives players an incentive to stay for Horde Night and pick up a Skill for completing an objective).
+Quest - Eliminate the Horde (Gives players a Craft/Build/Upgrade Quest opportunity to survive a wave of grunt/feral/radiated entities).
 
 In addition, some Addons that are powered by 0-Score and 0-XNPCCore and bundled directly are as follows:
 
@@ -49,7 +50,7 @@ Oakraven Forest Collection Creators and Developers in Alphabtical Order from Z -
 
 Xyth and SphereII with Mumpfy for branding - Created the A20 Skyrim Style Lockpicking MiniGame. (The assets are embedded and remain as per original). 
 Oakraven - Created Oakraven Forest Collection assets.
-Laz Man - Created Quest - Blood Moon Vanguard.
+Laz Man - Created Quest - Blood Moon Vanguard and Eliminate the Horde.
 khzmusik - Created 1-khzmusik_Zombies.
 KhaineGB - Inventory Lockable Slots Mod.
 GanTheGrey - Created 1-GansSpecialZombies.

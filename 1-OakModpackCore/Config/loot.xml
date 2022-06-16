@@ -55,8 +55,14 @@
 	<append xpath="/lootcontainers">
 		<lootcontainer id="771" name="Honey" count="1" size="7,2" destroy_on_close="true" sound_open="UseActions/BeeHiveOpen" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
 		<item name="foodHoneyComb" count="2,3" prob="1" />
-	</lootcontainer>
-	
+	</lootcontainer>	
 	</append>
+	
+	<!-- LAZMAN'S ELIMINATE THE HORDE QUEST -->	
+	
+	<!-- Adds the Contract: Eliminate Horde into the same wall/desk safe lootgroup as general goodies with a 1 count -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupSmallSafeLoot01']">
+		<item name="qc_eliminatehorde" count="1" loot_prob_template="low"/>		
+	</append>	
 	
 </configs>
