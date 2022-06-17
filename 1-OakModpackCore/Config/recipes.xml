@@ -1281,7 +1281,7 @@
 	
 	<!-- WORKSTATIONS -->	
 	
-	<recipe name="OakChemistryStation" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<recipe name="OakChemistryStation" count="1" craft_time="180" craft_area="workbench" tags="learnable,workbenchCrafting">
 		<ingredient name="toolBeaker" count="2"/>
 		<ingredient name="resourceForgedIron" count="100"/>
 		<ingredient name="toolCookingPot" count="3"/>
@@ -1289,7 +1289,7 @@
 		<ingredient name="resourceAcid" count="5"/>
 	</recipe>
 
-	<recipe name="OakForge" count="1" tags="learnable">
+	<recipe name="OakForge" count="1" craft_time="60" tags="learnable"> 
 		<ingredient name="resourceClayLump" count="100"/>
 		<ingredient name="resourceForgedIron" count="25"/>
 		<ingredient name="resourceCobblestones" count="250"/>
@@ -1297,7 +1297,7 @@
 		<ingredient name="resourceSpring" count="5"/>
 	</recipe>
 
-	<recipe name="PowderMixer" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<recipe name="PowderMixer" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
 		<ingredient name="resourceForgedIron" count="25"/>
 		<ingredient name="resourceSpring" count="4"/>
 		<ingredient name="smallEngine" count="1"/>
