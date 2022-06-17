@@ -1,7 +1,12 @@
 <configs>
 
-<remove xpath="/items/item[@name='drinkJarEmpty']"></remove>
-<remove xpath="/items/item[@name='bucketEmpty']"></remove>
+	<!-- Vanilla Tweaks and Toggles -->
+	<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Upgrade_hit_offset']/@value">-2</set><!-- 2 Hit Repairs -->
+	<set xpath="/items/item[@name='gunShotgunT0PipeShotgun']/effect_group/passive_effect[@name='MagazineSize']/@value">2</set>
+	<set xpath="/items/item[@name='gunRifleT0PipeRifle']/effect_group/passive_effect[@name='MagazineSize']/@value">3</set>
+
+	<remove xpath="/items/item[@name='drinkJarEmpty']"></remove><!-- WATER WELLS -->
+	<remove xpath="/items/item[@name='bucketEmpty']"></remove><!-- WATER WELLS -->
 
 	<append xpath="/items">
 	

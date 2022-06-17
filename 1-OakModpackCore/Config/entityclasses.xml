@@ -373,7 +373,7 @@
 			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
 			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
 			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
-			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundRandomTime" value="600.0"/>
 			<property name="SoundRandom" value="GurlzChatterRandom"/>
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
@@ -405,7 +405,7 @@
 			<property name="SoundLandSoft" value="Player_Male/player2LandSoft"/>
 			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
 			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
-			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundRandomTime" value="600.0"/>
             <property name="SoundRandom" value="GurlzChatterRandom"/>
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
@@ -438,7 +438,7 @@
 			<property name="SoundLandHard" value="Player_Male/player2LandHard"/>
 			<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
             <property name="SoundRandom" value="GurlzChatterRandom"/>
-			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundRandomTime" value="600.0"/>
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
