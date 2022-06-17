@@ -28,7 +28,7 @@
 
 		<spawn maxcount="1" respawndelay="0.2" time="Day" entitygroup="ZombiesDowntown" tags="fabber" /> <!-- Default is 3 -->
 		<spawn maxcount="2" respawndelay="0.09" time="Night" entitygroup="ZombiesDowntown" tags="fabber" /> <!-- Default is 4 -->
-	</biome>	
+	</append>	
 
     <append xpath="/spawning/biome[@name='snow']">
 		<spawn maxcount="1" respawndelay="2.6" time="Any" entitygroup="SnowZombies" notags="fabber" />
