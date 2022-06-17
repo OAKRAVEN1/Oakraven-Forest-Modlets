@@ -1,11 +1,143 @@
 <configs>
 
 	<!-- Vanilla Tweaks and Toggles -->
+	<!-- Weapons and Tools -->	
 	<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Upgrade_hit_offset']/@value">-2</set><!-- 2 Hit Repairs -->
 	<set xpath="/items/item[@name='gunShotgunT0PipeShotgun']/effect_group/passive_effect[@name='MagazineSize']/@value">2</set>
 	<set xpath="/items/item[@name='gunRifleT0PipeRifle']/effect_group/passive_effect[@name='MagazineSize']/@value">2</set>
 	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group/passive_effect[@name='MagazineSize']/@value">2</set>	
-
+	<!-- Ammo Stacking -->
+	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">2400</set><!-- x8 of default -->
+	<set xpath="/items/item[@name='ammo9mmBulletHP']/property[@name='Stacknumber']/@value">2400</set>
+	<set xpath="/items/item[@name='ammo9mmBulletAP']/property[@name='Stacknumber']/@value">2400</set>
+	<set xpath="/items/item[@name='ammo44MagnumBulletBall']/property[@name='Stacknumber']/@value">2400</set><!-- x8 of default -->
+	<set xpath="/items/item[@name='ammo44MagnumBulletHP']/property[@name='Stacknumber']/@value">2400</set>
+	<set xpath="/items/item[@name='ammo44MagnumBulletAP']/property[@name='Stacknumber']/@value">2400</set>	
+	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">1200</set><!-- x8 of default -->
+	<set xpath="/items/item[@name='ammo762mmBulletHP']/property[@name='Stacknumber']/@value">1200</set>
+	<set xpath="/items/item[@name='ammo762mmBulletAP']/property[@name='Stacknumber']/@value">1200</set>
+	<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">1200</set><!-- x8 of default -->
+	<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">1200</set>
+	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Stacknumber']/@value">1200</set>	
+	<set xpath="/items/item[@name='ammoJunkTurretRegular']/property[@name='Stacknumber']/@value">4000</set><!-- x4 of default -->
+	<set xpath="/items/item[@name='ammoJunkTurretShell']/property[@name='Stacknumber']/@value">4000</set>
+	<set xpath="/items/item[@name='ammoJunkTurretAP']/property[@name='Stacknumber']/@value">4000</set>
+	<set xpath="/items/item[@name='ammoRocketHE']/property[@name='Stacknumber']/@value">100</set><!-- x5 of default -->
+	<set xpath="/items/item[@name='ammoRocketFrag']/property[@name='Stacknumber']/@value">100</set>
+	<set xpath="/items/item[@name='ammoArrowStone']/property[@name='Stacknumber']/@value">300</set><!-- x2 of default -->
+	<set xpath="/items/item[@name='ammoArrowIron']/property[@name='Stacknumber']/@value">300</set>	
+	<set xpath="/items/item[@name='ammoArrowSteelAP']/property[@name='Stacknumber']/@value">300</set>
+	<set xpath="/items/item[@name='ammoArrowFlaming']/property[@name='Stacknumber']/@value">300</set>
+	<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">300</set>
+	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">300</set><!-- x2 of default -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">300</set>
+	<set xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/property[@name='Stacknumber']/@value">300</set>	
+	<set xpath="/items/item[@name='ammoCrossbowBoltFlaming']/property[@name='Stacknumber']/@value">300</set>
+	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">300</set>
+	<!-- Explosives/Incendiaries/Darts Stacking -->
+	<set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Stacknumber']/@value">50</set><!-- x2.5 of default -->
+	<set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Stacknumber']/@value">50</set>	
+	<set xpath="/items/item[@name='thrownGrenade']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='thrownDynamite']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='ammoDartIron']/property[@name='Stacknumber']/@value">2000</set><!-- x4 of default -->
+	<!-- Parts -->
+	<set xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Stacknumber']/@value">250</set><!-- x5 of default -->
+	<!-- Multiple extends of partsMaster -->	
+	<!-- Apparel -->
+	<set xpath="/items/item[@name='apparelCigar']/property[@name='Stacknumber']/@value">50</set><!-- x50 of default -->
+	<!-- Meds -->	
+	<set xpath="/items/item[@name='medicalAloeCream']/property[@name='Stacknumber']/@value">50</set><!-- x5 of default -->
+	<set xpath="/items/item[@name='medicalBandage']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='medicalSplint']/property[@name='Stacknumber']/@value">25</set>	
+	<set xpath="/items/item[@name='medicalBloodBag']/property[@name='Stacknumber']/@value">75</set>
+	<set xpath="/items/item[@name='drugVitamins']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drugPainkillers']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drugAntibiotics']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drugSteroids']/property[@name='Stacknumber']/@value">25</set><!-- extends drugPainkillers but 25 is sufficient -->
+	<set xpath="/items/item[@name='drugRecog']/property[@name='Stacknumber']/@value">50</set>
+	<!-- drugFortBites extends drugRecog -->
+	<set xpath="/items/item[@name='drugAtomJunkies']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Multiple extends of drugAtomJunkies for other candy -->
+	<!-- Food and Drink reflects Oaks Modpack Stacking Values except for raw materials -->
+	<!-- Raw Materials 250 x2 and Crafted Food/Drink 50 x5 Vanilla x2/2.5 Oaks to support abundance of items -->	
+	<set xpath="/items/item[@name='foodHoney']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodCanBeef']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodCornOnTheCob']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodCornBread']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodShamSandwich']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodCharredMeat']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodGrilledMeat']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodBoiledMeat']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodMeatStew']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodSteakAndPotato']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodHoboStew']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodFishTacos']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodBakedPotato']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodBlueberryPie']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodPumpkinPie']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodPumpkinCheesecake']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodPumpkinBread']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodGumboStew']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodShepardsPie']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodSpaghetti']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodTunaFishGravyToast']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodEggBoiled']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodBaconAndEggs']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodVegetableStew']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodEgg']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCornMeal']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropBlueberries']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropCorn']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropGraceCorn']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropPotato']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropMushrooms']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropYuccaFruit']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropPumpkin']/property[@name='Stacknumber']/@value">250</set>
+	<!--set xpath="/items/item[@name='drinkJarEmpty']/property[@name='Stacknumber']/@value">250</set-->
+	<set xpath="/items/item[@name='drinkJarRiverWater']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarPureMineralWater']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarRedTea']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='Stacknumber']/@value">50</set>
+	<!-- drinkCanMegaCrush extends drinkJarRedTea -->
+	<set xpath="/items/item[@name='drinkJarCoffee']/property[@name='Stacknumber']/@value">50</set>
+	<!-- drinkJarBlackStrapCoffee extends drinkJarCoffee -->
+	<set xpath="/items/item[@name='drinkJarBeer']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Other Stuff Stacking -->
+	<set xpath="/items/item[@name='resourceSewingKit']/property[@name='Stacknumber']/@value">100</set><!-- x5 of default -->
+	<set xpath="/items/item[@name='resourceTestosteroneExtract']/property[@name='Stacknumber']/@value">50</set><!-- x5 of default -->
+	<set xpath="/items/item[@name='resourceCloth']/property[@name='Stacknumber']/@value">500</set><!-- x2 of default -->
+	<set xpath="/items/item[@name='resourcePaper']/property[@name='Stacknumber']/@value">1000</set><!-- x2 of default -->
+	<set xpath="/items/item[@name='resourceFeather']/property[@name='Stacknumber']/@value">1000</set><!-- x4 of default -->
+	<set xpath="/items/item[@name='resourceGunPowder']/property[@name='Stacknumber']/@value">2500</set><!-- x2.5 of default -->
+	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='Stacknumber']/@value">100</set><!-- x4 of default -->
+	<set xpath="/items/item[@name='resourceOil']/property[@name='Stacknumber']/@value">250</set><!-- x5 of default -->
+	<set xpath="/items/item[@name='resourceRadiator']/property[@name='Stacknumber']/@value">25</set><!-- x5 of default -->	
+	<set xpath="/items/item[@name='smallEngine']/property[@name='Stacknumber']/@value">25</set><!-- x25 of default -->	
+	<set xpath="/items/item[@name='resourceHeadlight']/property[@name='Stacknumber']/@value">250</set><!-- x5 of default -->
+	<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">25000</set><!-- x1.25 of default -->
+	<set xpath="/items/item[@name='toolBeaker']/property[@name='Stacknumber']/@value">25</set><!-- x2.5 of default -->
+	<set xpath="/items/item[@name='toolBellows']/property[@name='Stacknumber']/@value">10</set><!-- x10 of default -->
+	<set xpath="/items/item[@name='toolAnvil']/property[@name='Stacknumber']/@value">10</set><!-- x10 of default -->
+	<set xpath="/items/item[@name='toolForgeCrucible']/property[@name='Stacknumber']/@value">10</set><!-- x10 of default -->
+	<!-- Append Stacking -->	
+	<append xpath="/items/item[@name='medicalPlasterCast']">
+		<property name="Stacknumber" value="20"/> <!-- STK resource -->	
+	</append><!-- extends medicalSplint at 25 but 20 is sufficient to recognise upgrade feature -->	
+	
 	<remove xpath="/items/item[@name='drinkJarEmpty']"></remove><!-- WATER WELLS -->
 	<remove xpath="/items/item[@name='bucketEmpty']"></remove><!-- WATER WELLS -->
 
@@ -17,7 +149,7 @@
 	<property name="Meshfile" value="#Other/Items?Food/emptyJarPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mglass"/>
-	<property name="Stacknumber" value="125"/> <!-- STK resource -->
+	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="6"/>
 	<property name="CraftingIngredientTime" value="9"/>
@@ -182,7 +314,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="125"/> <!-- STK resource -->
+	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="15"/>
@@ -211,7 +343,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="125"/> <!-- STK resource -->
+	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="15"/>
@@ -245,7 +377,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="16"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
@@ -280,7 +412,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MfoodRawMeat"/>
-	<property name="Stacknumber" value="125"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="CraftingIngredientTime" value="3"/>
@@ -315,7 +447,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MfoodRawMeat"/>
-	<property name="Stacknumber" value="125"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -350,7 +482,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="125"/> <!-- STK resource -->
+	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="15"/>
@@ -378,7 +510,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?BoarDrink"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FoodIcons.unity3d?BoarDrink"/>
 	<property name="Material" value="Mglass"/>
-	<property name="Stacknumber" value="25"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
@@ -418,7 +550,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?meatcan"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FoodIcons.unity3d?meatcan"/>
 	<property name="Material" value="Mglass"/>
-	<property name="Stacknumber" value="25"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
@@ -458,7 +590,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?GreenEye"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FoodIcons.unity3d?GreenEye"/>
 	<property name="Material" value="Mglass"/>
-	<property name="Stacknumber" value="25"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
@@ -498,7 +630,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?RedWorm"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FoodIcons.unity3d?RedWorm"/>
 	<property name="Material" value="Mglass"/>
-	<property name="Stacknumber" value="25"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="70"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
@@ -539,7 +671,7 @@
 	<property name="DropMeshfile" value="#@modfolder:Resources/FoodIcons.unity3d?masonjar"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Weight" value="10"/>
-	<property name="Stacknumber" value="25"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="EconomicValue" value="48"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
@@ -626,7 +758,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MoreStone"/>
-	<property name="Stacknumber" value="60"/>
+	<property name="Stacknumber" value="125"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="Group" value="Resources"/>
 </item>
@@ -639,7 +771,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceWood"/>
-	<property name="Stacknumber" value="60"/>
+	<property name="Stacknumber" value="125"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="Group" value="Resources"/>
 </item>	
@@ -652,7 +784,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mdirt"/>
-	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources,Chemicals,CFChemicals"/>
@@ -664,7 +796,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mdirt"/>
-	<property name="Stacknumber" value="10"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources,Chemicals,CFChemicals"/>
@@ -678,7 +810,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab" />
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab" />
 	<property name="Material" value="MresourceCrop" />
-	<property name="Stacknumber" value="125" /> <!-- STK food -->
+	<property name="Stacknumber" value="250" /> <!-- STK food -->
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="1" />
 	<property name="SellableToTrader" value="false" />
@@ -705,7 +837,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab" />
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab" />
 	<property name="Material" value="MresourceCrop" />
-	<property name="Stacknumber" value="125" /> <!-- STK food -->
+	<property name="Stacknumber" value="250" /> <!-- STK food -->
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="1" />
 	<property name="SellableToTrader" value="false" />
@@ -732,7 +864,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab" />
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab" />
 	<property name="Material" value="MresourceCrop" />
-	<property name="Stacknumber" value="125" /> <!-- STK food -->
+	<property name="Stacknumber" value="250" /> <!-- STK food -->
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="1" />
 	<property name="SellableToTrader" value="false" />
@@ -759,7 +891,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab" />
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab" />
 	<property name="Material" value="MresourceCrop" />
-	<property name="Stacknumber" value="125" /> <!-- STK food -->
+	<property name="Stacknumber" value="250" /> <!-- STK food -->
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="1" />
 	<property name="SellableToTrader" value="false" />
@@ -786,7 +918,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab" />
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab" />
 	<property name="Material" value="MresourceCrop" />
-	<property name="Stacknumber" value="125" /> <!-- STK food -->
+	<property name="Stacknumber" value="250" /> <!-- STK food -->
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="1" />
 	<property name="SellableToTrader" value="false" />
@@ -813,7 +945,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab" />
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab" />
 	<property name="Material" value="MresourceCrop" />
-	<property name="Stacknumber" value="125" /> <!-- STK food -->
+	<property name="Stacknumber" value="250" /> <!-- STK food -->
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="1" />
 	<property name="SellableToTrader" value="false" />
@@ -840,7 +972,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab" />
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab" />
 	<property name="Material" value="MresourceCrop" />
-	<property name="Stacknumber" value="125" /> <!-- STK food -->
+	<property name="Stacknumber" value="250" /> <!-- STK food -->
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="1" />
 	<property name="SellableToTrader" value="false" />
@@ -868,7 +1000,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
 	<property class="Action0">
@@ -971,7 +1103,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/MushroomsNight.unity3d?FireFlyBug2"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/MushroomsNight.unity3d?FireFlyBug2"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
 	<property class="Action0">
@@ -1005,7 +1137,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="102"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
@@ -1035,7 +1167,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="60"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
@@ -1075,7 +1207,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="100"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
@@ -1103,7 +1235,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="110"/>
 	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
@@ -1134,7 +1266,7 @@
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="21" />
 	<property name="CraftingIngredientTime" value="8" />
-	<property name="Stacknumber" value="20" />
+	<property name="Stacknumber" value="50" />
 	<property class="Action1">
 		<property name="Class" value="Repair"/>
 		<property name="Repair_amount" value="50"/>
@@ -1166,7 +1298,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
 	<property class="Action0">
@@ -1194,7 +1326,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?Fishmeringue"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?Fishmeringue"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="21"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -1223,7 +1355,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishSpinePie"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishSpinePie"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="20"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -1252,7 +1384,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishSoup"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishSoup"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="20"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -1281,7 +1413,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishStew"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishStew"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="20"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -1310,7 +1442,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?PerchPie"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?PerchPie"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="20"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -1339,7 +1471,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishCurry"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?FishCurry"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="20"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<!--property name="UnlockedBy" value="perkMasterChef"/-->
 	<property class="Action0">
@@ -1368,7 +1500,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="20"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
 	<property class="Action0">
@@ -1396,7 +1528,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
 	<property class="Action0">
@@ -1424,7 +1556,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property name="UnlockedBy" value="perkMasterChef,foodGrilledMeatSchematic"/>
 	<property class="Action0">
@@ -1452,7 +1584,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?mutantpiranhaStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?mutantpiranhaStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -1500,7 +1632,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?PerchStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?PerchStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -1545,7 +1677,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?barramundiStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?barramundiStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -1590,7 +1722,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?ShinerFishStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?ShinerFishStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -1635,7 +1767,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?tangfishStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?tangfishStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -1680,7 +1812,7 @@
 	<property name="Meshfile" value="#@modfolder:Resources/FishRecipes.unity3d?ArramusFishStick"/>
 	<property name="DropMeshfile" value="#@modfolder:Resources/FishRecipes.unity3d?ArramusFishStick"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -1814,7 +1946,7 @@
 		<property name="Material" value="Morganic" />
 		<property name="HoldType" value="21" />
 		<property name="CraftingIngredientTime" value="8" />
-		<property name="Stacknumber" value="20" />
+		<property name="Stacknumber" value="250" />
 		<property class="Action1">
 			<property name="Class" value="Repair"/>
 			<property name="Repair_amount" value="50"/>
@@ -1846,7 +1978,7 @@
 		<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="20"/> <!-- STK food -->
+		<property name="Stacknumber" value="50"/> <!-- STK food -->
 		<property name="EconomicValue" value="124"/>
 		<property name="UnlockedBy" value="perkMasterChef"/>
 		<property class="Action0">
@@ -1875,7 +2007,7 @@
 		<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="20"/> <!-- STK food -->
+		<property name="Stacknumber" value="50"/> <!-- STK food -->
 		<property name="EconomicValue" value="124"/>
 		<property name="UnlockedBy" value="perkMasterChef"/>
 		<property class="Action0">
@@ -1906,7 +2038,7 @@
 		<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="10"/> <!-- STK food -->
+		<property name="Stacknumber" value="250"/> <!-- STK food -->
 		<property name="EconomicValue" value="54"/>
 		<property class="Action0">
 			<property name="Class" value="Eat"/>
@@ -1935,7 +2067,7 @@
 		<property name="Material" value="Morganic" />
 		<property name="HoldType" value="21" />
 		<property name="CraftingIngredientTime" value="8" />
-		<property name="Stacknumber" value="20" />
+		<property name="Stacknumber" value="250" />
 		<property class="Action1">
 			<property name="Class" value="Repair"/>
 			<property name="Repair_amount" value="50"/>
@@ -1967,7 +2099,7 @@
 		<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="20"/> <!-- STK food -->
+		<property name="Stacknumber" value="50"/> <!-- STK food -->
 		<property name="UnlockedBy" value="perkMasterChef"/>		
 		<property name="EconomicValue" value="36"/>
 		<property class="Action0">
@@ -2001,7 +2133,7 @@
 		<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="10"/> <!-- STK food -->
+		<property name="Stacknumber" value="50"/> <!-- STK food -->
 		<property name="UnlockedBy" value="perkMasterChef"/>		
 		<property name="EconomicValue" value="124"/>
 		<property class="Action0">
