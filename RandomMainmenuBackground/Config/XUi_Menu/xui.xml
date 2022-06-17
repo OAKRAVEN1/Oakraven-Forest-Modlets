@@ -17,6 +17,9 @@
 		</window_group>
 		<window_group name="menuBackground20220616034221_1" actionSet="false">
 			<window name="OAKbackground6" />
-		</window_group>			
+		</window_group>
+		<window_group name="menuBackground20220617090332_1" actionSet="false">
+			<window name="OAKbackground7" />
+		</window_group>		
 	</append>
 </test>
