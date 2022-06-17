@@ -89,9 +89,9 @@
 	<set xpath="/items/item[@name='foodEggBoiled']/property[@name='Stacknumber']/@value">50</set>
 	<set xpath="/items/item[@name='foodBaconAndEggs']/property[@name='Stacknumber']/@value">50</set>
 	<set xpath="/items/item[@name='foodVegetableStew']/property[@name='Stacknumber']/@value">50</set>
-	<set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">250</set>
-	<set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">250</set>
-	<set xpath="/items/item[@name='foodEgg']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">1000</set><!-- To offset Coops and Mincer -->
+	<set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">1000</set><!-- To offset Coops and Mincer -->
+	<set xpath="/items/item[@name='foodEgg']/property[@name='Stacknumber']/@value">500</set><!-- To offset Coops and Mincer -->
 	<set xpath="/items/item[@name='foodCornMeal']/property[@name='Stacknumber']/@value">250</set>
 	<set xpath="/items/item[@name='foodCropBlueberries']/property[@name='Stacknumber']/@value">250</set>
 	<set xpath="/items/item[@name='foodCropCorn']/property[@name='Stacknumber']/@value">250</set>
@@ -412,7 +412,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MfoodRawMeat"/>
-	<property name="Stacknumber" value="250"/> <!-- STK food -->
+	<property name="Stacknumber" value="1000"/> <!-- STK food -->
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="CraftingIngredientTime" value="3"/>
@@ -447,7 +447,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MfoodRawMeat"/>
-	<property name="Stacknumber" value="250"/> <!-- STK food -->
+	<property name="Stacknumber" value="1000"/> <!-- STK food -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
