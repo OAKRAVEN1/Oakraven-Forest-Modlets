@@ -2,6 +2,12 @@
 
 	<append xpath="/recipes">
 	
+	<!-- Vanilla Tweaks and Toggles -->
+	
+<recipe name="resourceClayLumpBundle" count="1" craft_time="10" tags="learnable">
+	<ingredient name="resourceClayLump" count="6000"/>
+</recipe>	
+	
 	<!-- TORCHES LIGHTS -->	
 	
 <recipe name="BigStandingBrazier" count="1" craft_area="workbench" tags="workbenchCrafting">

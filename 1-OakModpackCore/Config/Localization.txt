@@ -1,5 +1,8 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 
+resourceClayLumpBundle,items,Item,,,Stack of Clay (6000),,,,,,,,,,,,,
+resourceClayLumpBundleDesc,items,Item,,,"This is a compact stack of clay. Use this item to open and unpack it.",,,,,,,,,,,,,
+
 BigStandingBrazier,blocks,Block,,,Big Standing Brazier,,,,,,,,,,,,,
 BigStandingBrazierDesc,blocks,Block,,,"A Big Standing Brazier that provides atmospheric lighting.",,,,,,,,,,,,,
 Brazier,blocks,Block,,,Standing Brazier,,,,,,,,,,,,,

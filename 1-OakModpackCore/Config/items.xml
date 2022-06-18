@@ -133,15 +133,27 @@
 	<set xpath="/items/item[@name='toolBellows']/property[@name='Stacknumber']/@value">10</set><!-- x10 of default -->
 	<set xpath="/items/item[@name='toolAnvil']/property[@name='Stacknumber']/@value">10</set><!-- x10 of default -->
 	<set xpath="/items/item[@name='toolForgeCrucible']/property[@name='Stacknumber']/@value">10</set><!-- x10 of default -->
+	<!-- Bundle Stacking -->
+	<set xpath="/items/item[@name='resourceRockSmallBundle']/property[@name='Stacknumber']/@value">25</set><!-- x5 of default -->
+
 	<!-- Append Stacking -->	
 	<append xpath="/items/item[@name='medicalPlasterCast']">
 		<property name="Stacknumber" value="20"/> <!-- STK resource -->	
-	</append><!-- extends medicalSplint at 25 but 20 is sufficient to recognise upgrade feature -->	
+	</append><!-- extends medicalSplint at 25 but 20 is sufficient to recognise upgrade feature -->
 	
 	<remove xpath="/items/item[@name='drinkJarEmpty']"></remove><!-- WATER WELLS -->
 	<remove xpath="/items/item[@name='bucketEmpty']"></remove><!-- WATER WELLS -->
 
 	<append xpath="/items">
+	
+	<item name="resourceClayLumpBundle">
+		<property name="Extends" value="resourceRockSmallBundle"/>
+		<property name="CustomIcon" value="resourceClayLump"/>
+		<property class="Action0">
+			<property name="Create_item" value="resourceClayLump"/>
+			<property name="Create_item_count" value="6000"/>
+		</property>
+	</item>	
 	
 	<!-- WATER WELLS -->
 <item name="drinkJarEmpty">
