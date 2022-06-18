@@ -578,6 +578,19 @@
 	    <ingredient name="drinkJarBoiledWater" count="1"/>
     </recipe>
 	
+	<recipe name="resourceGlue" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkAdvancedEngineering">
+		<ingredient name="resourceBone" count="7"/>
+		<ingredient name="drinkJarRiverWater" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="1,5" operation="base_add" value="-1" tags="resourceBone"/>
+		</effect_group>
+	</recipe>
+	
+	<recipe name="resourcePaint" count="100" craft_area="OaksCooker" craft_tool="toolCookingPot">
+		<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+		<ingredient name="drinkJarRiverWater" count="1"/>
+	</recipe>	
+	
 <!-- MACHINERY AND TOOLS -->
 	
 	<recipe name="toolMixer" count="1" craft_area="workbench" tags="workbenchCrafting">
