@@ -362,7 +362,7 @@
 	
 	<!-- 1-ZombiezPack Pest Control V -->
 	<quest id="challenge_ZombiezPackSpecimenPartV">
-	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in desk and wall safes." />       
     <property name="name_key" value="Pest Control V" />
 	<property name="subtitle_key" value="Destroying the whole nest." />
 	<property name="description_key" value="Cull 250 Laboratory Specimens for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in desk and wall safes." />

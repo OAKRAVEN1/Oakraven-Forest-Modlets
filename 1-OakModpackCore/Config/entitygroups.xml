@@ -699,12 +699,22 @@
                 <entity name="ParasiteRadiated" prob=".15" />				
 	</append>
 	
-	<!-- Gans Special Zombies from 1-GansSpecialZombies -->	
+	<!-- Gans Special Zombies from 1-GansSpecialZombies and 2-GansSpecialFeralandRadiatedZombies -->	
 
     <append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieBoe' and not(@prob='0')]]">
         <entity name="zombieWhiteClown" />
         <entity name="zombieWarZombie" />
         <entity name="zombieWarZombieV1" />
+    </append>
+    <append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieBoeFeral' and not(@prob='0')]]">
+        <entity name="zombieWhiteClownFeral" />
+        <entity name="zombieWarZombieFeral" />
+        <entity name="zombieWarZombieV1Feral" />
+    </append>
+    <append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieBoeRadiated' and not(@prob='0')]]">
+        <entity name="zombieWhiteClownRadiated" />
+        <entity name="zombieWarZombieRadiated" />
+        <entity name="zombieWarZombieV1Radiated" />
     </append>	
 		
 	<!-- LAZMAN'S BLOOD MOON VANGUARD REPEATABLE QUEST -->

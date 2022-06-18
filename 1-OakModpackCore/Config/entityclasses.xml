@@ -935,6 +935,45 @@
             <property name="Faction" value="undead"/>
             <property name="WalkType" value="2"/>
         </entity_class>
+		
+		<entity_class name="zombieWhiteClownFeral" extends="zombieWhiteClown"><!-- Base extends zombieRegularTemplate settings and Feral extends zombieFemaleTutorialFeral -->
+            <property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+            <property name="Mesh" value="#@modfolder:Resources/SpecialZombies.unity3d?whiteclown_n_hallin"/>			
+            <property name="Faction" value="undead"/>
+            <property name="WalkType" value="2"/>
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>			
+        </entity_class>
+		
+		<entity_class name="zombieWhiteClownRadiated" extends="zombieWhiteClownFeral"><!-- Radiated Modeled on TFP -->
+            <property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+            <property name="Mesh" value="#@modfolder:Resources/SpecialZombies.unity3d?whiteclown_n_hallin"/>
+			<property name="ReplaceMaterial0" value="#Other/Items?Weapons/Melee/Spear/Materials/spear_sticky.mat"/>			
+            <property name="Faction" value="undead"/>
+            <property name="WalkType" value="2"/>
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
+			<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+			<property name="MoveSpeedAggro" value=".55, 1.45"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="1200"/><!-- XP grunt radiated -->
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="451"/>
+				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+        </entity_class>
 
         <!-- zombie model credit: warzombie_f_pedroso-->
         <entity_class name="zombieWarZombie" extends="zombieRegularTemplate">
@@ -943,13 +982,91 @@
             <property name="Faction" value="undead"/>
             <property name="WalkType" value="2"/>
         </entity_class>
+		
+        <entity_class name="zombieWarZombieFeral" extends="zombieWarZombie">
+            <property name="Tags" value="entity,female,zombie,walker,mixamo,feral"/>
+            <property name="Mesh" value="#@modfolder:Resources/SpecialZombies.unity3d?warZombie_Gan"/>			
+            <property name="Faction" value="undead"/>
+            <property name="WalkType" value="2"/>
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>			
+        </entity_class>
+		
+        <entity_class name="zombieWarZombieRadiated" extends="zombieWarZombieFeral">
+            <property name="Tags" value="entity,female,zombie,walker,mixamo,feral,radiated"/>
+            <property name="Mesh" value="#@modfolder:Resources/SpecialZombies.unity3d?warZombie_Gan"/>
+			<property name="ReplaceMaterial0" value="#Other/Items?Weapons/Melee/Spear/Materials/spearIron_sticky.mat"/>			
+            <property name="Faction" value="undead"/>
+            <property name="WalkType" value="2"/>
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
+			<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+			<property name="MoveSpeedAggro" value=".55, 1.45"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="1200"/><!-- XP grunt radiated -->
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="451"/>
+				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+        </entity_class>
 
 		<entity_class name="zombieWarZombieV1" extends="zombieWarZombie">
 			<property name="Tags" value="entity,female,zombie,walker,normal,cp"/>
 			<property name="Faction" value="undead"/>
 			<property name="ReplaceMaterial0" value="#@modfolder:Resources/SpecialZombies.unity3d?WorldWar_zombie_black.mat"/>
 			<property name="WalkType" value="2"/>
-		</entity_class>		
+		</entity_class>
+
+		<entity_class name="zombieWarZombieV1Feral" extends="zombieWarZombieV1">
+			<property name="Tags" value="entity,female,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+			<property name="ReplaceMaterial0" value="#@modfolder:Resources/SpecialZombies.unity3d?WorldWar_zombie_black.mat"/>
+            <property name="WalkType" value="2"/>
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>			
+        </entity_class>
+		
+		<entity_class name="zombieWarZombieV1Radiated" extends="zombieWarZombieV1Feral">
+			<property name="Tags" value="entity,female,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+			<property name="ReplaceMaterial1" value="#@modfolder:Resources/SpecialZombies.unity3d?WorldWar_zombie_black.mat"/>
+			<property name="ReplaceMaterial0" value="#Other/Items?Weapons/Melee/Spear/Materials/spear_sticky.mat"/>			
+            <property name="WalkType" value="2"/>
+			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
+			<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+			<property name="MoveSpeedAggro" value=".55, 1.45"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="1200"/><!-- XP grunt radiated -->
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="451"/>
+				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+        </entity_class>		
 
 			<!-- LAZMAN'S BLOOD MOON VANGUARD REPEATABLE QUEST -->	
 	

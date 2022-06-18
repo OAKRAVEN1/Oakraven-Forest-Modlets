@@ -47,7 +47,7 @@ In addition, some Addons that are powered by 0-Score and 0-XNPCCore and bundled 
 - 1-SurvivorzPack (A collection of helpers who can assist you, for a price)
 - 1-khzmusik_Zombies (A variety of well crafted entities to enhance regular 7D2D zombie interactions from khzmusik)
 - 1-ZombiezPack (A variety of hostile looking zombies from Darkstardragon)
-- 1-GansSpecialZombies (A variety of fancy dress type zombies from GanTheGrey)
+- 1-GansSpecialZombies (A variety of fancy dress type zombies from GanTheGrey) + 2- Feral and Radiated
 
 OakModPackCore Modpack Creators and Developers in Alphabtical Order from Z - A:
 

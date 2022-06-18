@@ -461,6 +461,14 @@ zombieWarZombie,entityclasses,Entity,,,"Colonel Klink",,,,,,"クリンク大佐"
 zombieWarZombieV1,entityclasses,Entity,,,"Colonel Lynch",,,,,,"リンチ大佐",,,,,,,
 zombieWhiteClown,entityclasses,Entity,,,"White Clown",,,,,,"白いピエロ",,,,,,,
 
+zombieWarZombieFeral,entityclasses,Entity,,,"Feral Colonel Klink",,,,,,"残忍クリンク大佐",,,,,,,
+zombieWarZombieV1Feral,entityclasses,Entity,,,"Feral Colonel Lynch",,,,,,"残忍リンチ大佐",,,,,,,
+zombieWhiteClownFeral,entityclasses,Entity,,,"Feral White Clown",,,,,,"残忍白いピエロ",,,,,,,
+
+zombieWarZombieRadiated,entityclasses,Entity,,,"Radiated Colonel Klink",,,,,,"被爆したクリンク大佐",,,,,,,
+zombieWarZombieV1Radiated,entityclasses,Entity,,,"Radiated Colonel Lynch",,,,,,"被爆したリンチ大佐",,,,,,,
+zombieWhiteClownRadiated,entityclasses,Entity,,,"Radiated White Clown",,,,,,"被爆した白いピエロ",,,,,,,
+
 challenge_bloodmoonvanguard,Quest,Quest Info,,,"Blood Moon Vanguard",,,,,,,,,,,,,
 challenge_bloodmoonvanguard_description,Quest,Quest Info,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. They will find you...",,,,,,,,,,,,,
 challenge_bloodmoonvanguard_subtitle,Quest,Quest Info,,,Blood Moon Defense,,,,,,,,,,,,,
