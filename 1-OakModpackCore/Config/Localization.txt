@@ -611,7 +611,7 @@ QC_zombieYoRadiated,entityclasses,Entity,,,Radiated Horde Yo,,,,,,,,,,,,,
 QC_zombieFatCopRadiated,entityclasses,Entity,,,Radiated Horde Cop,,,,,,,,,,,,,
 QC_zombieBikerRadiated,entityclasses,Entity,,,Radiated Horde Biker,,,,,,,,,,,,,
 
-qc_zombiezpackspecimen,items,Quest - Challenge,,,"Contract: Cull the Laboratory Specimens",,,,,,,,,,,,,
+qc_zombiezpackspecimen,items,Quest - Challenge,,,"Contract: Cull Laboratory Specimens",,,,,,,,,,,,,
 qc_zombiezpackspecimenDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost.\n\nAdditional Quest Notes can be found in desk and wall safes.",,,,,,,,,,,,,
 
 zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
