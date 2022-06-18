@@ -279,7 +279,105 @@
 			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
 			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
 						
-		</quest>		
+		</quest>
+
+	<!-- DARKSTARDRAGON'S QUEST FEST -->
+	<!-- Incorporating 1-ZombiezPack Entities -->	
+
+	<!-- 1-ZombiezPack Pest Control I -->
+	<quest id="challenge_ZombiezPackSpecimenPartI">
+    <property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Pest Control I" />
+	<property name="subtitle_key" value="Seek out 3 kinds of Laboratory Specimen." />
+	<property name="description_key" value="Cull 10 Laboratory Specimens for Dukes and XP. Look out for the Bloated Parasite, Parasite, and Experimental Z." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="BloatedParasite,BloatedParasiteFeral,BloatedParasiteRadiated,ExperimentZ,ExperimentZFeral,ExperimentZRadiated,Parasite,ParasiteFeral,ParasiteRadiated" value="10"/>
+		
+	<reward type="Exp" value="1500"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="challenge_ZombiezPackSpecimenPartII"/>
+	</quest>
+	
+	<!-- 1-ZombiezPack Pest Control II -->
+	<quest id="challenge_ZombiezPackSpecimenPartII">
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Pest Control II" />
+	<property name="subtitle_key" value="The Specimens are waiting." />
+	<property name="description_key" value="Cull 25 Laboratory Specimens for Dukes and XP. You will know them when you see them." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="BloatedParasite,BloatedParasiteFeral,BloatedParasiteRadiated,ExperimentZ,ExperimentZFeral,ExperimentZRadiated,Parasite,ParasiteFeral,ParasiteRadiated" value="25"/>
+		
+	<reward type="Exp" value="3750"/>
+	<reward type="Item" id="casinoCoin" value="1250"/>
+	<reward type="Quest" id="challenge_ZombiezPackSpecimenPartIII"/>
+	</quest>
+	
+	<!-- 1-ZombiezPack Pest Control III -->
+	<quest id="challenge_ZombiezPackSpecimenPartIII">
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Pest Control III" />
+	<property name="subtitle_key" value="They breed like rodents." />
+	<property name="description_key" value="Cull 50 Laboratory Specimens for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="BloatedParasite,BloatedParasiteFeral,BloatedParasiteRadiated,ExperimentZ,ExperimentZFeral,ExperimentZRadiated,Parasite,ParasiteFeral,ParasiteRadiated" value="50"/>
+		
+	<reward type="Exp" value="7500"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Quest" id="challenge_ZombiezPackSpecimenPartIV"/>
+	</quest>
+	
+	<!-- 1-ZombiezPack Pest Control IV -->
+	<quest id="challenge_ZombiezPackSpecimenPartIV">
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Pest Control IV" />
+	<property name="subtitle_key" value="Holding back the flood." />
+	<property name="description_key" value="Cull 100 Laboratory Specimens for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="BloatedParasite,BloatedParasiteFeral,BloatedParasiteRadiated,ExperimentZ,ExperimentZFeral,ExperimentZRadiated,Parasite,ParasiteFeral,ParasiteRadiated" value="100"/>
+		
+	<reward type="Exp" value="15000"/>
+	<reward type="Item" id="casinoCoin" value="5000"/>
+	<reward type="Quest" id="challenge_ZombiezPackSpecimenPartV"/>
+	</quest>
+	
+	<!-- 1-ZombiezPack Pest Control V -->
+	<quest id="challenge_ZombiezPackSpecimenPartV">
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point." />       
+    <property name="name_key" value="Pest Control V" />
+	<property name="subtitle_key" value="Destroying the whole nest." />
+	<property name="description_key" value="Cull 250 Laboratory Specimens for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in desk and wall safes." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="BloatedParasite,BloatedParasiteFeral,BloatedParasiteRadiated,ExperimentZ,ExperimentZFeral,ExperimentZRadiated,Parasite,ParasiteFeral,ParasiteRadiated" value="250"/>
+		
+	<reward type="Exp" value="37500"/>
+	<reward type="Item" id="casinoCoin" value="12500"/>
+	<reward type="SkillPoints" value="1" chainreward="true"/>
+	</quest>	
 	
 	</append>	
 

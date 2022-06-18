@@ -58,11 +58,12 @@
 	</lootcontainer>	
 	</append>
 	
-	<!-- LAZMAN'S ELIMINATE THE HORDE QUEST -->	
+	<!-- QUEST NOTES -->	
 	
-	<!-- Adds the Contract: Eliminate Horde into the same wall/desk safe lootgroup as general goodies with a 1 count -->
+	<!-- Adds Quest Notes for Laz Man Quests and custom entity culling, etc.,into the same wall/desk safe lootgroup as general goodies with a 1 count. 1 in 6 chance on testing. -->
 	<append xpath="/lootcontainers/lootgroup[@name='groupSmallSafeLoot01']">
-		<item name="qc_eliminatehorde" count="1" loot_prob_template="low"/>		
+		<item name="qc_eliminatehorde" count="1" loot_prob_template="low"/>
+		<item name="qc_zombiezpackspecimen" count="1" loot_prob_template="low"/>		
 	</append>	
 	
 </configs>

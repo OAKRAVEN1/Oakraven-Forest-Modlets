@@ -2332,6 +2332,20 @@
 				<property name="UseAnimation" value="false"/>
 				<property name="QuestGiven" value="challenge_eliminatehorde01"/>
 			</property>
+		</item>
+
+	<!-- DARKSTARDRAGON'S QUEST FEST -->
+	<!-- Incorporating 1-ZombiezPack Entities -->		
+		
+		<!-- Adds the 1-ZombiezPack Pest Control I note -->
+		<item name="qc_zombiezpackspecimen">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_zombiezpackspecimenDesc"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_ZombiezPackSpecimenPartI"/>
+			</property>
 		</item>		
 
 	</append>

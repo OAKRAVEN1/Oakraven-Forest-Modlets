@@ -439,7 +439,7 @@ npcCosplayerBow,entityclasses,Entity,,,"Cosplayer Girl",,,,,,"コスプレイヤ
 npcWrestlerEmptyHand,entityclasses,Entity,,,"Sumo Wrestler",,,,,,"相撲取り",,,,,,,
 npcMrFriendlyM60,entityclasses,Entity,,,"Mr Friendly",,,,,,"ミスター・フレンドリー",,,,,,,
 
-BloatedParasite,entityclasses,Entity,,,"Bloated Parasite",,,,,,"ブロートパラサイト",,,,,,,
+BloatedParasite,entityclasses,Entity,,,"Laboratory Specimen",,,,,,"実験室の標本",,,,,,,
 ExperimentZ,entityclasses,Entity,,,"Experiment Z",,,,,,"実験体Z",,,,,,,
 SwatZombie,entityclasses,Entity,,,"Swat Zombie",,,,,,"Swatゾンビ",,,,,,,
 SwatCaptainZombie,entityclasses,Entity,,,"Swat Captain Zombie","Swatキャプテンゾンビ",,,,,,,
@@ -469,7 +469,7 @@ challenge_bloodmoonvanguard_completion,Quest,Quest Info,,,"Well I'll be danged. 
 BM_zombieArlene,entityclasses,Entity,,,Blood Moon Zombies,,,,,,,,,,,,,
 BM_zombieFatCop,entityclasses,Entity,,,Blood Moon Tanks,,,,,,,,,,,,,
 
-BloodmoonVanguardTip,Journal,,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. They will find you...\n\nQuest: Blood Moon Vanguard (Repeatable)\n\nObjective: Kill 222 Blood Moon Zombies \nReward: 1 Skill Point",,,,,,,,,,,,,
+BloodmoonVanguardTip,Journal,,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. They will find you...\n\nQuest: Blood Moon Vanguard (Repeatable)\n\nObjective: Kill 222 'Regular' Blood Moon Zombies \nReward: 1 Skill Point",,,,,,,,,,,,,
 BloodmoonVanguardTip_title,Journal,,,,Blood Moon Vanguard,,,,,,,,,,,,,
 
 challenge_bloodmoonvanguard,items,Quest - Challenge,,,"Blood Moon Vanguard",,,,,,,,,,,,,
@@ -546,7 +546,7 @@ BM_zombieYoFeral,entityclasses,Entity,,,Feral Yo,,Wilder Yo,Yo salvaje,Carcasse 
 BM_zombieYoRadiated,entityclasses,Entity,,,Radiated Yo,,Verstrahlter Yo,Yo irradiado,Carcasse pourrie irradiée,Yo irradiato,被爆したヨー,방사능 요,Napromieniowany Yo,Yo Radioativo,Облученная туша,Radyasyonlu Yo,被辐射的幽,被輻射的幽,Yo irradiado
 
 qc_eliminatehorde,items,Quest - Challenge,,,"Contract: Eliminate Horde",,,,,,,,,,,,,
-qc_eliminatehordeDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement.",,,,,,,,,,,,,
+qc_eliminatehordeDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost.",,,,,,,,,,,,,
 
 challenge_eliminatehorde01,Quest,Quest Info,,,"Eliminate Horde (Part 1)",,,,,,,,,,,,,
 challenge_eliminatehorde01_offer,Quest,Quest Info,,,"Survivors!\n\nThere's a horde wandering nearby that has been causing all kinds of trouble.  A sizable reward will be awaiting any brave individuals who can take care of it.  Visit the local trader for some supplies and further instructions.\n\nGood Luck, Laz Man.",,,,,,,,,,,,,
@@ -602,6 +602,9 @@ QC_zombieMoeRadiated,entityclasses,Entity,,,Radiated Horde Moe,,,,,,,,,,,,,
 QC_zombieYoRadiated,entityclasses,Entity,,,Radiated Horde Yo,,,,,,,,,,,,,
 QC_zombieFatCopRadiated,entityclasses,Entity,,,Radiated Horde Cop,,,,,,,,,,,,,
 QC_zombieBikerRadiated,entityclasses,Entity,,,Radiated Horde Biker,,,,,,,,,,,,,
+
+qc_zombiezpackspecimin,items,Quest - Challenge,,,"Contract: Cull the Laboratory Specimens",,,,,,,,,,,,,
+qc_zombiezpackspeciminDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost.\n\nAdditional Quest Notes can be found in desk and wall safes.",,,,,,,,,,,,,
 
 zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
 zombieFemaleTutorialFeral,entityclasses,Entity,,,Feral Deadly Girl,,,,,,,,,,,,,
