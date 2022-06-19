@@ -3338,9 +3338,9 @@
 	<property name="FallDamage" value=".9"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>	
-	<drop event="Harvest" name="FreshSalmonFillet" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="FreshSalmonFillet" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="FreshSalmonFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="foodFreshSalmonFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodFreshSalmonFillet" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="foodFreshSalmonFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Destroy" count="0"/>	
 	<property name="FilterTags" value="fdecor,fother"/>
 	</block>
@@ -3358,9 +3358,9 @@
 	<property name="FallDamage" value=".9"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>	
-	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="foodFishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodFishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="foodFishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Destroy" count="0"/>	
 	<property name="FilterTags" value="fdecor,fother"/>
 	</block>
@@ -3378,9 +3378,9 @@
 	<property name="FallDamage" value=".9"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>	
-	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="foodFishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodFishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="foodFishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Destroy" count="0"/>	
 	<property name="FilterTags" value="fdecor,fother"/>
 	</block>
@@ -3398,9 +3398,9 @@
 	<property name="FallDamage" value=".9"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>	
-	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="foodFishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodFishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="foodFishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Destroy" count="0"/>	
 	<property name="FilterTags" value="fdecor,fother"/>
 	</block>
@@ -3418,9 +3418,9 @@
 	<property name="FallDamage" value=".9"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>	
-	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="foodFishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodFishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="foodFishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Destroy" count="0"/>	
 	<property name="FilterTags" value="fdecor,fother"/>
 	</block>
@@ -3438,9 +3438,9 @@
 	<property name="FallDamage" value=".9"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>	
-	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="foodFishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodFishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="foodFishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Destroy" count="0"/>	
 	<property name="FilterTags" value="fdecor,fother"/>
 	</block>
@@ -3458,9 +3458,9 @@
 	<property name="FallDamage" value=".9"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>	
-	<drop event="Harvest" name="FishFillet" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="FishFillet" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="FishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="foodFishFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodFishFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="foodFishFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Destroy" count="0"/>	
 	<property name="FilterTags" value="fdecor,fother"/>
 	</block>
@@ -3478,9 +3478,9 @@
 	<property name="FallDamage" value=".9"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>	
-	<drop event="Harvest" name="FreshTunaFillet" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="FreshTunaFillet" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="FreshTunaFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="foodFreshTunaFillet" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodFreshTunaFillet" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="foodFreshTunaFillet" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Destroy" count="0"/>	
 	<property name="FilterTags" value="fdecor,fother"/>
 	</block>	
