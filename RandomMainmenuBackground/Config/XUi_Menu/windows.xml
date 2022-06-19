@@ -20,6 +20,9 @@
 		</window>
 		<window name="OAKbackground7" anchor="CenterCenter" pos="0,0" width="1920" height="1080" depth="-3">
 			<texture depth="1" color="[white]" texture="@modfolder:Textures/20220617090332_1.jpg" name="bgTexture" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
-		</window>		
+		</window>
+		<window name="OAKbackground8" anchor="CenterCenter" pos="0,0" width="1920" height="1080" depth="-3">
+			<texture depth="1" color="[white]" texture="@modfolder:Textures/20220618010417_1.jpg" name="bgTexture" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
+		</window>			
 	</append>
 </test>
