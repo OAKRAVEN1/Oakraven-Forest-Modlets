@@ -40,14 +40,8 @@
 	</lootcontainer>
 	</append>
 	
-	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupBirdNest']">	
-	<lootgroup name="groupBirdNest03" count="0,1">
-		<item name="CaughtChick" loot_prob_template="veryLow"/>
-	</lootgroup>
-	</insertBefore>	
-	
-	<append xpath="/lootcontainers/lootgroup[@name='groupBirdNest']" >
-		<item group="groupBirdNest03" count="0,1" loot_prob_template="veryLow"/>
+	<append xpath="/lootcontainers/lootgroup[@name='groupBirdNest02']">
+		<item name="CaughtChick" loot_prob_template="low"/>	
 	</append>
 	
 	<!-- BEE HIVES -->	

@@ -7,37 +7,23 @@
 	<set xpath="/items/item[@name='gunRifleT0PipeRifle']/effect_group/passive_effect[@name='MagazineSize']/@value">2</set>
 	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group/passive_effect[@name='MagazineSize']/@value">2</set>	
 	<!-- Ammo Stacking -->
-	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">2400</set><!-- x8 of default -->
-	<set xpath="/items/item[@name='ammo9mmBulletHP']/property[@name='Stacknumber']/@value">2400</set>
-	<set xpath="/items/item[@name='ammo9mmBulletAP']/property[@name='Stacknumber']/@value">2400</set>
-	<set xpath="/items/item[@name='ammo44MagnumBulletBall']/property[@name='Stacknumber']/@value">2400</set><!-- x8 of default -->
-	<set xpath="/items/item[@name='ammo44MagnumBulletHP']/property[@name='Stacknumber']/@value">2400</set>
-	<set xpath="/items/item[@name='ammo44MagnumBulletAP']/property[@name='Stacknumber']/@value">2400</set>	
+	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">2400</set><!-- x8 of default -->	
 	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">1200</set><!-- x8 of default -->
-	<set xpath="/items/item[@name='ammo762mmBulletHP']/property[@name='Stacknumber']/@value">1200</set>
-	<set xpath="/items/item[@name='ammo762mmBulletAP']/property[@name='Stacknumber']/@value">1200</set>
 	<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">1200</set><!-- x8 of default -->
 	<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">1200</set>
 	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Stacknumber']/@value">1200</set>	
 	<set xpath="/items/item[@name='ammoJunkTurretRegular']/property[@name='Stacknumber']/@value">4000</set><!-- x4 of default -->
-	<set xpath="/items/item[@name='ammoJunkTurretShell']/property[@name='Stacknumber']/@value">4000</set>
-	<set xpath="/items/item[@name='ammoJunkTurretAP']/property[@name='Stacknumber']/@value">4000</set>
 	<set xpath="/items/item[@name='ammoRocketHE']/property[@name='Stacknumber']/@value">100</set><!-- x5 of default -->
-	<set xpath="/items/item[@name='ammoRocketFrag']/property[@name='Stacknumber']/@value">100</set>
 	<set xpath="/items/item[@name='ammoArrowStone']/property[@name='Stacknumber']/@value">300</set><!-- x2 of default -->
-	<set xpath="/items/item[@name='ammoArrowIron']/property[@name='Stacknumber']/@value">300</set>	
-	<set xpath="/items/item[@name='ammoArrowSteelAP']/property[@name='Stacknumber']/@value">300</set>
-	<set xpath="/items/item[@name='ammoArrowFlaming']/property[@name='Stacknumber']/@value">300</set>
 	<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">300</set>
 	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">300</set><!-- x2 of default -->
 	<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">300</set>
-	<set xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/property[@name='Stacknumber']/@value">300</set>	
-	<set xpath="/items/item[@name='ammoCrossbowBoltFlaming']/property[@name='Stacknumber']/@value">300</set>
 	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">300</set>
+	<!-- Multiple extends -->	
 	<!-- Explosives/Incendiaries/Darts Stacking -->
 	<set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Stacknumber']/@value">50</set><!-- x2.5 of default -->
 	<set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Stacknumber']/@value">50</set>	
-	<set xpath="/items/item[@name='thrownGrenade']/property[@name='Stacknumber']/@value">50</set>
+	<!-- thrownGrenade extends thrownGrenadeContact -->
 	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Stacknumber']/@value">25</set>
 	<set xpath="/items/item[@name='thrownDynamite']/property[@name='Stacknumber']/@value">25</set>
 	<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/property[@name='Stacknumber']/@value">50</set>
@@ -58,7 +44,6 @@
 	<set xpath="/items/item[@name='drugPainkillers']/property[@name='Stacknumber']/@value">50</set>
 	<set xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='Stacknumber']/@value">50</set>
 	<set xpath="/items/item[@name='drugAntibiotics']/property[@name='Stacknumber']/@value">50</set>
-	<set xpath="/items/item[@name='drugSteroids']/property[@name='Stacknumber']/@value">25</set><!-- extends drugPainkillers but 25 is sufficient -->
 	<set xpath="/items/item[@name='drugRecog']/property[@name='Stacknumber']/@value">50</set>
 	<!-- drugFortBites extends drugRecog -->
 	<set xpath="/items/item[@name='drugAtomJunkies']/property[@name='Stacknumber']/@value">50</set>
@@ -140,6 +125,10 @@
 	<append xpath="/items/item[@name='medicalPlasterCast']">
 		<property name="Stacknumber" value="20"/> <!-- STK resource -->	
 	</append><!-- extends medicalSplint at 25 but 20 is sufficient to recognise upgrade feature -->
+	
+	<append xpath="/items/item[@name='drugSteroids']">
+		<property name="Stacknumber" value="25"/> <!-- STK resource -->	
+	</append><!-- extends drugPainkillers but 25 is sufficient -->	
 	
 	<remove xpath="/items/item[@name='drinkJarEmpty']"></remove><!-- WATER WELLS -->
 	<remove xpath="/items/item[@name='bucketEmpty']"></remove><!-- WATER WELLS -->
