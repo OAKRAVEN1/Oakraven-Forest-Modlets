@@ -273,7 +273,7 @@ foodHydroponicMixedFruitBowlDesc,items,Item,,,"Hydroponic Mixed Fruit Bowl is a 
 foodHydroponicFruitMuffin,items,Item,,,Hydroponic Fruit Muffin,,,,,,,,,,,,,
 foodHydroponicFruitMuffinDesc,items,Item,,,"Hydroponic Fruit Muffin is a fruity corn meal muffin treat using strawberry and blueberry.",,,,,,,,,,,,,
 foodHydroponicSalmonBake,items,Item,,,Hydroponic Salmon Bake,,,,,,,,,,,,,
-foodHydroponicFruitMuffinDesc,items,Item,,,"Hydroponic Salmon Bake offers a nutritious meal using tinned salmon and vegetables as the primary ingredients.",,,,,,,,,,,,,
+foodHydroponicSalmonBakeDesc,items,Item,,,"Hydroponic Salmon Bake offers a nutritious meal using tinned salmon and vegetables as the primary ingredients.",,,,,,,,,,,,,
 perkLivingOffTheLandRank2LongDesc,progression,perk For,,,"You can craft seeds for berries and vegetables.\n50% chance to harvest 1 additional crop.\nFarm plots cost 50% less to craft.\nYou also have access to Hydroponic Farming and can craft additional seeds and associated features.",,,,,,,,,,,,,
 
 FishOven,blocks,Block,,,Oakraven Fish Oven,,,,,,,,,,,,,
