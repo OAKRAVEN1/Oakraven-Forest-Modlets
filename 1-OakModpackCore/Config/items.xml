@@ -2341,13 +2341,25 @@
 		<item name="qc_zombiezpackspecimen">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="DescriptionKey" value="qc_zombiezpackspecimenDesc"/>
-			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIcon" value="specimens"/>
 			<property class="Action0">
 				<property name="UseAnimation" value="false"/>
 				<property name="QuestGiven" value="challenge_ZombiezPackSpecimenPartI"/>
 			</property>
-		</item>		
-
+		</item>
+		
+	<!-- GAN'S QUEST FEST -->
+	<!-- Gans Special Zombies from 1-GansSpecialZombies -->		
+		<item name="qc_gansspecialclowns">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_gansspecialclownsDesc"/>
+			<property name="CustomIcon" value="clowns"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_gansspecialclownsPartI"/>
+			</property>
+		</item>
+		
 	</append>
 	
 </configs>

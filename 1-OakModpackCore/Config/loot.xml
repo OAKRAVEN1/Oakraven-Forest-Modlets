@@ -47,7 +47,7 @@
 	</insertBefore>	
 	
 	<append xpath="/lootcontainers/lootgroup[@name='groupBirdNest']" >
-		<item group="groupBirdNest03" loot_prob_template="veryLow"/>
+		<item group="groupBirdNest03" count="0,1" loot_prob_template="veryLow"/>
 	</append>
 	
 	<!-- BEE HIVES -->	
@@ -60,10 +60,11 @@
 	
 	<!-- QUEST NOTES -->	
 	
-	<!-- Adds Quest Notes for Laz Man Quests and custom entity culling, etc.,into the same wall/desk safe lootgroup as general goodies with a 1 count. 1 in 6 chance on testing. -->
+	<!-- Adds Quest Notes for Laz Man Quest and 1-Addons Entities, etc.,into the same wall/desk safe lootgroup as general goodies with a 1 count. 1 in 6 chance on testing. -->
 	<append xpath="/lootcontainers/lootgroup[@name='groupSmallSafeLoot01']">
 		<item name="qc_eliminatehorde" count="1" loot_prob_template="low"/>
-		<item name="qc_zombiezpackspecimen" count="1" loot_prob_template="low"/>		
+		<item name="qc_zombiezpackspecimen" count="1" loot_prob_template="low"/>
+		<item name="qc_gansspecialclowns" count="1" loot_prob_template="low"/>		
 	</append>	
 	
 </configs>

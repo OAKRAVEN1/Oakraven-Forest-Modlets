@@ -459,7 +459,7 @@ ParasiteRadiated,entityclasses,Entity,,,"Radiated Parasite",,,,,,"被爆した�
 
 zombieWarZombie,entityclasses,Entity,,,"Colonel Klink",,,,,,"クリンク大佐",,,,,,,
 zombieWarZombieV1,entityclasses,Entity,,,"Colonel Lynch",,,,,,"リンチ大佐",,,,,,,
-zombieWhiteClown,entityclasses,Entity,,,"White Clown",,,,,,"白いピエロ",,,,,,,
+zombieWhiteClown,entityclasses,Entity,,,"Clown Frown",,,,,,,,,,,,,
 
 zombieWarZombieFeral,entityclasses,Entity,,,"Feral Colonel Klink",,,,,,"残忍クリンク大佐",,,,,,,
 zombieWarZombieV1Feral,entityclasses,Entity,,,"Feral Colonel Lynch",,,,,,"残忍リンチ大佐",,,,,,,
@@ -612,7 +612,10 @@ QC_zombieFatCopRadiated,entityclasses,Entity,,,Radiated Horde Cop,,,,,,,,,,,,,
 QC_zombieBikerRadiated,entityclasses,Entity,,,Radiated Horde Biker,,,,,,,,,,,,,
 
 qc_zombiezpackspecimen,items,Quest - Challenge,,,"Contract: Cull Laboratory Specimens",,,,,,,,,,,,,
-qc_zombiezpackspecimenDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost.\n\nAdditional Quest Notes can be found in desk and wall safes.",,,,,,,,,,,,,
+qc_zombiezpackspecimenDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate 3 types of Laboratory Specimen; Bloated Parasite, Parasite, and Experimental Z.\n\nAdditional Quest Notes can be found in desk and wall safes.",,,,,,,,,,,,,
+
+qc_gansspecialclowns,items,Quest - Challenge,,,"Contract: Clown Frown",,,,,,,,,,,,,
+qc_gansspecialclownsDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate 3 types of Gans Special Zombie; White Clown, Colonel Klink, and Colonel Lynch.\n\nAdditional Quest Notes can be found in desk and wall safes.",,,,,,,,,,,,,
 
 zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
 zombieFemaleTutorialFeral,entityclasses,Entity,,,Feral Deadly Girl,,,,,,,,,,,,,

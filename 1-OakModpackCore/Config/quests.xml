@@ -377,6 +377,104 @@
 	<reward type="Exp" value="37500"/>
 	<reward type="Item" id="casinoCoin" value="12500"/>
 	<reward type="SkillPoints" value="1" chainreward="true"/>
+	</quest>
+
+	<!-- GAN'S QUEST FEST -->
+	<!-- Incorporating Gans Special Zombies -->
+
+	<!-- 1-GansSpecialZombies Send in the Clowns I -->
+	<quest id="challenge_gansspecialclownsPartI">
+    <property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Send in the Clowns I" />
+	<property name="subtitle_key" value="Seek out 3 kinds of Special Clown." />
+	<property name="description_key" value="Cull 10 Special Clowns for Dukes and XP. Look out for the White Clown, Colonel Klink, and Colonel Lynch." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="zombieWhiteClown,zombieWhiteClownFeral,zombieWhiteClownRadiated,zombieWarZombie,zombieWarZombieFeral,zombieWarZombieRadiated,zombieWarZombieV1,zombieWarZombieV1Feral,zombieWarZombieV1Radiated" value="10"/>
+		
+	<reward type="Exp" value="1500"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="challenge_gansspecialclownsPartII"/>
+	</quest>
+	
+	<!-- 1-GansSpecialZombies Send in the Clowns II -->
+	<quest id="challenge_gansspecialclownsPartII">
+	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Send in the Clowns II" />
+	<property name="subtitle_key" value="The Clowns are laughing." />
+	<property name="description_key" value="Cull 25 Special Clowns for Dukes and XP. You will know them when you see them." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="zombieWhiteClown,zombieWhiteClownFeral,zombieWhiteClownRadiated,zombieWarZombie,zombieWarZombieFeral,zombieWarZombieRadiated,zombieWarZombieV1,zombieWarZombieV1Feral,zombieWarZombieV1Radiated" value="25"/>
+		
+	<reward type="Exp" value="3750"/>
+	<reward type="Item" id="casinoCoin" value="1250"/>
+	<reward type="Quest" id="challenge_gansspecialclownsPartIII"/>
+	</quest>
+	
+	<!-- 1-GansSpecialZombies Send in the Clowns III -->
+	<quest id="challenge_gansspecialclownsPartIII">
+	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Send in the Clowns III" />
+	<property name="subtitle_key" value="The circus is in town." />
+	<property name="description_key" value="Cull 50 Special Clowns Specimens for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="zombieWhiteClown,zombieWhiteClownFeral,zombieWhiteClownRadiated,zombieWarZombie,zombieWarZombieFeral,zombieWarZombieRadiated,zombieWarZombieV1,zombieWarZombieV1Feral,zombieWarZombieV1Radiated" value="50"/>
+		
+	<reward type="Exp" value="7500"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Quest" id="challenge_gansspecialclownsPartIV"/>
+	</quest>
+	
+	<!-- 1-GansSpecialZombies Send in the Clowns IV -->
+	<quest id="challenge_gansspecialclownsPartIV">
+	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Send in the Clowns IV" />
+	<property name="subtitle_key" value="Clowning around." />
+	<property name="description_key" value="Cull 100 Special Clowns for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="zombieWhiteClown,zombieWhiteClownFeral,zombieWhiteClownRadiated,zombieWarZombie,zombieWarZombieFeral,zombieWarZombieRadiated,zombieWarZombieV1,zombieWarZombieV1Feral,zombieWarZombieV1Radiated" value="100"/>
+		
+	<reward type="Exp" value="15000"/>
+	<reward type="Item" id="casinoCoin" value="5000"/>
+	<reward type="Quest" id="challenge_gansspecialclownsPartV"/>
+	</quest>
+	
+	<!-- 1-GansSpecialZombies Send in the Clowns V -->
+	<quest id="challenge_gansspecialclownsPartV">
+	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in desk and wall safes." />       
+    <property name="name_key" value="Send in the Clowns V" />
+	<property name="subtitle_key" value="Bring down the curtains." />
+	<property name="description_key" value="Cull 250 Special Clowns for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in desk and wall safes." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="zombieWhiteClown,zombieWhiteClownFeral,zombieWhiteClownRadiated,zombieWarZombie,zombieWarZombieFeral,zombieWarZombieRadiated,zombieWarZombieV1,zombieWarZombieV1Feral,zombieWarZombieV1Radiated" value="250"/>
+		
+	<reward type="Exp" value="37500"/>
+	<reward type="Item" id="casinoCoin" value="12500"/>
+	<reward type="SkillPoints" value="1" chainreward="true"/>
 	</quest>	
 	
 	</append>	
