@@ -1006,7 +1006,101 @@
         <entity name="zombieWhiteClownRadiated" />
         <entity name="zombieWarZombieRadiated" />
         <entity name="zombieWarZombieV1Radiated" />
-    </append>	
+    </append>
+
+		<!-- Xyth's Spiders from 1-NPCXSpiderPack -->
+
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">		
+		<entity name="animalSpider01" prob="10"/>
+		<entity name="animalSpider02" prob="10"/>
+		<entity name="animalSpider03" prob="10"/>
+		<entity name="animalSpider01Feral" prob="5"/>
+		<entity name="animalSpider02Feral" prob="5"/>
+		<entity name="animalSpider03Feral" prob="5"/>
+		<entity name="animalSpider01Radiated" prob="3"/>
+		<entity name="animalSpider02Radiated" prob="3"/>
+		<entity name="animalSpider03Radiated" prob="3"/>
+        <entity name="animalSpider01Mini" prob="15"/>
+        <entity name="animalSpider02Mini" prob="15"/>
+		<entity name="animalSpider03Mini" prob="15"/>
+        <entity name="animalSpider01Queen" prob="1"/>
+        <entity name="animalSpider02Queen" prob="1"/>
+		<entity name="animalSpider03Queen" prob="1"/>		
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">		
+		<entity name="animalSpider01" prob="5" />
+		<entity name="animalSpider02" prob="5"/>
+		<entity name="animalSpider03" prob="5"/>
+		<entity name="animalSpider01Feral" prob="2.5"/>
+		<entity name="animalSpider02Feral" prob="2.5"/>
+		<entity name="animalSpider03Feral" prob="2.5"/>
+		<entity name="animalSpider01Radiated" prob="1.5"/>
+		<entity name="animalSpider02Radiated" prob="1.5"/>
+		<entity name="animalSpider03Radiated" prob="1.5"/>
+        <entity name="animalSpider01Mini" prob="7.5"/>
+        <entity name="animalSpider02Mini" prob="7.5"/>
+		<entity name="animalSpider03Mini" prob="7.5"/>
+        <entity name="animalSpider01Queen" prob="0.5"/>
+        <entity name="animalSpider02Queen" prob="0.5"/>
+		<entity name="animalSpider03Queen" prob="0.5"/>		
+	</append>
+
+	<!-- Colony Expansion Spider Pack Custom Sleeper Volume Group -->
+	<append xpath="/entitygroups">
+		<entitygroup name="SpiderPack_b">
+            <entity name="animalSpider01"/>
+            <entity name="animalSpider02"/>
+			<entity name="animalSpider03"/>
+		</entitygroup>
+		<entitygroup name="SpiderPack_Feral">
+            <entity name="animalSpider01Feral"/>
+            <entity name="animalSpider02Feral"/>
+			<entity name="animalSpider03Feral"/>
+		</entitygroup>
+		<entitygroup name="SpiderPack_Radiated">
+            <entity name="animalSpider01Radiated"/>
+            <entity name="animalSpider02Radiated"/>
+			<entity name="animalSpider03Radiated"/>
+		</entitygroup>
+		<entitygroup name="SpiderPack_Mini">
+            <entity name="animalSpider01Mini"/>
+            <entity name="animalSpider02Mini"/>
+			<entity name="animalSpider03Mini"/>
+		</entitygroup>
+		<entitygroup name="SpiderPack_Queen">
+            <entity name="animalSpider01Queen"/>
+            <entity name="animalSpider02Queen"/>
+			<entity name="animalSpider03Queen"/>
+		</entitygroup>
+		<entitygroup name="SpiderPack_EasyMix">
+            <entity name="animalSpider01"/>
+            <entity name="animalSpider02"/>
+			<entity name="animalSpider03"/>
+            <entity name="animalSpider01Mini"/>
+            <entity name="animalSpider02Mini"/>
+			<entity name="animalSpider03Mini"/>			
+		</entitygroup>
+		<entitygroup name="SpiderPack_Mix">
+            <entity name="animalSpider01"/>
+            <entity name="animalSpider02"/>
+			<entity name="animalSpider03"/>
+            <entity name="animalSpider01Feral"/>
+            <entity name="animalSpider02Feral"/>
+			<entity name="animalSpider03Feral"/>			
+            <entity name="animalSpider01Mini"/>
+            <entity name="animalSpider02Mini"/>
+			<entity name="animalSpider03Mini"/>			
+		</entitygroup>
+		<entitygroup name="SpiderPack_HardMix">
+            <entity name="animalSpider01Feral"/>
+            <entity name="animalSpider02Feral"/>
+			<entity name="animalSpider03Feral"/>		
+            <entity name="animalSpider01Radiated"/>
+            <entity name="animalSpider02Radiated"/>
+			<entity name="animalSpider03Radiated"/>			
+		</entitygroup>	
+	</append>	
 		
 	<!-- LAZMAN'S BLOOD MOON VANGUARD REPEATABLE QUEST -->
 

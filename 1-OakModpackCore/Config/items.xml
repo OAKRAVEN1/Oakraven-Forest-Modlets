@@ -2489,6 +2489,61 @@
 			<property name="EconomicValue" value="1"/>
 			<property name="EconomicBundleSize" value="1000"/>
 			<property name="Group" value="Resources"/>
+		</item>
+
+		<!-- Xyth's Spiders from 1-NPCXSpiderPack -->
+
+		<item name="AnimalXSpidersLoadingHack">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/><property name="CustomIconTint" value="90ff90"/>
+			<property name="HoldType" value="45"/>
+			<property name="HoldingItemHidden" value="true"/>
+			<property name="Meshfile" value="#@modfolder:Resources/XythSpiders.unity3d?Spider01_X"/>
+			<property name="DropMeshfile"  value="#@modfolder:Resources/XythSpiders.unity3d?Spider01_X"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1"/> <!-- STK resource -->
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="1000"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		<item name="meleeHandAnimalSpider">
+			<property name="Extends" value="meleeHandAnimalTemplate"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="35"/>
+			<property class="Action0">
+				<property name="Delay" value=".7"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Range" value="1.65"/>
+				<property name="DamageEntity" value="15"/>
+				<property name="DamageBlock" value="4"/>
+			</property>
+		</item>
+		
+		<!-- arramus' Colony Expansion from 2-NPCXSpiderPack-ColonyExpansion -->		
+
+		<item name="meleeHandAnimalSpiderFeral">
+			<property name="Extends" value="meleeHandAnimalTemplate"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="35"/>
+			<property class="Action0">
+				<property name="Delay" value=".7"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Range" value="1.65"/>
+				<property name="DamageEntity" value="23"/> <!-- approximately x 0.5 of base as x 2.0 default of Arlene from 10 to 20 is quite high -->
+				<property name="DamageBlock" value="12"/> <!-- x 3 of base as default of 24 from 8 from Arlene -->
+				<property name="Buff" value="buffFeralSpiderBite"/>
+			</property>
+		</item>	
+		<item name="meleeHandAnimalSpiderQueen">
+			<property name="Extends" value="meleeHandAnimalTemplate"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="35"/>
+			<property class="Action0">
+				<property name="Delay" value=".6"/> <!-- Queen -->
+				<property name="Range" value="1.75"/>
+				<property name="DamageEntity" value="25"/> <!-- Queen with minimal increase but lower delay -->
+				<property name="DamageBlock" value="50"/> <!-- Queen -->
+				<property name="Buff" value="buffQueenSpiderBite"/>
+			</property>			
 		</item>		
 		
 	<!-- LAZMAN'S BLOOD MOON VANGUARD REPEATABLE QUEST -->

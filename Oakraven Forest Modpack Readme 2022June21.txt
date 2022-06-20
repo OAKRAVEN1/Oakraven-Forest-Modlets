@@ -45,21 +45,23 @@ This Modpack contains the following modlets/modifications:
 In addition, some Addons that are powered by 0-Score and 0-XNPCCore and bundled directly are as follows:
 
 - 1-SurvivorzPack (A collection of helpers who can assist you, for a price)
+- 1-OrczPackAlpha and 2-OrczPackBeta (The Orcz have taken over the Snow Biome)
 - 1-khzmusik_Zombies (A variety of well crafted entities to enhance regular 7D2D zombie interactions from khzmusik)
 - 1-ZombiezPack (A variety of hostile looking zombies from Darkstardragon)
 - 1-GansSpecialZombies (A variety of fancy dress type zombies from GanTheGrey) + 2- Feral and Radiated
-- 1-OrczPackAlpha and 2-OrczPackBeta (The Orcz have taken over the Snow Biome)
+- 1-NPCXSpiderPack and 2-NPCXSpiderPack-ColonyExpansion (Spiders for the Wasteland and Desert Biome)
 
 OakModPackCore Modpack Creators and Developers in Alphabtical Order from Z - A:
 
 Xyth and SphereII with Mumpfy for branding - Created the A20 Skyrim Style Lockpicking MiniGame. (The assets are embedded and remain as per original). 
+Xyth - Created the 1-NPCXSpiderPack.
 Oakraven - Created Oakraven Forest Collection assets.
 Laz Man - Created Quest - Blood Moon Vanguard and Eliminate the Horde.
 khzmusik - Created 1-khzmusik_Zombies.
 KhaineGB - Unlocked Inventory Lockable Slots Mod.
 GanTheGrey - Created 1-GansSpecialZombies.
 Darkstardragon - Created 1-ZombiezPack, 1-SurvivorzPack, 1-OrczPackAlpha and 2-OrczPackBeta, and performed an abundance of play testing and coding support through the connected 'Not Medieval Mod'.
-arramus - Supported the Oakraven Forest Collection with compilation and distribution, quality control, tweaking and balancing, and even added the odd icon or two. 
+arramus - Supported the Oakraven Forest Collection with 2-NPCXSpiderPack-ColonyExpansion, compilation and distribution, quality control, tweaking and balancing, and even added the odd icon or two. 
 
 Currently Released Oakraven Forest Collection modlets can be found here.
 https://community.7daystodie.com/topic/27806-a20-oakraven-forest-collection/
