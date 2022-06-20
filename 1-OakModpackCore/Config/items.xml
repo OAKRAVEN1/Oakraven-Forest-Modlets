@@ -103,7 +103,13 @@
 	<set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']/property[@name='Stacknumber']/@value">50</set>
 	<!-- Other Stuff Stacking -->
 	<set xpath="/items/item[@name='resourceSewingKit']/property[@name='Stacknumber']/@value">200</set><!-- x10 of default -->
+	<set xpath="/items/item[@name='resourceBone']/property[@name='Stacknumber']/@value">2500</set><!-- x2.1 of default -->
+	<set xpath="/items/item[@name='resourceLeather']/property[@name='Stacknumber']/@value">1000</set><!-- x4 of default -->
+	<set xpath="/items/item[@name='resourceAnimalFat']/property[@name='Stacknumber']/@value">1000</set><!-- x2 of default -->	
 	<set xpath="/items/item[@name='resourceTestosteroneExtract']/property[@name='Stacknumber']/@value">50</set><!-- x5 of default -->
+	<set xpath="/items/item[@name='resourceCobblestones']/property[@name='Stacknumber']/@value">6000</set><!-- x6 of default -->	
+	<set xpath="/items/item[@name='resourceCement']/property[@name='Stacknumber']/@value">6000</set><!-- x6 of default -->
+	<set xpath="/items/item[@name='resourceConcreteMix']/property[@name='Stacknumber']/@value">3000</set><!-- x3 of default -->	
 	<set xpath="/items/item[@name='resourceCloth']/property[@name='Stacknumber']/@value">1000</set><!-- x4 of default -->
 	<set xpath="/items/item[@name='resourcePaper']/property[@name='Stacknumber']/@value">2000</set><!-- x4 of default -->
 	<set xpath="/items/item[@name='resourceFeather']/property[@name='Stacknumber']/@value">2000</set><!-- x8 of default -->
