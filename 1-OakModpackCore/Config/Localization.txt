@@ -439,6 +439,25 @@ RobotManTrader,blocks,Block,,,Trader Robot Man Spawner,,,,,,,,,,,,,
 TraderTreeMaster,entityclasses,Entity,,,Trader Tree Doctor,,,,,,,,,,,,,
 TreeMasterTrader,blocks,Block,,,Trader Tree Master Spawner,,,,,,,,,,,,,
 
+npcAirForceTRifle,entityclasses,Entity,,,"Air Force",,,,,,"エアフォース",,,,,,,
+npcTattooGurlTRifle,entityclasses,Entity,,,"Tattoo Girl",,,,,,"タトゥーガール",,,,,,,
+npcCosplayerBow,entityclasses,Entity,,,"Cosplayer Girl",,,,,,"コスプレイヤー",,,,,,,
+npcWrestlerEmptyHand,entityclasses,Entity,,,"Sumo Wrestler",,,,,,"相撲取り",,,,,,,
+npcMrFriendlyM60,entityclasses,Entity,,,"Mr Friendly",,,,,,"ミスター・フレンドリー",,,,,,,
+
+OrcGurl,entityclasses,Entity,,,Snow Orc - Gurl,,,,,,,,,,,,,
+OrcBandit,entityclasses,Entity,,,Snow Orc - Bandit,,,,,,,,,,,,,
+OrcRaider,entityclasses,Entity,,,Snow Orc - Raider,,,,,,,,,,,,,
+OrcArcher,entityclasses,Entity,,,Snow Orc - Archer,,,,,,,,,,,,,
+OrcCrossbowman,entityclasses,Entity,,,Snow Orc - Crossbowman,,,,,,,,,,,,,
+OrcShaman,entityclasses,Entity,,,Snow Orc - Shaman,,,,,,,,,,,,,
+OrcSlavemaster,entityclasses,Entity,,,Snow Orc - Slavemaster,,,,,,,,,,,,,
+OrcMatron,entityclasses,Entity,,,Snow Orc - Matron,,,,,,,,,,,,,
+OrcSlaveBald,entityclasses,Entity,,,Snow Orc - Bald Slave,,,,,,,,,,,,,
+OrcSlaveBeard,entityclasses,Entity,,,Snow Orc - Bearded Slave,,,,,,,,,,,,,
+OrcBerzerker,entityclasses,Entity,,,Snow Orc - Berzerker,,,,,,,,,,,,,
+OrcUruk,entityclasses,Entity,,,Snow Orc - Uruk,,,,,,,,,,,,,
+
 zombieBurntKhz,entityclasses,Entity,,,Burnt Zombie Man,,Verbrannter Zombie-Mann,Hombre quemado zombie,Zombie brûlé,Burt Zombie Man.,泥沼の男を燃やす,번트 좀비 맨,Burnt Zombie Man.,Homem de zumbi queimado,Сгоревший зомби человек,Yanmış zombi adam,烧焦僵尸人,燒焦殭屍人,Hombre quemado zombie
 zombieBusinessmanKhz,entityclasses,Entity,,,Zombie Businessman,,Zombie-Geschäftsmann.,Empresario zombie,Zombie Homme d'affaires,Zombie Businessman.,ゾンビの実業家,좀비 사업가,Zombie Biznesmen,Empresário zumbi.,Зомби Бизнесмен,Zombi işadamı,僵尸商人,殭屍商人,Empresario zombie
 zombieBusinesswomanKhz,entityclasses,Entity,,,Zombie Businesswoman,,Zombiegeschäftsfrau,Empresaria zombie,Femme d'affaires zombie,Zombie Imprenditrice,ゾンビの実業家,좀비 사업가,Zombie Businesswoman.,Empresária zumbi.,Зомби предприниматель,Zombi işkadını,僵尸女商人,殭屍女商人,Empresaria zombie
@@ -450,12 +469,6 @@ zombieFemaleStripperKhz,entityclasses,Entity,,,Zombie Female Stripper,,Zombie-We
 zombieFirefighterKhz,entityclasses,Entity,,,Zombie Firefighter,,Zombie-Feuerwehrmann.,Bombero zombi,Pompier zombie,Pompiere Zombie,ゾンビ消防士,좀비 소방관,Zombie Strażak,Bombeiro zumbi,Зомби пожарный,Zombi itfaiyeci,僵尸消防员,殭屍消防員,Bombero zombi
 zombieMaleKhz,entityclasses,Entity,,,Zombie Man,,Zombie-Mann,Hombre zombie,Zombie,Zombie Man.,ゾンビマン,좀비 맨,Człowiek Zombie.,Homem zumbi.,Zombie Man.,Zombi adam,僵尸人,殭屍人,Hombre zombie
 zombiePolicewomanKhz,entityclasses,Entity,,,Zombie Policewoman,,Zombie-Polizistin.,Zombie policía policía,Zombie Bureau,Poliziotta Zombie.,ゾンビポリクロマン,좀비 경찰,Zombie Policewoman.,Policial zumbi,Зомби полицейская женщина,Zombi polis memuru,僵尸女强人,殭屍女強人,Zombie policía policía
-
-npcAirForceTRifle,entityclasses,Entity,,,"Air Force",,,,,,"エアフォース",,,,,,,
-npcTattooGurlTRifle,entityclasses,Entity,,,"Tattoo Girl",,,,,,"タトゥーガール",,,,,,,
-npcCosplayerBow,entityclasses,Entity,,,"Cosplayer Girl",,,,,,"コスプレイヤー",,,,,,,
-npcWrestlerEmptyHand,entityclasses,Entity,,,"Sumo Wrestler",,,,,,"相撲取り",,,,,,,
-npcMrFriendlyM60,entityclasses,Entity,,,"Mr Friendly",,,,,,"ミスター・フレンドリー",,,,,,,
 
 BloatedParasite,entityclasses,Entity,,,"Laboratory Specimen",,,,,,"実験室の標本",,,,,,,
 ExperimentZ,entityclasses,Entity,,,"Experiment Z",,,,,,"実験体Z",,,,,,,
