@@ -501,7 +501,7 @@ npcCosplayerBow,entityclasses,Entity,,,"Cosplayer Girl",,,,,,"コスプレイヤ
 npcWrestlerEmptyHand,entityclasses,Entity,,,"Sumo Wrestler",,,,,,"相撲取り",,,,,,,
 npcMrFriendlyM60,entityclasses,Entity,,,"Mr Friendly",,,,,,"ミスター・フレンドリー",,,,,,,
 
-OrcGurl,entityclasses,Entity,,,SnOrc,,,,,,,,,,,,,
+OrcGurl,entityclasses,Entity,,,Snow Orc,,,,,,,,,,,,,
 OrcBandit,entityclasses,Entity,,,Snow Orc - Bandit,,,,,,,,,,,,,
 OrcRaider,entityclasses,Entity,,,Snow Orc - Raider,,,,,,,,,,,,,
 OrcArcher,entityclasses,Entity,,,Snow Orc - Archer,,,,,,,,,,,,,

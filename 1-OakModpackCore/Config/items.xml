@@ -3954,7 +3954,7 @@
 		<item name="qc_snoworcz">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="DescriptionKey" value="qc_snoworczDesc"/>
-			<property name="CustomIcon" value="specimens"/>
+			<property name="CustomIcon" value="snoworcz"/>
 			<property class="Action0">
 				<property name="UseAnimation" value="false"/>
 				<property name="QuestGiven" value="challenge_SnowOrczPartI"/>
