@@ -362,10 +362,10 @@
 	
 	<!-- 1-ZombiezPack Pest Control V -->
 	<quest id="challenge_ZombiezPackSpecimenPartV">
-	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in desk and wall safes." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Pest Control V" />
 	<property name="subtitle_key" value="Destroying the whole nest." />
-	<property name="description_key" value="Cull 250 Laboratory Specimens for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in desk and wall safes." />
+	<property name="description_key" value="Cull 250 Laboratory Specimens for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in safes." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -378,6 +378,103 @@
 	<reward type="Item" id="casinoCoin" value="12500"/>
 	<reward type="SkillPoints" value="1" chainreward="true"/>
 	</quest>
+	
+	<!-- Incorporating 1-OrczPackAlpha and 2-OrczPackBeta -->	
+
+	<!-- Snow Orcz I -->
+	<quest id="challenge_SnowOrczPartI">
+    <property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Snow Orcs I" />
+	<property name="subtitle_key" value="Seek out the Snow Orcs." />
+	<property name="description_key" value="Cull 10 Snow Orcs for Dukes and XP. Look out for them in the Snow Biome." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="10"/>
+		
+	<reward type="Exp" value="1500"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="challenge_SnowOrczPartII"/>
+	</quest>
+	
+	<!-- Snow Orcz II -->
+	<quest id="challenge_SnowOrczPartII">
+	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Snow Orcs II" />
+	<property name="subtitle_key" value="Frosty the Snow Orc." />
+	<property name="description_key" value="Cull 25 Snow Orcs for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="25"/>
+		
+	<reward type="Exp" value="3750"/>
+	<reward type="Item" id="casinoCoin" value="1250"/>
+	<reward type="Quest" id="challenge_SnowOrczPartIII"/>
+	</quest>
+	
+	<!-- Snow Orcz III -->
+	<quest id="challenge_SnowOrczPartIII">
+	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Snow Orcs III" />
+	<property name="subtitle_key" value="'Orc'hestral Manoeuvres." />
+	<property name="description_key" value="Cull 50 Snow Orcs for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="50"/>
+		
+	<reward type="Exp" value="7500"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Quest" id="challenge_SnowOrczPartIV"/>
+	</quest>
+	
+	<!-- Snow Orcz IV -->
+	<quest id="challenge_SnowOrczPartPartIV">
+	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Snow Orcs IV" />
+	<property name="subtitle_key" value="Snowball effect." />
+	<property name="description_key" value="Cull 100 Snow Orcs for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="100"/>
+		
+	<reward type="Exp" value="15000"/>
+	<reward type="Item" id="casinoCoin" value="5000"/>
+	<reward type="Quest" id="challenge_SnowOrczPartV"/>
+	</quest>
+	
+	<!-- Snow Orcz V -->
+	<quest id="challenge_SnowOrczPartPartV">
+	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
+    <property name="name_key" value="Snow Orcs V" />
+	<property name="subtitle_key" value="Tolkein back the biome." />
+	<property name="description_key" value="Cull 250 Snow Orcs for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in safes." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="ZombieKill" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="250"/>
+		
+	<reward type="Exp" value="37500"/>
+	<reward type="Item" id="casinoCoin" value="12500"/>
+	<reward type="SkillPoints" value="1" chainreward="true"/>
+	</quest>	
 
 	<!-- GAN'S QUEST FEST -->
 	<!-- Incorporating Gans Special Zombies -->
@@ -460,10 +557,10 @@
 	
 	<!-- 1-GansSpecialZombies Send in the Clowns V -->
 	<quest id="challenge_gansspecialclownsPartV">
-	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in desk and wall safes." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Send in the Clowns V" />
 	<property name="subtitle_key" value="Bring down the curtains." />
-	<property name="description_key" value="Cull 250 Special Clowns for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in desk and wall safes." />
+	<property name="description_key" value="Cull 250 Special Clowns for Dukes, XP, and a Skill Point. Additional Quest Notes can be found safes." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
