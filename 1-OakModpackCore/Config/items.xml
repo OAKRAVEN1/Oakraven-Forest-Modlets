@@ -3,7 +3,7 @@
 	<!-- Vanilla Tweaks and Toggles -->
 	<!-- Weapons and Tools -->	
 	<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Upgrade_hit_offset']/@value">-2</set><!-- 2 Hit Repairs -->
-	<set xpath="/items/item[@name='gunShotgunT0PipeShotgun']/effect_group/passive_effect[@name='MagazineSize']/@value">2</set>
+	<set xpath="/items/item[@name='gunShotgunT0PipeShotgun']/effect_group/passive_effect[@name='MagazineSize']/@value">3</set>
 	<set xpath="/items/item[@name='gunRifleT0PipeRifle']/effect_group/passive_effect[@name='MagazineSize']/@value">2</set>
 	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group/passive_effect[@name='MagazineSize']/@value">2</set>	
 	<!-- Ammo Stacking -->
@@ -114,6 +114,9 @@
 	<set xpath="/items/item[@name='resourcePaper']/property[@name='Stacknumber']/@value">2000</set><!-- x4 of default -->
 	<set xpath="/items/item[@name='resourceFeather']/property[@name='Stacknumber']/@value">2000</set><!-- x8 of default -->
 	<set xpath="/items/item[@name='resourceGunPowder']/property[@name='Stacknumber']/@value">2500</set><!-- x2.5 of default -->
+	<set xpath="/items/item[@name='resourceBuckshot']/property[@name='Stacknumber']/@value">2500</set><!-- x2.5 of default -->
+	<set xpath="/items/item[@name='resourceBulletCasing']/property[@name='Stacknumber']/@value">2500</set><!-- x2.5 of default -->
+	<set xpath="/items/item[@name='resourceBulletTip'] /property[@name='Stacknumber']/@value">2500</set><!-- x2.5 of default -->
 	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='Stacknumber']/@value">200</set><!-- x8 of default -->
 	<set xpath="/items/item[@name='resourceOil']/property[@name='Stacknumber']/@value">250</set><!-- x5 of default -->
 	<set xpath="/items/item[@name='resourceRadiator']/property[@name='Stacknumber']/@value">25</set><!-- x5 of default -->	
