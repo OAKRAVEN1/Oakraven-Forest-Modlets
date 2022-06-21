@@ -65,14 +65,16 @@
 		<item name="qc_eliminatehorde" count="1" loot_prob_template="low"/>
 		<item name="qc_zombiezpackspecimen" count="1" loot_prob_template="low"/>
 		<item name="qc_gansspecialclowns" count="1" loot_prob_template="low"/>
-		<item name="qc_snoworcz" count="1" loot_prob_template="low"/>		
+		<item name="qc_snoworcz" count="1" loot_prob_template="low"/>
+		<item name="qc_NPCXSpiderPack" count="1" loot_prob_template="low"/>		
 	</append>
 	<!-- Adds Quest Notes for Laz Man Quest and 1-Addons Entities, etc.,into the same gun safe lootgroup as general safe books with a 1 count. -->	
 	<append xpath="/lootcontainers/lootgroup[@name='groupSafeBooks']">
 		<item name="qc_eliminatehorde"/>
 		<item name="qc_zombiezpackspecimen"/>
 		<item name="qc_gansspecialclowns"/>
-		<item name="qc_snoworcz"/>	
+		<item name="qc_snoworcz"/>
+		<item name="qc_NPCXSpiderPack"/>		
 	</append>	
 	
 </configs>

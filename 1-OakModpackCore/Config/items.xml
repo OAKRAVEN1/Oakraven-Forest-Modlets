@@ -3976,6 +3976,18 @@
 			</property>
 		</item>
 		
+	<!-- XYTH'S QUEST FEST -->
+	<!-- Xyth's Spiders from 1-NPCXSpiderPack and 2-NPCXSpiderPack-ColonyExpansion -->	
+		<item name="qc_NPCXSpiderPack">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_NPCXSpiderPackDesc"/>
+			<property name="CustomIcon" value="spiderpack"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_NPCXSpiderPackI"/>
+			</property>
+		</item>		
+		
 	</append>
 	
 </configs>

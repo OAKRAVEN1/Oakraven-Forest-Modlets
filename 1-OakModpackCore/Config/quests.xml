@@ -286,7 +286,7 @@
 
 	<!-- 1-ZombiezPack Pest Control I -->
 	<quest id="challenge_ZombiezPackSpecimenPartI">
-    <property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
+    <property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Pest Control I" />
 	<property name="subtitle_key" value="Seek out 3 kinds of Laboratory Specimen." />
 	<property name="description_key" value="Cull 10 Laboratory Specimens for Dukes and XP. Look out for the Bloated Parasite, Parasite, and Experimental Z." />
@@ -305,10 +305,10 @@
 	
 	<!-- 1-ZombiezPack Pest Control II -->
 	<quest id="challenge_ZombiezPackSpecimenPartII">
-	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Pest Control II" />
 	<property name="subtitle_key" value="The Specimens are waiting." />
-	<property name="description_key" value="Cull 25 Laboratory Specimens for Dukes and XP. You will know them when you see them." />
+	<property name="description_key" value="Cull 25 Laboratory Specimens for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -324,7 +324,7 @@
 	
 	<!-- 1-ZombiezPack Pest Control III -->
 	<quest id="challenge_ZombiezPackSpecimenPartIII">
-	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Pest Control III" />
 	<property name="subtitle_key" value="They breed like rodents." />
 	<property name="description_key" value="Cull 50 Laboratory Specimens for Dukes and XP." />
@@ -343,7 +343,7 @@
 	
 	<!-- 1-ZombiezPack Pest Control IV -->
 	<quest id="challenge_ZombiezPackSpecimenPartIV">
-	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Pest Control IV" />
 	<property name="subtitle_key" value="Holding back the flood." />
 	<property name="description_key" value="Cull 100 Laboratory Specimens for Dukes and XP." />
@@ -362,7 +362,7 @@
 	
 	<!-- 1-ZombiezPack Pest Control V -->
 	<quest id="challenge_ZombiezPackSpecimenPartV">
-	<property name="offer_key" value="Accept this quest to reduce the number of escaped laboratory Specimens. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Pest Control V" />
 	<property name="subtitle_key" value="Destroying the whole nest." />
 	<property name="description_key" value="Cull 250 Laboratory Specimens for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in safes." />
@@ -568,6 +568,104 @@
 	<property name="shareable" value="false"/>
 	
 		<objective type="ZombieKill" id="zombieWhiteClown,zombieWhiteClownFeral,zombieWhiteClownRadiated,zombieWarZombie,zombieWarZombieFeral,zombieWarZombieRadiated,zombieWarZombieV1,zombieWarZombieV1Feral,zombieWarZombieV1Radiated" value="250"/>
+		
+	<reward type="Exp" value="37500"/>
+	<reward type="Item" id="casinoCoin" value="12500"/>
+	<reward type="SkillPoints" value="1" chainreward="true"/>
+	</quest>
+
+	<!-- XYTH'S QUEST FEST -->
+	<!-- Xyth's Spiders from 1-NPCXSpiderPack and 2-NPCXSpiderPack-ColonyExpansion -->	
+
+	<!-- 1-NPCXSpiderPack Infestation I -->
+	<quest id="challenge_NPCXSpiderPackPartI">
+    <property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Infestation I" />
+	<property name="subtitle_key" value="Seek out the Spiders." />
+	<property name="description_key" value="Cull 10 Spiders for Dukes and XP. They can be found in the Wasteland and Desert." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="animalSpider01,animalSpider02,animalSpider03,animalSpider01Feral,animalSpider02Feral,animalSpider03Feral,animalSpider01Radiated,animalSpider02Radiated,animalSpider03Radiated,animalSpider01Mini,animalSpider02Mini,animalSpider03Mini,animalSpider01Queen,animalSpider02Queen,animalSpider03Queen" value="10"/>
+		
+	<reward type="Exp" value="1500"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="challenge_NPCXSpiderPackPartII"/>
+	</quest>
+	
+	<!-- 1-NPCXSpiderPack Infestation II -->
+	<quest id="challenge_NPCXSpiderPackPartII">
+	<property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Infestation II" />
+	<property name="subtitle_key" value="Bring on the Tingles." />
+	<property name="description_key" value="Cull 25 Spiders for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="animalSpider01,animalSpider02,animalSpider03,animalSpider01Feral,animalSpider02Feral,animalSpider03Feral,animalSpider01Radiated,animalSpider02Radiated,animalSpider03Radiated,animalSpider01Mini,animalSpider02Mini,animalSpider03Mini,animalSpider01Queen,animalSpider02Queen,animalSpider03Queen" value="25"/>
+		
+	<reward type="Exp" value="3750"/>
+	<reward type="Item" id="casinoCoin" value="1250"/>
+	<reward type="Quest" id="challenge_NPCXSpiderPackartIII"/>
+	</quest>
+	
+	<!-- 1-NPCXSpiderPack Infestation III -->
+	<quest id="challenge_NPCXSpiderPackPartIII">
+	<property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Infestation III" />
+	<property name="subtitle_key" value="Web browsing." />
+	<property name="description_key" value="Cull 50 Spiders for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="animalSpider01,animalSpider02,animalSpider03,animalSpider01Feral,animalSpider02Feral,animalSpider03Feral,animalSpider01Radiated,animalSpider02Radiated,animalSpider03Radiated,animalSpider01Mini,animalSpider02Mini,animalSpider03Mini,animalSpider01Queen,animalSpider02Queen,animalSpider03Queen" value="50"/>
+		
+	<reward type="Exp" value="7500"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Quest" id="challenge_NPCXSpiderPackPartIV"/>
+	</quest>
+	
+	<!-- 1-NPCXSpiderPack Infestation IV -->
+	<quest id="challenge_NPCXSpiderPackPartIV">
+	<property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Infestation IV" />
+	<property name="subtitle_key" value="A sticky mess." />
+	<property name="description_key" value="Cull 100 Spiders for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="animalSpider01,animalSpider02,animalSpider03,animalSpider01Feral,animalSpider02Feral,animalSpider03Feral,animalSpider01Radiated,animalSpider02Radiated,animalSpider03Radiated,animalSpider01Mini,animalSpider02Mini,animalSpider03Mini,animalSpider01Queen,animalSpider02Queen,animalSpider03Queen" value="100"/>
+		
+	<reward type="Exp" value="15000"/>
+	<reward type="Item" id="casinoCoin" value="5000"/>
+	<reward type="Quest" id="challenge_NPCXSpiderPackPartV"/>
+	</quest>
+	
+	<!-- 1-NPCXSpiderPack Infestation V -->
+	<quest id="challenge_NPCXSpiderPackPartV">
+	<property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
+    <property name="name_key" value="Infestation V" />
+	<property name="subtitle_key" value="Silky skills." />
+	<property name="description_key" value="Cull 250 Spiders for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in safes." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="animalSpider01,animalSpider02,animalSpider03,animalSpider01Feral,animalSpider02Feral,animalSpider03Feral,animalSpider01Radiated,animalSpider02Radiated,animalSpider03Radiated,animalSpider01Mini,animalSpider02Mini,animalSpider03Mini,animalSpider01Queen,animalSpider02Queen,animalSpider03Queen" value="250"/>
 		
 	<reward type="Exp" value="37500"/>
 	<reward type="Item" id="casinoCoin" value="12500"/>

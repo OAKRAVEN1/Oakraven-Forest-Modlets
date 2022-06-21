@@ -723,6 +723,9 @@ qc_zombiezpackspecimenDesc,items,Quest - Challenge,,,"A contract issued by the W
 qc_gansspecialclowns,items,Quest - Challenge,,,"Contract: Clown Frown",,,,,,,,,,,,,
 qc_gansspecialclownsDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate 3 types of Gans Special Zombie; White Clown, Colonel Klink, and Colonel Lynch.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
 
+qc_NPCXSpiderPack,items,Quest - Challenge,,,"Contract: Spider Moon",,,,,,,,,,,,,
+qc_NPCXSpiderPackDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate Mutant Spiders in the Wasteland and Desert.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
+
 zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
 zombieFemaleTutorialFeral,entityclasses,Entity,,,Feral Deadly Girl,,,,,,,,,,,,,
 
