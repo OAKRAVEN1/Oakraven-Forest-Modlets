@@ -1,5 +1,15 @@
 <configs>
 
+	<!-- NEW WEAPONS -->
+	
+	<append xpath="/trader_item_groups/trader_item_group[@name='modMeleeT2']">
+		<item name="modMeleedivinefire"/>	
+	</append>
+	
+	<append xpath="/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="modMeleedivinefireSchematic"/>	
+	</append>
+
 	<!-- TRADERS -->
 
 	<!-- Joel played by Guardsman -->

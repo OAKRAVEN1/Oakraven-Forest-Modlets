@@ -22,6 +22,7 @@ The mix is quite eclectic and gives players further opportunities within the fra
 
 This Modpack contains the following modlets/modifications:
 
+- New Weapons (Custom Weapons)
 - Dragon Supply Drop (Dragon with eggs in place of plane and supply crate)
 - Torches Lights (A collection of wood burning lights)
 - Water Wells (A variety of custom water sources such as wells and stand pipes that can be placed within a player's boundaries)

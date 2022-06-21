@@ -6,7 +6,254 @@
 	
 <recipe name="resourceClayLumpBundle" count="1" craft_time="10" tags="learnable">
 	<ingredient name="resourceClayLump" count="6000"/>
-</recipe>	
+</recipe>
+
+	<!-- NEW WEAPONS -->
+
+                              <!-- ARMORY BENCH -->
+							  
+	<recipe name="ArmoryBench" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceMechanicalParts" count="20"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceGlue" count="4"/>
+		<ingredient name="resourceWood" count="50"/>
+	</recipe>
+	
+                              <!-- DAGGERS -->	
+	
+	<recipe name="AssassinDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceWood" count="5"/>
+		<ingredient name="resourceLeather" count="2"/>
+		<ingredient name="resourceDuctTape" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="KamaDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceWood" count="5"/>
+		<ingredient name="resourceLeather" count="2"/>
+		<ingredient name="resourceDuctTape" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="MetalDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceWood" count="5"/>
+		<ingredient name="resourceLeather" count="2"/>
+		<ingredient name="resourceDuctTape" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="NilDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceWood" count="5"/>
+		<ingredient name="resourceLeather" count="2"/>
+		<ingredient name="resourceDuctTape" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="SpinDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceWood" count="5"/>
+		<ingredient name="resourceLeather" count="2"/>
+		<ingredient name="resourceDuctTape" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+	
+                              <!-- DAGGER MODS -->
+
+	<recipe name="modMeleedivinefire" count="1" craft_area="ArmoryBench" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="5"/>
+		<ingredient name="resourceGlue" count="5"/>
+		<ingredient name="resourceOil" count="5"/>
+		<ingredient name="ammoGasCan" count="50"/>
+	</recipe>							  
+
+                                       <!--AXES -->
+
+	<recipe name="AxeGold" count="1" craft_area="ArmoryBench" tags="learnable,perkMiner69r">
+		<ingredient name="meleeToolAllSteelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>		
+
+	<recipe name="AxeSpike" count="1" craft_area="ArmoryBench" tags="learnable,perkMiner69r">
+		<ingredient name="meleeToolAllSteelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>	
+
+	<recipe name="AxeSpike2" count="1" craft_area="ArmoryBench" tags="learnable,perkMiner69r">
+		<ingredient name="meleeToolAllSteelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>	
+
+	<recipe name="AxeV" count="1" craft_area="ArmoryBench" tags="learnable,perkMiner69r">
+		<ingredient name="meleeToolAllSteelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>		
+
+	<recipe name="vikingaxe" count="1" craft_area="ArmoryBench" tags="learnable,perkMiner69r">
+		<ingredient name="meleeToolAllSteelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+
+		                                            <!-- ShotGuns -->
+
+	<recipe name="MaxShotGun" count="1" craft_area="ArmoryBench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="15"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceSpring" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunShotgunT1DoubleBarrelParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>			
+
+	<recipe name="MadMaxShotGun" count="1" craft_area="ArmoryBench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="15"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceSpring" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunShotgunT1DoubleBarrelParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="QuadShotgun" count="1" craft_area="ArmoryBench" tags="learnable,perkBoomstick">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="6"/>
+		<ingredient name="resourceForgedSteel" count="30"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<ingredient name="resourceScrapPolymers" count="40"/>
+		<ingredient name="resourceSpring" count="4"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunShotgunT1DoubleBarrelParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="SteelBladeKnuckles" count="1" craft_area="ArmoryBench" tags="learnable,perkBrawler">
+		<ingredient name="resourceForgedIron" count="12"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+		<ingredient name="resourceLeather" count="2"/>
+		<ingredient name="resourceDuctTape" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="ArramusCrossBow" count="1" craft_area="ArmoryBench" tags="learnable,perkArchery">
+		<ingredient name="gunBowT1WoodenBowParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="25"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunBowT1WoodenBowParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="DiscCrossBow" count="1" craft_area="ArmoryBench" tags="learnable,perkArchery">
+		<ingredient name="gunBowT1WoodenBowParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="30"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunBowT1WoodenBowParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>
+
+			                                     <!-- BULLETS -->			
+
+	<recipe name="QuadShotgunSlug" count="1" craft_area="ArmoryBench">
+		<ingredient name="resourceBuckshot" count="4"/>
+		<ingredient name="resourceGunPowder" count="4"/>
+		<ingredient name="resourcePaper" count="4"/>
+	</recipe>
+
+	<recipe name="DiscAmmo" count="1" craft_area="ArmoryBench">
+		<ingredient name="resourceForgedSteel" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+	</recipe>
+
+	<recipe name="DiscAmmoShock" count="1" craft_time="12" craft_area="ArmoryBench">
+		<ingredient name="resourceForgedSteel" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceGunPowder" count="2"/>
+		<ingredient name="resourceCloth" count="1"/>
+		<ingredient name="resourceElectricParts" count="1"/>
+	</recipe>
+	
+	<recipe name="DiscAmmoFlame" count="1" craft_time="12" craft_area="ArmoryBench">
+		<ingredient name="resourceForgedSteel" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceGunPowder" count="2"/>
+		<ingredient name="resourceCloth" count="1"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+	</recipe>	
+	
+	<recipe name="ArramusArrowFire" count="1" craft_time="12" craft_area="ArmoryBench">
+		<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceGunPowder" count="2"/>
+		<ingredient name="resourceCloth" count="1"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+	</recipe>
+
+	<recipe name="ArramusArrowShock" count="1" craft_time="12" craft_area="ArmoryBench">
+		<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceGunPowder" count="2"/>
+		<ingredient name="resourceCloth" count="1"/>
+		<ingredient name="resourceElectricParts" count="1"/>
+	</recipe>
+
+	<recipe name="ArramusSteelArrow" count="1" craft_area="ArmoryBench">
+		<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+	</recipe>	
 	
 	<!-- TORCHES LIGHTS -->	
 	

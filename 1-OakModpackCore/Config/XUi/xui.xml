@@ -1,9 +1,19 @@
 <configs>
 	<append xpath="/xui/ruleset">
 	
+	<!-- NEW WEAPONS -->
+
+		<window_group name="workstation_ArmoryBench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutputArmoury" />
+			<window name="windowNonPagingHeader" />
+		</window_group>	
+	
 	<!-- TORCHES LIGHTS -->
 
-	<window_group name="workstation_BigStandingBrazier" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+		<window_group name="workstation_BigStandingBrazier" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>

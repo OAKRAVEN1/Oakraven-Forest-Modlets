@@ -1,5 +1,97 @@
 <configs>
 
+	<!-- NEW WEAPONS -->
+	
+	<!-- New Weapon Progression -->
+	
+	<!-- Daggers -->	
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="AssassinDagger"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="AssassinDagger"/>
+		</effect_group>	
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="KamaDagger"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="KamaDagger"/>
+		</effect_group>	
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="MetalDagger"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="MetalDagger"/>
+		</effect_group>	
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="NilDagger"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="NilDagger"/>
+		</effect_group>	
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="SpinDagger"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="SpinDagger"/>
+		</effect_group>			
+	</append>	
+	
+	<!-- Axes -->	
+	<append xpath="/progression/perks/perk[@name='perkMiner69r']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="AxeGold"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="AxeGold"/>
+		</effect_group>	
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="AxeSpike"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="AxeSpike"/>
+		</effect_group>	
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="AxeSpike2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="AxeSpike2"/>
+		</effect_group>	
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="AxeV"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="AxeV"/>
+		</effect_group>	
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="vikingaxe"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="vikingaxe"/>
+		</effect_group>			
+	</append>
+
+	<!-- Shotguns -->
+	<append xpath="/progression/perks/perk[@name='perkBoomstick']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="MaxShotGun"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="MaxShotGun"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="QuadShotgun"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="QuadShotgun"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="MadMaxShotGun"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="MadMaxShotGun"/>
+		</effect_group>			
+	</append>
+
+	<!-- Knuckles -->
+	<append xpath="/progression/perks/perk[@name='perkBrawler']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="SteelBladeKnuckles"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="SteelBladeKnuckles"/>
+		</effect_group>		
+	</append>
+
+	<!-- Cross Bow -->
+	<append xpath="/progression/perks/perk[@name='perkArchery']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="ArramusCrossBow"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="ArramusCrossBow"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="DiscCrossBow"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="DiscCrossBow"/>
+		</effect_group>			
+	</append>	
+	
+	<!-- Armoury Bench -->
+		
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='1,5']/@tags">,ArmoryBench</append>
+
 	<!-- COOKING STATIONS -->
 
 	<append xpath="/progression/perks/perk[@name='perkMasterChef']">

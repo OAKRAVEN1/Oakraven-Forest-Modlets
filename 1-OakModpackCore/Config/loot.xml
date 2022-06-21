@@ -1,5 +1,11 @@
 <configs>
 
+	<!-- NEW WEAPONS -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='modMeleeT2']">
+		<item name="modMeleedivinefireSchematic"/>	
+	</append>
+
 	<!-- ROCK DRILL -->
 	
 	<append xpath="/lootcontainers">
