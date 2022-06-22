@@ -22,11 +22,11 @@
   <property name="Tags" value="streettile,rwgonly,gatewaytile" />
   <property name="PrefabSize" value="150, 12, 150" />
   <property class="Stats">
-    <property name="TotalVertices" value="398156" />
-    <property name="TotalTriangles" value="429537" />
+    <property name="TotalVertices" value="398080" />
+    <property name="TotalTriangles" value="429457" />
     <property class="BlockEntities">
-      <property name="Vertices" value="314898" />
-      <property name="Triangles" value="317456" />
+      <property name="Vertices" value="314822" />
+      <property name="Triangles" value="317376" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="16509" />
