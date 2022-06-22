@@ -9,6 +9,19 @@
 </recipe>
 
 	<!-- NEW WEAPONS -->
+	
+		                               <!-- MAGNUM LEVER ACTION RIFLE -->	
+	
+<recipe name="gunRifleT2LeverActionMagnumRifle" count="1" craft_area="ArmoryBench" tags="learnable,perkDeadEye">
+	<ingredient name="gunRifleT1HuntingRifleParts" count="5"/>
+	<ingredient name="resourceForgedSteel" count="15"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunRifleT1HuntingRifleParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+	</effect_group>
+</recipe>	
 
                               <!-- ARMORY BENCH -->
 							  

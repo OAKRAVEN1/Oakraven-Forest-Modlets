@@ -86,6 +86,14 @@
 			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="DiscCrossBow"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="DiscCrossBow"/>
 		</effect_group>			
+	</append>
+	
+	<!-- Lever Action Magnum Rifle -->
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="gunRifleT2LeverActionMagnumRifle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="gunRifleT2LeverActionMagnumRifle"/>
+		</effect_group>			
 	</append>	
 	
 	<!-- Armoury Bench -->
