@@ -19,8 +19,8 @@ perkAdvancedEngineeringRank5LongDesc,progression,perk Int,,,"Learn to craft SMG 
 
 perkPhysicianRank1LongDesc,progression,perk Int,,,"Medical healing items heal 25% more health over time. Gain 40% more XP using bandages, first aid bandages, first aid kits and splints. Can craft chemistry stations, first aid bandages and plaster casts. You can also craft an Oakraven Chemistry Station.",,,,,,,,,,,,,
 
-gunRifleT2LeverActionMagnumRifle,,,Rifle - (Lever Action Magnum),,,,,,,,,,,,,
-gunRifleT2LeverActionMagnumRifleDesc,,,"A rifle with all the power but none of the trimmings.",,,,,,,,,,,,,
+gunRifleT2LeverActionMagnumRifle,items,item,,,Rifle - (Lever Action Magnum),,,,,,,,,,,,,
+gunRifleT2LeverActionMagnumRifleDesc,items,item,,,"A rifle with all the power but none of the trimmings. Scopes cannot be mounted on this model.",,,,,,,,,,,,,
 ArmoryBench,blocks,Blocks,,,Armoury Bench,,,,,,,,,,,,,
 ArmoryBenchDesc,blocks,Blocks,,,"The Armoury Bench is used for crafting custom weapons and ammo.",,,,,,,,,,,,,
 AssassinDagger,items,item,,,Dagger (Assassin),,,,,,,,,,,,,
