@@ -22,6 +22,7 @@ The mix is quite eclectic and gives players further opportunities within the fra
 
 This Modpack contains the following modlets/modifications:
 
+- Dragon Cannon (Custom Weapon)
 - New Weapons (Custom Weapons)
 - Dragon Supply Drop (Dragon with eggs in place of plane and supply crate)
 - Torches Lights (A collection of wood burning lights)

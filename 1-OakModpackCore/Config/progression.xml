@@ -4,6 +4,15 @@
 	
 	<!-- New Weapon Progression -->
 	
+	<!-- DRAGON CANNON -->
+
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="gunDragonCannon"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="gunDragonCannon"/>
+		</effect_group>			
+	</append>	
+	
 	<!-- Daggers -->	
 	<append xpath="/progression/perks/perk[@name='perkDeepCuts']">
 		<effect_group>

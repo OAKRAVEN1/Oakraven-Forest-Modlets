@@ -8,7 +8,7 @@
 	<ingredient name="resourceClayLump" count="6000"/>
 </recipe>
 
-	<!-- NEW WEAPONS -->
+	<!-- NEW WEAPONS -->	
 	
 		                               <!-- MAGNUM LEVER ACTION RIFLE -->	
 	
@@ -21,7 +21,43 @@
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunRifleT1HuntingRifleParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
 	</effect_group>
-</recipe>	
+</recipe>
+
+	<!-- DRAGON CANNON - ArmouryBench Production -->
+
+	<recipe name="gunDragonCannon" count="1" craft_area="ArmoryBench" tags="learnable,perkDeadEye">
+		<ingredient name="gunRifleT1HuntingRifleParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="25"/>
+		<ingredient name="resourceDuctTape" count="10"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceSpring" count="10"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunRifleT1HuntingRifleParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>			
+
+	<recipe name="ammoDragonBoomBall" count="1" craft_area="ArmoryBench">
+		<ingredient name="resourceForgedIron" count="1"/>
+		<ingredient name="resourceGunPowder" count="20"/>
+		<ingredient name="resourcePaper" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>		
+	</recipe>
+	
+	<recipe name="ammoDragonFireBall" count="1" craft_area="ArmoryBench">
+		<ingredient name="resourceForgedIron" count="1"/>
+		<ingredient name="resourceGunPowder" count="15"/>
+		<ingredient name="ammoGasCan" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceCrystalRock" count="1"/>		
+	</recipe>
+
+	<recipe name="ammoDragonShockBall" count="1" craft_area="ArmoryBench">
+		<ingredient name="resourceForgedIron" count="1"/>
+		<ingredient name="resourceGunPowder" count="15"/>
+		<ingredient name="resourceElectricParts" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceBlueRock" count="1"/>		
+	</recipe>	
 
                               <!-- ARMORY BENCH -->
 							  
@@ -229,13 +265,13 @@
 	<recipe name="DiscAmmo" count="1" craft_area="ArmoryBench">
 		<ingredient name="resourceForgedSteel" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceAnimalFat" count="1"/>		
 	</recipe>
 
 	<recipe name="DiscAmmoShock" count="1" craft_time="12" craft_area="ArmoryBench">
 		<ingredient name="resourceForgedSteel" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
-		<ingredient name="resourceGunPowder" count="2"/>
-		<ingredient name="resourceCloth" count="1"/>
+		<ingredient name="resourceBlueRock" count="1"/>
 		<ingredient name="resourceElectricParts" count="1"/>
 	</recipe>
 	
@@ -243,7 +279,7 @@
 		<ingredient name="resourceForgedSteel" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
 		<ingredient name="resourceGunPowder" count="2"/>
-		<ingredient name="resourceCloth" count="1"/>
+		<ingredient name="resourceCrystalRock" count="1"/>
 		<ingredient name="resourceAnimalFat" count="1"/>
 	</recipe>	
 	
