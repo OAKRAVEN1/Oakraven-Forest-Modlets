@@ -289,6 +289,7 @@
 		<ingredient name="resourceGunPowder" count="2"/>
 		<ingredient name="resourceCloth" count="1"/>
 		<ingredient name="resourceAnimalFat" count="1"/>
+		<ingredient name="resourceCrystalRock" count="1"/>		
 	</recipe>
 
 	<recipe name="ArramusArrowShock" count="1" craft_time="12" craft_area="ArmoryBench">
@@ -296,12 +297,14 @@
 		<ingredient name="resourceScrapPolymers" count="1"/>
 		<ingredient name="resourceGunPowder" count="2"/>
 		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="resourceElectricParts" count="1"/>
+		<ingredient name="resourceBlueRock" count="1"/>		
 	</recipe>
 
 	<recipe name="ArramusSteelArrow" count="1" craft_area="ArmoryBench">
 		<ingredient name="resourceArrowHeadSteelAP" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceCloth" count="1"/>
+		<ingredient name="resourceAnimalFat" count="1"/>		
 	</recipe>	
 	
 	<!-- TORCHES LIGHTS -->	
