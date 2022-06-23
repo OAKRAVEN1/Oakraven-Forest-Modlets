@@ -54,7 +54,6 @@
 	<recipe name="ammoDragonShockBall" count="1" craft_area="ArmoryBench">
 		<ingredient name="resourceForgedIron" count="1"/>
 		<ingredient name="resourceGunPowder" count="15"/>
-		<ingredient name="resourceElectricParts" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
 		<ingredient name="resourceBlueRock" count="1"/>		
 	</recipe>	
@@ -272,13 +271,12 @@
 		<ingredient name="resourceForgedSteel" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
 		<ingredient name="resourceBlueRock" count="1"/>
-		<ingredient name="resourceElectricParts" count="1"/>
+		<ingredient name="resourceAnimalFat" count="1"/>		
 	</recipe>
 	
 	<recipe name="DiscAmmoFlame" count="1" craft_time="12" craft_area="ArmoryBench">
 		<ingredient name="resourceForgedSteel" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
-		<ingredient name="resourceGunPowder" count="2"/>
 		<ingredient name="resourceCrystalRock" count="1"/>
 		<ingredient name="resourceAnimalFat" count="1"/>
 	</recipe>	
@@ -286,7 +284,6 @@
 	<recipe name="ArramusArrowFire" count="1" craft_time="12" craft_area="ArmoryBench">
 		<ingredient name="resourceArrowHeadSteelAP" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
-		<ingredient name="resourceGunPowder" count="2"/>
 		<ingredient name="resourceCloth" count="1"/>
 		<ingredient name="resourceAnimalFat" count="1"/>
 		<ingredient name="resourceCrystalRock" count="1"/>		
@@ -295,8 +292,8 @@
 	<recipe name="ArramusArrowShock" count="1" craft_time="12" craft_area="ArmoryBench">
 		<ingredient name="resourceArrowHeadSteelAP" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
-		<ingredient name="resourceGunPowder" count="2"/>
 		<ingredient name="resourceCloth" count="1"/>
+		<ingredient name="resourceAnimalFat" count="1"/>		
 		<ingredient name="resourceBlueRock" count="1"/>		
 	</recipe>
 
