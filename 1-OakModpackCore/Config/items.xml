@@ -4314,7 +4314,7 @@
 	<!-- Starter 'Bundle' of Fox Food -->
 
 		<item name="npcAnimalFoxStarterFood">
-			<property name="CustomIcon" value="foodCanDogfood"/>
+			<property name="CustomIcon" value="friendlyfoxfood"/>
 			<property name="ItemTypeIcon" value="bundle"/>
 			<property name="DescriptionKey" value="npcAnimalFoxStarterFoodDesc"/>
 			<property name="HoldType" value="45"/>
