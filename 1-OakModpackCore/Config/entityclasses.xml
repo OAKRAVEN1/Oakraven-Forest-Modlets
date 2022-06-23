@@ -5,9 +5,9 @@
 	<set xpath="/entity_classes/entity_class[@name='supplyPlane']/property[@name='Mesh']/@value">#@modfolder:Resources/DragonAirDrop.unity3d?ArramusDragonLarge</set>
 	<set xpath="/entity_classes/entity_class[@name='sc_General']/property[@name='Mesh']/@value">#@modfolder:Resources/DragonAirDrop.unity3d?DragonAirDrop</set>
     <!-- PLAYER STARTING ITEMS -->	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvival')]/@value">FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalSP')]/@value">FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvival')]/@value">npcAnimalFoxStarterFood,FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>	
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalSP')]/@value">npcAnimalFoxStarterFood,FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>	
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">npcAnimalFoxStarterFood,FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>
 
 	<append xpath="/entity_classes">
 	

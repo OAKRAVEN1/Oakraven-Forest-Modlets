@@ -739,5 +739,8 @@ qc_NPCXSpiderPackDesc,items,Quest - Challenge,,,"A contract issued by the White 
 zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
 zombieFemaleTutorialFeral,entityclasses,Entity,,,Feral Deadly Girl,,,,,,,,,,,,,
 
+npcAnimalFoxStarterFood,items,item,,,Fox Friend Food,,,,,,,,,,,,,
+npcAnimalFoxStarterFoodDesc,items,item,,,"While you were unconscious, a friendly fox licked your face and brought you back to your senses. The fox is still very close and will join your quest if you open and share the contents of these cans.",,,,,,,,,,,,,
+
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,

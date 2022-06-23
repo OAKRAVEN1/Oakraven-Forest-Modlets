@@ -151,7 +151,7 @@
 			<property name="Create_item" value="resourceClayLump"/>
 			<property name="Create_item_count" value="6000"/>
 		</property>
-	</item>
+	</item>	
 
 	<!-- NEW WEAPONS -->
 	
@@ -4308,6 +4308,29 @@
 			<property class="Action0">
 				<property name="UseAnimation" value="false"/>
 				<property name="QuestGiven" value="challenge_NPCXSpiderPackI"/>
+			</property>
+		</item>
+		
+	<!-- Starter 'Bundle' of Fox Food -->
+
+		<item name="npcAnimalFoxStarterFood">
+			<property name="CustomIcon" value="foodCanDogfood"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="npcAnimalFoxStarterFoodDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="Group" value="Basics"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="open_supply_crate"/>
+				<property name="Create_item" value="foodRawMeat"/>
+				<property name="Create_item_count" value="20"/>
 			</property>
 		</item>		
 		

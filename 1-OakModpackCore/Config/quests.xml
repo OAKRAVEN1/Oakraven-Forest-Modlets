@@ -672,7 +672,12 @@
 	<reward type="SkillPoints" value="1" chainreward="true"/>
 	</quest>	
 	
-	</append>	
+	</append>
+	
+	<!-- The fox will spawn when entering game at survival questline 1/8 -->	
+	<insertAfter xpath="/quests/quest[@id='quest_BasicSurvival1']/action[@type='ShowTip']" >
+			<action type="SpawnEnemy" id="npcAnimalFox" value="1"/>
+	</insertAfter>
 
 	<!-- Quest for vanguard is given to player after completing basic survival questline 8/8 -->
 	<insertAfter xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']" >
@@ -680,5 +685,5 @@
 			<property name="chainquest" value="false"/>
 		</reward>
 	</insertAfter>
-
+	
 </configs>
