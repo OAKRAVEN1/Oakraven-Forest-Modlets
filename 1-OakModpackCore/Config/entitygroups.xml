@@ -39,8 +39,8 @@
 	             <!-- Day/Night Group Desert -->
 	
 	<entitygroup name="DesertPlants">
-		<entity name="animalWildPepper" prob="0.1"/>
-		<entity name="animalWildPineapple" prob="0.1"/>
+		<entity name="animalWildPepper" prob="0.15"/>
+		<entity name="animalWildPineapple" prob="0.2"/>
 		<entity name="animalWildTomato" prob="0.1"/>
 	</entitygroup>
 
