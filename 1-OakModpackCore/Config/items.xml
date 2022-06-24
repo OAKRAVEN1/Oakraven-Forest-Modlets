@@ -3931,8 +3931,7 @@
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodWater"/>
 	<property name="CustomIcon" value="foodTinCanTucker"/>
-	<property name="DescriptionKey" value="foodTinCanTuckerDesc"/>
-    <property name="CustomIconTint" value="250,150,230"/>	
+	<property name="DescriptionKey" value="foodTinCanTuckerDesc"/>	
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -3962,8 +3961,7 @@
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodWater"/>
 	<property name="CustomIcon" value="foodPineConeJam"/>
-	<property name="DescriptionKey" value="foodPineConeJamDesc"/>
-    <property name="CustomIconTint" value="225,110,20"/>	
+	<property name="DescriptionKey" value="foodPineConeJamDesc"/>	
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -3998,8 +3996,7 @@
 	<property name="HoldType" value="3"/>
 	<property name="DisplayType" value="waterDysentery"/>
 	<property name="CustomIcon" value="drinkPineConeTea"/>
-	<property name="DescriptionKey" value="drinkPineConeTeaDesc"/>
-    <property name="CustomIconTint" value="30,180,0"/>	
+	<property name="DescriptionKey" value="drinkPineConeTeaDesc"/>	
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mglass"/>
@@ -4038,7 +4035,6 @@
 	<property name="DisplayType" value="waterDysentery"/>
 	<property name="CustomIcon" value="drinkAcornCoffee"/>
 	<property name="DescriptionKey" value="drinkAcornCoffeeDesc"/>
-    <property name="CustomIconTint" value="130,65,10"/>	
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mglass"/>
@@ -4077,7 +4073,6 @@
 	<property name="DisplayType" value="waterGoldenrod"/>
 	<property name="CustomIcon" value="drinkSweetMead"/>
 	<property name="DescriptionKey" value="drinkSweetMeadDesc"/>
-    <property name="CustomIconTint" value="230,150,0"/>	
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mglass"/>
