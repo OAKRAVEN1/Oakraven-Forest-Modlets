@@ -489,6 +489,17 @@ foodHoneyPumpkinPieDesc,items,Food,,,"A tasty treat with healing properties. Cur
 drinkHoneyBeer,items,Food,,,Honey Beer,,,,,,,,,,,,,
 drinkHoneyBeerDesc,items,Food,,,"Puts a spring in your step, power in your punch, and provides healing properties. Cures 3% infection.",,,,,,,,,,,,,
 
+foodTinCanTucker,items,Food,,,Tin Can Tucker
+foodTinCanTuckerDesc,items,Food,,,"Mix together tins which usually have no recipe to create a real gourmet treat."
+foodPineConeJam,items,Food,,,Pine Cone Jam
+foodPineConeJamDesc,items,Food,,,"Medicinal and goes well with Acorn Bread. Cures 10% infection."
+drinkPineConeTea,items,Food,,,ine Cone Tea
+drinkPineConeTeaDesc,items,Food,,,"A herbal tea best drunk hot. Cures 3% infection."
+drinkAcornCoffee,items,Food,,,Acorn Coffee
+drinkAcornCoffeeDesc,items,Food,,,"Bitter sweet and earthy. Cures 3% infection."
+drinkSweetMead,items,Food,,,Sweet Mead
+drinkSweetMeadDesc,items,Food,,,"An all round pick-me-up. Cures 10% infection and 20% dysentery."
+
 OakChemistryStation,blocks,Block,,,Oakraven Chemistry Station,,,,,,,,,,,,,
 OakChemistryStationDesc,blocks,Block,,,"The Oakraven Chemistry Station allows players to create chemistry related items.",,,,,,,,,,,,,
 OakForge,blocks,Block,,,Oakraven Forge,,,,,,,,,,,,,

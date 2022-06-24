@@ -1598,7 +1598,77 @@
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropHopsFlower"/>
 	</effect_group>
-	</recipe>	
+	</recipe>
+
+	<!-- BUSHCRAFT BITES FOOD ITEMS - Selective -->
+	
+<recipe name="foodTinCanTucker" count="1" craft_time="50" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="foodCanChicken" count="1"/> <!-- Food 15 / Health 7 -->
+	<ingredient name="foodCanCatfood" count="1"/> <!-- Food 10 / Health 5 -->
+	<ingredient name="foodCanMiso" count="1"/> <!-- Food 10 / Health 5 / Water 10 -->
+	<ingredient name="foodCanSoup" count="1"/> <!-- Food 10 / Health 5 / Water 10 -->
+	<ingredient name="foodCanPears" count="1"/> <!-- Food 10 / Health 5 / Water 5 -->	
+</recipe>
+
+<recipe name="foodPineConeJam" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedMountainPine1m" count="10"/>
+	<ingredient name="foodHoney" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+	<!-- Giving access to OaksCooker Workstation for inclusion -->
+
+<recipe name="foodTinCanTucker" count="1" craft_time="50" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="foodCanChicken" count="1"/> <!-- Food 15 / Health 7 -->
+	<ingredient name="foodCanCatfood" count="1"/> <!-- Food 10 / Health 5 -->
+	<ingredient name="foodCanMiso" count="1"/> <!-- Food 10 / Health 5 / Water 10 -->
+	<ingredient name="foodCanSoup" count="1"/> <!-- Food 10 / Health 5 / Water 10 -->
+	<ingredient name="foodCanPears" count="1"/> <!-- Food 10 / Health 5 / Water 5 -->	
+</recipe>
+
+<recipe name="foodPineConeJam" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedMountainPine1m" count="10"/>
+	<ingredient name="foodHoney" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+	<!-- BUSHCRAFT BITES DRINK ITEMS - Selective -->
+	
+<recipe name="drinkPineConeTea" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedMountainPine1m" count="6"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkAcornCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedOak1m" count="6"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkSweetMead" count="1" craft_time="180" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="foodHoney" count="1"/>
+	<ingredient name="foodBushcraftAcornMeal" count="1"/>
+	<ingredient name="foodCropBlueberries" count="1"/>	
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+	<!-- Giving access to OaksCooker Workstation for inclusion -->
+
+<recipe name="drinkPineConeTea" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedMountainPine1m" count="6"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkAcornCoffee" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="treePlantedOak1m" count="6"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="drinkSweetMead" count="1" craft_time="180" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<ingredient name="foodHoney" count="1"/>
+	<ingredient name="foodBushcraftAcornMeal" count="1"/>
+	<ingredient name="foodCropBlueberries" count="1"/>	
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>	
 	
 	<!-- WORKSTATIONS -->	
 	
