@@ -42,7 +42,9 @@ This Modpack contains the following modlets/modifications:
 - KhaineGB's Inventory Lockable Slots Mod (Allows players to stop essential items being removed form the backpack when bulk moving)
 - Quest - Blood Moon Vanguard (Gives players an incentive to stay for Horde Night and pick up a Skill for completing an objective)
 - Quest - Eliminate the Horde (Gives players a Craft/Build/Upgrade Quest opportunity to survive a wave of grunt/feral/radiated entities)
-- Quest - Cull the Laboratory Specimens (Gives players a starting quest to cull laboratory specimens from 1-ZombiezPack)
+- Quest - Pest Control (Gives players a starting quest to cull laboratory specimens from 1-ZombiezPack)
+- Quest - Snow Orcs (Cull Darkstardragon's Orcs in the snow)
+- Quest - Infestation (Cull Xyth's Spiders with arramus' expansion abominations)
 
 In addition, some Addons that are powered by 0-Score and 0-XNPCCore and bundled directly are as follows:
 
