@@ -188,6 +188,8 @@ drinkRedWorm,items,Food,,,Lumpy Red Worm Smoothie,,,,,,,,,,,,,
 drinkRedWormDesc,items,Food,,,"Lumpy Red Worm Smoothie is a high protein refreshment.",,,,,,,,,,,,,
 drinkRedDreams,items,Food,,,Red Dreams Smoothie,,,,,,,,,,,,,
 drinkRedDreamsDesc,items,Food,,,"Red Dreams Smoothie is a high protein refreshment.",,,,,,,,,,,,,
+drinkChickChop,items,Food,,,Chick Chop Smoothie,,,,,,,,,,,,,
+drinkChickChopDesc,items,Food,,,"Chick Chop Smoothie is a high protein refreshment.",,,,,,,,,,,,,
 
 OakravenStorageVariantHelper,blocks,Block,,,Oakraven Storage Types,,,,,,,,,,,,,
 WoodChestSign1,blocks,Block,,,Wooden Chest 1,,,,,,,,,,,,,

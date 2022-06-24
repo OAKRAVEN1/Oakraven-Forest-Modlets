@@ -114,7 +114,7 @@
 	<append xpath="/progression/perks/perk[@name='perkMasterChef']">
 		<effect_group>		
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1"
-				tags="RedMixer,GreenMixer,SilverBlender,GreenBlender,MeatGrinder,OaksCooker,PotStove,IronStove,StoneStove,foodAcornBread,drinkBoarberrySmoothie,drinkFleshCan,drinkGreenHell,drinkRedWorm,drinkRedDreams"/>		
+				tags="RedMixer,GreenMixer,SilverBlender,GreenBlender,MeatGrinder,OaksCooker,PotStove,IronStove,StoneStove,foodAcornBread,drinkBoarberrySmoothie,drinkFleshCan,drinkGreenHell,drinkRedWorm,drinkRedDreams,drinkChickChop"/>		
 		</effect_group>		
 	</append>
 

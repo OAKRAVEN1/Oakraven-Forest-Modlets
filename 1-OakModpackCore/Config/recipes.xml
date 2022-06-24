@@ -999,6 +999,12 @@
 		<ingredient name="foodBoneMeal" count="3"/>
 		<ingredient name="drinkJarPureMineralWater" count="1"/>			
 	</recipe>
+	<recipe name="drinkChickChop" count="1" craft_area="SilverBlender" craft_tool="toolSmoothieBlade" tags="learnable,perkMasterChef">
+		<ingredient name="CaughtChick" count="5"/>
+		<ingredient name="foodBoneMeal" count="3"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+		<ingredient name="Strawberry" count="1"/>		
+	</recipe>	
 	<recipe name="drinkJarRedTea" count="1" craft_area="SilverBlender" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 	<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
