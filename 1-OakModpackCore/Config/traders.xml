@@ -2,18 +2,18 @@
 
 	<!-- Summon Fox Friend Note - Rare but Multi-Trader/Teleport function can increase the odds -->
 	
-	<append xpath="/trader_item_groups/trader_item_group[@name='rareBooks']">
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
 		<item name="noteqc_2-SummonFoxFriend"/>	
 	</append>
 
 	<!-- NEW WEAPONS -->
 	
-	<append xpath="/trader_item_groups/trader_item_group[@name='modMeleeT2']">
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='modMeleeT2']">
 		<item name="modMeleedivinefire"/>
 		<item name="modMeleeDivineBarbedWire"/>		
 	</append>
 	
-	<append xpath="/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
 		<item name="modMeleedivinefireSchematic"/>
 		<item name="modMeleeDivineBarbedWireSchematic"/>		
 	</append>
