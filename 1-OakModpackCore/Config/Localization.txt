@@ -768,11 +768,14 @@ qc_gansspecialclownsDesc,items,Quest - Challenge,,,"A contract issued by the Whi
 qc_NPCXSpiderPack,items,Quest - Challenge,,,"Contract: Spider Moon",,,,,,,,,,,,,
 qc_NPCXSpiderPackDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate Mutant Spiders in the Wasteland and Desert.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
 
-zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
-zombieFemaleTutorialFeral,entityclasses,Entity,,,Feral Deadly Girl,,,,,,,,,,,,,
-
 npcAnimalFoxStarterFood,items,item,,,Fox Friend Food,,,,,,,,,,,,,
 npcAnimalFoxStarterFoodDesc,items,item,,,"While you were unconscious, a friendly fox licked your face and brought you back to your senses. The fox is still very close and will join your quest if you share the contents of this can.",,,,,,,,,,,,,
+
+noteqc_2-SummonFoxFriend,items,item,,,Summon - Fox Friend,,,,,,,,,,,,,
+noteqc_2-SummonFoxFriendDesc,items,item,,," This quest allows a player to summon a Fox Friend and also receive 20 meat to hire the new companion.",,,,,,,,,,,,,
+
+zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
+zombieFemaleTutorialFeral,entityclasses,Entity,,,Feral Deadly Girl,,,,,,,,,,,,,
 
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,

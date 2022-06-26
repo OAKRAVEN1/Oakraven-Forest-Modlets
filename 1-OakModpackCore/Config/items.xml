@@ -5108,6 +5108,18 @@
 				<property name="Create_item" value="foodRawMeat"/>
 				<property name="Create_item_count" value="20"/>
 			</property>
+		</item>
+		
+	<!-- Summon Fox Friend -->		
+
+		<item name="noteqc_2-SummonFoxFriend">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="noteqc_2-SummonFoxFriendDesc"/>
+			<property name="CustomIcon" value="foxspawn"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_2-SummonFoxFriend"/>
+			</property>
 		</item>		
 		
 	</append>
