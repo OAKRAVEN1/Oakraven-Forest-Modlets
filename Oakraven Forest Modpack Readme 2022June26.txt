@@ -45,6 +45,7 @@ This Modpack contains the following modlets/modifications:
 - Quest - Pest Control (Gives players a starting quest to cull laboratory specimens from 1-ZombiezPack)
 - Quest - Snow Orcs (Cull Darkstardragon's Orcs in the snow)
 - Quest - Infestation (Cull Xyth's Spiders with arramus' expansion abominations)
+- Quest - Summon Fox Friend (An item to spawn the 0-XNPCCore Fox to offset despawning)
 
 In addition, some Addons that are powered by 0-Score and 0-XNPCCore and bundled directly are as follows:
 
@@ -65,7 +66,7 @@ khzmusik - Created 1-khzmusik_Zombies.
 KhaineGB - Unlocked Inventory Lockable Slots Mod.
 GanTheGrey - Created 1-GansSpecialZombies.
 Darkstardragon - Created 1-ZombiezPack, 1-SurvivorzPack, 1-OrczPackAlpha and 2-OrczPackBeta, and performed an abundance of play testing and coding support through the connected 'Not Medieval Mod'.
-arramus - Supported the Oakraven Forest Collection with 2-NPCXSpiderPack-ColonyExpansion, compilation and distribution, quality control, tweaking and balancing, and even added the odd icon or two. 
+arramus - Supported the Oakraven Forest Collection with 2-NPCXSpiderPack-ColonyExpansion, Fox things, xml, compilation, distribution, quality control balancing, and even added the odd icon or two. 
 
 Currently Released Oakraven Forest Collection modlets can be found here.
 https://community.7daystodie.com/topic/27806-a20-oakraven-forest-collection/
