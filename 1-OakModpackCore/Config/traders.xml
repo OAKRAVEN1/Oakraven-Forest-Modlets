@@ -2,12 +2,14 @@
 
 	<!-- NEW WEAPONS -->
 	
-	<append xpath="/traders/trader_item_groups/trader_item_group[@name='modMeleeT2']">
-		<item name="modMeleedivinefire"/>	
+	<append xpath="/trader_item_groups/trader_item_group[@name='modMeleeT2']">
+		<item name="modMeleedivinefire"/>
+		<item name="modMeleeDivineBarbedWire"/>		
 	</append>
 	
-	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
-		<item name="modMeleedivinefireSchematic"/>	
+	<append xpath="/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="modMeleedivinefireSchematic"/>
+		<item name="modMeleeDivineBarbedWireSchematic"/>		
 	</append>
 
 	<!-- TRADERS -->

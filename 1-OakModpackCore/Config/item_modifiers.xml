@@ -96,6 +96,42 @@
 					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
 		</effect_group>
 	</item_modifier>
+	
+<item_modifier name="modMeleeDivineBarbedWire" installable_tags="DivineBarbedWire" modifier_tags="shaft" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="modMeleeDivineBarbedWireSchematic"/>
+
+		<item_property_overrides name="*">
+			<property name="Material" value="Mmetal"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="StingSpear">
+			<property name="Meshfile" value="#@modfolder:Resources/newspears.unity3d?StingSpearWireMod"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="OdinSpear">
+			<property name="Meshfile" value="#@modfolder:Resources/newspears.unity3d?OdinSpearWireMod"/>
+		</item_property_overrides>
+
+
+		<item_property_overrides name="Dwemerspear">
+			<property name="Meshfile" value="#@modfolder:Resources/newspears.unity3d?dwemerspearWireMod"/>
+		</item_property_overrides>
+
+		<effect_group tiered="false">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingBarbedWire"/>
+		</effect_group>
+		<effect_group tiered="false" name="Power Attack">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleedingBarbedWire"/>
+		</effect_group>
+		<effect_group tiered="false" name="Always extend bleeding">
+			<requirement name="HasBuff" target="other" buff="buffInjuryBleeding"/>
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+		</effect_group>
+	</item_modifier>	
 		
 	</append>
 </configs>

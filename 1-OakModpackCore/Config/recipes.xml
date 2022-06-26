@@ -58,7 +58,7 @@
 		<ingredient name="resourceBlueRock" count="1"/>		
 	</recipe>	
 
-                              <!-- ARMORY BENCH -->
+    <!-- ARMORY BENCH -->
 							  
 	<recipe name="ArmoryBench" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 		<ingredient name="resourceForgedIron" count="25"/>
@@ -68,7 +68,7 @@
 		<ingredient name="resourceWood" count="50"/>
 	</recipe>
 	
-                              <!-- DAGGERS -->	
+    <!-- DAGGERS -->	
 	
 	<recipe name="AssassinDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
 		<ingredient name="resourceForgedSteel" count="10"/>
@@ -120,7 +120,7 @@
 		</effect_group>
 	</recipe>
 	
-                              <!-- DAGGER MODS -->
+    <!-- DIVINE DAGGER MOD -->
 
 	<recipe name="modMeleedivinefire" count="1" craft_area="ArmoryBench" tags="learnable">
 		<ingredient name="resourceForgedSteel" count="5"/>
@@ -129,7 +129,7 @@
 		<ingredient name="ammoGasCan" count="50"/>
 	</recipe>							  
 
-                                       <!--AXES -->
+    <!--AXES -->
 
 	<recipe name="AxeGold" count="1" craft_area="ArmoryBench" tags="learnable,perkMiner69r">
 		<ingredient name="meleeToolAllSteelParts" count="5"/>
@@ -186,7 +186,7 @@
 		</effect_group>
 	</recipe>
 
-		                                            <!-- ShotGuns -->
+	<!-- SHOTGUNS -->
 
 	<recipe name="MaxShotGun" count="1" craft_area="ArmoryBench" tags="learnable,perkBoomstick">
 		<ingredient name="gunShotgunT1DoubleBarrelParts" count="5"/>
@@ -253,7 +253,7 @@
 		</effect_group>
 	</recipe>
 
-			                                     <!-- BULLETS -->			
+	<!-- BULLETS -->			
 
 	<recipe name="QuadShotgunSlug" count="1" craft_area="ArmoryBench">
 		<ingredient name="resourceBuckshot" count="4"/>
@@ -269,39 +269,128 @@
 
 	<recipe name="DiscAmmoShock" count="1" craft_time="12" craft_area="ArmoryBench">
 		<ingredient name="resourceForgedSteel" count="1"/>
-		<ingredient name="resourceScrapPolymers" count="1"/>
-		<ingredient name="resourceBlueRock" count="1"/>
-		<ingredient name="resourceAnimalFat" count="1"/>		
+		<ingredient name="resourceScrapPolymers" count="1"/>		
+		<ingredient name="resourceCloth" count="1"/>
+		<ingredient name="resourceElectricParts" count="1"/>
 	</recipe>
 	
 	<recipe name="DiscAmmoFlame" count="1" craft_time="12" craft_area="ArmoryBench">
 		<ingredient name="resourceForgedSteel" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
-		<ingredient name="resourceCrystalRock" count="1"/>
+		<ingredient name="resourceGunPowder" count="2"/>
+		<ingredient name="resourceCloth" count="1"/>
 		<ingredient name="resourceAnimalFat" count="1"/>
 	</recipe>	
 	
 	<recipe name="ArramusArrowFire" count="1" craft_time="12" craft_area="ArmoryBench">
 		<ingredient name="resourceArrowHeadSteelAP" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceGunPowder" count="2"/>
 		<ingredient name="resourceCloth" count="1"/>
 		<ingredient name="resourceAnimalFat" count="1"/>
-		<ingredient name="resourceCrystalRock" count="1"/>		
 	</recipe>
 
 	<recipe name="ArramusArrowShock" count="1" craft_time="12" craft_area="ArmoryBench">
 		<ingredient name="resourceArrowHeadSteelAP" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceGunPowder" count="2"/>
 		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="resourceAnimalFat" count="1"/>		
-		<ingredient name="resourceBlueRock" count="1"/>		
+		<ingredient name="resourceElectricParts" count="1"/>
 	</recipe>
 
 	<recipe name="ArramusSteelArrow" count="1" craft_area="ArmoryBench">
 		<ingredient name="resourceArrowHeadSteelAP" count="1"/>
 		<ingredient name="resourceScrapPolymers" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="resourceAnimalFat" count="1"/>		
+	</recipe>
+	
+	<!-- PUNK HAND GUNS -->
+	
+	<recipe name="PunkMagnum" count="1" craft_area="ArmoryBench" tags="learnable,perkGunslinger">
+		<ingredient name="gunHandgunT1PistolParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="15"/><!-- +50% -->
+		<ingredient name="resourceDuctTape" count="3"/>
+		<ingredient name="resourceScrapPolymers" count="10"/>
+		<ingredient name="resourceSpring" count="5"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunHandgunT1PistolParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>
+	
+	<recipe name="PunkPistol" count="1" craft_area="ArmoryBench" tags="learnable,perkGunslinger">
+		<ingredient name="gunHandgunT1PistolParts" count="4"/>
+		<ingredient name="resourceForgedIron" count="15"/><!-- +50% -->
+		<ingredient name="resourceDuctTape" count="2"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunHandgunT1PistolParts,resourceForgedIron,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>
+	
+	<recipe name="PunkPipe" count="1" craft_area="ArmoryBench" tags="learnable,perkGunslinger">
+		<ingredient name="gunHandgunT1PistolParts" count="6"/>
+		<ingredient name="resourceForgedSteel" count="30"/><!-- +50% -->
+		<ingredient name="resourceDuctTape" count="3"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceSpring" count="6"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunHandgunT1PistolParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="PunkMaster" count="1" craft_area="ArmoryBench" tags="learnable,perkGunslinger">
+		<ingredient name="gunHandgunT1PistolParts" count="6"/>
+		<ingredient name="resourceForgedSteel" count="30"/><!-- +50% -->
+		<ingredient name="resourceDuctTape" count="3"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceSpring" count="6"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunHandgunT1PistolParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>	
+
+	<!-- SPEARS -->
+	
+	<recipe name="StingSpear" count="1" craft_area="ArmoryBench" tags="learnable,perkJavelinMaster">
+		<ingredient name="meleeWpnSpearT3SteelSpearParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="15"/><!-- +50% -->
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeWpnSpearT3SteelSpearParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+	
+	<recipe name="OdinSpear" count="1" craft_area="ArmoryBench" tags="learnable,perkJavelinMaster">
+		<ingredient name="meleeWpnSpearT3SteelSpearParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="15"/><!-- +50% -->
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeWpnSpearT3SteelSpearParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="Dwemerspear" count="1" craft_area="ArmoryBench" tags="learnable,perkJavelinMaster">
+		<ingredient name="meleeWpnSpearT3SteelSpearParts" count="5"/>
+		<ingredient name="resourceForgedSteel" count="15"/><!-- +50% -->
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeWpnSpearT3SteelSpearParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>	
+	
+	<!-- DIVINE SPEAR MOD -->
+	
+	<recipe name="modMeleeDivineBarbedWire" count="1" craft_area="ArmoryBench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="5"/>
+		<ingredient name="resourceGlue" count="5"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceSpring" count="10"/>
 	</recipe>	
 	
 	<!-- TORCHES LIGHTS -->	

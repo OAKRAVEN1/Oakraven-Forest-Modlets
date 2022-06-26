@@ -4,6 +4,7 @@
 
 	<append xpath="/lootcontainers/lootgroup[@name='modMeleeT2']">
 		<item name="modMeleedivinefireSchematic"/>	
+		<item name="modMeleeDivineBarbedWireSchematic"/>		
 	</append>
 
 	<!-- ROCK DRILL -->

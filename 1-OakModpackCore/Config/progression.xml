@@ -96,6 +96,42 @@
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="DiscCrossBow"/>
 		</effect_group>			
 	</append>
+
+	<!-- Pistols -->
+	<append xpath="/progression/perks/perk[@name='perkGunslinger']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="PunkMagnum"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="PunkMagnum"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="PunkPistol"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="PunkPistol"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="PunkPipe"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="PunkPipe"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="PunkMaster"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="PunkMaster"/>
+		</effect_group>		
+	</append>
+	
+	<!-- Spears -->
+	<append xpath="/progression/perks/perk[@name='perkJavelinMaster']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="StingSpear"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="StingSpear"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="OdinSpear"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="OdinSpear"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="Dwemerspear"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="Dwemerspear"/>
+		</effect_group>		
+	</append>
 	
 	<!-- Lever Action Magnum Rifle -->
 	<append xpath="/progression/perks/perk[@name='perkDeadEye']">
