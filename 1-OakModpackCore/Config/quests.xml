@@ -100,12 +100,12 @@
 			<objective type="Craft">
 				<property name="phase" value="3"/>
 				<property name="item" value="trapSpikesWoodDmg0"/>
-				<property name="count" value="10"/>
+				<property name="count" value="6"/>
 			</objective>		
 			
 			<objective type="BlockPlace" id="frameShapes:VariantHelper" value="10" phase="3"/>
 			<objective type="BlockUpgrade" id="frameShapes" value="10" phase="3"/>
-			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="10" phase="3"/>
+			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="6" phase="3"/>
 			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
 		
 			<!-- Phase 4: Defend Against Horde -->		
@@ -177,11 +177,11 @@
 			<objective type="Craft">
 				<property name="phase" value="3"/>
 				<property name="item" value="trapSpikesWoodDmg0"/>
-				<property name="count" value="20"/>
+				<property name="count" value="8"/>
 			</objective>		
 			
 			<objective type="BlockPlace" id="cobblestoneShapes:VariantHelper" value="20" phase="3"/>
-			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="20" phase="3"/>
+			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="8" phase="3"/>
 			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
 		
 			<!-- Phase 4: Defend Against Horde -->		
@@ -251,11 +251,11 @@
 			<objective type="Craft">
 				<property name="phase" value="3"/>
 				<property name="item" value="trapSpikesWoodDmg0"/>
-				<property name="count" value="20"/>
+				<property name="count" value="10"/>
 			</objective>		
 			
 			<objective type="BlockPlace" id="cobblestoneShapes:VariantHelper" value="40" phase="3"/>
-			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="20" phase="3"/>
+			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="10" phase="3"/>
 			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
 	
 			<!-- Phase 4: Defend Against Horde --> 		
@@ -270,7 +270,7 @@
 				<property name="phase" value="5"/>
 			</objective>
 			
-			<reward type="SkillPoints" value="1" chainreward="true"/>
+			<reward type="SkillPoints" value="2" chainreward="true"/>
 			<reward type="Item" id="casinoCoin" value="4000"/>
 			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="5"/>
 			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="5"/>
@@ -365,7 +365,7 @@
 	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Pest Control V" />
 	<property name="subtitle_key" value="Destroying the whole nest." />
-	<property name="description_key" value="Cull 250 Laboratory Specimens for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in safes." />
+	<property name="description_key" value="Cull 250 Laboratory Specimens for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -376,7 +376,7 @@
 		
 	<reward type="Exp" value="37500"/>
 	<reward type="Item" id="casinoCoin" value="12500"/>
-	<reward type="SkillPoints" value="1" chainreward="true"/>
+	<reward type="SkillPoints" value="2" chainreward="true"/>
 	</quest>
 	
 	<!-- Incorporating 1-OrczPackAlpha and 2-OrczPackBeta -->	
@@ -462,7 +462,7 @@
 	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Snow Orcs V" />
 	<property name="subtitle_key" value="Tolkein back the biome." />
-	<property name="description_key" value="Cull 250 Snow Orcs for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in safes." />
+	<property name="description_key" value="Cull 250 Snow Orcs for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -473,7 +473,7 @@
 		
 	<reward type="Exp" value="37500"/>
 	<reward type="Item" id="casinoCoin" value="12500"/>
-	<reward type="SkillPoints" value="1" chainreward="true"/>
+	<reward type="SkillPoints" value="2" chainreward="true"/>
 	</quest>	
 
 	<!-- GAN'S QUEST FEST -->
@@ -560,7 +560,7 @@
 	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Send in the Clowns V" />
 	<property name="subtitle_key" value="Bring down the curtains." />
-	<property name="description_key" value="Cull 250 Special Clowns for Dukes, XP, and a Skill Point. Additional Quest Notes can be found safes." />
+	<property name="description_key" value="Cull 250 Special Clowns for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found safes." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -571,7 +571,7 @@
 		
 	<reward type="Exp" value="37500"/>
 	<reward type="Item" id="casinoCoin" value="12500"/>
-	<reward type="SkillPoints" value="1" chainreward="true"/>
+	<reward type="SkillPoints" value="2" chainreward="true"/>
 	</quest>
 
 	<!-- XYTH'S QUEST FEST -->
@@ -658,7 +658,7 @@
 	<property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Infestation V" />
 	<property name="subtitle_key" value="Silky skills." />
-	<property name="description_key" value="Cull 250 Spiders for Dukes, XP, and a Skill Point. Additional Quest Notes can be found in safes." />
+	<property name="description_key" value="Cull 250 Spiders for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -669,7 +669,7 @@
 		
 	<reward type="Exp" value="37500"/>
 	<reward type="Item" id="casinoCoin" value="12500"/>
-	<reward type="SkillPoints" value="1" chainreward="true"/>
+	<reward type="SkillPoints" value="2" chainreward="true"/>
 	</quest>
 	
 	<!-- Summon Fox Friend - For loss of fox or otherwise -->	

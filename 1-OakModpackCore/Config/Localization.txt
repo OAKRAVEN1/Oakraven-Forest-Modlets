@@ -757,16 +757,16 @@ QC_zombieFatCopRadiated,entityclasses,Entity,,,Radiated Horde Cop,,,,,,,,,,,,,
 QC_zombieBikerRadiated,entityclasses,Entity,,,Radiated Horde Biker,,,,,,,,,,,,,
 
 qc_snoworcz,items,Quest - Challenge,,,"Contract: Cull Snow Orcs",,,,,,,,,,,,,
-qc_snoworczDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate Snow Orcs in the Snow Biome.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
+qc_snoworczDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate Snow Orcs in the Snow Biome. Earn XP and Dukes after completing each Stage, and 2 Skill Points after completing all stages.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
 
 qc_zombiezpackspecimen,items,Quest - Challenge,,,"Contract: Cull Laboratory Specimens",,,,,,,,,,,,,
-qc_zombiezpackspecimenDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate 3 types of Laboratory Specimen; Bloated Parasite, Parasite, and Experimental Z.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
+qc_zombiezpackspecimenDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate 3 types of Laboratory Specimen; Bloated Parasite, Parasite, and Experimental Z. Earn XP and Dukes after completing each Stage, and 2 Skill Points after completing all stages.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
 
 qc_gansspecialclowns,items,Quest - Challenge,,,"Contract: Clown Frown",,,,,,,,,,,,,
-qc_gansspecialclownsDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate 3 types of Gans Special Zombie; White Clown, Colonel Klink, and Colonel Lynch.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
+qc_gansspecialclownsDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate 3 types of Gans Special Zombie; White Clown, Colonel Klink, and Colonel Lynch. Earn XP and Dukes after completing each Stage, and 2 Skill Points after completing all stages.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
 
 qc_NPCXSpiderPack,items,Quest - Challenge,,,"Contract: Spider Moon",,,,,,,,,,,,,
-qc_NPCXSpiderPackDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate Mutant Spiders in the Wasteland and Desert.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
+qc_NPCXSpiderPackDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate Mutant Spiders in the Wasteland and Desert. Earn XP and Dukes after completing each Stage, and 2 Skill Points after completing all stages.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
 
 npcAnimalFoxStarterFood,items,item,,,Fox Friend Food,,,,,,,,,,,,,
 npcAnimalFoxStarterFoodDesc,items,item,,,"While you were unconscious, a friendly fox licked your face and brought you back to your senses. The fox is still very close and will join your quest if you share the contents of this can.",,,,,,,,,,,,,
