@@ -967,45 +967,45 @@
 	<!-- This Addon remains bundled as a 1- type Addon directly within the OakModpackCore and powered by the NPCMod as intended -->
 
 	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoe' and not(@prob='0')]]">
-                <entity name="BloatedParasite" prob=".3" />
-                <entity name="ExperimentZ" prob=".3" />
-                <entity name="SwatZombie" prob=".3" />
-                <entity name="SwatCaptainZombie" prob=".3" />
-                <entity name="Parasite" prob=".3" />				
+                <entity name="BloatedParasite" prob=".25" /><!-- Default .3 for all -->
+                <entity name="ExperimentZ" prob=".25" />
+                <entity name="SwatZombie" prob=".25" />
+                <entity name="SwatCaptainZombie" prob=".25" />
+                <entity name="Parasite" prob=".25" />				
 	</append>
 		
 	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoeFeral' and not(@prob='0')]]">
-                <entity name="BloatedParasiteFeral" prob=".15" />
-                <entity name="ExperimentZFeral" prob=".15" />
-                <entity name="SwatZombieFeral" prob=".15" />
-                <entity name="SwatCaptainZombieFeral" prob=".15" />
-                <entity name="ParasiteFeral" prob=".15" />				
+                <entity name="BloatedParasiteFeral" prob=".1" /><!-- Default .15 for all -->
+                <entity name="ExperimentZFeral" prob=".1" />
+                <entity name="SwatZombieFeral" prob=".1" />
+                <entity name="SwatCaptainZombieFeral" prob=".1" />
+                <entity name="ParasiteFeral" prob=".1" />				
 	</append>
 	
 	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoeRadiated' and not(@prob='0')]]">
-                <entity name="BloatedParasiteRadiated" prob=".15" />
-                <entity name="ExperimentZRadiated" prob=".15" />
-                <entity name="SwatZombieRadiated" prob=".15" />
-                <entity name="SwatCaptainZombieRadiated" prob=".15" />
-                <entity name="ParasiteRadiated" prob=".15" />				
+                <entity name="BloatedParasiteRadiated" prob=".1" /><!-- Default .15 for all -->
+                <entity name="ExperimentZRadiated" prob=".1" />
+                <entity name="SwatZombieRadiated" prob=".1" />
+                <entity name="SwatCaptainZombieRadiated" prob=".1" />
+                <entity name="ParasiteRadiated" prob=".1" />				
 	</append>
 	
 	<!-- Gans Special Zombies from 1-GansSpecialZombies and 2-GansSpecialFeralandRadiatedZombies -->	
 
     <append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieBoe' and not(@prob='0')]]">
-        <entity name="zombieWhiteClown" />
-        <entity name="zombieWarZombie" />
-        <entity name="zombieWarZombieV1" />
+        <entity name="zombieWhiteClown" prob=".25" />
+        <entity name="zombieWarZombie" prob=".25" />
+        <entity name="zombieWarZombieV1" prob=".25" />
     </append>
     <append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieBoeFeral' and not(@prob='0')]]">
-        <entity name="zombieWhiteClownFeral" />
-        <entity name="zombieWarZombieFeral" />
-        <entity name="zombieWarZombieV1Feral" />
+        <entity name="zombieWhiteClownFeral" prob=".1" />
+        <entity name="zombieWarZombieFeral" prob=".1" />
+        <entity name="zombieWarZombieV1Feral" prob=".1" />
     </append>
     <append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieBoeRadiated' and not(@prob='0')]]">
-        <entity name="zombieWhiteClownRadiated" />
-        <entity name="zombieWarZombieRadiated" />
-        <entity name="zombieWarZombieV1Radiated" />
+        <entity name="zombieWhiteClownRadiated" prob=".1" />
+        <entity name="zombieWarZombieRadiated" prob=".1" />
+        <entity name="zombieWarZombieV1Radiated" prob=".1" />
     </append>
 
 		<!-- Xyth's Spiders from 1-NPCXSpiderPack -->
@@ -1100,7 +1100,179 @@
             <entity name="animalSpider02Radiated"/>
 			<entity name="animalSpider03Radiated"/>			
 		</entitygroup>	
-	</append>	
+	</append>
+	
+	<!-- BIOME Spawning -->
+
+    <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
+		<entity name="Harpy" prob="0.5" />
+        <entity name="Griffon" prob="1.0" />
+		<entity name="FireBreathingDragon" prob="0.5" />
+		<entity name="AcidBreathingDragon" prob="0.5" />
+		<entity name="GiantBat" prob="0.5" />
+		<entity name="Gargoyle" prob="0.5" />
+ 		<entity name="Manticore" prob="0.5" />		
+	</append>
+	
+    <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
+		<entity name="Pegasus" prob="0.5" />		
+	</append>
+
+    <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
+		<entity name="Harpy" prob="0.5" />
+        <entity name="Griffon" prob="1.0" />
+		<entity name="FireBreathingDragon" prob="0.5" />
+		<entity name="AcidBreathingDragon" prob="0.5" />
+		<entity name="Pegasus" prob="0.5" />
+		<entity name="GiantBat" prob="0.5" />
+		<entity name="Gargoyle" prob="0.5" />
+ 		<entity name="Manticore" prob="0.5" />		
+	</append>
+	
+	<!-- Sleeper Volume Groups -->
+	<!-- npc Enemy Animals All -->
+
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS01']">
+		<entity name="Manticore"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS50']">
+		<entity name="Manticore"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS100']">
+		<entity name="Manticore"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS200']">
+		<entity name="Manticore"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS400']">
+		<entity name="Manticore"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS800']">
+		<entity name="Manticore"/>
+	</append>
+
+	<!-- npc Enemy Animals Boss -->
+	
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsBossGroupGS01']">
+		<entity name="Manticore"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsBossGroupGS50']">
+		<entity name="Manticore"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsBossGroupGS100']">
+		<entity name="Manticore"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsBossGroupGS200']">
+		<entity name="Manticore"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsBossGroupGS400']">
+		<entity name="Manticore"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsBossGroupGS800']">
+		<entity name="Manticore"/>
+	</append>
+	
+	<!-- npc Flyers All -->
+
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersAllGroupGS01']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersAllGroupGS50']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersAllGroupGS100']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersAllGroupGS200']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersAllGroupGS400']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersAllGroupGS800']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	
+	<!-- npc Flyers Boss -->	
+
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersBossGroupGS01']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersBossGroupGS50']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersBossGroupGS100']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersBossGroupGS200']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersBossGroupGS400']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcFlyersBossGroupGS800']">
+		<entity name="Harpy"/>
+		<entity name="Griffon"/>
+		<entity name="FireBreathingDragon"/>
+		<entity name="AcidBreathingDragon"/>
+		<entity name="GiantBat"/>
+		<entity name="Gargoyle"/>
+	</append>
 		
 	<!-- LAZMAN'S BLOOD MOON VANGUARD REPEATABLE QUEST -->
 
