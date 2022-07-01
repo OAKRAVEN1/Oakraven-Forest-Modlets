@@ -14,6 +14,11 @@
 		<sprite pos="240,-80" sprite="" color="255,255,255,255" globalopacitymod="1.8">
 			<label depth="2" width="300" height="30" text="{daytitle}: [{daycolor}]{day}[-] {timetitle}: {time}" font_size="28" pivot="center" effect="outline" upper_case="true" justify="center"/>
 		</sprite>
+		
+		<rect pos="730,-28" width="75" height="75" >
+			<texture depth="11" width="260" height="89" pivot="center" texture="@modfolder:Textures/steampunkplatetime.png"/>
+        </rect>		
+		
 	</window>		
 	</append>
 	
