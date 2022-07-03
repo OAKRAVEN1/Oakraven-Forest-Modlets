@@ -9,11 +9,67 @@
 	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalSP')]/@value">npcAnimalFoxStarterFood,FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>	
 	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">npcAnimalFoxStarterFood,FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>
 
+
 	<!-- NPCMod Tweaks -->
 	<!-- Became Default ^^ --><!-- append xpath="/entity_classes/entity_class[@name='npcAnimalMeleeTemplate']/property[@name='AIPackages']/@value">,NPCLoot</append -->
 
-	<!-- OakModpackCore -->
+
 	<append xpath="/entity_classes">
+	
+	<!-- VANILLA PLUS ENTITIES -->
+	
+<entity_class name="zombieDemolitionRadiated" extends="zombieDemolition">
+	<property name="Tags" value="entity,zombie,walker,boss,radiated"/>
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>	
+	<property name="Class" value="EntityZombieCop"/>
+	<property name="Mass" value="330"/>
+	<property name="SizeScale" value="1.15"/>
+
+	<!-- Gameplay zombieDemolitionRadiated -->
+	<property name="JumpMaxDistance" value="1, 2"/>
+	<property name="PainResistPerHit" value=".7"/><!-- Default is .5-->
+	<property name="Explosion.BlockDamage" value="6000"/><!-- Default is 5000-->
+	<property name="ExplodeDelay" value="3"/><!-- Default is 2-->
+	<property name="ExplodeHealthThreshold" value="0"/><!-- Disable Health explosion -->
+
+	<property name="ExperienceGain" value="1200"/><!-- X1.6 of zombieDemolition-->
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".4"/><!-- Default is .3 -->
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="1600"/><!-- X1.6 of zombieDemolition-->
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>		
+	</effect_group>
+</entity_class>
+
+<entity_class name="zombieWightRadiatedShower" extends="zombieWightRadiated">
+	<property name="Tags" value="entity,zombie,walker,feral,boss,radiated"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZWightRadiated.prefab"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+
+
+	<!-- Gameplay zombieWightRadiated -->
+	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
+	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+	<property name="ExperienceGain" value="1200"/><!-- Remains the same but loot container upgrades to boss -->
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".4"/>	
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="1298"/><!-- X1.6 of zombieWightRadiated-->
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="10"/><!-- Default is 6 -->
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="zombieWightRadiatedShowerAOE"/>	
+	</effect_group>
+</entity_class>	
+	
+	<!-- OakModpackCore -->
 	
     <!-- POWER THINGS -->
 
