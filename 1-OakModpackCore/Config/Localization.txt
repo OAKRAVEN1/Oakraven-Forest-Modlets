@@ -777,6 +777,9 @@ qc_gansspecialclownsDesc,items,Quest - Challenge,,,"A contract issued by the Whi
 qc_NPCXSpiderPack,items,Quest - Challenge,,,"Contract: Spider Moon",,,,,,,,,,,,,
 qc_NPCXSpiderPackDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate Mutant Spiders in the Wasteland and Desert. Earn XP and Dukes after completing each Stage, and 2 Skill Points after completing all stages.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
 
+qc_fantasticbeastz,items,Quest - Challenge,,,"Contract: Beast Bust",,,,,,,,,,,,,
+qc_fantasticbeastzDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate Mythical Beasts in the Wasteland and Desert. Earn XP and Dukes after completing each Stage, and 2 Skill Points after completing all stages.\n\nAdditional Quest Notes can be found in safes.",,,,,,,,,,,,,
+
 npcAnimalFoxStarterFood,items,item,,,Fox Friend Food,,,,,,,,,,,,,
 npcAnimalFoxStarterFoodDesc,items,item,,,"While you were unconscious, a friendly fox licked your face and brought you back to your senses. The fox is still very close and will join your quest if you share the contents of this can.",,,,,,,,,,,,,
 

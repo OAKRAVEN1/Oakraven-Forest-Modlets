@@ -288,7 +288,7 @@
 	<quest id="challenge_ZombiezPackSpecimenPartI">
     <property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Pest Control I" />
-	<property name="subtitle_key" value="Seek out 3 kinds of Laboratory Specimen." />
+	<property name="subtitle_key" value="Seek out Laboratory Specimens." />
 	<property name="description_key" value="Cull 10 Laboratory Specimens for Dukes and XP. Look out for the Bloated Parasite, Parasite, and Experimental Z." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -307,7 +307,7 @@
 	<quest id="challenge_ZombiezPackSpecimenPartII">
 	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Pest Control II" />
-	<property name="subtitle_key" value="The Specimens are waiting." />
+	<property name="subtitle_key" value="The Specimens are Waiting." />
 	<property name="description_key" value="Cull 25 Laboratory Specimens for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -326,7 +326,7 @@
 	<quest id="challenge_ZombiezPackSpecimenPartIII">
 	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Pest Control III" />
-	<property name="subtitle_key" value="They breed like rodents." />
+	<property name="subtitle_key" value="They Breed like Rodents." />
 	<property name="description_key" value="Cull 50 Laboratory Specimens for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -345,7 +345,7 @@
 	<quest id="challenge_ZombiezPackSpecimenPartIV">
 	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Pest Control IV" />
-	<property name="subtitle_key" value="Holding back the flood." />
+	<property name="subtitle_key" value="Holding Back the Flood." />
 	<property name="description_key" value="Cull 100 Laboratory Specimens for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -364,7 +364,7 @@
 	<quest id="challenge_ZombiezPackSpecimenPartV">
 	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Pest Control V" />
-	<property name="subtitle_key" value="Destroying the whole nest." />
+	<property name="subtitle_key" value="Destroying the Whole Nest." />
 	<property name="description_key" value="Cull 250 Laboratory Specimens for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -442,7 +442,7 @@
 	<quest id="challenge_SnowOrczPartPartIV">
 	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Snow Orcs IV" />
-	<property name="subtitle_key" value="Snowball effect." />
+	<property name="subtitle_key" value="Snowball Effect." />
 	<property name="description_key" value="Cull 100 Snow Orcs for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -461,7 +461,7 @@
 	<quest id="challenge_SnowOrczPartPartV">
 	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Snow Orcs V" />
-	<property name="subtitle_key" value="Tolkein back the biome." />
+	<property name="subtitle_key" value="Tolkein Back the Biome." />
 	<property name="description_key" value="Cull 250 Snow Orcs for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -502,7 +502,7 @@
 	<quest id="challenge_gansspecialclownsPartII">
 	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Send in the Clowns II" />
-	<property name="subtitle_key" value="The Clowns are laughing." />
+	<property name="subtitle_key" value="The Clowns are Giggling." />
 	<property name="description_key" value="Cull 25 Special Clowns for Dukes and XP. You will know them when you see them." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -521,7 +521,7 @@
 	<quest id="challenge_gansspecialclownsPartIII">
 	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Send in the Clowns III" />
-	<property name="subtitle_key" value="The circus is in town." />
+	<property name="subtitle_key" value="The Circus is in Town." />
 	<property name="description_key" value="Cull 50 Special Clowns Specimens for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -612,14 +612,14 @@
 		
 	<reward type="Exp" value="3750"/>
 	<reward type="Item" id="casinoCoin" value="1250"/>
-	<reward type="Quest" id="challenge_NPCXSpiderPackartIII"/>
+	<reward type="Quest" id="challenge_NPCXSpiderPackPartIII"/>
 	</quest>
 	
 	<!-- 1-NPCXSpiderPack Infestation III -->
 	<quest id="challenge_NPCXSpiderPackPartIII">
 	<property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Infestation III" />
-	<property name="subtitle_key" value="Web browsing." />
+	<property name="subtitle_key" value="Web Browsing." />
 	<property name="description_key" value="Cull 50 Spiders for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -638,7 +638,7 @@
 	<quest id="challenge_NPCXSpiderPackPartIV">
 	<property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Infestation IV" />
-	<property name="subtitle_key" value="A sticky mess." />
+	<property name="subtitle_key" value="A Sticky Mess." />
 	<property name="description_key" value="Cull 100 Spiders for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -657,7 +657,7 @@
 	<quest id="challenge_NPCXSpiderPackPartV">
 	<property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Infestation V" />
-	<property name="subtitle_key" value="Silky skills." />
+	<property name="subtitle_key" value="Silky Skills." />
 	<property name="description_key" value="Cull 250 Spiders for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
@@ -671,6 +671,103 @@
 	<reward type="Item" id="casinoCoin" value="12500"/>
 	<reward type="SkillPoints" value="2" chainreward="true"/>
 	</quest>
+	
+	<!-- Darkstardragon's 1-FantasticBeastz -->	
+
+	<!-- 1-FantasticBeastz Beast Bust I -->
+	<quest id="challenge_FantasticBeastzPartI">
+    <property name="offer_key" value="Accept this quest to reduce the number of mythical beasts. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Beast Bust I" />
+	<property name="subtitle_key" value="Beast Feast." />
+	<property name="description_key" value="Cull 10 Mythical Beasts for Dukes and XP. They can be found in the Wasteland and Desert." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle,Manticore" value="10"/>
+		
+	<reward type="Exp" value="1500"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="challenge_FantasticBeastzPartII"/>
+	</quest>
+	
+	<!-- 1-FantasticBeastz Beast Bust II -->
+	<quest id="challenge_FantasticBeastzPartII">
+	<property name="offer_key" value="Accept this quest to reduce the number of mythical beasts. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Beast Bust II" />
+	<property name="subtitle_key" value="On Fire." />
+	<property name="description_key" value="Cull 25 Mythical Beasts for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle,Manticore" value="25"/>
+		
+	<reward type="Exp" value="3750"/>
+	<reward type="Item" id="casinoCoin" value="1250"/>
+	<reward type="Quest" id="challenge_FantasticBeastzPartIII"/>
+	</quest>
+	
+	<!-- 1-FantasticBeastz Beast Bust III -->
+	<quest id="challenge_FantasticBeastzPartIII">
+	<property name="offer_key" value="Accept this quest to reduce the number of mythical beasts. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Beast Bust III" />
+	<property name="subtitle_key" value="Creating a Myth." />
+	<property name="description_key" value="Cull 50 Mythical Beasts for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle,Manticore" value="50"/>
+		
+	<reward type="Exp" value="7500"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Quest" id="challenge_FantasticBeastzPartIV"/>
+	</quest>
+	
+	<!-- 1-FantasticBeastz Beast Bust IV -->
+	<quest id="challenge_FantasticBeastzPartIV">
+	<property name="offer_key" value="Accept this quest to reduce the number of mythical beasts. 50 Dukes and 150 XP per individual cull." />       
+    <property name="name_key" value="Beast Bust IV" />
+	<property name="subtitle_key" value="Turkey Shoot." />
+	<property name="description_key" value="Cull 100 Mythical Beasts for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle,Manticore" value="100"/>
+		
+	<reward type="Exp" value="15000"/>
+	<reward type="Item" id="casinoCoin" value="5000"/>
+	<reward type="Quest" id="challenge_FantasticBeastzPartV"/>
+	</quest>
+	
+	<!-- 1-FantasticBeastz Beast Bust V -->
+	<quest id="challenge_FantasticBeastzPartV">
+	<property name="offer_key" value="Accept this quest to reduce the number of mythical beasts. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
+    <property name="name_key" value="Beast Bust V" />
+	<property name="subtitle_key" value="Back to the Beginning." />
+	<property name="description_key" value="Cull 250 Mythical Beasts for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle,Manticore" value="250"/>
+		
+	<reward type="Exp" value="37500"/>
+	<reward type="Item" id="casinoCoin" value="12500"/>
+	<reward type="SkillPoints" value="2" chainreward="true"/>
+	</quest>	
 	
 	<!-- Summon Fox Friend - For loss of fox or otherwise -->	
 

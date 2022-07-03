@@ -5087,7 +5087,7 @@
 				<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffInfectionCatch"/>
 				<passive_effect name="BuffProcChance" operation="base_set" value="0.90" tags="buffBurningZombie"/>
 			</effect_group>
-		</item>		
+		</item>	
 		
 	<!-- LAZMAN'S BLOOD MOON VANGUARD REPEATABLE QUEST -->
 	
@@ -5164,6 +5164,17 @@
 				<property name="QuestGiven" value="challenge_NPCXSpiderPackI"/>
 			</property>
 		</item>
+		
+		<!-- Adds the 1-FantasticBeastz Beast Bust I note -->
+		<item name="qc_fantasticbeastz">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_fantasticbeastzDesc"/>
+			<property name="CustomIcon" value="beastz"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_FantasticBeastzPartI"/>
+			</property>
+		</item>		
 		
 	<!-- Starter 'Bundle' of Fox Food -->
 

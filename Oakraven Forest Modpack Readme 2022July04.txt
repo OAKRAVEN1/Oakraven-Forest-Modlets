@@ -46,6 +46,7 @@ This Modpack contains the following modlets/modifications:
 - Quest - Pest Control (Gives players a starting quest to cull laboratory specimens from 1-ZombiezPack)
 - Quest - Snow Orcs (Cull Darkstardragon's Orcs in the snow)
 - Quest - Infestation (Cull Xyth's Spiders with arramus' expansion abominations)
+- Quest - Beast Bust (Eliminate Darkstardragon's Beastz)
 - Quest - Summon Fox Friend (An item to spawn the 0-XNPCCore Fox to offset despawning)
 
 In addition, some Addons that are powered by 0-Score and 0-XNPCCore and bundled directly are as follows:
