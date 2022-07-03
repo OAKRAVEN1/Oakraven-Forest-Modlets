@@ -20,7 +20,8 @@
 	
 <entity_class name="zombieDemolitionRadiated" extends="zombieDemolition">
 	<property name="Tags" value="entity,zombie,walker,boss,radiated"/>
-	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>	
+	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>
+	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>	
 	<property name="Class" value="EntityZombieCop"/>
 	<property name="Mass" value="330"/>
 	<property name="SizeScale" value="1.15"/>
