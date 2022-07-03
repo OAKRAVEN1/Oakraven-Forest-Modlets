@@ -11,7 +11,7 @@
 		<texture depth="8" texture="Textures/UI/Compass/overlay-{gamelanguage}" pos="50, -12" width="380" height="27" color="[iconColor]" name="compassTexture3" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.0625 - 0.125},0" />
 		<texture depth="10" pos="227,5" width="40" height="30" pivot="center" texture="@modfolder:Textures/pointer.png"/>
 		<texture pos="240,07" depth="9" width="570" height="460" pivot="center" texture="@modfolder:Textures/Compass.png"/>
-		<sprite pos="240,-80" sprite="" color="255,255,255,255" globalopacitymod="1.8">
+		<sprite pos="730,-13" sprite="" color="255,255,255,255" globalopacitymod="1.8">
 			<label depth="2" width="300" height="30" text="{daytitle}: [{daycolor}]{day}[-] {timetitle}: {time}" font_size="28" pivot="center" effect="outline" upper_case="true" justify="center"/>
 		</sprite>
 		
