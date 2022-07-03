@@ -2,7 +2,9 @@
 
 	<!-- Vanilla Tweaks -->
 	<set xpath="/progression/level/@max_level">1000</set><!-- Default is 300 -->
-	<set xpath="/progression/level/@experience_multiplier">1.02</set><!-- Default is 1.05 -->
+	<set xpath="/progression/level/@exp_to_level">9000</set><!-- 10% less to assist level increase/GS - Default is 10000 -->	
+	<set xpath="/progression/level/@experience_multiplier">1.025</set><!-- 50% less for initial compounding increase - Default is 1.05 -->
+	
 
 	<!-- New Weapon Progression -->
 	
