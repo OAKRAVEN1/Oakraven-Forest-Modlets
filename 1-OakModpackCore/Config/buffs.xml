@@ -220,6 +220,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Entities/Vehicles?Car/car_tirePrefab.prefab" local_offset="0.5,0.4,-0.7" local_rotation="0,0,0" parent_transform="Origin"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Appliances/vent_fan_doublePrefab" local_offset="-0,0.8,-0.7" local_rotation="0,0,0" parent_transform="Origin"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Lighting/lanternPlayerPrefab" local_offset="0,0.55,2.05" local_rotation="70,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Electrical/smallGeneratorPrefab" local_offset="-0,1.0,-0.1" local_rotation="0,0,0" parent_transform="Origin"/>
 			</effect_group>
 		</buff>		
 		
