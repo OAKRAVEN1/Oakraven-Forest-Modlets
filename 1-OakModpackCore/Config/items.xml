@@ -5215,12 +5215,14 @@
 
 <item name="vehicleWhirlyBirdChassis">
 	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="vehicleGyroCopterChassis"/>	
 	<property name="EconomicValue" value="15000"/>
 	<property name="UnlockedBy" value="perkGreaseMonkey,vehicleWhirlyBirdChassisSchematic"/>
 </item>
 
 <item name="vehicleWhirlyBirdAccessories">
 	<property name="Extends" value="vehicleBicycleHandlebars"/>
+	<property name="CustomIcon" value="vehicleGyroCopterAccessories"/>	
 	<property name="EconomicValue" value="15000"/>
 	<property name="UnlockedBy" value="perkGreaseMonkey,vehicleWhirlyBirdAccessoriesSchematic"/>
 </item>

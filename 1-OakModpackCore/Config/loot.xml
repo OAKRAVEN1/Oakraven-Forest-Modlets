@@ -84,6 +84,20 @@
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
 		<item name="vehicleWhirlyBirdChassisSchematic"/>
 		<item name="vehicleWhirlyBirdAccessoriesSchematic"/>		
+	</append>
+	
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+	<lootgroup name="WhirlyBirdParts">
+		<item name="vehicleWhirlyBirdChassis"/>
+		<item name="vehicleWhirlyBirdAccessories"/>
+		<item name="vehicleWheels"/>
+		<item name="smallEngine"/>
+		<item name="carBattery"/>
+	</lootgroup>
+	</insertBefore>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">	
+		<item group="WhirlyBirdParts" loot_prob_template="ProbT3"/>
 	</append>	
 	
 </configs>
