@@ -2136,7 +2136,30 @@
 			<entity_class name="QC_zombieYoRadiated" extends="zombieYoRadiated"></entity_class>
 			<!-- Horde Leaders -->
 			<entity_class name="QC_zombieFatCopRadiated" extends="zombieFatCopRadiated"></entity_class>
-			<entity_class name="QC_zombieBikerRadiated" extends="zombieBikerRadiated"></entity_class>			
+			<entity_class name="QC_zombieBikerRadiated" extends="zombieBikerRadiated"></entity_class>
+
+<!-- Flyers -->
+
+<entity_class name="vehicleWhirlyBird"> <!-- arramus with 100% Credit to Bdubayah for MD 500 Helicopter settings from Vehicles AIO --> 
+	<property name="Tags" value="vehicle,vehiclewhirlybird"/>
+	<property name="Class" value="EntityVGyroCopter"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#Entities/Vehicles?gyrocopter_Prefab.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_gyrocopter"/>
+	<property name="NavObject" value="gyrocopter" />
+</entity_class>			
 
 	</append>
 

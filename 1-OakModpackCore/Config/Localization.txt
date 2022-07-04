@@ -21,6 +21,8 @@ perkAdvancedEngineeringRank5LongDesc,progression,perk Int,,,"Learn to craft SMG 
 
 perkPhysicianRank1LongDesc,progression,perk Int,,,"Medical healing items heal 25% more health over time. Gain 40% more XP using bandages, first aid bandages, first aid kits and splints. Can craft chemistry stations, first aid bandages and plaster casts. You can also craft an Oakraven Chemistry Station.",,,,,,,,,,,,,
 
+perkGreaseMonkeyRank5LongDesc,progression,perk Int,,,Your tinkering desire is never satisfied and only a true genius could figure out how to take to the skies with scrap iron. Can craft gyrocopter and whirly bird parts as well as quality 5 car batteries. Craft gyrocopter and whirly bird parts 33% cheaper.",,,,,,,,,,,,,
+
 gunRifleT2LeverActionMagnumRifle,items,item,,,Rifle - (Lever Action Magnum),,,,,,,,,,,,,
 gunRifleT2LeverActionMagnumRifleDesc,items,item,,,"A rifle with all the power but none of the trimmings. Scopes cannot be mounted on this model.",,,,,,,,,,,,,
 gunDragonCannon,items,item,,,Dragon Cannon,,,,,,,,,,,,,
@@ -790,6 +792,9 @@ zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
 zombieFemaleTutorialFeral,entityclasses,Entity,,,Feral Deadly Girl,,,,,,,,,,,,,
 zombieDemolitionRadiated,entityclasses,Entity,,,Radiated Demolition,,,,,,,,,,,,,
 zombieWightRadiatedShower,entityclasses,Entity,,,Radiated Shower Wight,,,,,,,,,,,,,
+
+vehicleWhirlyBird,entityclasses,Entity,,,Whirly Bird (3 Seater),,,,,,,,,,,,,
+vehicleWhirlyBirdPlaceable,vehicles,vehicle,,,Whirly Bird (3 Seater),,,,,,,,,,,,,
 
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,

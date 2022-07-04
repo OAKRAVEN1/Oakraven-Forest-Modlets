@@ -78,6 +78,12 @@
 		<item name="qc_snoworcz"/>
 		<item name="qc_NPCXSpiderPack"/>
 		<item name="qc_fantasticbeastz"/>		
+	</append>
+
+	<!-- Flyers -->
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
+		<item name="vehicleWhirlyBirdChassisSchematic"/>
+		<item name="vehicleWhirlyBirdAccessoriesSchematic"/>		
 	</append>	
 	
 </configs>

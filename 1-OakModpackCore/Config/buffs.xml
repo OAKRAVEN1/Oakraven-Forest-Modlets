@@ -182,8 +182,47 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1"  effect_name="VibrantDeSat"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1"  effect_name="Distortion"/>
 			</effect_group>
-		</buff>	
+		</buff>		
 	
+	</append>
+	
+<!-- OakPack Vehicle Checker for Attachment Decorations -->	
+	
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="OakPackVehicleChecker">
+			<requirement name="NotHasBuff" buff="OakPackVehicleChecker"/>
+		</triggered_effect>
+	</append>
+	
+	<append xpath="/buffs">
+		<buff name="OakPackVehicleChecker" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="500"/>
+			<update_rate value=".1"/>
+			<effect_group>				
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="vehicleWhirlyBirdCheck">
+					<requirement name="EntityTagCompare" target="other" tags="vehiclewhirlybird"/>
+					<requirement name="NotHasBuff" target="other" buff="vehicleWhirlyBirdCheck"/>
+				</triggered_effect>				
+			</effect_group>				
+		</buff>		
+
+<!-- Flyers -->
+
+		<buff name="vehicleWhirlyBirdCheck" hidden="true">
+			<stack_type value="ignore"/>			
+			<effect_group>
+			
+			<!-- Local offset parameters attach the prefab onto the model - 0,0,0 - First expresses left to right from central origin. / Second expresses up and down from central origin. / Third expresses front to back from central origin. -->
+			<!-- Local rotation parameters direct the angle of the prefab onto the model - 0,0,0 - First expresses forwards/backwards angle. / Second expresses left/right twist angle. / Third expresses left/right lean angle. -->
+			
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/car_tirePrefab.prefab" local_offset="-0.5,0.4,-0.7" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Entities/Vehicles?Car/car_tirePrefab.prefab" local_offset="0.5,0.4,-0.7" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Appliances/vent_fan_doublePrefab" local_offset="-0,0.8,-0.7" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Lighting/lanternPlayerPrefab" local_offset="0,0.55,2.05" local_rotation="70,0,0" parent_transform="Origin"/>
+			</effect_group>
+		</buff>		
+		
 	</append>
 
 </configs>

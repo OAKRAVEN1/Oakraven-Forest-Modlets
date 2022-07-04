@@ -5209,7 +5209,62 @@
 				<property name="UseAnimation" value="false"/>
 				<property name="QuestGiven" value="challenge_2-SummonFoxFriend"/>
 			</property>
-		</item>		
+		</item>
+
+<!-- Flyers -->
+
+<item name="vehicleWhirlyBirdChassis">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="EconomicValue" value="15000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey,vehicleWhirlyBirdChassisSchematic"/>
+</item>
+
+<item name="vehicleWhirlyBirdAccessories">
+	<property name="Extends" value="vehicleBicycleHandlebars"/>
+	<property name="EconomicValue" value="15000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey,vehicleWhirlyBirdAccessoriesSchematic"/>
+</item>
+
+<item name="vehicleWhirlyBirdPlaceable"> <!-- arramus with 100% Credit to Bdubayah for MD 500 Helicopter settings from Vehicles AIO -->
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,canHaveCosmetic"/>
+	<property name="CustomIcon" value="vehicleGyrocopterPlaceable"/>	
+	<property name="Meshfile" value="#Entities/Vehicles?gyrocopter_Prefab.prefab"/>
+	<property name="EconomicValue" value="50000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleWhirlyBird"/>
+		<property name="VehicleSize" value="2.5, 2.5, 5.5"/>
+	</property>
+	<effect_group name="vehicleGyrocopterPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="3000"/>
+	</effect_group>
+</item>
+
+<item name="vehicleWhirlyBirdChassisSchematic">
+	<property name="Extends" value="schematicNoQualityMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="vehicleGyroCopterChassis"/>
+	<property name="Unlocks" value="vehicleWhirlyBirdChassis"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWhirlyBirdChassis" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+<item name="vehicleWhirlyBirdAccessoriesSchematic">
+	<property name="Extends" value="schematicNoQualityMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="vehicleGyroCopterAccessories"/>
+	<property name="Unlocks" value="vehicleWhirlyBirdAccessories"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWhirlyBirdAccessories" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>		
 		
 	</append>
 	
