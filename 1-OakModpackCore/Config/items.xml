@@ -5228,7 +5228,7 @@
 <item name="vehicleWhirlyBirdPlaceable"> <!-- arramus with 100% Credit to Bdubayah for MD 500 Helicopter settings from Vehicles AIO -->
 	<property name="Extends" value="vehicleMinibikePlaceable"/>
 	<property name="Tags" value="vehicle,vengine,vfuel,canHaveCosmetic"/>
-	<property name="CustomIcon" value="vehicleGyrocopterPlaceable"/>	
+	<property name="CustomIcon" value="vehicleWhirlyBirdPlaceable"/>	
 	<property name="Meshfile" value="#Entities/Vehicles?gyrocopter_Prefab.prefab"/>
 	<property name="EconomicValue" value="50000"/>
 	<property class="Action1">
