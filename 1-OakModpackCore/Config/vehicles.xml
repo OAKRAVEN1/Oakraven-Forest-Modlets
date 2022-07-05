@@ -39,7 +39,7 @@
 			<property name="class" value="Engine"/>
 			<property name="slot_type" value="engine"/>
 			<property name="fuelKmPerL" value="0.05"/> <!-- MD 500 settings -->
-			<property name="foodDrain" value=".003,.003"/><!-- driving/turbo, gyro --> <!-- MD 500 settings -->
+			<property name="foodDrain" value=".002,.0025"/><!-- driving/turbo, gyro --> <!-- Between Gyro and MD 500 settings -->
 			<property name="gear1" value="
 								500,2500, -1400,800,0, 1500,9999,9999,
 								,
@@ -56,7 +56,7 @@
 
 		<property class="fuelTank">
 			<property name="class" value="FuelTank"/>
-			<property name="capacity" value="250"/> <!-- Whirligig settings -->
+			<property name="capacity" value="400"/> <!-- Between Whirligig and MD500 settings -->
 		</property>
 
 		<property class="handlebars">
