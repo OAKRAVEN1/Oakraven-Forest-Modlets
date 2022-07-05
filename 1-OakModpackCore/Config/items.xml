@@ -4190,7 +4190,7 @@
 	</property>
 
 	<effect_group name="FishStick">
-		<passive_effect name="EntityDamage" operation="base_set" value="20.4" tags="perkPummelPete"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="19.4" tags="perkPummelPete"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="4.6" tags="perkPummelPete"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkPummelPete,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="10.9" tags="primary"/>
@@ -4215,7 +4215,7 @@
 		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
 	</effect_group>
 	<effect_group name="Power Attack">
-		<passive_effect name="EntityDamage" operation="perc_add" value="1.1" tags="secondary"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.025" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="18.6" tags="secondary"/>
 	</effect_group>
