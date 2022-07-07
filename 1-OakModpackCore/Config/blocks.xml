@@ -3537,7 +3537,7 @@
 
 	<block name="WildEggplant">
 	<property name="Extends" value="cropsHarvestableMaster"/>
-    <property name="CustomIcon" value="ar_eggplant"/>
+    <property name="CustomIcon" value="eggplantplant"/>
 	<property name="Class" value="CropsGrown"/>
 	<property name="Shape" value="ModelEntity" />
 	<property name="Tag" value="TreeTrunk" />
