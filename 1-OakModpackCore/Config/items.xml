@@ -5272,12 +5272,14 @@
 
 <item name="vehicleSpiderRiderChassis">
 	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="vehicleMinibikeChassis"/>	
 	<property name="EconomicValue" value="1800"/>
 	<property name="UnlockedBy" value="perkGreaseMonkey,vehicleSpiderRiderChassisSchematic"/>
 </item>
 
 <item name="vehicleSpiderRiderHandlebars">
 	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="vehicleMinibikeHandlebars"/>	
 	<property name="EconomicValue" value="1800"/>
 	<property name="UnlockedBy" value="perkGreaseMonkey,vehicleSpiderRiderHandlebarsSchematic"/>
 </item>

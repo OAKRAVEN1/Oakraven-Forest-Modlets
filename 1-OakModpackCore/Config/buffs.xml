@@ -203,12 +203,12 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="vehicleWhirlyBirdCheck">
 					<requirement name="EntityTagCompare" target="other" tags="vehiclewhirlybird"/>
 					<requirement name="NotHasBuff" target="other" buff="vehicleWhirlyBirdCheck"/>
-				</triggered_effect>				
-			</effect_group>
+				</triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="vehicleSpiderRiderCheck">
 					<requirement name="EntityTagCompare" target="other" tags="vehiclespiderrider"/>
 					<requirement name="NotHasBuff" target="other" buff="vehicleSpiderRiderCheck"/>
-				</triggered_effect>			
+				</triggered_effect>
+			</effect_group>				
 		</buff>		
 
 <!-- Flyers -->
