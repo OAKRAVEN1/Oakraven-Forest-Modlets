@@ -5287,7 +5287,7 @@
 <item name="vehicleSpiderRiderPlaceable">
 	<property name="Extends" value="vehicleMinibikePlaceable"/> <!-- arramus -->
 	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
-	<property name="CustomIcon" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="vehicleSpiderRiderPlaceable"/>
 	<property name="CustomIconTint" value="100,100,100"/>
 	<property name="Meshfile" value="#Entities/Vehicles?minibike_Prefab.prefab"/>
 	<property name="EconomicValue" value="6000"/>
