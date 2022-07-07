@@ -1942,7 +1942,39 @@
 	<ingredient name="vehicleWhirlyBirdAccessories" count="1"/>
 	<ingredient name="smallEngine" count="2"/>
 	<ingredient name="carBattery" count="2"/>
-</recipe>		
+</recipe>
+
+<!-- Motorcycles -->
+
+<recipe name="vehicleSpiderRiderChassis" count="1" craft_time="90" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+	<ingredient name="resourceDuctTape" count="4"/>
+	<ingredient name="resourceLeather" count="4"/>
+	<ingredient name="resourceElectricParts" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1" value=".5,.5" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceLeather"/>
+	</effect_group>
+</recipe>
+
+<recipe name="vehicleSpiderRiderHandlebars" count="1" craft_time="90" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="4"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceHeadlight" count="1"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+	<ingredient name="resourceMetalPipe" count="6"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1" value=".5,.5" tags="resourceMechanicalParts,resourceSpring,resourceElectricParts,resourceMetalPipe"/>
+	</effect_group>
+</recipe>
+
+<recipe name="vehicleSpiderRiderPlaceable" count="1" craft_time="90" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="vehicleWheels" count="2"/>
+	<ingredient name="vehicleMinibikeChassis" count="1"/>
+	<ingredient name="vehicleMinibikeHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="2"/>
+	<ingredient name="carBattery" count="2"/>
+</recipe>	
 
 	</append>
 	

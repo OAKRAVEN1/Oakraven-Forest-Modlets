@@ -2159,6 +2159,29 @@
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_gyrocopter"/>
 	<property name="NavObject" value="gyrocopter" />
+</entity_class>
+
+<!-- Motorcycles -->
+
+<entity_class name="vehicleSpiderRider"> <!-- arramus -->
+	<property name="Tags" value="vehicle,vehiclespiderrider"/>
+	<property name="Class" value="EntityMinibike"/>
+	<property name="Parent" value="Cars"/>	
+	<property name="Prefab" value="#Entities/Vehicles?minibike_Prefab.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicleMotorcycle"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+	<property name="NavObject" value="minibike" />
 </entity_class>			
 
 	</append>
