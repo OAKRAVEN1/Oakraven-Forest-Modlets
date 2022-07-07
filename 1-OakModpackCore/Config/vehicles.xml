@@ -205,7 +205,7 @@
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>
 		<property name="tiltUpForce" value="5"/>
-		<property name="hopForce" value="6, .1"/>
+		<property name="hopForce" value="5, .1"/>
 		<property name="unstickForce" value="1"/>		
 		<property name="velocityMax" value="9, 13"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, .15"/>
