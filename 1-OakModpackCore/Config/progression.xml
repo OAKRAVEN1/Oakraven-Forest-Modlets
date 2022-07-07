@@ -205,7 +205,7 @@
 				tags="vehicleWhirlyBirdChassis,vehicleWhirlyBirdAccessories"/>		
 		</effect_group>
 		<effect_group>		
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1"
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"
 				tags="vehicleSpiderRiderChassis,vehicleSpiderRiderHandlebars"/>	
 		</effect_group>		
 	</append>

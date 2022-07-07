@@ -21,6 +21,7 @@ perkAdvancedEngineeringRank5LongDesc,progression,perk Int,,,"Learn to craft SMG 
 
 perkPhysicianRank1LongDesc,progression,perk Int,,,"Medical healing items heal 25% more health over time. Gain 40% more XP using bandages, first aid bandages, first aid kits and splints. Can craft chemistry stations, first aid bandages and plaster casts. You can also craft an Oakraven Chemistry Station.",,,,,,,,,,,,,
 
+perkGreaseMonkeyRank3LongDesc,progression,perk Int,,,"It was only a matter of time before going faster and carrying more gear was a necessity. You can craft motorcycle and spider rider parts, oil and quality 3 car batteries. Craft motorcycle and spider rider parts 33% cheaper.",,,,,,,,,,,,,
 perkGreaseMonkeyRank5LongDesc,progression,perk Int,,,"Your tinkering desire is never satisfied and only a true genius could figure out how to take to the skies with scrap iron. Can craft gyrocopter and whirly bird parts as well as quality 5 car batteries. Craft gyrocopter and whirly bird parts 33% cheaper.",,,,,,,,,,,,,
 
 gunRifleT2LeverActionMagnumRifle,items,item,,,Rifle - (Lever Action Magnum),,,,,,,,,,,,,

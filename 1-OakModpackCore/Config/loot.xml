@@ -88,10 +88,12 @@
 		<item name="qc_fantasticbeastz"/>		
 	</append>
 
-	<!-- Flyers -->
+	<!-- Flyers and Motorcycles -->
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
 		<item name="vehicleWhirlyBirdChassisSchematic"/>
-		<item name="vehicleWhirlyBirdAccessoriesSchematic"/>		
+		<item name="vehicleWhirlyBirdAccessoriesSchematic"/>
+		<item name="vehicleSpiderRiderChassisSchematic"/>
+		<item name="vehicleSpiderRiderHandlebarsSchematic"/>		
 	</append>
 	
 	<insertBefore xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
@@ -102,10 +104,18 @@
 		<item name="smallEngine"/>
 		<item name="carBattery"/>
 	</lootgroup>
+	<lootgroup name="SpiderRiderParts">
+		<item name="vehicleSpiderRiderChassis"/>
+		<item name="vehicleSpiderRiderHandlebars"/>
+		<item name="vehicleWheels"/>
+		<item name="smallEngine"/>
+		<item name="carBattery"/>
+	</lootgroup>
 	</insertBefore>
 	
 	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">	
 		<item group="WhirlyBirdParts" loot_prob_template="ProbT3"/>
+		<item group="SpiderRiderParts" loot_prob_template="ProbT3"/>		
 	</append>	
 	
 </configs>
