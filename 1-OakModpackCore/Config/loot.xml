@@ -89,21 +89,17 @@
 	</append>
 
 	<!-- Flyers and Motorcycles -->
-	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
-		<item name="vehicleWhirlyBirdChassisSchematic"/>
-		<item name="vehicleWhirlyBirdAccessoriesSchematic"/>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT1']">
 		<item name="vehicleSpiderRiderChassisSchematic"/>
 		<item name="vehicleSpiderRiderHandlebarsSchematic"/>		
+	</append>	
+	
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
+		<item name="vehicleWhirlyBirdChassisSchematic"/>
+		<item name="vehicleWhirlyBirdAccessoriesSchematic"/>		
 	</append>
 	
 	<insertBefore xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
-	<lootgroup name="WhirlyBirdParts">
-		<item name="vehicleWhirlyBirdChassis"/>
-		<item name="vehicleWhirlyBirdAccessories"/>
-		<item name="vehicleWheels"/>
-		<item name="smallEngine"/>
-		<item name="carBattery"/>
-	</lootgroup>
 	<lootgroup name="SpiderRiderParts">
 		<item name="vehicleSpiderRiderChassis"/>
 		<item name="vehicleSpiderRiderHandlebars"/>
@@ -111,11 +107,18 @@
 		<item name="smallEngine"/>
 		<item name="carBattery"/>
 	</lootgroup>
+	<lootgroup name="WhirlyBirdParts">
+		<item name="vehicleWhirlyBirdChassis"/>
+		<item name="vehicleWhirlyBirdAccessories"/>
+		<item name="vehicleWheels"/>
+		<item name="smallEngine"/>
+		<item name="carBattery"/>
+	</lootgroup>
 	</insertBefore>
 	
-	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">	
-		<item group="WhirlyBirdParts" loot_prob_template="ProbT3"/>
-		<item group="SpiderRiderParts" loot_prob_template="ProbT3"/>		
+	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+		<item group="SpiderRiderParts" loot_prob_template="ProbT2Cap"/>	
+		<item group="WhirlyBirdParts" loot_prob_template="ProbT3"/>		
 	</append>	
 	
 </configs>
