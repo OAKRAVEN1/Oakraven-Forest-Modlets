@@ -807,7 +807,7 @@ vehicleSpiderRiderChassisSchematic,vehicles,item,,,Spider Rider Chassis Schemati
 vehicleSpiderRiderHandlebars,vehicles,item,,,Spider Rider Handlebars,,,,,,,,,,,,,
 vehicleSpiderRiderHandlebarsSchematic,vehicles,item,,,Spider Rider Handlebars Schematic,,,,,,,,,,,,,
 vehicleSpiderRider,entityclasses,Entity,,,Spider Rider,,,,,,,,,,,,,
-vehicleSpiderPlaceable,vehicles,vehicle,,,Spider Rider,,,,,,,,,,,,,
+vehicleSpiderRiderPlaceable,vehicles,vehicle,,,Spider Rider,,,,,,,,,,,,,
 
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,
