@@ -1970,8 +1970,8 @@
 
 <recipe name="vehicleSpiderRiderPlaceable" count="1" craft_time="90" craft_area="workbench" tags="workbenchCrafting">
 	<ingredient name="vehicleWheels" count="2"/>
-	<ingredient name="vehicleMinibikeChassis" count="1"/>
-	<ingredient name="vehicleMinibikeHandlebars" count="1"/>
+	<ingredient name="vehicleSpiderRiderChassis" count="1"/>
+	<ingredient name="vehicleSpiderRiderHandlebars" count="1"/>
 	<ingredient name="smallEngine" count="2"/>
 	<ingredient name="carBattery" count="2"/>
 </recipe>	
