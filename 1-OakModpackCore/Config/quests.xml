@@ -439,7 +439,7 @@
 	</quest>
 	
 	<!-- Snow Orcz IV -->
-	<quest id="challenge_SnowOrczPartPartIV">
+	<quest id="challenge_SnowOrczPartIV">
 	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull." />       
     <property name="name_key" value="Snow Orcs IV" />
 	<property name="subtitle_key" value="Snowball Effect." />
@@ -458,7 +458,7 @@
 	</quest>
 	
 	<!-- Snow Orcz V -->
-	<quest id="challenge_SnowOrczPartPartV">
+	<quest id="challenge_SnowOrczPartV">
 	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Snow Orcs V" />
 	<property name="subtitle_key" value="Tolkein Back the Biome." />

@@ -4190,7 +4190,7 @@
 	</property>
 
 	<effect_group name="FishStick">
-		<passive_effect name="EntityDamage" operation="base_set" value="19.4" tags="perkPummelPete"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="17.4" tags="perkPummelPete"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="4.6" tags="perkPummelPete"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkPummelPete,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="10.9" tags="primary"/>
