@@ -705,7 +705,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="25"/>
+		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="10"/>
 		
 	<reward type="Exp" value="3000"/>
 	<reward type="Item" id="casinoCoin" value="1000"/>
@@ -724,7 +724,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="50"/>
+		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="15"/>
 		
 	<reward type="Exp" value="4500"/>
 	<reward type="Item" id="casinoCoin" value="1500"/>
@@ -743,7 +743,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="100"/>
+		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="20"/>
 		
 	<reward type="Exp" value="6000"/>
 	<reward type="Item" id="casinoCoin" value="2000"/>
@@ -762,12 +762,109 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="250"/>
+		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="25"/>
 		
 	<reward type="Exp" value="7500"/>
 	<reward type="Item" id="casinoCoin" value="2500"/>
 	<reward type="SkillPoints" value="2" chainreward="true"/>
-	</quest>	
+	</quest>
+
+	<!-- Darkstardragon's 1-FantasticBeastz -->	
+
+	<!-- 1-FantasticBeastz Beast Boom I -->
+	<quest id="challenge_FantasticLandBeastzPartI">
+    <property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts. 100 Dukes and 300 XP per individual cull." />       
+    <property name="name_key" value="Beast Boom I" />
+	<property name="subtitle_key" value="Beast Hunt." />
+	<property name="description_key" value="Cull 5 Land Based Mythical Beasts (Manticore) for Dukes and XP. They can be found in the Wasteland and Desert." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Manticore" value="5"/>
+		
+	<reward type="Exp" value="1500"/>
+	<reward type="Item" id="casinoCoin" value="500"/>
+	<reward type="Quest" id="challenge_FantasticLandBeastzPartII"/>
+	</quest>
+	
+	<!-- 1-FantasticBeastz Beast Bust II -->
+	<quest id="challenge_FantasticLandBeastzPartII">
+	<property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts. 100 Dukes and 300 XP per individual cull." />       
+    <property name="name_key" value="Beast Boom II" />
+	<property name="subtitle_key" value="Tail Trail." />
+	<property name="description_key" value="Cull 10 Land Based Mythical Beasts (Manticore) for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Manticore" value="10"/>
+		
+	<reward type="Exp" value="3000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
+	<reward type="Quest" id="challenge_FantasticLandBeastzPartIII"/>
+	</quest>
+	
+	<!-- 1-FantasticBeastz Beast Bust III -->
+	<quest id="challenge_FantasticLandBeastzPartIII">
+	<property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts. 100 Dukes and 300 XP per individual cull." />       
+    <property name="name_key" value="Beast Boom III" />
+	<property name="subtitle_key" value="Lion Hunter." />
+	<property name="description_key" value="Cull 15 Land Based Mythical Beasts (Manticore) for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Manticore" value="15"/>
+		
+	<reward type="Exp" value="4500"/>
+	<reward type="Item" id="casinoCoin" value="1500"/>
+	<reward type="Quest" id="challenge_FantasticLandBeastzPartIV"/>
+	</quest>
+	
+	<!-- 1-FantasticBeastz Beast Bust IV -->
+	<quest id="challenge_FantasticLandBeastzPartIV">
+	<property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts. 100 Dukes and 300 XP per individual cull." />       
+    <property name="name_key" value="Beast Boom IV" />
+	<property name="subtitle_key" value="Claw Wars." />
+	<property name="description_key" value="Cull 20 Land Based Mythical Beasts (Manticore) for Dukes and XP." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Manticore" value="20"/>
+		
+	<reward type="Exp" value="6000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
+	<reward type="Quest" id="challenge_FantasticLandBeastzPartV"/>
+	</quest>
+	
+	<!-- 1-FantasticBeastz Beast Bust V -->
+	<quest id="challenge_FantasticLandBeastzPartV">
+	<property name="offer_key" value="Accept this quest to reduce the number of flying mythical beasts. 100 Dukes and 300 XP per individual cull plus 2 bonus Skill Points. Additional Quest Notes can be found in safes." />       
+    <property name="name_key" value="Beast Boom V" />
+	<property name="subtitle_key" value="Taming the Wilds." />
+	<property name="description_key" value="Cull 25 Land Based Mythical Beasts (Manticore) for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes and from traders." />
+	<property name="icon" value="ui_game_symbol_zombie"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="easy"/>
+	<property name="shareable" value="false"/>
+	
+		<objective type="AnimalKill" id="Manticore" value="25"/>
+		
+	<reward type="Exp" value="7500"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="SkillPoints" value="2" chainreward="true"/>
+	</quest>		
 	
 	<!-- Summon Fox Friend - For loss of fox or otherwise -->	
 

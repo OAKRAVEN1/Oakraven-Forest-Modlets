@@ -76,7 +76,8 @@
 		<item name="qc_gansspecialclowns" count="1" loot_prob_template="low"/>
 		<item name="qc_snoworcz" count="1" loot_prob_template="low"/>
 		<item name="qc_NPCXSpiderPack" count="1" loot_prob_template="low"/>
-		<item name="qc_fantasticbeastz" count="1" loot_prob_template="low"/>		
+		<item name="qc_fantasticbeastz" count="1" loot_prob_template="low"/>
+		<item name="qc_fantasticlandbeastz" count="1" loot_prob_template="low"/>		
 	</append>
 	<!-- Adds Quest Notes for Laz Man Quest and 1-Addons Entities, etc.,into the same gun safe lootgroup as general safe books with a 1 count. -->	
 	<append xpath="/lootcontainers/lootgroup[@name='groupSafeBooks']">
@@ -85,7 +86,8 @@
 		<item name="qc_gansspecialclowns"/>
 		<item name="qc_snoworcz"/>
 		<item name="qc_NPCXSpiderPack"/>
-		<item name="qc_fantasticbeastz"/>		
+		<item name="qc_fantasticbeastz"/>
+		<item name="qc_fantasticlandbeastz"/>		
 	</append>
 
 	<!-- Flyers and Motorcycles -->

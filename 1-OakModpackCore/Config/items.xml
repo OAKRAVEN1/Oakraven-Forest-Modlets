@@ -5174,6 +5174,17 @@
 				<property name="UseAnimation" value="false"/>
 				<property name="QuestGiven" value="challenge_FantasticBeastzPartI"/>
 			</property>
+		</item>
+
+		<!-- Adds the 1-FantasticBeastz Beast Boom I note -->
+		<item name="qc_fantasticlandbeastz">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_fantasticlandbeastzDesc"/>
+			<property name="CustomIcon" value="landbeastz"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_FantasticLandBeastzPartI"/>
+			</property>
 		</item>		
 		
 	<!-- Starter 'Bundle' of Fox Food -->

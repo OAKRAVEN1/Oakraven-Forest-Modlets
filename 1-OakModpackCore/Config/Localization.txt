@@ -784,6 +784,9 @@ qc_NPCXSpiderPackDesc,items,Quest - Challenge,,,"A contract issued by the White 
 qc_fantasticbeastz,items,Quest - Challenge,,,"Contract: Beast Bust",,,,,,,,,,,,,
 qc_fantasticbeastzDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate Flying Mythical Beasts in the Wasteland and Desert. Earn XP and Dukes after completing each Stage, and 2 Skill Points after completing all stages.\n\nAdditional Quest Notes can be found in safes and from traders.",,,,,,,,,,,,,
 
+qc_fantasticlandbeastz,items,Quest - Challenge,,,"Contract: Beast Boom",,,,,,,,,,,,,
+qc_fantasticlandbeastzDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost. Find and eliminate the Land Based Mythical Beast (Manticore) in the Wasteland and Desert. Earn XP and Dukes after completing each Stage, and 2 Skill Points after completing all stages.\n\nAdditional Quest Notes can be found in safes and from traders.",,,,,,,,,,,,,
+
 npcAnimalFoxStarterFood,items,item,,,Fox Friend Food,,,,,,,,,,,,,
 npcAnimalFoxStarterFoodDesc,items,item,,,"While you were unconscious, a friendly fox licked your face and brought you back to your senses. The fox is still very close and will join your quest if you share the contents of this can.",,,,,,,,,,,,,
 

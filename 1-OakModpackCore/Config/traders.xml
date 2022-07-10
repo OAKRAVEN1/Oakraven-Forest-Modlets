@@ -8,7 +8,8 @@
 		<item name="qc_snoworcz" count="1" prob="0.7"/>
 		<item name="qc_gansspecialclowns" count="1" prob="0.7"/>
 		<item name="qc_NPCXSpiderPack" count="1" prob="0.7"/>
-		<item name="qc_fantasticbeastz" count="1" prob="0.7"/>	
+		<item name="qc_fantasticbeastz" count="1" prob="0.7"/>
+		<item name="qc_fantasticlandbeastz" count="1" prob="0.7"/>		
 		<item name="noteqc_2-SummonFoxFriend" count="1" prob="0.8"/>		
 	</append>
 	
@@ -18,7 +19,8 @@
 		<item name="qc_snoworcz" count="1" prob="0.7"/>
 		<item name="qc_gansspecialclowns" count="1" prob="0.7"/>
 		<item name="qc_NPCXSpiderPack" count="1" prob="0.7"/>
-		<item name="qc_fantasticbeastz" count="1" prob="0.7"/>	
+		<item name="qc_fantasticbeastz" count="1" prob="0.7"/>
+		<item name="qc_fantasticlandbeastz" count="1" prob="0.7"/>		
 		<item name="noteqc_2-SummonFoxFriend" count="1" prob="0.8"/>	
 	</append>
 
