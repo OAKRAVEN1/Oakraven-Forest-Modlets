@@ -773,7 +773,7 @@
 
 	<!-- 1-FantasticBeastz Beast Boom I -->
 	<quest id="challenge_FantasticLandBeastzPartI">
-    <property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts. 100 Dukes and 300 XP per individual cull." />       
+    <property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts (Manticore). 100 Dukes and 300 XP per individual cull." />       
     <property name="name_key" value="Beast Boom I" />
 	<property name="subtitle_key" value="Beast Hunt." />
 	<property name="description_key" value="Cull 5 Land Based Mythical Beasts (Manticore) for Dukes and XP. They can be found in the Wasteland and Desert." />
@@ -792,7 +792,7 @@
 	
 	<!-- 1-FantasticBeastz Beast Bust II -->
 	<quest id="challenge_FantasticLandBeastzPartII">
-	<property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts. 100 Dukes and 300 XP per individual cull." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts (Manticore). 100 Dukes and 300 XP per individual cull." />       
     <property name="name_key" value="Beast Boom II" />
 	<property name="subtitle_key" value="Tail Trail." />
 	<property name="description_key" value="Cull 10 Land Based Mythical Beasts (Manticore) for Dukes and XP." />
@@ -811,7 +811,7 @@
 	
 	<!-- 1-FantasticBeastz Beast Bust III -->
 	<quest id="challenge_FantasticLandBeastzPartIII">
-	<property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts. 100 Dukes and 300 XP per individual cull." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts (Manticore). 100 Dukes and 300 XP per individual cull." />       
     <property name="name_key" value="Beast Boom III" />
 	<property name="subtitle_key" value="Lion Hunter." />
 	<property name="description_key" value="Cull 15 Land Based Mythical Beasts (Manticore) for Dukes and XP." />
@@ -830,7 +830,7 @@
 	
 	<!-- 1-FantasticBeastz Beast Bust IV -->
 	<quest id="challenge_FantasticLandBeastzPartIV">
-	<property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts. 100 Dukes and 300 XP per individual cull." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts (Manticore). 100 Dukes and 300 XP per individual cull." />       
     <property name="name_key" value="Beast Boom IV" />
 	<property name="subtitle_key" value="Claw Wars." />
 	<property name="description_key" value="Cull 20 Land Based Mythical Beasts (Manticore) for Dukes and XP." />
@@ -849,7 +849,7 @@
 	
 	<!-- 1-FantasticBeastz Beast Bust V -->
 	<quest id="challenge_FantasticLandBeastzPartV">
-	<property name="offer_key" value="Accept this quest to reduce the number of flying mythical beasts. 100 Dukes and 300 XP per individual cull plus 2 bonus Skill Points. Additional Quest Notes can be found in safes." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of land based mythical beasts (Manticore). 100 Dukes and 300 XP per individual cull plus 2 bonus Skill Points. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Beast Boom V" />
 	<property name="subtitle_key" value="Taming the Wilds." />
 	<property name="description_key" value="Cull 25 Land Based Mythical Beasts (Manticore) for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes and from traders." />
