@@ -1875,7 +1875,7 @@
 	    <ingredient name="resourceCoal" count="1"/>
 	    <ingredient name="resourcePotassiumNitratePowder" count="1"/>
     </recipe>
-    <recipe name="resourceGunPowderBundle" count="4" craft_time="800" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
+    <recipe name="resourceGunPowderBundle" count="2" craft_time="800" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
 	    <ingredient name="resourceCoal" count="800"/>
 	    <ingredient name="resourcePotassiumNitratePowder" count="800"/>
     </recipe>
