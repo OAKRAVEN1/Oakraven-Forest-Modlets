@@ -362,10 +362,10 @@
 	
 	<!-- 1-ZombiezPack Pest Control V -->
 	<quest id="challenge_ZombiezPackSpecimenPartV">
-	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of escaped Laboratory Specimens. 50 Dukes and 150 XP per individual cull plus 2 bonus Skill Points. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Pest Control V" />
 	<property name="subtitle_key" value="Destroying the Whole Nest." />
-	<property name="description_key" value="Cull 250 Laboratory Specimens for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
+	<property name="description_key" value="Cull 250 Laboratory Specimens for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes and from traders." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -393,7 +393,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="ZombieKill" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="10"/>
+		<objective type="EntityAliveSDXKill, SCore" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="10"/>
 		
 	<reward type="Exp" value="1500"/>
 	<reward type="Item" id="casinoCoin" value="500"/>
@@ -412,7 +412,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="ZombieKill" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="25"/>
+		<objective type="EntityAliveSDXKill, SCore" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="25"/>
 		
 	<reward type="Exp" value="3750"/>
 	<reward type="Item" id="casinoCoin" value="1250"/>
@@ -431,7 +431,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="ZombieKill" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="50"/>
+		<objective type="EntityAliveSDXKill, SCore" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="50"/>
 		
 	<reward type="Exp" value="7500"/>
 	<reward type="Item" id="casinoCoin" value="2500"/>
@@ -450,7 +450,7 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="ZombieKill" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="100"/>
+		<objective type="EntityAliveSDXKill, SCore" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="100"/>
 		
 	<reward type="Exp" value="15000"/>
 	<reward type="Item" id="casinoCoin" value="5000"/>
@@ -459,17 +459,17 @@
 	
 	<!-- Snow Orcz V -->
 	<quest id="challenge_SnowOrczPartV">
-	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of Snow Orcs in the Snow Biome. 50 Dukes and 150 XP per individual cull plus 2 bonus Skill Points. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Snow Orcs V" />
 	<property name="subtitle_key" value="Tolkein Back the Biome." />
-	<property name="description_key" value="Cull 250 Snow Orcs for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
+	<property name="description_key" value="Cull 250 Snow Orcs for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes and from traders." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="ZombieKill" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="250"/>
+		<objective type="EntityAliveSDXKill, SCore" id="OrcGurl,OrcBandit,OrcRaider,OrcArcher,OrcCrossbowman,OrcShaman,OrcBerzerker,OrcUruk,OrcSlavemaster,OrcMatron,OrcSlaveBald,OrcSlaveBeard" value="250"/>
 		
 	<reward type="Exp" value="37500"/>
 	<reward type="Item" id="casinoCoin" value="12500"/>
@@ -557,10 +557,10 @@
 	
 	<!-- 1-GansSpecialZombies Send in the Clowns V -->
 	<quest id="challenge_gansspecialclownsPartV">
-	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of Gans Special Zombies. 50 Dukes and 150 XP per individual cull plus 2 bonus Skill Points. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Send in the Clowns V" />
 	<property name="subtitle_key" value="Bring down the curtains." />
-	<property name="description_key" value="Cull 250 Special Clowns for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found safes." />
+	<property name="description_key" value="Cull 250 Special Clowns for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes and from traders." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -655,10 +655,10 @@
 	
 	<!-- 1-NPCXSpiderPack Infestation V -->
 	<quest id="challenge_NPCXSpiderPackPartV">
-	<property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of mutant spiders. 50 Dukes and 150 XP per individual cull plus 2 bonus Skill Points. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Infestation V" />
 	<property name="subtitle_key" value="Silky Skills." />
-	<property name="description_key" value="Cull 250 Spiders for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
+	<property name="description_key" value="Cull 250 Spiders for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes and from traders." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -676,17 +676,17 @@
 
 	<!-- 1-FantasticBeastz Beast Bust I -->
 	<quest id="challenge_FantasticBeastzPartI">
-    <property name="offer_key" value="Accept this quest to reduce the number of mythical beasts. 50 Dukes and 150 XP per individual cull." />       
+    <property name="offer_key" value="Accept this quest to reduce the number of flying mythical beasts. 100 Dukes and 300 XP per individual cull." />       
     <property name="name_key" value="Beast Bust I" />
 	<property name="subtitle_key" value="Beast Feast." />
-	<property name="description_key" value="Cull 10 Mythical Beasts for Dukes and XP. They can be found in the Wasteland and Desert." />
+	<property name="description_key" value="Cull 5 Flying Mythical Beasts for Dukes and XP. They can be found in the Wasteland and Desert." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="AnimalKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle,Manticore" value="10"/>
+		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="5"/>
 		
 	<reward type="Exp" value="1500"/>
 	<reward type="Item" id="casinoCoin" value="500"/>
@@ -695,77 +695,77 @@
 	
 	<!-- 1-FantasticBeastz Beast Bust II -->
 	<quest id="challenge_FantasticBeastzPartII">
-	<property name="offer_key" value="Accept this quest to reduce the number of mythical beasts. 50 Dukes and 150 XP per individual cull." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of flying mythical beasts. 100 Dukes and 300 XP per individual cull." />       
     <property name="name_key" value="Beast Bust II" />
 	<property name="subtitle_key" value="On Fire." />
-	<property name="description_key" value="Cull 25 Mythical Beasts for Dukes and XP." />
+	<property name="description_key" value="Cull 10 Flying Mythical Beasts for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="AnimalKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle,Manticore" value="25"/>
+		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="25"/>
 		
-	<reward type="Exp" value="3750"/>
-	<reward type="Item" id="casinoCoin" value="1250"/>
+	<reward type="Exp" value="3000"/>
+	<reward type="Item" id="casinoCoin" value="1000"/>
 	<reward type="Quest" id="challenge_FantasticBeastzPartIII"/>
 	</quest>
 	
 	<!-- 1-FantasticBeastz Beast Bust III -->
 	<quest id="challenge_FantasticBeastzPartIII">
-	<property name="offer_key" value="Accept this quest to reduce the number of mythical beasts. 50 Dukes and 150 XP per individual cull." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of flying mythical beasts. 100 Dukes and 300 XP per individual cull." />       
     <property name="name_key" value="Beast Bust III" />
 	<property name="subtitle_key" value="Creating a Myth." />
-	<property name="description_key" value="Cull 50 Mythical Beasts for Dukes and XP." />
+	<property name="description_key" value="Cull 15 Flying Mythical Beasts for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="AnimalKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle,Manticore" value="50"/>
+		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="50"/>
 		
-	<reward type="Exp" value="7500"/>
-	<reward type="Item" id="casinoCoin" value="2500"/>
+	<reward type="Exp" value="4500"/>
+	<reward type="Item" id="casinoCoin" value="1500"/>
 	<reward type="Quest" id="challenge_FantasticBeastzPartIV"/>
 	</quest>
 	
 	<!-- 1-FantasticBeastz Beast Bust IV -->
 	<quest id="challenge_FantasticBeastzPartIV">
-	<property name="offer_key" value="Accept this quest to reduce the number of mythical beasts. 50 Dukes and 150 XP per individual cull." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of flying mythical beasts. 100 Dukes and 300 XP per individual cull." />       
     <property name="name_key" value="Beast Bust IV" />
 	<property name="subtitle_key" value="Turkey Shoot." />
-	<property name="description_key" value="Cull 100 Mythical Beasts for Dukes and XP." />
+	<property name="description_key" value="Cull 20 Flying Mythical Beasts for Dukes and XP." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="AnimalKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle,Manticore" value="100"/>
+		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="100"/>
 		
-	<reward type="Exp" value="15000"/>
-	<reward type="Item" id="casinoCoin" value="5000"/>
+	<reward type="Exp" value="6000"/>
+	<reward type="Item" id="casinoCoin" value="2000"/>
 	<reward type="Quest" id="challenge_FantasticBeastzPartV"/>
 	</quest>
 	
 	<!-- 1-FantasticBeastz Beast Bust V -->
 	<quest id="challenge_FantasticBeastzPartV">
-	<property name="offer_key" value="Accept this quest to reduce the number of mythical beasts. 50 Dukes and 150 XP per individual cull plus a bonus Skill Point. Additional Quest Notes can be found in safes." />       
+	<property name="offer_key" value="Accept this quest to reduce the number of flying mythical beasts. 100 Dukes and 300 XP per individual cull plus 2 bonus Skill Points. Additional Quest Notes can be found in safes." />       
     <property name="name_key" value="Beast Bust V" />
 	<property name="subtitle_key" value="Back to the Beginning." />
-	<property name="description_key" value="Cull 250 Mythical Beasts for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes." />
+	<property name="description_key" value="Cull 25 Flying Mythical Beasts for Dukes, XP, and 2 Skill Points. Additional Quest Notes can be found in safes and from traders." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 	
-		<objective type="AnimalKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle,Manticore" value="250"/>
+		<objective type="ZombieKill" id="Harpy,Griffon,FireBreathingDragon,AcidBreathingDragon,GiantBat,Gargoyle" value="250"/>
 		
-	<reward type="Exp" value="37500"/>
-	<reward type="Item" id="casinoCoin" value="12500"/>
+	<reward type="Exp" value="7500"/>
+	<reward type="Item" id="casinoCoin" value="2500"/>
 	<reward type="SkillPoints" value="2" chainreward="true"/>
 	</quest>	
 	
