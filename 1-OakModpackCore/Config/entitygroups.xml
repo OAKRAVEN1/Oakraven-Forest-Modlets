@@ -88,29 +88,29 @@
 	
 	<!-- Lowest Vanilla SnowZombies is zombieLumberjack prob=1.0 -->	
 	<append xpath="/entitygroups/entitygroup[@name='SnowZombies']">
-        <entity name="npcAirForceTRifle" prob="0.1" />
-        <entity name="npcTattooGurlTRifle" prob="0.1" />
-        <entity name="npcCosplayerBow" prob="0.1" />
-        <entity name="npcWrestlerEmptyHand" prob="0.1" />
-        <entity name="npcMrFriendlyM60" prob="0.1" /> 
+        <entity name="npcAirForceTRifle" prob="0.05" />
+        <entity name="npcTattooGurlTRifle" prob="0.05" />
+        <entity name="npcCosplayerBow" prob="0.05" />
+        <entity name="npcWrestlerEmptyHand" prob="0.05" />
+        <entity name="npcMrFriendlyM60" prob="0.05" /> 
 	</append>	
 
 	<!-- Lowest Vanilla ZombiesWasteland is mixed prob=1.0 -->
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
-        <entity name="npcAirForceTRifle" prob="0.1" />
-        <entity name="npcTattooGurlTRifle" prob="0.1" />
-        <entity name="npcCosplayerBow" prob="0.1" />
-        <entity name="npcWrestlerEmptyHand" prob="0.1" />
-        <entity name="npcMrFriendlyM60" prob="0.1" /> 		
+        <entity name="npcAirForceTRifle" prob="0.05" />
+        <entity name="npcTattooGurlTRifle" prob="0.05" />
+        <entity name="npcCosplayerBow" prob="0.05" />
+        <entity name="npcWrestlerEmptyHand" prob="0.05" />
+        <entity name="npcMrFriendlyM60" prob="0.05" /> 		
 	</append>
 
 	<!-- Lowest Vanilla ZombiesWastelandNight is mixed prob=1.0 -->
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
-        <entity name="npcAirForceTRifle" prob="0.1" />
-        <entity name="npcTattooGurlTRifle" prob="0.1" />
-        <entity name="npcCosplayerBow" prob="0.1" />
-        <entity name="npcWrestlerEmptyHand" prob="0.1" />
-        <entity name="npcMrFriendlyM60" prob="0.1" />    	
+        <entity name="npcAirForceTRifle" prob="0.05" />
+        <entity name="npcTattooGurlTRifle" prob="0.05" />
+        <entity name="npcCosplayerBow" prob="0.05" />
+        <entity name="npcWrestlerEmptyHand" prob="0.05" />
+        <entity name="npcMrFriendlyM60" prob="0.05" />    	
 	</append>	
 	
       <!-- Entity groups used by spawners for sleeper volumes -->
@@ -401,18 +401,18 @@
 
 <!-- Lowest Vanilla SnowZombies is zombieLumberjack prob=1.0 -->	
 	<append xpath="/entitygroups/entitygroup[@name='SnowZombies']">
-		<entity name="OrcGurl" prob="0.1" />
-        <entity name="OrcBandit" prob="0.1" />
-		<entity name="OrcRaider" prob="0.1" />
-		<entity name="OrcArcher" prob="0.1" />
-		<entity name="OrcCrossbowman" prob="0.1" />
-		<entity name="OrcShaman" prob="0.1" />
-        <entity name="OrcSlavemaster" prob="0.1" />
-		<entity name="OrcMatron" prob="0.1" />
-		<entity name="OrcSlaveBald" prob="0.1" />
-		<entity name="OrcSlaveBeard" prob="0.1" />  
-        <entity name="OrcBerzerker" prob="0.1" />
-		<entity name="OrcUruk" prob="0.1" />		
+		<entity name="OrcGurl" prob="0.25" />
+        <entity name="OrcBandit" prob="0.25" />
+		<entity name="OrcRaider" prob="0.25" />
+		<entity name="OrcArcher" prob="0.25" />
+		<entity name="OrcCrossbowman" prob="0.25" />
+		<entity name="OrcShaman" prob="0.25" />
+        <entity name="OrcSlavemaster" prob="0.25" />
+		<entity name="OrcMatron" prob="0.25" />
+		<entity name="OrcSlaveBald" prob="0.25" />
+		<entity name="OrcSlaveBeard" prob="0.25" />  
+        <entity name="OrcBerzerker" prob="0.25" />
+		<entity name="OrcUruk" prob="0.25" />		
 	</append>
 
 	<!-- Bandit Sleepers - ALL -->
@@ -975,19 +975,19 @@
 	</append>
 		
 	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoeFeral' and not(@prob='0')]]">
-                <entity name="BloatedParasiteFeral" prob=".1" /><!-- Default .15 for all -->
-                <entity name="ExperimentZFeral" prob=".1" />
-                <entity name="SwatZombieFeral" prob=".1" />
-                <entity name="SwatCaptainZombieFeral" prob=".1" />
-                <entity name="ParasiteFeral" prob=".1" />				
+                <entity name="BloatedParasiteFeral" prob=".125" /><!-- Default .15 for all -->
+                <entity name="ExperimentZFeral" prob=".125" />
+                <entity name="SwatZombieFeral" prob=".125" />
+                <entity name="SwatCaptainZombieFeral" prob=".125" />
+                <entity name="ParasiteFeral" prob=".125" />				
 	</append>
 	
 	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoeRadiated' and not(@prob='0')]]">
-                <entity name="BloatedParasiteRadiated" prob=".1" /><!-- Default .15 for all -->
-                <entity name="ExperimentZRadiated" prob=".1" />
-                <entity name="SwatZombieRadiated" prob=".1" />
-                <entity name="SwatCaptainZombieRadiated" prob=".1" />
-                <entity name="ParasiteRadiated" prob=".1" />				
+                <entity name="BloatedParasiteRadiated" prob=".125" /><!-- Default .15 for all -->
+                <entity name="ExperimentZRadiated" prob=".125" />
+                <entity name="SwatZombieRadiated" prob=".125" />
+                <entity name="SwatCaptainZombieRadiated" prob=".125" />
+                <entity name="ParasiteRadiated" prob=".125" />				
 	</append>
 	
 	<!-- Gans Special Zombies from 1-GansSpecialZombies and 2-GansSpecialFeralandRadiatedZombies -->	
@@ -998,14 +998,14 @@
         <entity name="zombieWarZombieV1" prob=".25" />
     </append>
     <append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieBoeFeral' and not(@prob='0')]]">
-        <entity name="zombieWhiteClownFeral" prob=".1" />
-        <entity name="zombieWarZombieFeral" prob=".1" />
-        <entity name="zombieWarZombieV1Feral" prob=".1" />
+        <entity name="zombieWhiteClownFeral" prob=".125" />
+        <entity name="zombieWarZombieFeral" prob=".125" />
+        <entity name="zombieWarZombieV1Feral" prob=".125" />
     </append>
     <append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieBoeRadiated' and not(@prob='0')]]">
-        <entity name="zombieWhiteClownRadiated" prob=".1" />
-        <entity name="zombieWarZombieRadiated" prob=".1" />
-        <entity name="zombieWarZombieV1Radiated" prob=".1" />
+        <entity name="zombieWhiteClownRadiated" prob=".125" />
+        <entity name="zombieWarZombieRadiated" prob=".125" />
+        <entity name="zombieWarZombieV1Radiated" prob=".125" />
     </append>
 
 		<!-- Xyth's Spiders from 1-NPCXSpiderPack -->
@@ -1105,13 +1105,13 @@
 	<!-- BIOME Spawning -->
 
     <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
-		<entity name="Harpy" prob="0.5" />
-        <entity name="Griffon" prob="1.0" />
-		<entity name="FireBreathingDragon" prob="0.5" />
-		<entity name="AcidBreathingDragon" prob="0.5" />
-		<entity name="GiantBat" prob="0.5" />
-		<entity name="Gargoyle" prob="0.5" />
- 		<entity name="Manticore" prob="0.5" />		
+		<entity name="Harpy" prob="1.0" />
+        <entity name="Griffon" prob="2.0" />
+		<entity name="FireBreathingDragon" prob="1.0" />
+		<entity name="AcidBreathingDragon" prob="1.0" />
+		<entity name="GiantBat" prob="1.0" />
+		<entity name="Gargoyle" prob="1.0" />
+ 		<entity name="Manticore" prob="1.0" />		
 	</append>
 	
     <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
@@ -1380,6 +1380,45 @@
 	<set xpath="/entitygroups/entitygroup[contains(@name,'feralHordeStage')]/entity[@name='animalZombieVultureRadiated']/@name">BM_animalZombieVultureRadiated</set-->
 
 	<!-- VANILLA PLUS ADDITIONS FOR BLOOD MOON -->
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS7']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS10']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS13']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS16']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>	
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS19']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>	
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS23']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS27']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS31']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS35']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS40']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS44']"><entity name="zombieDemolitionRadiated" prob="0.025"/><entity name="zombieWightRadiatedShower" prob="0.025"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS49']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>	
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS54']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS59']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS64']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS69']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS74']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS80']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS85']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>	
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS91']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>	
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS97']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS103']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS109']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS115']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS121']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS127']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS133']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>	
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS140']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS147']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>	
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS153']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS160']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS167']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS174']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS181']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS188']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS195']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>	
 	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS202']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
 	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS210']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
 	<append xpath="/entitygroups/entitygroup[@name='feralHordeStageGS217']"><entity name="zombieDemolitionRadiated" prob="0.05"/><entity name="zombieWightRadiatedShower" prob="0.05"/></append>
