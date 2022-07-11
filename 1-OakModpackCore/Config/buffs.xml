@@ -208,6 +208,18 @@
 					<requirement name="EntityTagCompare" target="other" tags="vehiclespiderrider"/>
 					<requirement name="NotHasBuff" target="other" buff="vehicleSpiderRiderCheck"/>
 				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="vehicleHellDawgBikeCheck">
+					<requirement name="EntityTagCompare" target="other" tags="vehiclehelldawg"/>
+					<requirement name="NotHasBuff" target="other" buff="vehicleHellDawgBikeCheck"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="vehicleHellSpikes4x4Check">
+					<requirement name="EntityTagCompare" target="other" tags="vehiclehellspikes4x4"/>
+					<requirement name="NotHasBuff" target="other" buff="vehicleHellSpikes4x4Check"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="vehicleHellMaxCarCheck"> 
+					<requirement name="EntityTagCompare" target="other" tags="vehiclehellmaxcar"/>
+					<requirement name="NotHasBuff" target="other" buff="vehicleHellMaxCarCheck"/>
+				</triggered_effect>				
 			</effect_group>				
 		</buff>		
 
@@ -240,7 +252,90 @@
 					<requirement name="EntityTagCompare" target="other" tags="zombie,enemy"/>
 				</triggered_effect>
 			</effect_group>
+		</buff>
+
+		<buff name="vehicleHellDawgBikeCheck" hidden="true">	
+			<stack_type value="ignore"/>			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true"  transform_path="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset=".15,.1,-.2" local_rotation="0,0,0" parent_transform="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/p_torch_wall" local_offset="-.15,.1,-.2" local_rotation="0,0,0" parent_transform="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  transform_path="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Ranged/RocketLauncher/rocketlauncherPrefab.prefab" local_offset="0,-0.5,.5" local_rotation="45,0,-45" parent_transform="Origin/handlebar_joint"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?weapon_bags_smallPrefab.prefab" local_offset="0,.85,-0.8" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset=".24,.58,0.9" local_rotation="90,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset="-.24,.58,0.9" local_rotation="90,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/motorPrefab.prefab" local_offset="0,.6,0" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="torch02_firePrefab" local_offset=".15,-.9,1" local_rotation="90,0,180" parent_transform="Origin/handlebar_joint"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/torch02_firePrefab" local_offset="-.15,-.9,1" local_rotation="90,0,180" parent_transform="Origin/handlebar_joint"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab" local_offset=".27,1,-.5" local_rotation="-30,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab" local_offset="-.27,1,-.5" local_rotation="-25,0,0" parent_transform="Origin"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1.2" buff="buffBurningElement">
+					<requirement name="EntityTagCompare" target="other" tags="zombie,enemy"/>
+				</triggered_effect>
+			</effect_group>
 		</buff>		
+
+<!-- Cars and Jeeps -->
+
+		<buff name="vehicleHellSpikes4x4Check" hidden="true">
+			<stack_type value="ignore"/>		
+			<effect_group>
+			   <triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true"  transform_path="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset=".5,2,-1.15" local_rotation="0,0,0" parent_transform="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/p_torch_wall" local_offset="-.5,2,-1.15" local_rotation="0,0,0" parent_transform="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Lighting/lanternPlayerPrefab" local_offset="0,1.1,.5" local_rotation="-14,0,0" parent_transform="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  transform_path="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Zombies?Zombies/halfCorpsePrefab.prefab" local_offset="0,1,-2" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Zombies?Zombies/corpse2Prefab.prefab" local_offset="0,1,2" local_rotation="0,90,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Plants/pumpkinJackoLanternPrefab" local_offset="0,2,0" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Bandits/Barbedwire/barbedwire_spindlePrefab" local_offset="1,0.5,-0.3" local_rotation="0,90,0" parent_transform="GameObject"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Bandits/Barbedwire/barbedwire_spindlePrefab" local_offset="-1,0.5,-0.3" local_rotation="0,90,0" parent_transform="Mesh"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Bandits/Barbedwire/barbedwire_spindle_diagonal_1mPrefab" local_offset="0,0.4,2" local_rotation="0,45,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Commercial/posterMovieMammasJusticePrefab" local_offset="0,1.85,1.2" local_rotation="-83,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Traps/trap_spikes01_damage01Prefab" local_offset="-.55,1.2,1.5" local_rotation="-60,90,45" parent_transform="GameObject"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Traps/trap_spikes01_damage01Prefab" local_offset=".55,1.2,1.5" local_rotation="70,90,45" parent_transform="Mesh"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Traps/trap_spikes01_damage02Prefab" local_offset="-.25,.7,2" local_rotation="90,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Traps/trap_spikes01_damage01Prefab" local_offset=".25,.7,2" local_rotation="90,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset=".8,1,1.5" local_rotation="90,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset="-.8,1,1.5" local_rotation="90,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/ClubIron/ClubIronPrefab.prefab" local_offset="0.8,0.7,-2" local_rotation="0,0,-90" parent_transform="GameObject"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/ClubIron/ClubIronPrefab.prefab" local_offset="-0.8,0.7,-2" local_rotation="0,0,90" parent_transform="Mesh"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="2" buff="buffInjuryKnockdown02,buffInjuryCrippled01">
+					<requirement name="EntityTagCompare" target="other" tags="zombie,enemy"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="vehicleHellMaxCarCheck" hidden="true">
+			<stack_type value="ignore"/>		
+			<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true"  transform_path="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset=".6,.6,-4.2" local_rotation="90,0,0" parent_transform="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/p_torch_wall" local_offset="-.6,.6,-4.2" local_rotation="90,0,0" parent_transform="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  transform_path="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="Physics" transform_path="Box2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="Physics" transform_path="BoxL"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="Physics" transform_path="BoxR"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="Physics" transform_path="BoxPipeL"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="Physics" transform_path="BoxPipeR"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  transform_path="car_mesh"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/car_black_dmg0Prefab.prefab" local_offset="0,0,-1" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Lighting/torch_wall_playerPrefab" local_offset="-1.6,0.5,.5" local_rotation="0,-90,0" parent_transform="GameObject"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Lighting/torch_wall_playerPrefab" local_offset="1.6,0.5,0.5" local_rotation="0,90,0" parent_transform="Mesh"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/motorPrefab.prefab" local_offset="0,0.8,0.5" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset="1.1,.6,1" local_rotation="90,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset="-1.1,.6,1" local_rotation="90,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/trunk_lid_flippedPrefab.prefab" local_offset="0.65,0.5,-2.3" local_rotation="90,0,90" parent_transform="GameObject"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/trunk_lid_flippedPrefab.prefab" local_offset="-0.65,0.5,-3.3" local_rotation="90,180,90" parent_transform="Mesh"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Crafting/sign_wood_1x1_Prefab" local_offset="1.55,0.4,0.7" local_rotation="0,90,0" parent_transform="GameObject"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Crafting/sign_wood_1x1_Prefab" local_offset="-1.55,0.4,0.7" local_rotation="0,270,0" parent_transform="Mesh"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/car_wheelPrefab.prefab" local_offset="0,1.5,-3" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="torch02_firePrefab" local_offset=".6,.6,-4.3" local_rotation="90,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/torch02_firePrefab" local_offset="-.6,.6,-4.3" local_rotation="90,0,0" parent_transform="Origin"/>
+			</effect_group>
+		</buff>
 		
 	</append>
 

@@ -812,5 +812,26 @@ vehicleSpiderRiderHandlebarsSchematic,vehicles,item,,,Spider Rider Handlebars Sc
 vehicleSpiderRider,entityclasses,Entity,,,Spider Rider,,,,,,,,,,,,,
 vehicleSpiderRiderPlaceable,vehicles,vehicle,,,Spider Rider,,,,,,,,,,,,,
 
+vehicleHellDawgChassis,vehicles,item,,,Hell Dawg Chassis,,,,,,,,,,,,,,
+vehicleHellDawgChassisSchematic,vehicles,item,,,Hell Dawg Chassis Schematic,,,,,,,,,,,,,
+vehicleHellDawgHandlebars,vehicles,item,,,Hell Dawg Handlebars,,,,,,,,,,,,,
+vehicleHellDawgHandlebarsSchematic,vehicles,item,,,Hell Dawg Handlebars Schematic,,,,,,,,,,,,,
+vehicleHellDawg,entityclasses,Entity,,,Hell Dawg,,,,,,,,,,,,,
+vehicleHellDawgPlaceable,vehicles,vehicle,,,Hell Dawg,,,,,,,,,,,,,
+
+vehicleHellSpikes4x4Chassis,vehicles,item,,,Hell Spikes Chassis,,,,,,,,,,,,,,
+vehicleHellSpikes4x4ChassisSchematic,vehicles,item,,,Hell Spikes Chassis Schematic,,,,,,,,,,,,,
+vehicleHellSpikes4x4Accessories,vehicles,item,,,Hell Spikes Accessories,,,,,,,,,,,,,
+vehicleHellSpikes4x4AccessoriesSchematic,vehicles,item,,,Hell Spikes Accessories Schematic,,,,,,,,,,,,,
+vehicleHellSpikes4x4,entityclasses,Entity,,,Hell Spikes,,,,,,,,,,,,,
+vehicleHellSpikes4x4Placeable,vehicles,vehicle,,,Hell Spikes,,,,,,,,,,,,,
+
+vehicleHellMaxCarChassis,vehicles,item,,,Hell Max Car Chassis,,,,,,,,,,,,,,
+vehicleHellMaxCarChassisSchematic,vehicles,item,,,Hell Max Car Chassis Schematic,,,,,,,,,,,,,
+vehicleHellMaxCarAccessories,vehicles,item,,,Hell Max Car Accessories,,,,,,,,,,,,,
+vehicleHellMaxCarAccessoriesSchematic,vehicles,item,,,Hell Max Car Accessories Schematic,,,,,,,,,,,,,
+vehicleHellMaxCar,entityclasses,Entity,,,Hell Max Car,,,,,,,,,,,,,
+vehicleHellMaxCarPlaceable,vehicles,vehicle,,,Hell Max Car,,,,,,,,,,,,,
+
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,

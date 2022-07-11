@@ -197,7 +197,7 @@
 	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='2,5']/@tags">,PowderMixer,FishOven</append>
 	<append xpath="/progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@level='1,4']/@tags">,OakChemistryStation</append>
 
-	<!-- flyers and motorcycles -->
+	<!-- flyers, motorcycles, cars, and jeeps -->
 
 	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']">
 		<effect_group>		
@@ -205,8 +205,12 @@
 				tags="vehicleWhirlyBirdChassis,vehicleWhirlyBirdAccessories"/>		
 		</effect_group>
 		<effect_group>		
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1"
+				tags="vehicleHellSpikes4x4Chassis,vehicleHellSpikes4x4Accessories,vehicleHellMaxCarChassis,vehicleHellMaxCarAccessories"/>	
+		</effect_group>		
+		<effect_group>		
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"
-				tags="vehicleSpiderRiderChassis,vehicleSpiderRiderHandlebars"/>	
+				tags="vehicleSpiderRiderChassis,vehicleSpiderRiderHandlebars,vehicleHellDawgChassis,vehicleHellDawgHandlebars"/>	
 		</effect_group>		
 	</append>
 		

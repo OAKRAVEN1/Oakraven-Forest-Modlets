@@ -90,15 +90,21 @@
 		<item name="qc_fantasticlandbeastz"/>		
 	</append>
 
-	<!-- Flyers and Motorcycles -->
+	<!-- Flyers, Motorcycles, Cars, and Jeeps -->
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT1']">
 		<item name="vehicleSpiderRiderChassisSchematic"/>
-		<item name="vehicleSpiderRiderHandlebarsSchematic"/>		
+		<item name="vehicleSpiderRiderHandlebarsSchematic"/>
+		<item name="vehicleHellDawgChassisSchematic"/>
+		<item name="vehicleHellDawgHandlebarsSchematic"/>		
 	</append>	
 	
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
 		<item name="vehicleWhirlyBirdChassisSchematic"/>
-		<item name="vehicleWhirlyBirdAccessoriesSchematic"/>		
+		<item name="vehicleWhirlyBirdAccessoriesSchematic"/>
+		<item name="vehicleHellSpikes4x4ChassisSchematic"/>
+		<item name="vehicleHellSpikes4x4AccessoriesSchematic"/>		
+		<item name="vehicleHellMaxCarChassisSchematic"/>
+		<item name="vehicleHellMaxCarAccessoriesSchematic"/>		
 	</append>
 	
 	<insertBefore xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
@@ -116,11 +122,35 @@
 		<item name="smallEngine"/>
 		<item name="carBattery"/>
 	</lootgroup>
+	<lootgroup name="HellDawgParts">
+		<item name="vehicleHellDawgChassis"/>
+		<item name="vehicleHellDawgHandlebars"/>
+		<item name="vehicleWheels"/>
+		<item name="smallEngine"/>
+		<item name="carBattery"/>
+	</lootgroup>
+	<lootgroup name="HellSpikes4x4Parts">
+		<item name="vehicleHellSpikes4x4Chassis"/>
+		<item name="vehicleHellSpikes4x4Accessories"/>
+		<item name="vehicleWheels"/>
+		<item name="smallEngine"/>
+		<item name="carBattery"/>
+	</lootgroup>
+	<lootgroup name="HellMaxCarParts">
+		<item name="vehicleHellMaxCarChassis"/>
+		<item name="vehicleHellMaxCarAccessories"/>
+		<item name="vehicleWheels"/>
+		<item name="smallEngine"/>
+		<item name="carBattery"/>
+	</lootgroup>	
 	</insertBefore>
 	
 	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
-		<item group="SpiderRiderParts" loot_prob_template="ProbT2Cap"/>	
-		<item group="WhirlyBirdParts" loot_prob_template="ProbT3"/>		
+		<item group="SpiderRiderParts" loot_prob_template="ProbT2Cap"/>
+		<item group="HellDawgParts" loot_prob_template="ProbT2Cap"/>		
+		<item group="WhirlyBirdParts" loot_prob_template="ProbT3"/>
+		<item group="HellSpikes4x4Parts" loot_prob_template="ProbT3"/>
+		<item group="HellMaxCarParts" loot_prob_template="ProbT3"/>		
 	</append>	
 	
 </configs>

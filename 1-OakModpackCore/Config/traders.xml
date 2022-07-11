@@ -42,19 +42,35 @@
 		<item name="vehicleWhirlyBirdChassisSchematic"/>
 		<item name="vehicleWhirlyBirdAccessoriesSchematic"/>
 		<item name="vehicleSpiderRiderChassisSchematic"/>
-		<item name="vehicleSpiderRiderHandlebarsSchematic"/>		
+		<item name="vehicleSpiderRiderHandlebarsSchematic"/>
+		<item name="vehicleHellDawgChassisSchematic"/>
+		<item name="vehicleHellDawgHandlebarsSchematic"/>
+		<item name="vehicleHellSpikes4x4ChassisSchematic"/>
+		<item name="vehicleHellSpikes4x4AccessoriesSchematic"/>
+		<item name="vehicleHellMaxCarChassisSchematic"/>
+		<item name="vehicleHellMaxCarAccessoriesSchematic"/>		
 	</append>
 	
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='vehiclePartsT0']">
 		<item name="vehicleSpiderRiderChassis"/>
 		<item name="vehicleSpiderRiderHandlebars"/>
-		<item name="vehicleSpiderRiderPlaceable"/>	
+		<item name="vehicleSpiderRiderPlaceable"/>
+		<item name="vehicleHellDawgChassis"/>
+		<item name="vehicleHellDawgHandlebars"/>
+		<item name="vehicleHellDawgPlaceable"/>		
 	</append>	
 
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='vehiclePartsT1']">
 		<item name="vehicleWhirlyBirdChassis"/>
 		<item name="vehicleWhirlyBirdAccessories"/>
-		<item name="vehicleWhirlyBirdPlaceable"/>	
+		<item name="vehicleWhirlyBirdPlaceable"/>
+		<item name="vehicleHellSpikes4x4Chassis"/>
+		<item name="vehicleHellSpikes4x4Accessories"/>
+		<item name="vehicleHellSpikes4x4Placeable"/>		
+		<item name="vehicleHellMaxCarChassis"/>
+		<item name="vehicleHellMaxCarAccessories"/>
+		<item name="vehicleHellMaxCarPlaceable"/>		
+		
 	</append>	
 
 	<!-- TRADERS -->
