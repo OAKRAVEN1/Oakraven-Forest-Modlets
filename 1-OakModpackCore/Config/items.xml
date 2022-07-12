@@ -5412,14 +5412,14 @@
 <item name="vehicleHellSpikes4x4Placeable"> <!-- Oakraven -->
 	<property name="Extends" value="vehicleMinibikePlaceable"/>
 	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
-	<property name="CustomIcon" value="vehicle4x4TruckPlaceable"/>	
+	<property name="CustomIcon" value="vehicleHellSpikes4x4Placeable"/>	
 	<property name="Meshfile" value="#Entities/Vehicles?jeep_Prefab.prefab"/>
 	<property name="EconomicValue" value="30000"/>
 	<property class="Action1">
 		<property name="Vehicle" value="vehicleHellSpikes4x4"/>
 		<property name="VehicleSize" value="2.5, 2.1, 5"/>
 	</property>
-	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+	<effect_group name="vehicleHellSpikes4x4Placeable" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="5"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
