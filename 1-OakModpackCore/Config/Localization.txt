@@ -1,5 +1,9 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 
+tutorialTipQuest01,Journal Tip,,,,"Forest Friend,\n\nThe Oakraven Forest can be a very mellow place, if you stay within its boundaries. If you are feeling adventurous, expand your horizons.\n\nFirst of all, tame the Fox Friend with the contents of your dog food can. It will be your companion through the first survival stesp and beyond.\n\nStay Safe, - Forest Hermit",,,,,,,,,,,,,
+quest_WhiteRiverCitizen1,Quest,Quest Info,,,Forest Friend 1/1,,,,,,,,,,,,,
+quest_WhiteRiverCitizen1_description,Quest,Quest Info,,,"Good Job Forest Friend,\n\nYou have survival traits, and show much potential. We have marked your map with an Oakraven Forest trader outpost. You can can buy and sell goods, and make yourself useful.\n\nWelcome to the Oakraven Forest, - Forest Hermit",,,,,,,,,,,,,
+
 resourceClayLumpBundle,items,Item,,,Stack of Clay (6000),,,,,,,,,,,,,
 resourceClayLumpBundleDesc,items,Item,,,"This is a compact stack of clay. Use this item to open and unpack it.",,,,,,,,,,,,,
 
@@ -448,7 +452,7 @@ foodNavezganeOnAStickDesc,items,Item,,,"Navezgane Fish On A Stick uses farmed fi
 FishStick,items,Item,,,Fish Stick,,,,,,,,,,,,,
 FishStickDesc,items,Item,,,"The Fish Stick is used as part of a recipe, or can also provide players with a melee weapon.",,,,,,,,,,,,,
 starterFishStick,items,Item,,,Fish Stick Starter Pack,,,,,,,,,,,,,
-starterFishStickDesc,items,Item,,,"This Fish Stick Starter Pack contains 2 items:- a Fish Stick crafted by the wise hermit 'swmeek' guaranteed to be Q.5 or Q.6 and a Perch Pie. Try to keep this special fish stick safe, as it is one of a kind.",,,,,,,,,,,,,
+starterFishStickDesc,items,Item,,,"This Fish Stick Starter Pack has two items:-\nA Fish Stick crafted by the wise hermit 'swmeek' guaranteed to be Q.5 or Q.6., and a Perch Pie.\n\nTry to keep this special fish stick safe, as it is one of a kind.",,,,,,,,,,,,,
 
 CaughtChick,items,Item,,,Caught Chick,,,,,,,,,,,,,
 CaughtChickDesc,items,Item,,,"Use 2 Caught Chicks, with right mouse click, on an Empty Chicken Coop to populate and activate the next stage.",,,,,,,,,,,,,
