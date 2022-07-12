@@ -59,6 +59,7 @@ In addition, some Addons that are powered by 0-Score and 0-XNPCCore and bundled 
 - 1-GansSpecialZombies (A variety of fancy dress type zombies from GanTheGrey) + 2- Feral and Radiated
 - 1-NPCXSpiderPack and 2-NPCXSpiderPack-ColonyExpansion (Spiders for the Wasteland and Desert Biome)
 - 1-FantasticBeastz (Mythical Beasts for the Wasteland and Desert Biome)
+- 1-YeOldeUndeadPack (A variety of Medieval undead + 2- Radiated) 
 
 OakModPackCore Modpack Creators and Developers in Alphabtical Order from Z - A:
 
@@ -69,8 +70,8 @@ Laz Man - Created Quest - Blood Moon Vanguard and Eliminate the Horde.
 khzmusik - Created 1-khzmusik_Zombies.
 KhaineGB - Unlocked Inventory Lockable Slots Mod.
 GanTheGrey - Created 1-GansSpecialZombies.
-Darkstardragon - Created 1-ZombiezPack, 1-SurvivorzPack, 1-OrczPackAlpha and 2-OrczPackBeta, and 1-FantasticBeastz and performed an abundance of play testing and coding support through the connected 'Not Medieval Mod'.
-arramus - Supported the Oakraven Forest Collection with 2-NPCXSpiderPack-ColonyExpansion, Fox things, xml, compilation, distribution, quality control balancing, and even added the odd icon or two. 
+Darkstardragon - Created 1-ZombiezPack, 1-SurvivorzPack, 1-OrczPackAlpha and 2-OrczPackBeta, 1-FantasticBeastz, and 1-YeOldeUndeadPack. Also performed an abundance of play testing and coding support through the connected 'Not Medieval Mod'.
+arramus - Supported the Oakraven Forest Collection with NPCMod and Addon integration, 2-NPCXSpiderPack-ColonyExpansion, Fox things, xml, compilation, distribution, quality control balancing, and even added the odd icon or two. 
 
 Currently Released Oakraven Forest Collection modlets can be found here.
 https://community.7daystodie.com/topic/27806-a20-oakraven-forest-collection/
