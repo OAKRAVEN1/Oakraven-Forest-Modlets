@@ -1,6 +1,6 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 
-tutorialTipQuest01,Journal Tip,,,,"Forest Friend,\n\nThe Oakraven Forest can be a very mellow place, if you stay within its boundaries. If you are feeling adventurous, expand your horizons.\n\nFirst of all, tame the Fox Friend with the contents of your dog food can. It will be your companion through the first survival stesp and beyond.\n\nStay Safe, - Forest Hermit",,,,,,,,,,,,,
+tutorialTipQuest01,Journal Tip,,,,"Forest Friend,\n\nThe Oakraven Forest can be a very mellow place, if you stay within its boundaries. If you are feeling adventurous, expand your horizons.\n\nFirst of all, tame the Fox Friend with the contents of your dog food can. It will be your companion through the first survival steps and beyond.\n\nStay Safe, - Forest Hermit",,,,,,,,,,,,,
 quest_WhiteRiverCitizen1,Quest,Quest Info,,,Forest Friend 1/1,,,,,,,,,,,,,
 quest_WhiteRiverCitizen1_description,Quest,Quest Info,,,"Good Job Forest Friend,\n\nYou have survival traits, and show much potential. We have marked your map with an Oakraven Forest trader outpost. You can can buy and sell goods, and make yourself useful.\n\nWelcome to the Oakraven Forest, - Forest Hermit",,,,,,,,,,,,,
 
