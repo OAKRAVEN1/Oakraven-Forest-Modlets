@@ -447,6 +447,8 @@ foodNavezganeOnAStick,items,Item,,,Navezgane Fish On A Stick,,,,,,,,,,,,,
 foodNavezganeOnAStickDesc,items,Item,,,"Navezgane Fish On A Stick uses farmed fish to provide players with a healthy and nutritious treat. Use the left mouse button to eat the the right mounse button to attack.",,,,,,,,,,,,,
 FishStick,items,Item,,,Fish Stick,,,,,,,,,,,,,
 FishStickDesc,items,Item,,,"The Fish Stick is used as part of a recipe, or can also provide players with a melee weapon.",,,,,,,,,,,,,
+starterFishStick,items,Item,,,Fish Stick Starter Weapon,,,,,,,,,,,,,
+starterFishStickDesc,items,Item,,,"This Fish Stick Starter Weapon box contains a Fish Stick from Quality 5 - 6. It does more damage than a Wooden Club but less than a Baseball Bat. It is very light and reduces stamina use while increasing attack speed. It can only be crafted to level 1 and is typically used for 'Fish on a Stick' snacks. Try to keep this special one safe. If you have any questions about it, ask the wise hermit 'swmeek' in the Oakraven Forest Collection forum thread.",,,,,,,,,,,,,
 
 CaughtChick,items,Item,,,Caught Chick,,,,,,,,,,,,,
 CaughtChickDesc,items,Item,,,"Use 2 Caught Chicks, with right mouse click, on an Empty Chicken Coop to populate and activate the next stage.",,,,,,,,,,,,,

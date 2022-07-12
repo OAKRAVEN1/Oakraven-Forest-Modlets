@@ -5,9 +5,9 @@
 	<set xpath="/entity_classes/entity_class[@name='supplyPlane']/property[@name='Mesh']/@value">#@modfolder:Resources/AirDropNew.unity3d?AirDropNew</set>
 	<set xpath="/entity_classes/entity_class[@name='sc_General']/property[@name='Mesh']/@value">#@modfolder:Resources/AirDropNew.unity3d?dropcrate</set>
     <!-- PLAYER STARTING ITEMS -->	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvival')]/@value">npcAnimalFoxStarterFood,FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalSP')]/@value">npcAnimalFoxStarterFood,FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">npcAnimalFoxStarterFood,FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvival')]/@value">npcAnimalFoxStarterFood,starterFishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>	
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalSP')]/@value">npcAnimalFoxStarterFood,starterFishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>	
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">npcAnimalFoxStarterFood,starterFishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>
     <!-- PLAYER RUNNING STAMINA -->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT'][@operation='perc_add'][@tags='running']/@value">-1.35</set><!-- Default is -1.45 -->
 

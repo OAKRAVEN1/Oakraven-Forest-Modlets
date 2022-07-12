@@ -4190,7 +4190,7 @@
 	</property>
 
 	<effect_group name="FishStick">
-		<passive_effect name="EntityDamage" operation="base_set" value="17.4" tags="perkPummelPete"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="15.6" tags="perkPummelPete"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="4.6" tags="perkPummelPete"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkPummelPete,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="10.9" tags="primary"/>
@@ -4215,7 +4215,7 @@
 		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
 	</effect_group>
 	<effect_group name="Power Attack">
-		<passive_effect name="EntityDamage" operation="perc_add" value="1.025" tags="secondary"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.05" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="18.6" tags="secondary"/>
 	</effect_group>
@@ -5202,7 +5202,21 @@
 				<property name="UseAnimation" value="false"/>
 				<property name="QuestGiven" value="challenge_FantasticLandBeastzPartI"/>
 			</property>
-		</item>		
+		</item>
+
+	<!-- Starter 'Bundle' of Fish Stick -->
+
+	<item name="starterFishStick">
+		<property name="Extends" value="noteTestersDelightAdmin"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="fishstick"/>
+		<property name="ItemTypeIcon" value="bundle"/>
+		<property name="DescriptionKey" value="starterFishStickDesc"/>
+		<property class="Action0">
+		<property name="Create_item" value="FishStick"/>
+		<property name="Create_item_count" value="5-6"/>
+		</property>
+	</item>	
 		
 	<!-- Starter 'Bundle' of Fox Food -->
 
