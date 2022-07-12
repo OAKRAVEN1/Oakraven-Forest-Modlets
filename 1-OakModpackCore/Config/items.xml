@@ -5467,7 +5467,7 @@
 <item name="vehicleHellMaxCarPlaceable"> <!-- Oakraven -->
 	<property name="Extends" value="vehicleMinibikePlaceable"/>
 	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
-	<property name="CustomIcon" value="vehicle4x4TruckPlaceable"/>	
+	<property name="CustomIcon" value="vehicleHellMaxCar"/>	
 	<property name="Meshfile" value="#Entities/Vehicles?jeep_Prefab.prefab"/>
 	<property name="EconomicValue" value="30000"/>
 	<property class="Action1">
