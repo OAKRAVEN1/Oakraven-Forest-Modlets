@@ -628,88 +628,47 @@ Gargoyle,entityclasses,Entity,,,Gargoyle,,,,,,,,,,,,,
 Manticore,entityclasses,Entity,,,Manticore,,,,,,,,,,,,,
 
 challenge_bloodmoonvanguard,Quest,Quest Info,,,"Blood Moon Vanguard",,,,,,,,,,,,,
-challenge_bloodmoonvanguard_description,Quest,Quest Info,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. They will find you...",,,,,,,,,,,,,
+challenge_bloodmoonvanguard_description,Quest,Quest Info,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. 'Ye Olde Undead' will find you...",,,,,,,,,,,,,
 challenge_bloodmoonvanguard_subtitle,Quest,Quest Info,,,Blood Moon Defense,,,,,,,,,,,,,
-challenge_bloodmoonvanguard_completion,Quest,Quest Info,,,"Well I'll be danged. That blood moon horde didn't stand a chance! Take these dukes as your reward. Hell, I'll even throw in an item of your choosing from my stash. You have our gratitude.",,,,,,,,,,,,,
+challenge_bloodmoonvanguard_completion,Quest,Quest Info,,,"Well I'll be danged. 'Ye Olde Undead' didn't stand a chance! Take these dukes as your reward. Hell, I'll even throw in an item of your choosing from my stash. You have our gratitude.",,,,,,,,,,,,,
 
-BM_zombieArlene,entityclasses,Entity,,,Blood Moon Zombies,,,,,,,,,,,,,
-BM_zombieFatCop,entityclasses,Entity,,,Blood Moon Tanks,,,,,,,,,,,,,
+MedievalZombie,entityclasses,Entity,,,Ye Olde Undead,,,,,,,,,,,,,
 
-BloodmoonVanguardTip,Journal,,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. They will find you...\n\nQuest: Blood Moon Vanguard (Repeatable)\n\nObjective: Kill 222 'Regular' Blood Moon Zombies \nReward: 1 Skill Point",,,,,,,,,,,,,
+BloodmoonVanguardTip,Journal,,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. They will find you...\n\nQuest: Blood Moon Vanguard (Repeatable)\n\nObjective: Kill 222 'Ye Olde Undead' Blood Moon Zombies \nReward: 2 Skill Points",,,,,,,,,,,,,
 BloodmoonVanguardTip_title,Journal,,,,Blood Moon Vanguard,,,,,,,,,,,,,
 
-challenge_bloodmoonvanguard,items,Quest - Challenge,,,"Blood Moon Vanguard",,,,,,,,,,,,,
+challenge_bloodmoonvanguard,items,Quest - Challenge,,,"Ye Olde Undead",,,,,,,,,,,,,
 challenge_bloodmoonvanguardDesc,items,Quest - Challenge,,,"Item to restart the Blood Moon Vanguard quest.",,,,,,,,,,,,,
 
-BM_zombieArleneFeral,entityclasses,Entity,,,Feral Arlene,,Wilde Arlene,Niña putrefacta salvaje,Fille putride féroce,Arlene feroce,残忍なアーリーン,흉포한 아를린,Dzika Arlene,Arlene Feroz,Дикая гнилая девушка,Vahşi Arlene,凶残的阿琳,野蠻的阿琳,Niña putrefacta salvaje
-BM_zombieArleneRadiated,entityclasses,Entity,,,Radiated Arlene,,Verstrahlte Arlene,Niña putrefacta irradiada,Fille putride irradiée,Arlene irradiata,被爆したアーリーン,방사능 아를린,Napromieniowana Arlene,Arlene Radioativa,Облученная гнилая девушка,Radyasyonlu Arlene,被辐射的阿琳,被輻射的阿琳,Niña putrefacta irradiada
-BM_zombieBehemoth,entityclasses,Entity,,,Behemoth,,Behemoth,Mastodonte,Béhémoth BM_zombie,Gigante,ベヒーモス,짐승,Behemot,Beemote,Гигант,Dev Yaratık,巨兽,貝西摩斯,Mastodonte
-BM_zombieBiker,entityclasses,Entity,,,Biker,,Biker,Motociclista,Motard BM_zombie,Motociclista,バイカー,바이커,Motocyklista,Ciclista,Байкер,Motosikletli,摩托车手,拜克,Motociclista
-BM_zombieBikerFeral,entityclasses,Entity,,,Feral Biker,,Wilder Biker,Motociclista salvaje,Motard BM_zombie féroce,Motociclista feroce,残忍なバイカー,흉포한 바이커,Dziki motocyklista,Ciclista Feroz,Дикий байкер,Vahşi Motosikletli,凶残的摩托车手,野蠻拜克,Motociclista salvaje
-BM_zombieBikerRadiated,entityclasses,Entity,,,Radiated Biker,,Verstrahlter Biker,Motociclista irradiado,Motard BM_zombie irradié,Motociclista irradiato,被爆したバイカー,방사능 바이커,Napromieniowany motocyklista,Ciclista Radioativo,Облученный байкер,Radyasyonlu Motosikletli,被辐射的摩托车手,被輻射的拜克,Motociclista irradiado
-BM_zombieBoe,entityclasses,Entity,,,Boe,,Boe,Boe,Survivant infecté,Boe,ボウ,보우,Boe,Boe,Зараженный выживший,Avare,布尔,博伊,Boe
-BM_zombieBoeFeral,entityclasses,Entity,,,Feral Boe,,Wilder Boe,Boe salvaje,Survivant infecté féroce,Boe feroce,残忍なボウ,흉포한 보,Dziki Boe,Boe Feroz,Дикий зараженный выживший,Vahşi Avare,凶残的布尔,野蠻的博伊,Boe salvaje
-BM_zombieBoeRadiated,entityclasses,Entity,,,Radiated Boe,,Verstrahlter Boe,Boe irradiado,Survivant infecté irradié,Boe irradiato,被爆したボウ,방사능 보,Napromieniowany Boe,Boe Radioativo,Облученный зараженный выживший,Radyasyonlu Avare,被辐射的布尔,被輻射的博伊,Boe irradiado
-BM_zombieBusinessMan,entityclasses,Entity,,,Businessman,,Geschäftsmann,Hombre de negocios,Homme d'affaires BM_zombie,Imprenditore,ビジネスマン,회사원,Biznesmen,Empresário,Бизнесмен,İş İnsanı,商人,商人,Hombre de negocios
-BM_zombieBusinessManFeral,entityclasses,Entity,,,Feral Businessman,,Wilder Geschäftsmann,Hombre de negocios salvaje,Homme d'affaires BM_zombie féroce,Imprenditore feroce,残忍なビジネスマン,흉포한 회사원,Dziki biznesmen,Empresário Feroz,Дикий бизнесмен,Vahşi İş İnsanı,凶残的商人,野蠻的商人,Hombre de negocios salvaje
-BM_zombieDarlene,entityclasses,Entity,,,Darlene,,Darlene,Darlene,Mère décomposée,Darlene,ダーリーン,달린,Darlene,Darlene,Разлагающаяся мать,Darlene,达琳,達琳,Darlene
-BM_zombieDarleneFeral,entityclasses,Entity,,,Feral Darlene,,Wilde Darlene,Darlene salvaje,Mère décomposée féroce,Darlene feroce,残忍なダーリーン,흉포한 달린,Dzika Darlene,Darlene Feroz,Дикая мать,Vahşi Darlene,凶残的达琳,野蠻的達琳,Darlene salvaje
-BM_zombieDarleneRadiated,entityclasses,Entity,,,Radiated Darlene,,Verstrahlte Darlene,Darlene irradiada,Mère décomposée irradiée,Darlene irradiata,被爆したダーリーン,방사능 달린,Napromieniowana Darlene,Darlene Radioativa,Облученная мать,Radyasyonlu Darlene,被辐射的达琳,被輻射的達琳,Darlene irradiada
-BM_zombieDemolition,entityclasses,Entity,,,Demolition,,Abbrucharbeiter,Demolición,Démolition,Demolitore,解体ゾンビ,철거,Rozbiórka,Demolição,Разрушение,Yıkım,爆破丧尸,破壞王,Demolición
-BM_zombieFatCop,entityclasses,Entity,,,Cop,,Polizist,Policía,Policier infecté,Poliziotto,警官,경찰,Gliniarz,Policial,Зараженный коп,Polis,警察,警察,Policía
-BM_zombieFatCopFeral,entityclasses,Entity,,,Feral Cop,,Wilder Polizist,Policía salvaje,Policier infecté féroce,Poliziotto feroce,残忍な警官,흉포한 경찰,Dziki gliniarz,Policial Feroz,Дикий коп,Vahşi Polis,凶残的警察,野蠻的警察,Policía salvaje
-BM_zombieFatCopRadiated,entityclasses,Entity,,,Radiated Cop,,Verstrahlter Polizist,Policía irradiado,Policier infecté irradié,Poliziotto irradiato,被爆した警官,방사능 경찰,Napromieniowany gliniarz,Policial Radioativo,Облученный коп,Radyasyonlu Polis,被辐射的警察,被輻射的警察,Policía irradiado
-BM_zombieFatHawaiian,entityclasses,Entity,,,Tourist,,Tourist,Turista,Touriste dérangé,Turista,観光客,관광객,Turysta,Turista,Потревоженный турист,Turist,游客,遊客,Turista
-BM_zombieFatHawaiianFeral,entityclasses,Entity,,,Feral Tourist,,Wilder Tourist,Turista salvaje,Touriste féroce,Turista feroce,残忍な観光客,흉포한 관광객,Dziki turysta,Turista Feroz,Дикий турист,Vahşi Turist,凶残的游客,野蠻的遊客,Turista salvaje
-BM_zombieFatHawaiianRadiated,entityclasses,Entity,,,Radiated Tourist,,Verstrahlter Tourist,Turista irradiado,Touriste dérangé irradié,Turista irradiato,被爆した観光客,방사능 관광객,Napromieniowany turysta,Turista Radioativo,Облученный турист,Radyasyonlu Turist,被辐射的游客,被輻射的遊客,Turista irradiado
-BM_zombieFemaleFat,entityclasses,Entity,,,Big Momma,,Big Mama,Mamá gorda,BM_zombie affamée,Mamma affamata,ビッグママ,빅 마마,Duża mamcia,Mãezona,Толстуха,Büyük Anne,大妈妈,老媽,Mamá gorda
-BM_zombieFemaleFatFeral,entityclasses,Entity,,,Feral Big Momma,,Wilde Big Mama,Mamá gorda salvaje,BM_zombie affamée féroce,Mamma affamata feroce,残忍なビッグママ,흉포한 빅 마마,Dzika duża mamcia,Mãezona Feroz,Дикая толстуха,Vahşi Büyük Anne,凶残的大妈妈,野蠻的老媽,Mamá gorda salvaje
-BM_zombieFemaleFatRadiated,entityclasses,Entity,,,Radiated Big Momma,,Verstrahlte Big Mama,Mamá gorda irradiada,BM_zombie affamée irradiée,Mamma affamata irradiata,被爆したビッグママ,방사능 빅 마마,Napromieniowana duża mamcia,Mãezona Radioativa,Облученная толстуха,Radyasyonlu Büyük Anne,被辐射的大妈妈,被輻射的老媽,Mamá gorda irradiada
-BM_zombieJanitor,entityclasses,Entity,,,Janitor,,Hausmeister,Conserje,Balayeur,Inserviente,用務員,청소부,Woźny,Zelador,Уборщик,Temizlikçi,看门人,看門人,Conserje
-BM_zombieJanitorFeral,entityclasses,Entity,,,Feral Janitor,,Wilder Hausmeister,Conserje salvaje,Balayeur féroce,Inserviente feroce,残忍な用務員,흉포한 청소부,Dziki woźny,Zelador Feroz,Дикий уборщик,Vahşi Temizlikçi,凶残的看门人,野蠻的看門人,Conserje salvaje
-BM_zombieJanitorRadiated,entityclasses,Entity,,,Radiated Janitor,,Verstrahlter Hausmeister,Conserje irradiado,Balayeur irradié,Inserviente irradiato,被爆した用務員,방사능 청소부,Napromieniowany woźny,Zelador Radioativo,Облученный уборщик,Radyasyonlu Temizlikçi,被辐射的看门人,被輻射的看門人,Conserje irradiado
-BM_zombieJoe,entityclasses,Entity,,,Joe,,Joe,Joe,Cadavre purulent,Joe,ジョー,조,Joe,Joe,Гнойный труп,Joe,乔,喬伊,Joe
-BM_zombieJoeFeral,entityclasses,Entity,,,Feral Joe,,Wilder Joe,Joe salvaje,Cadavre purulent féroce,Joe feroce,残忍なジョー,흉포한 조,Dziki Joe,Joe Feroz,Дикий гнойный труп,Vahşi Joe,凶残的乔,野蠻的喬伊,Joe salvaje
-BM_zombieJoeRadiated,entityclasses,Entity,,,Radiated Joe,,Verstrahlter Joe,Joe irradiado,Cadavre purulent irradié,Joe irradiato,被爆したジョー,방사능 조,Napromieniowany Joe,Joe Radioativo,Облученный гнойный труп,Radyasyonlu Joe,被辐射的乔,被輻射的喬伊,Joe irradiado
-BM_zombieLumberjack,entityclasses,Entity,,,Lumberjack,,Holzfäller,Leñador,Bûcheron BM_zombie,Boscaiolo,木こり,벌목꾼,Drwal,Lenhador,Лесоруб-зомби,Oduncu,伐木工,伐木工,Leñador
-BM_zombieLumberjackFeral,entityclasses,Entity,,,Feral Lumberjack,,Wilder Holzfäller,Leñador salvaje,Bûcheron féroce,Boscaiolo feroce,残忍な木こり,흉포한 벌목꾼,Dziki drwal,Lenhador Feroz,Безумный лесоруб,Vahşi Oduncu,凶残伐木工,野蠻的伐木工,Leñador salvaje
-BM_zombieLumberjackRadiated,entityclasses,Entity,,,Radiated Lumberjack,,Verstrahlter Holzfäller,Leñador irradiado,Bûcheron irradié,Boscaiolo irradiato,被爆木こり,방사능 벌목꾼,Napromieniowany drwal,Lenhador Radioativo,Облученный лесоруб,Radyasyonlu Oduncu,被辐射的伐木工,被輻射的伐木工,Leñador irradiado
-BM_zombieMaleHazmat,entityclasses,Entity,,,Hazmat,,Gefahrgutbeauftragter,Material peligroso,Travailleur toxique,Operaio dell'anticontaminazione,危険物処理班,방호복 좀비,HazMat,Macacão de proteção,Ликвидатор,Tehlikeli Madde,穿着防化服的丧尸,壞胚子,Material peligroso
-BM_zombieMaleHazmatFeral,entityclasses,Entity,,,Feral Hazmat,,Wilder Gefahrgutbeauftragter,Material peligroso salvaje,Travailleur toxique féroce,Operaio dell'anticontaminazione feroce,残忍な危険物処理班,흉포한 방호복 좀비,Dziki HazMat,Vedado Feroz,Дикий ликвидатор,Vahşi Tehlikeli Madde,凶残的穿着防化服的丧尸,野蠻的壞胚子,Material peligroso salvaje
-BM_zombieMaleHazmatRadiated,entityclasses,Entity,,,Radiated Hazmat,,Verstrahlter Gefahrgutbeauftragter,Material peligroso irradiado,Travailleur toxique irradié,Operaio dell'anticontaminazione irradiato,被爆した危険物処理班,방사능 방호복 좀비,Napromieniowany HazMat,Vedado Radioativo,Облученный ликвидатор,Radyasyonlu Tehlikeli Madde,被辐射的穿着防化服的丧尸,被輻射的壞胚子,Material peligroso irradiado
-BM_zombieMarlene,entityclasses,Entity,,,Marlene,,Marlene,Marlene,Défunte,Marlene,マーリーン,말린,Marlene,Marlene,Покойница,Marlene,马琳,瑪琳,Marlene
-BM_zombieMarleneFeral,entityclasses,Entity,,,Feral Marlene,,Wilde Marlene,Marlene salvaje,Défunte féroce,Marlene feroce,残忍なマーリーン,흉포한 말린,Dzika Marlene,Marlene Feroz,Дикая покойница,Vahşi Marlene,凶残的马琳,野蠻的瑪琳,Marlene salvaje
-BM_zombieMarleneRadiated,entityclasses,Entity,,,Radiated Marlene,,Verstrahlte Marlene,Marlene irradiada,Défunte irradiée,Marlene irradiata,被爆したマーリーン,방사능 말린,Napromieniowana Marlene,Marlene Radioativa,Облученная покойница,Radyasyonlu Marlene,被辐射的马琳,被輻射的瑪琳,Marlene irradiada
-BM_zombieMoe,entityclasses,Entity,,,Moe,,Moe,Moe,Rôdeur obèse,Moe,モー,모,Moe,Moe,Распухший ходок,Moe,莫伊,默,Moe
-BM_zombieMoeFeral,entityclasses,Entity,,,Feral Moe,,Wilder Moe,Moe salvaje,Rôdeur obèse féroce,Moe feroce,残忍なモー,흉포한 모,Dziki Moe,Moe Feroz,Дикий распухший ходок,Vahşi Moe,凶残的莫伊,野蠻的默,Moe salvaje
-BM_zombieMoeRadiated,entityclasses,Entity,,,Radiated Moe,,Verstrahlter Moe,Moe irradiado,Rôdeur obèse irradié,Moe irradiato,被爆したモー,방사능 모,Napromieniowany Moe,Moe Radioativo,Облученный распухший ходок,Radyasyonlu Moe,被辐射的莫伊,被輻射的默,Moe irradiado
-BM_zombieNurse,entityclasses,Entity,,,Nurse,,Krankenschwester,Enfermera,Infirmière pestiférée,Infermiera,看護師,간호사,Pielęgniarka,Enfermeira,Чумная санитарка,Hemşire,护士,護士,Enfermera
-BM_zombieNurseFeral,entityclasses,Entity,,,Feral Nurse,,Wilde Krankenschwester,Enfermera salvaje,Infirmière féroce,Infermiera feroce,残忍ナース,흉포한 간호사,Dzika pielęgniarka,Enfermeira Feroz,Дикая санитарка,Vahşi Hemşire,凶残的瘟疫感染护士,野蠻的護士,Enfermera salvaje
-BM_zombieNurseRadiated,entityclasses,Entity,,,Radiated Nurse,,Verstrahlte Krankenschwester,Enfermera irradiada,Infirmière pestiférée irradiée,Infermiera irradiata,被爆した看護師,방사능 간호사,Napromieniowana pielęgniarka,Enfermeira Radioativa,Облученная чумная санитарка,Radyasyonlu Hemşire,被辐射的护士,被輻射的護士,Enfermera irradiada
-BM_zombiePartyGirl,entityclasses,Entity,,,Party Girl,,Partymädchen,Fiestera,Fêtarde BM_zombie,Ragazza festaiola,パーティーガール,파티걸,Imprezowiczka,Baladeira,Тусовщица,Parti Kızı,派对女孩,派對女孩,Fiestera
-BM_zombiePartyGirlFeral,entityclasses,Entity,,,Feral Party Girl,,Wildes Partymädchen,Fiestera salvaje,Fêtarde féroce,Ragazza festaiola feroce,残忍パーティーガール,흉포한 파티걸,Dzika imprezowiczka,Festeira Feroz,Безумная тусовщица,Vahşi Parti Kızı,凶残派对女孩,兇猛派對女孩,Fiestera salvaje
-BM_zombieSkateboarder,entityclasses,Entity,,,Thug,,Gangster,Matón,Skateur punk BM_zombie,Delinquente,悪党,폭력배,Drab,Capanga,Скейтер-зомби,Serseri,暴徒,暴徒,Matón
-BM_zombieSkateboarderFeral,entityclasses,Entity,,,Feral Thug,,Wilder Gangster,Matón salvaje,Skateur punk BM_zombie féroce,Delinquente feroce,残忍な悪党,흉포한 폭력배,Dziki drab,Capanga Feroz,Дикий скейтер-зомби,Vahşi Serseri,凶残的暴徒,野蠻的暴徒,Matón salvaje
-BM_zombieSkateboarderRadiated,entityclasses,Entity,,,Radiated Thug,,Verstrahlter Gangster,Matón irradiado,Skateur punk BM_zombie irradié,Delinquente irradiato,被爆した悪党,방사능 폭력배,Napromieniowany drab,Capanga Radioativo,Облученный скейтер-зомби,Radyasyonlu Serseri,被辐射的暴徒,被輻射的暴徒,Matón irradiado
-BM_zombieSoldier,entityclasses,Entity,,,Soldier,,Soldat,Soldado,Soldat tombé,Soldato,兵士,군인,Żołnierz,Soldado,Солдат,Asker,士兵,士兵,Soldado
-BM_zombieSoldierFeral,entityclasses,Entity,,,Feral Soldier,,Wilder Soldat,Soldado salvaje,Soldat féroce,Soldato feroce,残忍ソルジャー,흉포한 군인,Dziki żołnierz,Soldado Feroz,Дикий солдат,Vahşi Asker,凶残的士兵,野蠻士兵,Soldado salvaje
-BM_zombieSoldierRadiated,entityclasses,Entity,,,Radiated Soldier,,Verstrahlter Soldat,Soldado irradiado,Soldat tombé irradié,Soldato irradiato,被爆した兵士,방사능 군인,Napromieniowany żołnierz,Soldado Radioativo,Облученный солдат,Radyasyonlu Asker,被辐射的士兵,被輻射的士兵,Soldado irradiado
-BM_zombieSpider,entityclasses,Entity,,,Spider,,SpinnenBM_zombie,Araña,Araignée,Ragno,スパイダー,거미,Pająk,Aranha,Паук,Örümcek,蜘蛛,蜘蛛,Araña
-BM_zombieSpiderFeral,entityclasses,Entity,,,Feral Spider,,Wilder SpinnenBM_zombie,Araña salvaje,Araignée féroce,Ragno feroce,残忍なスパイダー,흉포한 거미,Dziki pająk,Aranha Feroz,Дикий паук,Vahşi Örümcek,凶残的蜘蛛,野蠻的蜘蛛,Araña salvaje
-BM_zombieSpiderRadiated,entityclasses,Entity,,,Radiated Spider,,Verstrahlter SpinnenBM_zombie,Araña irradiada,Araignée irradiée,Ragno irradiato,被爆したスパイダー,방사능 거미,Napromieniowany pająk,Aranha Radioativa,Облученный паук,Radyasyonlu Örümcek,被辐射的蜘蛛,被輻射的蜘蛛,Araña irradiada
-BM_zombieSteve,entityclasses,Entity,,,Steve,,Steve,Steve,Corps réanimé,Steve,スティーブ,스티브,Steve,Steve,Оживший труп,Steve,史蒂夫,史帝夫,Steve
-BM_zombieSteveFeral,entityclasses,Entity,,,Feral Steve,,Wilder Steve,Steve salvaje,Corps réanimé féroce,Steve feroce,残忍なスティーブ,흉포한 스티브,Dzikie Steve,Steve Feroz,Дикий труп,Vahşi Steve,凶残的史蒂夫,野蠻的史帝夫,Steve salvaje
-BM_zombieSteveRadiated,entityclasses,Entity,,,Radiated Steve,,Verstrahlter Steve,Steve irradiado,Corps réanimé irradié,Steve irradiato,被爆したスティーブ,방사능 스티브,Napromieniowany Steve,Steve Radioativo,Облученный труп,Radyasyonlu Steve,被辐射的史蒂夫,被輻射的史帝夫,Steve irradiado
-BM_zombieTomClark,entityclasses,Entity,,,Tom Clark,,Tom Clark,Tom Clark,Tom Clark,Tom Clark,トム・クラーク,톰 클락,Tom Clark,Tom Clark,Том Кларк,Tom Clark,汤姆·克拉克,湯姆克拉克,Tom Clark
-BM_zombieTomClarkFeral,entityclasses,Entity,,,Feral Tom Clark,,Wilder Tom Clark,Tom Clark salvaje,Tom Clark féroce,Tom Clark feroce,残忍なトム・クラーク,흉포한 톰 클락,Dziki Tom Clark,Tom Clark Feroz,Дикий Том Кларк,Vahşi Tom Clark,凶残的汤姆·克拉克,野蠻的湯姆克拉克,Tom Clark salvaje
-BM_zombieTomClarkRadiated,entityclasses,Entity,,,Radiated Tom Clark,,Verstrahlter Tom Clark,Tom Clark irradiado,Tom Clark irradié,Tom Clark irradiato,被爆したトム・クラーク,방사능 톰 클락,Napromieniowany Tom Clark,Tom Clark Radioativo,Облученный Том Кларк,Radyasyonlu Tom Clark,被辐射的汤姆·克拉克,被輻射的湯姆克拉克,Tom Clark irradiado
-BM_zombieUtilityWorker,entityclasses,Entity,,,Utility Worker,,Wartungstechniker,Trabajador público,Ouvrier BM_zombie,Operaio,作業員,전기공,Robotnik,Operário,Разнорабочий-зомби,Kamu İşçisi,公用事业工人,雜工,Trabajador público
-BM_zombieUtilityWorkerFeral,entityclasses,Entity,,,Feral Utility Worker,,Wilder Wartungstechniker,Trabajador público salvaje,Ouvrier féroce,Operaio feroce,残忍作業員,흉포한 좀비 전기공,Dziki robotnik BM_zombie,Trabalhador de Manutenção Feroz,Дикий разнорабочий-зомби,Vahşi Kamu İşçisi,凶残的公用事业工人,野蠻的雜工,Trabajador público salvaje
-BM_zombieWightFeral,entityclasses,Entity,,,Feral Wight,,Wildes Wesen,Criatura salvaje,Créature féroce,Creatura feroce,残忍ワイト,흉포한 혼령,Dzika istota,Pessoa Feroz,Дикий упырь,Vahşi Yaratık,凶残的怀特,野蠻的幽靈,Criatura salvaje
-BM_zombieWightRadiated,entityclasses,Entity,,,Radiated Wight,,Verstrahltes Wesen,Criatura irradiada,Esprit irradié,Creatura irradiata,被爆したワイト,방사능 유령,Napromieniowana istota,Aparição Radioativa,Облученный упырь,Radyasyonlu Yaratık,被辐射的恶灵,被輻射的屍妖,Criatura irradiada
-BM_zombieYo,entityclasses,Entity,,,Yo,,Yo,Yo,Carcasse pourrie,Yo,ヨー,요,Yo,Yo,Разлагающаяся туша,Yo,幽,幽,Yo
-BM_zombieYoFeral,entityclasses,Entity,,,Feral Yo,,Wilder Yo,Yo salvaje,Carcasse pourrie féroce,Yo feroce,残忍なヨー,흉포한 요,Dziki Yo,Yo Feroz,Дикая туша,Vahşi Yo,凶残的幽,野蠻的幽,Yo salvaje
-BM_zombieYoRadiated,entityclasses,Entity,,,Radiated Yo,,Verstrahlter Yo,Yo irradiado,Carcasse pourrie irradiée,Yo irradiato,被爆したヨー,방사능 요,Napromieniowany Yo,Yo Radioativo,Облученная туша,Radyasyonlu Yo,被辐射的幽,被輻射的幽,Yo irradiado
+MedievalZombieFeral,entityclasses,Entity,,,Feral Medieval Undead,,,,,,,,,,,,,
+MedievalZombieRadiated,entityclasses,Entity,,,Chaos Medieval Undead,,,,,,,,,,,,,
+AxeZombie,entityclasses,Entity,,,Undead Axe Wielder,,,,,,,,,,,,,
+AxeZombieFeral,entityclasses,Entity,,,Feral Undead Axe Wielder,,,,,,,,,,,,,
+AxeZombieRadiated,entityclasses,Entity,,,Chaos Undead Axe Wielder,,,,,,,,,,,,,
+MaceZombie,entityclasses,Entity,,,Undead Mace Wielder,,,,,,,,,,,,,
+MaceZombieFeral,entityclasses,Entity,,,Feral Undead Mace Wielder,,,,,,,,,,,,,
+MaceZombieRadiated,entityclasses,Entity,,,Chaos Undead Mace Wielder,,,,,,,,,,,,,
+SwordZombie,entityclasses,Entity,,,Undead Sword Wielder,,,,,,,,,,,,,
+SwordZombieFeral,entityclasses,Entity,,, Feral Undead Sword Wielder,,,,,,,,,,,,,
+SwordZombieRadiated,entityclasses,Entity,,,Chaos Undead Sword Wielder,,,,,,,,,,,,,
+HelmetZombie,entityclasses,Entity,,,Undead Helmet Wearer,,,,,,,,,,,,,
+HelmetZombieFeral,entityclasses,Entity,,,Feral Undead Helmet Wearer,,,,,,,,,,,,,
+HelmetZombieRadiated,entityclasses,Entity,,,Chaos Undead Helmet Wearer,,,,,,,,,,,,,
+ArmorZombie,entityclasses,Entity,,,Undead Armor Wearer,,,,,,,,,,,,,
+ArmorZombieFeral,entityclasses,Entity,,,Feral Undead Armor Wearer,,,,,,,,,,,,,
+ArmorZombieRadiated,entityclasses,Entity,,,Chaos Undead Armor Wearer,,,,,,,,,,,,,
+DeathKnight,entityclasses,Entity,,,Undead Death Knight,,,,,,,,,,,,,
+DeathKnightFeral,entityclasses,Entity,,,Feral Undead Death Knight,,,,,,,,,,,,,
+DeathKnightRadiated,entityclasses,Entity,,,Chaos Undead Death Knight,,,,,,,,,,,,,
+Skeleton,entityclasses,Entity,,,Undead Skeleton,,,,,,,,,,,,,
+SkeletonFeral,entityclasses,Entity,,,Feral Undead Skeleton,,,,,,,,,,,,,
+SkeletonRadiated,entityclasses,Entity,,,Chaos Undead Skeleton,,,,,,,,,,,,,
+SkeletonMonk,entityclasses,Entity,,,Undead Skeleton Monk,,,,,,,,,,,,,
+SkeletonMonkFeral,entityclasses,Entity,,,Feral Undead Skeleton Monk,,,,,,,,,,,,,
+SkeletonMonkRadiated,entityclasses,Entity,,,Chaos Undead Skeleton Monk,,,,,,,,,,,,,
+SkeletonAxe,entityclasses,Entity,,,Undead Skeleton Axe Wielder,,,,,,,,,,,,,
+SkeletonAxeFeral,entityclasses,Entity,,,Feral Undead Skeleton Axe Wielder,,,,,,,,,,,,,
+SkeletonAxeRadiated,entityclasses,Entity,,,Chaos Undead Skeleton Axe Wielder,,,,,,,,,,,,,
 
 qc_eliminatehorde,items,Quest - Challenge,,,"Contract: Eliminate Horde",,,,,,,,,,,,,
 qc_eliminatehordeDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost.",,,,,,,,,,,,,

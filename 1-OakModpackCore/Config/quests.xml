@@ -19,12 +19,12 @@
 				<property name="delay" value="15"/>
 			</action>
 			
-			<objective type="ZombieKill" id="BM_zombieArlene,BM_zombieArleneFeral,BM_zombieArleneRadiated,BM_zombieMarlene,BM_zombieMarleneFeral,BM_zombieMarleneRadiated,BM_zombiePartyGirl,BM_zombiePartyGirlFeral,BM_zombieNurse,BM_zombieNurseFeral,BM_zombieNurseRadiated,BM_zombieJoe,BM_zombieJoeFeral,BM_zombieJoeRadiated,BM_zombieSteve,BM_zombieSteveFeral,BM_zombieSteveRadiated,BM_zombieTomClark,BM_zombieTomClarkFeral,BM_zombieTomClarkRadiated,BM_zombieBusinessMan,BM_zombieBusinessManFeral,BM_zombieSpider,BM_zombieSpiderFeral,BM_zombieSpiderRadiated,BM_zombieBoe,BM_zombieBoeFeral,BM_zombieBoeRadiated,BM_zombieJanitor,BM_zombieJanitorFeral,BM_zombieJanitorRadiated,BM_zombieMoe,BM_zombieMoeFeral,BM_zombieMoeRadiated,BM_zombieDarlene,BM_zombieDarleneFeral,BM_zombieDarleneRadiated,BM_zombieYo,BM_zombieYoFeral,BM_zombieYoRadiated,BM_zombieUtilityWorker,BM_zombieUtilityWorkerFeral,BM_zombieBiker,BM_zombieBikerFeral,BM_zombieBikerRadiated,BM_zombieLumberjack,BM_zombieLumberjackFeral,BM_zombieLumberjackRadiated,BM_zombieFemaleFat,BM_zombieFemaleFatFeral,BM_zombieFemaleFatRadiated,BM_zombieFatHawaiian,BM_zombieFatHawaiianFeral,BM_zombieFatHawaiianRadiated,BM_zombieMaleHazmat,BM_zombieMaleHazmatFeral,BM_zombieMaleHazmatRadiated,BM_zombieFatCop,BM_zombieFatCopFeral,BM_zombieFatCopRadiated,BM_zombieSkateboarder,BM_zombieSkateboarderFeral,BM_zombieSkateboarderRadiated,BM_zombieSoldier,BM_zombieSoldierFeral,BM_zombieSoldierRadiated,BM_zombieWightFeral,BM_zombieWightRadiated,BM_zombieDemolition" value="222" phase="1"/>			
+			<objective type="ZombieKill" id="MedievalZombie,MedievalZombieFeral,MedievalZombieRadiated,AxeZombie,AxeZombieFeral,AxeZombieRadiated,MaceZombie,MaceZombieFeral,MaceZombieRadiated,SwordZombie,SwordZombieFeral,SwordZombieRadiated,HelmetZombie,HelmetZombieFeral,HelmetZombieRadiated,ArmorZombie,ArmorZombieFeral,ArmorZombieRadiated,DeathKnight,DeathKnightFeral,DeathKnightRadiated,Skeleton,SkeletonFeral,SkeletonRadiated,SkeletonMonk,SkeletonMonkFeral,SkeletonMonkRadiated,SkeletonAxe,SkeletonAxeFeral,SkeletonAxeRadiated,zombieDemolitionRadiated,zombieWightRadiatedShower" value="222" phase="1"/>			
 			<!-- Rewards -->
 			<reward type="Quest" id="challenge_bloodmoonvanguard">
 				<property name="chainquest" value="false"/>
 			</reward>
-			<reward type="SkillPoints" value="1"/>
+			<reward type="SkillPoints" value="2"/>
 
 		</quest>
 		

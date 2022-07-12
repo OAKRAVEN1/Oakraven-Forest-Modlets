@@ -1325,6 +1325,689 @@
 			</effect_group>
         </entity_class>
 		
+        <!--  Undead models by Protofactor Inc, Purchased for use in NPC Mod  -->
+				
+		<!-- 1-YeOldeUndeadPack -->
+
+        <entity_class name="MedievalZombie" extends="zombieRegularTemplate">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 				
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieDark"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam"/>
+	        <property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert"/>
+	        <property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack"/>
+	        <property name="SoundHurt" value="Enemies/Acid_Puking_Hulk/hulkpain"/>
+	        <property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
+	        <property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
+	        <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>  
+		</entity_class>
+
+        <entity_class name="MedievalZombieFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieDark"/> 			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	        <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	        <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	        <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	        <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	        <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+			<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>
+		</entity_class>
+
+        <entity_class name="MedievalZombieRadiated" extends="MedievalZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>			
+
+        <entity_class name="AxeZombie" extends="zombieRegularTemplate">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 				
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieAxeDark"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
+	        <property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
+	        <property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack"/>
+	        <property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain"/>
+	        <property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath"/>
+	        <property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense"/>
+	        <property name="SoundFootstepModifier" value="zombielumberjackfootstep"/>
+		</entity_class>
+
+        <entity_class name="AxeZombieFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieAxeDark"/> 			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	        <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	        <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	        <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	        <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	        <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>
+		</entity_class>
+		
+        <entity_class name="AxeZombieRadiated" extends="AxeZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieAxeDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
+
+        <entity_class name="MaceZombie" extends="zombieRegularTemplate">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 				
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieMaceDark"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	        <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	        <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+            <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+            <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+            <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+		</entity_class>
+
+        <entity_class name="MaceZombieFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieMaceDark"/> 			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+            <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+            <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+            <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+            <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+            <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>
+		</entity_class>
+
+        <entity_class name="MaceZombieRadiated" extends="MaceZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieMaceDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
+
+        <entity_class name="SwordZombie" extends="zombieRegularTemplate">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>				
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieSwordDark"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="LookAtAngle" value="0"/> 
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+            <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+            <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+            <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+            <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+            <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+		</entity_class>
+
+        <entity_class name="SwordZombieFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieSwordDark"/> 			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+            <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+            <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+            <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+            <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+            <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>
+		</entity_class>
+
+        <entity_class name="SwordZombieRadiated" extends="SwordZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieSwordDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
+
+        <entity_class name="HelmetZombie" extends="zombieRegularTemplate">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 				
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieHelmetDark"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+            <property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+            <property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
+            <property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
+            <property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
+            <property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/> 
+		</entity_class>
+
+        <entity_class name="HelmetZombieFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieHelmetDark"/> 			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+            <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+            <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+            <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+            <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+            <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>
+		</entity_class>
+
+        <entity_class name="HelmetZombieRadiated" extends="HelmetZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieHelmetDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
+
+        <entity_class name="ArmorZombie" extends="zombieRegularTemplate">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>	
+            <property name="LookAtAngle" value="0"/> 			
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieArmorDark"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+            <property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+            <property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
+            <property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
+            <property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
+            <property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/> 
+		</entity_class>
+
+        <entity_class name="ArmorZombieFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieArmorDark"/> 			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+            <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+            <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+            <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+            <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+            <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>
+		</entity_class>
+
+        <entity_class name="ArmorZombieRadiated" extends="ArmorZombieFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?MedievalZombieArmorDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
+
+        <entity_class name="DeathKnight" extends="zombieRegularTemplate">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 				
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?DeathKnightDark"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="SkeletonStandard"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="DismemberMultiplierHead" value="0"/>
+            <property name="DismemberMultiplierArms" value="0"/>
+            <property name="DismemberMultiplierLegs" value="0"/>
+            <effect_group name="Base Effects">
+		        <passive_effect name="HealthMax" operation="base_set" value="400"/>
+		        <passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+	        </effect_group>  
+            <property name="SurfaceCategory" value="stone"/>
+		</entity_class>
+
+        <entity_class name="DeathKnightFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?DeathKnightDark"/> 
+            <property name="PhysicsBody" value="SkeletonStandard"/>			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+            <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+            <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+            <property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+            <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+            <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+            <property name="DismemberMultiplierHead" value="0"/>
+            <property name="DismemberMultiplierArms" value="0"/>
+            <property name="DismemberMultiplierLegs" value="0"/>
+            <effect_group name="Base Effects">
+		        <passive_effect name="HealthMax" operation="base_set" value="500"/>
+		        <passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+	        </effect_group>  
+            <property name="SurfaceCategory" value="stone"/>
+		</entity_class>
+
+        <entity_class name="DeathKnightRadiated" extends="DeathKnightFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?DeathKnightDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
+
+        <entity_class name="Skeleton" extends="zombieRegularTemplate">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>	
+            <property name="LookAtAngle" value="0"/> 
+            <property name="SurfaceCategory" value="stone"/>			
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonDark"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="SkeletonStandard"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="SoundRandom" value=""/>
+            <property name="SoundAlert" value=""/>
+            <property name="SoundAttack" value=""/>
+            <property name="SoundHurt" value=""/>
+            <property name="SoundDeath" value=""/>
+            <property name="SoundSense" value=""/>
+            <property name="DismemberMultiplierHead" value="0"/>
+            <property name="DismemberMultiplierArms" value="0"/>
+            <property name="DismemberMultiplierLegs" value="0"/>
+            <property name="SurfaceCategory" value="stone"/>
+		</entity_class>
+
+        <entity_class name="SkeletonFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonDark"/> 
+            <property name="PhysicsBody" value="SkeletonStandard"/>			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value=""/>
+            <property name="SoundAlert" value=""/>
+            <property name="SoundAttack" value=""/>
+            <property name="SoundHurt" value=""/>
+            <property name="SoundDeath" value=""/>
+            <property name="SoundSense" value=""/>
+            <property name="DismemberMultiplierHead" value="0"/>
+            <property name="DismemberMultiplierArms" value="0"/>
+            <property name="DismemberMultiplierLegs" value="0"/>
+            <effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	        </effect_group>
+            <property name="SurfaceCategory" value="stone"/>
+		</entity_class>
+
+        <entity_class name="SkeletonRadiated" extends="SkeletonFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
+
+        <entity_class name="SkeletonMonk" extends="zombieRegularTemplate">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 
+            <property name="SurfaceCategory" value="stone"/>				
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonMonkDark"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="SkeletonStandard"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="SoundRandom" value=""/>
+            <property name="SoundAlert" value=""/>
+            <property name="SoundAttack" value=""/>
+            <property name="SoundHurt" value=""/>
+            <property name="SoundDeath" value=""/>
+            <property name="SoundSense" value=""/>
+            <property name="DismemberMultiplierHead" value="0"/>
+            <property name="DismemberMultiplierArms" value="0"/>
+            <property name="DismemberMultiplierLegs" value="0"/>
+            <property name="SurfaceCategory" value="stone"/>
+		</entity_class>
+
+       <entity_class name="SkeletonMonkFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonMonkDark"/> 
+            <property name="PhysicsBody" value="SkeletonStandard"/>			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value=""/>
+            <property name="SoundAlert" value=""/>
+            <property name="SoundAttack" value=""/>
+            <property name="SoundHurt" value=""/>
+            <property name="SoundDeath" value=""/>
+            <property name="SoundSense" value=""/>
+            <property name="DismemberMultiplierHead" value="0"/>
+            <property name="DismemberMultiplierArms" value="0"/>
+            <property name="DismemberMultiplierLegs" value="0"/>
+            <effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	        </effect_group>
+            <property name="SurfaceCategory" value="stone"/>
+		</entity_class>
+
+        <entity_class name="SkeletonMonkRadiated" extends="SkeletonMonkFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonMonkDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
+
+        <entity_class name="SkeletonAxe" extends="zombieRegularTemplate">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 
+            <property name="SurfaceCategory" value="stone"/>				
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonAxeDark"/> 
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="SkeletonStandard"/>
+			<property name="HasDeathAnim" value="true"/>			
+			<property name="WalkType" value="7"/>
+			<property name="Mass" value="150"/>
+            <property name="SoundRandom" value=""/>
+            <property name="SoundAlert" value=""/>
+            <property name="SoundAttack" value=""/>
+            <property name="SoundHurt" value=""/>
+            <property name="SoundDeath" value=""/>
+            <property name="SoundSense" value=""/>
+            <property name="DismemberMultiplierHead" value="0"/>
+            <property name="DismemberMultiplierArms" value="0"/>
+            <property name="DismemberMultiplierLegs" value="0"/>
+            <property name="SurfaceCategory" value="stone"/>
+		</entity_class>
+
+        <entity_class name="SkeletonAxeFeral" extends="zombieFemaleTutorial">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonAxeDark"/> 
+            <property name="PhysicsBody" value="SkeletonStandard"/>			
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ExperienceGain" value="750"/>
+			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+            <property name="SoundRandom" value=""/>
+            <property name="SoundAlert" value=""/>
+            <property name="SoundAttack" value=""/>
+            <property name="SoundHurt" value=""/>
+            <property name="SoundDeath" value=""/>
+            <property name="SoundSense" value=""/>
+            <property name="DismemberMultiplierHead" value="0"/>
+            <property name="DismemberMultiplierArms" value="0"/>
+            <property name="DismemberMultiplierLegs" value="0"/>
+            <effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	        </effect_group>
+            <property name="SurfaceCategory" value="stone"/>
+		</entity_class>
+		
+        <entity_class name="SkeletonAxeRadiated" extends="SkeletonAxeFeral">
+			<property name="Tags" value="entity,male,zombie,walker,mixamo,feral,radiated"/>
+			<property name="Faction" value="undead"/>
+            <property name="LookAtAngle" value="0"/> 	
+            <property name="Mesh" value="#@modfolder:Resources/YeOldeUndead.unity3d?SkeletonAxeDark"/> 			
+			<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".7"/>
+			<property name="PainResistPerHit" value=".3"/>
+			<property name="MoveSpeedAggro" value=".6, 1.4"/>
+			<property name="HandItem" value="meleeHandZombieFeral2"/>
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>			
+			<property name="ExperienceGain" value="1200"/><!-- XP approx x 1.6 based on default -->
+			<property name="LootDropProb" value=".03"/> <!-- Whether it drops a loot bag on death or not. -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="580"/> <!-- approx x 1.9 based on Arlene increase -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>			
+		</entity_class>		
+		
 		<!-- UNFRIENDLY ANIMAL FACTION -->
 		
 		<!-- Xyth's Spiders from 1-NPCXSpiderPack -->
@@ -1993,112 +2676,7 @@
 			<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
-		</entity_class>		
-
-			<!-- LAZMAN'S BLOOD MOON VANGUARD REPEATABLE QUEST -->	
-	
-			<!-- A20 Offerings in entityclass.xml order -->
-			
-			<!-- ***** ZOMBIES : SLIM,  slightly lower HP but faster ***** -->			
-			
-			<entity_class name="BM_zombieArlene" extends="zombieArlene"></entity_class>
-			<entity_class name="BM_zombieArleneFeral" extends="zombieArleneFeral"></entity_class>	
-			<entity_class name="BM_zombieArleneRadiated" extends="zombieArleneRadiated"></entity_class>
-			<entity_class name="BM_zombieMarlene" extends="zombieMarlene"></entity_class>
-			<entity_class name="BM_zombieMarleneFeral" extends="zombieMarleneFeral"></entity_class>
-			<entity_class name="BM_zombieMarleneRadiated" extends="zombieMarleneRadiated"></entity_class>
-			<entity_class name="BM_zombiePartyGirl" extends="zombiePartyGirl"></entity_class>
-			<entity_class name="BM_zombiePartyGirlFeral" extends="zombiePartyGirlFeral"></entity_class>
-			<!-- No Radidated zombiePartyGirl -->
-			<entity_class name="BM_zombieNurse" extends="zombieNurse"></entity_class>
-			<entity_class name="BM_zombieNurseFeral" extends="zombieNurseFeral"></entity_class>
-			<entity_class name="BM_zombieNurseRadiated" extends="zombieNurseRadiated"></entity_class>
-			<entity_class name="BM_zombieJoe" extends="zombieJoe"></entity_class>
-			<entity_class name="BM_zombieJoeFeral" extends="zombieJoeFeral"></entity_class>
-			<entity_class name="BM_zombieJoeRadiated" extends="zombieJoeRadiated"></entity_class>
-			<entity_class name="BM_zombieSteve" extends="zombieSteve"></entity_class>
-			<entity_class name="BM_zombieSteveFeral" extends="zombieSteveFeral"></entity_class>
-			<entity_class name="BM_zombieSteveRadiated" extends="zombieSteveRadiated"></entity_class>
-			<entity_class name="BM_zombieTomClark" extends="zombieTomClark"></entity_class>
-			<entity_class name="BM_zombieTomClarkFeral" extends="zombieTomClarkFeral"></entity_class>
-			<entity_class name="BM_zombieTomClarkRadiated" extends="zombieTomClarkRadiated"></entity_class>		
-			<entity_class name="BM_zombieBusinessMan" extends="zombieBusinessMan"></entity_class>
-			<entity_class name="BM_zombieBusinessManFeral" extends="zombieBusinessManFeral"></entity_class>
-			<!-- No Radidated zombieBusinessMan -->
-			<!-- No Normal zombieBurnt in vanilla BM hordes & No Feral/Radidated zombieBurnt -->
-			<entity_class name="BM_zombieSpider" extends="zombieSpider"></entity_class>
-			<entity_class name="BM_zombieSpiderFeral" extends="zombieSpiderFeral"></entity_class>
-			<entity_class name="BM_zombieSpiderRadiated" extends="zombieSpiderRadiated"></entity_class>
-			
-			<!-- ***** ZOMBIES : NORMAL ***** -->			
-			
-			<entity_class name="BM_zombieBoe" extends="zombieBoe"></entity_class>
-			<entity_class name="BM_zombieBoeFeral" extends="zombieBoeFeral"></entity_class>
-			<entity_class name="BM_zombieBoeRadiated" extends="zombieBoeRadiated"></entity_class>
-			<entity_class name="BM_zombieJanitor" extends="zombieJanitor"></entity_class>
-			<entity_class name="BM_zombieJanitorFeral" extends="zombieJanitorFeral"></entity_class>
-			<entity_class name="BM_zombieJanitorRadiated" extends="zombieJanitorRadiated"></entity_class>
-			<entity_class name="BM_zombieMoe" extends="zombieMoe"></entity_class>
-			<entity_class name="BM_zombieMoeFeral" extends="zombieMoeFeral"></entity_class>
-			<entity_class name="BM_zombieMoeRadiated" extends="zombieMoeRadiated"></entity_class>			
-			<!-- No Normal zombieLab in vanilla BM hordes & No Feral/Radidated zombieLab -->			
-			<entity_class name="BM_zombieDarlene" extends="zombieDarlene"></entity_class>
-			<entity_class name="BM_zombieDarleneFeral" extends="zombieDarleneFeral"></entity_class>
-			<entity_class name="BM_zombieDarleneRadiated" extends="zombieDarleneRadiated"></entity_class>			
-			<entity_class name="BM_zombieYo" extends="zombieYo"></entity_class>
-			<entity_class name="BM_zombieYoFeral" extends="zombieYoFeral"></entity_class>
-			<entity_class name="BM_zombieYoRadiated" extends="zombieYoRadiated"></entity_class>			
-			<entity_class name="BM_zombieUtilityWorker" extends="zombieUtilityWorker"></entity_class>
-			<entity_class name="BM_zombieUtilityWorkerFeral" extends="zombieUtilityWorkerFeral"></entity_class>
-			<!-- No Radidated zombieUtilityWorker -->
-			
-			<!-- ***** ZOMBIES : STRONG,  higher HP but slightly slower ***** -->			
-			
-			<entity_class name="BM_zombieBiker" extends="zombieBiker"></entity_class>
-			<entity_class name="BM_zombieBikerFeral" extends="zombieBikerFeral"></entity_class>
-			<entity_class name="BM_zombieBikerRadiated" extends="zombieBikerRadiated"></entity_class>			
-			<entity_class name="BM_zombieLumberjack" extends="zombieLumberjack"></entity_class>
-			<entity_class name="BM_zombieLumberjackFeral" extends="zombieLumberjackFeral"></entity_class>
-			<entity_class name="BM_zombieLumberjackRadiated" extends="zombieLumberjackRadiated"></entity_class>
-			<entity_class name="BM_zombieFemaleFat" extends="zombieFemaleFat"></entity_class>
-			<entity_class name="BM_zombieFemaleFatFeral" extends="zombieFemaleFatFeral"></entity_class>
-			<entity_class name="BM_zombieFemaleFatRadiated" extends="zombieFemaleFatRadiated"></entity_class>			
-			<entity_class name="BM_zombieFatHawaiian" extends="zombieFatHawaiian"></entity_class>
-			<entity_class name="BM_zombieFatHawaiianFeral" extends="zombieFatHawaiianFeral"></entity_class>
-			<entity_class name="BM_zombieFatHawaiianRadiated" extends="zombieFatHawaiianRadiated"></entity_class>
-			<entity_class name="BM_zombieMaleHazmat" extends="zombieMaleHazmat"></entity_class>
-			<entity_class name="BM_zombieMaleHazmatFeral" extends="zombieMaleHazmatFeral"></entity_class>
-			<entity_class name="BM_zombieMaleHazmatRadiated" extends="zombieMaleHazmatRadiated"></entity_class>
-			<entity_class name="BM_zombieFatCop" extends="zombieFatCop"></entity_class>
-			<entity_class name="BM_zombieFatCopFeral" extends="zombieFatCopFeral"></entity_class>
-			<entity_class name="BM_zombieFatCopRadiated" extends="zombieFatCopRadiated"></entity_class>
-
-			<!-- ***** ZOMBIES : FIT,  lower HP than strong zombies but faster than normal ones ***** -->
-			
-			<entity_class name="BM_zombieSkateboarder" extends="zombieSkateboarder"></entity_class>
-			<entity_class name="BM_zombieSkateboarderFeral" extends="zombieSkateboarderFeral"></entity_class>
-			<entity_class name="BM_zombieSkateboarderRadiated" extends="zombieSkateboarderRadiated"></entity_class>
-			<entity_class name="BM_zombieSoldier" extends="zombieSoldier"></entity_class>	
-			<entity_class name="BM_zombieSoldierFeral" extends="zombieSoldierFeral"></entity_class>			
-			<entity_class name="BM_zombieSoldierRadiated" extends="zombieSoldierRadiated"></entity_class>
-			<!-- No Normal zombieWight -->			
-			<entity_class name="BM_zombieWightFeral" extends="zombieWightFeral"></entity_class>
-			<entity_class name="BM_zombieWightRadiated" extends="zombieWightRadiated"></entity_class>			
-
-			<!-- ***** ZOMBIES : SPECIAL ***** -->
-
-			<!-- No Normal/Feral zombieScreamer in vanilla BM hordes & No Radidated zombieScreamer -->
-			<!-- No Normal/Feral zombieMutated in vanilla BM hordes & No Radidated zombieMutated -->
-			<entity_class name="BM_zombieDemolition" extends="zombieDemolition"></entity_class>	
-			<!-- No Feral/Radidated zombieDemolition -->			
-			<!-- No Normal/Feral zombieSteveCrawler in vanilla BM hordes & No Radidated zombieSteveCrawler exists -->			
-			
-			<!-- ***** ANGRY BIRDS and HOT DOGS ***** -->
-			<!-- Appear to be hardcoded default as regulars spawn when riding - Maybe one day -->
-			
-			<!--entity_class name="BM_animalZombieDog" extends="animalZombieDog"></entity_class>			
-			<entity_class name="BM_animalZombieVulture" extends="animalZombieVulture"></entity_class>
-			<entity_class name="BM_animalZombieVultureRadiated" extends="animalZombieVultureRadiated"></entity_class-->
+		</entity_class>
 			
 	<!-- LAZMAN'S ELIMINATE THE HORDE QUEST -->
 			
