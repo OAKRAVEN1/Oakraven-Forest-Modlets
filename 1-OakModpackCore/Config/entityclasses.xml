@@ -9,7 +9,7 @@
 	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalSP')]/@value">npcAnimalFoxStarterFood,FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>	
 	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">npcAnimalFoxStarterFood,FishStick,drinkJarBoiledWater,foodPerchPie,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminatehorde,qc_zombiezpackspecimen</set>
     <!-- PLAYER RUNNING STAMINA -->
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT'][@operation='perc_add'][@tags='running']/@value">-1.25</set><!-- Default is -1.45 -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT'][@operation='perc_add'][@tags='running']/@value">-1.35</set><!-- Default is -1.45 -->
 
 	<!-- NPCMod Tweaks -->
 	<!-- Became Default ^^ --><!-- append xpath="/entity_classes/entity_class[@name='npcAnimalMeleeTemplate']/property[@name='AIPackages']/@value">,NPCLoot</append -->
