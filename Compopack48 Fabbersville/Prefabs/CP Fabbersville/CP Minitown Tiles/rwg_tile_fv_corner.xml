@@ -29,15 +29,15 @@
   <property name="PrefabSize" value="150, 17, 150" />
   <property name="Tags" value="fabbersville,fabberres" />
   <property class="Stats">
-    <property name="TotalVertices" value="420447" />
-    <property name="TotalTriangles" value="461484" />
+    <property name="TotalVertices" value="431189" />
+    <property name="TotalTriangles" value="476760" />
     <property class="BlockEntities">
-      <property name="Vertices" value="296443" />
-      <property name="Triangles" value="326366" />
+      <property name="Vertices" value="307121" />
+      <property name="Triangles" value="341610" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="59191" />
-      <property name="Triangles" value="33721" />
+      <property name="Vertices" value="59271" />
+      <property name="Triangles" value="33761" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="2560" />
@@ -56,8 +56,8 @@
       <property name="Triangles" value="1217" />
     </property>
     <property class="ChunkMeshes5">
-      <property name="Vertices" value="48" />
-      <property name="Triangles" value="24" />
+      <property name="Vertices" value="32" />
+      <property name="Triangles" value="16" />
     </property>
     <property class="ChunkMeshes6">
       <property name="Vertices" value="0" />

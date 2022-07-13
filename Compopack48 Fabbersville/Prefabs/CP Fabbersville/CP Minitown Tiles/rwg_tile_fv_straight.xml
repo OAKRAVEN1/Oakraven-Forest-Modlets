@@ -22,19 +22,19 @@
   <property name="PrefabSize" value="150, 17, 150" />
   <property name="Tags" value="fabbersville,fabberres" />
   <property class="Stats">
-    <property name="TotalVertices" value="343212" />
-    <property name="TotalTriangles" value="369600" />
+    <property name="TotalVertices" value="342521" />
+    <property name="TotalTriangles" value="369744" />
     <property class="BlockEntities">
-      <property name="Vertices" value="235498" />
-      <property name="Triangles" value="243063" />
+      <property name="Vertices" value="235191" />
+      <property name="Triangles" value="243399" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="43241" />
       <property name="Triangles" value="28088" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="4928" />
-      <property name="Triangles" value="2464" />
+      <property name="Vertices" value="4544" />
+      <property name="Triangles" value="2272" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="0" />
@@ -72,9 +72,6 @@
   <property class="IndexedBlockOffsets">
     <property class="POILight">
       <property name="0" value="147, 13, 54" />
-    </property>
-    <property class="quest_feather">
-      <property name="0" value="130, 16, 116" />
     </property>
   </property>
 </prefab>

@@ -29,19 +29,19 @@
   <property name="PrefabSize" value="150, 25, 150" />
   <property name="Tags" value="fabbersville,fabber" />
   <property class="Stats">
-    <property name="TotalVertices" value="521551" />
-    <property name="TotalTriangles" value="560005" />
+    <property name="TotalVertices" value="536291" />
+    <property name="TotalTriangles" value="586258" />
     <property class="BlockEntities">
-      <property name="Vertices" value="386647" />
-      <property name="Triangles" value="416795" />
+      <property name="Vertices" value="402667" />
+      <property name="Triangles" value="443764" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="69022" />
       <property name="Triangles" value="43148" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="1408" />
-      <property name="Triangles" value="704" />
+      <property name="Vertices" value="256" />
+      <property name="Triangles" value="128" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="416" />
@@ -52,8 +52,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes4">
-      <property name="Vertices" value="6048" />
-      <property name="Triangles" value="4914" />
+      <property name="Vertices" value="5920" />
+      <property name="Triangles" value="4774" />
     </property>
     <property class="ChunkMeshes5">
       <property name="Vertices" value="0" />
@@ -79,9 +79,6 @@
   <property class="IndexedBlockOffsets">
     <property class="POILight">
       <property name="0" value="143, 5, 142" />
-    </property>
-    <property class="quest_feather">
-      <property name="0" value="4, 22, 24" />
     </property>
     <property class="TraderOnOff">
       <property name="0" value="15, 3, 12" />

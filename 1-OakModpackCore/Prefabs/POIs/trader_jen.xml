@@ -21,11 +21,11 @@
   <property name="ThemeTags" value="trader" />
   <property name="PrefabSize" value="43, 21, 41" />
   <property class="Stats">
-    <property name="TotalVertices" value="705792" />
-    <property name="TotalTriangles" value="767808" />
+    <property name="TotalVertices" value="713659" />
+    <property name="TotalTriangles" value="781788" />
     <property class="BlockEntities">
-      <property name="Vertices" value="564254" />
-      <property name="Triangles" value="663783" />
+      <property name="Vertices" value="572121" />
+      <property name="Triangles" value="677763" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="134921" />
@@ -75,9 +75,6 @@
     <property class="TraderOnOff">
       <property name="0" value="31, 3, 13" />
       <property name="1" value="32, 2, 14" />
-    </property>
-    <property class="quest_feather">
-      <property name="0" value="7, 2, 25" />
     </property>
     <property class="Trader">
       <property name="0" value="34, 2, 17" />

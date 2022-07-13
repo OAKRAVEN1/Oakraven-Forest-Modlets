@@ -27,21 +27,21 @@
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False" />
   <property name="SleeperVolumeFlags" value="2,2,2,2,0,2" />
   <property name="PrefabSize" value="150, 17, 150" />
-  <property name="Tags" value="fabber,fabbersville" />
+  <property name="Tags" value="fabbersville,fabber" />
   <property class="Stats">
-    <property name="TotalVertices" value="505418" />
-    <property name="TotalTriangles" value="544136" />
+    <property name="TotalVertices" value="506871" />
+    <property name="TotalTriangles" value="545495" />
     <property class="BlockEntities">
-      <property name="Vertices" value="341108" />
-      <property name="Triangles" value="378393" />
+      <property name="Vertices" value="342113" />
+      <property name="Triangles" value="379528" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="88519" />
       <property name="Triangles" value="56018" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="11136" />
-      <property name="Triangles" value="5568" />
+      <property name="Vertices" value="11584" />
+      <property name="Triangles" value="5792" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="104" />
