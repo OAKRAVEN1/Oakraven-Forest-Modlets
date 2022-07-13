@@ -8,11 +8,214 @@
 	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedUI']/property[@name='ShowTargetHealthBar']/@value">true</set>
 
 	<!-- Vanilla Tweaks and Toggles -->
-	<!-- Chicken Coops Removal for custom features -->	
+	<!-- Removal for custom features -->	
 	<remove xpath="/blocks/block[@name='cntBirdnest']" />
 	<remove xpath="/blocks/block[@name='cntBirdnestCorner']" />
-
+	<remove xpath="/blocks/block[@name='cntBin']" />
+	<remove xpath="/blocks/block[@name='cntTrash_can01']" />
+	
+	<set xpath="/blocks/block[@name='fireHydrant']/property[@name='Model']/@value">#@modfolder:Resources/newstuff.unity3d?FireHydrentGreen</set>
+	<set xpath="/blocks/block[@name='cntFancyGarbageCan']/property[@name='Model']/@value">#@modfolder:Resources/newstuff.unity3d?bluecan</set>
+	<set xpath="/blocks/block[@name='decoCarTireSmallFlat']/property[@name='Model']/@value">#@modfolder:Resources/newstuff.unity3d?tyre2</set>
+	<set xpath="/blocks/block[@name='cntBruteStyleTrashCanEmpty']/property[@name='Model']/@value">#@modfolder:Resources/newstuff.unity3d?bruteStyleEmpty</set>
+	<set xpath="/blocks/block[@name='cntBruteStyleTrashCanFull']/property[@name='Model']/@value">#@modfolder:Resources/newstuff.unity3d?bruteStylefull</set>
+	<set xpath="/blocks/block[@name='paintingBen']/property[@name='Model']/@value">#@modfolder:Resources/newpics.unity3d?zben</set>
+	<set xpath="/blocks/block[@name='paintingLorien']/property[@name='Model']/@value">#@modfolder:Resources/newpics.unity3d?zlorien</set>
+	<set xpath="/blocks/block[@name='paintingDerek']/property[@name='Model']/@value">#@modfolder:Resources/newpics.unity3d?zDerek</set>
+	<set xpath="/blocks/block[@name='paintingNoah']/property[@name='Model']/@value">#@modfolder:Resources/newpics.unity3d?zNoah</set>
+	<set xpath="/blocks/block[@name='paintingDuke']/property[@name='Model']/@value">#@modfolder:Resources/newpics.unity3d?zDuke</set>
+	<set xpath="/blocks/block[@name='paintingKen']/property[@name='Model']/@value">#@modfolder:Resources/newpics.unity3d?zKen</set>
+	<set xpath="/blocks/block[@name='decoComputerMonitorKeyboardMouse']/property[@name='Model']/@value">#@modfolder:Resources/pcunit.unity3d?monitorKeyboard</set>
+	<set xpath="/blocks/block[@name='decoComputerDeskTopPC']/property[@name='Model']/@value">#@modfolder:Resources/pcunit.unity3d?deskTopPCbase</set>
+	<set xpath="/blocks/block[@name='decoLaptop']/property[@name='Model']/@value">#@modfolder:Resources/pcunit.unity3d?laptopnew</set>
+	<set xpath="/blocks/block[@name='decoComputerMonitorKeyboardMousePC']/property[@name='Model']/@value">#@modfolder:Resources/pcunit.unity3d?monitorKeyboardMousePCnew</set>
+	<set xpath="/blocks/block[@name='cntBarrelGasOld']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?barrel03_oilnew</set>
+	<set xpath="/blocks/block[@name='cntBarrelGenericSingle45']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?barrel045_oilnew</set>
+	<set xpath="/blocks/block[@name='cntBarrelGenericQuadB']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?barrel0QuadBoilnew</set>
+	<set xpath="/blocks/block[@name='cntBarrelGenericQuadA']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?barrel0QuadAoilnew</set>
+	<set xpath="/blocks/block[@name='cntToolBoxClosed']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?metalToolBoxClosednew</set>
+	<set xpath="/blocks/block[@name='cntToolBoxOffsetClosed']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?metalToolBoxClosednew</set>
+	<set xpath="/blocks/block[@name='cntRollingToolBoxOpen']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?rollingToolChestEmptynew</set>
+	<set xpath="/blocks/block[@name='cntRollingToolBoxClosed']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?rollingToolChestClosednew</set>
+	<set xpath="/blocks/block[@name='metalPipeStack']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?metalPipeStacknew</set>
+	<set xpath="/blocks/block[@name='metalPipeStackLoose']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?metalPipeStackLoosenew</set>	
+	
 	<append xpath="/blocks">
+	
+	<block name="cntTrash_can01">
+	<property name="Class" value="Loot"/>
+	<property name="Material" value="Mmetal_thin"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/newstuff.unity3d?bintin"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterCTREighth" param1="143"/>
+	<property name="VehicleHitScale" value="999"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="LootList" value="garbage"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="FilterTags" value="MC_building,SC_loot"/>
+	</block>
+	
+	<block name="cntBin">
+	<property name="Class" value="Loot"/>
+	<property name="Material" value="Mmetal_thin"/>
+	<property name="StabilitySupport" value="false"/>	<!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/newstuff.unity3d?recyclingbin"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterCTREighth" param1="77"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="LootList" value="junk"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="FilterTags" value="MC_building,SC_loot"/>
+	</block>
+	
+	<block name="BillBoardLarge">
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/newstuff.unity3d?BillBoardLarge"/>
+	<property name="CustomIcon" value="billboardlarge2"/>	
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="156"/>
+	<property name="MultiBlockDim" value="1,5,1"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<property name="SortOrder1" value="7000"/>
+	<property name="SortOrder2" value="0002"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</block>
+
+	<block name="BillBoardLarge2">
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/newstuff.unity3d?BillBoardLarge2"/>
+	<property name="CustomIcon" value="billboardlarge2"/>	
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="156"/>
+	<property name="MultiBlockDim" value="1,5,1"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<property name="SortOrder1" value="7000"/>
+	<property name="SortOrder2" value="0002"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</block>
+
+	<block name="WallBillBoard">
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/newstuff.unity3d?WallBillBoard"/>
+	<property name="CustomIcon" value="billboardlarge2"/>	
+	<property name="StabilitySupport" value="true"/> <!-- build restriction -->
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="156"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<property name="SortOrder1" value="7000"/>
+	<property name="SortOrder2" value="0002"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</block>
+
+	<block name="WallBillBoardfood">
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/newstuff.unity3d?WallBillBoardfood"/>
+	<property name="CustomIcon" value="billboardlarge2"/>	
+	<property name="StabilitySupport" value="true"/> <!-- build restriction -->
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="156"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<property name="SortOrder1" value="7000"/>
+	<property name="SortOrder2" value="0002"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</block>
+
+	<block name="WallBillBoardGuns">
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/newstuff.unity3d?WallBillBoardGuns"/>
+	<property name="CustomIcon" value="billboardlarge2"/>	
+	<property name="StabilitySupport" value="true"/> <!-- build restriction -->
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="156"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<property name="SortOrder1" value="7000"/>
+	<property name="SortOrder2" value="0002"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</block>
+
+	<block name="WallBillBoardspider">
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/newstuff.unity3d?WallBillBoardspider"/>
+	<property name="CustomIcon" value="billboardlarge2"/>	
+	<property name="StabilitySupport" value="true"/> <!-- build restriction -->
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="156"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="ModelOffset" value="0,.5,0"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<property name="SortOrder1" value="7000"/>
+	<property name="SortOrder2" value="0002"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</block>
+
+	<block name="BarberPole">
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/newstuff.unity3d?BarberPole"/>
+	<property name="CustomIcon" value="barberpole"/>	
+	<property name="StabilitySupport" value="true"/> <!-- build restriction -->
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	<property name="SortOrder1" value="7000"/>
+	<property name="SortOrder2" value="0002"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</block>	
 	
 	<!-- NEW WEAPONS -->
 

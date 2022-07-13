@@ -798,5 +798,13 @@ vehicleHellMaxCarAccessoriesSchematic,vehicles,item,,,Hell Max Car Accessories S
 vehicleHellMaxCar,entityclasses,Entity,,,Hell Max Car,,,,,,,,,,,,,
 vehicleHellMaxCarPlaceable,vehicles,vehicle,,,Hell Max Car,,,,,,,,,,,,,
 
+BillBoardLarge,blocks,Block,,,Billboard Large,,,,,,,,,,,,,
+BillBoardLarge2,blocks,Block,,,Billboard Large 2,,,,,,,,,,,,,
+WallBillBoard,blocks,Block,,,Wall Billboard,,,,,,,,,,,,,
+WallBillBoardfood,blocks,Block,,,Wall Billboard Food,,,,,,,,,,,,,
+WallBillBoardGuns,blocks,Block,,,Wall Billboard Guns,,,,,,,,,,,,,
+WallBillBoardspider,blocks,Block,,,Wall Billboard Spider,,,,,,,,,,,,,
+BarberPole,blocks,Block,,,Barber Pole,,,,,,,,,,,,,
+
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,
