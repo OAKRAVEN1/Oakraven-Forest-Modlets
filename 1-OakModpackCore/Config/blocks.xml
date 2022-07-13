@@ -13,7 +13,7 @@
 	<remove xpath="/blocks/block[@name='cntBirdnestCorner']" />
 	<remove xpath="/blocks/block[@name='cntBin']" />
 	<remove xpath="/blocks/block[@name='cntTrash_can01']" />
-	
+	<!-- Set for replacement custom features -->	
 	<set xpath="/blocks/block[@name='fireHydrant']/property[@name='Model']/@value">#@modfolder:Resources/newstuff.unity3d?FireHydrentGreen</set>
 	<set xpath="/blocks/block[@name='cntFancyGarbageCan']/property[@name='Model']/@value">#@modfolder:Resources/newstuff.unity3d?bluecan</set>
 	<set xpath="/blocks/block[@name='decoCarTireSmallFlat']/property[@name='Model']/@value">#@modfolder:Resources/newstuff.unity3d?tyre2</set>
@@ -39,9 +39,21 @@
 	<set xpath="/blocks/block[@name='cntRollingToolBoxClosed']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?rollingToolChestClosednew</set>
 	<set xpath="/blocks/block[@name='metalPipeStack']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?metalPipeStacknew</set>
 	<set xpath="/blocks/block[@name='metalPipeStackLoose']/property[@name='Model']/@value">#@modfolder:Resources/barrels.unity3d?metalPipeStackLoosenew</set>	
-	
+	<set xpath="/blocks/block[@name='wineBarrel']/property[@name='Model']/@value">#@modfolder:Resources/NewBarrels.unity3d?wineBarrelnew</set>
+	<set xpath="/blocks/block[@name='wineBarrelPlain']/property[@name='Model']/@value">#@modfolder:Resources/NewBarrels.unity3d?BarrelPrefabnew</set>
+	<set xpath="/blocks/block[@name='palletEmpty']/property[@name='Model']/@value">#@modfolder:Resources/NewBarrels.unity3d?palletPrefabnew</set>
+	<set xpath="/blocks/block[@name='palletEmptyStack']/property[@name='Model']/@value">#@modfolder:Resources/NewBarrels.unity3d?pallet_stacknew</set>
+	<set xpath="/blocks/block[@name='signPosterMovieTheater2159']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMovie2159new</set>
+	<set xpath="/blocks/block[@name='signPosterMovieTheaterLoneWolf']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMoviegogo</set>
+	<set xpath="/blocks/block[@name='signPosterMovieTheaterMammasJustice']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMoviezombie</set>
+	<set xpath="/blocks/block[@name='signPosterMovieTheaterSexualTension']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMoviezombiestrippers</set>
+	<set xpath="/blocks/block[@name='signPosterMovie2159']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMovie2159new2</set>
+	<set xpath="/blocks/block[@name='signPosterMovieLoneWolf']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMoviegogo2</set>
+	<set xpath="/blocks/block[@name='signPosterMovieMammasJustice']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMoviezombie2</set>
+	<set xpath="/blocks/block[@name='signPosterMovieSexualTension']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMoviezombiestrippers2</set>
+
 	<append xpath="/blocks">
-	
+	<!-- Replacement custom features -->	
 	<block name="cntTrash_can01">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="Mmetal_thin"/>

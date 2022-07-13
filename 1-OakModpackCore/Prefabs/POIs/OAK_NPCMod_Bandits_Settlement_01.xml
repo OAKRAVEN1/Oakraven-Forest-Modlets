@@ -22,11 +22,11 @@
   <property name="Tags" value="wilderness" />
   <property name="Zoning" value="none" />
   <property class="Stats">
-    <property name="TotalVertices" value="2854352" />
-    <property name="TotalTriangles" value="2978344" />
+    <property name="TotalVertices" value="2854586" />
+    <property name="TotalTriangles" value="2978606" />
     <property class="BlockEntities">
-      <property name="Vertices" value="2272353" />
-      <property name="Triangles" value="2574436" />
+      <property name="Vertices" value="2272587" />
+      <property name="Triangles" value="2574698" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="506834" />
