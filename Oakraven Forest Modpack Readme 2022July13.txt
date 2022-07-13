@@ -66,6 +66,7 @@ OakModPackCore Modpack Creators and Developers in Alphabtical Order from Z - A:
 Xyth and SphereII with Mumpfy for branding - Created the A20 Skyrim Style Lockpicking MiniGame. (The assets are embedded and remain as per original). 
 Xyth - Created the 1-NPCXSpiderPack.
 Oakraven - Created Oakraven Forest Collection assets.
+Mplogue - Supported OAK_NPC_Bandits_Settlement_01. (Look out for that awesome airship).
 Laz Man - Created Quest - Blood Moon Vanguard and Eliminate the Horde.
 khzmusik - Created 1-khzmusik_Zombies.
 KhaineGB - Unlocked Inventory Lockable Slots Mod.
