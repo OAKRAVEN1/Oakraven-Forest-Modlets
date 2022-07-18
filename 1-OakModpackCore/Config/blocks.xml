@@ -51,6 +51,19 @@
 	<set xpath="/blocks/block[@name='signPosterMovieLoneWolf']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMoviegogo2</set>
 	<set xpath="/blocks/block[@name='signPosterMovieMammasJustice']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMoviezombie2</set>
 	<set xpath="/blocks/block[@name='signPosterMovieSexualTension']/property[@name='Model']/@value">#@modfolder:Resources/FilmPosters.unity3d?posterMoviezombiestrippers2</set>
+	<set xpath="/blocks/block[@name='cntShippingCrateShamway']/property[@name='Model']/@value">#@modfolder:Resources/newcrates.unity3d?shamwaynew</set>
+	<set xpath="/blocks/block[@name='cntShippingCrateBookstore']/property[@name='Model']/@value">#@modfolder:Resources/newcrates.unity3d?Bookshopnew</set>
+	<set xpath="/blocks/block[@name='cntShippingCrateWorkingStiffs']/property[@name='Model']/@value">#@modfolder:Resources/newcrates.unity3d?mechanicnew</set>
+	<set xpath="/blocks/block[@name='cntShippingCrateShotgunMessiah']/property[@name='Model']/@value">#@modfolder:Resources/newcrates.unity3d?messiahnew</set>
+	<set xpath="/blocks/block[@name='cntShippingCrateMoPowerElectronics']/property[@name='Model']/@value">#@modfolder:Resources/newcrates.unity3d?mopowernew</set>
+	<set xpath="/blocks/block[@name='cntShippingCrateCarParts']/property[@name='Model']/@value">#@modfolder:Resources/newcrates.unity3d?passgasnew</set>
+	<set xpath="/blocks/block[@name='cntShippingCrateLabEquipment']/property[@name='Model']/@value">#@modfolder:Resources/newcrates.unity3d?popnpillsnew</set>
+	<set xpath="/blocks/block[@name='cntShippingCrateSavageCountry']/property[@name='Model']/@value">#@modfolder:Resources/newcrates.unity3d?savagenew</set>
+	<set xpath="/blocks/block[@name='cntMicrowaveOvenVer2Open']/property[@name='Model']/@value">#@modfolder:Resources/microwave.unity3d?microwaveopen</set>
+	<set xpath="/blocks/block[@name='cntMicrowaveOvenVer2Closed']/property[@name='Model']/@value">#@modfolder:Resources/microwave.unity3d?microwaveclosed</set>
+	<set xpath="/blocks/block[@name='cntMicrowaveOvenVer1Open']/property[@name='Model']/@value">#@modfolder:Resources/microwave.unity3d?microwaveopen2</set>
+	<set xpath="/blocks/block[@name='cntMicrowaveOvenVer1Closed']/property[@name='Model']/@value">#@modfolder:Resources/microwave.unity3d?microwaveclosed2</set>
+	<set xpath="/blocks/block[@name='cntToaster']/property[@name='Model']/@value">#@modfolder:Resources/microwave.unity3d?toasternew</set>
 
 	<append xpath="/blocks">
 	<!-- Replacement custom features -->	

@@ -23,6 +23,7 @@ The mix is quite eclectic and gives players further opportunities within the fra
 This Modpack contains the following modlets/modifications:
 
 - Oak Modpack UI (Custom HUD features)
+- Replace Mod (Block type replacements and additions)
 - Dragon Cannon (Custom Weapon)
 - New Weapons (Custom Weapons)
 - Space Ship Supply Drop (Futuristic flyover in place of regular plane and supply crate)
