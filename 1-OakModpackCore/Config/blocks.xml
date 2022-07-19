@@ -64,6 +64,8 @@
 	<set xpath="/blocks/block[@name='cntMicrowaveOvenVer1Open']/property[@name='Model']/@value">#@modfolder:Resources/microwave.unity3d?microwaveopen2</set>
 	<set xpath="/blocks/block[@name='cntMicrowaveOvenVer1Closed']/property[@name='Model']/@value">#@modfolder:Resources/microwave.unity3d?microwaveclosed2</set>
 	<set xpath="/blocks/block[@name='cntToaster']/property[@name='Model']/@value">#@modfolder:Resources/microwave.unity3d?toasternew</set>
+	<set xpath="/blocks/block[@name='cntVendingMachine2']/property[@name='Model']/@value">#@modfolder:Resources/vending1.unity3d?vending1</set>
+	<set xpath="/blocks/block[@name='cntVendingMachineTrader']/property[@name='Model']/@value">#@modfolder:Resources/vending1.unity3d?vending2</set>
 
 	<append xpath="/blocks">
 	<!-- Replacement custom features -->	
