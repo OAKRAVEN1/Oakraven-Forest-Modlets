@@ -891,6 +891,8 @@
 	<property name="DescriptionKey" value="RockDrillEmptyDesc"/>
 	<property name="DisplayInfo" value="Name"/>
 	<property name="CustomIcon" value="rockdrill"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicBundleSize" value="1"/>	
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DisplayType" value="blockMulti"/>
