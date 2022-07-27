@@ -4570,6 +4570,7 @@
 	<block name="SquareBeeHiveQueen">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="squarebeehive3Gold"/>	
 	<property name="Material" value="Mwood_weak"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -4586,6 +4587,7 @@
 	<block name="SquareHiveWithHoney">
 	<property name="Extends" value="cntToolBoxClosed"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="squarebeehive3Gold"/>	
 	<property name="Material" value="Mwood_weak"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -4621,6 +4623,7 @@
 	<block name="BeeHiveQueen">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="beehive3gold"/>	
 	<property name="Material" value="Mwood_weak"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -4637,6 +4640,7 @@
 	<block name="BeeHiveWithHoney">
 	<property name="Extends" value="cntToolBoxClosed"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="beehive3gold"/>	
 	<property name="Material" value="Mwood_weak"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -4685,6 +4689,7 @@
 	<block name="WoodBeeHiveQueen">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="beehivewood"/>	
 	<property name="Material" value="Mwood_weak"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -4701,6 +4706,7 @@
 	<block name="WoodBeeHiveWithHoney">
 	<property name="Extends" value="cntToolBoxClosed"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="beehivewood"/>	
 	<property name="Material" value="Mwood_weak"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -4713,7 +4719,7 @@
 
 	<block name="BeeStump">
 	<property name="AllowAllRotations" value="true"/>
-        <property name="CustomIcon" value="" /> 
+        <property name="CustomIcon" value="logwithbeesoak" /> 
         <property name="Material" value="Mwood_regular"/>
         <property name="IsTerrainDecoration" value="true"/>
         <property name="Shape" value="ModelEntity"/>
