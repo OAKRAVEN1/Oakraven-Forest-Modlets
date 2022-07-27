@@ -65,8 +65,8 @@
 	<set xpath="/blocks/block[@name='cntMicrowaveOvenVer1Closed']/property[@name='Model']/@value">#@modfolder:Resources/microwave.unity3d?microwaveclosed2</set>
 	<set xpath="/blocks/block[@name='cntToaster']/property[@name='Model']/@value">#@modfolder:Resources/microwave.unity3d?toasternew</set>
 	<set xpath="/blocks/block[@name='cntVendingMachine2']/property[@name='Model']/@value">#@modfolder:Resources/vending1.unity3d?vending3</set>
-	<set xpath="/blocks/block[@name='cntVendingMachineTrader']/property[@name='Model']/@value">#@modfolder:Resources/vending1.unity3d?vending2</set>
-	<set xpath="/blocks/block[@name='cntVendingMachine']/property[@name='Model']/@value">#@modfolder:Resources/vending1.unity3d?vending4</set>
+	<set xpath="/blocks/block[@name='cntVendingMachineTrader']/property[@name='Model']/@value">#@modfolder:Resources/vending1.unity3d?vending1</set>
+	<set xpath="/blocks/block[@name='cntVendingMachine']/property[@name='Model']/@value">#@modfolder:Resources/vending1.unity3d?vending5</set>
 	<set xpath="/blocks/block[@name='cntVendingMachine2Broken']/property[@name='Model']/@value">#@modfolder:Resources/vending1.unity3d?vending3broke</set>
 	<set xpath="/blocks/block[@name='cntATMSecure']/property[@name='Model']/@value">#@modfolder:Resources/vending1.unity3d?ATMPrefabnew</set>
 	<set xpath="/blocks/block[@name='cntATMInsecure']/property[@name='Model']/@value">#@modfolder:Resources/vending1.unity3d?ATMPrefabnewbroke</set>
