@@ -73,6 +73,14 @@
 	<set xpath="/blocks/block[@name='cntCashRegisterEmpty']/property[@name='Model']/@value">#@modfolder:Resources/registernew.unity3d?cashRegisteropennew</set>
 	<set xpath="/blocks/block[@name='cntCashRegister']/property[@name='Model']/@value">#@modfolder:Resources/registernew.unity3d?cashRegisterClosednew</set>
 	<set xpath="/blocks/block[@name='cashRegisterScanner']/property[@name='Model']/@value">#@modfolder:Resources/registernew.unity3d?cashRegisterScannernew</set>
+	<set xpath="/blocks/block[@name='decoMetalBollardDestroyed01']/property[@name='Model']/@value">#@modfolder:Resources/bollards.unity3d?bollardMetalKnockednew</set>
+	<set xpath="/blocks/block[@name='decoMetalBollard']/property[@name='Model']/@value">#@modfolder:Resources/bollards.unity3d?bollardMetalnew</set>
+	<set xpath="/blocks/block[@name='cntShoppingCartEmpty']/property[@name='Model']/@value">#@modfolder:Resources/bollards.unity3d?shopping_cart_emptynew</set>
+	<set xpath="/blocks/block[@name='cntShoppingCart']/property[@name='Model']/@value">#@modfolder:Resources/bollards.unity3d?shopping_cart_fullnew</set>
+	<set xpath="/blocks/block[@name='cntDeskSafe']/property[@name='Model']/@value">#@modfolder:Resources/safes.unity3d?safeMetalDeskClosenew</set>
+	<set xpath="/blocks/block[@name='cntWallSafe']/property[@name='Model']/@value">#@modfolder:Resources/safes.unity3d?safeMetalWallClosenew</set>
+	<set xpath="/blocks/block[@name='cntDeskSafeInsecure']/property[@name='Model']/@value">#@modfolder:Resources/safes.unity3d?safeMetalDeskopennew</set>
+	<set xpath="/blocks/block[@name='cntWallSafeInsecure']/property[@name='Model']/@value">#@modfolder:Resources/safes.unity3d?safeMetalWallopennew</set>
 
 	<append xpath="/blocks">
 	<!-- Replacement custom features -->	
