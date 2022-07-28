@@ -923,6 +923,11 @@
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
+	<property class="RepairItems">
+		<property name="resourceSpring" value="3"/>
+		<property name="resourceMechanicalParts" value="6"/>
+		<property name="resourceDuctTape" value="2"/>		
+	</property>	
 </block>
 
 	<block name="RockDrillWorking">
