@@ -18,7 +18,7 @@ perkMasterChefRank2LongDesc,progression,perk Str,,,"Just like grandma used to ma
 perkMasterChefRank3LongDesc,progression,perk Str,,,"Learn how to make nutritious pot luck meals from canned goods. Craft Sham Chowder, Hobo Stew, Chili dogs and Fish Tacos. Wash them down with Yucca Juice Smoothies and Beer. Cook 30% faster. Additional recipes include Hydroponic Salmon Bake.",,,,,,,,,,,,,
 
 perkAdvancedEngineeringRank1LongDesc,progression,perk Int,,,"You are now a blacksmith and able to forge iron and other metal objects. Craft forges and craft items with them 20% faster. Craft glue cheaper. You can also craft an Oakraven Forge and Armoury Bench.",,,,,,,,,,,,,
-perkAdvancedEngineeringRank2LongDesc,progression,perk Int,,,"Your tinkering is proving useful in the apocalypse. Craft workbenches and cement mixers and craft items with them 20% faster. You can also craft an Oakraven Powder Mixer, Fish Oven, Power Workbench, Power Cell and Solar Cell. Cell items increase up to level 6 as you increase Advanced Engineering Skill. Cells offer Level 3 at Skill 2.",,,,,,,,,,,,,
+perkAdvancedEngineeringRank2LongDesc,progression,perk Int,,,"Your tinkering is proving useful in the apocalypse. Craft workbenches and cement mixers and craft items with them 20% faster. You can also craft an Oakraven Powder Mixer, Oakraven Cement Mixer, Fish Oven, Power Workbench, Power Cell and Solar Cell. Cell items increase up to level 6 as you increase Advanced Engineering Skill. Cells offer Level 3 at Skill 2.",,,,,,,,,,,,,
 perkAdvancedEngineeringRank3LongDesc,progression,perk Int,,,"You are now an electrician. Learn to craft generators, and build advanced base defense systems such as electric fences & blade traps. Craft military fiber. Gain 20% XP from electrical trap kills.\nEfficient craftsman. All forge recipes cost 10% less, crafting Forged Steel and electrical devices costs 15% less.\nCraft the Oakraven Generator 1 & 2. Cells offer Level 4 at Skill 3.",,,,,,,,,,,,,
 perkAdvancedEngineeringRank4LongDesc,progression,perk Int,,,"Learn to craft shotgun turrets for short range concentrated base defense, battery banks and nail guns. Gain 35% XP from electrical trap kills.\nAll forge recipes cost 15% less, crafting Forged Steel and electrical devices costs 25% less.\nCraft the Oakraven Battery Bank 1 & 2 as well as the Oakraven Turret Solar Power Array and Oakraven Solar Power Array. Cells offer Level 5 at Skill 4.",,,,,,,,,,,,,
 perkAdvancedEngineeringRank5LongDesc,progression,perk Int,,,"Learn to craft SMG auto turrets for the best ranged base defense, and crucibles to forge steel in forges. Gain 50% XP from Electrical Trap Kills.\nAll forge recipes cost 20% less, crafting Forged Steel and electrical devices costs 35% less. Cells offer maximum output with Level 6 at Skill 5.",,,,,,,,,,,,,
@@ -534,7 +534,11 @@ OakChemistryStationDesc,blocks,Block,,,"The Oakraven Chemistry Station allows pl
 OakForge,blocks,Block,,,Oakraven Forge,,,,,,,,,,,,,
 OakForgeDesc,blocks,Block,,,"The Oakraven Forge allows players to use high temperatures to produce refined and complete resources.",,,,,,,,,,,,,
 PowderMixer,blocks,Block,,,Oakraven Powder Mixer,,,,,,,,,,,,,
-PowderMixerDesc,blocks,Block,,,"The Powder Mixer allows resources to be crushed and ground down to a powder, to be added to the next stage of process.",,,,,,,,,,,,,
+PowderMixerDesc,blocks,Block,,,"The Oakraven Powder Mixer allows resources to be crushed and ground down to a powder, to be added to the next stage of process.",,,,,,,,,,,,,
+OakCementMixer,blocks,Workstation,,,Oakraven Cement Mixer,,,,,,,,,,,,,
+OakCementMixerDesc,blocks,Workstation,,,"The Oakraven Cement Mixer will help you craft materials like concrete mix or asphalt. It requires steel ingots instead of iron ingots to craft but allows players to craft bundles of 1000 with a 20% reduction of resources.",,,,,,,,,,,,,
+resourceOakCementMixerConcreteBundle,items,Item,,,Stack of Concrete (1000),,,,,,,,,,,,,
+resourceOakCementMixerConcreteBundleDesc,items,Item,,,"This is a compact stack of concrete. 'Open' this item to open and unpack it. This stack of concrete uses 20% less resources than the same amount in single units.",,,,,,,,,,,,,
 
 TraderRifleBirdMan,entityclasses,Entity,,,Trader Bird Man,,,,,,,,,,,,,
 RifleBirdManTrader,blocks,Block,,,Trader Bird Man Spawner,,,,,,,,,,,,,

@@ -4660,6 +4660,18 @@
 	</effect_group>
 </item>
 
+	<!-- WORK STATIONS -->
+	
+	<item name="resourceOakCementMixerConcreteBundle">
+		<property name="Extends" value="resourceRockSmallBundle"/>
+		<property name="CustomIcon" value="resourceConcreteMix"/>
+		<property name="DescriptionKey" value="resourceOakCementMixerConcreteBundleDesc"/>	
+		<property class="Action0">
+			<property name="Create_item" value="resourceConcreteMix"/>
+			<property name="Create_item_count" value="1000"/>
+		</property>
+	</item>
+
 	<!-- ADMIN TOOLS -->
 	
 	<item name="jetBootsAdmin">

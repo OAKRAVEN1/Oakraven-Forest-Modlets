@@ -1783,8 +1783,16 @@
 		<ingredient name="smallEngine" count="1"/>
 		<ingredient name="resourceMechanicalParts" count="10"/>
 	</recipe>
+	
+	<recipe name="OakCementMixer" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="35"/>
+		<ingredient name="resourceSpring" count="7"/>
+		<ingredient name="smallEngine" count="1"/>
+		<ingredient name="resourceMechanicalParts" count="20"/>
+	</recipe>
 
 	<!-- RESOURCES AND CHEMISTRY -->
+	<!-- OAK CHEMISTRY STATION -->
 
 	<recipe name="ammoGasCan" count="15" craft_area="OakChemistryStation" tags="learnable,chemStationCrafting">
 		<ingredient name="resourceOilShale" count="1"/>
@@ -1902,6 +1910,8 @@
 	    <ingredient name="resourceGlue" count="1"/>
 	    <ingredient name="drinkJarRiverWater" count="1"/>
     </recipe>
+	
+	<!-- OAK POWDER MIXER -->
 
     <recipe name="resourceCement" count="4" craft_area="PowderMixer" tags="cementMixerCrafting">
 	    <ingredient name="resourceCrushedSand" count="1"/>
@@ -1911,6 +1921,41 @@
     <recipe name="resourceCrushedSand" count="2" craft_area="PowderMixer" tags="cementMixerCrafting">
 	    <ingredient name="resourceRockSmall" count="1"/>
     </recipe>
+	
+	<!-- OAK CONCRETE MIXER -->
+	
+	<recipe name="resourceOakCementMixerConcreteBundle" count="1" craft_time="1760" craft_area="OakCementMixer" tags="cementMixerCrafting">
+		<ingredient name="resourceCrushedSand" count="800"/>
+		<ingredient name="resourceRockSmall" count="800"/>
+		<ingredient name="resourceCement" count="800"/>
+	</recipe>
+
+	<recipe name="resourceConcreteMix" count="1" craft_area="OakCementMixer" tags="cementMixerCrafting">
+		<ingredient name="resourceCrushedSand" count="1"/>
+		<ingredient name="resourceRockSmall" count="1"/>
+		<ingredient name="resourceCement" count="1"/>
+	</recipe>
+
+	<recipe name="resourceCrushedSand" count="1" craft_area="OakCementMixer" tags="cementMixerCrafting">
+		<ingredient name="resourceRockSmall" count="1"/>
+	</recipe>
+
+	<recipe name="terrGravel" count="1" craft_area="OakCementMixer" tags="cementMixerCrafting">
+		<ingredient name="resourceCrushedSand" count="10"/>
+		<ingredient name="resourceRockSmall" count="10"/>
+	</recipe>
+
+	<recipe name="terrAsphalt" count="1" craft_area="OakCementMixer" tags="cementMixerCrafting">
+		<ingredient name="resourceCrushedSand" count="8"/>
+		<ingredient name="resourceRockSmall" count="17"/>
+		<ingredient name="resourceOilShale" count="5"/>
+	</recipe>
+
+	<recipe name="terrStone" count="1" craft_area="OakCementMixer" tags="cementMixerCrafting">
+		<ingredient name="resourceCrushedSand" count="10"/>
+		<ingredient name="resourceRockSmall" count="18"/>
+		<ingredient name="resourceCement" count="4"/>
+	</recipe>
 	
 <!-- Flyers -->
 
