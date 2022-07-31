@@ -148,3 +148,5 @@ If you have a custom install or your server host has modified the installation l
 
 Does this Mod need to be installed in the server/client host? = YES
 Do players also need to install this Mod? = YES (because it contains custom content that cannot be downloaded from the server).
+
+* Launching the Modpack will require EAC to be set as False/Off due to the custom content.
