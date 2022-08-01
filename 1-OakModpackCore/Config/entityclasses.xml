@@ -11,6 +11,11 @@
     <!-- PLAYER RUNNING STAMINA -->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT'][@operation='perc_add'][@tags='running']/@value">-1.35</set><!-- Default is -1.45 -->
 
+	<!-- KhaineGB's 60 Slot Backpack Mod -->
+	<!-- Edit player entity to increase inventory size -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity'][@value='27']/@value">40</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize'][@value='45']/@value">60</set>	
+	
 	<!-- NPCMod Tweaks -->
 	<!-- Became Default ^^ --><!-- append xpath="/entity_classes/entity_class[@name='npcAnimalMeleeTemplate']/property[@name='AIPackages']/@value">,NPCLoot</append -->
 

@@ -1,6 +1,10 @@
 <configs>
 
 	<!-- Vanilla Tweaks and Toggles -->
+	
+	<!-- KhaineGB's 60 Slot Backpack Mod -->	
+    <!-- Make player dropped bags bigger to accomodate new size-->
+	<set xpath="/lootcontainers/lootcontainer[@id='2']/@size">8,10</set>	
 	<!-- Chicken Coops Removal for custom features -->
 	<remove xpath="/lootcontainers/lootcontainer[@name='birdNest']" />
 

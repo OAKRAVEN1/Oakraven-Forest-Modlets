@@ -4,7 +4,10 @@
 	<set xpath="/progression/level/@max_level">1000</set><!-- Default is 300 -->
 	<set xpath="/progression/level/@exp_to_level">9000</set><!-- 10% less to assist level increase/GS - Default is 10000 -->	
 	<set xpath="/progression/level/@experience_multiplier">1.025</set><!-- 50% less for initial compounding increase - Default is 1.05 -->
-	
+
+	<!-- KhaineGB's 60 Slot Backpack Mod -->
+	<!-- Change Pack Mule Perk to unlock all slots -->
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='3,6,10,14,18']/@value">4,8,12,16,20</set>	
 
 	<!-- New Weapon Progression -->
 	
