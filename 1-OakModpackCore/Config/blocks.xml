@@ -81,6 +81,10 @@
 	<set xpath="/blocks/block[@name='cntWallSafe']/property[@name='Model']/@value">#@modfolder:Resources/safes.unity3d?safeMetalWallClosenew</set>
 	<set xpath="/blocks/block[@name='cntDeskSafeInsecure']/property[@name='Model']/@value">#@modfolder:Resources/safes.unity3d?safeMetalDeskopennew</set>
 	<set xpath="/blocks/block[@name='cntWallSafeInsecure']/property[@name='Model']/@value">#@modfolder:Resources/safes.unity3d?safeMetalWallopennew</set>
+	<set xpath="/blocks/block[@name='decoConcreteBollardDestroyed01']/property[@name='Model']/@value">#@modfolder:Resources/newbollards.unity3d?bollardConcretenew</set>
+	<set xpath="/blocks/block[@name='decoConcreteBollard']/property[@name='Model']/@value">#@modfolder:Resources/newbollards.unity3d?bollardConcretenew</set>
+	<set xpath="/blocks/block[@name='decoConcreteBollardDestroyed02']/property[@name='Model']/@value">#@modfolder:Resources/newbollards.unity3d?bollardConcreteKnockedBnew</set>
+
 
 	<append xpath="/blocks">
 	<!-- Replacement custom features -->	
