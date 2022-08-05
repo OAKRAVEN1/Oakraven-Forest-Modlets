@@ -526,6 +526,12 @@
 	<recipe name="DrillGasCan" count="1" craft_area="chemistryStation">
 		<ingredient name="resourceOilShale" count="120"/>
 	</recipe>
+	
+	<!-- Giving access to Oak Chemistry Station for inclusion -->
+	
+	<recipe name="DrillGasCan" count="1" craft_area="OakChemistryStation">
+		<ingredient name="resourceOilShale" count="120"/>
+	</recipe>	
 
 	<recipe name="RockDrillEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
 		<ingredient name="resourceForgedSteel" count="40"/>
