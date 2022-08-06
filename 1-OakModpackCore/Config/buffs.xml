@@ -134,6 +134,28 @@
 					<requirement name="EntityTagCompare" tags="player"/>
 				</triggered_effect>
 			</effect_group>
+	</buff>
+	
+	<!-- COOKING WORKSTATIONS -->	
+	
+	<buff name="buffDrunkHermitHelperXPElixir" name_key="buffDrunkHermitHelperXPElixirName" description_key="buffDrunkHermitHelperXPElixirDesc" tooltip_key="buffDrunkHermitHelperXPElixirTooltip" icon="ui_game_symbol_beer">
+		<stack_type value="replace"/><duration value="0"/>
+		<display_value value=".buffDrunkHermitHelperXPElixirDisplay"/><display_value_format value="time"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrunkHermitHelperXPElixirDuration" operation="subtract" value="@$MetabolismDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrunkHermitHelperXPElixirDisplay" operation="set" value="@$buffDrunkHermitHelperXPElixirDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrunkHermitHelperXPElixirDisplay" operation="divide" value="@$MetabolismDuration"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrunkHermitHelperXPElixir">
+				<requirement name="CVarCompare" cvar="$buffDrunkHermitHelperXPElixirDuration" operation="LTE" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffDrunkHermitHelperXPElixirDisplay" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffDrunkHermitHelperXPElixirDuration" operation="set" value="0"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".1"/>
+		</effect_group>
 	</buff>	
 	
 	<!-- HYDROPONIC FARMING -->
