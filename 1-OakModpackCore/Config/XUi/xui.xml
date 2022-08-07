@@ -245,6 +245,17 @@
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		
+		<window_group name="workstation_ТатаринForge" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowForgeCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowOakForgeInput" />
+			<window name="windowOutputForge" />
+			<window name="windowNonPagingHeader" />
+		</window_group>		
+		
 		<window_group name="workstation_PowderMixer" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
