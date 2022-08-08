@@ -261,6 +261,35 @@
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</block>
+	
+	<!-- OAK TRAPS -->
+	
+	<block name="CactusTrap">
+	<property name="Material" value="MbarbedWire"/>
+	<property name="CustomIcon" value="cactustrap"/>
+	<property name="Shape" value="ModelEntity" />
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?CactisTrap"/>
+	<property name="BuffsWhenWalkedOn" value="triggerBleeding"/>
+	</block>
+
+	<block name="LavaTrap">
+	<property name="Material" value="Tar"/>
+	<property name="CustomIcon" value="lavatrap"/>
+	<property name="Shape" value="ModelEntity" />
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?LavaTrap"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
+	</block>
+
+	<block name="TarTrap">
+	<property name="Material" value="MbarbedWire"/>
+	<property name="CustomIcon" value="tartrap"/>
+	<property name="Shape" value="ModelEntity" />
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?TarTrap"/>
+	<property name="BuffsWhenWalkedOn" value="buffTar"/>
 	</block>	
 	
 	<!-- NEW WEAPONS -->

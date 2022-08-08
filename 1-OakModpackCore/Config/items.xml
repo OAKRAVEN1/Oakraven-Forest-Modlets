@@ -151,6 +151,44 @@
 			<property name="Create_item" value="resourceClayLump"/>
 			<property name="Create_item_count" value="6000"/>
 		</property>
+	</item>
+	
+	<!-- OAK TRAPS -->	
+
+	<item name="resourceSnowOrcTeeth"> <!-- scrap material -->
+		<property name="CustomIcon" value="snoworcteeth"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<!--<property name="HoldType" value="2"/>
+		<property name="Meshfile" value="#Other/Items?Crafting/femur.fbx"/>-->
+		<property name="Material" value="MresourceBone"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="2500"/> <!-- STK resource -->
+		<property name="RepairAmount" value="270"/>
+		<property name="EconomicValue" value="1"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientTime" value=".1"/>
+	</item>
+	
+	<item name="resourceSpiderSac"> <!-- scrap material -->
+		<property name="CustomIcon" value="spidersac"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<!--<property name="HoldType" value="2"/>
+		<property name="Meshfile" value="#Other/Items?Crafting/femur.fbx"/>-->
+		<property name="Material" value="MresourceBone"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="2500"/> <!-- STK resource -->
+		<property name="RepairAmount" value="270"/>
+		<property name="EconomicValue" value="1"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientTime" value=".1"/>
 	</item>	
 
 	<!-- NEW WEAPONS -->

@@ -47,6 +47,24 @@
 			</effect_group>
 		</buff>	
 	
+	<!-- OAK TRAPS -->
+	
+	<buff name="buffTar" description_key="" tooltip_key="buffShockedTooltip" icon="" name_key="buffShockedName" icon_color="255,0,0">
+		<damage_type value="electrical"/>
+		<stack_type value="replace"/>
+		<duration value="4.5"/>
+		<effect_group>
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffTar"/>
+
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="1,0" duration="0,4.3"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="1,0" duration="0,4.3"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="1,0" duration="0,4.3"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="1,0" duration="0,4.3"/>
+
+		</effect_group>
+	</buff>
+
 	<!-- DRAGON CANNON -->
 	
 <buff name="gunDragonCannoncharge" hidden="true">

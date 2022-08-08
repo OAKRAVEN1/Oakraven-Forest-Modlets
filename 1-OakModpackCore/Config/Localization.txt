@@ -28,6 +28,17 @@ perkPhysicianRank1LongDesc,progression,perk Int,,,"Medical healing items heal 25
 perkGreaseMonkeyRank3LongDesc,progression,perk Int,,,"It was only a matter of time before going faster and carrying more gear was a necessity. You can craft motorcycle and spider rider parts, oil and quality 3 car batteries. Craft motorcycle and spider rider parts 33% cheaper.",,,,,,,,,,,,,
 perkGreaseMonkeyRank5LongDesc,progression,perk Int,,,"Your tinkering desire is never satisfied and only a true genius could figure out how to take to the skies with scrap iron. Can craft gyrocopter and whirly bird parts as well as quality 5 car batteries. Craft gyrocopter and whirly bird parts 33% cheaper.",,,,,,,,,,,,,
 
+CactusTrap,blocks,Block,,,Cactus Teeth Trap (Blood Loss Damage),,,,,,,,,,,,,
+CactusTrapDesc,blocks,Block,,,"This Cactus Teeth Trap can be placed on a surface. It will damage both zombies and players. Find Snow Orc Teeth in the Snow Biome.",,,,,,,,,,,,,
+LavaTrap,blocks,Block,,,Lava Trap (Burn Damage),,,,,,,,,,,,,
+LavaTrapDesc,blocks,Block,,,"This Lava Trap can be placed on a surface. It will damage both zombies and players.",,,,,,,,,,,,,
+TarTrap,blocks,Block,,,Spider Sac Trap (Sticky and Slow),,,,,,,,,,,,,
+TarTrapDesc,blocks,Block,,,"This Spider Sac Trap can be placed on a surface. It will damage both zombies and players. Find Spider Sacs in the Desert and Wasteland Biomes.",,,,,,,,,,,,,
+resourceSnowOrcTeeth,items,item,,,Snow Orc Teeth,,,,,,,,,,,,,
+resourceSnowOrcTeethDesc,items,item,,,"Snow Orc Teeth can be used in the Cactus Teeth Trap.",,,,,,,,,,,,,
+resourceSpiderSac,items,item,,,Spider Sac,,,,,,,,,,,,,
+resourceSpiderSacDesc,items,item,,,"Spider Sacs can be used in the Spider Sac Trap.",,,,,,,,,,,,,
+
 gunRifleT2LeverActionMagnumRifle,items,item,,,Rifle - (Lever Action Magnum),,,,,,,,,,,,,
 gunRifleT2LeverActionMagnumRifleDesc,items,item,,,"A rifle with all the power but none of the trimmings. Scopes cannot be mounted on this model.",,,,,,,,,,,,,
 gunDragonCannon,items,item,,,Dragon Cannon,,,,,,,,,,,,,

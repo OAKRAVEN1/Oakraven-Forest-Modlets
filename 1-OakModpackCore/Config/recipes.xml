@@ -8,6 +8,26 @@
 	<ingredient name="resourceClayLump" count="6000"/>
 </recipe>
 
+	<!-- OAK TRAPS -->
+	
+	<recipe name="CactusTrap" count="1">
+		<ingredient name="resourceSnowOrcTeeth" count="100"/>
+		<ingredient name="foodCropYuccaFruit" count="10"/>
+		<ingredient name="resourceForgedSteel" count="5"/>		
+	</recipe>
+	
+	<recipe name="LavaTrap" count="1">
+		<ingredient name="resourceGlue" count="20"/>
+		<ingredient name="ammoGasCan" count="1500"/>
+		<ingredient name="resourceForgedSteel" count="5"/>		
+	</recipe>
+
+	<recipe name="TarTrap" count="1">
+		<ingredient name="resourceSpiderSac" count="5"/>
+		<ingredient name="resourceGlue" count="10"/>
+		<ingredient name="resourceForgedSteel" count="5"/>		
+	</recipe>	
+
 	<!-- NEW WEAPONS -->	
 	
 		                               <!-- MAGNUM LEVER ACTION RIFLE -->	

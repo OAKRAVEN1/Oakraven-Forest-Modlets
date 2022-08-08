@@ -582,7 +582,9 @@
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
 			<property name="LootDropProb" value="0.2"/> 
-			<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>			
+			<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+			<drop event="Harvest" name="resourceSnowOrcTeeth" tag="allToolsHarvest" count="16,32"/>
+			<property name="DeadBodyHitPoints" value="100"/>			
 		</entity_class>	
 	
 		<entity_class name="OrcBandit" extends="npcClubTemplate"> 
@@ -594,6 +596,8 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="OrcClub"/> 
 			<property name="Names" value="Grug,Urug,Lumdum,Lorzub,Snaglak,Shamob,Purbag,Orgug" />				
 			<property name="Mesh" value="#@modfolder:Resources/Orcz.unity3d?OrcHorde1Dark"/>
+			<drop event="Harvest" name="resourceSnowOrcTeeth" tag="allToolsHarvest" count="16,32"/>
+			<property name="DeadBodyHitPoints" value="100"/>			
 		</entity_class>
 
         <entity_class name="OrcRaider" extends="npcClubTemplate"> 
@@ -605,6 +609,8 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="OrcClub"/> 
 			<property name="Names" value="Grug,Urug,Lumdum,Lorzub,Snaglak,Shamob,Purbag,Orgug" />				
 			<property name="Mesh" value="#@modfolder:Resources/Orcz.unity3d?OrcHorde2Dark"/>
+			<drop event="Harvest" name="resourceSnowOrcTeeth" tag="allToolsHarvest" count="16,32"/>
+			<property name="DeadBodyHitPoints" value="100"/>			
 		</entity_class>
 
         <entity_class name="OrcArcher" extends="npcLBowTemplate"> 
@@ -612,7 +618,9 @@
 			<property name="Faction" value="bandits"/>
             <property name="Names" value="Grug,Urug,Lumdum,Lorzub,Snaglak,Shamob,Purbag,Orgug" />
 		    <property name="LookAtAngle" value="0"/> 			
-			<property name="Mesh" value="#@modfolder:Resources/Orcz.unity3d?OrcArcherDark"/> 
+			<property name="Mesh" value="#@modfolder:Resources/Orcz.unity3d?OrcArcherDark"/>
+			<drop event="Harvest" name="resourceSnowOrcTeeth" tag="allToolsHarvest" count="16,32"/>
+			<property name="DeadBodyHitPoints" value="100"/>			
 		</entity_class> 		
 		
 		<entity_class name="OrcCrossbowman" extends="npcXBowTemplate"> 
@@ -620,7 +628,9 @@
 			<property name="Faction" value="bandits"/>
             <property name="Names" value="Grug,Urug,Lumdum,Lorzub,Snaglak,Shamob,Purbag,Orgug" />
 			<property name="LookAtAngle" value="0"/> 				
-			<property name="Mesh" value="#@modfolder:Resources/Orcz.unity3d?OrcArcherDark"/> 
+			<property name="Mesh" value="#@modfolder:Resources/Orcz.unity3d?OrcArcherDark"/>
+			<drop event="Harvest" name="resourceSnowOrcTeeth" tag="allToolsHarvest" count="16,32"/>
+			<property name="DeadBodyHitPoints" value="100"/>			
 		</entity_class>
 
 		<!-- 2-OrczPackBeta -->
@@ -633,6 +643,8 @@
             <property name="LookAtAngle" value="0"/> 
 			<property name="Names" value="Grug,Urug,Lumdum,Lorzub,Snaglak,Shamob,Purbag,Orgug" />				
 			<property name="Mesh" value="#@modfolder:Resources/OrczPackBeta.unity3d?OrcShamanDark"/>
+			<drop event="Harvest" name="resourceSnowOrcTeeth" tag="allToolsHarvest" count="16,32"/>
+			<property name="DeadBodyHitPoints" value="100"/>			
 		</entity_class>
 
         <entity_class name="OrcBerzerker" extends="npcClubTemplate"> 
@@ -643,11 +655,13 @@
 			<property name="Mesh" value="#@modfolder:Resources/OrczPackBeta.unity3d?OrcBerserkerDark"/>
             <property name="ItemsOnEnterGame.GameModeSurvival" value="OrcClub"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="OrcClub"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="OrcClub"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="OrcClub"/>
+			<drop event="Harvest" name="resourceSnowOrcTeeth" tag="allToolsHarvest" count="16,32"/>
+			<property name="DeadBodyHitPoints" value="100"/>			
             <effect_group name="Base Effects">
 		        <passive_effect name="HealthMax" operation="base_set" value="350"/>
 		        <passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-	        </effect_group>
+	        </effect_group>			
 		</entity_class>
 
         <entity_class name="OrcUruk" extends="npcClubTemplate"> 
@@ -658,11 +672,13 @@
 			<property name="Mesh" value="#@modfolder:Resources/OrczPackBeta.unity3d?OrcUrukDark"/>
             <property name="ItemsOnEnterGame.GameModeSurvival" value="OrcSword"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="OrcSword"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="OrcSword"/> 
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="OrcSword"/>
+			<drop event="Harvest" name="resourceSnowOrcTeeth" tag="allToolsHarvest" count="16,32"/>
+			<property name="DeadBodyHitPoints" value="100"/>			
             <effect_group name="Base Effects">
 		        <passive_effect name="HealthMax" operation="base_set" value="300"/>
 		        <passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
-	        </effect_group>
+	        </effect_group>			
 		</entity_class>
 
         <entity_class name="OrcSlavemaster" extends="npcClubTemplate"> 
@@ -687,6 +703,8 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
+			<drop event="Harvest" name="resourceSnowOrcTeeth" tag="allToolsHarvest" count="16,32"/>
+			<property name="DeadBodyHitPoints" value="100"/>			
 		</entity_class>
 
         <entity_class name="OrcMatron" extends="npcXBowTemplate"> 
@@ -711,6 +729,8 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
+			<drop event="Harvest" name="resourceSnowOrcTeeth" tag="allToolsHarvest" count="16,32"/>
+			<property name="DeadBodyHitPoints" value="100"/>			
 		</entity_class>
 
         <entity_class name="OrcSlaveBald" extends="npcEmptyHandTemplate"> 
@@ -2040,6 +2060,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 			<property name="SoundRandom" value="animalspiderrandom"/>
 			<property name="SoundAlert" value="animalspideralert"/>
 			<property name="SoundHurt" value="animalspiderhurt"/>
@@ -2066,6 +2087,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>	
 		<entity_class name="animalSpider03" extends="animalSpider01">
 			<property name="Tags" value="entity,animal,hostile,animalSpider03,perkAT02,perkAT03"/>
@@ -2077,6 +2099,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>
 
 		<!-- arramus' Colony Expansion from 2-NPCXSpiderPack-ColonyExpansion -->
@@ -2094,6 +2117,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 			<property name="PainResistPerHit" value=".7"/> <!-- Feral -->			
 			<property name="MoveSpeed" value=".3"/>
 			<property name="MoveSpeedAggro" value="1.45, 1.45"/> 
@@ -2118,6 +2142,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="4"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 			<property name="PainResistPerHit" value=".9"/> <!-- Radiated -->			
 			<property name="MoveSpeed" value=".33"/>
 			<property name="MoveSpeedAggro" value="1.5, 1.5"/> 
@@ -2142,7 +2167,8 @@
 			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" prob="0.25" count="1"/>
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest"  prob="0.25" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
-			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>			
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 			<property name="MoveSpeed" value=".25"/>
 			<property name="MoveSpeedAggro" value="1.3, 1.3"/> 
 			<property name="MoveSpeedPanic" value="1.3"/>
@@ -2166,6 +2192,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 			<property name="PainResistPerHit" value=".95"/> <!-- Queen -->
 			<property name="AITask-1" value="Leap"/>
 			<property name="AITask-2" value="BreakBlock"/>
@@ -2204,6 +2231,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>		
 
 		<entity_class name="animalSpider02Radiated" extends="animalSpider01Radiated">
@@ -2215,6 +2243,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="4"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>
 
 		<entity_class name="animalSpider02Mini" extends="animalSpider01Mini">	
@@ -2226,6 +2255,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest"  prob="0.25" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>
 		
 		<entity_class name="animalSpider02Queen" extends="animalSpider01Queen">
@@ -2238,6 +2268,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>		
 		
 		<entity_class name="animalSpider03Feral" extends="animalSpider01Feral">
@@ -2249,6 +2280,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>
 		
 		<entity_class name="animalSpider03Radiated" extends="animalSpider01Radiated">
@@ -2260,6 +2292,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="4"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>
 
 		<entity_class name="animalSpider03Mini" extends="animalSpider01Mini">	
@@ -2271,6 +2304,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest"  prob="0.25" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>
 
 		<entity_class name="animalSpider03Queen" extends="animalSpider01Queen">
@@ -2283,6 +2317,7 @@
 			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>
 
 		<!-- Darkstardragon's Mythical Beasts from 1-FantasticBeastz -->
