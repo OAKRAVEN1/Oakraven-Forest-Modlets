@@ -293,6 +293,30 @@
 	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?TarTrap"/>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="BuffsWhenWalkedOn" value="buffTar"/>
+	</block>
+
+	<block name="barbedtrapnew"> 
+	<property name="Extends" value="barbedWireSheet" param1="SortOrder1,SortOrder2"/> 
+	<property name="CustomIcon" value="bard1"/>
+	<property name="Shape" value="ModelEntity"/> 
+	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?barbedtrapnew"/>
+	<property name="Collide" value="melee,rocket"/>
+	<property name="Damage_received" value="18"/>
+	<property name="MultiBlockDim" value="2,1,1"/> 
+	<property name="DisplayType" value="blockMulti"/> 
+	<property name="ModelOffset" value="-0.5,0.5,0"/> 
+	</block> 
+ 
+	<block name="BarbedWirenew"> 
+	<property name="Extends" value="barbedWireSheet" param1="SortOrder1,SortOrder2"/> 
+	<property name="CustomIcon" value="barb2"/>
+	<property name="Shape" value="ModelEntity"/> 
+	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?BarbedWirenew"/>
+	<property name="Collide" value="melee,rocket"/>
+	<property name="Damage_received" value="18"/>
+	<property name="MultiBlockDim" value="3,1,1"/> 
+	<property name="DisplayType" value="blockMulti"/> 
+	<property name="ModelOffset" value="0,0.5,0"/> 
 	</block>	
 	
 	<!-- NEW WEAPONS -->
