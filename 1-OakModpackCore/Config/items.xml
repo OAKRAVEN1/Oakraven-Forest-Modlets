@@ -577,7 +577,7 @@
 	</property>
 	
 	<effect_group name="AssassinDagger">
-		<passive_effect name="EntityDamage" operation="base_set" value="6.1" tags="perkDeepCuts,knife"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9.1" tags="perkDeepCuts,knife"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5.3" tags="perkDeepCuts"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkDeepCuts,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="8.2" tags="primary"/>
@@ -602,7 +602,7 @@
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 	</effect_group>
 	<effect_group name="Power Attack">
-		<passive_effect name="EntityDamage" operation="base_add" value="6" tags="secondary"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="10" tags="secondary"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
@@ -627,7 +627,7 @@
 	<property name="Material" value="Mmetal"/>
 
 	<effect_group name="KamaDagger">
-		<passive_effect name="EntityDamage" operation="base_set" value="6.1" tags="perkDeepCuts,knife"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9.1" tags="perkDeepCuts,knife"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5.3" tags="perkDeepCuts"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkDeepCuts,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="8.2" tags="primary"/>
@@ -652,7 +652,7 @@
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 	</effect_group>
 	<effect_group name="Power Attack">
-		<passive_effect name="EntityDamage" operation="base_add" value="6" tags="secondary"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="10" tags="secondary"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
@@ -677,7 +677,7 @@
 	<property name="Material" value="Mmetal"/>
 
 	<effect_group name="MetalDagger">
-		<passive_effect name="EntityDamage" operation="base_set" value="6.1" tags="perkDeepCuts,knife"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9.1" tags="perkDeepCuts,knife"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5.3" tags="perkDeepCuts"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkDeepCuts,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="8.2" tags="primary"/>
@@ -702,7 +702,7 @@
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 	</effect_group>
 	<effect_group name="Power Attack">
-		<passive_effect name="EntityDamage" operation="base_add" value="6" tags="secondary"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="10" tags="secondary"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
@@ -727,7 +727,7 @@
 	<property name="Material" value="Mmetal"/>
 
 	<effect_group name="NilDagger">
-		<passive_effect name="EntityDamage" operation="base_set" value="6.1" tags="perkDeepCuts,knife"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9.1" tags="perkDeepCuts,knife"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5.3" tags="perkDeepCuts"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkDeepCuts,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="8.2" tags="primary"/>
@@ -752,7 +752,7 @@
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 	</effect_group>
 	<effect_group name="Power Attack">
-		<passive_effect name="EntityDamage" operation="base_add" value="6" tags="secondary"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="10" tags="secondary"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
@@ -777,7 +777,7 @@
 	<property name="Material" value="Mmetal"/>
 
 	<effect_group name="SpinDagger">
-		<passive_effect name="EntityDamage" operation="base_set" value="6.1" tags="perkDeepCuts,knife"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9.1" tags="perkDeepCuts,knife"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5.3" tags="perkDeepCuts"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkDeepCuts,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="8.2" tags="primary"/>
@@ -802,7 +802,7 @@
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 	</effect_group>
 	<effect_group name="Power Attack">
-		<passive_effect name="EntityDamage" operation="base_add" value="6" tags="secondary"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="10" tags="secondary"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>

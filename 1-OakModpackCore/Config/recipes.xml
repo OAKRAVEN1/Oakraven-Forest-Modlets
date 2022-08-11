@@ -101,7 +101,7 @@
     <!-- DAGGERS -->	
 	
 	<recipe name="AssassinDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
-		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceForgedIron" count="10"/>
 		<ingredient name="resourceWood" count="5"/>
 		<ingredient name="resourceLeather" count="2"/>
 		<ingredient name="resourceDuctTape" count="2"/>
@@ -111,7 +111,7 @@
 	</recipe>
 
 	<recipe name="KamaDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
-		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceForgedIron" count="10"/>
 		<ingredient name="resourceWood" count="5"/>
 		<ingredient name="resourceLeather" count="2"/>
 		<ingredient name="resourceDuctTape" count="2"/>
@@ -121,7 +121,7 @@
 	</recipe>
 
 	<recipe name="MetalDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
-		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceForgedIron" count="10"/>
 		<ingredient name="resourceWood" count="5"/>
 		<ingredient name="resourceLeather" count="2"/>
 		<ingredient name="resourceDuctTape" count="2"/>
@@ -131,7 +131,7 @@
 	</recipe>
 
 	<recipe name="NilDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
-		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceForgedIron" count="10"/>
 		<ingredient name="resourceWood" count="5"/>
 		<ingredient name="resourceLeather" count="2"/>
 		<ingredient name="resourceDuctTape" count="2"/>
@@ -141,7 +141,7 @@
 	</recipe>
 
 	<recipe name="SpinDagger" count="1" craft_area="ArmoryBench" tags="learnable,perkDeepCuts">
-		<ingredient name="resourceForgedSteel" count="10"/>
+		<ingredient name="resourceForgedIron" count="10"/>
 		<ingredient name="resourceWood" count="5"/>
 		<ingredient name="resourceLeather" count="2"/>
 		<ingredient name="resourceDuctTape" count="2"/>
