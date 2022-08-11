@@ -1134,7 +1134,7 @@
 		<ingredient name="CaughtChick" count="5"/>
 		<ingredient name="QueenBee" count="2"/>
 		<ingredient name="FireFlyBug" count="1"/>
-		<ingredient name="LionMushroom" count="5"/>		
+		<ingredient name="LionMushroom" count="4"/>		
 		<ingredient name="drinkJarPureMineralWater" count="1"/>
 	</recipe>	
 	<recipe name="drinkJarRedTea" count="1" craft_area="SilverBlender" tags="perkMasterChef,learnable">
