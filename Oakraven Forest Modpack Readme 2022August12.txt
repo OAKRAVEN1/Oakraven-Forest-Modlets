@@ -61,7 +61,8 @@ In addition, some Addons that are powered by 0-Score and 0-XNPCCore and bundled 
 - 1-GansSpecialZombies (A variety of fancy dress type zombies from GanTheGrey) + 2- Feral and Radiated
 - 1-NPCXSpiderPack and 2-NPCXSpiderPack-ColonyExpansion (Spiders for the Wasteland and Desert Biome)
 - 1-FantasticBeastz (Mythical Beasts for the Wasteland and Desert Biome)
-- 1-YeOldeUndeadPack (A variety of Medieval undead + 2- Radiated) 
+- 1-YeOldeUndeadPack (A variety of Medieval undead + 2- Radiated)
+- 2-khzmusik_variable_NPC_sleepers (Brings greater parity with default sleeper volume behaviour patterns)
 
 OakModPackCore Modpack Creators and Developers in Alphabtical Order from Z - A:
 
@@ -70,7 +71,7 @@ Xyth - Created the 1-NPCXSpiderPack.
 Oakraven - Created Oakraven Forest Collection assets.
 Mplogue - Supported OAK_NPC_Bandits_Settlement_01. (Look out for that awesome airship).
 Laz Man - Created Quest - Blood Moon Vanguard and Eliminate the Horde.
-khzmusik - Created 1-khzmusik_Zombies.
+khzmusik - Created 1-khzmusik_Zombies and 2-khzmusik_variable_NPC_sleepers.
 KhaineGB - Unlocked Inventory Lockable Slots Mod and 60 Slot Backpack Mod.
 GanTheGrey - Created 1-GansSpecialZombies.
 Darkstardragon - Created 1-ZombiezPack, 1-SurvivorzPack, 1-OrczPackAlpha and 2-OrczPackBeta, 1-FantasticBeastz, and 1-YeOldeUndeadPack. Also performed an abundance of play testing and coding support through the connected 'Not Medieval Mod'.

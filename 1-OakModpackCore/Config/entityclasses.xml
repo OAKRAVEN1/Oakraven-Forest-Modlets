@@ -18,7 +18,7 @@
 	
 	<!-- NPCMod Tweaks -->
 	<!-- Became Default ^^ --><!-- append xpath="/entity_classes/entity_class[@name='npcAnimalMeleeTemplate']/property[@name='AIPackages']/@value">,NPCLoot</append -->
-
+    <set xpath="/entity_classes/entity_class/property[@name='SleeperInstantAwake']/@value">false</set>
 
 	<append xpath="/entity_classes">
 	
