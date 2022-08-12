@@ -1366,7 +1366,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceScrapPolymers"/>
-	<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+	<property name="Stacknumber" value="1500"/> <!-- STK ammo low -->
 	<property name="EconomicValue" value="20"/>
 	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 	<effect_group name="QuadShotgunSlug" tiered="false">
