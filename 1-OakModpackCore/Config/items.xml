@@ -3044,7 +3044,7 @@
 
 <item name="drinkChickChop">
 	<property name="HoldType" value="3"/>
-	<property name="DisplayType" value="waterCoffee"/>
+	<property name="DisplayType" value="drinkYuccaSmoothie"/>
 	<property name="CustomIcon" value="chickchop"/>
 	<property name="DescriptionKey" value="drinkChickChopDesc"/>	
 	<property name="Meshfile" value="#@modfolder:Resources/FoodIcons.unity3d?RedWorm"/>
