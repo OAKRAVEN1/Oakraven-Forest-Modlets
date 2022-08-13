@@ -158,7 +158,7 @@
 		<effect_group>		
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1"
 				tags="RedMixer,GreenMixer,SilverBlender,GreenBlender,MeatGrinder,OaksCooker,PotStove,IronStove,StoneStove,foodAcornBread,drinkBoarberrySmoothie,drinkFleshCan,drinkGreenHell,drinkRedWorm,drinkRedDreams,drinkChickChop"/>		
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="drinkHermitHelper"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="drinkHermitHelper,foodcottagebake,foodferalacornbreadcasserole"/>
 		</effect_group>
 		
 		
@@ -191,7 +191,7 @@
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1"
 				tags="foodEggQuiche,foodHoneyPumpkinPie,drinkHoneyBeer,foodHydroponicMixedVegetableSoup,foodHydroponicMixedFruitBowl,foodHydroponicFruitMuffin"/>		
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"
-				tags=",foodHydroponicSalmonBake,foodcottagebake,foodferalacornbreadcasserole"/>		
+				tags=",foodHydroponicSalmonBake"/>		
 		</effect_group>		
 	</append>
 	
