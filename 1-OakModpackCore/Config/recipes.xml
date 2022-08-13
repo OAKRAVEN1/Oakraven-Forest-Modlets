@@ -1082,15 +1082,46 @@
 	</recipe>
 	
                               <!-- OaksCooker Recipes -->
+	<!-- Giving access to campfire Workstation for inclusion -->							  
 	
 	<recipe name="foodAcornBread" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
 		<ingredient name="foodAcornDough" count="1"/>
 	</recipe>
 
-	<!-- Giving access to campfire Workstation for inclusion -->
-
 	<recipe name="foodAcornBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef"><!-- To Regular Campfire -->
 		<ingredient name="foodAcornDough" count="1"/>
+	</recipe>
+
+	<recipe name="foodcottagebake" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="foodMinceMeat" count="1"/>
+	    <ingredient name="foodCanBeef" count="1"/>
+	    <ingredient name="foodCropPotato" count="2"/>
+	    <ingredient name="foodCropMushrooms" count="1"/>
+		<ingredient name="Tomato" count="2"/>		
+	</recipe>
+	
+	<recipe name="foodcottagebake" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="foodMinceMeat" count="1"/>
+	    <ingredient name="foodCanBeef" count="1"/>
+	    <ingredient name="foodCropPotato" count="2"/>
+	    <ingredient name="foodCropMushrooms" count="1"/>
+		<ingredient name="Tomato" count="2"/>		
+	</recipe>
+	
+	<recipe name="foodferalacornbreadcasserole" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="foodMincedFlesh" count="1"/>
+	    <ingredient name="foodAcornDough" count="1"/>
+	    <ingredient name="foodCropMushrooms" count="2"/>
+		<ingredient name="Tomato" count="2"/>
+	    <ingredient name="foodCanStock" count="1"/>		
+	</recipe>
+
+	<recipe name="foodferalacornbreadcasserole" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="foodMincedFlesh" count="1"/>
+	    <ingredient name="foodAcornDough" count="1"/>
+	    <ingredient name="foodCropMushrooms" count="2"/>
+		<ingredient name="Tomato" count="2"/>
+	    <ingredient name="foodCanStock" count="1"/>		
 	</recipe>	
 	
 	                         <!-- Blender Recipes --> 
