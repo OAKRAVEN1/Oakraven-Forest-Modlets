@@ -4452,7 +4452,7 @@
 		<property name="DescriptionKey" value="HoneyCombDesc"/>	
 		<property name="HoldType" value="31"/>
 		<property name="CustomIcon" value="honeycomb"/>
-		<property name="DisplayType" value="food"/>
+		<property name="DisplayType" value="foodCureInfection"/>
 		<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Morganic"/>
@@ -4511,7 +4511,7 @@
 	<item name="foodHoneyBread">
 		<property name="Tags" value="food"/>
 		<property name="HoldType" value="31"/>
-		<property name="DisplayType" value="food"/>
+		<property name="DisplayType" value="foodCureInfection"/>
 		<property name="CustomIcon" value="bread2"/>
 		<property name="DescriptionKey" value="foodHoneyBreadDesc"/>	
 		<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
@@ -4544,7 +4544,7 @@
 	<item name="foodHoneyPumpkinPie">
 		<property name="Tags" value="food"/>
 		<property name="HoldType" value="31"/>
-		<property name="DisplayType" value="food"/>
+		<property name="DisplayType" value="foodCureInfection"/>
 		<property name="CustomIcon" value="oakpie"/>
 		<property name="DescriptionKey" value="foodHoneyPumpkinPieDesc"/>
 		<property name="CustomIconTint" value="255,140,25"/>	
@@ -4641,7 +4641,7 @@
 <item name="foodPineConeJam">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="foodWater"/>
+	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="foodPineConeJam"/>
 	<property name="DescriptionKey" value="foodPineConeJamDesc"/>	
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
@@ -4676,7 +4676,7 @@
 	
 <item name="drinkPineConeTea">
 	<property name="HoldType" value="3"/>
-	<property name="DisplayType" value="waterDysentery"/>
+	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="drinkPineConeTea"/>
 	<property name="DescriptionKey" value="drinkPineConeTeaDesc"/>	
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
@@ -4714,7 +4714,7 @@
 
 <item name="drinkAcornCoffee">
 	<property name="HoldType" value="3"/>
-	<property name="DisplayType" value="waterDysentery"/>
+	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="drinkAcornCoffee"/>
 	<property name="DescriptionKey" value="drinkAcornCoffeeDesc"/>
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
@@ -4752,7 +4752,7 @@
 
 <item name="drinkSweetMead">
 	<property name="HoldType" value="3"/>
-	<property name="DisplayType" value="waterGoldenrod"/>
+	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="drinkSweetMead"/>
 	<property name="DescriptionKey" value="drinkSweetMeadDesc"/>
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
