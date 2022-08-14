@@ -45,7 +45,20 @@
 				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
 			</effect_group>
-		</buff>	
+		</buff>
+		
+		<buff name="BogeymanOakDeco" hidden="true">
+			<effect_group>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Industrial/barrelRadiatedPrefab" local_offset="0.12,.3,0.1" local_rotation="0,0,0" parent_transform="Spine"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->
+			</effect_group>
+		</buff>
+
+		<buff name="CrispyOakDeco" hidden="true">
+			<effect_group>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Furniture/woodBurningStovePrefab" local_offset="0,0.15,0" local_rotation="0,0,0" parent_transform="Spine"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset="0,0,0.2" local_rotation="0,0,0" parent_transform="Spine"/>
+			</effect_group>
+		</buff>
 	
 	<!-- OAK TRAPS -->
 	

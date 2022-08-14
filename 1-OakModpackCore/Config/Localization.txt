@@ -792,6 +792,8 @@ zombieFemaleTutorial,entityclasses,Entity,,,Deadly Girl,,,,,,,,,,,,,
 zombieFemaleTutorialFeral,entityclasses,Entity,,,Feral Deadly Girl,,,,,,,,,,,,,
 zombieDemolitionRadiated,entityclasses,Entity,,,Radiated Demolition,,,,,,,,,,,,,
 zombieWightRadiatedShower,entityclasses,Entity,,,Radiated Shower Wight,,,,,,,,,,,,,
+zombieBogeymanOak,entityclasses,Entity,,,Bogeyman,,,,,,,,,,,,,
+zombieCrispyOak,entityclasses,Entity,,,Crispy,,,,,,,,,,,,,
 
 vehicleWhirlyBirdChassis,vehicles,item,,,Whirly Bird Chassis,,,,,,,,,,,,,,
 vehicleWhirlyBirdChassisSchematic,vehicles,item,,,Whirly Bird Chassis Schematic,,,,,,,,,,,,,
