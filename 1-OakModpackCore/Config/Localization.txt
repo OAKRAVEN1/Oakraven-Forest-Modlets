@@ -17,7 +17,7 @@ perkMasterChefRank1LongDesc,progression,perk Str,,,"Cooking is not your thing bu
 perkMasterChefRank2LongDesc,progression,perk Str,,,"Just like grandma used to make, tasty hearty meals that fill you up for days. Craft steak and potatoes, meat stew, vegetable stew, blueberry pie and several pumpkin dishes. Cook 20% faster. Additional recipes include Egg Quiche, Honey Pumpkin Pie, and Honey Beer. In addition, Hydroponic Mixed Vegetable Soup, Mixed Fruit Bowl, and Fruit Muffin.",,,,,,,,,,,,,
 perkMasterChefRank3LongDesc,progression,perk Str,,,"Learn how to make nutritious pot luck meals from canned goods. Craft Sham Chowder, Hobo Stew, Chili dogs and Fish Tacos. Wash them down with Yucca Juice Smoothies and Beer. Cook 30% faster. Additional recipes include Hydroponic Salmon Bake, Cottage Bake, Feral Acorn Bread Casserole, and Hermit Helper XP'lixir.",,,,,,,,,,,,,
 
-perkAdvancedEngineeringRank1LongDesc,progression,perk Int,,,"You are now a blacksmith and able to forge iron and other metal objects. Craft forges and craft items with them 20% faster. Craft glue cheaper. You can also craft an Oakraven and Татарин Forge, and Armoury Bench.",,,,,,,,,,,,,
+perkAdvancedEngineeringRank1LongDesc,progression,perk Int,,,"You are now a blacksmith and able to forge iron and other metal objects. Craft forges and craft items with them 20% faster. Craft glue cheaper. You can also craft an Oakraven, Татарин, and Oakraven Copper Forge, and Armoury Bench.",,,,,,,,,,,,,
 perkAdvancedEngineeringRank2LongDesc,progression,perk Int,,,"Your tinkering is proving useful in the apocalypse. Craft workbenches and cement mixers and craft items with them 20% faster. You can also craft an Oakraven Powder Mixer, Oakraven Cement Mixer, Fish Oven, Power Workbench, Power Cell and Solar Cell. Cell items increase up to level 6 as you increase Advanced Engineering Skill. Cells offer Level 3 at Skill 2.",,,,,,,,,,,,,
 perkAdvancedEngineeringRank3LongDesc,progression,perk Int,,,"You are now an electrician. Learn to craft generators, and build advanced base defense systems such as electric fences & blade traps. Craft military fiber. Gain 20% XP from electrical trap kills.\nEfficient craftsman. All forge recipes cost 10% less, crafting Forged Steel and electrical devices costs 15% less.\nCraft the Oakraven Generator 1 & 2. Cells offer Level 4 at Skill 3.",,,,,,,,,,,,,
 perkAdvancedEngineeringRank4LongDesc,progression,perk Int,,,"Learn to craft shotgun turrets for short range concentrated base defense, battery banks and nail guns. Gain 35% XP from electrical trap kills.\nAll forge recipes cost 15% less, crafting Forged Steel and electrical devices costs 25% less.\nCraft the Oakraven Battery Bank 1 & 2 as well as the Oakraven Turret Solar Power Array and Oakraven Solar Power Array. Cells offer Level 5 at Skill 4.",,,,,,,,,,,,,
@@ -553,12 +553,14 @@ drinkAcornCoffeeDesc,items,Food,,,"Bitter sweet and earthy. Cures 3% infection."
 drinkSweetMead,items,Food,,,Sweet Mead
 drinkSweetMeadDesc,items,Food,,,"An all round pick-me-up. Cures 10% infection and 20% dysentery."
 
-OakChemistryStation,blocks,Block,,,Oakraven Chemistry Station,,,,,,,,,,,,,
+OakChemistryStation,blocks,Block,,,Oakraven Chemistry Station (2 wide),,,,,,,,,,,,,
 OakChemistryStationDesc,blocks,Block,,,"The Oakraven Chemistry Station allows players to create chemistry related items.",,,,,,,,,,,,,
-OakForge,blocks,Block,,,Oakraven Forge,,,,,,,,,,,,,
+OakForge,blocks,Block,,,Oakraven Forge (3 wide),,,,,,,,,,,,,
 OakForgeDesc,blocks,Block,,,"The Oakraven Forge allows players to use high temperatures to produce refined and complete resources.",,,,,,,,,,,,,
 ТатаринForge,blocks,Block,,,Tatarin Forge,,,,,,,,,Татарин Кузница,,,,
 ТатаринForgeDesc,blocks,Block,,,"The Tatarin Forge (Татарин Forge) allows players to use high temperatures to produce refined and complete resources.",,,,,,,,,,,,,
+CopperForge,blocks,Block,,,Oakraven Copper Forge,,,,,,,,,,,,,
+CopperForgeDesc,blocks,Block,,,"The Oakraven Copper Forge allows players to use high temperatures to produce refined and complete resources.",,,,,,,,,,,,,
 PowderMixer,blocks,Block,,,Oakraven Powder Mixer,,,,,,,,,,,,,
 PowderMixerDesc,blocks,Block,,,"The Oakraven Powder Mixer allows resources to be crushed and ground down to a powder, to be added to the next stage of process.",,,,,,,,,,,,,
 OakCementMixer,blocks,Workstation,,,Oakraven Cement Mixer,,,,,,,,,,,,,

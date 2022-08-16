@@ -1858,6 +1858,14 @@
 		<ingredient name="resourceMetalPipe" count="30"/>
 		<ingredient name="resourceSpring" count="5"/>
 	</recipe>
+	
+	<recipe name="CopperForge" count="1" tags="learnable">
+		<ingredient name="resourceClayLump" count="100"/>
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceCobblestones" count="250"/>
+		<ingredient name="resourceMetalPipe" count="30"/>
+		<ingredient name="resourceSpring" count="5"/>
+	</recipe>	
 
 	<recipe name="PowderMixer" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
 		<ingredient name="resourceForgedIron" count="25"/>
