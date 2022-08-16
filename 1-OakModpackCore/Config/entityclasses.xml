@@ -30,11 +30,12 @@
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>	
 	<property name="Class" value="EntityZombieCop"/>
 	<property name="Mass" value="330"/>
-	<property name="SizeScale" value="1.15"/>
+	<property name="SizeScale" value="1.25"/>
 
 	<!-- Gameplay zombieDemolitionRadiated -->
 	<property name="JumpMaxDistance" value="1, 2"/>
 	<property name="PainResistPerHit" value=".7"/><!-- Default is .5-->
+	<property name="MoveSpeedAggro" value="0.7, 1.5"/> <!-- very fit -->			
 	<property name="Explosion.BlockDamage" value="6000"/><!-- Default is 5000-->
 	<property name="ExplodeDelay" value="3"/><!-- Default is 2-->
 	<property name="ExplodeHealthThreshold" value="0"/><!-- Disable Health explosion -->
@@ -45,6 +46,7 @@
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1600"/><!-- X1.6 of zombieDemolition-->
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="zombieDemolitionRadiatedDeco"/>		
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
