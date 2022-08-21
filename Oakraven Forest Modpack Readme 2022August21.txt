@@ -1,11 +1,9 @@
 ===========================================================================
 == Oakraven Forest Modpack for 7D2D is powered by 0-XNPCCore and 0-Score ==
 ===========================================================================
-======== Oakraven Forest Modpack is populated with Compo Pack 48 ==========
-===========================================================================
 
 The Oakraven Forest Modpack provides players with an 'out of the city' gaming experience.
-Players have access to a variety of tools and resources that provide greater levels of self sufficiency and quality of life.
+Players have access to a variety of custom tools and resources that provide greater levels of self sufficiency and quality of life.
 It is heavily influenced by Oakraven's Forest Collection and acts as a Modpack show case.
 It also contains some of Oakraven's unreleased modlet content to provide a greater level of immersion.
 
@@ -14,10 +12,10 @@ In addition, additional community creations have been bundled into this Modpack 
 ASSETS INCLUDE:
 
 ========================
-=== 1-OakModpackCore ===
+=== 1-OakModpack ===
 ========================
 
-This 1-OakModpackCore Modpack provides an abundance of Oakraven's modlets alongside a variety of expansion and quality of life mods.
+This 1-OakModpack provides an abundance of Oakraven's modlets alongside a variety of expansion and quality of life mods.
 The mix is quite eclectic and gives players further opportunities within the framework of 7D2D content.
 
 This Modpack contains the following modlets/modifications:
@@ -77,7 +75,7 @@ GanTheGrey - Created 1-GansSpecialZombies.
 Darkstardragon - Created 1-ZombiezPack, 1-SurvivorzPack, 1-OrczPackAlpha and 2-OrczPackBeta, 1-FantasticBeastz, and 1-YeOldeUndeadPack. Also performed an abundance of play testing and coding support through the connected 'Not Medieval Mod'.
 arramus - Supported the Oakraven Forest Collection with NPCMod and Addon integration, 2-NPCXSpiderPack-ColonyExpansion, Fox things, xml, compilation, distribution, quality control balancing, and even added the odd icon or two. 
 
-Currently Released Oakraven Forest Collection modlets can be found here.
+Currently released standalone Oakraven Forest Collection modlets can be found here.
 https://community.7daystodie.com/topic/27806-a20-oakraven-forest-collection/
 
 =======================================
