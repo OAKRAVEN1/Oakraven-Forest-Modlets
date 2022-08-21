@@ -1791,7 +1791,7 @@
 				<property name="LifeTime" value="14"/>
 			</property>
 			<effect_group name="DiscAmmo" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="200"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="70"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="30"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
@@ -1830,7 +1830,7 @@
 				<property name="LifeTime" value="14"/>
 			</property>
 			<effect_group name="DiscAmmoShock" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="200"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="70"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="30"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
@@ -1870,7 +1870,7 @@
 				<property name="LifeTime" value="14"/>
 			</property>
 			<effect_group name="DiscAmmoFlame" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="200"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="70"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="30"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
