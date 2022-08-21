@@ -568,7 +568,7 @@ OakCementMixerDesc,blocks,Workstation,,,"The Oakraven Cement Mixer will help you
 resourceOakCementMixerConcreteBundle,items,Item,,,Stack of Concrete (1000),,,,,,,,,,,,,
 resourceOakCementMixerConcreteBundleDesc,items,Item,,,"This is a compact stack of concrete. 'Open' this item to open and unpack it. This stack of concrete uses 20% less resources than the same amount in single units.",,,,,,,,,,,,,
 Ammobench,blocks,Workstation,,,Oakraven Ammo Bench,,,,,,,,,,,,,
-Ammobench,blocks,Block,,,"The Oakraven Ammo Bench allows players to craft ammunition in a compact standalone device.",,,,,,,,,,,,,
+AmmobenchDesc,blocks,Block,,,"The Oakraven Ammo Bench allows players to craft ammunition in a compact standalone device.",,,,,,,,,,,,,
 
 TraderRifleBirdMan,entityclasses,Entity,,,Trader Bird Man,,,,,,,,,,,,,
 RifleBirdManTrader,blocks,Block,,,Trader Bird Man Spawner,,,,,,,,,,,,,
