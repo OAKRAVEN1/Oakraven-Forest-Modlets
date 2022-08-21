@@ -1468,7 +1468,7 @@
 	<property name="EconomicValue" value="20"/>
 	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 	<effect_group name="QuadShotgunSlug" tiered="false">
-		<passive_effect name="EntityDamage" operation="base_set" value="160" tags="perkBoomstick"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="120" tags="perkBoomstick"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="100" tags="perkBoomstick"/>
 		<passive_effect name="BlockDamage" operation="base_add" value="230" tags="wood"/>
 		<passive_effect name="RoundRayCount" operation="base_set" value="1" tags="perkBoomstick"/>
