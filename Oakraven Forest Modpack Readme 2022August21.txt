@@ -37,7 +37,7 @@ This Modpack contains the following modlets/modifications:
 - Fish Farm (Craft fish farm plots, place a starter kit, let them grow, harvest and eat)
 - Chicken Coops (Find Baby Chicks in nests, place them in a Coop, reap the rewards)
 - Bee Hives (Find Queen Bees, Craft Bee Hives, Collect Honey Comb and make some nice treats)
-- Oakraven Workstations (6 Custom Workstations - Oakraven Forge, Tatarin Forge, Oakraven Copper Forge, Chemistry Station, Powder Mixer, and Cement Mixer)
+- Oakraven Workstations (7 Custom Workstations - Oakraven Forge, Tatarin Forge, Oakraven Copper Forge, Chemistry Station, Powder Mixer, Cement Mixer, and Ammo Bench)
 - Oakraven Traders (5 selected custom traders to give Bob, Hugh, Jen, Joel, and Rekt a short vacation to Navezgane)
 - A20 Skyrim Style Lockpicking MiniGame (Makes lockpicking skill based)
 - KhaineGB's Inventory Lockable Slots Mod and 60 Backpack Mod (Allows players to stop essential items being removed from the backpack when bulk moving and increases storage capacity to 60)
