@@ -18,4 +18,4 @@
 	
 	<remove xpath="/rwgmixer/district[@name='downtown']"/>
 
-</comfigs>
+</configs>
