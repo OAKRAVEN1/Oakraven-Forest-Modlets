@@ -40,6 +40,7 @@ This Modpack contains the following modlets/modifications:
 - Oakraven Workstations (7 Custom Workstations - Oakraven Forge, Tatarin Forge, Oakraven Copper Forge, Chemistry Station, Powder Mixer, Cement Mixer, and Ammo Bench)
 - Oakraven Traders (5 selected custom traders to give Bob, Hugh, Jen, Joel, and Rekt a short vacation to Navezgane)
 - A20 Skyrim Style Lockpicking MiniGame (Makes lockpicking skill based)
+- JaxTeller718-BiggerWanderingHordes (Customised expansion to Wandering Hordes)
 - KhaineGB's Inventory Lockable Slots Mod and 60 Backpack Mod (Allows players to stop essential items being removed from the backpack when bulk moving and increases storage capacity to 60)
 - Quest - Blood Moon Vanguard (Gives players an incentive to stay for Horde Night and pick up a Skill for completing an objective)
 - Quest - Eliminate the Horde (Gives players a Craft/Build/Upgrade Quest opportunity to survive a wave of grunt/feral/radiated entities)
@@ -71,6 +72,7 @@ Mplogue - Supported OAK_NPC_Bandits_Settlement_01. (Look out for that awesome ai
 Laz Man - Created Quest - Blood Moon Vanguard and Eliminate the Horde.
 khzmusik - Created 1-khzmusik_Zombies and 2-khzmusik_variable_NPC_sleepers.
 KhaineGB - Unlocked Inventory Lockable Slots Mod and 60 Slot Backpack Mod.
+JaxTeller718 - Bigger Wandering Hordes Mod.
 GanTheGrey - Created 1-GansSpecialZombies.
 Darkstardragon - Created 1-ZombiezPack, 1-SurvivorzPack, 1-OrczPackAlpha and 2-OrczPackBeta, 1-FantasticBeastz, and 1-YeOldeUndeadPack. Also performed an abundance of play testing and coding support through the connected 'Not Medieval Mod'.
 arramus - Supported the Oakraven Forest Collection with NPCMod and Addon integration, 2-NPCXSpiderPack-ColonyExpansion, Fox things, xml, compilation, distribution, quality control balancing, and even added the odd icon or two. 
