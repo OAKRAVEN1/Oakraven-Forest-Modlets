@@ -668,13 +668,13 @@ Gargoyle,entityclasses,Entity,,,Gargoyle,,,,,,,,,,,,,
 Manticore,entityclasses,Entity,,,Manticore,,,,,,,,,,,,,
 
 challenge_bloodmoonvanguard,Quest,Quest Info,,,"Blood Moon Vanguard",,,,,,,,,,,,,
-challenge_bloodmoonvanguard_description,Quest,Quest Info,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. 'Ye Olde Undead' will find you...",,,,,,,,,,,,,
+challenge_bloodmoonvanguard_description,Quest,Quest Info,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. 'Ye Olde Undead' will find you... They may even join a Wandering Horde, or two.",,,,,,,,,,,,,
 challenge_bloodmoonvanguard_subtitle,Quest,Quest Info,,,Blood Moon Defense,,,,,,,,,,,,,
 challenge_bloodmoonvanguard_completion,Quest,Quest Info,,,"Well I'll be danged. 'Ye Olde Undead' didn't stand a chance! Take these dukes as your reward. Hell, I'll even throw in an item of your choosing from my stash. You have our gratitude.",,,,,,,,,,,,,
 
 MedievalZombie,entityclasses,Entity,,,Ye Olde Undead,,,,,,,,,,,,,
 
-BloodmoonVanguardTip,Journal,,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. They will find you...\n\nQuest: Blood Moon Vanguard (Repeatable)\n\nObjective: Kill 222 'Ye Olde Undead' Blood Moon Zombies \nReward: 2 Skill Points",,,,,,,,,,,,,
+BloodmoonVanguardTip,Journal,,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. 'Ye Olde Undead' will find you... They may even join a Wandering Horde, or two.\n\nQuest: Blood Moon Vanguard (Repeatable)\n\nObjective: Kill 222 'Ye Olde Undead' Blood Moon Zombies \nReward: 2 Skill Points",,,,,,,,,,,,,
 BloodmoonVanguardTip_title,Journal,,,,Blood Moon Vanguard,,,,,,,,,,,,,
 
 challenge_bloodmoonvanguard,items,Quest - Challenge,,,"Ye Olde Undead",,,,,,,,,,,,,
