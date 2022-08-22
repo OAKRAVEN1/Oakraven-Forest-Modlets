@@ -1851,7 +1851,7 @@
 		<ingredient name="resourceSpring" count="5"/>
 	</recipe>
 	
-	<recipe name="ТатаринForge" count="1" craft_time="60" tags="learnable">
+	<recipe name="TatarinForge" count="1" craft_time="60" tags="learnable">
 		<ingredient name="resourceClayLump" count="100"/>
 		<ingredient name="resourceForgedIron" count="25"/>
 		<ingredient name="resourceCobblestones" count="250"/>

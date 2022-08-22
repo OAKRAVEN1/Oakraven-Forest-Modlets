@@ -4944,12 +4944,12 @@
 	  	<property name="SortOrder1" value="70i0"/>
 	</block>
 	
-	<block name="ТатаринForge">
+	<block name="TatarinForge">
 		<property name="Class" value="Forge"/>
 		<property name="UnlockedBy" value="perkAdvancedEngineering"/>
 		<property name="Material" value="Mstone_scrap"/>
-		<property name="DescriptionKey" value="ТатаринForgeDesc"/>	
-		<property name="CustomIcon" value="tатаринforge"/>
+		<property name="DescriptionKey" value="TatarinForgeDesc"/>	
+		<property name="CustomIcon" value="tatarinforge"/>
 		<property name="MaxDamage" value="800"/>
 		<property name="StabilitySupport" value="true"/>
 		<property name="Shape" value="ModelEntity"/>
