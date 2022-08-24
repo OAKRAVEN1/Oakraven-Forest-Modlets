@@ -4837,6 +4837,7 @@
 	<block name="OakChemistryStation">
 	  	<property name="Class" value="Campfire"/>
 	  	<property name="Material" value="Miron_scrap"/>
+	  	<property name="CustomIcon" value="oakchemistrystation"/>		
 	  	<property name="DescriptionKey" value="OakChemistryStationDesc"/>	
 	  	<property name="MaxDamage" value="800"/>
 	  	<property name="Shape" value="ModelEntity"/>
@@ -4895,7 +4896,7 @@
 	  	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
 	  	<property name="Material" value="Mstone_scrap"/>
 	  	<property name="DescriptionKey" value="OakForgeDesc"/>	
-	  	<property name="CustomIcon" value="ForgeBigOak2"/>
+	  	<property name="CustomIcon" value="forgebigoak2"/>
 	  	<property name="MaxDamage" value="800"/>
 	  	<property name="StabilitySupport" value="true"/>
 	  	<property name="Shape" value="ModelEntity"/>
@@ -5001,7 +5002,7 @@
 		<property name="UnlockedBy" value="perkAdvancedEngineering"/>
 		<property name="Material" value="Mstone_scrap"/>
 		<property name="DescriptionKey" value="CopperForgeDesc"/>	
-		<property name="CustomIcon" value="tатаринforge"/>
+		<property name="CustomIcon" value="tatarinforge"/>
 		<property name="MaxDamage" value="800"/>
 		<property name="StabilitySupport" value="true"/>
 		<property name="Shape" value="ModelEntity"/>
@@ -5052,7 +5053,7 @@
 	  	<property name="Class" value="Campfire"/>
 	  	<property name="Material" value="Miron_scrap"/>
 	  	<property name="DescriptionKey" value="PowderMixerDesc"/>	
-	  	<property name="CustomIcon" value="StoneCrusher"/>
+	  	<property name="CustomIcon" value="stonecrusher"/>
 	  	<property name="MaxDamage" value="800"/>
 	  	<property name="Shape" value="ModelEntity"/>
 	  	<property name="ParticleName" value="#@modfolder:Resources/HammerForge.unity3d?RockImpact2"/>
