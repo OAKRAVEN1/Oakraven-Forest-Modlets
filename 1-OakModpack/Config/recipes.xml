@@ -2380,6 +2380,21 @@
 	<ingredient name="carBattery" count="2"/>
 </recipe>
 
+    <!-- COMMUNITY ASSETS -->
+	
+	<!-- arramus' Clear Bulletproof Glass -->
+	
+<recipe name="glassClearBulletproofBlockVariantHelper" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+	<ingredient name="unit_glass" count="110"/>
+	<ingredient name="unit_stone" count="10"/>
+	<ingredient name="unit_lead" count="40"/>
+	<ingredient name="unit_iron" count="20"/>
+	<ingredient name="unit_clay" count="20"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_stone,unit_glass,unit_iron,unit_lead"/>
+	</effect_group>
+</recipe>
+
 	</append>
 	
 </configs>

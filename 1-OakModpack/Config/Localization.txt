@@ -842,5 +842,12 @@ WallBillBoardGuns,blocks,Block,,,Wall Billboard Guns,,,,,,,,,,,,,
 WallBillBoardspider,blocks,Block,,,Wall Billboard Spider,,,,,,,,,,,,,
 BarberPole,blocks,Block,,,Barber Pole,,,,,,,,,,,,,
 
+glassClearBulletproofBlockVariantHelper,blocks,block,,,Clear Bulletproof Glass Block,,,,,,,,,,,,,
+glassClearBulletproofCTRPlate,blocks,block,,,Clear Bulletproof Glass Plate Centered,,,,,,,,,,,,,
+glassClearBulletproofPlate,blocks,block,,,Clear Bulletproof Glass Plate,,,,,,,,,,,,,
+glassClearBulletproofBlock,blocks,block,,,Clear Bulletproof Glass Block,,,,,,,,,,,,,
+glassClearBulletproofRamp,blocks,block,,,Clear Bulletproof Glass Ramp,,,,,,,,,,,,,
+glassClearBulletproofPlateCurved,blocks,block,,,Clear Bulletproof Glass Curved Plate,,,,,,,,,,,,,
+
 jetBootsAdmin,items,Admin,,,Dev: Jet Boots,,,,,,,,,,,,,
 jetBootsAdminDesc,items,Admin,,,"300% (sprint/boost) Speed.",,,,,,,,,,,,,
