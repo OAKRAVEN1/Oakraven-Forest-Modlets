@@ -200,12 +200,12 @@
 		<property name="upForce" value="1"/>
 		<property name="steerRate" value="130"/>
 		<property name="steerCenteringRate" value="90"/>
-		<property name="tiltAngleMax" value="20"/>
+		<property name="tiltAngleMax" value="15"/>
 		<property name="tiltThreshold" value="3"/>
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>
 		<property name="tiltUpForce" value="5"/>
-		<property name="hopForce" value="4.5, .1"/>
+		<property name="hopForce" value="4.5, .025"/>
 		<property name="unstickForce" value="1"/>		
 		<property name="velocityMax" value="9, 14"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, .15"/>
@@ -332,12 +332,12 @@
 		<property name="upForce" value="1"/>
 		<property name="steerRate" value="130"/>
 		<property name="steerCenteringRate" value="90"/>
-		<property name="tiltAngleMax" value="20"/>
+		<property name="tiltAngleMax" value="5"/>
 		<property name="tiltThreshold" value="3"/>
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>
 		<property name="tiltUpForce" value="5"/>
-		<property name="hopForce" value="8, .1"/>
+		<property name="hopForce" value="8, .025"/>
 		<property name="unstickForce" value="1"/>
 		<property name="velocityMax" value="15, 25"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
