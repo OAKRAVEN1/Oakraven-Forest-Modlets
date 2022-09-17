@@ -42,6 +42,7 @@ This Modpack contains the following modlets/modifications:
 - A20 Skyrim Style Lockpicking MiniGame (Makes lockpicking skill based)
 - JaxTeller718-BiggerWanderingHordes (Customised expansion to Wandering Hordes)
 - KhaineGB's Inventory Lockable Slots Mod and 60 Backpack Mod (Allows players to stop essential items being removed from the backpack when bulk moving and increases storage capacity to 60)
+- A19 Farming For A20 by Syco54645 (Rebalancing for Hydroponics) 
 - Clear Bulletproof Glass (Allows players to craft clear bulletproof glass similar to the regular type)
 - Quest - Blood Moon Vanguard (Gives players an incentive to stay for Horde Night and pick up a Skill for completing an objective)
 - Quest - Eliminate the Horde (Gives players a Craft/Build/Upgrade Quest opportunity to survive a wave of grunt/feral/radiated entities)
@@ -68,6 +69,7 @@ OakModPackCore Modpack Creators and Developers in Alphabtical Order from Z - A:
 
 Xyth and SphereII with Mumpfy for branding - Created the A20 Skyrim Style Lockpicking MiniGame. (The assets are embedded and remain as per original). 
 Xyth - Created the 1-NPCXSpiderPack.
+Syco54645 - Created A19 Farming For A20 (Crops return to seedling once harvested and you no longer get seeds when you harvest).
 Oakraven - Created Oakraven Forest Collection assets.
 Mplogue - Supported OAK_NPC_Bandits_Settlement_01. (Look out for that awesome airship).
 Laz Man - Created Quest - Blood Moon Vanguard and Eliminate the Horde.
