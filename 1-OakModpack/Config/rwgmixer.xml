@@ -8,9 +8,9 @@
 	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='many']">5</set>	
 	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='mintiles']">6</set>
 	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='maxtiles']">8</set>
-	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='few']">3</set>
-	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='default']">4</set>
-	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='many']">5</set>	
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='few']">3</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='default']">4</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='many']">5</set>	
 	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='mintiles']">7</set>
 	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='maxtiles']">10</set>
 	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='mintiles']">8</set>
