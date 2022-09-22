@@ -44,6 +44,7 @@ This Modpack contains the following modlets/modifications:
 - KhaineGB's Inventory Lockable Slots Mod and 60 Backpack Mod (Allows players to stop essential items being removed from the backpack when bulk moving and increases storage capacity to 60)
 - A19 Farming For A20 by Syco54645 (Rebalancing for Hydroponics) 
 - Clear Bulletproof Glass (Allows players to craft clear bulletproof glass similar to the regular type)
+- Guppycurs' Guppy Vulture entity for the desert biome.
 - Quest - Blood Moon Vanguard (Gives players an incentive to stay for Horde Night and pick up a Skill for completing an objective)
 - Quest - Eliminate the Horde (Gives players a Craft/Build/Upgrade Quest opportunity to survive a wave of grunt/feral/radiated entities)
 - Quest - Pest Control (Gives players a starting quest to cull laboratory specimens from 1-ZombiezPack)
@@ -76,6 +77,7 @@ Laz Man - Created Quest - Blood Moon Vanguard and Eliminate the Horde.
 khzmusik - Created 1-khzmusik_Zombies and 2-khzmusik_variable_NPC_sleepers.
 KhaineGB - Unlocked Inventory Lockable Slots Mod and 60 Slot Backpack Mod.
 JaxTeller718 - Bigger Wandering Hordes Mod.
+Guppycur - Guppy Vulture entity.
 GanTheGrey - Created 1-GansSpecialZombies.
 Darkstardragon - Created 1-ZombiezPack, 1-SurvivorzPack, 1-OrczPackAlpha and 2-OrczPackBeta, 1-FantasticBeastz, and 1-YeOldeUndeadPack. Also performed an abundance of play testing and coding support through the connected 'Not Medieval Mod'.
 arramus - Supported the Oakraven Forest Collection with NPCMod and Addon integration, 2-NPCXSpiderPack-ColonyExpansion, Fox things, Clear Bulletproof Glass, xml, compilation, distribution, quality control balancing, and even added the odd icon or two. 
