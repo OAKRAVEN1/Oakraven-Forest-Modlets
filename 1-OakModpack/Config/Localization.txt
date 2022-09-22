@@ -667,6 +667,8 @@ GiantBat,entityclasses,Entity,,,Giant Bat,,,,,,,,,,,,,
 Gargoyle,entityclasses,Entity,,,Gargoyle,,,,,,,,,,,,,
 Manticore,entityclasses,Entity,,,Manticore,,,,,,,,,,,,,
 
+guppyVultureBurnt,entityclasses,Entity,,,Plague Fowl,,,,,,,,,,,,,
+
 challenge_bloodmoonvanguard,Quest,Quest Info,,,"Blood Moon Vanguard",,,,,,,,,,,,,
 challenge_bloodmoonvanguard_description,Quest,Quest Info,,,"When the moon is full, and the sky turns blood red, there is nowhere to hide. 'Ye Olde Undead' will find you... They may even join a Wandering Horde, or two.",,,,,,,,,,,,,
 challenge_bloodmoonvanguard_subtitle,Quest,Quest Info,,,Blood Moon Defense,,,,,,,,,,,,,

@@ -1129,6 +1129,12 @@
  		<entity name="Manticore" prob="0.5" />		
 	</append>
 	
+		<!-- Guppycur - Burnt Vulture Entity -->	
+	
+    <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
+		<entity name="guppyVultureBurnt" prob="15" />		
+	</append>	
+	
 	<!-- Sleeper Volume Groups -->
 	<!-- npc Enemy Animals All -->
 
