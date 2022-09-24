@@ -7,7 +7,7 @@
   <property name="AllowTopSoilDecorations" value="True" />
   <property name="DifficultyTier" value="1" />
   <property name="ShowQuestClearCount" value="1" />
-  <property name="QuestTags" value="clear,fetch,restore_power" />
+  <property name="QuestTags" value="clear,fetch" />
   <property name="TraderArea" value="False" />
   <property name="PrefabSize" value="25, 14, 25" />
   <property name="RotationToFaceNorth" value="2" />
@@ -22,15 +22,15 @@
   <property name="Tags" value="oldwest" />
   <property name="SleeperVolumeFlags" value="0,0,0" />
   <property class="Stats">
-    <property name="TotalVertices" value="306892" />
-    <property name="TotalTriangles" value="289833" />
+    <property name="TotalVertices" value="241630" />
+    <property name="TotalTriangles" value="220901" />
     <property class="BlockEntities">
-      <property name="Vertices" value="273861" />
-      <property name="Triangles" value="270032" />
+      <property name="Vertices" value="208579" />
+      <property name="Triangles" value="201090" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="29817" />
-      <property name="Triangles" value="15893" />
+      <property name="Vertices" value="29837" />
+      <property name="Triangles" value="15903" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="1280" />
@@ -72,9 +72,6 @@
   <property class="IndexedBlockOffsets">
     <property class="FetchContainer">
       <property name="0" value="15, 6, 18" />
-    </property>
-    <property class="QuestRestorePower">
-      <property name="0" value="7, 8, 11" />
     </property>
     <property class="Rally">
       <property name="0" value="19, 4, 2" />
