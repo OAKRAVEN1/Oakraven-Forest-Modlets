@@ -25,19 +25,19 @@
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False" />
   <property name="Tags" value="oldwest" />
   <property class="Stats">
-    <property name="TotalVertices" value="211334" />
-    <property name="TotalTriangles" value="209457" />
+    <property name="TotalVertices" value="211090" />
+    <property name="TotalTriangles" value="209365" />
     <property class="BlockEntities">
       <property name="Vertices" value="187815" />
       <property name="Triangles" value="192935" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="17706" />
-      <property name="Triangles" value="10133" />
+      <property name="Vertices" value="17846" />
+      <property name="Triangles" value="10233" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="640" />
-      <property name="Triangles" value="320" />
+      <property name="Vertices" value="256" />
+      <property name="Triangles" value="128" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="0" />
