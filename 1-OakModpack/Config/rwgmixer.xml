@@ -21,5 +21,15 @@
 	<!--append xpath="/rwgmixer/township[@name='oldwest']">
 		<property name="outskirt_district" value="rural"/>
 	</append-->
+	
+	<append xpath="/rwgmixer">
+	
+	<streettile name="rwg_tile_oldwest_corner_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
+
+	</append>
 
 </configs>
