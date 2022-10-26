@@ -29,6 +29,12 @@
 		<property name="mintiles" value="1"/>
 		<property name="maxdensity" value="120"/>
 	</streettile>
+	
+	<streettile name="rwg_tile_oldwest_straight_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
 
 	</append>
 
