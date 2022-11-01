@@ -5301,6 +5301,130 @@
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
+</block>
+
+    <!-- On/Off Lights -->
+
+<block name="WallPunkLampTemplate">
+	<property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="wallpunklamp"/>
+		<property name="CanPickup" value="true"/>
+		<property name="DescriptionKey" value="WallPunkLampTemplateDesc"/>
+        <property name="Material" value="Mmetal"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/LightsOnOff.unity3d?WallPunkLamp"/>
+		<property name="Class" value="Door"/>
+		<property name="Tags" value="door"/>
+		<property name="BlockTag" value="Door"/>
+		<property name="PlaceEverywhere" value="true"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OpenSound" value="button4"/>
+		<property name="CloseSound" value="button4"/>
+		<property name="DisplayInfo" value="Description"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="MaxDamage" value="250" />
+		<property name="LightOpacity" value="0"/>
+		<property name="MultiBlockDim" value="1,1,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee,movement,bullet,arrow,rocket"/>
+		<property name="IsTerrainDecoration" value="true"/>	   
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="Group" value="Science"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="10"/> </property>		
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+</block>
+
+<block name="WallPunkLamp">
+        <property name="Extends" value="WallPunkLampTemplate"/>
+		<property name="CustomIcon" value="wallpunklamp"/>
+		<property name="DescriptionKey" value="WallPunkLampDesc"/>
+        <property name="Model" value="#@modfolder:Resources/LightsOnOff.unity3d?WallPunkLamp"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		 <drop event="Destroy" name="WallPunkLamp" count="1"/>
+</block>
+
+<block name="OakravenOnOffLightsVariantHelper">
+	<property name="Extends" value="WallPunkLamp"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="wallpunklamp"/>
+	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="WallPunkLamp,punktubelight,Punkheartglass,PunkDomeLight,PunkTubeLamp,cooljuke10"/>
+</block>
+
+<block name="punktubelight">
+        <property name="Extends" value="WallPunkLampTemplate"/>
+		<property name="CustomIcon" value="punktubelight"/>
+		<property name="DescriptionKey" value="punktubelightDesc"/>
+        <property name="Model" value="#@modfolder:Resources/LightsOnOff.unity3d?punktubelight"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		 <drop event="Destroy" name="punktubelight" count="1"/>
+</block>
+
+<block name="Punkheartglass">
+        <property name="Extends" value="WallPunkLampTemplate"/>
+		<property name="CustomIcon" value="punkheartglass"/>
+		<property name="DescriptionKey" value="PunkheartglassDesc"/>
+        <property name="Model" value="#@modfolder:Resources/LightsOnOff.unity3d?Punkheartglass"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		 <drop event="Destroy" name="Punkheartglass" count="1"/>	
+</block>
+
+<block name="PunkDomeLight">
+        <property name="Extends" value="WallPunkLampTemplate"/>
+		<property name="CustomIcon" value="punkdomelight"/>
+		<property name="DescriptionKey" value="PunkDomeLightDesc"/>
+        <property name="Model" value="#@modfolder:Resources/LightsOnOff.unity3d?PunkDomeLight"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<drop event="Destroy" name="PunkDomeLight" count="1"/>
+</block>
+
+<block name="PunkTubeLamp">
+        <property name="Extends" value="WallPunkLampTemplate"/>
+		<property name="CustomIcon" value="PunkTubeLamp"/>
+		<property name="DescriptionKey" value="PunkTubeLampDesc"/>
+        <property name="Model" value="#@modfolder:Resources/LightsOnOff.unity3d?PunkTubeLamp"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<drop event="Destroy" name="PunkTubeLamp" count="1"/>
+</block>
+
+<block name="cooljuke10">
+        <property name="Extends" value="WallPunkLampTemplate"/>
+		<property name="CustomIcon" value="cooljuke10"/>
+		<property name="DescriptionKey" value="cooljuke10Desc"/>
+        <property name="Model" value="#@modfolder:Resources/cooljuke10.unity3d?cooljuke10"/>
+		<property name="MultiBlockDim" value="1,2,1"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<drop event="Destroy" name="cooljuke10" count="1"/>
 </block>	
 	
     <!-- TRADERS -->	

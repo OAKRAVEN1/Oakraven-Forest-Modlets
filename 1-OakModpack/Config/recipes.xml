@@ -2222,7 +2222,17 @@
 
 <recipe name="ammoBundleJunkTurretAP" count="1" craft_time="260" craft_area="Ammobench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceScrapIron" count="4000"/>
-</recipe>	
+</recipe>
+
+	<!-- On/Off Lights -->
+
+	<recipe name="OakravenOnOffLightsVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceScrapIron" count="50"/>
+		<ingredient name="resourceHeadlight" count="2"/>
+		<ingredient name="resourceElectricParts" count="3"/>
+		<ingredient name="resourceMetalPipe" count="3"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+	</recipe>	
 	
 <!-- Flyers -->
 
