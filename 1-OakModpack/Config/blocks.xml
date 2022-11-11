@@ -4453,11 +4453,13 @@
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>	
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalChicken -->
-	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="23"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="4"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
-	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="RawChickenLeg" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="ChickenBreastRaw" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="RawChickenWings" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="1"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+	<drop event="Harvest" name="resourceFeather" count="2" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Destroy" count="0"/>	

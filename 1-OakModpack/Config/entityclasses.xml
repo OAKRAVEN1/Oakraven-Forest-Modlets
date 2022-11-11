@@ -62,7 +62,7 @@
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
 	<drop event="Harvest" name="UncookedRabbit" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
-	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="2" tag="WasteTreasuresCompleteHarvest"/>
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="10"/>
@@ -95,12 +95,12 @@
 	<property name="DeadBodyHitPoints" value="175"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="RawChickenLeg" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="ChickenBreastRaw" tag="butcherHarvest" count="1"/>
+	<drop event="Harvest" name="ChickenBreastRaw" tag="butcherHarvest" count="2"/>
 	<drop event="Harvest" name="RawChickenWings" tag="butcherHarvest" count="2"/>
 	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="1"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
-	<drop event="Harvest" name="RawChickenWings" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceFeather" count="2" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<effect_group name="Base Effects">
