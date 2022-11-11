@@ -4,9 +4,27 @@
 	
 	<!-- Vanilla Tweaks and Toggles -->
 	
-<recipe name="resourceClayLumpBundle" count="1" craft_time="10" tags="learnable">
-	<ingredient name="resourceClayLump" count="6000"/>
-</recipe>
+	<recipe name="resourceClayLumpBundle" count="1" craft_time="10" tags="learnable">
+		<ingredient name="resourceClayLump" count="6000"/>
+	</recipe>
+	
+	<!-- OAKRAVEN'S CHICKEN AND RABBIT -->
+
+	<recipe name="GrilledRabbit" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+		<ingredient name="UncookedRabbit" count="1"/>
+	</recipe>
+
+	<recipe name="GrilledChickenBreast" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+		<ingredient name="ChickenBreastRaw" count="1"/>
+	</recipe>
+
+	<recipe name="GrilledChickenLeg" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+		<ingredient name="RawChickenLeg" count="1"/>
+	</recipe>
+
+	<recipe name="CookedChickenWing" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
+		<ingredient name="RawChickenWings" count="1"/>
+	</recipe>
 
 	<!-- OAK TRAPS -->
 	
