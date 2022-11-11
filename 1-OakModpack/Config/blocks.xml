@@ -7,6 +7,8 @@
 	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='OneBlockCrouch']/@value">false</set>
 	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedUI']/property[@name='ShowTargetHealthBar']/@value">true</set>
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedNPCFeatures']/property[@name='AttackVolumeInstantAwake']/@value">true</set>
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='ReadFromContainers']/@value">true</set>
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='BroadcastManage']/@value">true</set>
 	<!-- Vanilla Tweaks and Toggles -->
 	<!-- Removal for custom features -->	
 	<remove xpath="/blocks/block[@name='cntBirdnest']" />
