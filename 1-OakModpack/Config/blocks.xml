@@ -84,6 +84,7 @@
 	<set xpath="/blocks/block[@name='decoConcreteBollardDestroyed01']/property[@name='Model']/@value">#@modfolder:Resources/newbollards.unity3d?bollardConcretenew</set>
 	<set xpath="/blocks/block[@name='decoConcreteBollard']/property[@name='Model']/@value">#@modfolder:Resources/newbollards.unity3d?bollardConcretenew</set>
 	<set xpath="/blocks/block[@name='decoConcreteBollardDestroyed02']/property[@name='Model']/@value">#@modfolder:Resources/newbollards.unity3d?bollardConcreteKnockedBnew</set>
+	<set xpath="/blocks/block[@name='radiatorHouse01Player']/property[@name='Model']/@value">#@modfolder:Resources/replacement2.unity3d?OldRadiator</set>
 
 	<!-- A19 Farming For A20 by Syco54645 -->
 	
