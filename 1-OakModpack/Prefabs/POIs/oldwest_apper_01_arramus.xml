@@ -8,7 +8,7 @@
   <property name="DifficultyTier" value="3" />
   <property name="ShowQuestClearCount" value="2" />
   <property name="QuestTags" value="clear,fetch" />
-  <property name="Tags" value="oldwest" />
+  <property name="Tags" value="oldwest,oldwestoutskirt" />
   <property name="TraderArea" value="False" />
   <property name="PrefabSize" value="50, 21, 25" />
   <property name="RotationToFaceNorth" value="2" />
@@ -22,11 +22,11 @@
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False" />
   <property name="SleeperVolumeFlags" value="0,0,0,0,0,0" />
   <property class="Stats">
-    <property name="TotalVertices" value="489518" />
-    <property name="TotalTriangles" value="518017" />
+    <property name="TotalVertices" value="470844" />
+    <property name="TotalTriangles" value="500865" />
     <property class="BlockEntities">
-      <property name="Vertices" value="410485" />
-      <property name="Triangles" value="470351" />
+      <property name="Vertices" value="391811" />
+      <property name="Triangles" value="453199" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="72541" />
