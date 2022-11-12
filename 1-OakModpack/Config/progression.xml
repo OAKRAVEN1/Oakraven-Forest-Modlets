@@ -189,7 +189,7 @@
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1"
 				tags="foodEggSandwich,foodHoneyBread"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1"
-				tags="foodEggQuiche,foodHoneyPumpkinPie,drinkHoneyBeer,foodHydroponicMixedVegetableSoup,foodHydroponicMixedFruitBowl,foodHydroponicFruitMuffin"/>		
+				tags="foodEggQuiche,foodHoneyPumpkinPie,drinkHoneyBeer,foodHydroponicMixedVegetableSoup,foodHydroponicMixedFruitBowl,foodHydroponicFruitMuffin,foodRabbitStew,foodChickenStew"/>		
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"
 				tags=",foodHydroponicSalmonBake"/>		
 		</effect_group>		

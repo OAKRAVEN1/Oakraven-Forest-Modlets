@@ -26,6 +26,56 @@
 		<ingredient name="RawChickenWings" count="1"/>
 	</recipe>
 
+	<recipe name="foodChickenStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="ChickenBreastRaw" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	
+	<recipe name="foodRabbitStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="UncookedRabbit" count="1"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+
+	<!-- Giving access to OaksCooker Workstation for inclusion -->	
+
+	<recipe name="GrilledRabbit" count="1" craft_area="OaksCooker" craft_tool="toolCookingGrill">
+		<ingredient name="UncookedRabbit" count="1"/>
+	</recipe>
+
+	<recipe name="GrilledChickenBreast" count="1" craft_area="OaksCooker" craft_tool="toolCookingGrill">
+		<ingredient name="ChickenBreastRaw" count="1"/>
+	</recipe>
+
+	<recipe name="GrilledChickenLeg" count="1" craft_area="OaksCooker" craft_tool="toolCookingGrill">
+		<ingredient name="RawChickenLeg" count="1"/>
+	</recipe>
+
+	<recipe name="CookedChickenWing" count="1" craft_area="OaksCooker" craft_tool="toolCookingGrill">
+		<ingredient name="RawChickenWings" count="1"/>
+	</recipe>
+
+	<recipe name="foodChickenStew" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="ChickenBreastRaw" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	
+	<recipe name="foodRabbitStew" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+		<ingredient name="UncookedRabbit" count="1"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+
 	<!-- OAK TRAPS -->
 	
 	<recipe name="CactusTrap" count="1">
