@@ -5,8 +5,8 @@
   <property name="ExcludePOICulling" value="False" />
   <property name="DistantPOIYOffset" value="0" />
   <property name="AllowTopSoilDecorations" value="True" />
-  <property name="DifficultyTier" value="2" />
-  <property name="ShowQuestClearCount" value="1" />
+  <property name="DifficultyTier" value="3" />
+  <property name="ShowQuestClearCount" value="2" />
   <property name="QuestTags" value="clear,fetch,restore_power" />
   <property name="Tags" value="oldwest" />
   <property name="TraderArea" value="False" />
