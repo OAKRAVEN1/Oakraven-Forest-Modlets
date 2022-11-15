@@ -20,6 +20,7 @@ The mix is quite eclectic and gives players further opportunities within the fra
 
 This Modpack contains the following modlets/modifications:
 
+- Escape Key Information Panel (Provides instructions and information about modpack key features)
 - On/Off Lights (Custom Lighting)
 - Oak Traps (Custom Traps)
 - Oak Modpack UI (Custom HUD features)

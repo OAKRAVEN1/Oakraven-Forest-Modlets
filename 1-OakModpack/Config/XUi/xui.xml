@@ -291,6 +291,13 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutputBig2" />
 			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+	<!-- Oak Escape List -->		
+
+		<window_group name="serverinfowindow">
+			<window name="serverinfowindow" />
+			<window name="OakTitle" />
 		</window_group>		
 		
 	</append>	
