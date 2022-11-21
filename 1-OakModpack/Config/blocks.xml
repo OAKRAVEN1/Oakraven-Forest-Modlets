@@ -367,6 +367,9 @@
 	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?CactisTrap"/>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="BuffsWhenWalkedOn" value="triggerBleeding"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="5"/>
+	</property>	
 	</block>
 
 	<block name="LavaTrap">
@@ -377,6 +380,9 @@
 	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?LavaTrap"/>
 	<property name="Group" value="Tools/Traps"/>	
 	<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="5"/>
+	</property>	
 	</block>
 
 	<block name="TarTrap">
@@ -387,6 +393,9 @@
 	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?TarTrap"/>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="BuffsWhenWalkedOn" value="buffTar"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="5"/>
+	</property>	
 	</block>
 
 	<block name="barbedtrapnew"> 
