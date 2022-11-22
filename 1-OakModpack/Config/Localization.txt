@@ -13,7 +13,7 @@ perkMiner69rDesc,progression,perk Str,,,"Maximize your mining efforts by increas
 perkGunslingerDesc,progression,perk Agi,,,"Settle your disputes the old way and be a gunslinger in the apocalypse. Master the use of handguns and SMG. Unlocks pistol crafting. Craft special hand guns on the Armoury Bench up to Quality 6.",,,,,,,,,,,,,
 perkJavelinMasterDesc,progression,perk Per,,,"Learn to inflict more damage and throw spears further and with more accuracy. Craft special spears on the Armoury Bench up to Quality 6.",,,,,,,,,,,,,
 
-perkMasterChefRank1LongDesc,progression,perk Str,,,"Cooking is not your thing but you know some basics. Unlocks basic recipes such as bacon and eggs, boiled and grilled meats, baked potatoes, cornbread, teas and coffee. Cook 10% faster. Additional recipes include Egg Sandwich, Honey Bread, and Acorn Bread. And the 'drinks'... Additional Oakraven Cooking Stations, Mixers, Blenders, and a Mincer can also be unlocked and have their own recipes.",,,,,,,,,,,,,
+perkMasterChefRank1LongDesc,progression,perk Str,,,"Cooking is not your thing but you know some basics. Unlocks basic recipes such as bacon and eggs, boiled and grilled meats, baked potatoes, cornbread, teas and coffee. Cook 10% faster. Additional recipes include Egg Sandwich, Honey Cornbread, and Acorn Bread. And the 'drinks'... Additional Oakraven Cooking Stations, Mixers, Blenders, and a Mincer can also be unlocked and have their own recipes.",,,,,,,,,,,,,
 perkMasterChefRank2LongDesc,progression,perk Str,,,"Just like grandma used to make, tasty hearty meals that fill you up for days. Craft steak and potatoes, meat stew, vegetable stew, blueberry pie and several pumpkin dishes. Cook 20% faster. Additional recipes include Egg Quiche, Honey Pumpkin Pie, and Honey Beer. On top of that, Hydroponic Mixed Vegetable Soup, Mixed Fruit Bowl, and Fruit Muffin. Also hearty chicken or rabbit stew.",,,,,,,,,,,,,
 perkMasterChefRank3LongDesc,progression,perk Str,,,"Learn how to make nutritious pot luck meals from canned goods. Craft Sham Chowder, Hobo Stew, Chili dogs and Fish Tacos. Wash them down with Yucca Juice Smoothies and Beer. Cook 30% faster. Additional recipes include Hydroponic Salmon Bake, Cottage Bake, Feral Acorn Bread Casserole, and Hermit Helper XP'lixir.",,,,,,,,,,,,,
 
@@ -556,7 +556,7 @@ BeeHiveVariantHelper,blocks,Block,,,Bee Hives (Needs a Queen Bee),,,,,,,,,,,,,
 foodHoneyComb,items,Item,,,Honey Comb,,,,,,,,,,,,,
 foodHoneyCombDesc,items,Item,,,"Use the Honey Comb as a standalone snack or as part of a recipe. Provides healing properties. Cures 2% infection.",,,,,,,,,,,,,
 
-foodHoneyBread,items,Food,,,Honey Bread,,,,,,,,,,,,,
+foodHoneyBread,items,Food,,,Honey Cornbread,,,,,,,,,,,,,
 foodHoneyBreadDesc,items,Food,,,"A tasty treat with healing properties. Cures 5% infection.",,,,,,,,,,,,,
 
 foodHoneyPumpkinPie,items,Food,,,Honey Pumpkin Pie,,,,,,,,,,,,,
