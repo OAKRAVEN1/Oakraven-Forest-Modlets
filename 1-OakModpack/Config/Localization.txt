@@ -551,6 +551,7 @@ WoodBeeHiveEmpty,blocks,Block,,,Empty Square Bee Hive (Needs a Queen Bee),,,,,,,
 WoodBeeHiveEmptyDesc,blocks,Block,,,"Introduce a Queen Bee to the Bee Hive and over time it will produce honey. A Queen Bee can be found in a special log in the Pine Forest. Chop the log and there is a 30% chance to find a Queen Bee inside.",,,,,,,,,,,,,
 WoodBeeHiveQueen,blocks,Block,,,[66ff00]Bees are collecting Nectar,,,,,,,,,,,,,
 WoodBeeHiveWithHoney,blocks,Block,,,[66ff00]Honey is Ready to Collect,,,,,,,,,,,,,
+BeeHiveVariantHelper,blocks,Block,,,Bee Hives (Needs a Queen Bee),,,,,,,,,,,,,
 
 foodHoneyComb,items,Item,,,Honey Comb,,,,,,,,,,,,,
 foodHoneyCombDesc,items,Item,,,"Use the Honey Comb as a standalone snack or as part of a recipe. Provides healing properties. Cures 2% infection.",,,,,,,,,,,,,

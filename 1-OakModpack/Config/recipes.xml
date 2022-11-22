@@ -1721,23 +1721,7 @@
 	
 	<!-- BEE HIVES -->
 
-	<recipe name="SquareHiveEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
-	<ingredient name="resourceForgedIron" count="5"/>
-	<ingredient name="resourceSpring" count="2"/>
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceDuctTape" count="10"/>
-	<ingredient name="resourceWood" count="50"/>
-	</recipe>
-	
-	<recipe name="BeeHiveEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
-	<ingredient name="resourceForgedIron" count="5"/>
-	<ingredient name="resourceSpring" count="2"/>
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceDuctTape" count="10"/>
-	<ingredient name="resourceWood" count="50"/>
-	</recipe>
-	
-	<recipe name="WoodBeeHiveEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<recipe name="BeeHiveVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
 	<ingredient name="resourceForgedIron" count="5"/>
 	<ingredient name="resourceSpring" count="2"/>
 	<ingredient name="resourceLeather" count="10"/>

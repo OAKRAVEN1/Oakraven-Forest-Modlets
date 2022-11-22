@@ -4755,6 +4755,16 @@
 	<property name="CanPickup" value="true"/>
 	</block>
 	
+	<block name="BeeHiveVariantHelper">
+		<property name="Extends" value="SquareHiveEmpty"/>		
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="squarebeehive3Gold"/>
+		<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+		<property name="ItemTypeIcon" value="all_blocks"/>
+		<property name="SelectAlternates" value="true"/>
+		<property name="PlaceAltBlockValue" value="SquareHiveEmpty,BeeHiveEmpty,WoodBeeHiveEmpty"/>
+	</block>	
+	
 	<block name="SquareBeeHiveQueen">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
 	<property name="CreativeMode" value="Player"/>
