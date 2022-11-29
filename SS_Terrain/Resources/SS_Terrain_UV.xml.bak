@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<uvmapping>
+<!--GRASS-->
+	<uv  id="701" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="forest_ground_basesat.png" />
+	<uv  id="702" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="forest_ground_Aqua.png" />
+	<uv  id="703" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="forest_ground_Blue.png" />
+	<uv  id="704" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="forest_ground_Lime.png" />
+	<uv  id="705" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="forest_ground_orange.png" />
+	<uv  id="706" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="forest_ground_pink.png" />
+	<uv  id="707" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="forest_ground_Purple.png" />
+    <uv  id="708" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4078431,0.3803922,0.3294118" globaluv="True" index="0" material="dirt" texture="guppyForest01.jpg" />
+    <uv  id="709" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4392157,0.427451,0.3960784" globaluv="True" index="0" material="stone" texture="guppyForest02.jpg" />
+    <uv  id="710" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3647059,0.3333333,0.2784314" globaluv="True" index="0" material="stone" texture="guppyJungle01.jpg" />
+	<uv  id="711" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="leaves_01.png" />
+    <uv  id="712" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3882353,0.3372549,0.3294118" globaluv="True" index="0" material="stone" texture="TGroundGrass1.jpg" />
+    <uv  id="713" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="dirt" texture="TGroundGrass2.jpg" />
+    <uv  id="714" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.2980392,0.1882353,0.1372549" globaluv="True" index="0" material="dirt" texture="TGroundGrass3.jpg" />
+    <uv  id="715" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4078431,0.3803922,0.3294118" globaluv="True" index="0" material="dirt" texture="TGroundGrass4.jpg" />
+    <uv  id="716" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4392157,0.427451,0.3960784" globaluv="True" index="0" material="stone" texture="TGroundGrassLeaves1.jpg" />
+    <uv  id="717" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3215686,0.1411765,0.1372549" globaluv="True" index="0" material="dirt" texture="TGroundGrassLeaves2.jpg" />
+    <uv  id="718" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3647059,0.3333333,0.2784314" globaluv="True" index="0" material="stone" texture="TGroundGrassLeaves3.jpg" />
+    <uv  id="719" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3098039,0.3058824,0.2588235" globaluv="True" index="0" material="stone" texture="TGroundGrassLeaves4.jpg" />	
+    <uv  id="720" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3882353,0.3372549,0.3294118" globaluv="True" index="0" material="stone" texture="TGroundLitter1.jpg" />
+    <uv  id="721" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="dirt" texture="TGroundLitter2.jpg" />
+    <uv  id="722" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.2980392,0.1882353,0.1372549" globaluv="True" index="0" material="dirt" texture="TGroundLitter3.jpg" />
+    <uv  id="723" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4078431,0.3803922,0.3294118" globaluv="True" index="0" material="dirt" texture="TGroundMoss1.jpg" />	
+<!--DIRT AND MUD-->
+    <uv  id="724" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="dirt" texture="guppyCrackedMud01.jpg" />
+    <uv  id="725" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.2980392,0.1882353,0.1372549" globaluv="True" index="0" material="dirt" texture="guppyDirt01.jpg" />
+    <uv  id="726" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3647059,0.3333333,0.2784314" globaluv="True" index="0" material="stone" texture="guppyMud01.jpg" />
+	<uv  id="727" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="Mud_01.png" />	
+    <uv  id="728" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4392157,0.427451,0.3960784" globaluv="True" index="0" material="stone" texture="TGroundMud2.jpg" />
+    <uv  id="729" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3215686,0.1411765,0.1372549" globaluv="True" index="0" material="dirt" texture="TGroundMud3.jpg" />
+<!--ROCKS-->
+	<uv  id="730" x="34" y="34" w="247" h="247" blockw="4" blockh="4" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="cliff.png" />	
+	<uv  id="731" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="ground_01.png" />
+	<uv  id="732" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="ground_02.png" />	
+	<uv  id="733" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="ground_05.png" />	
+    <uv  id="734" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.2980392,0.1882353,0.1372549" globaluv="True" index="0" material="dirt" texture="guppyPebbles01.jpg" />	
+    <uv  id="735" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4078431,0.3803922,0.3294118" globaluv="True" index="0" material="dirt" texture="guppyRock01.jpg" />
+    <uv  id="736" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4392157,0.427451,0.3960784" globaluv="True" index="0" material="stone" texture="guppyRock02.jpg" />	
+	<uv  id="737" x="34" y="34" w="247" h="247" blockw="4" blockh="4" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="Ore_Azurite.png" />
+	<uv  id="738" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="Rock_01.png" />
+    <uv  id="739" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3647059,0.3333333,0.2784314" globaluv="True" index="0" material="stone" texture="TGroundMudRock4.jpg" />
+    <uv  id="740" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.2980392,0.1882353,0.1372549" globaluv="True" index="0" material="dirt" texture="TGroundRock1.jpg" />
+    <uv  id="741" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4078431,0.3803922,0.3294118" globaluv="True" index="0" material="dirt" texture="TGroundRock2.jpg" />
+    <uv  id="742" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4392157,0.427451,0.3960784" globaluv="True" index="0" material="stone" texture="TGroundRock3.jpg" />
+    <uv  id="743" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3215686,0.1411765,0.1372549" globaluv="True" index="0" material="dirt" texture="TGroundRock4.jpg" />
+    <uv  id="744" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3647059,0.3333333,0.2784314" globaluv="True" index="0" material="stone" texture="TGroundRock5.jpg" />
+    <uv  id="745" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="dirt" texture="TGroundRock6.jpg" />
+    <uv  id="746" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4392157,0.427451,0.3960784" globaluv="True" index="0" material="stone" texture="TGroundRock7.jpg" />
+    <uv  id="747" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3215686,0.1411765,0.1372549" globaluv="True" index="0" material="dirt" texture="TGroundRock8.jpg" />	
+<!--SNOW-->
+    <uv  id="748" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="stone" texture="FrozenIce.jpg" /> 
+    <uv  id="749" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3215686,0.1411765,0.1372549" globaluv="True" index="0" material="dirt" texture="guppyIce01.jpg" />	
+    <uv  id="750" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3882353,0.3372549,0.3294118" globaluv="True" index="0" material="stone" texture="guppySnow01.jpg" />
+	<uv  id="751" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="Snow_01.png" />
+	<uv  id="752" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="Snow_02.png" />
+	<uv  id="753" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="Snow_03.png" />
+	<uv  id="754" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="Snow_04.png" />	
+    <uv  id="755" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3647059,0.3333333,0.2784314" globaluv="True" index="0" material="stone" texture="TSnowGround5.jpg" />
+    <uv  id="756" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="dirt" texture="TSnowGroundGrass2.jpg" />   
+<!--SAND-->
+	<uv  id="757" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="ground_06.png" />
+    <uv  id="758" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3215686,0.1411765,0.1372549" globaluv="True" index="0" material="dirt" texture="guppySand01.jpg" />
+    <uv  id="759" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3647059,0.3333333,0.2784314" globaluv="True" index="0" material="stone" texture="guppySand02.jpg" />
+    <uv  id="760" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3098039,0.3058824,0.2588235" globaluv="True" index="0" material="stone" texture="guppySand03.jpg" />	
+<!--PATHWAYS-->
+    <uv  id="761" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="dirt" texture="guppyStone01.jpg" />
+    <uv  id="762" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.2980392,0.1882353,0.1372549" globaluv="True" index="0" material="dirt" texture="guppyStone02.jpg" />
+    <uv  id="763" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4078431,0.3803922,0.3294118" globaluv="True" index="0" material="dirt" texture="guppyStone03.jpg" />
+    <uv  id="764" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4392157,0.427451,0.3960784" globaluv="True" index="0" material="stone" texture="guppyStone04.jpg" />
+    <uv  id="765" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3215686,0.1411765,0.1372549" globaluv="True" index="0" material="dirt" texture="guppyStone05.jpg" />
+	<uv  id="766" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="Path_01.png" />
+    <uv  id="767" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3098039,0.3058824,0.2588235" globaluv="True" index="0" material="stone" texture="TGroundRoadPath1.jpg" />
+    <uv  id="768" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3882353,0.3372549,0.3294118" globaluv="True" index="0" material="stone" texture="TGroundRoadPath2.jpg" />
+    <uv  id="769" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="dirt" texture="TGroundRoadPath3.jpg" />	
+    <uv  id="770" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="stone" texture="guppyStone01_2.jpg" /> 
+<!--SPECIALTY-->
+	<uv  id="771" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="ground_03.png" />
+	<uv  id="772" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="ground_04.png" />
+    <uv  id="773" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="dirt" texture="guppyOrganic01.jpg" />
+    <uv  id="774" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="dirt" texture="guppyOrganic02.jpg" /> 
+	<uv  id="775" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3882353,0.3372549,0.3294118" globaluv="True" index="0" material="stone" texture="guppyAsh01.jpg" />
+    <uv  id="776" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3098039,0.3058824,0.2588235" globaluv="True" index="0" material="stone" texture="guppyLava01.jpg" />
+    <uv  id="777" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3882353,0.3372549,0.3294118" globaluv="True" index="0" material="stone" texture="guppyLava02.jpg" />
+    <uv  id="778" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3882353,0.3372549,0.3294118" globaluv="True" index="0" material="stone" texture="Molten_01.png" />
+    <uv  id="779" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3882353,0.3372549,0.3294118" globaluv="True" index="0" material="stone" texture="Molten_02.png" />
+	<uv  id="780" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="dirt" texture="molten_03.png" />	
+	
+</uvmapping>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<uvmapping>
+<!--GRASS-->
+
+    <uv  id="716" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4392157,0.427451,0.3960784" globaluv="True" index="0" material="dirt" texture="TGroundGrassLeaves1.jpg" />
+    <uv  id="725" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.2980392,0.1882353,0.1372549" globaluv="True" index="0" material="dirt" texture="guppyDirt01.jpg" />
+<!--ROCKS-->
+    <uv  id="774" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.3764706,0.372549,0.3294118" globaluv="True" index="0" material="stone" texture="guppyOrganic02.jpg" /> 
+	<uv  id="736" x="34" y="34" w="239" h="239" blockw="4" blockh="4" color="0.4392157,0.427451,0.3960784" globaluv="True" index="0" material="stone" texture="guppyRock02.png" />
+	<uv  id="733" x="34" y="34" w="247" h="247" blockw="8" blockh="8" color="0.2588235,0.2705882,0.1921569" globaluv="True" index="0" material="stone" texture="ground_05.png" />
+</uvmapping>

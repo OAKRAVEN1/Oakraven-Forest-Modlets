@@ -30,4 +30,20 @@
 		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="BeeLog" />
 </append>
 
+    <!-- OAKS SPIDERS PLUS -->
+	
+<append xpath="/spawning/biome[@name='burnt_forest']">
+		<spawn maxcount="2" respawndelay="2" time="Day" entitygroup="OakDesert" />
+		<spawn maxcount="5" respawndelay="1" time="Night" entitygroup="OakSpiders" />
+</append>
+
+<append xpath="/spawning/biome[@name='wasteland']">
+		<spawn maxcount="2" respawndelay="1" time="Day" entitygroup="OakSpiders" />
+		<spawn maxcount="4" respawndelay="1" time="Night" entitygroup="OakSpiders" />
+</append> 
+
+<append xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="OakDesert" />
+</append>
+
 </configs>

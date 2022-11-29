@@ -751,6 +751,25 @@ SkeletonAxe,entityclasses,Entity,,,Undead Skeleton Axe Wielder,,,,,,,,,,,,,
 SkeletonAxeFeral,entityclasses,Entity,,,Feral Undead Skeleton Axe Wielder,,,,,,,,,,,,,
 SkeletonAxeRadiated,entityclasses,Entity,,,Chaos Undead Skeleton Axe Wielder,,,,,,,,,,,,,
 
+animalRobin,entityclasses,Entity,,,Robin,,,,,,,,,,,,,
+animalCrow,entityclasses,Entity,,,Crow,,,,,,,,,,,,,
+animalBat,entityclasses,Entity,,,Bat,,,,,,,,,,,,,
+animalBats,entityclasses,Entity,,,Bats,,,,,,,,,,,,,
+animalEagle,entityclasses,Entity,,,Eagle,,,,,,,,,,,,,
+animalAlcatraz,entityclasses,Entity,,,Alcatraz,,,,,,,,,,,,,
+animalPenguin,entityclasses,Entity,,,Penguin,,,,,,,,,,,,,
+
+LizzySpider,entityclasses,Entity,,,Lizzy Spider,,,,,,,,,,,,,
+SteamPunkSpider,entityclasses,Entity,,,Steampunk Spider,,,,,,,,,,,,,
+Scorpion,entityclasses,Entity,,,Scorpion,,,,,,,,,,,,,
+RoboAnt,entityclasses,Entity,,,Robo Ant,,,,,,,,,,,,,
+SheSpider,entityclasses,Entity,,,She Spider,,,,,,,,,,,,,
+TriDexTentacleBlue,entityclasses,Entity,,,TriDex,,,,,,,,,,,,,
+
+PhoenixKing,entityclasses,Entity,,,Phoenix King,,,,,,,,,,,,,
+EmeraldBat,entityclasses,Entity,,,Emerald Bat,,,,,,,,,,,,,
+woodlouse,entityclasses,Entity,,,Woodlouse,,,,,,,,,,,,,
+
 qc_eliminatehorde,items,Quest - Challenge,,,"Contract: Eliminate Horde",,,,,,,,,,,,,
 qc_eliminatehordeDesc,items,Quest - Challenge,,,"A contract issued by the White River Settlement - Oakraven Outpost.",,,,,,,,,,,,,
 

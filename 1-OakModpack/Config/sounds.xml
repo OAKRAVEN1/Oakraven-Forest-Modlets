@@ -373,7 +373,464 @@
 		  <LowestPitch name="0.9"/>
 		  <HighestPitch name="1.0"/>
 			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/>
+		</SoundDataNode>
+
+	<!-- 1-NPCXBirdPack from Xyth -->
+
+		<SoundDataNode name="RobinSounds">
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?Robin"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="3"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="15"/> 
 		</SoundDataNode>	
+		<SoundDataNode name="CrowRandom">
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?Crow1"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?Crow3"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?Crow4"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?Crow5"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?Crow6"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?Crow7"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?Crow8"/>	
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?Crow9"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> 
+		</SoundDataNode>
+		<SoundDataNode name="CrowAttack">
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?Crow11"/>				
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> 
+		</SoundDataNode>		
+		<SoundDataNode name="BatRandom">
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?BatIdle"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?BatIdle2"/>			
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="3"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> 
+		</SoundDataNode>	
+		<SoundDataNode name="BatAttack">
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?BatAttack"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> 
+		</SoundDataNode>			
+		<SoundDataNode name="BatHurt">
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?BatHurt"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> 
+		</SoundDataNode>			
+		<SoundDataNode name="EagleSounds">
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?EagleSound"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="8"/> 
+		</SoundDataNode>			
+		<SoundDataNode name="AlcatrazSounds">
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<AudioClip ClipName="#@modfolder:Resources/BirdSounds.unity3d?AlcatrazSound"/>
+			<Channel name="Mouth"/>
+			<Priority name="5"/>
+			<maxVoicesPerEntity value="1"/>
+			<LowestPitch name="0.95"/>
+			<HighestPitch name="1.05"/>
+			<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="8"/> 
+		</SoundDataNode>
+
+    <!-- OAKS SPIDERS PLUS -->
+
+<SoundDataNode name="TriDexAlert">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="60" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?AlartHorrible" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="TriDexAttack">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?TonalGrowl" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="TriDexDie">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?DieWhuahrr" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="TriDexHurt">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?SpiritsPain" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="TriDexSense">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="60" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?TonalGrowl" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="TriDexroam"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="120" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?RamdomSoul" />
+	<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?RandomEternity" />
+	<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?RandomGhoul" />
+	<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?Randomrom" />
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="4"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="2"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> 
+	</SoundDataNode>
+	
+		<SoundDataNode name="TheGreyLadyRoam"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="5" noise="250" time="4" muffled_when_crouched="0.1"/>
+	<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?WomanRam1" />
+	<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?WomanRam2" />
+	<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?WomanRam3" />
+	<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?WomanRam4" />
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="4"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.8"/> 
+	</SoundDataNode>
+	
+	<SoundDataNode name="TheGreyLadySens">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?WomanRam3" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="TheGreyLadyAlert">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?WomanRam4" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="TheGreyLadyHurt">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?Woman5" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="TheGreyLadyAttack">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/TriDexSounds.unity3d?WomanAttack" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		              <!-- ROBOT SOUNDS -->
+		
+<SoundDataNode name="ROBOTAlert">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="10" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/RobotSounds.unity3d?ROBOTAlert" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="ROBOTAttack">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="5" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/RobotSounds.unity3d?RobotAttack" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="ROBOTDie">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/RobotSounds.unity3d?RobotDeath" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="ROBOTHurt">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/RobotSounds.unity3d?ROBOTHurt" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="ROBOTSense">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="10" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/RobotSounds.unity3d?ROBOTAlert" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="ROBOTWalking">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="3" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/RobotSounds.unity3d?Ramdom2" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="ROBOTroam"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="60" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/RobotSounds.unity3d?Ramdom1" />
+	<AudioClip ClipName="#@modfolder:Resources/RobotSounds.unity3d?Ramdom3" />
+	<AudioClip ClipName="#@modfolder:Resources/RobotSounds.unity3d?Ramdom4" />
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="3"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="2"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> 
+	</SoundDataNode>		
+		
+		                             <!-- Phoenix SOUNDS -->
+									 
+		<SoundDataNode name="PhoenixAttack">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="5" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/Phoenixsounds.unity3d?AncientAttack" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="PhoenixDie">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/Phoenixsounds.unity3d?AncientDie" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+		
+		<SoundDataNode name="PhoenixAlert">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="10" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/Phoenixsounds.unity3d?AncientTense" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+
+		<SoundDataNode name="Phoenixroam"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="60" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/Phoenixsounds.unity3d?BirdCroak" />
+	<AudioClip ClipName="#@modfolder:Resources/Phoenixsounds.unity3d?BirdsJungle" />
+	<AudioClip ClipName="#@modfolder:Resources/Phoenixsounds.unity3d?DesertBirdsCall" />
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="3"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="2"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> 
+	</SoundDataNode>
+
+	                         <!-- Woodlouse SOUNDS -->
+							 
+			<SoundDataNode name="WoodLouseHurt">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/RobotSounds.unity3d?woodlicehurt" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>				 
+							 
+          <SoundDataNode name="WoodLouseDie">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="10" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/WoodLouseSounds.unity3d?woodlicedeath" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+
+		<SoundDataNode name="WoodLouseRoam"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="60" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/WoodLouseSounds.unity3d?woodliceRam1" />
+	<AudioClip ClipName="#@modfolder:Resources/WoodLouseSounds.unity3d?woodliceRam2" />
+	<AudioClip ClipName="#@modfolder:Resources/WoodLouseSounds.unity3d?woodliceRam3" />
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="3"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="2"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> 
+	</SoundDataNode>							 
+		
+		
+		                    <!-- BAT SOUNDS -->
+							
+		<SoundDataNode name="SingleBatAttack">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="1" noise="7" time="14.6" muffled_when_crouched="0.5" />
+			<AudioClip ClipName="#@modfolder:Resources/BatSounds.unity3d?SingleBatAttack" />
+			<Channel name="Mouth" />
+			<Priority name="6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="2" />
+			<MaxVoices name="10" />
+			<MaxRepeatRate name="0.9" />
+		</SoundDataNode>
+
+			<SoundDataNode name="BatRoam"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" noise="60" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/BatSounds.unity3d?Bats2" />
+	<AudioClip ClipName="#@modfolder:Resources/BatSounds.unity3d?BatsCave" />
+	<AudioClip ClipName="#@modfolder:Resources/BatSounds.unity3d?BatsChittering" />
+	<AudioClip ClipName="#@modfolder:Resources/BatSounds.unity3d?BatsFlying" />
+	<AudioClip ClipName="#@modfolder:Resources/BatSounds.unity3d?SingleBatCall" />
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="5"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="2"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> 
+	</SoundDataNode>	
 		
 	</append>
 	

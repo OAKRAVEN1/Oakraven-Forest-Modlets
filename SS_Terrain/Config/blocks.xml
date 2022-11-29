@@ -1,0 +1,162 @@
+<configs>
+	<append xpath="/blocks">
+
+
+<!--GRASS-->
+
+		<block name="TGroundGrassLeaves1">                              
+			<property name="Material" value="MforestGround"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Shape" value="Terrain"/>
+			<property name="Mesh" value="terrain"/>
+			<property name="Texture" value="716"/>
+			<property name="TerrainIndex" value="9"/>
+			<property name="LPHardnessScale" value="2"/>
+			<property name="Map.Color" value="40,73,39"/>
+			<property name="ImposterExclude" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceClayLump" value="14"/>
+			</property>
+			<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceYuccaFibers" count="2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
+			<drop event="Fall" name="TGroundGrassLeaves1" count="1" prob="0.25" stick_chance="1"/>
+			<property name="CanMobsSpawnOn" value="true"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+			<property name="SortOrder1" value="d0k0"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="DisplayType" value="blockTerrain"/>
+		</block>
+
+<!--DIRT AND MUD-->
+
+		<block name="guppyDirt01">                                 
+			<property name="Material" value="Mdirt"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Shape" value="Terrain"/>
+			<property name="Mesh" value="terrain"/>
+			<property name="Texture" value="725"/>
+			<property name="TerrainIndex" value="9"/>
+			<property name="LPHardnessScale" value="2"/>
+			<property name="Map.Color" value="119,69,19"/>
+			<property name="ImposterExclude" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceClayLump" value="14"/>
+			</property>
+			<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
+			<drop event="Fall" name="guppyDirt01" count="1" prob="0.25" stick_chance="1"/>
+			<property name="CanMobsSpawnOn" value="true"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+			<property name="SortOrder1" value="d0k0"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="DisplayType" value="blockTerrain"/>
+		</block>
+
+<!--ROCKS-->
+
+
+<!--SNOW-->
+
+
+
+<!--PATHWAYS-->
+
+
+
+<!--SPECIALTY-->
+
+		<block name="guppyOrganic02">                                        
+			<property name="Material" value="MoreMetal"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Shape" value="Terrain"/>
+			<property name="Mesh" value="terrain"/>
+			<property name="Texture" value="774"/>
+			<property name="TerrainIndex" value="2"/>
+			<property name="LPHardnessScale" value="2"/>
+			<property name="Map.Color" value="115,4,4"/>
+			<property name="ImposterExclude" value="true"/>
+			<property class="RepairItems">
+				<property name="CopperOre" value="14"/>
+			</property>
+			<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="CopperOre" count="35" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+			<property name="CanMobsSpawnOn" value="true"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+			<property name="SortOrder1" value="d0k0"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="DisplayType" value="blockTerrain"/>
+		</block>
+ 
+    <block name="guppyRock02">
+			<property name="Material" value="MoreMetal"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Shape" value="Terrain"/>
+			<property name="Mesh" value="terrain"/>
+			<property name="Texture" value="736"/>
+			<property name="TerrainIndex" value="2"/>
+			<property name="LPHardnessScale" value="2"/>
+			<property name="Map.Color" value="131,129,128"/>
+			<property name="ImposterExclude" value="true"/>
+			<property class="RepairItems">
+				<property name="TinOre" value="14"/>
+			</property>
+			<drop event="Harvest" name="resourceRockSmall" count="25" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="TinOre" count="35" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+			<drop event="Fall" name="guppyRock02" count="1" prob="0.1" stick_chance="0.5"/>
+			<property name="CanMobsSpawnOn" value="true"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+			<property name="SortOrder1" value="d0k0"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="DisplayType" value="blockTerrain"/>
+		</block>
+		
+	<block name="Ground_05">
+			<property name="Material" value="MoreMetal"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Shape" value="Terrain"/>
+			<property name="Mesh" value="terrain"/>
+			<property name="Texture" value="733"/>
+			<property name="TerrainIndex" value="2"/>
+			<property name="LPHardnessScale" value="2"/>
+			<property name="Map.Color" value="88,136,247"/>
+			<property name="ImposterExclude" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceRockSmall" value="14"/>
+			</property>
+			<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="BloodStoneOre" count="35" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+			<drop event="Fall" name="Ground_05" count="1" prob="0.1" stick_chance="0.5"/>
+			<property name="CanMobsSpawnOn" value="true"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+			<property name="SortOrder1" value="d0k0"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="DisplayType" value="blockTerrain"/>
+		</block>	
+
+  </append>
+</configs>

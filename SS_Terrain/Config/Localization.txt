@@ -1,0 +1,16 @@
+Key,English
+
+guppyDirt01,Dirt Terrain
+guppyDirt01Desc,Terrain added by SS Terrain Mod by LxSun. More than 2 textures in an area will cause weird visual problems... we recommend you cover those with trees and bushes.                  
+
+guppyOrganic02,Organic 2 Terrain
+guppyOrganic02Desc,Terrain added by SS Terrain Mod by LxSun. More than 2 textures in an area will cause weird visual problems... we recommend you cover those with trees and bushes.          
+
+TGroundGrassLeaves1,Grass with Leaves Terrain
+TGroundGrassLeaves1Desc,Terrain added by SS Terrain Mod by LxSun. More than 2 textures in an area will cause weird visual problems... we recommend you cover those with trees and bushes.        
+
+Ground_05,Mossy Rock Terrain
+Ground_05Desc,Terrain added by SS Terrain Mod by LxSun. More than 2 textures in an area will cause weird visual problems... we recommend you cover those with trees and bushes.
+
+guppyRock02,Rock 2 Terrain
+guppyRock02Desc,Terrain added by SS Terrain Mod by LxSun. More than 2 textures in an area will cause weird visual problems... we recommend you cover those with trees and bushes.

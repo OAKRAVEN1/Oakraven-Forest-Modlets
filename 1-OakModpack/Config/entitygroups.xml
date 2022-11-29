@@ -52,6 +52,36 @@
 		<entity name="animalBeeStump3" prob="0.1"/>
 		</entitygroup>
 		
+	<!-- OAKS SPIDERS PLUS -->
+		
+                  <!-- Night Group wasteland -->
+
+	<entitygroup name="OakSpiders">
+		<entity name="LizzySpider" prob="0.1"/>
+		<entity name="SteamPunkSpider" prob="0.1"/>
+		<entity name="RoboAnt" prob="0.1"/>
+		<entity name="animalWildCapMushroom" prob="0.1"/>
+		<entity name="animalWildLionMushroom" prob="0.1"/>
+		<entity name="animalFireFlyStump" prob="0.1"/>
+	</entitygroup>
+	
+	             <!-- Day Group wasteland -->
+	
+	<entitygroup name="OakPlants">
+		<entity name="animalWildJalapeno" prob="0.1"/>
+		<entity name="animalWildPepper" prob="0.1"/>
+		<entity name="woodlouse" prob="0.1"/>
+		<entity name="animalWildStrawberry" prob="0.1"/>
+	</entitygroup>
+	
+	             <!-- Night Group Desert -->
+	
+	<entitygroup name="OakDesert">
+		<entity name="Scorpion" prob="0.15"/>
+		<entity name="PhoenixKing" prob="0.2"/>
+		<entity name="EmeraldBat" prob="0.1"/>
+	</entitygroup>
+		
 	</append>		
 
 	<!-- NPCMod ADDONS using 1- nomenclature and open policy usage -->
@@ -1045,6 +1075,29 @@
         <entity name="animalSpider02Queen" prob="0.5"/>
 		<entity name="animalSpider03Queen" prob="0.5"/>		
 	</append>
+	
+	<!-- 1-NPCXBirdPack from Xyth -->
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']">	
+		<entity name="animalEagle" prob="3" />
+		<entity name="animalCrow" prob="3" />
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">	
+		<entity name="animalEagle" prob="5"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']">	
+		<entity name="animalEagle" prob="5" />
+		<entity name="animalAlcatraz" prob="5" />
+	</append>	
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">	
+		<entity name="animalBat" prob="5"/>
+		<entity name="animalBats" prob="5"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='WildGameForest']">		
+		<entity name="animalRobin" prob="5"/>
+		<entity name="animalEagle" prob="5"/>
+		<entity name="animalAlcatraz" prob="5"/>
+		<entity name="animalCrow" prob="5" />
+	</append>	
 
 	<!-- Colony Expansion Spider Pack Custom Sleeper Volume Group -->
 	<append xpath="/entitygroups">

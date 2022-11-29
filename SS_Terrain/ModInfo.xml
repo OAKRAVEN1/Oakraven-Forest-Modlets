@@ -1,0 +1,9 @@
+﻿<xml>
+	<ModInfo>
+		<Name value="SS_Terrain"/>
+		<Description value="Adds terrain with custom textures beyond vanilla 7D2D."/>
+		<Author value="SrslySunshine"/>
+		<Version value="1.0"/>
+		<Website value=""/>
+	</ModInfo>
+</xml>

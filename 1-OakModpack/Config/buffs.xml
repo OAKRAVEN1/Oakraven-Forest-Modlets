@@ -249,9 +249,252 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1"  effect_name="VibrantDeSat"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1"  effect_name="Distortion"/>
 			</effect_group>
-		</buff>		
+		</buff>
+		
+		<!-- OAKS SPIDERS PLUS -->
+
+                        <!-- Animal Spiders -->
+
+<buff name="buffOakSpider" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="OakSpiderAttack"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?OakSpiderWalk" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="OakSpiderAttack" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="OakSpiderWalk"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="OakSpiderAttack"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?OakSpiderDeath" local_offset="-1,.8,0" parent_transform="Global"/>
+		</effect_group>
+</buff>
+
+<buff name="OakSpiderAttack" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="OakSpiderWalk"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?OakSpiderAttack" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="OakSpiderWalk"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="OakSpiderAttack"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?OakSpiderDeath" local_offset="-1,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="OakSpiderAttack"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?OakSpiderWalk" local_offset="-.2,.8,0" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+
+<buff name="buffSteamSpider" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="spidersteampunkattack"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?spidersteampunkwalk" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="OakSpiderSteam" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="spidersteampunkwalk"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="spidersteampunkattack"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?spidersteampunkdead" local_offset="-1,.8,0" parent_transform="Global"/>
+		</effect_group>
+</buff>
+<buff name="OakSpiderSteam" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="spidersteampunkwalk"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?spidersteampunkattack" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="spidersteampunkwalk"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="spidersteampunkattack"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?spidersteampunkdead" local_offset="-1,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="spidersteampunkattack"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?spidersteampunkwalk" local_offset="-.2,.8,0" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+	
+                    <!-- Animal Scorpion -->
+
+<buff name="buffScorpion" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="scorpionattack"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?scorpionwalk" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="Oakscorpion" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="scorpionwalk"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="scorpionattack"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?scorpiondie" local_offset="-1,.8,0" parent_transform="Global"/>
+		</effect_group>
+</buff>
+<buff name="Oakscorpion" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="scorpionwalk"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?scorpionattack" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="scorpionwalk"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="scorpionattack"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?scorpiondie" local_offset="-1,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="scorpionattack"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?scorpionwalk" local_offset="-.2,.8,0" parent_transform="Global"/>
+		</effect_group>
+	</buff> 
+	
+	                 <!-- Animal Ant -->
+	
+<buff name="buffRoboAnt" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="AntBotAttack1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?AntBotWalk1" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="RoboAnt" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="AntBotWalk1"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="AntBotAttack1"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?AntBotDie1" local_offset="-1,.8,0" parent_transform="Global"/>
+		</effect_group>
+</buff>
+<buff name="RoboAnt" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="AntBotWalk1"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?AntBotAttack1" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="AntBotWalk1"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="AntBotAttack1"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?AntBotDie1" local_offset="-1,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="AntBotAttack1"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?AntBotWalk1" local_offset="-.2,.8,0" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+
+	               <!-- Animal lizard -->
+
+<buff name="buffSheSpider" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="SheSpiderAttack"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?SheSpiderWalk" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="SheSpider" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="SheSpiderWalk"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="SheSpiderAttack"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?SheSpiderDie" local_offset="-1,.8,0" parent_transform="Global"/>
+		</effect_group>
+</buff>
+
+<buff name="SheSpider" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="SheSpiderWalk"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?SheSpiderAttack" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="SheSpiderWalk"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="SheSpiderAttack"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?SheSpiderDie" local_offset="-1,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="SheSpiderAttack"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?SheSpiderWalk" local_offset="-.2,.8,0" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+
+	<buff name="TriDexTentacleBlueDeco" hidden="true">		
+		<effect_group>		
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/night.unity3d?TriDexTentacleBlue" local_offset="0,-.5,0" local_rotation="0,0,0" parent_transform="Head"/>																								
+			<triggered_effect trigger="onSelfDied" action="AttachParticleEffectToEntity" particle="p_fire_small" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Head"/>					
+			<triggered_effect trigger="onSelfDied" action="PlaySound" sound=""/>			
+		</effect_group>
+	</buff>
+	
+	<buff name="phoenixking" hidden="true">		
+		<effect_group>		
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?phoenixking" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Head"/>																								
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="phoenixking"/>
+			<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?phoenixkingDie" local_offset="0,0.4,0" parent_transform="Head"/>			
+			<triggered_effect trigger="onSelfDied" action="PlaySound" sound=""/>			
+		</effect_group>
+	</buff>
+	
+	<buff name="EmeraldBat" hidden="true">		
+		<effect_group>		
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?emeraldbat" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Head"/>																								
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="emeraldbat"/>
+			<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?emeraldbatDead" local_offset="0,0.4,0" parent_transform="Head"/>			
+			<triggered_effect trigger="onSelfDied" action="PlaySound" sound=""/>			
+		</effect_group>
+	</buff>
+	
+	<buff name="woodlouse" hidden="true">		
+		<effect_group>		
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?woodlouse" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Spine1"/>																								
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="woodlouse"/>
+			<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?woodlouseDie" local_offset="0,0.4,0" parent_transform="Spine1"/>			
+			<triggered_effect trigger="onSelfDied" action="PlaySound" sound=""/>			
+		</effect_group>
+	</buff>		
 	
 	</append>
+	
 	
 <!-- OakPack Vehicle Checker for Attachment Decorations -->	
 	

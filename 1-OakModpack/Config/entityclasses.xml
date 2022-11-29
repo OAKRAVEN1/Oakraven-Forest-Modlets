@@ -2461,6 +2461,637 @@
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
 			<drop event="Harvest" name="resourceSpiderSac" tag="allToolsHarvest" count="1"/>			
 		</entity_class>
+		
+		<!-- 1-NPCXBirdPack from Xyth -->
+		
+		<entity_class name="animalRobin" extends="animalTemplateTimidFlying" >
+			<property name="Mesh" value="#@modfolder:Resources/XythBirds.unity3d?Robin_X" />
+			<property name="Tags" value="entity,cp,animal,timid,animalRobin"/>
+			<property name="Faction" value="animals"/>
+			<property name="HandItem" value="meleeHandAnimalRobin"/>
+			<property name="MaxTurnSpeed" value="190"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="SizeScale" value="1.1"/>
+			<property name="SoundRandomTime" value="10.0"/>
+			<property name="SoundRandom" value="RobinSounds" />
+			<property name="SoundAlert" value="RobinSounds"/>
+			<property name="SoundHurt" value=""/>
+			<property name="SoundDeath" value="RobinSounds"/>
+			<property name="SoundAttack" value=""/>
+			<property name="SoundSense" value="RobinSounds"/>
+			<property name="SoundGiveUp" value="RobinSounds"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="20"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>
+		</entity_class>
+ 		
+		<entity_class name="animalCrow" extends="animalTemplateTimidFlying">
+			<property name="Mesh" value="#@modfolder:Resources/XythBirds.unity3d?Crow_X" />
+			<property name="Tags" value="entity,cp,animal,timid,animalCrow"/>
+			<property name="Faction" value="animals"/>
+			<property name="SoundRandomTime" value="10.0"/>
+			<property name="SoundRandom" value="CrowRandom" />
+			<property name="SoundAlert" value="CrowRandom"/>
+			<property name="SoundHurt" value="CrowAttack"/>
+			<property name="SoundDeath" value="CrowAttack"/>
+			<property name="SoundAttack" value="CrowAttack"/>
+			<property name="SoundSense" value="CrowRandom"/>
+			<property name="SoundGiveUp" value="CrowRandom"/>	
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+		</entity_class>
+		
+		<entity_class name="animalBat" extends="animalTemplateTimidFlying">
+			<property name="Mesh" value="#@modfolder:Resources/XythBirds.unity3d?Bat_X" />
+			<property name="Tags" value="entity,cp,animal,timid,animalBat"/>
+			<property name="Faction" value="animals"/>		
+			<property name="SoundRandomTime" value="10.0"/>
+			<property name="SoundRandom" value="BatRandom" />
+			<property name="SoundAlert" value="BatRandom"/>
+			<property name="SoundHurt" value=""/>
+			<property name="SoundDeath" value=""/>
+			<property name="SoundAttack" value="BatRandom"/>
+			<property name="SoundSense" value="BatRandom"/>
+			<property name="SoundGiveUp" value="BatRandom"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+		</entity_class>
+		
+		<entity_class name="animalBats" extends="animalTemplateTimidFlying"> <!-- has a particle of...Bats!  -->
+			<property name="Mesh" value="#@modfolder:Resources/XythBirds.unity3d?Bats_X" />	
+			<property name="Tags" value="entity,cp,animal,timid,animalBats"/>
+			<property name="Faction" value="animals"/>		
+			<property name="SoundRandomTime" value="10.0"/>
+			<property name="SoundRandom" value="BatRandom" />
+			<property name="SoundAlert" value="BatRandom"/>
+			<property name="SoundHurt" value=""/>
+			<property name="SoundDeath" value=""/>
+			<property name="SoundAttack" value="BatRandom"/>
+			<property name="SoundSense" value="BatRandom"/>
+			<property name="SoundGiveUp" value="BatRandom"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>			
+		</entity_class>
+		
+		<entity_class name="animalEagle" extends="animalTemplateTimidFlying">
+			<property name="Mesh" value="#@modfolder:Resources/XythBirds.unity3d?Eagle_X" />
+			<property name="Tags" value="entity,cp,animal,timid,animalEagle"/>
+			<property name="Faction" value="animals"/>					
+			<property name="SoundRandomTime" value="10.0"/>
+			<property name="SoundRandom" value="EagleSound" />
+			<property name="SoundAlert" value="EagleSound"/>
+			<property name="SoundHurt" value=""/>
+			<property name="SoundDeath" value=""/>
+			<property name="SoundAttack" value="EagleSound"/>
+			<property name="SoundSense" value="EagleSound"/>
+			<property name="SoundGiveUp" value="EagleSound"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="2"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="50"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalAlcatraz" extends="animalTemplateTimidFlying">
+			<property name="Mesh" value="#@modfolder:Resources/XythBirds.unity3d?Alcatraz_X" />
+			<property name="Tags" value="entity,cp,animal,timid,animalAlcatraz"/>
+			<property name="Faction" value="animals"/>					
+			<property name="SoundRandomTime" value="10.0"/>
+			<property name="SoundRandom" value="AlcatrazSound" />
+			<property name="SoundAlert" value="AlcatrazSound"/>
+			<property name="SoundHurt" value=""/>
+			<property name="SoundDeath" value=""/>
+			<property name="SoundAttack" value="AlcatrazSound"/>
+			<property name="SoundSense" value="AlcatrazSound"/>
+			<property name="SoundGiveUp" value="AlcatrazSound"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="2"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="30"/>
+			</effect_group>			
+		</entity_class>
+		
+		<entity_class name="animalPenguin" extends="animalTemplateTimidWalking">
+			<property name="Mesh" value="#@modfolder:Resources/XythPenguin.unity3d?Penguin_X"/>
+			<property name="Tags" value="entity,animal,timid,perkAT02,perkAT03"/>
+			<property name="Faction" value="animals"/>	
+			<property name="Weight" value="20"/>
+			<property name="Mass" value="20"/>
+			<property name="PhysicsBody" value="Penguin"/>
+			<property name="HandItem" value="meleeHandAnimalFox"/>					
+			<property name="SoundRandom" value=""/>
+			<property name="SoundAlert" value=""/>
+			<property name="SoundHurt" value=""/>
+			<property name="SoundDeath" value=""/>
+			<property name="SoundAttack" value=""/>
+			<property name="SoundSense" value=""/>
+			<property name="SoundGiveUp" value=""/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="5"/>
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="3"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="5"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="80"/>
+			</effect_group>
+		</entity_class>
+		
+		<!-- OAKS SPIDERS PLUS -->
+		
+          <!-- Animal LizzySpider -->
+
+<entity_class name="LizzySpider" extends="animalBear">
+	<property name="Tags" value="entity,animal,hostile,perkAT03,spider"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="DestroyArea"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,0,EntityNPC,0"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,18,13,EntityAnimalStag,0,0"/>
+	<property name="AITarget-4" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value="SpiderScreamSound"/>
+	<property name="SoundAttack" value="SpiderScreamSound"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="755"/> 
+	<property name="DeadBodyHitPoints" value="300"/>
+
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="35"/> 
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+
+<property name="TimeStayAfterDeath" value="150"/>
+
+	<property name="SizeScale" value=".35"/>
+	<property name="HandItem" value="meleeHandSteamSpider"/>
+	<property name="MoveSpeedAggro" value="1.2, 1.5"/>
+	
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+
+	<property name="Buffs" value="buffOakSpider"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="750"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> 
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_bear,clear_sleeper" />
+</entity_class>
+
+                 <!-- Animal SteamPunkSpider -->
+
+<entity_class name="SteamPunkSpider" extends="animalBear">
+	<property name="Tags" value="entity,animal,hostile,perkAT03,spider"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="DestroyArea"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,0,EntityNPC,0"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,18,13,EntityAnimalStag,0,0"/>
+	<property name="AITarget-4" value=""/>
+
+	<property name="SoundHurt" value="ROBOTHurt"/>
+	<property name="SoundDeath" value="ROBOTDie"/>
+	<property name="SoundRandom" value="ROBOTroam"/>
+	<property name="SoundSense" value="ROBOTSense"/>
+	<property name="SoundAlert" value="ROBOTAlert"/>
+	<property name="SoundAttack" value="ROBOTAttack"/>
+	<property name="SoundFootstepModifier" value="ROBOTWalking"/>
+	<property name="SoundGiveUp" value=""/>
+
+	
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="755"/> 
+	<property name="DeadBodyHitPoints" value="300"/>
+
+	<drop event="Harvest" name="resourceScrapIron" count="100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="10" tag="allHarvest"/> 
+	<drop event="Harvest" name="resourceSpring" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="6" tag="allHarvest"/>
+
+    <property name="TimeStayAfterDeath" value="150"/>
+
+	<property name="SizeScale" value=".55"/>
+	<property name="HandItem" value="meleeSteamPunkSpider"/>
+	<property name="MoveSpeedAggro" value="1.2, 1.5"/>
+	
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+
+	<property name="Buffs" value="buffSteamSpider"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="750"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_bear,clear_sleeper" />
+</entity_class>
+
+               <!-- Animal Scorpion -->
+
+<entity_class name="Scorpion" extends="animalBear">
+	<property name="Tags" value="entity,animal,hostile,perkAT03,spider"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="DestroyArea"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,0,EntityNPC,0"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,18,13,EntityAnimalStag,0,0"/>
+	<property name="AITarget-4" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value="WoodLouseDie"/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="355"/> 
+	<property name="DeadBodyHitPoints" value="80"/>
+
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="15"/> 
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+	<drop event="Harvest" name="ScorpionSting" tag="allToolsHarvest" count="1"/>
+
+<property name="TimeStayAfterDeath" value="150"/>
+
+	<property name="SizeScale" value=".65"/>
+	<property name="HandItem" value="meleeHandSteamSpider"/>
+	<property name="MoveSpeedAggro" value="1.2, 1.5"/>
+	
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+
+	<property name="Buffs" value="buffScorpion"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> 
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_bear,clear_sleeper" />
+</entity_class>
+
+                <!-- Animal Ant -->
+
+<entity_class name="RoboAnt" extends="animalBear">
+	<property name="Tags" value="entity,animal,hostile,perkAT03,spider"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="DestroyArea"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,0,EntityNPC,0"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,18,13,EntityAnimalStag,0,0"/>
+	<property name="AITarget-4" value=""/>
+
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value="ROBOTDie"/>
+	<property name="SoundRandom" value="ROBOTroam"/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value="ROBOTAlert"/>
+	<property name="SoundAttack" value="SpiderScreamSound"/>
+	<property name="SoundFootstepModifier" value="ROBOTWalking"/>
+	<property name="SoundGiveUp" value=""/>
+
+	
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="755"/>
+	<property name="DeadBodyHitPoints" value="300"/>
+
+	<drop event="Harvest" name="resourceScrapIron" count="70" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="10" tag="allHarvest"/> 
+	<drop event="Harvest" name="resourceSpring" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="4" tag="allHarvest"/>
+    <drop event="Destroy" count="0"/>
+<property name="TimeStayAfterDeath" value="150"/>
+
+	<property name="SizeScale" value=".55"/>
+	<property name="HandItem" value="meleeHandSteamSpider"/>
+	<property name="MoveSpeedAggro" value="1.2, 1.5"/>
+	
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+
+	<property name="Buffs" value="buffRoboAnt"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="750"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> 
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_bear,clear_sleeper" />
+</entity_class>
+
+                <!-- Animal SheSpider -->
+
+<entity_class name="SheSpider" extends="animalBear">
+	<property name="Tags" value="entity,animal,hostile,perkAT03,spider"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="DestroyArea"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,0,EntityNPC,0"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,18,13,EntityAnimalStag,0,0"/>
+	<property name="AITarget-4" value=""/>
+
+	<property name="SoundHurt" value="TheGreyLadyHurt"/>
+	<property name="SoundDeath" value="ROBOTDie"/>
+	<property name="SoundRandom" value="TheGreyLadyRoam"/>
+	<property name="SoundSense" value="TheGreyLadySens"/>
+	<property name="SoundAlert" value="TheGreyLadyAlert"/>
+	<property name="SoundAttack" value="TheGreyLadyAttack"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="755"/> 
+	<property name="DeadBodyHitPoints" value="300"/>
+
+	<drop event="Harvest" name="resourceScrapIron" count="100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="10" tag="allHarvest"/> 
+	<drop event="Harvest" name="resourceSpring" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="6" tag="allHarvest"/>
+
+    <property name="TimeStayAfterDeath" value="150"/>
+
+	<property name="SizeScale" value="1"/>
+	<property name="HandItem" value="meleeHandSteamSpider"/>
+	<property name="MoveSpeedAggro" value="1.2, 1.5"/>
+	
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+
+	<property name="Buffs" value="buffSheSpider"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="750"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_bear,clear_sleeper" />
+</entity_class>
+
+<entity_class name="TriDexTentacleBlue" extends="zombieTemplateMale">
+	<property name="Tags" value="entity,animal,zombie,hostile,radiated"/>
+	<property name="Radiated" value=""/>
+	<property name="SizeScale" value="0.8"/>	
+	<property name="SightRange" value="360"/>
+	<property name="SurfaceCategory" value="metal"/>	
+    <property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSpiderRagdoll.prefab"/>
+	<property name="SoundRandom" value="TriDexroam"/>
+	<property name="SoundAlert" value="TriDexAlert"/>
+	<property name="SoundHurt" value="TriDexHurt"/>
+	<property name="SoundDeath" value="TriDexDie"/>
+	<property name="SoundAttack" value="TriDexAttack"/>
+	<property name="SoundSense" value="TriDexSense"/>
+	<property name="SoundGiveUp" value=""/>
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+	<property name="TimeStayAfterDeath" value="1"/>	
+	
+	<property name="MoveSpeed" value=".3"/>
+	<property name="MoveSpeedAggro" value="1.0, 1.4"/>
+	<property name="MaxTurnSpeed" value="150"/>
+	<property name="HandItem" value="meleeHandAnimalWolf"/>
+	
+	<property name="ExperienceGain" value="800"/>
+	<property name="DeadBodyHitPoints" value="550"/>
+
+	<effect_group name="Base Effects">
+	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="TriDexTentacleBlueDeco"/>	
+		<passive_effect name="HealthMax" operation="base_set" value="600"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
+		<passive_effect name="EntityDamage" operation="perc_add" value=".4"/>
+	</effect_group>
+</entity_class>
+
+                           <!-- PhoenixKing -->
+
+<entity_class name="PhoenixKing" extends="animalZombieVulture">
+	
+	<property name="Tags" value="entity,animal,zombie,hostile,radiated,vulture"/>
+	<property name="Radiated" value=""/>
+	<property name="Mass" value="50"/>
+	<property name="SizeScale" value="1.2"/>
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+
+	<property name="MoveSpeed" value=".4"/>
+	<property name="MoveSpeedAggro" value="1.5, 1.5"/>
+	<property name="MaxTurnSpeed" value="150"/>
+	
+	<property name="SoundRandom" value="Phoenixroam"/>
+	<property name="SoundAlert" value="PhoenixAlert"/>
+	<property name="SoundHurt" value="PhoenixAlert"/>
+	<property name="SoundDeath" value="PhoenixDie"/>
+	<property name="SoundAttack" value="PhoenixAttack"/>
+	<property name="SoundSense" value="PhoenixAlert"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="HandItem" value="meleeHandAnimalPhoenixKing"/>
+
+	<property name="ExperienceGain" value="800"/>
+
+	<property name="DeadBodyHitPoints" value="200"/>
+	<drop event="Harvest" name="foodRawMeat" count="1" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="6"/>
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="4"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+
+	<effect_group name="Base Effects">
+	    <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="phoenixking"/>	
+		<passive_effect name="HealthMax" operation="base_set" value="120"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value=".4"/> <!-- Feral damage -->
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+	</effect_group>
+</entity_class>
+
+                          <!-- Emerald-Bat -->
+
+<entity_class name="EmeraldBat" extends="animalZombieVulture">
+	<!-- hardcoded to use the vomit attack if isRadiated=true -->
+	<property name="Tags" value="entity,animal,zombie,hostile,radiated,vulture"/>
+	<property name="Radiated" value=""/>
+	<property name="Mass" value="50"/>
+	<property name="SizeScale" value="1.2"/>
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+
+	<property name="MoveSpeed" value=".4"/>
+	<property name="MoveSpeedAggro" value="1.5, 1.5"/>
+	<property name="MaxTurnSpeed" value="150"/>
+	
+	<property name="SoundRandom" value="BatRoam"/>
+	<property name="SoundAlert" value="SingleBatAttack"/>
+	<property name="SoundHurt" value="PhoenixAlert"/>
+	<property name="SoundDeath" value="SingleBatAttack"/>
+	<property name="SoundAttack" value="SingleBatAttack"/>
+	<property name="SoundSense" value="SingleBatAttack"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="HandItem" value="meleeHandAnimalZombieVultureRadiated"/>
+
+	<property name="ExperienceGain" value="800"/>
+
+	<property name="DeadBodyHitPoints" value="200"/>
+	<drop event="Harvest" name="foodRawMeat" count="1" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="6"/>
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="4"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+
+	<effect_group name="Base Effects">
+	    <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="EmeraldBat"/>	
+		<passive_effect name="HealthMax" operation="base_set" value="120"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value=".4"/> <!-- Feral damage -->
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="woodlouse" extends="animalTemplateTimid">
+	<property name="Tags" value="entity,animal,hostile,boar,perkAT02,perkAT03"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_pig"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_pig"/>
+	<property name="IsEnemyEntity" value="false"/><!-- override hostile template setting so he can spawn in safe zones -->
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="PhysicsBody" value="boar"/>
+	<property name="Mass" value="200"/>
+	<property name="Prefab" value="/Entities/Animals/Boar/AnimalBoarStandardRagdoll"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+
+	<property name="SoundRandom" value="WoodLouseRoam"/>
+	<property name="SoundHurt" value="WoodLouseHurt"/>
+	<property name="SoundDeath" value="WoodLouseDie"/>
+
+	<!-- Gameplay  -->
+	<property name="AITask-1" value="RunawayWhenHurt"/>
+	<property name="AITask-2" value="RunawayFromEntity" data="class=EntityPlayer,EntityZombie,EntityEnemyAnimal;safeDistance=20"/>
+	<property name="AITask-3" value="Look"/>
+	<property name="AITask-4" value="Wander"/>
+
+	<!-- Gameplay  -->
+	<property name="MoveSpeedPanic" value="1.55"/>
+
+	<property name="HandItem" value="meleeHandAnimalWolf"/>
+
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="30"/> <!-- animalBoar -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="7"/>
+	<drop event="Harvest" name="resourceAnimalFat" count="4" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+
+	<effect_group name="Base Effects">
+	   <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="woodlouse"/>
+		<passive_effect name="HealthMax" operation="base_set" value="250"/>
+	</effect_group>
+
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_boar,clear_sleeper" />
+</entity_class>
 
 		<!-- Darkstardragon's Mythical Beasts from 1-FantasticBeastz -->
 
