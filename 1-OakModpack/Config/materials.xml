@@ -27,6 +27,74 @@
 		<property name="MaxDamage" value="250"/>
 		<property name="Experience" value="2"/>
 	</material>
+	
+	<!-- WASTELAND UPDATE -->
+	
+		<material id="Copper">
+	        <property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="particle_category" value="metal"/>
+			<property name="particle_destroy_category" value="metal"/>
+			<property name="forge_category" value="Copper"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="400"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="2"/>
+			<property name="MaxDamage" value="1250"/>
+			<property name="Experience" value="2"/>
+      </material>
+
+        <material id="ForgedCopper">
+	        <property name="damage_category" value="metal"/>
+	        <property name="surface_category" value="metal"/>
+	        <property name="forge_category" value="Copper"/>
+	        <property name="Experience" value="20"/>
+      </material>
+	  
+	  	<material id="Tin">
+	        <property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="particle_category" value="metal"/>
+			<property name="particle_destroy_category" value="metal"/>
+			<property name="forge_category" value="Tin"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="400"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="2"/>
+			<property name="MaxDamage" value="1250"/>
+			<property name="Experience" value="2"/>
+      </material>
+
+        <material id="ForgedTin">
+	        <property name="damage_category" value="metal"/>
+	        <property name="surface_category" value="metal"/>
+	        <property name="forge_category" value="Tin"/>
+	        <property name="Experience" value="20"/>
+      </material>
+	  
+	  	  	<material id="BloodStone">
+	        <property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="particle_category" value="metal"/>
+			<property name="particle_destroy_category" value="metal"/>
+			<property name="forge_category" value="Blood"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="400"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="2"/>
+			<property name="MaxDamage" value="1250"/>
+			<property name="Experience" value="2"/>
+      </material>
+
+        <material id="ForgedBloodStone">
+	        <property name="damage_category" value="metal"/>
+	        <property name="surface_category" value="metal"/>
+	        <property name="forge_category" value="Blood"/>
+	        <property name="Experience" value="20"/>
+      </material>	
 		
 	</append>
 </configs>

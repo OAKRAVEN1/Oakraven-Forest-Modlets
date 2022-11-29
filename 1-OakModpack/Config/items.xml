@@ -129,6 +129,25 @@
 	<set xpath="/items/item[@name='toolForgeCrucible']/property[@name='Stacknumber']/@value">25</set><!-- x25 of default -->
 	<!-- Bundle Stacking -->
 	<set xpath="/items/item[@name='resourceRockSmallBundle']/property[@name='Stacknumber']/@value">25</set><!-- x5 of default -->
+	<!-- Wasteland Update -->
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP,9mmCopperBullet,9mmBloodBullet</set>
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP,9mmCopperBullet,9mmBloodBullet</set>
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP,44MagnumCopperBullet,44MagnumBloodBullet</set>
+    <set xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP,44MagnumCopperBullet,44MagnumBloodBullet</set>
+	<set xpath="/items/item[@name='gunShotgunT0PipeShotgun']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug,CopperShotgunShell</set>
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug,CopperShotgunShell</set>
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug,CopperShotgunShell</set>
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug,CopperShotgunShell</set>
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,762mmCopperBullet,762mmBloodBullet</set>
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,762mmCopperBullet,762mmBloodBullet</set>
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,762mmCopperBullet,762mmBloodBullet</set>
+	<set xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,762mmCopperBullet,762mmBloodBullet</set>
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,762mmCopperBullet,762mmBloodBullet</set>
+	<set xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,762mmCopperBullet,762mmBloodBullet</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding,BloodArrow,CopperArrow</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding,BloodArrow,CopperArrow</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoCrossbowBoltStone,ammoCrossbowBoltIron,ammoCrossbowBoltSteelAP,ammoCrossbowBoltFlaming,ammoCrossbowBoltExploding,CrossbowCopperBoltST,CrossbowBloodBoltST</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoCrossbowBoltStone,ammoCrossbowBoltIron,ammoCrossbowBoltSteelAP,ammoCrossbowBoltFlaming,ammoCrossbowBoltExploding,CrossbowCopperBoltST,CrossbowBloodBoltST</set>
 
 	<!-- Append Stacking -->	
 	<append xpath="/items/item[@name='medicalPlasterCast']">
@@ -5806,6 +5825,7 @@
 
 <item name="ScorpionSting">
 	<property name="Tags" value="food"/>
+	<property name="DescriptionKey" value="ScorpionStingDesc"/>
 	<property name="CustomIcon" value="scorpionsting"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodRaw"/>
@@ -6062,6 +6082,695 @@
 				<property name="QuestGiven" value="challenge_2-SummonFoxFriend"/>
 			</property>
 		</item>
+		
+	<!-- WASTELAND UPDATE -->
+		
+                <!-- Copper materials -->
+				
+      <item name="unit_Copper"> <!-- scrap material -->
+		<property name="Extends" value="unit_iron"/>
+	    <property name="CustomIcon" value="orecopper"/>
+	    <property name="Material" value="Copper"/>
+	    <property name="MeltTimePerUnit" value=".4"/>
+	    <property name="CreativeMode" value="None"/>
+		</item>
+		
+	   <item name="scrapCopper">
+			<property name="CustomIcon" value="copperscrap" />
+			<property name="DescriptionKey" value="scrapCopperDesc"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="Material" value="Copper"/>
+			<property name="Weight" value="1" />
+			<property name="Stacknumber" value="1000"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="15"/> 
+			<property name="RepairAmount" value="40"/>
+			<property name="CraftingIngredientTime" value="0.3"/>
+		</item>	
+		
+		<item name="CopperOre">
+			<property name="CustomIcon" value="orecopper"/>
+			<property name="DescriptionKey" value="CopperOreDesc"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Copper"/>
+			<property name="Weight" value="5"/>
+			<property name="Stacknumber" value="1000"/> 
+			<property name="SellableToTrader" value="false"/>
+			<property name="HoldType" value="45"/>
+			<property name="DropScale" value="3"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		
+		<item name="Copperingot">
+		    <property name="CustomIcon" value="copperingot"/>
+			<property name="DescriptionKey" value="CopperingotDesc"/>
+	        <property name="HoldType" value="45"/>
+	        <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="ForgedCopper"/>
+	        <property name="Stacknumber" value="500"/> <!-- STK resource -->
+	        <property name="EconomicValue" value="50"/>
+	        <property name="Group" value="Resources"/>
+	        <property name="CraftingIngredientTime" value="15"/>
+	        <property name="RepairTime" value="1"/>
+	        <property name="RepairAmount" value="400"/>
+        </item>
+		
+		                <!-- TIN materials -->
+						
+		 <item name="unit_Tin"> <!-- scrap material -->
+		     <property name="Extends" value="unit_iron"/>
+	         <property name="CustomIcon" value="orecopper"/>
+	         <property name="Material" value="Tin"/>
+	         <property name="MeltTimePerUnit" value=".4"/>
+	         <property name="CreativeMode" value="None"/>
+		</item>
+		
+	   <item name="scrapTin">
+			<property name="CustomIcon" value="tinbroken"/>
+			<property name="DescriptionKey" value="scrapTinDesc"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="Material" value="Tin"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="15"/> 
+			<property name="RepairAmount" value="40"/>
+			<property name="CraftingIngredientTime" value="0.3"/>
+		</item>	
+		
+		<item name="TinOre">
+			<property name="CustomIcon" value="tinore"/>
+			<property name="DescriptionKey" value="TinOreDesc"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Tin"/>
+			<property name="Weight" value="5"/>
+			<property name="Stacknumber" value="1000"/> 
+			<property name="SellableToTrader" value="false"/>
+			<property name="HoldType" value="45"/>
+			<property name="DropScale" value="3"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		
+		<item name="Tiningot">
+		    <property name="CustomIcon" value="tiningot"/>
+			<property name="DescriptionKey" value="TiningotDesc"/>			
+	        <property name="HoldType" value="45"/>
+	        <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="ForgedTin"/>
+	        <property name="Stacknumber" value="500"/> <!-- STK resource -->
+	        <property name="EconomicValue" value="50"/>
+	        <property name="Group" value="Resources"/>
+	        <property name="CraftingIngredientTime" value="15"/>
+	        <property name="RepairTime" value="1"/>
+	        <property name="RepairAmount" value="400"/>
+        </item>	
+		
+		                <!-- BLOODSTONE materials -->
+		
+		 <item name="unit_Blood"> <!-- scrap material -->
+		     <property name="Extends" value="unit_iron"/>
+	         <property name="CustomIcon" value="bloodstone"/>
+	         <property name="Material" value="BloodStone"/>
+	         <property name="MeltTimePerUnit" value=".4"/>
+	         <property name="CreativeMode" value="None"/>
+		</item>
+		
+	   <item name="BloodStoneShards">
+			<property name="CustomIcon" value="bloodredbroken"/>
+			<property name="DescriptionKey" value="BloodStoneShardsDesc"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="Material" value="BloodStone"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="15"/> 
+			<property name="RepairAmount" value="40"/>
+			<property name="CraftingIngredientTime" value="0.3"/>
+		</item>	
+		
+		<item name="BloodStoneOre">
+			<property name="CustomIcon" value="bloodstone"/>
+			<property name="DescriptionKey" value="BloodStoneOreDesc"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="BloodStone"/>
+			<property name="Weight" value="5"/>
+			<property name="Stacknumber" value="1000"/> 
+			<property name="SellableToTrader" value="false"/>
+			<property name="HoldType" value="45"/>
+			<property name="DropScale" value="3"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Group" value="Resources"/>
+		</item>
+
+        <item name="BloodStoneIngot">
+		    <property name="CustomIcon" value="bloodingot"/>
+			<property name="DescriptionKey" value="BloodStoneIngotDesc"/>
+	        <property name="HoldType" value="45"/>
+	        <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="ForgedBloodStone"/>
+	        <property name="Stacknumber" value="500"/> <!-- STK resource -->
+	        <property name="EconomicValue" value="50"/>
+	        <property name="Group" value="Resources"/>
+	        <property name="CraftingIngredientTime" value="15"/>
+	        <property name="RepairTime" value="1"/>
+	        <property name="RepairAmount" value="400"/>
+        </item>	
+		
+		                     <!-- AMMO -->
+		
+		<item name="CopperArrowHead">
+		    <property name="CustomIcon" value="arrowheadcopper"/>
+			<property name="DescriptionKey" value="CopperArrowHeadDesc"/>			
+	        <property name="HoldType" value="45"/>
+	        <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="Mmetal"/>
+	        <property name="Stacknumber" value="500"/> <!-- STK resource -->
+	        <property name="EconomicValue" value="40"/>
+	        <property name="EconomicBundleSize" value="5"/>
+	       <property name="Group" value="Ammo/Weapons,Ammo"/>
+        </item>
+		
+		<item name="BloodStoneArrowHead">
+		    <property name="CustomIcon" value="bloodarrowhead"/>
+			<property name="DescriptionKey" value="BloodStoneArrowHeadDesc"/>
+	        <property name="HoldType" value="45"/>
+	        <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="Mmetal"/>
+	        <property name="Stacknumber" value="500"/> <!-- STK resource -->
+	        <property name="EconomicValue" value="40"/>
+	        <property name="EconomicBundleSize" value="5"/>
+	       <property name="Group" value="Ammo/Weapons,Ammo"/>
+        </item>
+		
+		<item name="CopperBuckshot">
+		    <property name="CustomIcon" value="copperballs"/>
+			<property name="DescriptionKey" value="CopperBuckshotDesc"/>
+	        <property name="HoldType" value="45"/>
+	        <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="Mlead_scrap"/>
+	        <property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	        <property name="EconomicValue" value="10"/>
+	        <property name="EconomicBundleSize" value="10"/>
+	        <property name="Group" value="Ammo/Weapons,Ammo"/>
+        </item>
+		
+		<item name="CopperBulletTip">
+		    <property name="CustomIcon" value="coppertip"/>
+			<property name="DescriptionKey" value="CopperBulletTipDesc"/>			
+	        <property name="HoldType" value="45"/>
+	        <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="MresourceScrapLeadSmall"/>
+	        <property name="Stacknumber" value="1000"/>
+	        <property name="EconomicValue" value="10"/>
+	        <property name="EconomicBundleSize" value="10"/>
+	        <property name="Group" value="Ammo/Weapons,Ammo"/>
+        </item>
+		
+		<item name="BloodBulletTip">
+		    <property name="CustomIcon" value="bloodtip"/>
+			<property name="DescriptionKey" value="BloodBulletTipDesc"/>			
+	        <property name="HoldType" value="45"/>
+	        <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="MresourceScrapLeadSmall"/>
+	        <property name="Stacknumber" value="1000"/>
+	        <property name="EconomicValue" value="10"/>
+	        <property name="EconomicBundleSize" value="10"/>
+	        <property name="Group" value="Ammo/Weapons,Ammo"/>
+        </item>
+		
+		<item name="toolMold">
+	        <property name="Tags" value="toolMold"/>
+			<property name="DescriptionKey" value="toolMoldDesc"/>			
+	        <property name="HoldType" value="45"/>
+	        <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="Msteel"/>
+	        <property name="Weight" value="0"/>
+	        <property name="Stacknumber" value="25"/> <!-- STK loot -->
+	        <property name="EconomicValue" value="240"/>
+	        <property name="Group" value="Tools/Traps"/>
+	        <property name="DisplayType" value="toolAnvil"/>
+	        <property name="ItemTypeIcon" value="forge"/>
+	        <effect_group tiered="false">
+		<requirement name="!HoldingItemHasTags" tags="toolMold"/>
+			<passive_effect name="CraftingTime" operation="perc_add" value="-.333"/>
+			<display_value name="dCraftingTime" value=".5"/>
+	     </effect_group>
+       </item>
+	   
+	                       <!-- AMMO -->
+						   
+<item name="CrossbowBloodBolt">
+	<property name="Extends" value="ammoCrossbowBoltIron"/>
+	<property name="CustomIcon" value="bloodbolt" />
+	<property name="DisplayType" value="ammoArrowAP"/>
+	<property name="Meshfile" value="#@modfolder:Resources/wastelandarrows.unity3d?bloodrbolt"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value=".75"/>
+	<effect_group name="CrossbowBloodBolt" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
+		<passive_effect name="EntityDamage" operation="base_set" value="73" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5" tags="perkArchery"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>
+
+	<item name="CrossbowBloodBoltST">
+	<property name="Extends" value="ammoCrossbowBoltIron"/>
+	<property name="CustomIcon" value="bloodbolt" />
+	<property name="DisplayType" value="ammoArrowAP"/>
+	<property name="Meshfile" value="#@modfolder:Resources/wastelandarrows.unity3d?bloodrboltST"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value=".75"/>
+	<effect_group name="CrossbowBloodBolt" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
+		<passive_effect name="EntityDamage" operation="base_set" value="73" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5" tags="perkArchery"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>	
+
+<item name="CrossbowCopperBolt">
+	<property name="Extends" value="ammoCrossbowBoltIron"/>
+	<property name="CustomIcon" value="copperbolt" />
+	<property name="DisplayType" value="ammoArrowAP"/>
+	<property name="Meshfile" value="#@modfolder:Resources/wastelandarrows.unity3d?copperbolt"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value=".75"/>
+	<effect_group name="CrossbowCopperBolt" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
+		<passive_effect name="EntityDamage" operation="base_set" value="73" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5" tags="perkArchery"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>
+
+<item name="CrossbowCopperBoltST">
+	<property name="Extends" value="ammoCrossbowBoltIron"/>
+	<property name="CustomIcon" value="copperbolt" />
+	<property name="DisplayType" value="ammoArrowAP"/>
+	<property name="Meshfile" value="#@modfolder:Resources/wastelandarrows.unity3d?copperboltST"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value=".75"/>
+	<effect_group name="CrossbowCopperBolt" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
+		<passive_effect name="EntityDamage" operation="base_set" value="73" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5" tags="perkArchery"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>															   
+	   
+<item name="BloodArrow">
+	<property name="Extends" value="ammoArrowIron"/>
+	<property name="CustomIcon" value="bloodarrow" />	
+	<property name="DisplayType" value="ammoArrowAP"/>
+	<property name="Meshfile" value="#@modfolder:Resources/wastelandarrows.unity3d?bloodarrow"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+	<effect_group name="BloodArrow" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="52" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="9" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="75" tags="perkArchery"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>
+
+	<item name="CopperArrow">
+	<property name="Extends" value="ammoArrowIron"/>
+	<property name="CustomIcon" value="copperarrow" />	
+	<property name="DisplayType" value="ammoArrowAP"/>
+	<property name="Meshfile" value="#@modfolder:Resources/wastelandarrows.unity3d?copperarrow"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+	<effect_group name="CopperArrow" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="52" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="9" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="75" tags="perkArchery"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>	
+
+   <item name="CopperShotgunShell">
+	<property name="Tags" value="ammo,shotgun"/>
+	<property name="CustomIcon" value="coppeslug" />
+	<property name="DisplayType" value="ammoShotgun"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+	<property name="EconomicValue" value="11"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<effect_group name="CopperShotgunShell" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="15.1" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8.4" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="30" tags="wood"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="10" tags="perkBoomstick"/>
+		<passive_effect name="MaxRange" operation="base_set" value="15" tags="perkBoomstick"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="2" tags="perkBoomstick"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkBoomstick"/>
+		<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4.5" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4.5" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.13" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+	</effect_group>
+</item>
+
+ <item name="9mmCopperBullet">
+	<property name="Extends" value="ammo9mmBulletBall"/>
+	 <property name="CustomIcon" value="9mmcopper" />
+	<property name="DisplayType" value="ammoBulletAP"/>
+	<property name="EconomicValue" value="14"/>
+	<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+	<property name="UnlockedBy" value="perkPistolPeteAPAmmo"/>
+	<effect_group name="9mmCopperBullet" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="43" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkGunslinger"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkGunslinger"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger"/><display_value name="dTargetPenetration" value="1"/>
+		<!-- <passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkGunslinger,9mmGun"/><display_value name="dDegradationPerUse" value=".3"/> -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkGunslinger,9mmGun">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkGunslinger,9mmGun">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkGunslinger,9mmGun">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger,9mmGun">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item> 
+
+<item name="9mmBloodBullet">
+	<property name="Extends" value="ammo9mmBulletBall"/>
+	 <property name="CustomIcon" value="9mmblood" />
+	<property name="DisplayType" value="ammoBulletAP"/>
+	<property name="EconomicValue" value="14"/>
+	<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+	<property name="UnlockedBy" value="perkPistolPeteAPAmmo"/>
+	<effect_group name="9mmBloodBullet" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="45" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkGunslinger"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger"/><display_value name="dTargetPenetration" value="1"/>
+		<!-- <passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkGunslinger,9mmGun"/><display_value name="dDegradationPerUse" value=".3"/> -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="6" tags="wood"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkGunslinger,9mmGun">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkGunslinger,9mmGun">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkGunslinger,9mmGun">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger,9mmGun">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item> 
+
+ <item name="44MagnumCopperBullet">
+	<property name="Extends" value="ammo44MagnumBulletBall"/>
+	<property name="CustomIcon" value="magcopper" />
+	<property name="DisplayType" value="ammoBulletAP"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+	<property name="UnlockedBy" value="perkEnforcerAPAmmo"/>
+	<effect_group name="44MagnumCopperBullet" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="94" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="24" tags="perkGunslinger"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkGunslinger"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger"/><display_value name="dTargetPenetration" value="1"/>
+		<!-- <passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkGunslinger"/><display_value name="dDegradationPerUse" value=".3"/> -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>
+
+ <item name="44MagnumBloodBullet">
+	<property name="Extends" value="ammo44MagnumBulletBall"/>
+	<property name="CustomIcon" value="magblood" />
+	<property name="DisplayType" value="ammoBulletAP"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+	<property name="UnlockedBy" value="perkEnforcerAPAmmo"/>
+	<effect_group name="44MagnumBloodBullet" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="97" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="28" tags="perkGunslinger"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkGunslinger"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger"/><display_value name="dTargetPenetration" value="1"/>
+		<!-- <passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkGunslinger"/><display_value name="dDegradationPerUse" value=".3"/> -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>
+
+<item name="762mmCopperBullet">
+	<property name="Extends" value="ammo762mmBulletBall"/>
+	<property name="CustomIcon" value="762copper" />
+	<property name="DisplayType" value="ammoBulletAP"/>
+	<property name="EconomicValue" value="16"/>
+	<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+	<property name="UnlockedBy" value="perkSniperAPAmmo"/>
+	<effect_group name="762mmCopperBullet" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="67" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="-3">
+			<requirement name="ItemHasTags" tags="perkMachineGunner"/>
+		</passive_effect>
+		<passive_effect name="BlockDamage" operation="base_set" value="20" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkDeadEye,perkMachineGunner"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/><display_value name="dTargetPenetration" value="1"/>
+		<!-- <passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkDeadEye,perkMachineGunner"/><display_value name="dDegradationPerUse" value=".3"/> -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="4" tags="wood"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkDeadEye,perkMachineGunner">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkDeadEye,perkMachineGunner">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkDeadEye,perkMachineGunner">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkDeadEye,perkMachineGunner">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>
+
+<item name="762mmBloodBullet">
+	<property name="Extends" value="ammo762mmBulletBall"/>
+	<property name="CustomIcon" value="762blood" />
+	<property name="DisplayType" value="ammoBulletAP"/>
+	<property name="EconomicValue" value="16"/>
+	<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+	<property name="UnlockedBy" value="perkSniperAPAmmo"/>
+	<effect_group name="762mmBloodBullet" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="-3">
+			<requirement name="ItemHasTags" tags="perkMachineGunner"/>
+		</passive_effect>
+		<passive_effect name="BlockDamage" operation="base_set" value="24" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkDeadEye,perkMachineGunner"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/><display_value name="dTargetPenetration" value="1"/>
+		<!-- <passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkDeadEye,perkMachineGunner"/><display_value name="dDegradationPerUse" value=".3"/> -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="4" tags="wood"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkDeadEye,perkMachineGunner">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkDeadEye,perkMachineGunner">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkDeadEye,perkMachineGunner">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkDeadEye,perkMachineGunner">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>		
 
 <!-- Flyers -->
 

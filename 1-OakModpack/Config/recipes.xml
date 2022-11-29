@@ -2260,7 +2260,182 @@
 		<ingredient name="resourceElectricParts" count="3"/>
 		<ingredient name="resourceMetalPipe" count="3"/>
 		<ingredient name="resourceMechanicalParts" count="5"/>
+	</recipe>
+	
+	<!-- WASTELAND UPDATE -->
+
+	<recipe name="CopperTinForge" count="1" craft_time="60" tags="learnable">
+		<ingredient name="resourceClayLump" count="100"/>
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceCobblestones" count="250"/>
+		<ingredient name="resourceMetalPipe" count="30"/>
+		<ingredient name="resourceSpring" count="5"/>
+	</recipe>
+
+	<recipe name="toolMold" count="1" craft_time="180" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceClayLump" count="100"/>
 	</recipe>	
+
+    <recipe name="scrapCopper" count="1" material_based="true" craft_area="CopperTinForge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+    <ingredient name="unit_Copper" count="1"/>
+   </recipe>
+
+    <recipe name="Copperingot" count="1" material_based="true" craft_area="CopperTinForge" craft_time="10" tags="perkAdvancedEngineering" craft_tool="toolMold">
+	<ingredient name="unit_Copper" count="20"/>	
+   </recipe>
+   
+    <recipe name="scrapTin" count="1" material_based="true" craft_area="CopperTinForge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_Tin" count="1"/>
+   </recipe>
+
+    <recipe name="Tiningot" count="1" material_based="true" craft_area="CopperTinForge" craft_time="10" tags="perkAdvancedEngineering" craft_tool="toolMold">
+	<ingredient name="unit_Tin" count="20"/>	
+   </recipe>
+   
+      <recipe name="BloodStoneShards" count="1" material_based="true" craft_area="CopperTinForge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_Blood" count="1"/>
+   </recipe>
+
+    <recipe name="BloodStoneIngot" count="1" material_based="true" craft_area="CopperTinForge" craft_time="10" tags="perkAdvancedEngineering" craft_tool="toolMold">
+	<ingredient name="unit_Blood" count="20"/>	
+   </recipe>
+   
+    <recipe name="resourceForgedIron" count="1" material_based="true" craft_area="CopperTinForge" craft_time="3" tags="perkAdvancedEngineering" craft_tool="toolMold">
+	<ingredient name="unit_iron" count="8"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_iron"/>
+	</effect_group>
+</recipe>
+
+<recipe name="resourceForgedSteel" count="1" material_based="true" craft_area="CopperTinForge" craft_time="3" tags="perkAdvancedEngineering" craft_tool="toolMold">
+	<ingredient name="unit_iron" count="18"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_clay,unit_iron"/>
+	</effect_group>
+</recipe>
+
+<recipe name="CopperArrowHead" count="1" material_based="true" craft_area="CopperTinForge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_Copper" count="2"/>
+</recipe>
+
+<recipe name="BloodStoneArrowHead" count="1" material_based="true" craft_area="CopperTinForge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+	<ingredient name="unit_Copper" count="3"/>
+	<ingredient name="unit_Blood" count="2"/>
+</recipe>
+
+<recipe name="CopperBuckshot" count="1" material_based="true" craft_area="CopperTinForge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_Copper" count="3"/>
+</recipe>
+
+<recipe name="resourceBulletCasing" count="1" material_based="true" craft_area="CopperTinForge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_brass" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_brass"/>
+	</effect_group>
+</recipe>
+
+<recipe name="CopperBulletTip" count="1" material_based="true" craft_area="CopperTinForge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_Copper" count="2"/>
+</recipe>
+
+<recipe name="BloodBulletTip" count="1" material_based="true" craft_area="CopperTinForge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_Copper" count="2"/>
+</recipe>
+
+<recipe name="ironBars" count="1" material_based="true" craft_area="CopperTinForge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_iron" count="80"/>
+</recipe>
+
+<recipe name="ironBarsCentered" count="1" material_based="true" craft_area="CopperTinForge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_iron" count="80"/>
+</recipe>
+
+<recipe name="ironBarsCNR" count="1" material_based="true" craft_area="CopperTinForge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_iron" count="80"/>
+</recipe>
+
+<recipe name="resourceScrapBrass" count="1" material_based="true" craft_area="CopperTinForge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_brass" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapIron" count="1" material_based="true" craft_area="CopperTinForge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_iron" count="1"/>
+</recipe>
+
+                              <!-- AMMO -->
+
+<recipe name="BloodArrow" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="BloodStoneArrowHead" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="CopperArrow" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="CopperArrowHead" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="CopperShotgunShell" count="1" craft_area="Ammobench" tags="workbenchCrafting">
+	<ingredient name="CopperBuckshot" count="1"/>
+	<ingredient name="resourceGunPowder" count="4"/>
+	<ingredient name="resourcePaper" count="1"/>
+</recipe>
+
+<recipe name="9mmCopperBullet" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="CopperBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="9mmBloodBullet" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="BloodBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="44MagnumCopperBullet" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="CopperBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="44MagnumBloodBullet" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="BloodBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="762mmCopperBullet" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="CopperBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="762mmBloodBullet" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="BloodBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="CrossbowBloodBolt" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="BloodStoneArrowHead" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="CrossbowCopperBolt" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="CopperArrowHead" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="CrossbowBloodBoltST" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="BloodStoneArrowHead" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+
+<recipe name="CrossbowCopperBoltST" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="CopperArrowHead" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>	
 	
 <!-- Flyers -->
 

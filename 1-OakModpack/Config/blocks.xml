@@ -5751,7 +5751,773 @@
 		<property name="Model" value="plate_corner_round_1m"/>
 		<property name="CustomIcon" value="glassBulletproofPlateCurved"/>
 		<property name="ImposterExchange" value="imposterBlock" param1="170"/> <!-- ShadowColour -->
-	</block>	
+	</block>
+	
+	<!-- WASTELAND UPDATE -->
+
+		                    <!-- CropsWild -->
+    
+		<block name="bullrush">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/waterplants.unity3d?bullrush" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block> 
+
+		
+		<block name="ThreePlants">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/waterplants.unity3d?ThreePlants" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="Dandelion">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/newplants.unity3d?Dandelion" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="Snowdrop">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/newplants.unity3d?Snowdrop" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+				
+	<block name="whiteblueplant">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/waterplants.unity3d?whiteblueplant" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block> 
+
+		<block name="whiteflower2">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/waterplants.unity3d?whiteflower2" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="floweryal">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/waterplants.unity3d?floweryal" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="HopPlantTest">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/hoptest.unity3d?HopPlantTest" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+				
+		                            <!-- UNDER WATER -->
+		
+		<block name="watercress">
+			<property name="Extends" value="driftwood"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Material" value="Mtallgrass"/>
+			<property name="VehicleHitScale" value="1"/>
+			<drop event="Harvest" name="resourceYuccaFibers" count="8,14" tag="wildCropsHarvest"/>
+	        <drop event="Destroy" name="resourceYuccaFibers" count="1" prob="0.03"/>
+			<property name="Model" value="#@modfolder:Resources/waterplants.unity3d?watercress" />
+		</block>
+		
+		<block name="seaweed_1">
+			<property name="Extends" value="driftwood"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Material" value="Mtallgrass"/>
+			<property name="VehicleHitScale" value="1"/>
+			<drop event="Harvest" name="resourceYuccaFibers" count="8,14" tag="wildCropsHarvest"/>
+	        <drop event="Destroy" name="resourceYuccaFibers" count="1" prob="0.03"/>
+			<property name="Model" value="#@modfolder:Resources/waterplants.unity3d?seaweed_1" />
+		</block>
+		
+		<block name="seaweed_2">
+			<property name="Extends" value="driftwood"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Material" value="Mtallgrass"/>
+			<property name="VehicleHitScale" value="1"/>
+			<drop event="Harvest" name="resourceYuccaFibers" count="8,14" tag="wildCropsHarvest"/>
+	        <drop event="Destroy" name="resourceYuccaFibers" count="1" prob="0.03"/>
+			<property name="Model" value="#@modfolder:Resources/waterplants.unity3d?seaweed_2" />
+		</block>
+		
+		<block name="plantpack">
+			<property name="Extends" value="driftwood"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Material" value="Mtallgrass"/>
+			<property name="VehicleHitScale" value="1"/>
+			<drop event="Harvest" name="resourceYuccaFibers" count="8,14" tag="wildCropsHarvest"/>
+	        <drop event="Destroy" name="resourceYuccaFibers" count="1" prob="0.03"/>
+			<property name="Model" value="#@modfolder:Resources/waterplants.unity3d?plantpack" />
+		</block>
+		
+		                       <!-- Wasteland PLANTS -->
+		
+		<block name="strangeplantball">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/newplants.unity3d?strangeplantball" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="stangeplantstump2">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/newplants.unity3d?stangeplantstump2" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="strangeplantroot">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/newplants.unity3d?strangeplantroot" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="greenbush">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/bushes.unity3d?greenbush" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="pinkbush">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/bushes.unity3d?pinkbush" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="rustbush">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/bushes.unity3d?rustbush" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="vbush">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/bushes.unity3d?vbush" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="redtopplant">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?redtopplant" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="layeredflower">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?layeredflower" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+			<block name="pinkredflowers">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?pinkredflowers" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+			<block name="ranunculus">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?ranunculus" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+			<block name="plantPinkLeaf">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?plantPinkLeaf" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+			<block name="Chamomilered">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?Chamomilered" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+		
+		<block name="flowercactus">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/newtrees.unity3d?flowercactus" />
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>
+
+		<block name="TroicalPlant01">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			 <property name="CustomIcon" value=""/>
+			<property name="Class" value="CropsGrown"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="Model" value="#@modfolder:Resources/newtrees.unity3d?TroicalPlant01" />
+			<property name="ModelOffset" value="0,0.5,0" />
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Collide" value="melee" />
+			<property name="CanDecorateOnSlopes" value="true" />
+			<property name="DropScale" value="2" />
+			<drop event="Harvest" name="resourceYuccaFibers" count="6" tag="wildCropsHarvest"/>
+		</block>		
+		
+		                     <!-- Wasteland TREES -->
+
+  <block name="JapaneseMapleA">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/wastelandtrees.unity3d?JapaneseMapleA" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,6,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+		  <block name="JapaneseMapleTreeB">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/wastelandtrees.unity3d?JapaneseMapleTreeB" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,6,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+			  <block name="greenbig1">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/wastelandtrees.unity3d?greenbig1" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,6,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+			  <block name="BlackPineTreeD">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/wastelandtrees.unity3d?BlackPineTreeD" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,6,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+		 <block name="bodhi">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?bodhi" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,6,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+		 <block name="jasmin">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?jasmin" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,6,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+		 <block name="Oldtree1">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="5" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?Oldtree1" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,6,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+		 <block name="joshua2">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/wastelandtrees.unity3d?joshua2" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,6,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+		 <block name="stump1">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?stump1" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0.5,0" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+		 <block name="stump2">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?stump2" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0.5,0" />
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+		 <block name="weeptree">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?weeptree" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,5,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="440" />
+		</block>
+		
+		 <block name="treesmushroom">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="5" />
+			<property name="Model" value="#@modfolder:Resources/treewaste.unity3d?treesmushroom" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,5,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="40" />
+		</block>
+		
+        <block name="SmallPalm">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/newtrees.unity3d?SmallPalm" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,5,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="80" />
+		</block>	
+
+        <block name="SmallPalm2">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/newtrees.unity3d?SmallPalm2" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,5,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="80" />
+		</block>
+
+        <block name="smalltree23">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="3" />
+			<property name="Model" value="#@modfolder:Resources/newtrees.unity3d?smalltree23" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="0,0,0" />
+			<property name="MultiBlockDim" value="1,5,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+	        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+			<property name="MaxDamage" value="140" />
+		</block>		
+						 
+
+	<block name="CopperTinForge">
+	<property name="Class" value="Forge"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="Material" value="Mstone_scrap"/>
+	<property name="DescriptionKey" value="CopperTinForgeDesc"/>	
+	<property name="CustomIcon" value="tatarinforge"/>
+	<property name="MaxDamage" value="800"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/coppertinforge.unity3d?CopperTinForge"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="#@modfolder:Resources/coppertinforge.unity3d?CopperTinForgeFX"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="6"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
+
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="CopperTinForge"/>
+		<property name="Modules" value="tools,output,fuel,material_input"/>
+		<property name="InputMaterials" value="iron,brass,lead,Copper,Tin,Blood"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_forge"/>
+	<property name="OpenSound" value="forge_open"/>
+	<property name="CloseSound" value="forge_close"/>
+	<property name="CraftSound" value="forge_smelt_click"/>
+	<property name="CraftCompleteSound" value="forge_item_complete"/>
+	<property name="WorkstationJournalTip" value="forgeTip"/>
+
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="50"/>
+		<property name="resourceClayLump" value="60"/>
+		<property name="resourceLeather" value="20"/>
+	</property>
+	<drop event="Harvest" name="resourceRockSmall" count="40" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceClayLump" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="5" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+	                            <!-- Wasteland 0re -->
+	 
+	 <block name="Bloodrock">
+	    <property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="bloodrock" />
+		<property name="DescriptionKey" value="CrystalRockDesc"/>		
+        <property name="Material" value="MmetalDrawbridge"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/orerock.unity3d?Bloodrock"/>       
+        <property name="Collide" value="movement,melee"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="600"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="BloodStoneOre" count="4,12" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="30" tag="oreWoodHarvest"/>
+</block>
+
+	 <block name="bluerock2">
+	    <property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="bluerock" />
+		<property name="DescriptionKey" value="CrystalRockDesc"/>		
+        <property name="Material" value="MmetalDrawbridge"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/orerock.unity3d?bluerock"/>       
+        <property name="Collide" value="movement,melee"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="600"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="BloodStoneOre" count="4,12" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="30" tag="oreWoodHarvest"/>
+</block>
+
+	 <block name="Copperrock">
+	    <property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="copperrock" />
+		<property name="DescriptionKey" value="CrystalRockDesc"/>		
+        <property name="Material" value="MmetalDrawbridge"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/orerock.unity3d?Copperrock"/>       
+        <property name="Collide" value="movement,melee"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="600"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="CopperOre" count="4,12" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="30" tag="oreWoodHarvest"/>
+</block>
+
+	 <block name="Tinrock">
+	    <property name="AllowAllRotations" value="true"/>
+        <property name="CustomIcon" value="tinrock" />
+		<property name="DescriptionKey" value="CrystalRockDesc"/>		
+        <property name="Material" value="MmetalDrawbridge"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/orerock.unity3d?Tinrock"/>       
+        <property name="Collide" value="movement,melee"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="10"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="10"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="600"/>
+		<property name="Place" value="TowardsPlacer"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="TinOre" count="4,12" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="30" tag="oreWoodHarvest"/>
+</block>	
 	
 	</append>
 	
