@@ -587,42 +587,45 @@
 		<combobox depth="3" name="cbxLockedSlots" pos="120,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="45" value_wrap="true" value_increment="1" />
 	</append>
 	
-	<!-- Oak Escape List -->	
-	
 	<append xpath="/windows/window[@name='windowVehicleStorage']/panel[@name='header']/rect[@controller='ContainerStandardControls']">		
 		<combobox depth="3" name="cbxLockedSlots" pos="70,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="{container_slots}" value_wrap="true" value_increment="1" />
 	</append>
+	
+	<!-- Oak Escape List -->
 
 	<append xpath="/windows">
 		<window name="serverinfowindow" anchor="CenterTop" pos="-650,-150" width="900" height="800" cursor_area="true">
 		<panel name="header" pos="0,0" height="43" depth="1" disableautobackground="true" >
-			<texture depth="1" pos="660,-440" width="1500" height="1200" pivot="center" texture="@modfolder:Textures/steampunkfullview2.png"/>
+			<texture depth="1" pos="660,-530" width="1500" height="1500" pivot="center" texture="@modfolder:Textures/steampunkfullview2.png"/>
 			                                <!-- OakPics left -->
-			<texture depth="2" pos="175,-90" width="65" height="65" pivot="center" texture="@modfolder:Textures/forgeicon.png"/>
-			<texture depth="2" pos="175,-145" width="50" height="50" pivot="center" texture="@modfolder:Textures/genicon.png"/>
+			<texture depth="2" pos="175,-100" width="65" height="65" pivot="center" texture="@modfolder:Textures/forgeicon.png"/>
+			<texture depth="2" pos="175,-157" width="50" height="50" pivot="center" texture="@modfolder:Textures/genicon.png"/>
 			<texture depth="2" pos="175,-210" width="65" height="65" pivot="center" texture="@modfolder:Textures/ammopressicon.png"/>
-			<texture depth="2" pos="175,-266" width="50" height="50" pivot="center" texture="@modfolder:Textures/armorybench.png"/>
-			<texture depth="2" pos="175,-320" width="50" height="50" pivot="center" texture="@modfolder:Textures/bard1icon.png"/>
+			<texture depth="2" pos="175,-270" width="50" height="50" pivot="center" texture="@modfolder:Textures/armorybench.png"/>
+			<texture depth="2" pos="175,-330" width="50" height="50" pivot="center" texture="@modfolder:Textures/bard1icon.png"/>
 			<texture depth="2" pos="175,-380" width="50" height="50" pivot="center" texture="@modfolder:Textures/batteryicon.png"/>
 			<texture depth="2" pos="175,-440" width="50" height="50" pivot="center" texture="@modfolder:Textures/solaricon.png"/>
 			<texture depth="2" pos="175,-505" width="65" height="65" pivot="center" texture="@modfolder:Textures/rockdrillicon.png"/>
-			<texture depth="2" pos="175,-570" width="50" height="50" pivot="center" texture="@modfolder:Textures/benchpowericon.png"/>
-			<texture depth="2" pos="175,-630" width="50" height="50" pivot="center" texture="@modfolder:Textures/cementmixericon.png"/>
-			<texture depth="2" pos="175,-680" width="50" height="50" pivot="center" texture="@modfolder:Textures/stonecrushericon.png"/>
-			<texture depth="2" pos="175,-725" width="50" height="50" pivot="center" texture="@modfolder:Textures/WalkWayicon.png"/>
-			<texture depth="2" pos="175,-790" width="50" height="50" pivot="center" texture="@modfolder:Textures/woodboxicon.png"/>
+			<texture depth="2" pos="175,-575" width="50" height="50" pivot="center" texture="@modfolder:Textures/benchpowericon.png"/>
+			<texture depth="2" pos="175,-630" width="40" height="40" pivot="center" texture="@modfolder:Textures/cementmixericon.png"/>
+			<texture depth="2" pos="175,-680" width="40" height="40" pivot="center" texture="@modfolder:Textures/stonecrushericon.png"/>
+			<texture depth="2" pos="175,-730" width="50" height="50" pivot="center" texture="@modfolder:Textures/WalkWayicon.png"/>
+			<texture depth="2" pos="175,-785" width="50" height="50" pivot="center" texture="@modfolder:Textures/woodboxicon.png"/>
+			<texture depth="2" pos="175,-870" width="50" height="50" pivot="center" texture="@modfolder:Textures/darkforesticon.png"/>
 			                                <!-- OakPics right -->
 			<texture depth="2" pos="690,-100" width="65" height="65" pivot="center" texture="@modfolder:Textures/beehiveicon.png"/>
 			<texture depth="2" pos="690,-157" width="50" height="50" pivot="center" texture="@modfolder:Textures/housecoopicon.png"/>
 			<texture depth="2" pos="690,-220" width="65" height="65" pivot="center" texture="@modfolder:Textures/ironstoveicon.png"/>
-			<texture depth="2" pos="690,-295" width="50" height="50" pivot="center" texture="@modfolder:Textures/redmixericon.png"/>
+			<texture depth="2" pos="690,-285" width="50" height="50" pivot="center" texture="@modfolder:Textures/redmixericon.png"/>
 			<texture depth="2" pos="690,-365" width="50" height="50" pivot="center" texture="@modfolder:Textures/sinkicon.png"/>
-			<texture depth="2" pos="690,-420" width="50" height="50" pivot="center" texture="@modfolder:Textures/wellicon.png"/>
+			<texture depth="2" pos="690,-425" width="50" height="50" pivot="center" texture="@modfolder:Textures/wellicon.png"/>
 			<texture depth="2" pos="690,-475" width="65" height="65" pivot="center" texture="@modfolder:Textures/seedworkbenchicon.png"/>
-			<texture depth="2" pos="690,-530" width="65" height="65" pivot="center" texture="@modfolder:Textures/braziericon.png"/>
-			<texture depth="2" pos="690,-590" width="65" height="65" pivot="center" texture="@modfolder:Textures/punklighticon.png"/>
+			<texture depth="2" pos="690,-525" width="60" height="60" pivot="center" texture="@modfolder:Textures/braziericon.png"/>
+			<texture depth="2" pos="690,-585" width="65" height="65" pivot="center" texture="@modfolder:Textures/punklighticon.png"/>
 			<texture depth="2" pos="690,-655" width="50" height="50" pivot="center" texture="@modfolder:Textures/fishkiticon.png"/>
 			<texture depth="2" pos="690,-705" width="65" height="65" pivot="center" texture="@modfolder:Textures/fishovenicon.png"/>
+			<texture depth="2" pos="690,-785" width="35" height="45" pivot="center" texture="@modfolder:Textures/coppertinforgeicon.png"/>
+			<texture depth="2" pos="670,-840" width="175" height="55" pivot="center" texture="@modfolder:Textures/thedarkforesticon.png"/>
 		</panel>
 		<panel name="content" pos="200,-65" height="750" width="460" depth="1" pivot="center" disableautobackground="true" >
 			<sprite depth="6" name="border" sprite="menu_empty3px" pos="0,0" height="750" width="460" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
@@ -714,17 +717,39 @@
 				
 				[00FF00]Oakraven Fish Oven[-] = Where you can make all types of fish recipes.
 				Allows players to cook their Fish Farm harvest into a variety of recipes.
+				
+				
+				[00FF00]Dark Forest Forge[-] = Where you can forge Copper, Tin, and Bloodstone Ores.
+				
+				" />
+			</grid>
+		</panel>
+		
+		<panel name="content3" pos="200,-820" height="180" width="980" depth="1" pivot="center" disableautobackground="true" >
+			<sprite depth="6" name="border" sprite="menu_empty3px" pos="0,0" height="180" width="980" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
+			<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="2,-2" height="180" width="980" color="[black]" type="sliced" fillcenter="true" globalopacity="true" />         
+			<grid pos="10,-2" depth="2" rows="0" cell_width="890" cell_height="32" repeat_content="false" arrangement="vertical" >			
+				<label font_size="18"
+				text="
+				
+				
+				The wastlands has been replaced with the [00FF00]DARK FOREST BIOME[-]
+				Here you will find Copper , Iron and Tin ores in the ground
+				There are new Dangers 
+				
+				
+				
 				" />
 			</grid>
 		</panel>
 		
 	</window>
 					
-		<window name="OakTitle" anchor="CenterTop" pos="20,-135" depth="1" >
+		<window name="OakTitle" anchor="CenterTop" pos="20,-130" depth="1" >
 			 <label style="header.name" pos="0,0" width="350" height="20" pivot="center" justify="center" text_key="Oakraven Mod Pack"/>
 			 <texture depth="1" pos="0,0" width="250" height="125" pivot="center" texture="@modfolder:Textures/oakmodpanel.png"/>
-		</window>	
-
+		</window>
+			
 	</append>	
 	
 </config>

@@ -308,9 +308,10 @@
 		
 	<!-- Oak Escape List -->		
 
-		<window_group name="serverinfowindow">
+  <window_group name="serverinfowindow">
 			<window name="serverinfowindow" />
 			<window name="OakTitle" />
+			<window name="oakInfoPanel" />
 		</window_group>		
 		
 	</append>	
