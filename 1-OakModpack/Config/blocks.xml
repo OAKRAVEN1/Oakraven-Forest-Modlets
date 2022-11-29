@@ -5127,7 +5127,7 @@
 		<property name="UnlockedBy" value="perkAdvancedEngineering"/>
 		<property name="Material" value="Mstone_scrap"/>
 		<property name="DescriptionKey" value="CopperForgeDesc"/>	
-		<property name="CustomIcon" value="tatarinforge"/>
+		<property name="CustomIcon" value="copperforge"/>
 		<property name="MaxDamage" value="800"/>
 		<property name="StabilitySupport" value="true"/>
 		<property name="Shape" value="ModelEntity"/>
@@ -6381,7 +6381,7 @@
 	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
 	<property name="Material" value="Mstone_scrap"/>
 	<property name="DescriptionKey" value="CopperTinForgeDesc"/>	
-	<property name="CustomIcon" value="tatarinforge"/>
+	<property name="CustomIcon" value="coppertinforge"/>
 	<property name="MaxDamage" value="800"/>
 	<property name="StabilitySupport" value="true"/>
 	<property name="Shape" value="ModelEntity"/>
