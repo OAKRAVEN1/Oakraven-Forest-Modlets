@@ -716,11 +716,9 @@
 				Use Fish Farming Kit to start hatching and harvest when fully grown.
 				
 				[00FF00]Oakraven Fish Oven[-] = Where you can make all types of fish recipes.
-				Allows players to cook their Fish Farm harvest into a variety of recipes.
+				Allows players to cook their Fish Farm harvest into a variety of recipes.				
 				
-				
-				[00FF00]Dark Forest Forge[-] = Where you can forge Copper, Tin, and Bloodstone Ores.
-				
+				[00FF00]Dark Forest Forge[-] = Where you can forge Copper, Tin, and Bloodstone Ores.				
 				" />
 			</grid>
 		</panel>
@@ -730,15 +728,10 @@
 			<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="2,-2" height="180" width="980" color="[black]" type="sliced" fillcenter="true" globalopacity="true" />         
 			<grid pos="10,-2" depth="2" rows="0" cell_width="890" cell_height="32" repeat_content="false" arrangement="vertical" >			
 				<label font_size="18"
-				text="
-				
-				
-				The wastlands has been replaced with the [00FF00]DARK FOREST BIOME[-]
-				Here you will find Copper , Iron and Tin ores in the ground
-				There are new Dangers 
-				
-				
-				
+				text="				
+				The Wastland has been replaced with the [00FF00]DARK FOREST BIOME[-]
+				Here you will find Copper, Tin, and Tin, and Bloodstone Ores in the ground.
+				There are new Dangers				
 				" />
 			</grid>
 		</panel>
