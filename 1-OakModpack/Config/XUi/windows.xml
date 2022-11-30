@@ -632,7 +632,7 @@
 			<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="2,-2" height="746" width="460" color="[black]" type="sliced" fillcenter="true" globalopacity="true" />         
 			<grid pos="10,-12" depth="2" rows="0" cell_width="890" cell_height="32" repeat_content="false" arrangement="vertical" >			
 				<label font_size="18"
-				text="[00FF00]Forge[-] = There are 3 new Forges with more slots.				
+				text="[00FF00]Forge[-] = There are 3 new regular Forges with more slots.				
 				These are the Oak Forge, Tatarin Forge, and Copper Forge.
 				
 				[00FF00]Generators[-] = There are 3 new Generators with better fuel use and more power.
@@ -710,7 +710,8 @@
 				Just add wood and turn on.
 				
 				[00FF00]Oakraven Steampunk Lights[-] = There are 5 types to make.
-				Turn on and off with E (Use) key. Does not require power. Destroy to collect into inventory.
+				Turn on and off with E (Use) key. Does not require power.
+				Destroy to collect into inventory.
 				
 				[00FF00]Oakraven Fish Farm[-] = Place down anywhere.
 				Use Fish Farming Kit to start hatching and harvest when fully grown.
@@ -720,7 +721,6 @@
 				
 				
 				[00FF00]Dark Forest Forge[-] = Where you can forge Copper, Tin, and Bloodstone Ores.
-				
 				" />
 			</grid>
 		</panel>
