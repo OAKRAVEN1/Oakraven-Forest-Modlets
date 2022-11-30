@@ -125,6 +125,12 @@ It can be downloaded here, among many other delights. closer_ex combines modding
 
 https://github.com/closerex/Closer_ex-7D2D-mods
 
+======================
+===== SS Terrain ===== 
+======================
+
+SS Terrain by SrslySunshine adds terrain with custom textures beyond vanilla 7D2D.
+
 ===========================
 ===== Improved Hordes ===== 
 ===========================
