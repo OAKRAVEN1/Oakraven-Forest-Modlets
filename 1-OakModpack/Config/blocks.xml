@@ -6517,7 +6517,430 @@
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="TinOre" count="4,12" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="30" tag="oreWoodHarvest"/>
+</block>
+
+	              <!--SCAVENGER -->
+	
+	
+	 <block name="ScavengerBox">
+        <property name="CustomIcon" value="scavengercrates" />
+		<property name="DescriptionKey" value="ScavengerBoxDesc"/>
+        <property name="Material" value="Mwood_weak" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+       <property name="Shape" value="ModelEntity"/>
+        <property name="Mesh" value="models" />
+        <property name="Model" value="#@modfolder:Resources/Classpick.unity3d?ScavengerClose1"/>
+        <property name="Place" value="TowardsPlacer" />
+        <drop event="Destroy" count="0" prob="1" />
+        <property name="CanPickup" value="true" />
+       <property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="ScavengerOpen"/>
+		<property name="Item" value="SkillBoxKey"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
 </block>	
+		
+    <block name="ScavengerOpen">
+        <property name="Class" value="Loot" />
+		<property name="Material" value="Mcloth" />
+        <property name="CustomIcon" value="scavengercrates" />
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Mesh" value="models" />
+        <property name="Model" value="#@modfolder:Resources/Classpick.unity3d?ScavengerOpen1"/>
+        <property name="Place" value="TowardsPlacer" />
+		
+        <property name="LootList" value="Scavenger" />
+        <drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="SecureScavengerChest" count="1" prob="1"/>
+		
+        <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
+        <property name="LPHardnessScale" value="8" />
+    </block>
+	
+	<block name="SecureScavengerChest">
+	<property name="Extends" value="OakravenStorageMaster"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="scavengercrates"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Classpick.unity3d?ScavengerClose1"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="CanPickup" value="true" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="InSecureScavengerChest"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+	</block>
+	
+	<block name="InSecureScavengerChest">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="scavengercrates"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/Classpick.unity3d?ScavengerClose1"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+        <drop event="Destroy" count="0"/>
+	    <drop event="Destroy" name="SecureScavengerChest" count="1" prob="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	</block>
+	
+	
+	              <!--BUILDER -->
+	
+	 <block name="BuilderBox">
+        <property name="CustomIcon" value="buildercrates" />
+		<property name="DescriptionKey" value="BuilderBoxDesc"/>
+        <property name="Material" value="Mcloth" />
+       <property name="Shape" value="ModelEntity"/>
+        <property name="Mesh" value="models" />
+        <property name="Model" value="#@modfolder:Resources/Classpick.unity3d?BuilderClose1"/>
+        <property name="Place" value="TowardsPlacer" />
+        <drop event="Destroy" count="0" prob="1" />
+        <property name="CanPickup" value="true" />
+        <property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="BuilderOpen"/>
+		<property name="Item" value="SkillBoxKey"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>	
+   
+ 
+	
+    <block name="BuilderOpen">
+        <property name="Class" value="Loot" />
+		<property name="Material" value="Mcloth" />
+        <property name="CustomIcon" value="buildercrates" />
+       <property name="Shape" value="ModelEntity"/>
+        <property name="Mesh" value="models" />
+        <property name="Model" value="#@modfolder:Resources/Classpick.unity3d?BuilderOpen1"/>
+        <property name="Place" value="TowardsPlacer" />
+        <property name="LootList" value="Builder" />
+        <drop event="Destroy" count="0"/>
+	    <drop event="Destroy" name="SecureBuilderChest" count="1" prob="1"/>
+        <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
+        <property name="LPHardnessScale" value="8" />
+    </block>
+	
+	<block name="SecureBuilderChest">
+	<property name="Extends" value="OakravenStorageMaster"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="buildercrates"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Classpick.unity3d?BuilderClose1"/>
+	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	 <property name="CanPickup" value="true" />
+	 <property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="InSecureBuilderChest"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+	</block>
+	
+	<block name="InSecureBuilderChest">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="buildercrates"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/Classpick.unity3d?BuilderClose1"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+        <drop event="Destroy" count="0"/>
+	    <drop event="Destroy" name="SecureBuilderChest" count="1" prob="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	</block>
+	
+	
+	             <!--DOCTOR -->
+	
+	 <block name="DoctorBox">
+        <property name="CustomIcon" value="doctorcrates" />
+		<property name="DescriptionKey" value="DoctorBoxDesc"/>
+        <property name="Material" value="Mcloth" />
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Mesh" value="models" />
+        <property name="Model" value="#@modfolder:Resources/Classpick.unity3d?DoctorClose1"/>
+        <property name="Place" value="TowardsPlacer" />
+        <drop event="Destroy" count="0" prob="1" />
+        <property name="CanPickup" value="true" />
+        <property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="DoctorOpen"/>
+		<property name="Item" value="SkillBoxKey"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	    <drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	    <drop event="Destroy" count="0"/>
+     </block>	
+	
+	
+    <block name="DoctorOpen">
+        <property name="Class" value="Loot" />
+		 <property name="Material" value="Mcloth" />
+         <property name="CustomIcon" value="doctorcrates" />
+       <property name="Shape" value="ModelEntity"/>
+        <property name="Mesh" value="models" />
+        <property name="Model" value="#@modfolder:Resources/Classpick.unity3d?DoctorOpen1"/>
+        <property name="Place" value="TowardsPlacer" />
+        <property name="LootList" value="Doctor" />
+        <drop event="Destroy" count="0"/>
+	    <drop event="Destroy" name="SecureDoctorChest" count="1" prob="1"/>
+        <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
+        <property name="LPHardnessScale" value="8" />
+    </block>
+	
+	<block name="SecureDoctorChest">
+	<property name="Extends" value="OakravenStorageMaster"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="doctorcrates"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Classpick.unity3d?DoctorClose1"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	 <property name="CanPickup" value="true" />
+	 <property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="InSecureDoctorChest"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+	</block>
+	
+	<block name="InSecureDoctorChest">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="doctorcrates"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/Classpick.unity3d?DoctorClose1"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+        <drop event="Destroy" count="0"/>
+	    <drop event="Destroy" name="SecureDoctorChest" count="1" prob="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	</block>
+	
+	
+	              <!--ARMY -->
+	
+	 <block name="ArmyBox">
+        <property name="CustomIcon" value="armycrate" />
+		<property name="DescriptionKey" value="ArmyBoxDesc"/>
+        <property name="Material" value="Mcloth" />
+       <property name="Shape" value="ModelEntity"/>
+        <property name="Mesh" value="models" />
+        <property name="Model" value="#@modfolder:Resources/Classpick.unity3d?ArmyClose1"/>
+        <property name="Place" value="TowardsPlacer" />
+        <drop event="Destroy" count="0" prob="1" />
+        <property name="CanPickup" value="true" />
+        <property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="ArmyOpen"/>
+		<property name="Item" value="SkillBoxKey"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	    <drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	    <drop event="Destroy" count="0"/>
+     </block>	
+	
+	 <block name="ArmyOpen">
+        <property name="Class" value="Loot" />
+		 <property name="Material" value="Mcloth" />
+        <property name="CustomIcon" value="armycrate" />
+       <property name="Shape" value="ModelEntity"/>
+        <property name="Mesh" value="models" />
+        <property name="Model" value="#@modfolder:Resources/Classpick.unity3d?ArmyOpen1"/>
+        <property name="Place" value="TowardsPlacer" />
+        <property name="LootList" value="Army" />
+        <drop event="Destroy" count="0"/>
+	    <drop event="Destroy" name="SecureArmyChest" count="1" prob="1"/>
+        <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
+        <property name="LPHardnessScale" value="8" />
+    </block>
+	
+	<block name="SecureArmyChest">
+	<property name="Extends" value="OakravenStorageMaster"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="armycrate"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Classpick.unity3d?ArmyClose1"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	 <property name="CanPickup" value="true" />
+	 <property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="InSecureArmyChest"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+	</block>
+
+	<block name="InSecureArmyChest">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="armycrate"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/Classpick.unity3d?ArmyClose1"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+        <drop event="Destroy" count="0"/>
+	    <drop event="Destroy" name="SecureArmyChest" count="1" prob="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	</block>
+	
+	
+	              <!--HUNTER -->
+	
+	 <block name="HunterBox">
+        <property name="CustomIcon" value="huntercrate" />
+		<property name="DescriptionKey" value="HunterBoxDesc"/>
+        <property name="Material" value="Mcloth" />
+       <property name="Shape" value="ModelEntity"/>
+        <property name="Mesh" value="models" />
+        <property name="Model" value="#@modfolder:Resources/Classpick.unity3d?HunterClose1"/>
+        <property name="Place" value="TowardsPlacer" />
+        <drop event="Destroy" count="0" prob="1" />
+        <property name="CanPickup" value="true" />
+        <property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="HunterOpen"/>
+		<property name="Item" value="SkillBoxKey"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	    <drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	    <drop event="Destroy" count="0"/>
+     </block>	
+	
+	 <block name="HunterOpen">
+        <property name="Class" value="Loot" />
+		 <property name="Material" value="Mcloth" />
+       <property name="CustomIcon" value="huntercrate" /> 
+       <property name="Shape" value="ModelEntity"/>
+        <property name="Mesh" value="models" />
+        <property name="Model" value="#@modfolder:Resources/Classpick.unity3d?HunterOpen1"/>
+        <property name="Place" value="TowardsPlacer" />
+        <property name="LootList" value="Hunter" />
+        <drop event="Destroy" count="0"/>
+	    <drop event="Destroy" name="SecureHunterChest" count="1" prob="1"/>
+        <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
+        <property name="LPHardnessScale" value="8" />
+    </block>
+	
+	<block name="SecureHunterChest">
+	<property name="Extends" value="OakravenStorageMaster"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="huntercrate"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Classpick.unity3d?HunterClose1"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	 <property name="CanPickup" value="true" />
+	 <property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="FuelValue" value="300"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property name="DowngradeBlock" value="InSecureHunterChest"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Place" value="TowardsPlacer"/> <!-- sign model, not needed for cube -->
+	</block>
+
+	<block name="InSecureHunterChest">
+	<property name="CreativeMode" value="Test"/>
+	<property name="CustomIcon" value="huntercrate"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="storageCrate"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/Classpick.unity3d?HunterClose1"/>
+	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+        <drop event="Destroy" count="0"/>
+	    <drop event="Destroy" name="SecureHunterChest" count="1" prob="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	</block>	
 	
 	</append>
 	

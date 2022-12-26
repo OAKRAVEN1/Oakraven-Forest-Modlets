@@ -624,8 +624,8 @@
 		<passive_effect name="MaxRange" operation="base_set" value="150" tags="perkDeadEye"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="60" tags="perkDeadEye"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> <!-- random effective rng -->
-		<passive_effect name="EntityDamage" operation="base_add" value="12" tags="perkDeadEye"/> <!-- damage offset -->
-		<passive_effect name="BlockDamage" operation="base_add" value="-1" tags="perkDeadEye"/> <!-- damage offset -->
+		<!--passive_effect name="EntityDamage" operation="base_add" value="12" tags="perkDeadEye"/--> <!-- damage offset -->
+		<!--passive_effect name="BlockDamage" operation="base_add" value="-1" tags="perkDeadEye"/--> <!-- damage offset -->
 
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="82" tags="perkDeadEye"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkDeadEye"/>
@@ -6770,6 +6770,130 @@
 		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkDeadEye,perkMachineGunner">
 			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
 	</effect_group>
+</item>
+
+	              <!--SCAVENGER -->
+
+<item name="questRewardScavArmor">
+	<property name="Extends" value="noteTestersDelightAdmin"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="armorbox"/>
+	<property name="CustomIconTint" value="FFFFFF"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="DescriptionKey" value="questRewardArmorBundleDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="armorLeatherHood,armorLeatherGloves,armorLeatherChest,armorLeatherPants,armorLeatherBoots"/>
+		<property name="Create_item_count" value="3,3,4,4,3"/>
+	</property>
+</item>
+
+<item name="questRewardScavGun">
+	<property name="Extends" value="noteTestersDelightAdmin"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="gunbox"/>
+	<property name="CustomIconTint" value="FFFFFF"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="DescriptionKey" value="questRewardRangedWeaponBundleDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="meleeWpnBladeT1HuntingKnife,meleeToolSalvageT1Wrench"/>
+		<property name="Create_item_count" value="3,3"/>
+	</property>
+</item>
+
+<item name="questRewardBuilWeap">
+	<property name="Extends" value="noteTestersDelightAdmin"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="partsbox"/>
+	<property name="CustomIconTint" value="FFFFFF"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="DescriptionKey" value="questRewardRangedWeaponBundleDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="meleeToolShovelT2SteelShovel,meleeToolPickT1IronPickaxe"/>
+		<property name="Create_item_count" value="3,3"/>
+	</property>
+</item>
+
+<item name="questRewardArmyArmor">
+	<property name="Extends" value="noteTestersDelightAdmin"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="armorbox"/>
+	<property name="CustomIconTint" value="FFFFFF"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="DescriptionKey" value="questRewardArmorBundleDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="armorScrapHelmet,armorScrapGloves,armorScrapChest,armorScrapLegs,armorScrapBoots"/>
+		<property name="Create_item_count" value="3,3,3,3,3"/>
+	</property>
+</item>	
+
+<item name="questRewardDocArmor">
+	<property name="Extends" value="noteTestersDelightAdmin"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="armorbox"/>
+	<property name="CustomIconTint" value="FFFFFF"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="DescriptionKey" value="questRewardArmorBundleDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="meleeWpnBatonT2StunBaton,armorClothHat,armorClothGloves,armorClothJacket,armorClothPants,armorClothBoots"/>
+		<property name="Create_item_count" value="3,4,5,4,4,4"/>
+	</property>
+</item>
+
+<item name="questRewardArmyGun">
+	<property name="Extends" value="noteTestersDelightAdmin"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="gunbox"/>
+	<property name="CustomIconTint" value="FFFFFF"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="DescriptionKey" value="questRewardRangedWeaponBundleDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="gunHandgunT3SMG5,ammo9mmBulletBall"/>
+		<property name="Create_item_count" value="3,100"/>
+	</property>
+</item>
+
+<item name="questRewardHunterBundle">
+	<property name="Extends" value="noteTestersDelightAdmin"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="bundleRifle"/>
+	<property name="CustomIconTint" value="FFFFFF"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="DescriptionKey" value="questRewardRangedWeaponBundleDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="gunRifleT1HuntingRifle,ammo762mmBulletBall"/>
+		<property name="Create_item_count" value="3-4,100"/>
+	</property>
+</item>
+
+<item name="SkillBoxKey">
+	<property name="DescriptionKey" value="SkillBoxKeyDesc"/>
+    <property name="CustomIcon" value="keycard1"/>
+	<property name="Meshfile" value="#@modfolder:Resources/Classpick.unity3d?KeyCard" />
+	<property name="DropMeshfile" value="#@modfolder:Resources/Classpick.unity3d?KeyCard"/>
+	<property name="Material" value="Morganic" />
+	<property name="HoldType" value="21" />
+	<property name="CraftingIngredientTime" value="8" />
+	<property name="Stacknumber" value="20" />
+	<property class="Action1">
+		<property name="Class" value="Repair"/>
+		<property name="Repair_amount" value="50"/>
+		<property name="Upgrade_hit_offset" value="-4"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Delay" value="1.3"/>
+		<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth"/>
+		<property name="Allowed_upgrade_items" value="SkillBoxKey"/>
+	</property>
+	<effect_group name="Base Effects" tiered="false">
+		<passive_effect name="MaxRange" operation="base_set" value="3"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="0"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="0"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="100" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
+	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 </item>		
 
 <!-- Flyers -->

@@ -68,7 +68,97 @@
 	<append xpath="/lootcontainers">
 		<lootcontainer id="771" name="Honey" count="1" size="7,2" destroy_on_close="true" sound_open="UseActions/BeeHiveOpen" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
 		<item name="foodHoneyComb" count="2,3" prob="1" />
-	</lootcontainer>	
+	</lootcontainer>
+
+	<!-- CLASSES-->
+        <lootgroup name="Scavenger" count="all">    
+		<item name="questRewardScavArmor" count="1" />
+		<item name="bookBarBrawling7BoozedUp" count="1" />
+		<item name="bookUrbanCombatSneaking" count="1" />
+		<item name="modArmorTripleStoragePocket" count="1" />
+		<item name="questRewardScavGun" count="1" />
+		<item name="bookLuckyLooterFood" count="1" />
+		<item name="drinkCanMegaCrush" count="1" />
+		 <item name="apparelCoatLeatherDuster" count="1" />
+		<item name="casinoCoin" count="500" />
+		<item name="resourceLockPick" count="10" />
+		<item group="cannedfood" count="3" />		
+        </lootgroup>
+		
+		
+        <lootgroup name="Builder" count="all">
+		<item name="questRewardScavArmor" count="1" />
+        <item name="apparelCoatLeatherDuster" count="1" />
+		 <item name="bookArtOfMiningLuckyStrike" count="1" />
+		<item name="apparelBandana" count="1" />
+		<item name="questRewardBuilWeap" count="1" />
+        <item group="cannedfood" count="2" />
+        <item name="meleeToolRepairT3Nailgun" count="1" />
+        <item name="drinkJarPureMineralWater" count="1" />
+        <item name="medicalFirstAidBandage" count="3" />
+		<item name="bookArtOfMiningAvalanche" count="1" />
+	    <item name="bookArtOfMiningLantern" count="1" />
+        </lootgroup>
+		
+        <lootgroup name="Doctor" count="all">
+        <item name="questRewardDocArmor" count="1" />
+		<item name="bookWasteTreasuresHoney" count="1" />
+		<item name="ammoGasCan" count="3" />
+        <item group="cannedfood" count="5" />
+        <item name="drugPainkillers" count="5" />
+		<item name="drugHerbalAntibioticsSchematic" count="1" />
+        <item name="drinkJarPureMineralWater" count="2" />
+        <item name="medicalFirstAidBandage" count="5" />
+        <item name="bookWasteTreasuresAcid" count="1"  />
+		<item name="meleeToolRepairT0StoneAxe" count="1"  />
+        </lootgroup>
+		
+        <lootgroup name="Army" count="all">
+        <item name="questRewardArmyArmor" count="1" /> 
+		<item name="questRewardArmyGun" count="1" />
+		<item name="apparelBandana" count="1" />
+        <item group="cannedfood" count="5" />
+        <item name="drugPainkillers" count="3" />
+		<item name="drinkJarPureMineralWater" count="2" />
+        <item name="medicalFirstAidBandage" count="3" />
+		<item name="bookLuckyLooterBrass" count="1" />
+		<item name="bookEnforcerAPAmmo" count="1" />
+		<item name="bookRangersCripplingShot" count="1" />
+        </lootgroup>
+		
+        <lootgroup name="Hunter" count="all">
+        <item name="questRewardScavArmor" count="1" />
+		<item name="questRewardHunterBundle" count="1" />
+        <item group="cannedfood" count="5" />
+        <item name="drugPainkillers" count="1" />
+		 <item name="medicalFirstAidBandage" count="3" />
+        <item name="drinkJarPureMineralWater" count="1" />
+        <item name="medicalFirstAidBandage" count="1" />
+		<item name="bookHuntingJournalBears" count="1" />
+		<item name="bookNightStalkerArchery" count="1" />
+		<item name="bookLuckyLooterBrass" count="1" />			
+        </lootgroup>
+		
+        <lootcontainer id="550" name="Scavenger" count="1" size="8,9" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate" >
+        <item group="Scavenger" />
+		</lootcontainer>  
+        <!-- Builder Class -->
+        <lootcontainer id="551" name="Builder" count="1" size="8,9" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate">
+        <item group="Builder" />
+        </lootcontainer>  
+        <!-- Rifleman Class -->
+        <lootcontainer id="552" name="Doctor" count="1" size="8,9" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate" >
+        <item group="Doctor" />
+        </lootcontainer>  
+        <!-- Gunman Class -->
+        <lootcontainer id="553" name="Army" count="1" size="8,9" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate" >
+        <item group="Army" />
+        </lootcontainer>  
+        <!-- Veteran Class -->
+        <lootcontainer id="554" name="Hunter" count="1" size="8,9" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate" >
+        <item group="Hunter" />
+        </lootcontainer> 
+		<!-- Bruiser Class -->	
 	</append>
 	
 	<!-- QUEST NOTES -->	
