@@ -43,6 +43,7 @@ InSecureHunterChest,blocks,Block,,,[b103fc]Insecure Hunter Chest,,,,,,,,,,,,,
 
 SpiderEggs,blocks,Block,,,Spider Nest,,,,,,,,,,,,,
 GreenPortal,blocks,Block,,,Portal,,,,,,,,,,,,,
+SpiderFlyer,entityclasses,Entity,,,Flying Spider,,,,,,,,,,,,,
 
 resourceClayLumpBundle,items,Item,,,Stack of Clay (6000),,,,,,,,,,,,,
 resourceClayLumpBundleDesc,items,Item,,,"This is a compact stack of clay. Use this item to open and unpack it.",,,,,,,,,,,,,
