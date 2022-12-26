@@ -830,7 +830,9 @@
 	<LowestPitch name="0.9"/>
 	<HighestPitch name="1.0"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="2"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> 
-	</SoundDataNode>	
+	</SoundDataNode>
+
+		<!-- SPAWNING -->
 		
 	</append>
 	

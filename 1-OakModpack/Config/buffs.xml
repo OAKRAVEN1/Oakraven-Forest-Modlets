@@ -491,7 +491,74 @@
 			<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/oakspiders.unity3d?woodlouseDie" local_offset="0,0.4,0" parent_transform="Spine1"/>			
 			<triggered_effect trigger="onSelfDied" action="PlaySound" sound=""/>			
 		</effect_group>
-	</buff>		
+	</buff>
+
+		<!-- SPAWNING -->
+
+<buff name="buffWeb" description_key="" tooltip_key="buffShockedTooltip" icon="" name_key="buffShockedName" icon_color="255,0,0">
+		<damage_type value="electrical"/>
+		<stack_type value="replace"/>
+		<duration value="4.5"/>
+		<effect_group>
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffWeb"/>
+
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.8,0.2" duration="0,4.3"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.8,0.2" duration="0,4.3"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.8,0.2" duration="0,4.3"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.8,0.2" duration="0,4.3"/>
+
+		</effect_group>
+	</buff>
+	
+	<buff name="SpiderFlyer" hidden="true">		
+		<effect_group>		
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/PortalThings.unity3d?SpiderFlyer" local_offset="0,0,0" local_rotation="0,0,0" parent_transform="Head"/>																								
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="SpiderFlyer"/>
+			<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/PortalThings.unity3d?SpiderFlyerDead" local_offset="0,0.4,0" parent_transform="Head"/>			
+			<triggered_effect trigger="onSelfDied" action="PlaySound" sound=""/>			
+		</effect_group>
+	</buff>
+
+	<buff name="buffScavenger" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="AlienAnimalAttack"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/PortalThings.unity3d?AlienAnimalWalk" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="Scavenger" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="AlienAnimalWalk"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="AlienAnimalAttack"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/PortalThings.unity3d?AlienAnimalDie" local_offset="-1,.8,0" parent_transform="Global"/>
+		</effect_group>
+</buff>
+
+<buff name="Scavenger" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="AlienAnimalWalk"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/PortalThings.unity3d?AlienAnimalAttack" local_offset="-.2,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="AlienAnimalWalk"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="AlienAnimalAttack"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/PortalThings.unity3d?AlienAnimalDie" local_offset="-1,.8,0" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="AlienAnimalAttack"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/PortalThings.unity3d?AlienAnimalWalk" local_offset="-.2,.8,0" parent_transform="Global"/>
+		</effect_group>
+	</buff>
 	
 	</append>
 	

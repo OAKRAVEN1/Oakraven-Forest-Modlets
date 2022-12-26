@@ -3093,6 +3093,235 @@
 	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_boar,clear_sleeper" />
 </entity_class>
 
+	<!-- SPAWNING -->
+	
+<entity_class name="animalBurntFogfx" extends="animalSnake">
+	<property name="Tags" value="entity,animal,hostile,snake,perkAT01,perkAT02,perkAT03"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_snake"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_snake"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>	
+	<property name="AITask-1" value=""/>
+	<property name="AITarget-1" value=""/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+	<!-- Gameplay -->
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="1"/> <!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="100"/>
+	<property name="SizeScale" value=".25"/>
+	<property name="HandItem" value="meleeHandAnimalCoyote"/>
+	<property name="MoveSpeedAggro" value="1,1"/>	
+	<property name="CorpseBlock" value="BurntMistfx"/><property name="CorpseBlockChance" value="1"/> 
+	<property name="TimeStayAfterDeath" value="2"/>	
+	<property name="Buffs" value="KillMe"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+	</effect_group>
+</entity_class>
+
+
+<entity_class name="animalBurntMistfx" extends="animalSnake">
+	<property name="Tags" value="entity,animal,hostile,snake,perkAT01,perkAT02,perkAT03"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_snake"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_snake"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>	
+	<property name="AITask-1" value=""/>
+	<property name="AITarget-1" value=""/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+	<!-- Gameplay -->
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="1"/> <!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="100"/>
+	<property name="SizeScale" value=".25"/>
+	<property name="HandItem" value="meleeHandAnimalCoyote"/>
+	<property name="MoveSpeedAggro" value="1,1"/>	
+	<property name="CorpseBlock" value="BurntFogfx"/><property name="CorpseBlockChance" value="1"/> 
+	<property name="TimeStayAfterDeath" value="2"/>	
+	<property name="Buffs" value="KillMe"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalSpiderNest" extends="animalSnake">
+	<property name="Tags" value="entity,animal,hostile,snake,perkAT01,perkAT02,perkAT03"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_snake"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_snake"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>	
+	<property name="AITask-1" value=""/>
+	<property name="AITarget-1" value=""/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+	<!-- Gameplay -->
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="1"/> <!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="100"/>
+	<property name="SizeScale" value=".25"/>
+	<property name="HandItem" value="meleeHandAnimalCoyote"/>
+	<property name="MoveSpeedAggro" value="1,1"/>	
+	<property name="CorpseBlock" value="spiderspawner"/><property name="CorpseBlockChance" value="1"/> 
+	<property name="TimeStayAfterDeath" value="2"/>	
+	<property name="Buffs" value="KillMe"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+	</effect_group>	
+</entity_class>
+	
+<entity_class name="animalPortalNest" extends="animalSnake">
+	<property name="Tags" value="entity,animal,hostile,snake,perkAT01,perkAT02,perkAT03"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_snake"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_snake"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>	
+	<property name="AITask-1" value=""/>
+	<property name="AITarget-1" value=""/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+	<!-- Gameplay -->
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="1"/> <!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="100"/>
+	<property name="SizeScale" value=".25"/>
+	<property name="HandItem" value="meleeHandAnimalCoyote"/>
+	<property name="MoveSpeedAggro" value="1,1"/>	
+	<property name="CorpseBlock" value="Portalspawner"/><property name="CorpseBlockChance" value="1"/> 
+	<property name="TimeStayAfterDeath" value="2"/>	
+	<property name="Buffs" value="KillMe"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+	</effect_group>	
+	</entity_class>	
+
+
+<entity_class name="Scavenger" extends="animalBear">
+	<property name="Tags" value="entity,animal,hostile,perkAT03,spider"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="DestroyArea"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,0,EntityNPC,0"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,18,13,EntityAnimalStag,0,0"/>
+	<property name="AITarget-4" value=""/>
+
+	<property name="SoundRandom" value="Enemies/Zombie_Dogs/zombiedogroam"/>
+	<property name="SoundAlert" value="Enemies/Zombie_Dogs/zombiedogalert"/>
+	<property name="SoundHurt" value="Enemies/Zombie_Dogs/zombiedogpain"/>
+	<property name="SoundDeath" value="Enemies/Zombie_Dogs/zombiedogdeath"/>
+	<property name="SoundAttack" value="Enemies/Zombie_Dogs/zombiedogattack"/>
+	<property name="SoundSense" value="Enemies/Zombie_Dogs/zombiedogsense"/>
+	<property name="SoundGiveUp" value="Enemies/Zombie_Dogs/zombiedoggiveup"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value=""/>
+
+	
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="755"/> 
+	<property name="DeadBodyHitPoints" value="600"/>
+
+	<drop event="Harvest" name="resourceScrapIron" count="100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="10" tag="allHarvest"/> 
+	<drop event="Harvest" name="resourceSpring" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="6" tag="allHarvest"/>
+
+    <property name="TimeStayAfterDeath" value="150"/>
+
+	<property name="SizeScale" value="0.8"/>
+	<property name="HandItem" value="meleeHandScavenger"/>
+	<property name="MoveSpeedAggro" value="1.2, 1.5"/>
+	
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+
+	<property name="Buffs" value="buffScavenger"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="750"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+	</effect_group>
+
+	<property name="NavObject" value="animaltracking_bear,clear_sleeper" />
+</entity_class>
+
+<entity_class name="SpiderFlyer" extends="animalZombieVulture">
+	<!-- hardcoded to use the vomit attack if isRadiated=true -->
+	<property name="Tags" value="entity,animal,zombie,hostile,radiated,vulture"/>
+	<property name="Radiated" value=""/>
+	<property name="Mass" value="50"/>
+	<property name="SizeScale" value="1.2"/>
+	<property name="ReplaceMaterial0" value="particleeffects/materials/waterfallslope"/>
+	<property name="ReplaceMaterial1" value="particleeffects/materials/waterfallslope"/>
+
+	<property name="MoveSpeed" value=".4"/>
+	<property name="MoveSpeedAggro" value="1.5, 1.5"/>
+	<property name="MaxTurnSpeed" value="150"/>
+	
+	<property name="SoundRandom" value="BatRoam"/>
+	<property name="SoundAlert" value="SingleBatAttack"/>
+	<property name="SoundHurt" value="PhoenixAlert"/>
+	<property name="SoundDeath" value="SingleBatAttack"/>
+	<property name="SoundAttack" value="SingleBatAttack"/>
+	<property name="SoundSense" value="SingleBatAttack"/>
+	<property name="SoundGiveUp" value=""/>
+
+	<property name="HandItem" value="meleeHandAnimalZombieVultureRadiated"/>
+
+	<property name="ExperienceGain" value="800"/>
+
+	<property name="DeadBodyHitPoints" value="200"/>
+	<drop event="Harvest" name="foodRawMeat" count="1" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="6"/>
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="4"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="1"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+
+	<effect_group name="Base Effects">
+	    <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SpiderFlyer"/>	
+		<passive_effect name="HealthMax" operation="base_set" value="120"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value=".4"/> <!-- Feral damage -->
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+	</effect_group>
+</entity_class>
+
 		<!-- Darkstardragon's Mythical Beasts from 1-FantasticBeastz -->
 
                 <!-- models by Protofactor Inc Purchased for use in NPC Mod  -->

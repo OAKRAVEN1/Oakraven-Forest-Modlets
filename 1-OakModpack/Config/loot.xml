@@ -158,7 +158,17 @@
         <lootcontainer id="554" name="Hunter" count="1" size="8,9" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate" >
         <item group="Hunter" />
         </lootcontainer> 
-		<!-- Bruiser Class -->	
+		<!-- Bruiser Class -->
+		
+	<!-- SPAWNING -->
+		
+	<lootcontainer id="641" name="spawnnest2" count="3,4" size="7,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+		<item name="BloodStoneOre" count="30,100"/>
+		<item name="resourceCrystalRock" count="6,12"/>
+		<item name="resourceBlueRock" count="6,12"/>
+		<item name="CopperOre" count="20,28"/>
+	</lootcontainer>		
+		
 	</append>
 	
 	<!-- QUEST NOTES -->	

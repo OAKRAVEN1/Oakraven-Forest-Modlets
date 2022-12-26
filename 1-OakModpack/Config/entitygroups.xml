@@ -81,6 +81,35 @@
 		<entity name="PhoenixKing" prob="0.2"/>
 		<entity name="EmeraldBat" prob="0.1"/>
 	</entitygroup>
+			
+				<!-- SPAWNING -->
+	
+	<entitygroup name="Burntfx">
+	    <entity name="animalBurntMistfx" prob="0.4"/>
+		<entity name="animalBurntFogfx" prob="0.4"/>
+	</entitygroup>
+	
+	<entitygroup name="SpiderEggs">
+	    <entity name="animalSpiderNest" prob="0.0001"/>
+	</entitygroup>		
+	
+	<entitygroup name="SpiderNest">
+	    <entity name="LizzySpider" prob="0.4"/>
+		<entity name="animalSpider01" prob="0.4"/>
+		<entity name="animalSpider01Mini" prob="0.8"/>
+	</entitygroup>
+	
+	<entitygroup name="NestPortal">
+	    <entity name="animalPortalNest" prob="0.0001"/>
+	</entitygroup>	
+
+	<entitygroup name="PortalNest">
+        <entity name="Scavenger" prob="0.25"/>
+	    <entity name="SpiderFlyer" prob=".25" />
+        <entity name="ExperimentZ" prob=".25" />
+        <entity name="SwatZombie" prob=".25" />
+        <entity name="SwatCaptainZombie" prob=".25" />
+	</entitygroup>
 		
 	</append>		
 
