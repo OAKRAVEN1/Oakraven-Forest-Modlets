@@ -43,7 +43,7 @@
 </append> 
 
 <append xpath="/spawning/biome[@name='desert']">
-		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="OakDesert" />
+		<spawn maxcount="2" respawndelay="3" time="Night" entitygroup="OakDesert" />
 </append>
 
     <!-- SPAWNING -->
@@ -51,13 +51,12 @@
 <append xpath="/spawning/biome[@name='burnt_forest']">
 		<spawn maxcount="1" respawndelay="3" time="Day" entitygroup="Burntfx" />
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Burntfx" />
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="SpiderEggs" />
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="NestPortal" />
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="SpiderEggs" />
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="NestPortal" />
 </append>
 
 <append xpath="/spawning/biome[@name='pine_forest']">
-		<spawn maxcount="1" respawndelay="2" time="Night" entitygroup="SpiderEggs" />
-		<spawn maxcount="1" respawndelay="2" time="Night" entitygroup="NestPortal" />
+		<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="SpiderEggs" />
 </append>
 
 <append xpath="/spawning/biome[@name='wasteland']">

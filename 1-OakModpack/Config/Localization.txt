@@ -44,6 +44,8 @@ InSecureHunterChest,blocks,Block,,,[b103fc]Insecure Hunter Chest,,,,,,,,,,,,,
 SpiderEggs,blocks,Block,,,Spider Nest,,,,,,,,,,,,,
 GreenPortal,blocks,Block,,,Portal,,,,,,,,,,,,,
 SpiderFlyer,entityclasses,Entity,,,Flying Spider,,,,,,,,,,,,,
+ArmyTruck,blocks,Block,,,Army Truck,,,,,,,,,,,,,
+Ambulance,blocks,Block,,,Ambulance,,,,,,,,,,,,,
 
 resourceClayLumpBundle,items,Item,,,Stack of Clay (6000),,,,,,,,,,,,,
 resourceClayLumpBundleDesc,items,Item,,,"This is a compact stack of clay. Use this item to open and unpack it.",,,,,,,,,,,,,
@@ -620,6 +622,11 @@ drinkAcornCoffee,items,Food,,,Acorn Coffee
 drinkAcornCoffeeDesc,items,Food,,,"Bitter sweet and earthy. Cures 3% infection."
 drinkSweetMead,items,Food,,,Sweet Mead
 drinkSweetMeadDesc,items,Food,,,"An all round pick-me-up. Cures 10% infection and 20% dysentery."
+
+Coconut,items,Food,,,Fresh Coconut
+CoconutDesc,items,Food,,,"Fresh Coconuts can be crafted into Coconut Milk directly through the player crafting menu."
+CoconutMilk,items,Food,,,Coconut Milk
+CoconutMilkDesc,items,Food,,,"Coconut Milk can be made on the player. It provides great hydration properties and buffs."
 
 OakChemistryStation,blocks,Block,,,Oakraven Chemistry Station (2 wide),,,,,,,,,,,,,
 OakChemistryStationDesc,blocks,Block,,,"The Oakraven Chemistry Station allows players to create chemistry related items.",,,,,,,,,,,,,

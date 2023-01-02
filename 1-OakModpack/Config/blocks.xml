@@ -9,6 +9,7 @@
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedNPCFeatures']/property[@name='AttackVolumeInstantAwake']/@value">true</set>
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='ReadFromContainers']/@value">true</set>
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='BroadcastManage']/@value">true</set>
+
 	<!-- Vanilla Tweaks and Toggles -->
 	<!-- Removal for custom features -->	
 	<remove xpath="/blocks/block[@name='cntBirdnest']" />
@@ -4357,12 +4358,13 @@
 		<property name="GndAlign" value="0"/>
 		<property name="CreativeMode" value="Player"/>
 		<property name="DowngradeBlock" value="birdnestEmpty"/>
+		<property name="IndexName" value="quest_feather"/>		
 	</block>
 
 	<block name="cntBirdnestCorner">
 		<property name="Extends" value="cntBirdnest"/>
 		<property name="CustomIcon" value="cntBirdnest"/>
-		<property name="ModelOffset" value="0.2,0,0.2"/>
+		<property name="ModelOffset" value="0.2,0.5,0.2"/>
 		<property name="GndAlign" value="0"/>
 	</block>
 
@@ -7189,7 +7191,125 @@
 	<property class="RepairItems">
 		<property name="resourceForgedSteel" value="5"/>
 	</property>	
-	</block>		
+	</block>
+
+ <block name="CoconutTree">
+            <property name="CustomIcon" value=""/>
+			<property name="Material" value="MtreeWoodFull" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Texture" value="116" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="1" />
+			<property name="Model" value="#@modfolder:Resources/coconuttree.unity3d?coconutpalm" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="-0.5,0,0" />
+			<property name="MultiBlockDim" value="2,6,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="Coconut" count="1,2" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+			<drop event="Destroy" name="Coconut" count="1,2"/>
+			<property name="UpwardsCount" value="3" />
+			<property name="DowngradeBlock" value="CoconutTreePicked" />
+			<property name="MaxDamage" value="40" />
+		</block>
+
+		<block name="CoconutTreePicked">
+		    <property name="CustomIcon" value=""/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mwood" />
+			<property name="Place" value="Door" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Tag" value="TreeTrunk" />
+			<property name="BigDecorationRadius" value="2" />
+			<property name="Model" value="#@modfolder:Resources/coconuttree.unity3d?coconutpalmpicked" />
+			<property name="ParticleOnDeath" value="treeGib_burnt" />
+			<property name="ModelOffset" value="-0.5,0,0" />
+			<property name="MultiBlockDim" value="2,6,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="5" />
+			<drop event="Destroy" name="resourceWood" count="5"  />
+			<property name="UpwardsCount" value="3" />
+			<property class="PlantGrowing">
+				<property name="Next" value="CoconutTree" />
+				<property name="GrowthRate" value="160" />
+				<property name="FertileLevel" value="0" />
+				<property name="IsRandom" value="false" />
+			</property>
+			<property name="MaxDamage" value="40" />
+		</block>
+		
+		<block name="Bramble">
+	<property name="Material" value="MtrapSpikesWood"/>
+	<property name="Shape" value="ModelEntity" />
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/Bramble.unity3d?Bramble"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="BuffsWhenWalkedOn" value="triggerBleeding"/>
+	</block>
+		
+
+<block name="ArmyTruck">
+		<property name="Extends" value="SpawnerBlock" />
+		<property name="Material" value="Mmetal" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#@modfolder:Resources/spawntrucks.unity3d?armytruck2" />
+		<property name="TickRate" value="5" />
+		<property name="SpawnRadius" value="10" />
+		<property name="SpawnArea" value="4" />
+		<property name="NumberToSpawn" value="4" />
+		<property name="MaxSpawned" value="8" />
+		<property name="CheckArea" value="20" />
+		<property name="PauseTime" value="60" />
+		<property name="NumberToPause" value="9" />
+		<property name="EntityGroup" value="ArmyTruck" />
+		<property name="Lootable" value="true" />
+		<property name="LootList" value="hardenedChestT4" />
+		<property name="MultiBlockDim" value="1,1,1"/>
+		<property name="ModelOffset" value="0,0.5,0"/>
+		<property name="ParticleAction" value="None" />
+		<property name="LPHardnessScale" value="8" />
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,4" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1,3" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+		<drop event="Destroy" count="0" />
+		<property name="debug" value="false" />
+		<property name="MaxDamage" value="7000" />
+	</block>
+
+<block name="Ambulance">
+		<property name="Extends" value="SpawnerBlock" />
+		<property name="Material" value="Mmetal" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#@modfolder:Resources/spawntrucks.unity3d?Ambulance" />
+		<property name="TickRate" value="5" />
+		<property name="SpawnRadius" value="10" />
+		<property name="SpawnArea" value="4" />
+		<property name="NumberToSpawn" value="4" />
+		<property name="MaxSpawned" value="8" />
+		<property name="CheckArea" value="20" />
+		<property name="PauseTime" value="60" />
+		<property name="NumberToPause" value="9" />
+		<property name="EntityGroup" value="Ambulance" />
+		<property name="Lootable" value="true" />
+		<property name="LootList" value="groupMedicalUncommon" />
+		<property name="MultiBlockDim" value="1,1,1"/>
+		<property name="ModelOffset" value="0,0.5,0"/>
+		<property name="ParticleAction" value="None" />
+		<property name="LPHardnessScale" value="8" />
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,4" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1,3" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+		<drop event="Destroy" count="0" />
+		<property name="debug" value="false" />
+		<property name="MaxDamage" value="5000" />
+	</block>	
 	
 	</append>
 	

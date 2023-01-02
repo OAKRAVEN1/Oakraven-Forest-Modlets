@@ -1,0 +1,66 @@
+<blockplaceholders>
+	
+<append xpath="/blockplaceholders">
+
+<placeholder name="carsRandomHelper">
+		<block name="cntCar03SedanDamage0v01" prob=".4"/>
+		<block name="cntCar03SedanDamage0v02" prob=".4"/>
+		<block name="cntCar03SedanDamage0v03" prob=".4"/>
+		<block name="cntCar03SedanDamage0v04" prob=".4"/>
+		<block name="cntCar03SedanDamage0v05" prob=".4"/>
+		<block name="cntCar03SedanDamage0v06" prob=".4"/>
+		<block name="cntCar03SedanDamage0v07" prob=".4"/>
+		<block name="ArmyTruck" prob=".3"/>
+		<block name="Ambulance" prob=".3"/>
+
+		<block name="cntCar03SedanDamage1v01" prob=".2"/>
+		<block name="cntCar03SedanDamage1v02" prob=".2"/>
+		<block name="cntCar03SedanDamage1v03" prob=".2"/>
+		<block name="cntCar03SedanDamage1v04" prob=".2"/>
+		<block name="cntCar03SedanDamage1v05" prob=".2"/>
+		<block name="cntCar03SedanDamage1v06" prob=".2"/>
+		<block name="cntCar03SedanDamage1v07" prob=".2"/>
+		<block name="ArmyTruck" prob=".3"/>
+
+		<block name="cntCar03SedanDamage2v01" prob="1"/>
+		<block name="cntCar03SedanDamage2v02" prob="1"/>
+		<block name="cntCar03SedanDamage2v03" prob="1"/>
+		<block name="cntCar03SedanDamage2v04" prob="1"/>
+		<block name="cntCar03SedanDamage2v05" prob="1"/>
+		<block name="cntCar03SedanDamage2v06" prob="1"/>
+		<block name="cntCar03SedanDamage2v07" prob="1"/>
+		<block name="ArmyTruck" prob=".3"/>
+		<block name="Ambulance" prob=".3"/>
+	</placeholder>
+
+	<!-- *** Short_Bus_50/50_Air -->
+	<placeholder name="cntBusSchoolShortRandomHelper">
+		<block name="air" prob=".7"/>
+		<block name="cntBusSchoolShort" prob=".3"/>
+		<block name="ArmyTruck" prob=".3"/>
+	</placeholder>
+
+	<!-- *** School_Bus_50/50_Air -->
+	<placeholder name="cntBusSchoolRandomHelper">
+		<block name="air" prob=".7"/>
+		<block name="cntBusSchool" prob=".3"/>
+		<block name="ArmyTruck" prob=".3"/>
+	</placeholder>
+
+	<!-- *** Army_Truck_50/50_Open_Closed -->
+	<placeholder name="cntArmyTruckRandomLootHelper">
+		<block name="cntArmyTruckOpen" prob=".5"/>
+		<block name="cntArmyTruckClosed" prob=".5"/>
+		<block name="ArmyTruck" prob=".3"/>
+	</placeholder>
+
+	<!-- *** Ambulance_50/50_Air -->
+	<placeholder name="cntAmbulanceTruck01RandomLootHelper">
+		<block name="air" prob=".7"/>
+		<block name="cntAmbulanceTruck01" prob=".3"/>
+		<block name="Ambulance" prob=".3"/>
+	</placeholder>
+
+</append>
+
+</blockplaceholders>

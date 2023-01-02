@@ -1867,7 +1867,14 @@
 	<ingredient name="foodAcornMeal" count="1"/>
 	<ingredient name="foodCropBlueberries" count="1"/>	
 	<ingredient name="drinkJarBoiledWater" count="1"/>
-</recipe>	
+</recipe>
+
+	<!-- Coconut -->
+
+	<recipe name="CoconutMilk" count="1" craft_time="10">
+		<ingredient name="Coconut" count="1"/>
+		<ingredient name="drinkJarEmpty" count="1"/>
+	</recipe>
 	
 	<!-- WORKSTATIONS -->	
 	

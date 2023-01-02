@@ -106,7 +106,7 @@
 				<decoration type="block" blockname="rock05" prob=".001"/>
 				<decoration type="block" blockname="rock06" prob=".001"/>
 				<decoration type="block" blockname="rock07" prob=".001"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="cntForestRandomLootHelper" prob="0.001"/>
 				<decoration type="block" blockname="plantedBlueberry3Harvest" prob=".001" rotatemax="3"/>
 				<decoration type="block" blockname="plantedSnowberry3Harvest" prob=".1" rotatemax="7"/>
@@ -152,7 +152,7 @@
 				<decoration type="block" blockname="rock05" prob=".005"/>
 				<decoration type="block" blockname="rock06" prob=".005"/>
 				<decoration type="block" blockname="rock07" prob=".005"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="treeWinterEverGreen" prob="0.003" rotatemax="7"/>
 				<decoration type="block" blockname="treeWinterPine13m" prob="0.003" rotatemax="7"/>
 				<decoration type="block" blockname="treeWinterPine19m" prob="0.003" rotatemax="7"/>
@@ -178,7 +178,7 @@
 				<decoration type="block" blockname="rock05" prob=".005"/>
 				<decoration type="block" blockname="rock06" prob=".005"/>
 				<decoration type="block" blockname="rock07" prob=".005"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="treeWinterEverGreen" prob="0.003" rotatemax="7"/>
 				<decoration type="block" blockname="treeWinterPine13m" prob="0.003" rotatemax="7"/>
 				<decoration type="block" blockname="treeWinterPine19m" prob="0.003" rotatemax="7"/>
@@ -203,7 +203,7 @@
 				<decoration type="block" blockname="rock05" prob=".005"/>
 				<decoration type="block" blockname="rock06" prob=".005"/>
 				<decoration type="block" blockname="rock07" prob=".005"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="treeWinterEverGreen" prob="0.003" rotatemax="7"/>
 				<decoration type="block" blockname="treeWinterPine13m" prob="0.003" rotatemax="7"/>
 				<decoration type="block" blockname="treeWinterPine19m" prob="0.003" rotatemax="7"/>
@@ -235,7 +235,7 @@
 			<decoration type="block" blockname="rock05" prob=".005"/>
 			<decoration type="block" blockname="rock06" prob=".005"/>
 			<decoration type="block" blockname="rock07" prob=".005"/>
-			<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+			<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 			<decoration type="block" blockname="treeWinterEverGreen" prob="0.003" rotatemax="7"/>
 			<decoration type="block" blockname="treeWinterPine13m" prob="0.003" rotatemax="7"/>
 			<decoration type="block" blockname="treeWinterPine19m" prob="0.003" rotatemax="7"/>
@@ -347,7 +347,7 @@
 				<decoration type="block" blockname="rock01" prob=".001"/>
 				<decoration type="block" blockname="rock02" prob=".001"/>
 				<decoration type="block" blockname="rock04" prob=".001"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0006"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7"/>
 				<decoration type="block" blockname="treeJuniper4m" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeMountainPineDry21m" prob="0.002" rotatemax="7"/>
@@ -382,7 +382,7 @@
 				<decoration type="block" blockname="rock01" prob=".001"/>
 				<decoration type="block" blockname="rock02" prob=".001"/>
 				<decoration type="block" blockname="rock04" prob=".001"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7"/>
 				<decoration type="block" blockname="treeJuniper4m" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeMountainPine12m" prob="0.001" rotatemax="7"/>
@@ -424,7 +424,7 @@
 				<decoration type="block" blockname="rock01" prob=".001"/>
 				<decoration type="block" blockname="rock02" prob=".001"/>
 				<decoration type="block" blockname="rock04" prob=".001"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.05" rotatemax="7"/>
 				<decoration type="block" blockname="treeJuniper4m" prob="0.001" rotatemax="7"/>
 				<decoration type="block" blockname="treeMountainPine12m" prob="0.001" rotatemax="7"/>
@@ -463,7 +463,7 @@
 			<decoration type="block" blockname="rock01" prob=".001"/>
 			<decoration type="block" blockname="rock02" prob=".001"/>
 			<decoration type="block" blockname="rock04" prob=".001"/>
-			<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+			<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 			<decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7"/>
 			<decoration type="block" blockname="treeJuniper4m" prob="0.001" rotatemax="7"/>
 			<decoration type="block" blockname="treeMountainPine12m" prob="0.001" rotatemax="7"/>
@@ -569,6 +569,7 @@
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".025"/>
 				<decoration type="block" blockname="flowercactus" prob="0.01" rotatemax="3"/>
 				<decoration type="block" blockname="TroicalPlant01" prob="0.007" rotatemax="3"/>
+				<decoration type="block" blockname="Bramble" prob="0.007" rotatemax="3"/>
 			</decorations>
 		</subbiome>
 
@@ -596,13 +597,12 @@
 				<decoration type="block" blockname="plantedAloe3Harvest" rotatemax="3" prob="0.003"/>
 				<decoration type="block" blockname="treeDesertShrub" prob="0.05" rotatemax="7"/>
 				<decoration type="block" blockname="driftwood" prob="0.002" rotatemax="7"/>
-				<decoration type="block" blockname="driftwood2" prob="0.002" rotatemax="7"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="decoCowSkull" prob="0.00025" rotatemax="3"/>
 				<decoration type="block" blockname="treeCactus06" prob="0.0009" rotatemax="3"/>
 				<decoration type="block" blockname="smalltree23" prob="0.0009" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".00025"/>
-				<decoration type="block" blockname="treeOakMed01" prob="0.0003" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakSml01" prob="0.002" rotatemax="7"/></decorations>
 		</subbiome>
 		<subbiome prob="0.412"> <!-- Ore Sub Biome: potassiumNitrate -->
@@ -632,11 +632,10 @@
 				<decoration type="block" blockname="TroicalPlant01" prob="0.006" rotatemax="3"/>
 				<decoration type="block" blockname="smalltree23" prob="0.01" rotatemax="3"/>
 				<decoration type="block" blockname="driftwood2" prob="0.002" rotatemax="7"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="decoCowSkull" prob="0.00025" rotatemax="3"/>
 				<decoration type="block" blockname="treeCactus06" prob="0.0009" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".00025"/>
-				<decoration type="block" blockname="treeOakMed01" prob="0.0003" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakSml01" prob="0.002" rotatemax="7"/></decorations>
 		</subbiome>
 		<subbiome prob="0.442"> <!-- Ore Sub Biome: leadOre -->
@@ -666,11 +665,10 @@
 				<decoration type="block" blockname="TroicalPlant01" prob="0.005" rotatemax="3"/>
 				<decoration type="block" blockname="smalltree23" prob="0.01" rotatemax="3"/>
 				<decoration type="block" blockname="driftwood2" prob="0.002" rotatemax="7"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="decoCowSkull" prob="0.00025" rotatemax="3"/>
 				<decoration type="block" blockname="treeCactus06" prob="0.0009" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".00025"/>
-				<decoration type="block" blockname="treeOakMed01" prob="0.0003" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakSml01" prob="0.002" rotatemax="7"/></decorations>
 		</subbiome>
 
@@ -707,12 +705,11 @@
 			<decoration type="block" blockname="plantedAloe3Harvest" rotatemax="3" prob="0.003"/>
 			<decoration type="block" blockname="treeDesertShrub" prob="0.05" rotatemax="7"/>
 			<decoration type="block" blockname="driftwood" prob="0.002" rotatemax="7"/>
-			<decoration type="block" blockname="driftwood2" prob="0.002" rotatemax="7"/>
-			<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+			<decoration type="block" blockname="CoconutTree" prob="0.0004" rotatemax="3"/>
+			<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 			<decoration type="block" blockname="decoCowSkull" prob="0.00025" rotatemax="3"/>
 			<decoration type="block" blockname="treeCactus06" prob="0.0009" rotatemax="3"/>
 			<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".00025"/>
-			<decoration type="block" blockname="treeOakMed01" prob="0.0003" rotatemax="7"/>
 			<decoration type="block" blockname="treeOakSml01" prob="0.002" rotatemax="7"/>
 		</decorations>
 		<terrain class="Desert"/>
@@ -759,7 +756,7 @@
 				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7"/>
 				<decoration type="block" blockname="carsRandomHelper" prob="0.001" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".15"/>
-				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".35"/></decorations>
+			  </decorations>
 		</subbiome>
 		<subbiome prob="0.412"> <!-- Ore Sub Biome: potassiumNitrate -->
 			<layers>
@@ -785,7 +782,7 @@
 				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7"/>
 				<decoration type="block" blockname="carsRandomHelper" prob="0.001" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".15"/>
-				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".35"/></decorations>
+				</decorations>
 		</subbiome>
 		<subbiome prob="0.442"> <!-- Ore Sub Biome: leadOre -->
 			<layers>
@@ -811,7 +808,7 @@
 				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7"/>
 				<decoration type="block" blockname="carsRandomHelper" prob="0.001" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".15"/>
-				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".35"/></decorations>
+				</decorations>
 		</subbiome>
 
 		<!-- Block layers: Water -->
@@ -995,7 +992,7 @@
 				<decoration type="block" blockname="rock02" prob=".004" rotatemax="3"/>
 				<decoration type="block" blockname="rock04" prob=".004" rotatemax="3"/>
 				<decoration type="block" blockname="redtopplant" prob=".004" rotatemax="3"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="JapaneseMapleA" prob="0.0012" rotatemax="7"/>
 				<decoration type="block" blockname="JapaneseMapleTreeB" prob="0.0012" rotatemax="7"/>
 				<decoration type="block" blockname="greenbig1" prob="0.0012" rotatemax="3"/>
@@ -1040,7 +1037,7 @@
 				<decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
 				<decoration type="block" blockname="rock02" prob=".004" rotatemax="3"/>
 				<decoration type="block" blockname="rock04" prob=".004" rotatemax="3"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="JapaneseMapleA" prob="0.0012" rotatemax="7"/>
 				<decoration type="block" blockname="JapaneseMapleTreeB" prob="0.0012" rotatemax="7"/>
 				<decoration type="block" blockname="greenbig1" prob="0.0012" rotatemax="3"/>
@@ -1081,7 +1078,7 @@
 				<decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
 				<decoration type="block" blockname="rock02" prob=".004" rotatemax="3"/>
 				<decoration type="block" blockname="rock04" prob=".004" rotatemax="3"/>
-				<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+				<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 				<decoration type="block" blockname="JapaneseMapleA" prob="0.0012" rotatemax="7"/>
 				<decoration type="block" blockname="weeptree" prob="0.0004" rotatemax="7"/>
 				<decoration type="block" blockname="treeOakSml01" prob="0.0002" rotatemax="3"/>
@@ -1131,7 +1128,7 @@
 			<decoration type="block" blockname="rock02" prob=".004" rotatemax="3"/>
 			<decoration type="block" blockname="rock04" prob=".004" rotatemax="3"/>
 			<decoration type="block" blockname="redtopplant" prob=".004" rotatemax="3"/>
-			<decoration type="block" blockname="cntBirdnest" prob="0.0005"/>
+			<decoration type="block" blockname="cntBirdnest" prob="0.0003"/>
 			<decoration type="block" blockname="JapaneseMapleA" prob="0.0012" rotatemax="7"/>
 			<decoration type="block" blockname="treeOakMed01" prob="0.0012" rotatemax="7"/>
 			<decoration type="block" blockname="stump1" prob="0.002" rotatemax="3"/>
@@ -1227,6 +1224,7 @@
 				<decoration type="block" blockname="treeDeadPineLeaf" prob=".025" rotatemax="7"/>
 				<decoration type="block" blockname="treeDeadTree02" prob=".06" rotatemax="7"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".4"/>
+				<decoration type="block" blockname="Bramble" prob="0.007" rotatemax="3"/>
 			</decorations>
 		</subbiome>
 
