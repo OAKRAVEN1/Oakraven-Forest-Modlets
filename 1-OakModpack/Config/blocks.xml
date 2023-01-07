@@ -88,6 +88,23 @@
 	<set xpath="/blocks/block[@name='decoConcreteBollard']/property[@name='Model']/@value">#@modfolder:Resources/newbollards.unity3d?bollardConcretenew</set>
 	<set xpath="/blocks/block[@name='decoConcreteBollardDestroyed02']/property[@name='Model']/@value">#@modfolder:Resources/newbollards.unity3d?bollardConcreteKnockedBnew</set>
 	<set xpath="/blocks/block[@name='radiatorHouse01Player']/property[@name='Model']/@value">#@modfolder:Resources/replacement2.unity3d?OldRadiator</set>
+    <set xpath="/blocks/block[@name='signBookSaleAd']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?signBookSaleAd</set>
+	<set xpath="/blocks/block[@name='signCigaretteAd']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?signCigaretteAd</set>
+	<set xpath="/blocks/block[@name='signLaborDaySaleAd']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?signLadorDaySaleAd</set>
+	<set xpath="/blocks/block[@name='signMegaCrushAd']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?signMegaCrushAd</set>
+	<set xpath="/blocks/block[@name='signRoadStop']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?deadend</set>
+	<set xpath="/blocks/block[@name='signSafetyWorkProtection']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?signSafetyWorkProtection</set>
+	<set xpath="/blocks/block[@name='signCrossWalkYellow']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?SignCrossWalkYellow</set>
+	<set xpath="/blocks/block[@name='signDoNotEnter']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?signDoNotEnter</set>
+	<set xpath="/blocks/block[@name='signBread01']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?signBread01</set>
+	<set xpath="/blocks/block[@name='signBread02']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?signBread02</set>
+	<set xpath="/blocks/block[@name='signSpillwayLake']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?sign_spillway_lake</set>
+	<set xpath="/blocks/block[@name='signShopGunStoreLargeWallLit']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?gunStoreSignWall_Large</set>
+	<set xpath="/blocks/block[@name='signShopGunStoreWallLit']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?gunStoreSignWall</set>
+	<set xpath="/blocks/block[@name='signShopGunStore']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?gunStoreSignPrefab1</set>
+	<set xpath="/blocks/block[@name='signShopGunStoreLargeLit']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?gunStoreSign_Large</set>
+	<set xpath="/blocks/block[@name='signBathroomSignMenCeilingMount']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?bathroomSignMenCeilinglmount</set>
+	<set xpath="/blocks/block[@name='signBathroomSignWomenCeilingMount']/property[@name='Model']/@value">#@modfolder:Resources/signsnew.unity3d?bathroomSignWomenCeilinglmount</set>
 
 	<!-- A19 Farming For A20 by Syco54645 -->
 	
@@ -7295,7 +7312,7 @@
 		<property name="NumberToPause" value="9" />
 		<property name="EntityGroup" value="Ambulance" />
 		<property name="Lootable" value="true" />
-		<property name="LootList" value="groupMedicalUncommon" />
+		<property name="LootList" value="groupMedicalNew" />
 		<property name="MultiBlockDim" value="1,1,1"/>
 		<property name="ModelOffset" value="0,0.5,0"/>
 		<property name="ParticleAction" value="None" />

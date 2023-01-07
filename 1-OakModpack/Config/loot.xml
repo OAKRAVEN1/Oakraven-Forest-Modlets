@@ -167,7 +167,11 @@
 		<item name="resourceCrystalRock" count="6,12"/>
 		<item name="resourceBlueRock" count="6,12"/>
 		<item name="CopperOre" count="20,28"/>
-	</lootcontainer>		
+	</lootcontainer>
+
+	<lootcontainer id="753" name="groupMedicalNew" count="5" size="8,9" sound_open="UseActions/chest_tier5_open" sound_close="UseActions/chest_tier5_close" loot_quality_template="qualPlus1Template">
+		<item group="groupMedicalUncommon"/>
+	</lootcontainer>	
 		
 	</append>
 	
