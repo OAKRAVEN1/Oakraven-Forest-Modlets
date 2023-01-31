@@ -7326,6 +7326,173 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 	</effect_group>
 </item>
+
+	<!-- New Trucks -->
+
+                    <!-- ArmoredCar -->
+		
+	<item name="ArmoredCarPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="armoredtruck"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+	<property name="Meshfile" value="#@modfolder:Resources/armoredtruck.unity3d?armoredtruck"/>
+	<property name="EconomicValue" value="30000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="ArmoredCar"/>
+		<property name="VehicleSize" value="2.5, 2.1, 6"/>
+	</property>
+	<effect_group name="ArmoredCar" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="5"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>	
+
+<item name="ArmoredCarChassis">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="armoredcarchassis"/>
+	<property name="EconomicValue" value="9000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+</item>
+
+<item name="ArmoredCarAccessories">
+	<property name="Extends" value="vehicleBicycleHandlebars"/>
+	<property name="CustomIcon" value="armoredcaraccessories"/>
+	<property name="EconomicValue" value="9000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+</item>
+
+                    <!-- U33ARMY -->
+
+    <item name="U33ARMYPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="u33army"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+	<property name="Meshfile" value="#@modfolder:Resources/u33ARMY.unity3d?u33ARMY2"/>
+	<property name="EconomicValue" value="30000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="U33ARMY"/>
+		<property name="VehicleSize" value="2.5, 2.1,6"/>
+	</property>
+	<effect_group name="U33ARMY" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="5"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+
+<item name="U33ARMYChassis">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="u33armychassis"/>
+	<property name="EconomicValue" value="9000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+</item>
+
+<item name="U33ARMYAccessories">
+	<property name="Extends" value="vehicleBicycleHandlebars"/>
+	<property name="CustomIcon" value="u33armyaccessories"/>
+	<property name="EconomicValue" value="9000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+</item>
+
+                    <!-- White4X4 -->	
+
+     <item name="White4X4Placeable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="white4x4"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+	<property name="Meshfile" value="#@modfolder:Resources/White4X4.unity3d?White4X4"/>
+	<property name="EconomicValue" value="30000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="White4X4"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="White4X4" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="5"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+
+<item name="White4X4Chassis">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="white4x4chassis"/>
+	<property name="EconomicValue" value="9000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+</item>
+
+<item name="White4X4Accessories">
+	<property name="Extends" value="vehicleBicycleHandlebars"/>
+	<property name="CustomIcon" value="white4x4accessories"/>
+	<property name="EconomicValue" value="9000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+</item>
+
+                    <!-- PoliceCar -->	
+
+     <item name="PoliceCarPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="police"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+	<property name="Meshfile" value="#@modfolder:Resources/PoliceCar.unity3d?PoliceCar"/>
+	<property name="EconomicValue" value="30000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="PoliceCar"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="PoliceCar" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="5"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>	
+
+<item name="PoliceCarChassis">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="policecarchassis"/>
+	<property name="EconomicValue" value="9000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+</item>
+
+<item name="PoliceCarAccessories">
+	<property name="Extends" value="vehicleBicycleHandlebars"/>
+	<property name="CustomIcon" value="policecaraccessories"/>
+	<property name="EconomicValue" value="9000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+</item>
+
+                    <!-- SteamHorse -->	
+
+<item name="SteamHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="steamtrain"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:Resources/SteamHorse.unity3d?SteamHorse2"/>
+	<property name="EconomicValue" value="30000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="SteamHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="SteamHorse" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="5"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>	
+
+<item name="SteamHorseBoiler">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="steamboiler"/>
+	<property name="EconomicValue" value="9000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+</item>
+
+<item name="SteamHorseWheels">
+	<property name="Extends" value="vehicleBicycleHandlebars"/>
+	<property name="CustomIcon" value="steamwheel"/>
+	<property name="EconomicValue" value="9000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+</item>
 		
 	</append>
 	

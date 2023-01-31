@@ -834,6 +834,124 @@
 
 		<!-- SPAWNING -->
 		
+	<!-- New Trucks -->
+	
+                    <!-- ArmoredCar -->	
+					
+<SoundDataNode name="Truck_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?TruckHorn"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?TruckHorn"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?TruckHorn"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+	
+<SoundDataNode name="Truck_idle_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?TruckIdling2" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="Truck_max_speed_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?TruckDrive" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+		
+<SoundDataNode name="Truck_accel1"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?TruckDrive"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+
+<SoundDataNode name="Truck_startup"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?TruckStart"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?TruckStart"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="Truck_shutoff"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?TruckShutOff"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+                    <!-- U33ARMY -->
+
+<SoundDataNode name="U33ARMYhorns"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?U33ARMYhorns"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?U33ARMYhorns"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?U33ARMYhorns"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>					
+	
+<SoundDataNode name="U33ARMY_idle_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?U33ARMYDrive" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="U33ARMY_max_speed_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?U33ARMYDrive" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+		
+<SoundDataNode name="U33ARMY_accel1"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?U33ARMYDrive"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="U33ARMY_startup"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?U33ARMYStart"/>
+	<AudioClip ClipName="#@modfolder:Resources/TruckSounds.unity3d?U33ARMYStart"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+	
+                    <!-- SteamHorse -->		
+
+<SoundDataNode name="Train_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?TrainSteamWhistle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?TrainSteamWhistle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?TrainSteamWhistle"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+	
+<SoundDataNode name="Train_idle_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?TrainWaiting" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="Train_max_speed_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?SteamTrainChug Away" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+		
+<SoundDataNode name="Train_accel1"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?SteamTrainChug Away"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="Train_shutoff"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?SteamPressure_shutoff"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+
+                    <!-- PoliceCar -->	
+					
+<SoundDataNode name="PoliceCarhorns"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/PoliceCarSounds.unity3d?PoliceCarSiren"/>
+	<AudioClip ClipName="#@modfolder:Resources/PoliceCarSounds.unity3d?PoliceCarSiren"/>
+	<AudioClip ClipName="#@modfolder:Resources/PoliceCarSounds.unity3d?PoliceCarSiren"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>					
+	
+<SoundDataNode name="PoliceCar_idle_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/PoliceCarSounds.unity3d?PoliceCarIdle" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="PoliceCar_max_speed_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/PoliceCarSounds.unity3d?PoliceCarIdle" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+		
+<SoundDataNode name="PoliceCar_accel1"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/PoliceCarSounds.unity3d?PoliceCarIdle"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="PoliceCar_startup"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/PoliceCarSounds.unity3d?PoliceCarStart"/>
+	<AudioClip ClipName="#@modfolder:Resources/PoliceCarSounds.unity3d?PoliceCarStart"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+		
 	</append>
 	
 </configs>	

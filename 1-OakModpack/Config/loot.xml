@@ -171,6 +171,12 @@
 
 	<lootcontainer id="753" name="groupMedicalNew" count="5" size="8,9" sound_open="UseActions/chest_tier5_open" sound_close="UseActions/chest_tier5_close" loot_quality_template="qualPlus1Template">
 		<item group="groupMedicalUncommon"/>
+	</lootcontainer>
+	
+	<!-- New Trucks -->
+
+	<!-- SteamHorse storage -->
+	<lootcontainer id="879" name="SteamHorse" count="0" size="9,10" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
 	</lootcontainer>	
 		
 	</append>

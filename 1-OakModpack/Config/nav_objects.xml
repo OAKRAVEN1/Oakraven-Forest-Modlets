@@ -1,0 +1,54 @@
+<configs>
+	<append xpath="/nav_object_classes">
+		<nav_object_class name="SteamHorse" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner"/>
+			<compass_settings>
+				<property name="sprite_name" value="steamtrainicon"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="steamtrainicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+		
+	<nav_object_class name="ArmoredCar" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner"/>
+			<compass_settings>
+				<property name="sprite_name" value="armoredtruckicon"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="armoredtruckicon"/>
+			</onscreen_settings>
+		</nav_object_class>
+
+	<nav_object_class name="U33ARMY" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner"/>
+			<compass_settings>
+				<property name="sprite_name" value="u33armyicon"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="u33armyicon"/>
+			</onscreen_settings>
+		</nav_object_class>	
+
+	<nav_object_class name="White4X4" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner"/>
+			<compass_settings>
+				<property name="sprite_name" value="white4x4icon"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="white4x4icon"/>
+			</onscreen_settings>
+		</nav_object_class>
+
+	<nav_object_class name="PoliceCar" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner"/>
+			<compass_settings>
+				<property name="sprite_name" value="policeicon"/>
+			</compass_settings>
+			<onscreen_settings>
+				<property name="sprite_name" value="policeicon"/>
+			</onscreen_settings>
+		</nav_object_class>	
+		
+	</append>
+</configs>

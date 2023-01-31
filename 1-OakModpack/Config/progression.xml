@@ -205,16 +205,20 @@
 
 	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']">
 		<effect_group>		
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1"
-				tags="vehicleWhirlyBirdChassis,vehicleWhirlyBirdAccessories"/>		
-		</effect_group>
-		<effect_group>		
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1"
-				tags="vehicleHellSpikes4x4Chassis,vehicleHellSpikes4x4Accessories,vehicleHellMaxCarChassis,vehicleHellMaxCarAccessories"/>	
-		</effect_group>		
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1"
+				tags="CarWorkShop"/>	
+		</effect_group>	
 		<effect_group>		
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"
 				tags="vehicleSpiderRiderChassis,vehicleSpiderRiderHandlebars,vehicleHellDawgChassis,vehicleHellDawgHandlebars"/>	
+		</effect_group>
+		<effect_group>		
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1"
+				tags="vehicleHellSpikes4x4Chassis,vehicleHellSpikes4x4Accessories,vehicleHellMaxCarChassis,vehicleHellMaxCarAccessories,ArmoredCarChassis,ArmoredCarAccessories,U33ARMYChassis,U33ARMYAccessories,White4X4Chassis,White4X4Accessories,PoliceCarChassis,PoliceCarAccessories,SteamHorseBoiler,SteamHorseWheels"/>	
+		</effect_group>		
+		<effect_group>		
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1"
+				tags="vehicleWhirlyBirdChassis,vehicleWhirlyBirdAccessories"/>		
 		</effect_group>		
 	</append>
 	
