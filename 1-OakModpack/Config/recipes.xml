@@ -2785,6 +2785,97 @@
 	<ingredient name="resourceHeadlight" count="2"/>
 </recipe>
 
+	<!-- Monobikes -->
+	
+<recipe name="vehicleMonoChassis" count="1" craft_time="150" craft_area="CarWorkShop" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="25"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceElectricParts" count="3"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,2" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+	</effect_group>
+</recipe>
+
+<recipe name="vehicleMonoHandlebars" count="1" craft_time="150" craft_area="CarWorkShop" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceHeadlight" count="1"/>
+	<ingredient name="resourceElectricParts" count="6"/>
+	<ingredient name="resourceForgedSteel" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,2" value=".5,.5" tags="resourceMechanicalParts,resourceDuctTape,resourceElectricParts,resourceForgedSteel"/>
+	</effect_group>
+</recipe>
+
+<recipe name="vehicleMonoWheel" count="1" craft_time="60" craft_area="CarWorkShop" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="2"/>
+	<ingredient name="resourceScrapPolymers" count="16"/>
+	<ingredient name="resourceOil" count="2"/>
+	<ingredient name="resourceCoal" count="10"/>
+	<ingredient name="resourceAcid" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0" value=".5" tags="resourceScrapPolymers,resourceForgedIron,resourceCoal"/>
+	</effect_group>
+</recipe>
+
+<recipe name="vehicleMonobikePlaceable" count="1" craft_time="150" craft_area="CarWorkShop">
+	<ingredient name="vehicleMonoWheel" count="1"/>
+	<ingredient name="vehicleMonoChassis" count="1"/>
+	<ingredient name="vehicleMonoHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<recipe name="vehicleMonobikeGreenPlaceable" count="1" craft_time="150" craft_area="CarWorkShop">
+	<ingredient name="vehicleMonoWheel" count="1"/>
+	<ingredient name="vehicleMonoChassis" count="1"/>
+	<ingredient name="vehicleMonoHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<recipe name="vehicleMonobikeOldPlaceable" count="1" craft_time="150" craft_area="CarWorkShop">
+	<ingredient name="vehicleMonoWheel" count="1"/>
+	<ingredient name="vehicleMonoChassis" count="1"/>
+	<ingredient name="vehicleMonoHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<recipe name="vehicleMonobikeArmyPlaceable" count="1" craft_time="150" craft_area="CarWorkShop">
+	<ingredient name="vehicleMonoWheel" count="1"/>
+	<ingredient name="vehicleMonoChassis" count="1"/>
+	<ingredient name="vehicleMonoHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<recipe name="vehicleMonobikeVinPlaceable" count="1" craft_time="150" craft_area="CarWorkShop">
+	<ingredient name="vehicleMonoWheel" count="1"/>
+	<ingredient name="vehicleMonoChassis" count="1"/>
+	<ingredient name="vehicleMonoHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<recipe name="vehicleMonobikeRedPlaceable" count="1" craft_time="150" craft_area="CarWorkShop">
+	<ingredient name="vehicleMonoWheel" count="1"/>
+	<ingredient name="vehicleMonoChassis" count="1"/>
+	<ingredient name="vehicleMonoHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+<recipe name="vehicleMonobikeSharkPlaceable" count="1" craft_time="150" craft_area="CarWorkShop">
+	<ingredient name="vehicleMonoWheel" count="1"/>
+	<ingredient name="vehicleMonoChassis" count="1"/>
+	<ingredient name="vehicleMonoHandlebars" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
 	</append>
 	
 	 <set xpath="/recipes/recipe[@name='vehicle4x4TruckAccessories']/@craft_area">CarWorkShop</set>

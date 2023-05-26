@@ -47,27 +47,12 @@ namespace UAI
                 // If we are dealing with a farm plot, then we want to manage that a bit. Plant a seed, harvest, etc.
                 if (_farmData != null)
                 {
-                    var seedName = string.Empty;
-                    foreach (var stack in _context.Self.lootContainer.items)
-                    {
-                        if (stack.IsEmpty()) continue;
-                        var itemname = stack.itemValue.ItemClass.GetItemName();
-                        if (itemname.StartsWith("planted") && itemname.EndsWith("1"))
-                        {
-                            Log.Out($"Found a seed: {seedName}");
-                            seedName = itemname;
-                            stack.count--;
-                            break;
-                        }
-                    }
-
-                    var items = _farmData.Manage(seedName);
+                    var items = _farmData.Manage( _context.Self);
                     var lootContainer = _context.Self.lootContainer;
                     if (items != null && lootContainer != null)
                     {
                         foreach (var item in items)
                         {
-                            Log.Out($"Collecting: {item.name}");
                             int num = Utils.FastMax(0, item.minCount);
                             ItemStack itemStack = new ItemStack(ItemClass.GetItem(item.name, false), num);
                             if (_context.Self.lootContainer.AddItem(itemStack))
@@ -92,7 +77,7 @@ namespace UAI
 
             }
             var distance = Vector3.Distance(_vector, _context.Self.position);
-            if (distance > 1.2)
+            if (distance > 2)
             {
                 _context.Self.moveHelper.SetMoveTo(_vector, false);
                 return;
@@ -101,6 +86,63 @@ namespace UAI
            // EntityUtilities.Stop(_context.Self.entityId);
             _context.Self.Buffs.AddBuff(_buff);
             hadBuff = true;
+
+        }
+
+    
+
+        // Yes. This is gross. I've done worse.
+        public override void Start(Context _context)
+        {
+            hadBuff = false;
+            timeOut = 100f;
+
+            _farmData = null;
+            plantData = null;
+            var position = new Vector3i(_context.Self.position);
+            _hasSeed = HasSeed(_context);
+
+            // If the NPC has any seeds in its inventory, then look for empty farm plots that need tending
+            if (_hasSeed)
+            {
+                _farmData = FarmPlotManager.Instance.GetFarmPlotsNearby(position, true);
+                if (_farmData == null)
+                {
+                    var farmDatas = FarmPlotManager.Instance.GetCloseFarmPlots(position);
+                    if (farmDatas.Count > 0)
+                        _farmData = farmDatas[0];
+                }
+            }
+
+            // No farm plots or maintenance that are that close? Cast the net a bit wider
+            if (_farmData == null)
+            {
+                //    _farmData = FarmPlotManager.Instance.GetFarmPlotsNearbyWithPlants(position);
+                //if (_farmData == null)
+                _farmData = FarmPlotManager.Instance.GetClosesUnmaintainedWithPlants(position);
+                if (_farmData == null)
+                    _farmData = FarmPlotManager.Instance.GetClosesUnmaintained(position, range);
+            }
+
+            // Check for wilted...?
+            if( _farmData == null )
+                _farmData =FarmPlotManager.Instance.GetClosesFarmPlotsWilted(position);
+
+            if (_farmData == null)
+            {
+                FarmPlotManager.Instance.ResetPlantsInRange(position);
+                hadBuff = true;
+                base.Stop(_context);
+                return;
+            }
+
+            _vector = _farmData.GetBlockPos();
+
+            SCoreUtils.FindPath(_context, _vector, false);
+            _context.ActionData.Started = true;
+            _context.ActionData.Executing = true;
+            return;
+
 
         }
 
@@ -130,54 +172,5 @@ namespace UAI
             return false;
         }
 
-
-        // Yes. This is gross. I've done worse.
-        public override void Start(Context _context)
-        {
-            hadBuff = false;
-            timeOut = 100f;
-
-            _farmData = null;
-            plantData = null;
-            _hasSeed = HasSeed(_context);
-            var position = new Vector3i(_context.Self.position);
-
-            // If the NPC has any seeds in its inventory, then look for empty farm plots that need tending
-            if (_hasSeed)
-            {
-                _farmData = FarmPlotManager.Instance.GetFarmPlotsNearby(position);
-                if (_farmData == null)
-                    _farmData = FarmPlotManager.Instance.GetClosesUnmaintained(position, range);
-
-
-            }
-            else
-            {
-                _farmData = FarmPlotManager.Instance.GetFarmPlotsNearbyWithPlants(position);
-                if (_farmData == null)
-                    _farmData = FarmPlotManager.Instance.GetClosesUnmaintainedWithPlants(position);
-
-                //plantData = CropManager.Instance.GetPlantDataNearby(position);
-                //if (plantData == null)
-                //    plantData = CropManager.Instance.GetClosesUnmaintained(position, range);
-
-                //if (plantData != null)
-                //    _vector = plantData.BlockPos;
-            }
-            if (_farmData == null)
-            {
-                hadBuff = true;
-                Stop(_context);
-                return;
-            }
-            _vector = _farmData.GetBlockPos();
-
-            SCoreUtils.FindPath(_context, _vector, false);
-            _context.ActionData.Started = true;
-            _context.ActionData.Executing = true;
-            return;
-
-
-        }
     }
 }

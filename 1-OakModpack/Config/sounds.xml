@@ -952,6 +952,38 @@
 	<AudioClip ClipName="#@modfolder:Resources/PoliceCarSounds.unity3d?PoliceCarStart"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 		
+	<!-- Monobikes -->
+	
+	<SoundDataNode name="Mono_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/MonoSounds.unity3d?BicycleHorn"/>
+	<AudioClip ClipName="#@modfolder:Resources/MonoSounds.unity3d?BicycleHorn"/>
+	<AudioClip ClipName="#@modfolder:Resources/MonoSounds.unity3d?BicycleHorn"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+	
+	<SoundDataNode name="Mono_idle_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/MonoSounds.unity3d?MotorbikeIdl" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+	<SoundDataNode name="Mono_max_speed_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/MonoSounds.unity3d?MotorbikeRider" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+		
+	<SoundDataNode name="Mono_accel1"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/MonoSounds.unity3d?MotorbikeRider"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+	<SoundDataNode name="Mono_shutoff"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/MonoSounds.unity3d?MotorbikeShutOff"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+
+	<SoundDataNode name="Mono_Start"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/MonoSounds.unity3d?MotorbikeStart"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
 	</append>
 	
 </configs>	

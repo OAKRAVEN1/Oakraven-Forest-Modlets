@@ -48,7 +48,10 @@
 		<item name="vehicleHellSpikes4x4ChassisSchematic"/>
 		<item name="vehicleHellSpikes4x4AccessoriesSchematic"/>
 		<item name="vehicleHellMaxCarChassisSchematic"/>
-		<item name="vehicleHellMaxCarAccessoriesSchematic"/>		
+		<item name="vehicleHellMaxCarAccessoriesSchematic"/>
+		<item name="vehicleMonoChassisSchematic"/>
+		<item name="vehicleMonoHandlebarsSchematic"/>
+		<item name="vehicleMonoWheelSchematic"/>		
 	</append>
 	
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='vehiclePartsT0']">
@@ -57,7 +60,10 @@
 		<item name="vehicleSpiderRiderPlaceable"/>
 		<item name="vehicleHellDawgChassis"/>
 		<item name="vehicleHellDawgHandlebars"/>
-		<item name="vehicleHellDawgPlaceable"/>		
+		<item name="vehicleHellDawgPlaceable"/>
+		<item name="vehicleMonoChassis"/>
+		<item name="vehicleMonoHandlebars"/>
+		<item name="vehicleMonoWheel"/>		
 	</append>	
 
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='vehiclePartsT1']">

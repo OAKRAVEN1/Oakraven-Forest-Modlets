@@ -103,6 +103,28 @@
 				<property name="VehicleNoTake" value="false" />
 
 				<property name="ExtendedSigns" value="true" />
+				
+				<!-- Enables item weight encumbrance on the Player bag -->
+				<property name="Encumbrance" value="false" />
+
+				<!-- how much encumbrance before "max" threshold is set, and penalties are incurred. -->
+				<!-- MaxEncumbrance value can be over-ridden by having a cvar of the same name on the player -->
+				<!-- The CVar value will over-ride his value. -->
+				<property name="MaxEncumbrance" value="10000" />
+
+				<!-- This cvar value will be placed on the player and will be a percentage of encumbrance. -->
+				<!-- 1f = at max encumbrance. 1.5, 50% over encumbrance -->
+				<property name="EncumbranceCVar" value="encumbranceCVar" />
+				
+				<!-- Include Tool belt? -->
+				<property name="Encumbrance_ToolBelt" value="false" />
+				
+				<!-- Include equipment ? -->
+				<property name="Encumbrance_Equipment" value="false" />
+				
+				<!-- Each item that does not have a ItemWeight property will be weighed at this value. -->
+				<property name="MinimumWeight" value="0.1" />
+				
 			</property>
 
 			<property class="AdvancedZombieFeatures">
@@ -292,23 +314,28 @@
 				
 				<!-- How much damage to do to the water source when it gets consumed -->
 				<property name="WaterDamage" value="1" />
+
+				<!-- Default particle for when a crop is used.-->
+				<!-- ie: #@modfolder:Resources/guppyFountainDisplay.unity3d?gupFountainDisplay from Bloom's -->
+				<property name="WaterParticle" value="NoParticle" />
 				
 			</property>
 
 			<property class="FireManagement" >
 				<property name="Logging" value="false"/>
 				<property name="FireEnable" value="false"/> 				<!-- Enables the feature -->
-				<property name="HeatMapStrength" value="1"/> 			<!-- Determines how much each block contributes to heat -->
 				<property name="CheckInterval" value="20" /> 				<!-- How many seconds before checking blocks,spreading fire, etc -->
 				<property name="FireDamage" value="50" /> 				<!-- How much damage each time it checks will do the block. -->
 				<property name="SmokeTime" value="60" />					<!-- How long the smoke will stay on a block. -->
-				<property name="FireSound" value="FireMediumLoop" />		<!-- Sound Data Node to use. Can be over-ridden by individual block -->
+				<property name="FireSound" value="SCoreMediumLoop" />		<!-- Sound Data Node to use. Can be over-ridden by individual block -->
 				<property name="BuffOnFire" value="buffBurningMolotov" /> <!-- The buff that is applied to the entity alive when they step into the flames -->
-				<property name="MaterialID" value="Mplants, Mcorn" /> 	<!-- Checks the material's id to see if it should ignite  -->
+				<property name="MaterialID" value="Mplants, Mcorn, Mhay" /> 	<!-- Checks the material's id to see if it should ignite  -->
 				<property name="MaterialDamage" value="wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack, organic" /> <!-- Checks the material's damage category to see if it should ignite  -->
 				<property name="MaterialSurface" value="wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack, organic" /> <!-- Checks the material's surface category to see if it should ignite -->
 				<property name="SmokeParticle" value="#@modfolder:Resources/PathSmoke.unity3d?P_PathSmoke_X" />		<!-- Fire particle to use -->
 				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis05-Heavy" /> <!-- Fire particle to use -->
+				<property name="FireSpread" value="true" /> <!-- When enabled, fire can spread to neighborblocks.-->
+
 				<!-- Alternative included particles -->
 				<!--
 				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis02-CampFire" />
@@ -318,6 +345,28 @@
 				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis06-HeavyLight" />
 				-->
 			</property>	
+			
+			<property class="ExternalParticles">
+				<!-- The name is not used by the system. You can use this value as a reference for your notes.
+				 	The index value will be displayed in the log during a game boot up. 
+				
+					Review the log to find out your index. 
+					The Index is a GetHashCode() on the value. -
+				
+				Sample Values 
+				<property name="SmokeParticle" value="#@modfolder:Resources/PathSmoke.unity3d?P_PathSmoke_X" />
+				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis05-Heavy" />
+				
+				<property name="gupBlueEnergyTransfer" value="#@modfolder:Resources/gupParticleIndexes.unity3d?gupBlueEnergyTransfer"/>
+				<property name="gupIceExplosion" value="#@modfolder:Resources/gupParticleIndexes.unity3d?gupIceExplosion"/>
+				<property name="gupLightningSparks" value="#@modfolder:Resources/gupParticleIndexes.unity3d?gupLightningSparks"/>
+				<property name="gupPurpleFireRing" value="#@modfolder:Resources/gupParticleIndexes.unity3d?gupPurpleFireRing"/>
+				<property name="gupRedExplosion" value="#@modfolder:Resources/gupParticleIndexes.unity3d?gupRedExplosion"/>
+				<property name="gupRockStorm" value="#@modfolder:Resources/gupParticleIndexes.unity3d?gupRockStorm"/>
+				<property name="gupSkullBloodMist" value="#@modfolder:Resources/gupParticleIndexes.unity3d?gupSkullBloodMist"/>
+				<property name="gupScriptsExplosion" value="#@modfolder:Resources/gupParticleIndexes.unity3d?gupScriptsExplosion"/>
+				-->
+			</property>
 		</block>
 
 		<block name="PathingCube">

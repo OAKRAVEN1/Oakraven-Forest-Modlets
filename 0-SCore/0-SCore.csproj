@@ -24,7 +24,8 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>SCore.xml</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -49,6 +50,7 @@
     <Compile Include="Harmony\Animation\EmodelBaseLookAtUpdate.cs" />
     <Compile Include="Harmony\Animation\ModelBaseInitCommon.cs" />
     <Compile Include="Harmony\Atmosphere\Spook.cs" />
+    <Compile Include="Harmony\Blocks\AttachScriptToTransform.cs" />
     <Compile Include="Harmony\Blocks\BlockPlantGrowing.cs" />
     <Compile Include="Harmony\Blocks\BlockSecureLoot.cs" />
     <Compile Include="Harmony\Blocks\BlockWorkarounds.cs" />
@@ -75,11 +77,13 @@
     <Compile Include="Harmony\Fire\Explosion.cs" />
     <Compile Include="Harmony\FoodSpoilage\FoodSpoilage.cs" />
     <Compile Include="Harmony\GameManager\BroadcastHook.cs" />
+    <Compile Include="Harmony\GameManager\ExplosionClient.cs" />
     <Compile Include="Harmony\GameManager\FireHooks.cs" />
     <Compile Include="Harmony\GamePath\TraversalProvider.cs" />
     <Compile Include="Harmony\GamePath\UtilsDrawLine.cs" />
     <Compile Include="Harmony\ItemActions\AdvancedItems.cs" />
     <Compile Include="Harmony\ItemActions\DurabilityAffectsDamage.cs" />
+    <Compile Include="Harmony\ItemActions\ItemActionHandleBreakItem.cs" />
     <Compile Include="Harmony\ItemActions\ItemActionMelee.cs" />
     <Compile Include="Harmony\ItemActions\ItemClass.cs" />
     <Compile Include="Harmony\Menu_ClearCache.cs" />
@@ -95,7 +99,9 @@
     <Compile Include="Harmony\NPCFeatures\EntityNPCMakeVulnerable.cs" />
     <Compile Include="Harmony\NPCFeatures\EntityNPCSpeedFix.cs" />
     <Compile Include="Harmony\NPCFeatures\EntityTraderEModalSetLookAt.cs" />
+    <Compile Include="Harmony\PlayerFeatures\Encumbrance.cs" />
     <Compile Include="Harmony\PlayerFeatures\EntityStats.cs" />
+    <Compile Include="Harmony\PlayerFeatures\ItemActionRepairPatches.cs" />
     <Compile Include="Harmony\PlayerFeatures\NerdPoll.cs" />
     <Compile Include="Harmony\PlayerFeatures\OneBlockCrouch.cs" />
     <Compile Include="Harmony\PlayerFeatures\PlayerMoveControllerUpdate.cs" />
@@ -129,6 +135,7 @@
     <Compile Include="Harmony\UtilityAI\UAIPackage.cs" />
     <Compile Include="Harmony\UtilityAI\UAITaskBase.cs" />
     <Compile Include="Harmony\UtilityAI\UtilityAIPatches.cs" />
+    <Compile Include="Harmony\Vehicles\NoVehicleTake.cs" />
     <Compile Include="Harmony\Vehicles\NoVechileTake.cs" />
     <Compile Include="Harmony\WorldGen\CaveProject.cs" />
     <Compile Include="Harmony\WorldGen\HeightMapCaveSystem.cs" />
@@ -169,10 +176,13 @@
     <Compile Include="Scripts\Blocks\Water Blocks\BlockBaseWaterSystem.cs" />
     <Compile Include="Scripts\Blocks\Water Blocks\BlockWaterPipeSDX.cs" />
     <Compile Include="Scripts\Blocks\Water Blocks\BlockWaterSourceSDX.cs" />
+    <Compile Include="Scripts\Buffs\HoldingItemDurability.cs" />
     <Compile Include="Scripts\Buffs\RequirementEveryDawn.cs" />
     <Compile Include="Scripts\Buffs\RequirementEveryXDaySDX.cs" />
     <Compile Include="Scripts\Buffs\RequirementEveryXHourSDX.cs" />
+    <Compile Include="Scripts\Buffs\RequirementHoldingItemDurability.cs" />
     <Compile Include="Scripts\Buffs\RequirementIsBloodMoon.cs" />
+    <Compile Include="Scripts\Buffs\RequirementIsOutdoor.cs" />
     <Compile Include="Scripts\Buffs\RequirementIsUnderground.cs" />
     <Compile Include="Scripts\Buffs\RequirementLookingAt.cs" />
     <Compile Include="Scripts\Buffs\RequirementOnSpecificBiomeSDX.cs" />
@@ -180,6 +190,7 @@
     <Compile Include="Scripts\Buffs\RequirementSameFactionSDX.cs" />
     <Compile Include="Scripts\Cache\SphereCache.cs" />
     <Compile Include="Scripts\ConsoleCmd\ConsoleCmdActionFireClear.cs" />
+    <Compile Include="Scripts\ConsoleCmd\ConsoleCmdDumpEntities.cs" />
     <Compile Include="Scripts\ConsoleCmd\ConsoleCmdUnitTestSCore.cs" />
     <Compile Include="Scripts\ConsoleCmd\ConsoleCmdlock.cs" />
     <Compile Include="Scripts\ConsoleCmd\ConsoleCmdUtilityAI.cs" />
@@ -270,6 +281,10 @@
     <Compile Include="Scripts\Managers\SCoreQuestEventManager.cs" />
     <Compile Include="Scripts\Managers\WaterPipeManager.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionAddBuffByFactionSDX.cs" />
+    <Compile Include="Scripts\MinEvents\MinEventActionAddScriptToTransform.cs" />
+    <Compile Include="Scripts\MinEvents\MinEventActionRecalculateEncumbrance.cs" />
+    <Compile Include="Scripts\MinEvents\MinEventActionExecuteConsoleCommandCVars.cs" />
+    <Compile Include="Scripts\MinEvents\MinEventActionSetDateToCVar.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionAttachPrefabWithAnimationsToEntity.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionCheckFireProximity.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionClearOwner.cs" />
@@ -334,6 +349,7 @@
     <Compile Include="Scripts\Quests\QuestActionGiveCVarBuffSDX.cs" />
     <Compile Include="Scripts\Quests\QuestActionPlaySound.cs" />
     <Compile Include="Scripts\Quests\QuestActionReplaceEntitySDX.cs" />
+    <Compile Include="Scripts\Quests\QuestActionSetRevengeTargetsSDX.cs" />
     <Compile Include="Scripts\Quests\QuestActionSpawnEntitySDX.cs" />
     <Compile Include="Scripts\Quests\QuestUtils.cs" />
     <Compile Include="Scripts\Quests\RewardGiveBuff.cs" />
@@ -443,6 +459,7 @@
     <Content Include="Config\loadingscreen.xml" />
     <Content Include="Config\Localization.txt" />
     <Content Include="Config\quests.xml" />
+    <Content Include="Config\sounds.xml" />
     <Content Include="Config\spawning.xml" />
     <Content Include="Config\utilityai.xml" />
     <Content Include="Config\XUi\windows.xml" />
@@ -663,6 +680,9 @@
       <HintPath>..\..\7DaysToDie_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\7DaysToDie_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
       <HintPath>..\..\7DaysToDie_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
       <Private>False</Private>
@@ -700,5 +720,18 @@
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+
+			:: Update the ModInfo.xml
+			IF EXIST $(ProjectDir)\ModInfo.xml (
+				IF EXIST ..\Tools\bin\sed.exe (
+					:: Sort out the version number from the Configuration, and grab the last digits of the Version number
+					echo Updating Version number to @(VersionNumber)
+					..\Tools\bin\sed.exe -i "s/Version value=\"*.*.*.*\"/Version value=\"@(VersionNumber)\"/g" ModInfo.xml
+				)
+			)
+		</PostBuildEvent>
   </PropertyGroup>
 </Project>

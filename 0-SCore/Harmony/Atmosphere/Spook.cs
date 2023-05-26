@@ -3,33 +3,42 @@ using UnityEngine;
 
 namespace Harmony.Atmosphere
 {
+    /// <summary>
+    /// This class of patches manipulate the world to generate a more spooky atmosphere.
+    /// </summary>
     public class Spook
     {
         private const string AdvFeatureClass = "Theme";
         private const string Feature = "Spook";
-
-        // Makes the world in perpetual dark.
-        public class SpookSkyManagerBloodMoon
+        
+        // Constant Blood Moon
+        /// <summary>
+        /// When SCore's Theme, Spook feature is enabled, the blood moon atmosphere events will be enabled. This includes thunder and lightening.
+        /// Note: This does not change the Blood Moon to trigger on any particular day. Just the effects.
+        /// </summary>
+        [HarmonyPatch(typeof(SkyManager))]
+        [HarmonyPatch("IsBloodMoonVisible")]
+        public class SkyManagerIsBloodMoonVisible
         {
-            // Constant Blood Moon
-            [HarmonyPatch(typeof(SkyManager))]
-            [HarmonyPatch("IsBloodMoonVisible")]
-            public static bool Prefix(ref bool __result)
+            public static bool Postfix(bool __result)
             {
                 if (!Configuration.CheckFeatureStatus(AdvFeatureClass, Feature))
-                    return true;
+                    return __result;
 
+                // Darken the sun a bit.
                 SkyManager.SetSunIntensity(0.3f);
-                __result = true;
-                return false;
+                return true;
             }
         }
 
-        // Places Blood on the ground when an entity dies.
-        public class SpookEntityAliveOnEntityDeath
+        
+        /// <summary>
+        /// When the SCore's Theme, Spook feature is enabled, any entity that dies will leave being a blood decal.
+        /// </summary>
+        [HarmonyPatch(typeof(global::EntityAlive))]
+        [HarmonyPatch("OnEntityDeath")]
+        public class EntityAlive_OnEntityDeath_BloodSplatter
         {
-            [HarmonyPatch(typeof(global::EntityAlive))]
-            [HarmonyPatch("OnEntityDeath")]
             public static void Postfix(global::EntityAlive __instance)
             {
                 if (!Configuration.CheckFeatureStatus(AdvFeatureClass, Feature))

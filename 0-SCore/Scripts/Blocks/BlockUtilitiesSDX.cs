@@ -91,7 +91,9 @@ public static class BlockUtilitiesSDX
 
     public static void addParticlesCentered(string strParticleName, Vector3i position)
     {
-        if (strParticleName == null || strParticleName == "")
+        if (GameManager.IsDedicatedServer) return;
+
+        if (string.IsNullOrEmpty(strParticleName))
             strParticleName = "#@modfolder(0-SCore):Resources/PathSmoke.unity3d?P_PathSmoke_X";
 
         if (strParticleName == "NoParticle")
@@ -103,8 +105,7 @@ public static class BlockUtilitiesSDX
         if (GameManager.Instance.HasBlockParticleEffect(position)) 
             return;
 
-        if (GameManager.IsDedicatedServer) return;
-
+        
         var centerPosition = EntityUtilities.CenterPosition(position);
         var blockValue = GameManager.Instance.World.GetBlock(position);
         var particle = new ParticleEffect(strParticleName, centerPosition, blockValue.Block.shape.GetRotation(blockValue), 1f, Color.white);

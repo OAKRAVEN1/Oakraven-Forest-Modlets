@@ -210,7 +210,7 @@
 		</effect_group>	
 		<effect_group>		
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"
-				tags="vehicleSpiderRiderChassis,vehicleSpiderRiderHandlebars,vehicleHellDawgChassis,vehicleHellDawgHandlebars"/>	
+				tags="vehicleSpiderRiderChassis,vehicleSpiderRiderHandlebars,vehicleHellDawgChassis,vehicleHellDawgHandlebars,vehicleMonoChassis,vehicleMonoHandlebars,vehicleMonoWheel"/>	
 		</effect_group>
 		<effect_group>		
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1"

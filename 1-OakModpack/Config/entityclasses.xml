@@ -4031,6 +4031,155 @@
 			<property name="MapIcon" value="steamtrainicon"/>
 			<property name="NavObject" value="SteamHorse"/>
 		</entity_class>
+		
+		<!-- Monobikes -->
+		
+		<entity_class name="vehicleMonobike">
+	       <property name="Tags" value="vehicle"/>
+	       <property name="Class" value="EntityMotorcycle"/>
+	       <property name="Parent" value="Cars"/>
+	       <property name="Prefab" value="#@modfolder:Resources/MonoBike.unity3d?MonoBike"/>
+	       <property name="ModelType" value="Standard"/>
+	       <property name="SurfaceCategory" value="metal"/>
+	       <property name="IgnoreTrigger" value="true"/>
+	       <property name="LootListAlive" value="vehicleMotorcycle"/>
+	       <property name="IsEnemyEntity" value="false"/>
+	       <property name="Explosion.ParticleIndex" value="6"/>
+	       <property name="Explosion.RadiusBlocks" value="4"/>
+	       <property name="Explosion.RadiusEntities" value="4"/>
+	       <property name="Explosion.BlockDamage" value="50"/>
+	       <property name="Explosion.EntityDamage" value="50"/>
+	       <property name="RotateToGround" value="true"/>
+	       <property name="Faction" value="none"/>
+	       <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+	       <property name="NavObject" value="motorcycle" />
+        </entity_class>		
+		
+		<entity_class name="vehicleMonobikeGreen">
+	       <property name="Tags" value="vehicle"/>
+	       <property name="Class" value="EntityMotorcycle"/>
+	       <property name="Parent" value="Cars"/>
+	       <property name="Prefab" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeGreen"/>
+	       <property name="ModelType" value="Standard"/>
+	       <property name="SurfaceCategory" value="metal"/>
+	       <property name="IgnoreTrigger" value="true"/>
+	       <property name="LootListAlive" value="vehicleMotorcycle"/>
+	       <property name="IsEnemyEntity" value="false"/>
+	       <property name="Explosion.ParticleIndex" value="6"/>
+	       <property name="Explosion.RadiusBlocks" value="4"/>
+	       <property name="Explosion.RadiusEntities" value="4"/>
+	       <property name="Explosion.BlockDamage" value="50"/>
+	       <property name="Explosion.EntityDamage" value="50"/>
+	       <property name="RotateToGround" value="true"/>
+	       <property name="Faction" value="none"/>
+	       <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+	       <property name="NavObject" value="motorcycle" />
+        </entity_class>
+		
+		<entity_class name="vehicleMonobikeOld">
+	       <property name="Tags" value="vehicle"/>
+	       <property name="Class" value="EntityMotorcycle"/>
+	       <property name="Parent" value="Cars"/>
+	       <property name="Prefab" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeOld"/>
+	       <property name="ModelType" value="Standard"/>
+	       <property name="SurfaceCategory" value="metal"/>
+	       <property name="IgnoreTrigger" value="true"/>
+	       <property name="LootListAlive" value="vehicleMotorcycle"/>
+	       <property name="IsEnemyEntity" value="false"/>
+	       <property name="Explosion.ParticleIndex" value="6"/>
+	       <property name="Explosion.RadiusBlocks" value="4"/>
+	       <property name="Explosion.RadiusEntities" value="4"/>
+	       <property name="Explosion.BlockDamage" value="50"/>
+	       <property name="Explosion.EntityDamage" value="50"/>
+	       <property name="RotateToGround" value="true"/>
+	       <property name="Faction" value="none"/>
+	       <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+	       <property name="NavObject" value="motorcycle" />
+        </entity_class>
+		
+		<entity_class name="vehicleMonobikeArmy">
+	       <property name="Tags" value="vehicle"/>
+	       <property name="Class" value="EntityMotorcycle"/>
+	       <property name="Parent" value="Cars"/>
+	       <property name="Prefab" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeArmy"/>
+	       <property name="ModelType" value="Standard"/>
+	       <property name="SurfaceCategory" value="metal"/>
+	       <property name="IgnoreTrigger" value="true"/>
+	       <property name="LootListAlive" value="vehicleMotorcycle"/>
+	       <property name="IsEnemyEntity" value="false"/>
+	       <property name="Explosion.ParticleIndex" value="6"/>
+	       <property name="Explosion.RadiusBlocks" value="4"/>
+	       <property name="Explosion.RadiusEntities" value="4"/>
+	       <property name="Explosion.BlockDamage" value="50"/>
+	       <property name="Explosion.EntityDamage" value="50"/>
+	       <property name="RotateToGround" value="true"/>
+	       <property name="Faction" value="none"/>
+	       <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+	       <property name="NavObject" value="motorcycle" />
+        </entity_class>
+		
+		<entity_class name="vehicleMonobikeVin">
+	       <property name="Tags" value="vehicle"/>
+	       <property name="Class" value="EntityMotorcycle"/>
+	       <property name="Parent" value="Cars"/>
+	       <property name="Prefab" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeVin"/>
+	       <property name="ModelType" value="Standard"/>
+	       <property name="SurfaceCategory" value="metal"/>
+	       <property name="IgnoreTrigger" value="true"/>
+	       <property name="LootListAlive" value="vehicleMotorcycle"/>
+	       <property name="IsEnemyEntity" value="false"/>
+	       <property name="Explosion.ParticleIndex" value="6"/>
+	       <property name="Explosion.RadiusBlocks" value="4"/>
+	       <property name="Explosion.RadiusEntities" value="4"/>
+	       <property name="Explosion.BlockDamage" value="50"/>
+	       <property name="Explosion.EntityDamage" value="50"/>
+	       <property name="RotateToGround" value="true"/>
+	       <property name="Faction" value="none"/>
+	       <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+	       <property name="NavObject" value="motorcycle" />
+        </entity_class>
+		
+		<entity_class name="vehicleMonobikeRed">
+	       <property name="Tags" value="vehicle"/>
+	       <property name="Class" value="EntityMotorcycle"/>
+	       <property name="Parent" value="Cars"/>
+	       <property name="Prefab" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeRed"/>
+	       <property name="ModelType" value="Standard"/>
+	       <property name="SurfaceCategory" value="metal"/>
+	       <property name="IgnoreTrigger" value="true"/>
+	       <property name="LootListAlive" value="vehicleMotorcycle"/>
+	       <property name="IsEnemyEntity" value="false"/>
+	       <property name="Explosion.ParticleIndex" value="6"/>
+	       <property name="Explosion.RadiusBlocks" value="4"/>
+	       <property name="Explosion.RadiusEntities" value="4"/>
+	       <property name="Explosion.BlockDamage" value="50"/>
+	       <property name="Explosion.EntityDamage" value="50"/>
+	       <property name="RotateToGround" value="true"/>
+	       <property name="Faction" value="none"/>
+	       <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+	       <property name="NavObject" value="motorcycle" />
+        </entity_class>
+		
+		<entity_class name="vehicleMonobikeShark">
+	       <property name="Tags" value="vehicle"/>
+	       <property name="Class" value="EntityMotorcycle"/>
+	       <property name="Parent" value="Cars"/>
+	       <property name="Prefab" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeShark"/>
+	       <property name="ModelType" value="Standard"/>
+	       <property name="SurfaceCategory" value="metal"/>
+	       <property name="IgnoreTrigger" value="true"/>
+	       <property name="LootListAlive" value="vehicleMotorcycle"/>
+	       <property name="IsEnemyEntity" value="false"/>
+	       <property name="Explosion.ParticleIndex" value="6"/>
+	       <property name="Explosion.RadiusBlocks" value="4"/>
+	       <property name="Explosion.RadiusEntities" value="4"/>
+	       <property name="Explosion.BlockDamage" value="50"/>
+	       <property name="Explosion.EntityDamage" value="50"/>
+	       <property name="RotateToGround" value="true"/>
+	       <property name="Faction" value="none"/>
+	       <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+	       <property name="NavObject" value="motorcycle" />
+        </entity_class>
 
 	</append>
 

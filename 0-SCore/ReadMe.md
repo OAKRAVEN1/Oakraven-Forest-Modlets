@@ -8,8 +8,461 @@ The 0-SCore is the key component to enable extra functionality for 7 Days To Die
 | Harmony | Many harmony scripts to make small adjustments to the game. These scripts, for the most part, can be turned on and off via the blocks.xml|
 | Scripts | Many Scripts which include new classes. References to these scripts would be  ```<className>, SCore```  |
 
+Each release could potentially include fixes or entries here that say "Code Cleanup". This implies that the functionality remained the same, 
+but was just refactored in someway. This may include additional null checks, formatting issues, or variable renames. XML hooks will remain unchanged.
 
 [ Change Log ]
+Version: 20.6.479.849
+
+	[ Fire Managers ]
+		- Final Audio / Particle fixes for crashes in some instances.
+			- Particles would throw exceptions if they were being placed there off the main thread.
+			- Fire / Smoke Particles are now being pre-registered in the Init() of the Fire Manager
+		- Sound: Changed to BroadcastPlay / BroadCastStop, in addition to a mainthread check
+
+Version: 20.6.478.2052
+
+	[ Fire Manager ]
+		- Added a check for particles being registered on dedi
+
+	[ Sound Feature ]
+		- Disable the sound logging by default in blocks.xml
+
+
+Version: 20.6.478.1822
+
+	[ Fire Manager ] 
+		- Re-added main thread check for adding sounds.
+
+	[ HoldingItemDurability ]
+		- Addes a new Buff Requirement that tests the item durability of the holding item:
+			<requirement name="HoldingItemDurability, SCore" value="0.5"/>
+
+	[ Sound / Buff / Quest ]
+		- Code cleanup.
+
+	[ MinEventActionAddScriptToTransform ] 
+		- This will attach scripts to entity's using the minevent.
+		- This is probably okay to try to use.
+		- It will recursively go through the entity's, walking through all its transform, looking for matches.
+			- If more than one match is found, the script is added to each one.
+			- At least one component, or one transform, must be defined. 
+			- A component and transform values are both valid, on the same event.
+				- The script will be attached to every component and transform that is found.
+
+			<triggered_effect trigger="onSelfEnteredGame" 
+				action="AddScriptToTransform, SCore"
+				component="Animator"	// Optional: Add the script to this component, regardless of transform name.
+				transform="Camera" 		// Optional: Add the script to the transform that has this name.
+				script="GlobalSnowEffect.GlobalSnow, BetterBiomeEffects"/>  // Namespace.Class, Assembly
+
+		- This MinEvent supports the following:
+			- Transform: This searches for the transform with matching name.
+				<triggered_effect trigger="onSelfEnteredGame" action="AddScriptToTransform, SCore" transform="Camera" script="GlobalSnowEffect.GlobalSnow, BetterBiomeEffects"/>
+
+			- Component: This searches for the type of component. 
+				Supported Components:  Animator, RigidBody, Renderer, EntityAlive, Collider
+
+			Example:
+				<triggered_effect trigger="onSelfEnteredGame" action="AddScriptToTransform, SCore" component="Animator" script="GlobalSnowEffect.GlobalSnow, BetterBiomeEffects"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AddScriptToTransform, SCore" component="RigidBody" script="GlobalSnowEffect.GlobalSnow, BetterBiomeEffects"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AddScriptToTransform, SCore" component="Renderer" script="GlobalSnowEffect.GlobalSnow, BetterBiomeEffects"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AddScriptToTransform, SCore" component="EntityAlive" script="GlobalSnowEffect.GlobalSnow, BetterBiomeEffects"/>
+
+
+Version:  20.6.467.917
+
+	[ Quests ]
+		- Merged khzmusik's new Quest Action.
+
+			This quest objective sets the revenge targets of all entities in range.
+
+			<action type="SetRevengeTargetsSDX" id="party" value="location" phase="2" />
+
+	[ Lock Pick ]
+		- Adjusted MaxGiveAmount to be 2 * the perk level
+
+	[ Music Boxes ]
+		- Reformatted, and refactored
+
+	[ IsActive ]
+		- Fixed some issues with the TileEntity AlwaysActive
+		- Re-enabled full Winter-Project support
+
+	[ Inert ]
+		- When an entity is inert, the entity is paused. No animations, no sound, no attacks, and takes no damage.
+		- When an entity has the following property, it will only be active at night. Otherwise, it'll be considered inert.
+		      <property name="EntityActiveWhen" value="night" /> <!-- alternative is day -->
+		- Added a check for TargetIsAlive if the entity is Inert or not. If it is, it's ignored.
+		- Added checks for IsEnemyNearby, and CanSeeTarget to do Inert checks.
+		- Added patches so inert entities will not make a sound.
+
+	[ Fire Manager ]
+		- Tagged Material: Mhay to be flammable.
+		- Re-factored FireManager to be clearer.
+		- Added some performance tweaks:
+			- Sound will not always play on each fire block. Instead, each block will have a random chance to either play a sound or not. (10% chance to play a sound)
+			- Added 5% chance for a block to self-extinguish.	
+			- These checks are re-evaluable on the CheckInterval time.
+		- Added a check for Explosion.
+			- If a block has an explosion property, and is set as flammable, the block will trigger an explosion when it downgrades.
+		
+	[ Explosion Particles ]
+		- The vanilla prefabExplosions array that maintains a list of possible explosion particles via the Explosion.ParticleIndex is set to 20.
+		- When a game starts, the SCore will check it's ConfigurationBlock's ExternalParticles node for external particles.
+			Example:
+				<property class="ExternalParticles">
+					<!-- The name is not used by the system. The index value will be displayed in the log during a game boot up. -->
+					<!-- Review the log to find out your index. -->
+					<!-- The Index is a GetHashCode() on the value. -->
+					<property name="SmokeParticle" value="#@modfolder:Resources/PathSmoke.unity3d?P_PathSmoke_X" />
+					<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis05-Heavy" /> 
+				</property>
+
+		- If a particle entry is detected, this particle will be registered with the main ParticleEffect.RegisterBundleParticleEffect.
+			- This is the same particle effect that is used elsewhere in the system, including the Fire Manager.
+		- The index of this particle will be the bundle's GetHashCode(). 
+			- This value can be viewed in the log file:
+				Registering External Particle: Index: -87591912 for #@modfolder(0-SCore):Resources/PathSmoke.unity3d?P_PathSmoke_X
+
+			- This index is what you should use in your Explosion.ParticleIndex.
+				<property name="Explosion.ParticleIndex" value="-87591912"/> 
+
+		- This check is applied via a Harmony patch to GameManager's ExplosionClient, and will be triggered if the ParticleIndex is not within a range of 0 and 20.
+
+		- Append to SCore's ConfigurationBlock's ExternalParticles Entry.
+		
+
+Version: 20.6.453.1912
+
+	[ Effect Group Requirement ]
+		- Fixed a bug where it just didn't work.
+
+		Tested Configuration, other combinations may work:
+
+			<effect_group name="RETURN BROKEN">
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="CreateItemSDX, SCore" item="resourceBone" >
+					<requirement name="HoldingItemDurability, SCore" operation="Equals" value=".1"/>
+				</triggered_effect>
+			</effect_group>
+
+	[ Fire Manager ]
+		- No code change, however wanted to say that the SetLightOff was moved from the GameUpdate loop, and moved behind the check interval.
+		- Performance increase potential.
+
+Version: 20.6.453.1540
+
+	[ Fire Spread ]
+		- New property in Config/blocks.xml.
+		- If FireSpread is false, fire will not spread to neighboring blocks.
+		- Default is true, fire will spread.
+
+	[ EntityAliveSDX ]
+		- Merged in FuriousRamsay's changes
+			- Remove the colliders on death, so you can keep bodies around afterwards
+			- Added lootable corpses.
+
+	[ Spook Theme ]
+		- Fixed an issue where Spook wasn't spookie. Effects easier to tell at night.
+
+
+	[ Effect Group Requirements ]
+		- Added a new Requirement, meant to be used in the effect_group / triggered events.
+		- Note: This is completely untested.
+	
+			<!-- True when the item is 100% broken -->
+		 	<requirement name="HoldingItemDurability, SCore" value="1"/>
+
+			<!-- True when the item is 50% broken -->
+		 	<requirement name="HoldingItemDurability, SCore" value="0.5"/>
+
+		Example on an items.xml reference:
+			<effect_group name="Check For Broken" >
+				<requirement name="HoldingItemDurability, SCore" value="1"/>
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="CreateItemSDX, SCore" item="whatever" />
+			</effect_group>
+
+
+Version: 20.6.442.1932
+
+	[ Food Spoilage ]
+		- Added an additional check for PreserveBonus -99 to not spoil when taken out.
+
+	[ Lock Picking ]
+		- If keyboard is not detected as the primary input device (ie, a controller is), then disable the lock mini game, and fall back to vanilla
+		
+		- Added a cvar check to fall back to regular lock picking
+			- If the player has the cvar LegacyLockPick  of greater value than 0, default lock picking will be used, skipping the mini-game.
+
+	[ MinEffect ]
+		Added Soleil Plein's new Console command that executes commands and passes cvar values to it.
+			<triggered_effect trigger = "onSelfBuffStart" action = "ExecuteConsoleCommandCVars, SCore" command = "testCommand {0} {1}" cvars = "cvar1,cvar2" />
+
+	[ Encumbrance ]
+		- Needed a way to re-calculate the encumbrance when the cvar for max encumbrance triggers.
+		- Not many good ways came to me for this, so I wrote a MinEffect. This will recalculate the encumbrance values.
+
+			<triggered_effect trigger = "onSelfBuffStart" action = "RecalculateEncumbrance, SCore"  />
+
+	[ Legacy Distance Terrain ]
+		- Disable Legacy Distant Terrain in GameModeEditWorld mode due to reported lag.
+
+Version: 20.6.247.845
+	[ Vehicle No Pick Up ]
+		- Fixed spelling error in NoVehicleTake.cs
+			- Left old name as an empty, mispelled file to be removed for A21... if I remember.
+
+	[ Farming ]
+		- Added property check for Direct Water Source.
+			<property name="WaterType" value="Unlimited" />
+		- Any block with that set will be an unlimited water source, and will not take damage from crops.
+		- Add to bedrock, or any other block you want.
+
+	[ Quests ]
+		- ObjectiveBuffSDX now displays the localized name_key for the buff.
+
+Version: 20.6.422.831
+
+	[ Vehicle No Pick Up ]
+		- Fixed a bug where removing the "take" option just shifted the index, not remove the functionality.
+
+		- Added a few filtering options, allowing modders to fine tune which vehicles can be picked up or not. 
+		- The follow conditions allow for vehicle pick up, listed by the order in which they are evaluated, if the feature is enabeld in the Config Block's VehicleNoTake
+			- If the vehicle has the tag: takeable
+			- If the Player has the cvar: {EntityVehicleName}_pickup, and this value is greater than 0.  
+				Example:     vehicleBicycle_pickup = 1
+			- If the Player has the cvar: PickUpAllVehicles, and this value is greater than 0.
+		- In all other cases, the vehicle's "take" command will be disabled.
+
+
+
+Version: 20.6.420.840
+	
+	[ Encumbrance ]
+		- Added a check that for block weight.
+			- Previous was only checking if the Item entry had a weight.
+			- Now checking ItemWeight, and if not found, will check the Block weight.
+			- If both item and block has different weight, the Item weight will take priority
+
+	[ Repair From Container ]
+		- Fixed the issue where the tool belt items were not being consumed.
+		- Activated original Repair Block code. Code was not added to project and not built.
+			- Disabled my own crummy implementation which was causing more bugs.
+
+
+Version: 20.6.416.1123
+
+	[ MinEvent ]
+		Added MinEventActionSetDateToCVar
+			This will set the Current Day to the CVAR $CurrentDay.
+
+			Example: 
+				<triggered_effect trigger="onSelfBuffStart" action="SetDateToCVar, SCore" target="self"/> 
+
+				CVar $CurrentDay will have the current game day.
+
+		
+	[ Farming ]
+		- Added debug information to water pipes, farm plots, and crops.
+			- If the player holds down the "Activate" key, it will display the information about water.
+
+			- Ie: holding down <E> by default will show information about some blocks.
+
+		- Adjusted the way that the Farming Task extracts Harvest / Items
+
+			Seeds:
+				- The first planted*1 item it finds will be the seed which is replanted.
+
+				Example:
+					<drop event="Destroy" name="plantedBlueberry1" count="1" prob="0.5"/>
+
+				- All planted*1 items will be removed from the harvest / destroy lists.
+				- The Farming Task will generate a new item to be used for planting.
+
+			Harvest:
+				- By default, all harvesting will continue as expected. 
+				- If the NPC has a cvar for the Harvest item, it will set the min and max count to that value.
+		
+				Example:
+					If MyFarmer has a cvar called "foodCropBlueberries", with a value of 5, MyFarmer will get 5 blueberries from each harvest,
+						regardless of prob or min / max count defined in the Harvest line.
+
+		- Adjusted Farming Task Scanning to include tending to wilted plants.
+
+		- Updated BlockWaterSourceSDX to be able to supply unlimited water, without requiring a water block itself, or doing damage.
+
+			<property name="WaterType" value="Unlimited" />
+
+			Default is limited, and is equivalent to 
+				<property name="WaterType" value="Limited" />
+
+		- The above property can also be applied to a BlockLiquidv2, and will have the same effect.
+			Default is limited.
+		
+
+Version: 20.6.414.1626
+	[ Farming ]
+		- Fixed a bug where the Farmer would not see FarmPlots
+			- The BlockFarmPlosSDX was not setting IsNotifyOnLoadUnload to true, thus it was not registering being loaded and unloaded.
+
+	[ Encumbrance ]
+		- Fixed a bug where the encumbrance of equipment was not being done correctly
+
+Version: 20.6.413.1556
+
+	[ Craft / Repair From Containers ]
+		- Adjusted permission for Broadcast feature to allow members of the same party to access locked containers.
+
+
+Version: 20.6.412.1907
+
+	[ Craft / Repair From Containers ]
+		- Rolled back a fix when count of items were doubled.
+			- Seems this fixes it for some containers, but for others, it displays no items.
+
+	[ Fire Manager ]
+		- Integrated FuriousRamsay's fix for the MinEffectAddFireDamage.
+			- In some cases, a melee weapon will set fire to contents on the other side of a wall or door, if the ray cast went through the block.
+
+	[ Farming ]
+		- Fixed an issue where a water plant was doing damage to a sprinkler, instead of water block
+		- Added an additional scan for UAITaskFarming to do a wider scan if it doesn't find anything interesting.
+
+Version: 20.6.409.1626
+
+	[ Craft / Repair From Containers ]	
+		- If a container is open, do not include the contents in the broadcast scan.
+
+	[ Farming ]
+		- Fixed an issue where a Plant could not consume water from the water, through the sprinkler.
+		- Added a fix to help improve Farmer to reach corner farm plots
+		- If a PlantGrowingSDX block has a PlantGrowing.Wilt, it will flag the plant to wilt if there's no water
+
+		- Added new Config Block Entry called WaterParticle on CropManagement node.
+
+			- When a plant consumes water, this particle will be applied.
+			- When a plant is first planted, this particle will be applied.
+			- Default particle in Bloom's Family Farming is from Guppycur. 
+				It will run for 5 seconds, then stop looping.
+				The particle is not removed until the plant is removed.
+
+			Default: 
+				<property name="WaterParticle" value="NoParticle" />
+
+			Bloom's Family Farming XPath:
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CropManagement']/property[@name='WaterParticle']/@value">#@modfolder:Resources/guppyFountainDisplay.unity3d?gupFountainDisplay</set>
+			
+			- Each Plant can over-ride the particle at the block level, using the same property. 
+				<!-- No particle for this particular plant -->
+				<property name="WaterParticle" value="NoParticle" />
+
+Version: 20.6.408.1442
+
+	[ Craft From Containers 
+		- Fixed an issue where craft / repair from containers was checking tool belt, then containers. 
+			It was checking to see if the item was in the backpack, but not consuming it.
+
+
+Version: 20.6.408.1121
+
+	[ Craft From Containers ]
+		- Fixed an issue where GetItemCount() patch was searching for ingredients twice, resulting in mis-reporting (2x amount actually available )
+
+	[ Encumbrance ]
+		- Added basic encumbrance.
+		- Encumbrance check fires when something is added / removed from back pack, toolbelt, and equipment.
+		- Once encumbrance is calculated, it's total value is added to a cvar, specified in the Config block. By default, this is encumbranceCVar.
+		- The value of the cvar is based on percent.  When set to 1f, the player is considered at MaxEncumbrance. 
+			- A value of 1.5 means the player is considered to b e 50% over encumbered.
+		- Maximum Encumbrance is read from the Config Block. However, if the CVar "MaxEncumbrance" is set, it will use that value instead.
+			- If Max Encumrabrance drops below 0, it will be reset to the Config Block Entry.
+			- The CVar will not be reset, only the value being used to perform the calculation.
+
+		- New configuration options added to SCore's Config block
+				<!-- Enables item weight encumbrance on the Player bag -->
+				<property name="Encumbrance" value="false" />
+
+				<!-- how much encumbrance before "max" threshold is set, and penalties are incurred. -->
+				<property name="MaxEncumbrance" value="10000" />
+
+				<!-- This cvar value will be placed on the player and will be a percentage of encumbrance. -->
+				<!-- 1f = at max encumbrance. 1.5, 50% over encumbrance -->
+				<property name="EncumbranceCVar" value="encumbranceCVar" />
+				
+				<!-- Include Tool belt? -->
+				<property name="Encumbrance_ToolBelt" value="false" />
+				
+				<!-- Include equipment ? -->
+				<property name="Encumbrance_Equipment" value="false" />
+				
+				<!-- Each item that does not have a ItemWeight property will be weighed at this value. -->
+				<property name="MinimumWeight" value="0.1" />
+
+
+			Recommend XPath:
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='Encumbrance']/@value">true</set>
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='Encumbrance_ToolBelt']/@value">true</set>
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='Encumbrance_Equipment']/@value">true</set>
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='MinimumWeight']/@value">1</set>
+
+		- Each item can have a property called ItemWeight which will over-ride the MinimumWeight from the SCore's block's entry.
+				<property name="ItemWeight" value="10" />
+
+		- ItemWeight can be 0, and can also be negative numbers.
+
+
+
+	[ Farming ]
+		- Fixed a bug where a water sprinkler was acting as an independent water source. 
+			-> Water sprinkler is now checking to see if its connected to a valid water source
+		- Fixed an issue where crops could be planted after a sprinkler was removed, and the area was no longer watered.
+		- Added debug information on pipes to show water source, and how much water is left.
+		- Added a Custom description for BlockPlantGrowing to show water information. This is for testing purposes.
+				<property name="DisplayInfo" value="Custom"/>
+		- Fixed an issue where Farmer would get bored and do nothing.
+
+
+Version:  20.6.405.854
+	[ Farming ]
+		- Fixed a bug where the water range check was incorrectly using the water range of air, rather than the plant.
+
+Version: 20.6.403.1003
+
+	[ Farming ]
+		- Fixed an issue where the sprinkler blocks were not registering themselves to the Valve System.
+			- Plants will check all valves ( sprinklers ) for their water range, then calculate if its within range of the valve.
+			- If there are no valves within range, plant will check for surrounding blocks for water.
+
+
+Version: 20.6.403.2043
+
+	[ Broadcast Feature ]
+		- Added code for Repair / Upgrade from storage
+		- Added check to see if enemy was nearby for Repair / Upgrade from storage
+
+	[ UAI Farming Task ]
+		- Moved seed decrements from UAI Task to the Manage method, to more accurately subtrack seed usage.
+		- Added water check to see if NPC can actually plant at the location.
+		- Added a Water Valve Check
+			- When a water block will scan for a water source, it'll check all the valves registered, and check if the plant is within range of the water block's water range
+			- In order for this water valve to be registered, it must be on. Just having a water valve that is not on, will not be sufficient for plant needs.
+					- This is different behaviour than using a regular non-valve water source.
+			- If the original valve is off when a plant checks, it will look for other valves to see if there's any water available on them.
+			- If none are found, it'll resort to legacy behaviour, and scan for water sources.
+
+			- BlockWaterSourceSDX has a new property. Default is 5f.
+				<property name="WaterRange" value="5" />
+
+
+	[ Trample Code ]
+		- Entities that have "notrample" cvar value greater than 0, will not cause crops to be damaged, if the crops damaged feature is enabled.
+		- Entities that have a "notrample" tag will not cause crops to be damaged.
+
+	[ Quest ]
+		- Added Localization support.
+			ObjectiveBuffSDX_keyword  ( fall back is ObjectiveBuff_keyword, which is simply Get in English )
+			<buff> If the buff name has a localization setting, it'll use that, in conjunaction with the keyword  Get <my buff>
+
 Version: 20.6.381.1359
 
 	[ Merge from khzmusik ]

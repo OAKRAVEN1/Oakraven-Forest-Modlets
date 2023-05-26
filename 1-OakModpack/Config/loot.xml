@@ -209,7 +209,10 @@
 		<item name="vehicleSpiderRiderChassisSchematic"/>
 		<item name="vehicleSpiderRiderHandlebarsSchematic"/>
 		<item name="vehicleHellDawgChassisSchematic"/>
-		<item name="vehicleHellDawgHandlebarsSchematic"/>		
+		<item name="vehicleHellDawgHandlebarsSchematic"/>
+		<item name="vehicleMonoChassisSchematic"/>
+		<item name="vehicleMonoHandlebarsSchematic"/>
+		<item name="vehicleMonoWheelSchematic"/>		
 	</append>	
 	
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']">

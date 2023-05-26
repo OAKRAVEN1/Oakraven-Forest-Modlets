@@ -7493,6 +7493,184 @@
 	<property name="EconomicValue" value="9000"/>
 	<property name="UnlockedBy" value="perkGreaseMonkey"/>
 </item>
+
+                    <!-- Monobikes -->
+
+<item name="vehicleMonobikePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="monobike"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:Resources/MonoBike.unity3d?MonoBike"/>
+	<property name="EconomicValue" value="1000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleMonobike"/>
+		<property name="VehicleSize" value="1.3, 1.9, 3"/>
+	</property>
+	<effect_group name="vehicleMotorcyclePlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
+	</effect_group>
+</item>
+
+<item name="vehicleMonobikeGreenPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="monogreen"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeGreen"/>
+	<property name="EconomicValue" value="1000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleMonobikeGreen"/>
+		<property name="VehicleSize" value="1.3, 1.9, 3"/>
+	</property>
+	<effect_group name="vehicleMotorcyclePlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
+	</effect_group>
+</item>
+
+<item name="vehicleMonobikeOldPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="monoold"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeOld"/>
+	<property name="EconomicValue" value="1000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleMonobikeOld"/>
+		<property name="VehicleSize" value="1.3, 1.9, 3"/>
+	</property>
+	<effect_group name="vehicleMotorcyclePlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
+	</effect_group>
+</item>
+
+<item name="vehicleMonobikeArmyPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="monoarmy"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeArmy"/>
+	<property name="EconomicValue" value="1000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleMonobikeArmy"/>
+		<property name="VehicleSize" value="1.3, 1.9, 3"/>
+	</property>
+	<effect_group name="vehicleMotorcyclePlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
+	</effect_group>
+</item>
+
+<item name="vehicleMonobikeVinPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="monovin"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeVin"/>
+	<property name="EconomicValue" value="1000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleMonobikeVin"/>
+		<property name="VehicleSize" value="1.3, 1.9, 3"/>
+	</property>
+	<effect_group name="vehicleMotorcyclePlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
+	</effect_group>
+</item>
+
+<item name="vehicleMonobikeRedPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="monored"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeRed"/>
+	<property name="EconomicValue" value="1000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleMonobikeRed"/>
+		<property name="VehicleSize" value="1.3, 1.9, 3"/>
+	</property>
+	<effect_group name="vehicleMotorcyclePlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
+	</effect_group>
+</item>
+
+<item name="vehicleMonobikeSharkPlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="CustomIcon" value="monoshark"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:Resources/MonoBike.unity3d?MonobikeShark"/>
+	<property name="EconomicValue" value="1000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleMonobikeShark"/>
+		<property name="VehicleSize" value="1.3, 1.9, 3"/>
+	</property>
+	<effect_group name="vehicleMotorcyclePlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
+	</effect_group>
+</item>
+
+<item name="vehicleMonoChassis">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="monochassis"/>
+	<property name="EconomicValue" value="3000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey,vehicleMonoChassisSchematic"/>
+</item>
+
+<item name="vehicleMonoHandlebars">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="monohandle"/>
+	<property name="EconomicValue" value="3000"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey,vehicleMonoHandlebarsSchematic"/>
+</item>
+
+<item name="vehicleMonoWheel">
+	<property name="Extends" value="vehicleWheels"/>
+	<property name="CustomIcon" value="monowheel"/>
+	<property name="EconomicValue" value="750"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey,vehicleMonoWheelSchematic"/>
+</item>
+
+<item name="vehicleMonoChassisSchematic">
+	<property name="Extends" value="schematicNoQualityMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="monochassis"/>
+	<property name="Unlocks" value="vehicleMonoChassis"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMonoChassis" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+<item name="vehicleMonoHandlebarsSchematic">
+	<property name="Extends" value="schematicNoQualityMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="monohandle"/>
+	<property name="Unlocks" value="vehicleMonoHandlebars"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMonoHandlebars" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+<item name="vehicleMonoWheelSchematic">
+	<property name="Extends" value="schematicNoQualityMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="monowheel"/>
+	<property name="Unlocks" value="vehicleMonoWheel"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMonoWheel" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
 		
 	</append>
 	

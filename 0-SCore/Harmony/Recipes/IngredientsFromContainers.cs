@@ -25,6 +25,7 @@ namespace SCore.Harmony.Recipes
         }
         public static List<TileEntity> GetTileEntities(EntityAlive player, float distance)
         {
+
             var disabledsender = Configuration.GetPropertyValue(AdvFeatureClass, "disablesender").Split(',');
             var nottoWorkstation = Configuration.GetPropertyValue(AdvFeatureClass, "nottoWorkstation");
             var bindtoWorkstation = Configuration.GetPropertyValue(AdvFeatureClass, "bindtoWorkstation");
@@ -62,7 +63,11 @@ namespace SCore.Harmony.Recipes
                             case TileEntityType.SecureLoot:
                                 var secureTileEntity = tileEntity as TileEntitySecureLootContainer;
                                 if (secureTileEntity == null) break;
-                                if (secureTileEntity.IsLocked() && !secureTileEntity.LocalPlayerIsOwner()) break;
+                                if (secureTileEntity.IsLocked() )
+                                {
+                                    PlatformUserIdentifierAbs internalLocalUserIdentifier = PlatformManager.InternalLocalUserIdentifier;
+                                    if (!secureTileEntity.IsUserAllowed(internalLocalUserIdentifier)) break;
+                                }
                                 // if sending disabled skip container
                                 if (disabledsender[0] != null) if (disableSender(disabledsender, tileEntity)) break;
                                 if (!string.IsNullOrEmpty(nottoWorkstation)) if (notToWorkstation(nottoWorkstation, player, tileEntity)) goto default;
@@ -131,6 +136,8 @@ namespace SCore.Harmony.Recipes
             {
                 var lootTileEntity = tileEntity as TileEntityLootContainer;
                 if (lootTileEntity == null) continue;
+                if (lootTileEntity.IsUserAccessing()) continue;
+
                 _items.AddRange(lootTileEntity.GetItems());
             }
             return _items;
@@ -144,6 +151,10 @@ namespace SCore.Harmony.Recipes
             {
                 var lootTileEntity = tileEntity as TileEntityLootContainer;
                 if (lootTileEntity == null) continue;
+
+                // If the container is open, don't use it.
+                if (lootTileEntity.IsUserAccessing()) continue;
+
                 _item.AddRange(lootTileEntity.GetItems());
             }
             for (int i = 0; i < _item.Count; i++)
@@ -165,6 +176,9 @@ namespace SCore.Harmony.Recipes
             {
                 var lootTileEntity = tileEntity as TileEntityLootContainer;
                 if (lootTileEntity == null) continue;
+                // If the container is open, don't include it.
+                if (lootTileEntity.IsUserAccessing()) continue;
+
                 _item.AddRange(lootTileEntity.GetItems());
             }
             for (int i = 0; i < _item.Count; i++)
@@ -175,6 +189,72 @@ namespace SCore.Harmony.Recipes
                 }
             }
             return _items;
+        }
+
+        public static void ConsumeItem(IList<ItemStack> _itemStacks, EntityPlayerLocal localPlayer, int _multiplier)
+        {
+            var tileEntities = EnhancedRecipeLists.GetTileEntities(localPlayer);
+            foreach (var itemStack in _itemStacks)
+            {
+                // counter quantity needed from item
+                int q = itemStack.count * _multiplier;
+                //check player inventory for materials and reduce counter
+                var slots = localPlayer.bag.GetSlots();
+                q = q - slots
+                    .Where(x => x.itemValue.ItemClass == itemStack.itemValue.ItemClass)
+                    .Sum(y => y.count);
+
+              
+                // check storage boxes
+                foreach (var tileEntity in tileEntities)
+                {
+                    if (q <= 0) break;
+                    var lootTileEntity = tileEntity as TileEntityLootContainer;
+                    if (lootTileEntity == null) continue;
+
+                    // If someone is using the tool account, skip it.
+                    if (lootTileEntity.IsUserAccessing()) continue;
+
+                    // If there's no items in this container, skip.
+                    if (!lootTileEntity.HasItem(itemStack.itemValue)) continue;
+
+                    int num = itemStack.count * _multiplier;
+                    if (lootTileEntity == null) break;
+                    for (int y = 0; y < lootTileEntity.items.Length; y++)
+                    {
+                        var item = lootTileEntity.items[y];
+                        if (item.IsEmpty()) continue;
+                        if (item.itemValue.ItemClass == itemStack.itemValue.ItemClass)
+                        {
+                            // If we can completely satisfy the result, let's do that.
+                            if (item.count >= q)
+                            {
+                                item.count -= q;
+                                q = 0;
+                            }
+                            else
+                            {
+                                // Otherwise, let's just count down until we meet the requirement.
+                                while (q >= 0)
+                                {
+                                    item.count--;
+                                    q--;
+                                    if (item.count <= 0)
+                                        break;
+                                }
+                            }
+
+                            //Update the slot on the container, and do the Setmodified(), so that the dedis can get updated.
+                            if (item.count < 1)
+                                lootTileEntity.UpdateSlot(y, ItemStack.Empty.Clone());
+                            else
+                                lootTileEntity.UpdateSlot(y, item);
+                            lootTileEntity.SetModified();
+                        }
+                    }
+                }
+            }
+            
         }
 
         [HarmonyPatch(typeof(XUiC_RecipeList))]
@@ -206,29 +286,109 @@ namespace SCore.Harmony.Recipes
             }
         }
 
-        //[HarmonyPatch(typeof(XUiM_PlayerInventory))]
+
+        //// Repair using items from container.
+        //[HarmonyPatch(typeof(Inventory))]
         //[HarmonyPatch("GetItemCount")]
-        //[HarmonyPatch(new[] { typeof(ItemValue) })]
-        //public class GetItemCount
+        //[HarmonyPatch(new[] { typeof(ItemValue), typeof(bool), typeof(int), typeof(int) })]
+
+        //public class InventoryGetItemCount
         //{
-        //    public static void Postfix(ref int __result, EntityPlayerLocal ___localPlayer, ItemValue _itemValue)
+        //    public static void Postfix(ref int __result, ItemValue _itemValue, EntityAlive ___entity)
         //    {
-        //        // Check if this feature is enabled.
-        //        if (!Configuration.CheckFeatureStatus(AdvFeatureClass, Feature))
+        //        if (___entity.IsMarkedForUnload())
         //            return;
 
-        //        foreach (var item in EnhancedRecipeLists.SearchNearbyContainers(___localPlayer))
-        //        {
-        //            if (item == null) continue;
-        //            if (item.IsEmpty()) continue;
-        //            if (item.itemValue == null) continue;
-        //            if ((!item.itemValue.HasModSlots || !item.itemValue.HasMods()) && item.itemValue.type == _itemValue.type)
-        //                __result += item.count;
+        //        // Check if this feature is enabled.
+        //        if (!Configuration.CheckFeatureStatus("BlockUpgradeRepair", "ReadFromContainers"))
+        //            return;
 
+        //        // If we are to block based on entity, check for them.
+        //        if ( Configuration.CheckFeatureStatus("BlockUpgradeRepair", "BlockOnNearbyEnemies" ))
+        //        {
+        //            var enemyDistance = 30f;
+        //            var strenemyDistance = Configuration.GetPropertyValue("BlockUpgradeRepair", "DistanceEnemy");
+        //            if (!string.IsNullOrEmpty(strenemyDistance))
+        //                enemyDistance = StringParsers.ParseFloat(strenemyDistance);
+
+        //            if (SCoreUtils.IsEnemyNearby(___entity, enemyDistance))
+        //                return;
+        //        }
+
+        //        var distance = 30f;
+        //        var strDistance = Configuration.GetPropertyValue("BlockUpgradeRepair", "Distance");
+        //        if (!string.IsNullOrEmpty(strDistance))
+        //            distance = StringParsers.ParseFloat(strDistance);
+
+        //        var stack = EnhancedRecipeLists.SearchNearbyContainers(___entity, _itemValue, distance);
+        //        foreach (var each in stack)
+        //            __result += each.count;
+
+        //        return;
+        //    }
+        //}
+
+        //// Repair using items from container.
+        //[HarmonyPatch(typeof(Bag))]
+        //[HarmonyPatch("DecItem")]
+        //public class Inventory_DecItem
+        //{
+        //    public static void Postfix(ref int __result, ItemValue _itemValue, int _count, EntityAlive ___entity)
+        //    {
+        //        // Check if this feature is enabled.
+        //        if (!Configuration.CheckFeatureStatus("BlockUpgradeRepair", "ReadFromContainers") )
+        //            return;
+
+        //        // Send it through the xui so the other patch can catch it.
+        //        var entityPlayer = ___entity as EntityPlayerLocal;
+        //        if (entityPlayer == null) return;
+
+        //        if (__result == 0)
+        //        {
+        //            ItemStack itemStack = new ItemStack(_itemValue, _count);
+        //            var itemStacks = new List<ItemStack>();
+        //            itemStacks.Add(itemStack);
+        //            ConsumeItem(itemStacks, entityPlayer, 1);
+
+        //            // We know we had enough in the containers, so blank it out.
+        //            __result = _count;
         //        }
 
         //    }
         //}
+
+        //[HarmonyPatch(typeof(Bag))]
+        //[HarmonyPatch("DecItem")]
+        //public class Bag_DecItem
+        //{
+        //    public static void Postfix(ref int __result, ItemValue _itemValue, int _count, EntityAlive ___entity)
+        //    {
+        //        Log.Out($"Bag.DecItem(): {__result}");
+        //        // Check if this feature is enabled.
+        //        if (!Configuration.CheckFeatureStatus("BlockUpgradeRepair", "ReadFromContainers") )
+        //            return;
+
+        //        Log.Out($"Bag.DecItem(): {__result} 1");
+        //        // Send it through the xui so the other patch can catch it.
+        //        var entityPlayer = ___entity as EntityPlayerLocal;
+        //        if (entityPlayer == null) return;
+
+        //        if (__result == 0)
+        //        {
+        //            ItemStack itemStack = new ItemStack(_itemValue, __result);
+        //            var itemStacks = new List<ItemStack>();
+        //            itemStacks.Add(itemStack);
+        //            ConsumeItem(itemStacks, entityPlayer, 1);
+
+        //            // We know we had enough in the containers, so blank it out.
+        //            __result = _count;
+        //        }
+
+        //    }
+        //}
+
+
+
 
         // replaces getitemcount
         // mostly a copy of the original code.
@@ -335,63 +495,7 @@ namespace SCore.Harmony.Recipes
                 if (!Configuration.CheckFeatureStatus(AdvFeatureClass, Feature))
                     return true;
 
-                var tileEntities = EnhancedRecipeLists.GetTileEntities(___localPlayer);
-                foreach (var itemStack in _itemStacks)
-                {
-                    // counter quantity needed from item
-                    int q = itemStack.count * _multiplier;
-                    //check player inventory for materials and reduce counter
-                    var slots = ___localPlayer.bag.GetSlots();
-                    q = q - slots
-                        .Where(x => x.itemValue.ItemClass == itemStack.itemValue.ItemClass)
-                        .Sum(y => y.count);
-
-                    // check storage boxes
-                    foreach (var tileEntity in tileEntities)
-                    {
-                        if (q <= 0) break;
-                        var lootTileEntity = tileEntity as TileEntityLootContainer;
-                        if (lootTileEntity == null) continue;
-
-                        // If there's no items in this container, skip.
-                        if (!lootTileEntity.HasItem(itemStack.itemValue)) continue;
-
-                        int num = itemStack.count * _multiplier;
-                        if (lootTileEntity == null) break;
-                        for (int y = 0; y < lootTileEntity.items.Length; y++)
-                        {
-                            var item = lootTileEntity.items[y];
-                            if (item.IsEmpty()) continue;
-                            if (item.itemValue.ItemClass == itemStack.itemValue.ItemClass)
-                            {
-                                // If we can completely satisfy the result, let's do that.
-                                if (item.count >= q)
-                                {
-                                    item.count -= q;
-                                    q = 0;
-                                }
-                                else
-                                {
-                                    // Otherwise, let's just count down until we meet the requirement.
-                                    while (q >= 0)
-                                    {
-                                        item.count--;
-                                        q--;
-                                        if (item.count <= 0)
-                                            break;
-                                    }
-                                }
-
-                                //Update the slot on the container, and do the Setmodified(), so that the dedis can get updated.
-                                if (item.count < 1)
-                                    lootTileEntity.UpdateSlot(y, ItemStack.Empty.Clone());
-                                else
-                                    lootTileEntity.UpdateSlot(y, item);
-                                lootTileEntity.SetModified();
-                            }
-                        }
-                    }
-                }
+                ConsumeItem(_itemStacks, ___localPlayer, _multiplier);
                 return true;
             }
         }
